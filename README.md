@@ -35,9 +35,6 @@ DeepTimber Robotics Innovations Community, 深木科研交流社区: [website](h
 ## 🙏 Acknowledgement - 致谢
 本文转载/引用了大量博主的文章，我们对他们的知识分享表示感谢，引用列表如下：
 [1] 知乎[穆尧](https://www.zhihu.com/people/mu-yao-12-34), [2] 知乎[东林钟声](https://www.zhihu.com/people/dong-lin-zhong-sheng-76), [3] 知乎[强化学徒](https://www.zhihu.com/people/heda-he-28), [4] 知乎[Biang哥](https://www.zhihu.com/people/qi-da-guang)
-<div style="display: flex; justify-content: space-between;">
-  <div>列表项1</div>
-  <div>列表项2</div>
-  <div>列表项3</div>
-  <div>列表项4</div>
-</div>
+| 列1 | 列2 | 列3 | 列4 |
+|------|------|------|------|
+| 内容1 | 内容2 | 内容3 | 内容4 |
