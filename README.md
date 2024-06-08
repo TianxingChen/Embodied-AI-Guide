@@ -29,7 +29,7 @@ AI领域值得关注的博主列表(知乎[强化学徒](https://www.zhihu.com/p
 Robotics实验室总结(知乎[Biang哥](https://www.zhihu.com/people/qi-da-guang)): [zhihu_1](https://zhuanlan.zhihu.com/p/682671294?utm_psn=1782122763157188608), [zhihu_2](https://zhuanlan.zhihu.com/p/682692024?utm_psn=1782122945184796672)
 
 ## Communities - 社区
-DeepTimber Robotics Innovations Community：深木科研交流社区: [website](https://gamma.app/public/DeepTimber-Robotics-Innovations-Community-A-Community-for-Multi-m-og0uv8mswl1a3q7?mode=doc)
+DeepTimber Robotics Innovations Community, 深木科研交流社区: [website](https://gamma.app/public/DeepTimber-Robotics-Innovations-Community-A-Community-for-Multi-m-og0uv8mswl1a3q7?mode=doc)
 
 ## 🙏 Acknowledgement
 Coming soon!
