@@ -13,10 +13,10 @@ EasyRL - 蘑菇书: [website](https://datawhalechina.github.io/easy-rl/#/)<br>
 强化学习的数学原理 - 赵世钰 - 西湖大学: [bilibili](https://space.bilibili.com/2044042934/channel/collectiondetail?sid=748665)
 
 ## Imitation Learning - 模仿学习
-模仿学习简洁教程 - LAMDA - 南京大学: [PDF](https://www.lamda.nju.edu.cn/xut/Imitation_Learning.pdf)
+模仿学习简洁教程 - 南京大学LAMDA: [PDF](https://www.lamda.nju.edu.cn/xut/Imitation_Learning.pdf)
 
 ## Large Language Model for Robotics - 大模型在机器人学中的应用
-Robotics+LLM系列通过大语言模型控制机器人 - 知乎[东林钟声](https://www.zhihu.com/people/dong-lin-zhong-sheng-76): [zhihu](https://zhuanlan.zhihu.com/p/668053911)
+Robotics+LLM系列通过大语言模型控制机器人 [2]: [zhihu](https://zhuanlan.zhihu.com/p/668053911)
 
 ## 3D Vision - 三维视觉
 Coming soon!
@@ -25,14 +25,14 @@ Coming soon!
 具身智能常用benchmark总结 [1]：[zhihu](https://zhuanlan.zhihu.com/p/695342864)
 
 ## Useful Blogs - 有利于搭建认知的博客
-AI领域值得关注的博主列表(知乎[强化学徒](https://www.zhihu.com/people/heda-he-28)): [zhihu](https://zhuanlan.zhihu.com/p/682110383)
+AI领域值得关注的博主列表 [3]: [zhihu](https://zhuanlan.zhihu.com/p/682110383)
 
-Robotics实验室总结(知乎[Biang哥](https://www.zhihu.com/people/qi-da-guang)): [zhihu_1](https://zhuanlan.zhihu.com/p/682671294?utm_psn=1782122763157188608), [zhihu_2](https://zhuanlan.zhihu.com/p/682692024?utm_psn=1782122945184796672)
+Robotics实验室总结 [4]: [zhihu_1](https://zhuanlan.zhihu.com/p/682671294?utm_psn=1782122763157188608), [zhihu_2](https://zhuanlan.zhihu.com/p/682692024?utm_psn=1782122945184796672)
 
 ## Communities - 社区
 DeepTimber Robotics Innovations Community, 深木科研交流社区: [website](https://gamma.app/public/DeepTimber-Robotics-Innovations-Community-A-Community-for-Multi-m-og0uv8mswl1a3q7?mode=doc)
 
 ## 🙏 Acknowledgement
 本文引用博主链接如下：
-[1] 知乎[穆尧](https://www.zhihu.com/people/mu-yao-12-34), [2] 
+[1] 知乎[穆尧](https://www.zhihu.com/people/mu-yao-12-34), [2] 知乎[东林钟声](https://www.zhihu.com/people/dong-lin-zhong-sheng-76), [3] 知乎[强化学徒](https://www.zhihu.com/people/heda-he-28), [4] 知乎[Biang哥](https://www.zhihu.com/people/qi-da-guang)
 
