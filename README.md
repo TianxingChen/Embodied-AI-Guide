@@ -18,6 +18,12 @@ EasyRL - 蘑菇书: [website](https://datawhalechina.github.io/easy-rl/#/)
 ## Imitation Learning - 模仿学习
 模仿学习简洁教程 - LAMDA - 南京大学: [PDF](https://www.lamda.nju.edu.cn/xut/Imitation_Learning.pdf)
 
+## Large Language Model for Robotics - 大模型在机器人学中的应用
+Coming soon!
+
+## 3D Vision - 三维视觉
+Coming soon!
+
 ## 🙏 Acknowledgement
 Coming soon!
 
