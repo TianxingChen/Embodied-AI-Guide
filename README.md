@@ -16,3 +16,7 @@ EasyRL - 蘑菇书: [website](https://datawhalechina.github.io/easy-rl/#/)
 
 ## Imitation Learning - 模仿学习
 模仿学习简洁教程 - LAMDA - 南京大学: [PDF](https://www.lamda.nju.edu.cn/xut/Imitation_Learning.pdf)
+
+## 🙏 Acknowledgement
+Coming soon!
+
