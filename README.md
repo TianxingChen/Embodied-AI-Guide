@@ -16,7 +16,7 @@ EasyRL - 蘑菇书: [website](https://datawhalechina.github.io/easy-rl/#/)<br>
 模仿学习简洁教程 - LAMDA - 南京大学: [PDF](https://www.lamda.nju.edu.cn/xut/Imitation_Learning.pdf)
 
 ## Large Language Model for Robotics - 大模型在机器人学中的应用
-Coming soon!
+Robotics+LLM系列通过大语言模型控制机器人 - 知乎[东林钟声](https://www.zhihu.com/people/dong-lin-zhong-sheng-76): [zhihu](https://zhuanlan.zhihu.com/p/668053911)
 
 ## 3D Vision - 三维视觉
 Coming soon!
