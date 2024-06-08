@@ -24,7 +24,7 @@ Robotics+LLM系列通过大语言模型控制机器人 [2]: [zhihu](https://zhua
 Coming soon!
 
 ## Benchmarks - 基准
-具身智能常用benchmark总结 [1]：[zhihu](https://zhuanlan.zhihu.com/p/695342864)
+具身智能常用benchmark总结 [1]: [zhihu](https://zhuanlan.zhihu.com/p/695342864)
 
 ## Useful Blogs - 有利于搭建认知的博客
 AI领域值得关注的博主列表 [3]: [zhihu](https://zhuanlan.zhihu.com/p/682110383)
