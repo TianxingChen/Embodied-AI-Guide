@@ -11,3 +11,10 @@
 AI领域值得关注的博主列表(知乎[强化学徒](https://www.zhihu.com/people/heda-he-28)): [link](https://zhuanlan.zhihu.com/p/682110383)
 
 Robotics实验室总结(知乎[Biang哥](https://www.zhihu.com/people/qi-da-guang)): [link1](https://zhuanlan.zhihu.com/p/682671294?utm_psn=1782122763157188608), [link2](https://zhuanlan.zhihu.com/p/682692024?utm_psn=1782122945184796672)
+
+## Reinforcement Learning - 强化学习
+台湾大学李宏毅公开课: [bilibili](https://www.bilibili.com/video/BV1XP4y1d7Bk/?spm_id_from=333.337.search-card.all.click&vd_source=ab9cf5374617c2867aaea34af29b53c9)
+EasyRL - 蘑菇书: [website](https://datawhalechina.github.io/easy-rl/#/)
+
+## Imitation Learning - 模仿学习
+模仿学习简洁教程 - LAMDA - 南京大学: [PDF](https://www.lamda.nju.edu.cn/xut/Imitation_Learning.pdf)
