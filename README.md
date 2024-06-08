@@ -33,6 +33,6 @@ Robotics实验室总结 [4]: [zhihu_1](https://zhuanlan.zhihu.com/p/682671294?ut
 DeepTimber Robotics Innovations Community, 深木科研交流社区: [website](https://gamma.app/public/DeepTimber-Robotics-Innovations-Community-A-Community-for-Multi-m-og0uv8mswl1a3q7?mode=doc)
 
 ## 🙏 Acknowledgement
-本文引用博主链接如下：
+本文转载/引用了大量博主的文章，我们对他们的知识分享表示感谢，引用列表如下：
 [1] 知乎[穆尧](https://www.zhihu.com/people/mu-yao-12-34), [2] 知乎[东林钟声](https://www.zhihu.com/people/dong-lin-zhong-sheng-76), [3] 知乎[强化学徒](https://www.zhihu.com/people/heda-he-28), [4] 知乎[Biang哥](https://www.zhihu.com/people/qi-da-guang)
 
