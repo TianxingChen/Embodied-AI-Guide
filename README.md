@@ -21,12 +21,12 @@ Coming soon!
 Coming soon!
 
 ## Benchmarks
-知乎[穆尧](https://www.zhihu.com/people/mu-yao-12-34)：[具身智能常用benchmark总结](https://zhuanlan.zhihu.com/p/695342864)
+具身智能常用benchmark总结(知乎[穆尧](https://www.zhihu.com/people/mu-yao-12-34))：[zhihu](https://zhuanlan.zhihu.com/p/695342864)
 
 ## Useful Blog - 有利于搭建认知的博客
-AI领域值得关注的博主列表(知乎[强化学徒](https://www.zhihu.com/people/heda-he-28)): [link](https://zhuanlan.zhihu.com/p/682110383)
+AI领域值得关注的博主列表(知乎[强化学徒](https://www.zhihu.com/people/heda-he-28)): [zhihu](https://zhuanlan.zhihu.com/p/682110383)
 
-Robotics实验室总结(知乎[Biang哥](https://www.zhihu.com/people/qi-da-guang)): [link1](https://zhuanlan.zhihu.com/p/682671294?utm_psn=1782122763157188608), [link2](https://zhuanlan.zhihu.com/p/682692024?utm_psn=1782122945184796672)
+Robotics实验室总结(知乎[Biang哥](https://www.zhihu.com/people/qi-da-guang)): [zhihu_1](https://zhuanlan.zhihu.com/p/682671294?utm_psn=1782122763157188608), [zhihu_2](https://zhuanlan.zhihu.com/p/682692024?utm_psn=1782122945184796672)
 
 ## 🙏 Acknowledgement
 Coming soon!
