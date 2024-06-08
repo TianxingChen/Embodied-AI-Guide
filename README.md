@@ -2,7 +2,8 @@
 **🦉Contributors**: [Tianxing Chen (陈天行)](https://tianxingchen.github.io), [Yude Zou (邹誉德)](https://github.com/yudezou)<br>
 <i>Lastest Update: Jun 9, 2024</i>
 
-> Embodied AI (具身智能)入门的路径以及useful信息的总结，期望是按照路线走完后，新手可以快速建立关于这个领域的认知，希望能帮助到各位入门具身智能的朋友～欢迎star与PR🌟[test](## Reinforcement Learning - 强化学习)
+> Embodied AI (具身智能)入门的路径以及useful信息的总结，期望是按照路线走完后，新手可以快速建立关于这个领域的认知，希望能帮助到各位入门具身智能的朋友,欢迎star与PR🌟~
+> 文章中引用文章的原作者，我们在[Acknowledgement - 致谢](#acknowledgement)部分进行了致谢，感谢他们的分享🌹
 
 
 **什么是具身智能？**<br>
@@ -34,6 +35,7 @@ Robotics实验室总结 [4]: [zhihu_1](https://zhuanlan.zhihu.com/p/682671294?ut
 ## Communities - 社区
 DeepTimber Robotics Innovations Community, 深木科研交流社区: [website](https://gamma.app/public/DeepTimber-Robotics-Innovations-Community-A-Community-for-Multi-m-og0uv8mswl1a3q7?mode=doc)
 
+<a name="acknowledgement"></a>
 ## 🙏 Acknowledgement - 致谢
 本文转载/引用了大量博主的文章，我们对他们的知识分享表示感谢，引用列表如下：
 | Since 2024 🌹 |  |  |  |
