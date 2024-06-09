@@ -1,4 +1,4 @@
-<div style="text-align: center; font-size: 40px; font-">
+<div style="text-align: center; font-size: 40px; font-color: blue">
     Embodied-AI-Guide-zh (In Progress) [<a href="https://github.com/tianxingchen/Embodied-AI-Guide">Github Repo</a>]
 </div>
 
