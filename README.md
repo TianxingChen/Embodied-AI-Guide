@@ -5,7 +5,7 @@
 
 > Embodied AI (具身智能)入门的路径以及useful信息的总结，期望是按照路线走完后，新手可以快速建立关于这个领域的认知，希望能帮助到各位入门具身智能的朋友,欢迎star与PR🌟~<br>文章中引用文章的原作者，我们在[🙏 Acknowledgement - 致谢](#acknowledgement)部分进行了致谢，感谢他们的分享🌹
 
-# 目录
+# Contents - 目录
 <nav>
   <ul>
     <li><a href="#start">Start Up - 从这里开始</a></li>
