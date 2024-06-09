@@ -9,7 +9,7 @@
 <nav>
   <h2>目录</h2>
   <ul>
-    <li><a href="#rl">Reinforcement Learning - 强化学习</a></li>
+    <li><a href="#start">Start Up - 从这里开始</a></li>
     <li><a href="#rl">Reinforcement Learning - 强化学习</a></li>
     <li><a href="#il">Imitation Learning - 模仿学习</a></li>
     <li><a href="#llm_robot">Large Language Model for Robotics - 大模型在机器人学中的应用</a></li>
