@@ -3,7 +3,7 @@
 **🦉Contributors**: [Tianxing Chen (陈天行)](https://tianxingchen.github.io), [Yude Zou (邹誉德)](https://github.com/yudezou)<br>
 <i>Lastest Update: Jun 9, 2024</i>
 
-> Embodied AI (具身智能)入门的路径以及useful信息的总结，期望是按照路线走完后，新手可以快速建立关于这个领域的认知，希望能帮助到各位入门具身智能的朋友,欢迎star与PR🌟~<br>文章中引用文章的原作者，我们在[Acknowledgement - 致谢](#acknowledgement)部分进行了致谢，感谢他们的分享🌹
+> Embodied AI (具身智能)入门的路径以及useful信息的总结，期望是按照路线走完后，新手可以快速建立关于这个领域的认知，希望能帮助到各位入门具身智能的朋友,欢迎star与PR🌟~<br>文章中引用文章的原作者，我们在[🙏 Acknowledgement - 致谢](#acknowledgement)部分进行了致谢，感谢他们的分享🌹
 
 
 <nav>
