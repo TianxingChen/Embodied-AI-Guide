@@ -1,6 +1,8 @@
 <div style="text-align: center; font-size: 40px; color: blue; font-weight: 600;">
-    Embodied-AI-Guide-zh (In Progress) [<a href="https://github.com/tianxingchen/Embodied-AI-Guide">Github Repo</a>]
+    
 </div>
+
+<h1 align="center">Embodied-AI-Guide-zh (In Progress) [<a href="https://github.com/tianxingchen/Embodied-AI-Guide">Github Repo</a>]</h1>
 
 **🦉Contributors**: [Tianxing Chen (陈天行)](https://tianxingchen.github.io), [Yude Zou (邹誉德)](https://github.com/yudezou)<br>
 <i>Lastest Update: Jun 9, 2024</i>
