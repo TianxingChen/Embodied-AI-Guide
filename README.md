@@ -1,4 +1,7 @@
-# Embodied-AI-Guide-zh (In Progress) [[Github Repo](https://github.com/tianxingchen/Embodied-AI-Guide)]
+<div style="text-align: center; font-size: 40px; font-">
+    Embodied-AI-Guide-zh (In Progress) [<a href="https://github.com/tianxingchen/Embodied-AI-Guide">Github Repo</a>]
+</div>
+
 **🦉Contributors**: [Tianxing Chen (陈天行)](https://tianxingchen.github.io), [Yude Zou (邹誉德)](https://github.com/yudezou)<br>
 <i>Lastest Update: Jun 9, 2024</i>
 
