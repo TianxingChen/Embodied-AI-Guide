@@ -1,6 +1,6 @@
 <h1 align="center">Embodied-AI-Guide-zh (In Progress) [<a href="https://github.com/tianxingchen/Embodied-AI-Guide">Github Repo</a>]</h1>
 
-<h2 align="center">**🦉Contributors**: [Tianxing Chen (陈天行)](https://tianxingchen.github.io), [Yude Zou (邹誉德)](https://github.com/yudezou)</h2><br>
+<p align="center">**🦉Contributors**: [Tianxing Chen (陈天行)](https://tianxingchen.github.io), [Yude Zou (邹誉德)](https://github.com/yudezou)</p><br>
 <i>Lastest Update: Jul 6, 2024</i><br>
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftianxingchen%2FEmbodied-AI-Guide&count_bg=%232B8DD9&title_bg=%237834C6&icon=github.svg&icon_color=%23E7E7E7&title=Page+Viewers&edge_flat=false"/></a>
 
