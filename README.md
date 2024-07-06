@@ -44,8 +44,8 @@ EasyRL - 蘑菇书: [website](https://datawhalechina.github.io/easy-rl/#/)<br>
 <section id="llm_robot"></section>
 
 # Large Language Model for Robotics - 大模型在机器人学中的应用
-Robotics+LLM系列通过大语言模型控制机器人 [2]: [zhihu](https://zhuanlan.zhihu.com/p/668053911)
-PDDL-wiki: [website](https://planning.wiki/)
+Robotics+LLM系列通过大语言模型控制机器人 [2]: [zhihu](https://zhuanlan.zhihu.com/p/668053911)<br>
+PDDL-wiki: [website](https://planning.wiki/)<br>
 An Introduction to PDDL: [PDF](https://www.cs.toronto.edu/~sheila/2542/s14/A1/introtopddl2.pdf)
 
 <section id="3dv"></section>
