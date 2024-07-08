@@ -84,3 +84,6 @@ DeepTimber Robotics Innovations Community, 深木科研交流社区: [website](h
 | Since 2024 🌹 |  |  |  |
 |------|------|------|------|
 | [1] 知乎[穆尧](https://www.zhihu.com/people/mu-yao-12-34) | [2] 知乎[东林钟声](https://www.zhihu.com/people/dong-lin-zhong-sheng-76), Github[Yunlong Dong](https://github.com/yunlongdong) | [3] 知乎[强化学徒](https://www.zhihu.com/people/heda-he-28) | [4] 知乎[Biang哥](https://www.zhihu.com/people/qi-da-guang) |
+
+# 🏷️ License - 许可证
+This repository is released under the MIT license. See LICENSE for additional details.
