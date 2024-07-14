@@ -56,8 +56,9 @@ Coming soon!
 
 <section id="benchmarks"></section>
 
-# Benchmarks - 基准
+# Benchmarks & Simulators - 基准 & 仿真器
 具身智能常用benchmark总结 [1]: [zhihu](https://zhuanlan.zhihu.com/p/695342864)
+常见仿真器wiki: [wiki](https://simulately.wiki/)
 
 
 <section id="info"></section>
