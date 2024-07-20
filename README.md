@@ -17,6 +17,7 @@
     <li><a href="#benchmarks">Benchmarks - 基准</a></li>
     <li><a href="#info">Useful Info - 有利于搭建认知的资料</a></li>
     <li><a href="#communities">Communities - 社区</a></li>
+    <li><a href="#companies">Companies - 公司</a></li>
     <li><a href="#acknowledgement">🙏 Acknowledgement - 致谢</a></li>
   </ul>
 </nav>
@@ -79,6 +80,11 @@ DeepTimber Robotics Innovations Community, 深木科研交流社区: [website](h
 <section id="acknowledgement"></section>
 
 <a name="acknowledgement"></a>
+
+<section id="companies"></section>
+
+# Companies - 公司
+松灵AgileX: [website](https://www.agilex.ai/)
 
 # 🙏 Acknowledgement - 致谢
 本文转载/引用了大量博主的文章，我们对他们的知识分享表示感谢，引用列表如下：
