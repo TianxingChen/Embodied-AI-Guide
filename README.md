@@ -53,13 +53,15 @@ An Introduction to PDDL: [PDF](https://www.cs.toronto.edu/~sheila/2542/s14/A1/in
 <section id="3dv"></section>
 
 # 3D Vision - 三维视觉
-Coming soon!
+## 3DGS
+3D Gaussian Splatting原理速通: [bilibili](https://www.bilibili.com/video/BV11e411n79b/?spm_id_from=333.788&vd_source=ab9cf5374617c2867aaea34af29b53c9)
 
 
 <section id="benchmarks"></section>
 
 # Benchmarks & Simulators - 基准 & 仿真器
 具身智能常用benchmark总结 [1]: [zhihu](https://zhuanlan.zhihu.com/p/695342864)
+
 常见仿真器wiki: [wiki](https://simulately.wiki/)
 
 
