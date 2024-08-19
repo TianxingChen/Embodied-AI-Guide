@@ -53,6 +53,8 @@ An Introduction to PDDL: [PDF](https://www.cs.toronto.edu/~sheila/2542/s14/A1/in
 <section id="3dv"></section>
 
 # 3D Vision - 三维视觉
+三维视觉导论 - Andreas Geiger: [website](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/computer-vision/)
+
 ## 3DGS
 3D Gaussian Splatting原理速通: [bilibili](https://www.bilibili.com/video/BV11e411n79b/?spm_id_from=333.788&vd_source=ab9cf5374617c2867aaea34af29b53c9)
 
