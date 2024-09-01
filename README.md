@@ -1,7 +1,7 @@
 <h1 align="center">Embodied-AI-Guide-zh (In Progress) [<a href="https://github.com/tianxingchen/Embodied-AI-Guide">Github Repo</a>]</h1>
 
 <p align="center"><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">Tianxing Chen (陈天行)</a>, <a href="https://github.com/yudezou">Yude Zou (邹誉德)</a>, <a href="https://github.com/zanxinchen">Zanxin Chen (陈攒鑫)</a>, <a href="https://github.com/27yw">Wen Ye (叶雯)</a></p>
-<p align="center"><i>Lastest Update: Jul 10, 2024</i></p>
+<p align="center"><i>Latest Update: Sept 1, 2024</i></p>
 
 
 > Embodied AI (具身智能)入门的路径以及useful信息的总结，期望是按照路线走完后，新手可以快速建立关于这个领域的认知，希望能帮助到各位入门具身智能的朋友,欢迎star与PR🌟~<br>文章中引用文章的原作者，我们在[🙏 Acknowledgement - 致谢](#acknowledgement)部分进行了致谢，感谢他们的分享🌹<br><a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftianxingchen%2FEmbodied-AI-Guide&count_bg=%232B8DD9&title_bg=%237834C6&icon=github.svg&icon_color=%23E7E7E7&title=Page+Viewers&edge_flat=false"/></a>
@@ -51,6 +51,8 @@ PDDL-wiki: [website](https://planning.wiki/)<br>
 An Introduction to PDDL: [PDF](https://www.cs.toronto.edu/~sheila/2542/s14/A1/introtopddl2.pdf)<br>
 AI Agent from IBM: An artificial intelligence (AI) agent refers to a system or program that is capable of autonomously performing tasks on behalf of a user or another system by designing its workflow and utilizing available tools.<br>
 Embodied Agent wiki: [website](https://en.wikipedia.org/wiki/Embodied_agent)<br>
+Awesome-LLM-Robotics: A repo contains a curative list of papers using Large Language/Multi-Modal Models for Robotics/RL. [website](https://github.com/GT-RIPL/Awesome-LLM-Robotics)<br>
+Lilian Weng 个人博客 - AI Agent 系统综述 [5]: 中文: [website](https://mp.weixin.qq.com/s/Jb8HBbaKYXXxTSQOBsP5Wg) 英文: [website](https://lilianweng.github.io/posts/2023-06-23-agent/)<br>
 
 
 <section id="3dv"></section>
@@ -98,7 +100,7 @@ DeepTimber Robotics Innovations Community, 深木科研交流社区: [website](h
 本文转载/引用了大量博主的文章，我们对他们的知识分享表示感谢，引用列表如下：
 | Since 2024 🌹 |  |  |  |
 |------|------|------|------|
-| [1] 知乎[穆尧](https://www.zhihu.com/people/mu-yao-12-34) | [2] 知乎[东林钟声](https://www.zhihu.com/people/dong-lin-zhong-sheng-76), Github[Yunlong Dong](https://github.com/yunlongdong) | [3] 知乎[强化学徒](https://www.zhihu.com/people/heda-he-28) | [4] 知乎[Biang哥](https://www.zhihu.com/people/qi-da-guang) |
+| [1] 知乎[穆尧](https://www.zhihu.com/people/mu-yao-12-34) | [2] 知乎[东林钟声](https://www.zhihu.com/people/dong-lin-zhong-sheng-76), Github[Yunlong Dong](https://github.com/yunlongdong) | [3] 知乎[强化学徒](https://www.zhihu.com/people/heda-he-28) | [4] 知乎[Biang哥](https://www.zhihu.com/people/qi-da-guang) | [5] OpenAI [Lilian Weng](https://lilianweng.github.io/) |
 
 # 🏷️ License - 许可证
 This repository is released under the MIT license. See LICENSE for additional details.
