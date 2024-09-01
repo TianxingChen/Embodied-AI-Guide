@@ -48,7 +48,10 @@ Supervised Policy Learning for Real Robots, RSS 2024 Workshop 教程：真实机
 # Large Language Model for Robotics - 大模型在机器人学中的应用
 Robotics+LLM系列通过大语言模型控制机器人 [2]: [zhihu](https://zhuanlan.zhihu.com/p/668053911)<br>
 PDDL-wiki: [website](https://planning.wiki/)<br>
-An Introduction to PDDL: [PDF](https://www.cs.toronto.edu/~sheila/2542/s14/A1/introtopddl2.pdf)
+An Introduction to PDDL: [PDF](https://www.cs.toronto.edu/~sheila/2542/s14/A1/introtopddl2.pdf)<br>
+AI Agent from IBM: An artificial intelligence (AI) agent refers to a system or program that is capable of autonomously performing tasks on behalf of a user or another system by designing its workflow and utilizing available tools.<br>
+Embodied Agent wiki: [website](https://en.wikipedia.org/wiki/Embodied_agent)<br>
+
 
 <section id="3dv"></section>
 
