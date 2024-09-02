@@ -14,6 +14,7 @@
     <li><a href="#il">Imitation Learning - 模仿学习</a></li>
     <li><a href="#llm_robot">Large Language Model for Robotics - 大模型在机器人学中的应用</a></li>
     <li><a href="#3dv">3D Vision - 三维视觉</a></li>
+    <li><a href="#control">控制学 - Control</a></li>
     <li><a href="#benchmarks">Benchmarks - 基准</a></li>
     <li><a href="#info">Useful Info - 有利于搭建认知的资料</a></li>
     <li><a href="#communities">Communities - 社区</a></li>
@@ -63,6 +64,12 @@ Lilian Weng 个人博客 - AI Agent 系统综述 [5]: 中文: [website](https://
 ## 3DGS
 3D Gaussian Splatting原理速通: [bilibili](https://www.bilibili.com/video/BV11e411n79b/?spm_id_from=333.788&vd_source=ab9cf5374617c2867aaea34af29b53c9)
 
+
+
+<section id="control"></section>
+
+# Control - 控制学
+彻底搞懂阻抗控制、导纳控制、力位混合控制, [CSDN](https://blog.csdn.net/a735148617/article/details/108564836)
 
 <section id="benchmarks"></section>
 
