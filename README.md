@@ -1,8 +1,8 @@
 <h1 align="center">具身智能入门指南</h1>
 
-<p align="center"><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">Tianxing Chen (陈天行)</a>, <a href="https://github.com/yudezou">Yude Zou (邹誉德)</a>, <a href="https://github.com/zanxinchen">Zanxin Chen (陈攒鑫)</a>, <a href="https://github.com/27yw">Wen Ye (叶雯)</a></p>
 <p align="center">【 <a href="https://github.com/tianxingchen/Embodied-AI-Guide">Github Repo</a>, Latest Update: Sept 1, 2024 】 <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftianxingchen%2FEmbodied-AI-Guide&count_bg=%232B8DD9&title_bg=%237834C6&icon=github.svg&icon_color=%23E7E7E7&title=Page+Viewers&edge_flat=false"/></a></p>
 
+<p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (25' 港大PhD)</a>, <a href="https://github.com/yudezou">邹誉德 (25' 上交-浦江实验室联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/27yw">叶雯 (25'  中科院自动化所PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫</a></p>
 
 > Embodied AI (具身智能)入门的路径以及useful信息的总结，期望是按照路线走完后，新手可以快速建立关于这个领域的认知，希望能帮助到各位入门具身智能的朋友,欢迎star与PR🌟~<br>文章中引用文章的原作者，我们在[🙏 Acknowledgement - 致谢](#acknowledgement)部分进行了致谢，感谢他们的分享🌹<br><a href="https://hits.seeyoufarm.com">
 
