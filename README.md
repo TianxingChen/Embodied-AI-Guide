@@ -14,7 +14,7 @@
     <li><a href="#il">Imitation Learning - 模仿学习</a></li>
     <li><a href="#llm_robot">Large Language Model for Robotics - 大模型在机器人学中的应用</a></li>
     <li><a href="#3dv">3D Vision - 三维视觉</a></li>
-    <li><a href="#control">控制学 - Control</a></li>
+    <li><a href="#control">Control - 控制学</a></li>
     <li><a href="#benchmarks">Benchmarks - 基准</a></li>
     <li><a href="#info">Useful Info - 有利于搭建认知的资料</a></li>
     <li><a href="#communities">Communities - 社区</a></li>
