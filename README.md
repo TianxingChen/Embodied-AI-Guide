@@ -69,9 +69,9 @@ Lilian Weng 个人博客 - AI Agent 系统综述 [5]: 中文: [website](https://
 <section id="control"></section>
 
 # Control - 控制学
-彻底搞懂阻抗控制、导纳控制、力位混合控制, [CSDN](https://blog.csdn.net/a735148617/article/details/108564836)
-具身智能ROS1基础[website](http://www.autolabor.com.cn/book/ROSTutorials/)
-具身智能ROS2基础[website](https://zhangzhiwei-zzw.github.io/ROS2%E5%AD%A6%E4%B9%A0/ROS2/)
+彻底搞懂阻抗控制、导纳控制、力位混合控制, [CSDN](https://blog.csdn.net/a735148617/article/details/108564836)<br>
+具身智能ROS1基础[website](http://www.autolabor.com.cn/book/ROSTutorials/)<br>
+具身智能ROS2基础[website](https://zhangzhiwei-zzw.github.io/ROS2%E5%AD%A6%E4%B9%A0/ROS2/)<br>
 
 <section id="benchmarks"></section>
 
