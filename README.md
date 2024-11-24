@@ -2,7 +2,7 @@
 
 <p align="center">【 <a href="https://github.com/tianxingchen/Embodied-AI-Guide">Github Repo</a>, Latest Update: Sep 1, 2024 】 <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftianxingchen%2FEmbodied-AI-Guide&count_bg=%232B8DD9&title_bg=%237834C6&icon=github.svg&icon_color=%23E7E7E7&title=Page+Viewers&edge_flat=false"/></a></p>
 
-<p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (深大本科生)</a>, <a href="https://github.com/yudezou">邹誉德 (25' 上交-浦江实验室联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/27yw">叶雯 (25'  中科院自动化所PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫 (深大本科生)</a>, <a href="https://github.com/ShijiaPeng03">彭时佳 (深大本科生)</a></p>
+<p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (深大本科生)</a>, <a href="https://yudezou.github.io/">邹誉德 (25' 上交-浦江实验室联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/27yw">叶雯 (25'  中科院自动化所PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫 (深大本科生)</a>, <a href="https://github.com/ShijiaPeng03">彭时佳 (深大本科生)</a></p>
 
 > Embodied AI (具身智能)入门的路径以及useful信息的总结，期望是按照路线走完后，新手可以快速建立关于这个领域的认知，希望能帮助到各位入门具身智能的朋友,欢迎star与PR🌟~<br>文章中引用文章的原作者，我们在[🙏 Acknowledgement - 致谢](#acknowledgement)部分进行了致谢，感谢他们的分享🌹<br><a href="https://hits.seeyoufarm.com">
 
@@ -60,6 +60,8 @@ Lilian Weng 个人博客 - AI Agent 系统综述 [5]: 中文: [website](https://
 
 # 3D Vision - 三维视觉
 三维视觉导论 - Andreas Geiger: [website](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/computer-vision/)
+GAMES203 - 三维重建和理解: [bilibili](https://www.bilibili.com/video/BV1pw411d7aS/?share_source=copy_web&vd_source=0b7603f37af6d369a97df34525b149be)
+Advances in 3D pre-training and downstream tasks: a survey: [PDF](https://link.springer.com/content/pdf/10.1007/s44336-024-00007-4.pdf)
 
 ## 3DGS
 3D Gaussian Splatting原理速通: [bilibili](https://www.bilibili.com/video/BV11e411n79b/?spm_id_from=333.788&vd_source=ab9cf5374617c2867aaea34af29b53c9)
