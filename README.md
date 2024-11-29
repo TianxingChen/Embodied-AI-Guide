@@ -12,10 +12,10 @@
     <li><a href="#start">Start Up - 从这里开始</a></li>
     <li><a href="#rl">Reinforcement Learning - 强化学习</a></li>
     <li><a href="#il">Imitation Learning - 模仿学习</a></li>
-    <li><a href="#llm_robot">Large Language Model for Robotics - 大模型在机器人学中的应用</a></li>
+    <li><a href="#llm_robot">LLM for Robotics - 大模型在机器人学中的应用</a></li>
     <li><a href="#3dv">3D Vision - 三维视觉</a></li>
     <li><a href="#control">Control - 控制学</a></li>
-    <li><a href="#benchmarks">Benchmarks - 基准</a></li>
+    <li><a href="#benchmarks">Benchmarks & Simulators - 基准 & 仿真器</a></li>
     <li><a href="#info">Useful Info - 有利于搭建认知的资料</a></li>
     <li><a href="#communities">Communities - 社区</a></li>
     <li><a href="#companies">Companies - 公司</a></li>
@@ -47,7 +47,7 @@ Supervised Policy Learning for Real Robots, RSS 2024 Workshop 教程：真实机
 
 <section id="llm_robot"></section>
 
-# Large Language Model for Robotics - 大模型在机器人学中的应用
+# LLM for Robotics - 大模型在机器人学中的应用
 Robotics+LLM系列通过大语言模型控制机器人 [2]: [zhihu](https://zhuanlan.zhihu.com/p/668053911)<br>
 PDDL-wiki: [website](https://planning.wiki/)<br>
 An Introduction to PDDL: [PDF](https://www.cs.toronto.edu/~sheila/2542/s14/A1/introtopddl2.pdf)<br>
@@ -66,8 +66,6 @@ Advances in 3D pre-training and downstream tasks: a survey. [PDF](https://link.s
 
 ## 3DGS
 3D Gaussian Splatting原理速通: [bilibili](https://www.bilibili.com/video/BV11e411n79b/?spm_id_from=333.788&vd_source=ab9cf5374617c2867aaea34af29b53c9)
-
-
 
 <section id="control"></section>
 
