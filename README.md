@@ -112,6 +112,7 @@ DeepTimber Robotics Innovations Community, 深木科研交流社区: [website](h
 ## Companies - 公司
 松灵AgileX: [website](https://www.agilex.ai/)<br>
 宇树Unitree: [website](https://www.unitree.com/cn)<br>
+星海图Galaxea: [website](https://galaxea.ai/)
 
 ## 🙏 Acknowledgement - 致谢
 本文转载/引用了大量博主的文章，我们对他们的知识分享表示感谢，引用列表如下：
