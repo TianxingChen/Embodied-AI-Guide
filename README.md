@@ -70,6 +70,7 @@ Advances in 3D pre-training and downstream tasks: a survey. [PDF](https://link.s
 <section id="control"></section>
 
 ## Control - 控制学
+PID控制：[CSDN](https://blog.csdn.net/name_longming/article/details/115093338)
 彻底搞懂阻抗控制、导纳控制、力位混合控制: [CSDN](https://blog.csdn.net/a735148617/article/details/108564836)<br>
 具身智能ROS1基础: [website](http://www.autolabor.com.cn/book/ROSTutorials/)<br>
 具身智能ROS2基础: [website](https://zhangzhiwei-zzw.github.io/ROS2%E5%AD%A6%E4%B9%A0/ROS2/)<br>
@@ -78,6 +79,8 @@ Advances in 3D pre-training and downstream tasks: a survey. [PDF](https://link.s
 斯坦福机器人学导论：[website](https://www.bilibili.com/video/BV17T421k78T/?spm_id_from=333.337.search-card.all.click)<br>
 台大机器人学导论：[website](https://www.bilibili.com/video/BV1Z34y1q7sZ/?spm_id_from=333.337.search-card.all.click)<br>
 共建全网最全具身智能知识库：[website](https://yv6uc1awtjc.feishu.cn/wiki/WPTzw9ON0ivIVrkLjVocNZh8nLf)<br>
+
+关于控制部分的学习，最好从实践出发！
 
 <section id="benchmarks"></section>
 
