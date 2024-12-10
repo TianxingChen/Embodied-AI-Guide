@@ -77,6 +77,7 @@ Advances in 3D pre-training and downstream tasks: a survey. [PDF](https://link.s
 动手实践Lerobot SO-100：[website](https://github.com/huggingface/lerobot/blob/main/examples/10_use_so100.md)
 斯坦福机器人学导论：[website](https://www.bilibili.com/video/BV17T421k78T/?spm_id_from=333.337.search-card.all.click)<br>
 台大机器人学导论：[website](https://www.bilibili.com/video/BV1Z34y1q7sZ/?spm_id_from=333.337.search-card.all.click)<br>
+共建全网最全具身智能知识库：[website](https://yv6uc1awtjc.feishu.cn/wiki/WPTzw9ON0ivIVrkLjVocNZh8nLf)<br>
 
 <section id="benchmarks"></section>
 
@@ -117,9 +118,14 @@ DeepTimber Robotics Innovations Community, 深木科研交流社区: [website](h
 此处仅列出各家公司个人认为的明星产品，并不代表该家公司仅有这些产品<br>
 | 公司 | 主营产品 | Others |
 |-------|------|------|
-| [松灵AgileX](https://www.agilex.ai/) | [pipper机械臂](https://www.agilex.ai/chassis/16)<br>移动底盘 | 价格亲民，面向教育科研
-| [宇树Unitree](https://www.unitree.com/cn) | [Go2机器狗](https://www.unitree.com/cn/go2)<br>[通用人形H1](https://www.unitree.com/cn/h1)<br>[通用人形G1](https://www.unitree.com/cn/g1)<br> | 很多人形机器人和机器狗的paper是使用宇树的产品
-| [方舟无限ARX](https://www.arx-x.com/?product/) | [X5机械臂](https://www.arx-x.com/?product/21.html)<br>[X7双臂平台](https://www.arx-x.com/?product/23.html)<br>[R5机械臂](https://www.arx-x.com/?product/22.html)  | 很多经典的工作都是用方舟无限的臂做的，eg. [aloha](https://mobile-aloha.github.io/cn.html)<br>[RoboTwin松灵底盘+方舟臂](https://github.com/TianxingChen/RoboTwi)
+| [松灵AgileX](https://www.agilex.ai/) | [pipper机械臂](https://www.agilex.ai/chassis/16)<br>移动底盘 | 面向教育科研
+| [宇树Unitree](https://www.unitree.com/cn) | [Go2机器狗](https://www.unitree.com/cn/go2)<br>[通用人形H1](https://www.unitree.com/cn/h1)<br>[通用人形G1](https://www.unitree.com/cn/g1)<br> | 许多产出使用宇树的机器人作为硬件基础
+| [方舟无限ARX](https://www.arx-x.com/?product/) | [X5机械臂](https://www.arx-x.com/?product/21.html)<br>[X7双臂平台](https://www.arx-x.com/?product/23.html)<br>[R5机械臂](https://www.arx-x.com/?product/22.html)  | 适合复现很多经典的工作，eg. [aloha](https://mobile-aloha.github.io/cn.html)<br>[RoboTwin松灵底盘+方舟臂](https://github.com/TianxingChen/RoboTwi)
+| [波士顿动力](https://bostondynamics.com/)  | [spot机器狗](https://bostondynamics.com/products/spot/)<br>[Atlas通用人形](https://bostondynamics.com/atlas/)  | 具身智能本体制造商，从液压驱动转向电机驱动 |
+| [灵心巧手]|  |  |
+| [灵巧智能DexRobot](https://www.dex-robot.com/)| [Dexhand 021灵巧手](https://www.dex-robot.com/productionDexhand) | 19自由度量产灵巧手 |
+| [银河通用](https://www.galbot.com/about) |  | 已完成多轮融资 |
+| [星海图Galaxea](http://galaxea.tech/) | [A1机械臂](http://galaxea.tech/Introducing_Galaxea_Robot/product_info/A1/#discover-more) |  |
 
 ## 🙏 Acknowledgement - 致谢
 本文转载/引用了大量博主的文章，我们对他们的知识分享表示感谢，引用列表如下：
