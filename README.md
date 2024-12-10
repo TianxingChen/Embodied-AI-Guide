@@ -74,6 +74,9 @@ Advances in 3D pre-training and downstream tasks: a survey. [PDF](https://link.s
 具身智能ROS1基础: [website](http://www.autolabor.com.cn/book/ROSTutorials/)<br>
 具身智能ROS2基础: [website](https://zhangzhiwei-zzw.github.io/ROS2%E5%AD%A6%E4%B9%A0/ROS2/)<br>
 机器人系统教材: [website](https://motion.cs.illinois.edu/RoboticSystems/)<br>
+动手实践Lerobot SO-100：[website](https://github.com/huggingface/lerobot/blob/main/examples/10_use_so100.md)
+斯坦福机器人学导论：[website](https://www.bilibili.com/video/BV17T421k78T/?spm_id_from=333.337.search-card.all.click)<br>
+台大机器人学导论：[website](https://www.bilibili.com/video/BV1Z34y1q7sZ/?spm_id_from=333.337.search-card.all.click)<br>
 
 <section id="benchmarks"></section>
 
