@@ -118,7 +118,6 @@ DeepTimber Robotics Innovations Community, 深木科研交流社区: [website](h
 
 ## Companies - 公司
 
-此处仅列出各家公司个人认为的明星产品，并不代表该家公司仅有这些产品<br>
 | 公司 | 主营产品 | Others |
 |-------|------|------|
 | [松灵AgileX](https://www.agilex.ai/) | [pipper机械臂](https://www.agilex.ai/chassis/16)<br>移动底盘 | 面向教育科研
