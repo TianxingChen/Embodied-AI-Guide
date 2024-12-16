@@ -134,7 +134,8 @@ DeepTimber Robotics Innovations Community, 深木科研交流社区: [website](h
 本文转载/引用了大量博主的文章，我们对他们的知识分享表示感谢，引用列表如下：
 | Since 2024 🌹 |  |  |  |  |
 |------|------|------|------|------|
-| [1] 知乎[穆尧](https://www.zhihu.com/people/mu-yao-12-34) | [2] 知乎[东林钟声](https://www.zhihu.com/people/dong-lin-zhong-sheng-76), Github[Yunlong Dong](https://github.com/yunlongdong) | [3] 知乎[强化学徒](https://www.zhihu.com/people/heda-he-28) | [4] 知乎[Biang哥](https://www.zhihu.com/people/qi-da-guang) | [5] OpenAI [Lilian Weng](https://lilianweng.github.io/) | [6] B站[木木具身](https://space.bilibili.com/350563565) |
+| [1] 知乎[穆尧](https://www.zhihu.com/people/mu-yao-12-34) | [2] 知乎[东林钟声](https://www.zhihu.com/people/dong-lin-zhong-sheng-76), Github[Yunlong Dong](https://github.com/yunlongdong) | [3] 知乎[强化学徒](https://www.zhihu.com/people/heda-he-28) | [4] 知乎[Biang哥](https://www.zhihu.com/people/qi-da-guang) | [5] OpenAI [Lilian Weng](https://lilianweng.github.io/) 
+| [6] B站[木木具身](https://space.bilibili.com/350563565) |  |  |  |  |
 
 ## 🏷️ License - 许可证
 This repository is released under the MIT license. See LICENSE for additional details.
