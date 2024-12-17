@@ -79,6 +79,7 @@ PID控制：[CSDN](https://blog.csdn.net/name_longming/article/details/115093338
 斯坦福机器人学导论：[website](https://www.bilibili.com/video/BV17T421k78T/?spm_id_from=333.337.search-card.all.click)<br>
 台大机器人学导论：[website](https://www.bilibili.com/video/BV1Z34y1q7sZ/?spm_id_from=333.337.search-card.all.click)<br>
 共建全网最全具身智能知识库：[website](https://yv6uc1awtjc.feishu.cn/wiki/WPTzw9ON0ivIVrkLjVocNZh8nLf)<br>
+ROS多传感器时间戳同步：[website](https://blog.csdn.net/qq_43495930/article/details/125649446)
 
 关于控制部分的学习，最好从实践出发！
 
