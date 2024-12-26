@@ -109,6 +109,8 @@ Robotics实验室总结 [4]: [zhihu_1](https://zhuanlan.zhihu.com/p/682671294?ut
 <section id="communities"></section>
 
 ## Communities - 社区
+> 以下部分资料引用自[7]
+
 DeepTimber Robotics Innovations Community, 深木科研交流社区: [website](https://gamma.app/public/DeepTimber-Robotics-Innovations-Community-A-Community-for-Multi-m-og0uv8mswl1a3q7?mode=doc)
 
 宇树具身智能社群: [website](https://www.unifolm.com/#/)
@@ -122,7 +124,7 @@ HuggingFace LeRobot (Europe, check the Discord): [website](https://github.com/hu
 K-scale labs (US, check the Discord): [website](https://kscale.dev/)
 
 
-以上部分资料引用自[7]
+
 
 <section id="companies"></section>
 
@@ -151,7 +153,7 @@ K-scale labs (US, check the Discord): [website](https://kscale.dev/)
 | Since 2024 🌹 |  |  |  |  |
 |------|------|------|------|------|
 | [1] 知乎[穆尧](https://www.zhihu.com/people/mu-yao-12-34) | [2] 知乎[东林钟声](https://www.zhihu.com/people/dong-lin-zhong-sheng-76), Github[Yunlong Dong](https://github.com/yunlongdong) | [3] 知乎[强化学徒](https://www.zhihu.com/people/heda-he-28) | [4] 知乎[Biang哥](https://www.zhihu.com/people/qi-da-guang) | [5] OpenAI [Lilian Weng](https://lilianweng.github.io/) 
-| [6] B站[木木具身](https://space.bilibili.com/350563565) | [7]  |  |  |  |
+| [6] B站[木木具身](https://space.bilibili.com/350563565) | [7] [Zhuoheng Li](https://github.com/StarCycle/EmbodiedAI-Reading-List-For-Lists?tab=readme-ov-file) |  |  |  |
 
 ## 🏷️ License - 许可证
 This repository is released under the MIT license. See LICENSE for additional details.
