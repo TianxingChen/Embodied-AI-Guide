@@ -11,6 +11,7 @@
   <ul>
     <li><a href="#start">Start Up - 从这里开始</a></li>
     <li><a href="#info">Useful Info - 有利于搭建认知的资料</a></li>
+    <li><a href="#paper_list">Paper Lists - 论文列表</a></li>
     <li><a href="#rl">Reinforcement Learning - 强化学习</a></li>
     <li><a href="#il">Imitation Learning - 模仿学习</a></li>
     <li><a href="#llm_robot">LLM for Robotics - 大模型在机器人学中的应用</a></li>
@@ -39,6 +40,15 @@
 AI领域值得关注的博主列表 [3]: [zhihu](https://zhuanlan.zhihu.com/p/682110383)
 
 Robotics实验室总结 [4]: [zhihu_1](https://zhuanlan.zhihu.com/p/682671294?utm_psn=1782122763157188608), [zhihu_2](https://zhuanlan.zhihu.com/p/682692024?utm_psn=1782122945184796672)
+
+<section id="paper_list"></section>
+
+## Paper Lists - 论文列表
+
+* Paper List For EmbodiedAI - Tianxing Chen: [https://github.com/TianxingChen/Paper-List-For-EmbodiedAI](https://github.com/TianxingChen/Paper-List-For-EmbodiedAI)
+* Awesome Humanoid Robot Learning - Yanjie Ze: [https://github.com/YanjieZe/awesome-humanoid-robot-learning](https://github.com/YanjieZe/awesome-humanoid-robot-learning)
+* Paper List - Yanjie Ze: [https://github.com/YanjieZe/Paper-List](https://github.com/YanjieZe/Paper-List)
+* Paper Reading List - DeepTimber Community: [https://github.com/DeepTimber-Robot-Lab/Paper-Reading-List](https://github.com/DeepTimber-Robot-Lab/Paper-Reading-List)
 
 
 <section id="rl"></section>
