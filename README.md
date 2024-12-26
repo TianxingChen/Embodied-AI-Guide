@@ -45,10 +45,11 @@
 
 ## Paper Lists - 论文列表
 
-* Paper List For EmbodiedAI - Tianxing Chen: [Repo](https://github.com/TianxingChen/Paper-List-For-EmbodiedAI)
-* Awesome Humanoid Robot Learning - Yanjie Ze: [Repo](https://github.com/YanjieZe/awesome-humanoid-robot-learning)
-* Paper List - Yanjie Ze: [Repo](https://github.com/YanjieZe/Paper-List)
-* Paper Reading List - DeepTimber Community: [Repo](https://github.com/DeepTimber-Robot-Lab/Paper-Reading-List)
+* Paper List For EmbodiedAI - Tianxing Chen: [repo](https://github.com/TianxingChen/Paper-List-For-EmbodiedAI)
+* Awesome Humanoid Robot Learning - Yanjie Ze: [repo](https://github.com/YanjieZe/awesome-humanoid-robot-learning)
+* Paper List - Yanjie Ze: [repo](https://github.com/YanjieZe/Paper-List)
+* Paper Reading List - DeepTimber Community: [repo](https://github.com/DeepTimber-Robot-Lab/Paper-Reading-List)
+* SOTA Paper Rating - Weiyang Jin: [website](https://waynejin0918.github.io/SOTA-paper-rating.io/)
 
 
 <section id="rl"></section>
