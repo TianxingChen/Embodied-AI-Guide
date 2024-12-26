@@ -111,9 +111,18 @@ Robotics实验室总结 [4]: [zhihu_1](https://zhuanlan.zhihu.com/p/682671294?ut
 ## Communities - 社区
 DeepTimber Robotics Innovations Community, 深木科研交流社区: [website](https://gamma.app/public/DeepTimber-Robotics-Innovations-Community-A-Community-for-Multi-m-og0uv8mswl1a3q7?mode=doc)
 
-<section id="acknowledgement"></section>
+宇树具身智能社群: [website](https://www.unifolm.com/#/)
 
-<a name="acknowledgement"></a>
+Simulately: Handy information and resources for physics simulators for robot learning research: [website](https://simulately.wiki/)
+
+DeepTimber-地瓜机器人社区: [website](https://cn.developer.d-robotics.cc/forumList?id=156&title=Deeptimber)
+
+HuggingFace LeRobot (Europe, check the Discord): [website](https://github.com/huggingface/lerobot)
+
+K-scale labs (US, check the Discord): [website](https://kscale.dev/)
+
+
+以上部分资料引用自[7]
 
 <section id="companies"></section>
 
@@ -130,15 +139,19 @@ DeepTimber Robotics Innovations Community, 深木科研交流社区: [website](h
 | [银河通用](https://www.galbot.com/about) |  | 已完成多轮融资 |
 | [星海图Galaxea](http://galaxea.tech/) | [A1机械臂](http://galaxea.tech/Introducing_Galaxea_Robot/product_info/A1/#discover-more) |  |
 | [World Labs](https://www.worldlabs.ai/) | | 专注于空间智能，致力于打造大型世界模型（LWM），以感知、生成并与 3D 世界进行交互。 [相关介绍](https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HEH5X2ejkAoWy1ZXj8DlZO_Y2Q7PsYX-3ID-rfr5&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2Fi58_yTFtt904haKezJgr1Q) |
-| [星动纪元](https://www.robotera.com) | [Star1人形](https://www.robotera.com/goods/1.html)<br> [XHAND1灵巧手](https://www.robotera.com/goods/2.html) | 由清华叉院AP陈建宇创建 |
+| [星动纪元](https://www.robotera.com) | [Star1人形](https://www.robotera.com/goods/1.html)<br> [XHAND1灵巧手](https://www.robotera.com/goods/2.html) | 由清华叉院陈建宇教授创建 |
 | [加速进化](https://boosterobotics.com/zh/) | [Booster T1人形](https://boosterobotics.com/zh/store/)|  |
+
+<section id="acknowledgement"></section>
+
+<a name="acknowledgement"></a>
 
 ## 🙏 Acknowledgement - 致谢
 本文转载/引用了大量博主的文章，我们对他们的知识分享表示感谢，引用列表如下：
 | Since 2024 🌹 |  |  |  |  |
 |------|------|------|------|------|
 | [1] 知乎[穆尧](https://www.zhihu.com/people/mu-yao-12-34) | [2] 知乎[东林钟声](https://www.zhihu.com/people/dong-lin-zhong-sheng-76), Github[Yunlong Dong](https://github.com/yunlongdong) | [3] 知乎[强化学徒](https://www.zhihu.com/people/heda-he-28) | [4] 知乎[Biang哥](https://www.zhihu.com/people/qi-da-guang) | [5] OpenAI [Lilian Weng](https://lilianweng.github.io/) 
-| [6] B站[木木具身](https://space.bilibili.com/350563565) |  |  |  |  |
+| [6] B站[木木具身](https://space.bilibili.com/350563565) | [7]  |  |  |  |
 
 ## 🏷️ License - 许可证
 This repository is released under the MIT license. See LICENSE for additional details.
