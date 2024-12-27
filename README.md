@@ -74,7 +74,6 @@
 * Robotics+LLM系列通过大语言模型控制机器人 [2]: [zhihu](https://zhuanlan.zhihu.com/p/668053911)<br>
 * PDDL-wiki: [website](https://planning.wiki/)<br>
 * An Introduction to PDDL: [PDF](https://www.cs.toronto.edu/~sheila/2542/s14/A1/introtopddl2.pdf)<br>
-* AI Agent from IBM: An artificial intelligence (AI) agent refers to a system or program that is capable of autonomously performing tasks on behalf of a user or another system by designing its workflow and utilizing available tools.<br>
 * Embodied Agent wiki: [website](https://en.wikipedia.org/wiki/Embodied_agent)<br>
 * Lilian Weng 个人博客 - AI Agent 系统综述 [5]: 中文: [website](https://mp.weixin.qq.com/s/Jb8HBbaKYXXxTSQOBsP5Wg) 英文: [website](https://lilianweng.github.io/posts/2023-06-23-agent/)<br>
 
