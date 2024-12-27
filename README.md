@@ -50,6 +50,7 @@
 * Paper List - Yanjie Ze: [repo](https://github.com/YanjieZe/Paper-List)
 * Paper Reading List - DeepTimber Community: [repo](https://github.com/DeepTimber-Robot-Lab/Paper-Reading-List)
 * SOTA Paper Rating - Weiyang Jin: [website](https://waynejin0918.github.io/SOTA-paper-rating.io/)
+* Awesome-LLM-Robotics: A repo contains a curative list of papers using Large Language/Multi-Modal Models for Robotics/RL: [website](https://github.com/GT-RIPL/Awesome-LLM-Robotics)
 
 
 <section id="rl"></section>
@@ -75,7 +76,6 @@
 * An Introduction to PDDL: [PDF](https://www.cs.toronto.edu/~sheila/2542/s14/A1/introtopddl2.pdf)<br>
 * AI Agent from IBM: An artificial intelligence (AI) agent refers to a system or program that is capable of autonomously performing tasks on behalf of a user or another system by designing its workflow and utilizing available tools.<br>
 * Embodied Agent wiki: [website](https://en.wikipedia.org/wiki/Embodied_agent)<br>
-* Awesome-LLM-Robotics: A repo contains a curative list of papers using Large Language/Multi-Modal Models for Robotics/RL. [website](https://github.com/GT-RIPL/Awesome-LLM-Robotics)<br>
 * Lilian Weng 个人博客 - AI Agent 系统综述 [5]: 中文: [website](https://mp.weixin.qq.com/s/Jb8HBbaKYXXxTSQOBsP5Wg) 英文: [website](https://lilianweng.github.io/posts/2023-06-23-agent/)<br>
 
 
@@ -136,8 +136,6 @@ Advances in 3D pre-training and downstream tasks: a survey. [PDF](https://link.s
 * HuggingFace LeRobot (Europe, check the Discord): [website](https://github.com/huggingface/lerobot)
 
 * K-scale labs (US, check the Discord): [website](https://kscale.dev/)
-
-
 
 
 <section id="companies"></section>
