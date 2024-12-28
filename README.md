@@ -83,6 +83,9 @@
 
 ## MLLM for Medical - 多模态大语言模型在医学中的应用
 * SkinGPT-4 for dermatological diagnosis: [website](https://www.nature.com/articles/s41467-024-50043-3)<br>
+* PneumoLLM for pneumoconiosis diagnosis: [website](https://www.sciencedirect.com/science/article/abs/pii/S1361841524001737)<br>
+* BiomedGPT: [website](https://github.com/taokz/BiomedGPT)<br>
+* LLAVA-Med: [website](https://github.com/microsoft/LLaVA-Med?tab=readme-ov-file)<br>
 
 <section id="3dv"></section>
 
