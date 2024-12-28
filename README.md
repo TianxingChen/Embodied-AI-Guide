@@ -2,7 +2,7 @@
 
 <p align="center">【 <a href="https://github.com/tianxingchen/Embodied-AI-Guide">Github Repo</a>, Latest Update: Dec 17, 2024 】 <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftianxingchen%2FEmbodied-AI-Guide&count_bg=%232B8DD9&title_bg=%237834C6&icon=github.svg&icon_color=%23E7E7E7&title=Page+Viewers&edge_flat=false"/></a></p>
 
-<p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (25' 港大PhD)</a>, <a href="https://yudezou.github.io/">邹誉德 (25' 上交-浦江实验室联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/27yw">叶雯 (25'  中科院自所PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫 (深大本科生)</a>, <a href="https://github.com/ShijiaPeng03">彭时佳 (深大本科生)</a>, <a href="https://github.com/gkw0010">王冠锟 (港中文-华为联培PhD)</a>, <a href="https://ngchikit.github.io">吴志杰 (港中文PhD)</a>.</p>
+<p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (25' 港大PhD)</a>, <a href="https://yudezou.github.io/">邹誉德 (25' 上交-浦江实验室联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/27yw">叶雯 (25'  中科院自所PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫 (深大本科生)</a>, <a href="https://github.com/ShijiaPeng03">彭时佳 (深大本科生)</a>, <a href="https://gkw0010.github.io/">王冠锟 (港中文-华为联培PhD)</a>, <a href="https://ngchikit.github.io">吴志杰 (港中文PhD)</a>.</p>
 
 > Embodied AI (具身智能)入门的路径以及useful信息的总结，期望是按照路线走完后，新手可以快速建立关于这个领域的认知，希望能帮助到各位入门具身智能的朋友，欢迎点Star、分享与提PR🌟~<br><a href="https://hits.seeyoufarm.com">
 
