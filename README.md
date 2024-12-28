@@ -15,6 +15,7 @@
     <li><a href="#rl">Reinforcement Learning - 强化学习</a></li>
     <li><a href="#il">Imitation Learning - 模仿学习</a></li>
     <li><a href="#llm_robot">LLM for Robotics - 大模型在机器人学中的应用</a></li>
+    <li><a href="#medical">MLLM for Medical - 多模态大语言模型在医学中的应用</a></li>
     <li><a href="#3dv">3D Vision - 三维视觉</a></li>
     <li><a href="#control">Control - 控制学</a></li>
     <li><a href="#benchmarks">Benchmarks & Simulators - 基准 & 仿真器</a></li>
@@ -77,6 +78,11 @@
 * Embodied Agent wiki: [website](https://en.wikipedia.org/wiki/Embodied_agent)<br>
 * Lilian Weng 个人博客 - AI Agent 系统综述 [5]: 中文: [website](https://mp.weixin.qq.com/s/Jb8HBbaKYXXxTSQOBsP5Wg) 英文: [website](https://lilianweng.github.io/posts/2023-06-23-agent/)<br>
 
+
+<section id="medical"></section>
+
+## MLLM for Medical - 多模态大语言模型在医学中的应用
+* SkinGPT-4 for dermatological diagnosis: [website](https://www.nature.com/articles/s41467-024-50043-3)<br>
 
 <section id="3dv"></section>
 
