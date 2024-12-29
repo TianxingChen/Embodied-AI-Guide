@@ -11,8 +11,12 @@
     <li><a href="#start">Start Up - 从这里开始</a></li>
     <li><a href="#info">Useful Info - 有利于搭建认知的资料</a></li>
     <li><a href="#paper_list">Paper Lists - 论文列表</a></li>
-    <li><a href="#rl">Reinforcement Learning - 强化学习</a></li>
-    <li><a href="#il">Imitation Learning - 模仿学习</a></li>
+    <li><a href="#robot-learning">Robot Learning - 机器人学习</a>
+      <ul>
+        <li><a href="#rl">Reinforcement Learning - 强化学习</a></li>
+        <li><a href="#il">Imitation Learning - 模仿学习</a></li>
+      </ul>
+    </li>
     <li><a href="#llm_robot">LLM for Robotics - 大模型在机器人学中的应用</a></li>
     <li><a href="#medical">MLLM for Medical - 多模态大语言模型在医学中的应用</a></li>
     <li><a href="#3dv">3D Vision - 三维视觉</a></li>
@@ -63,10 +67,13 @@
 * SOTA Paper Rating - Weiyang Jin: [website](https://waynejin0918.github.io/SOTA-paper-rating.io/)
 * Awesome-LLM-Robotics: A repo contains a curative list of papers using Large Language/Multi-Modal Models for Robotics/RL: [website](https://github.com/GT-RIPL/Awesome-LLM-Robotics)
 
+<section id="robot-learning"></section>
+
+## Robot Learning - 机器人学习
 
 <section id="rl"></section>
 
-## Reinforcement Learning - 强化学习
+### Reinforcement Learning - 强化学习
 * UCB CS285 深度强化学习: [website](https://rail.eecs.berkeley.edu/deeprlcourse/) | [youtube](https://www.youtube.com/playlist?list=PL_iWQOsE6TfVYGEGiAOMaOzzv41Jfm_Ps)<br>
 * 台湾大学李宏毅公开课: [bilibili](https://www.bilibili.com/video/BV1XP4y1d7Bk/?spm_id_from=333.337.search-card.all.click&vd_source=ab9cf5374617c2867aaea34af29b53c9)<br>
 * EasyRL - 蘑菇书: [website](https://datawhalechina.github.io/easy-rl/#/)<br>
@@ -75,7 +82,7 @@
 
 <section id="il"></section>
 
-## Imitation Learning - 模仿学习
+### Imitation Learning - 模仿学习
 * 模仿学习简洁教程 - 南京大学LAMDA: [PDF](https://www.lamda.nju.edu.cn/xut/Imitation_Learning.pdf)<br>
 * Supervised Policy Learning for Real Robots, RSS 2024 Workshop 教程：真实机器人的监督策略学习, [bilibili](https://www.bilibili.com/video/BV1Fx4y1s7if/?buvid=XY415384A771A6C681C9BEB3817566ED57724&is_story_h5=false&mid=ORgXkVzTHaOKTsml0RX5Gw%3D%3D&plat_id=240&share_from=ugc&share_medium=android&share_plat=android&share_source=WEIXIN&share_tag=s_i&spmid=dt.space-dt.0.0&timestamp=1721464513&unique_k=Cqj5d9J&up_id=2185804&vd_source=ab9cf5374617c2867aaea34af29b53c9)
 
