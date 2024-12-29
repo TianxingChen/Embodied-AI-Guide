@@ -3,7 +3,7 @@
 <p align="center"> </p>
 
 
-> Embodied AI（具身智能）入门的路径以及高质量信息的总结，期望是按照路线走完后，新手可以快速建立关于这个领域的认知，希望能帮助到各位入门具身智能的朋友，欢迎点Star、分享与提PR🌟~<br>【 <a href="https://github.com/tianxingchen/Embodied-AI-Guide">github.com/TianxingChen/Embodied-AI-Guide</a>, Latest Update: Dec 29, 2024 】<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftianxingchen%2FEmbodied-AI-Guide&count_bg=%232B8DD9&title_bg=%237834C6&icon=github.svg&icon_color=%23E7E7E7&title=Page+Viewers&edge_flat=false"/> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/TianxingChen/Embodied-AI-Guide">
+> Embodied AI（具身智能）入门的路径以及高质量信息的总结，期望是按照路线走完后，新手可以快速建立关于这个领域的认知，希望能帮助到各位入门具身智能的朋友，欢迎点Star、分享与提PR🌟~<br>【 <a href="https://github.com/tianxingchen/Embodied-AI-Guide">Embodied-AI-Guide</a>, Latest Update: Dec 29, 2024 】<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftianxingchen%2FEmbodied-AI-Guide&count_bg=%232B8DD9&title_bg=%237834C6&icon=github.svg&icon_color=%23E7E7E7&title=Page+Viewers&edge_flat=false"/> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/TianxingChen/Embodied-AI-Guide">
 
 
 
