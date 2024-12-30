@@ -143,7 +143,8 @@ Advances in 3D pre-training and downstream tasks: a survey. [PDF](https://link.s
 | [Sapien](https://sapien.ucsd.edu/) | [ManiSkill](https://maniskill.readthedocs.io/en/latest/index.html)<br>[RoboTwin](https://github.com/TianxingChen/RoboTwin) |
 | [CoppeliaSim](https://www.coppeliarobotics.com/) | [RLBench](https://github.com/stepjam/RLBench)<br>[PerAct2](https://bimanual.github.io/)<br>[COLOSSEUM](https://robot-colosseum.github.io/) |
 | [PyBullet](https://pybullet.org/wordpress/) | [Calvin](https://github.com/mees/calvin?tab=readme-ov-file)<br>[Ravens](https://github.com/google-research/ravens)<br>[VimaBench](https://github.com/vimalabs/VimaBench) |
-| [Genesis](https://genesis-embodied-ai.github.io/) ||
+| [Genesis](https://genesis-embodied-ai.github.io/) |
+| [Simulation Open Framework Architecture](https://github.com/sofa-framework/sofa) ||
 
 <section id="embodied-ai-4-x"></section>
 
