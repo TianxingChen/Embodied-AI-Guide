@@ -37,6 +37,8 @@
     <li><a href="#hardware">4. Hardware - 硬件</a>
       <ul>
         <li><a href="#control">4.1 Control - 控制学</a></li>  
+        <li><a href="#companies">4.2 Sensors - 传感器</a></li>
+        <li><a href="#companies">4.3 Companies - 公司</a></li>
       </ul>
     </li>
     <li><a href="#software">5. Software - 软件</a>
@@ -46,7 +48,6 @@
     </li>
     <li><a href="#paper_list">6. Paper Lists - 论文列表</a></li>
     <li><a href="#communities">7. Communities - 社区</a></li>
-    <li><a href="#companies">8. Companies - 公司</a></li>
     <li><a href="#acknowledgement">9. Acknowledgement - 致谢</a></li>
   </ul>
 </nav>
@@ -85,6 +86,10 @@
 * Robotics实验室总结 [4]: [zhihu_1](https://zhuanlan.zhihu.com/p/682671294?utm_psn=1782122763157188608), [zhihu_2](https://zhuanlan.zhihu.com/p/682692024?utm_psn=1782122945184796672)
 
 * 具身智能会投稿的较高质量会议与期刊：RSS, TRO, Science Robotics, IROS, ICRA, ICCV, ECCV, ICRA, AAAI, ICML, CVPR, NIPS, ICLR, IJRR, ACL等。
+
+* 斯坦福机器人学导论：[website](https://www.bilibili.com/video/BV17T421k78T/?spm_id_from=333.337.search-card.all.click)
+
+* 共建全网最全具身智能知识库 [6]: [website](https://yv6uc1awtjc.feishu.cn/wiki/WPTzw9ON0ivIVrkLjVocNZh8nLf)
 
 <section id="algorithm"></section>
 
@@ -220,10 +225,31 @@ Coming Soon...
 * 具身智能ROS2基础: [website](https://zhangzhiwei-zzw.github.io/ROS2%E5%AD%A6%E4%B9%A0/ROS2/)<br>
 * 机器人系统教材: [website](https://motion.cs.illinois.edu/RoboticSystems/)<br>
 * 动手实践Lerobot SO-100：[website](https://github.com/huggingface/lerobot/blob/main/examples/10_use_so100.md)<br>
-* 斯坦福机器人学导论：[website](https://www.bilibili.com/video/BV17T421k78T/?spm_id_from=333.337.search-card.all.click)<br>
-* 台大机器人学导论：[website](https://www.bilibili.com/video/BV1Z34y1q7sZ/?spm_id_from=333.337.search-card.all.click)<br>
-* 共建全网最全具身智能知识库：[website](https://yv6uc1awtjc.feishu.cn/wiki/WPTzw9ON0ivIVrkLjVocNZh8nLf)<br>
 * ROS多传感器时间戳同步：[website](https://blog.csdn.net/qq_43495930/article/details/125649446)
+
+
+<section id="sensors"></section>
+
+### 4.2 Sensors - 传感器
+Coming Soon ！
+
+<section id="companies"></section>
+
+### 4.3 Companies - 公司
+
+| 公司 | 主营产品 | Others |
+|-------|------|------|
+| [松灵AgileX](https://www.agilex.ai/) | [pipper机械臂](https://www.agilex.ai/chassis/16)<br>移动底盘 | 面向教育科研
+| [宇树Unitree](https://www.unitree.com/cn) | [Go2机器狗](https://www.unitree.com/cn/go2)<br>[通用人形H1](https://www.unitree.com/cn/h1)<br>[通用人形G1](https://www.unitree.com/cn/g1)<br> | 许多产出使用宇树的机器人作为硬件基础
+| [方舟无限ARX](https://www.arx-x.com/?product/) | [X5机械臂](https://www.arx-x.com/?product/21.html)<br>[X7双臂平台](https://www.arx-x.com/?product/23.html)<br>[R5机械臂](https://www.arx-x.com/?product/22.html)  | 适合复现很多经典的工作，eg. [aloha](https://mobile-aloha.github.io/cn.html)<br>[RoboTwin松灵底盘+方舟臂](https://github.com/TianxingChen/RoboTwi)
+| [波士顿动力](https://bostondynamics.com/)  | [spot机器狗](https://bostondynamics.com/products/spot/)<br>[Atlas通用人形](https://bostondynamics.com/atlas/)  | 具身智能本体制造商，从液压驱动转向电机驱动 |
+| [灵心巧手]|  |  |
+| [灵巧智能DexRobot](https://www.dex-robot.com/)| [Dexhand 021灵巧手](https://www.dex-robot.com/productionDexhand) | 19自由度量产灵巧手 |
+| [银河通用](https://www.galbot.com/about) |  | 已完成多轮融资 |
+| [星海图Galaxea](http://galaxea.tech/) | [A1机械臂](http://galaxea.tech/Introducing_Galaxea_Robot/product_info/A1/#discover-more) |  |
+| [World Labs](https://www.worldlabs.ai/) | | 专注于空间智能，致力于打造大型世界模型（LWM），以感知、生成并与 3D 世界进行交互。 [相关介绍](https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HEH5X2ejkAoWy1ZXj8DlZO_Y2Q7PsYX-3ID-rfr5&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2Fi58_yTFtt904haKezJgr1Q) |
+| [星动纪元](https://www.robotera.com) | [Star1人形](https://www.robotera.com/goods/1.html)<br> [XHAND1灵巧手](https://www.robotera.com/goods/2.html) | 由清华叉院陈建宇教授创建 |
+| [加速进化](https://boosterobotics.com/zh/) | [Booster T1人形](https://boosterobotics.com/zh/store/)|  |
 
 
 <section id="software"></section>
@@ -272,24 +298,6 @@ Coming Soon...
 
 * K-scale labs (US, check the Discord): [website](https://kscale.dev/)
 
-
-<section id="companies"></section>
-
-## 8. Companies - 公司
-
-| 公司 | 主营产品 | Others |
-|-------|------|------|
-| [松灵AgileX](https://www.agilex.ai/) | [pipper机械臂](https://www.agilex.ai/chassis/16)<br>移动底盘 | 面向教育科研
-| [宇树Unitree](https://www.unitree.com/cn) | [Go2机器狗](https://www.unitree.com/cn/go2)<br>[通用人形H1](https://www.unitree.com/cn/h1)<br>[通用人形G1](https://www.unitree.com/cn/g1)<br> | 许多产出使用宇树的机器人作为硬件基础
-| [方舟无限ARX](https://www.arx-x.com/?product/) | [X5机械臂](https://www.arx-x.com/?product/21.html)<br>[X7双臂平台](https://www.arx-x.com/?product/23.html)<br>[R5机械臂](https://www.arx-x.com/?product/22.html)  | 适合复现很多经典的工作，eg. [aloha](https://mobile-aloha.github.io/cn.html)<br>[RoboTwin松灵底盘+方舟臂](https://github.com/TianxingChen/RoboTwi)
-| [波士顿动力](https://bostondynamics.com/)  | [spot机器狗](https://bostondynamics.com/products/spot/)<br>[Atlas通用人形](https://bostondynamics.com/atlas/)  | 具身智能本体制造商，从液压驱动转向电机驱动 |
-| [灵心巧手]|  |  |
-| [灵巧智能DexRobot](https://www.dex-robot.com/)| [Dexhand 021灵巧手](https://www.dex-robot.com/productionDexhand) | 19自由度量产灵巧手 |
-| [银河通用](https://www.galbot.com/about) |  | 已完成多轮融资 |
-| [星海图Galaxea](http://galaxea.tech/) | [A1机械臂](http://galaxea.tech/Introducing_Galaxea_Robot/product_info/A1/#discover-more) |  |
-| [World Labs](https://www.worldlabs.ai/) | | 专注于空间智能，致力于打造大型世界模型（LWM），以感知、生成并与 3D 世界进行交互。 [相关介绍](https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HEH5X2ejkAoWy1ZXj8DlZO_Y2Q7PsYX-3ID-rfr5&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2Fi58_yTFtt904haKezJgr1Q) |
-| [星动纪元](https://www.robotera.com) | [Star1人形](https://www.robotera.com/goods/1.html)<br> [XHAND1灵巧手](https://www.robotera.com/goods/2.html) | 由清华叉院陈建宇教授创建 |
-| [加速进化](https://boosterobotics.com/zh/) | [Booster T1人形](https://boosterobotics.com/zh/store/)|  |
 
 <section id="acknowledgement"></section>
 
