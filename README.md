@@ -48,7 +48,7 @@
     </li>
     <li><a href="#paper_list">6. Paper Lists - 论文列表</a></li>
     <li><a href="#communities">7. Communities - 社区</a></li>
-    <li><a href="#acknowledgement">9. Acknowledgement - 致谢</a></li>
+    <li><a href="#acknowledgement">8. Acknowledgement - 致谢</a></li>
   </ul>
 </nav>
 
@@ -213,19 +213,26 @@ Coming Soon...
 
 ## 4. Hardware - 硬件
 
+《机器人学简介》, 来自[2]做的高质量教材: [PDF](./files/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E7%AE%80%E4%BB%8B.pdf)
+
+《机器人系统教材》: [website](https://motion.cs.illinois.edu/RoboticSystems/)
+
 <section id="control"></section>
 
 ### 4.1 Control - 控制学
 
 > 关于控制部分的学习，最好从实践出发！
 
-* PID控制：[CSDN](https://blog.csdn.net/name_longming/article/details/115093338)
-* 彻底搞懂阻抗控制、导纳控制、力位混合控制: [CSDN](https://blog.csdn.net/a735148617/article/details/108564836)<br>
-* 具身智能ROS1基础: [website](http://www.autolabor.com.cn/book/ROSTutorials/)<br>
-* 具身智能ROS2基础: [website](https://zhangzhiwei-zzw.github.io/ROS2%E5%AD%A6%E4%B9%A0/ROS2/)<br>
-* 机器人系统教材: [website](https://motion.cs.illinois.edu/RoboticSystems/)<br>
-* 动手实践Lerobot SO-100：[website](https://github.com/huggingface/lerobot/blob/main/examples/10_use_so100.md)<br>
+* ROS基础:
+  * 具身智能ROS1基础: [website](http://www.autolabor.com.cn/book/ROSTutorials/)<br>
+  * 具身智能ROS2基础: [website](https://zhangzhiwei-zzw.github.io/ROS2%E5%AD%A6%E4%B9%A0/ROS2/)<br>
+* 基础控制理论:
+  * PID控制：[CSDN](https://blog.csdn.net/name_longming/article/details/115093338)
+  * 彻底搞懂阻抗控制、导纳控制、力位混合控制: [CSDN](https://blog.csdn.net/a735148617/article/details/108564836)<br>
+
 * ROS多传感器时间戳同步：[website](https://blog.csdn.net/qq_43495930/article/details/125649446)
+
+* 动手实践LeRobot SO-100：[website](https://huggingface.co/lerobot)<br>
 
 
 <section id="sensors"></section>
@@ -303,7 +310,7 @@ Coming Soon ！
 
 <a name="acknowledgement"></a>
 
-## 9. Acknowledgement - 致谢
+## 8. Acknowledgement - 致谢
 本文转载/引用了一些博主的文章，我们对他们的知识分享表示感谢，引用列表如下：
 [1] 知乎 [穆尧](https://www.zhihu.com/people/mu-yao-12-34), [2] 知乎 [东林钟声](https://www.zhihu.com/people/dong-lin-zhong-sheng-76), Github [Yunlong Dong](https://github.com/yunlongdong), [3] 知乎 [强化学徒](https://www.zhihu.com/people/heda-he-28), [4] 知乎 [Biang哥](https://www.zhihu.com/people/qi-da-guang), [5] OpenAI [Lilian Weng](https://lilianweng.github.io/), [6] B站 [木木具身](https://space.bilibili.com/350563565), [7] Github [Zhuoheng Li](https://github.com/StarCycle/EmbodiedAI-Reading-List-For-Lists?tab=readme-ov-file), [8] 知乎 [Flood Sung](https://www.zhihu.com/people/flood-sung), [9] Github [Sida Peng](https://github.com/pengsida/learning_research)
 
