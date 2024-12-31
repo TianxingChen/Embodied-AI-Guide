@@ -20,7 +20,7 @@
     </li>
     <li><a href="#llm_robot">LLM for Robotics - 大模型在机器人学中的应用</a></li>
     <li><a href="#medical">MLLM for Medical - 多模态大语言模型在医学中的应用</a></li>
-    <li><a href="#cv"><a href="#control">Computer Vision - 计算机视觉</a>
+    <li><a href="#cv">Computer Vision - 计算机视觉</a>
       <ul>
         <li><a href="#3dv">3D Vision - 三维视觉</a></li>
       </ul>
