@@ -80,6 +80,7 @@
 
 * Robotics实验室总结 [4]: [zhihu_1](https://zhuanlan.zhihu.com/p/682671294?utm_psn=1782122763157188608), [zhihu_2](https://zhuanlan.zhihu.com/p/682692024?utm_psn=1782122945184796672)
 
+* 具身智能会投稿的较高质量会议与期刊：RSS, TRO, Science Robotics, IROS, ICRA, ICCV, ECCV, ICRA, AAAI, ICML, CVPR, NIPS, ICLR, IJRR, ACL等。
 
 <section id="algorithm"></section>
 
