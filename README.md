@@ -20,7 +20,11 @@
     </li>
     <li><a href="#llm_robot">LLM for Robotics - 大模型在机器人学中的应用</a></li>
     <li><a href="#medical">MLLM for Medical - 多模态大语言模型在医学中的应用</a></li>
-    <li><a href="#3dv">3D Vision - 三维视觉</a></li>
+    <li><a href="#cv"><a href="#control">Computer Vision - 计算机视觉</a>
+      <ul>
+        <li><a href="#3dv">3D Vision - 三维视觉</a></li>
+      </ul>
+    </li>
     <li><a href="#control">Control - 控制学</a></li>
     <li><a href="#benchmarks">Benchmarks & Simulators - 基准 & 仿真器</a></li>
     <li><a href="#embodied-ai-4-x">Embodied AI for X - 具身智能+X</a>
@@ -67,6 +71,8 @@
 
 ## Foundation Models - 基础模型
 
+> 以下是部分具身智能中常用的基础模型, 计算机视觉中发展的非常好的工具可以直接赋能具身智能的下游应用。
+
 * CLIP: [website](https://github.com/openai/CLIP), 来自OpenAI的研究, 最基本的应用是可以计算图像与语言描述的相似度, 中间层的视觉特征对各种下游应用非常有帮助。
 
 * DINO: [DINO repo](https://github.com/facebookresearch/dino), [DINO-v2 repo](https://github.com/facebookresearch/dinov2), 来自Meta的研究, 可以提供图像的高层视觉特征, 对corresponding之类的信息提取非常有帮助, 比如不同个体之间的鼻子都有类似的几何特征, 这个时候不同图像中关于不同鼻子的视觉特征值可能是近似的。
@@ -101,17 +107,21 @@
 <section id="rl"></section>
 
 ### Reinforcement Learning - 强化学习
-* UCB CS285 深度强化学习: [website](https://rail.eecs.berkeley.edu/deeprlcourse/) | [youtube](https://www.youtube.com/playlist?list=PL_iWQOsE6TfVYGEGiAOMaOzzv41Jfm_Ps)<br>
-* 台湾大学李宏毅公开课: [bilibili](https://www.bilibili.com/video/BV1XP4y1d7Bk/?spm_id_from=333.337.search-card.all.click&vd_source=ab9cf5374617c2867aaea34af29b53c9)<br>
-* EasyRL - 蘑菇书: [website](https://datawhalechina.github.io/easy-rl/#/)<br>
-* 强化学习的数学原理 - 西湖大学赵世钰: [bilibili](https://space.bilibili.com/2044042934/channel/collectiondetail?sid=748665)<br>
-* 实践[gymnasium](https://gymnasium.farama.org/)，可以尝试一下把玩一下登月着陆等经典强化学习场景，思考+动手，观察阶段agent的表现并分析，有助于深入理解强化学习
+* 推荐直接跟着李宏毅老师一套走: bilibili上课+刷蘑菇书巩固+gymnasium动手实践, 重点了解一下PPO。
+  * 台湾大学李宏毅公开课: [bilibili](https://www.bilibili.com/video/BV1XP4y1d7Bk/?spm_id_from=333.337.search-card.all.click&vd_source=ab9cf5374617c2867aaea34af29b53c9)<br>
+  * EasyRL - 蘑菇书: [website](https://datawhalechina.github.io/easy-rl/#/), 基本是配套李宏毅老师的课程<br>
+  * 实践[gymnasium](https://gymnasium.farama.org/)，可以尝试一下把玩一下登月着陆等经典强化学习场景，思考+动手，观察阶段agent的表现并分析，有助于深入理解强化学习
+<!-- * UCB CS285 深度强化学习: [website](https://rail.eecs.berkeley.edu/deeprlcourse/) | [youtube](https://www.youtube.com/playlist?list=PL_iWQOsE6TfVYGEGiAOMaOzzv41Jfm_Ps)<br> -->
+<!-- * 强化学习的数学原理 - 西湖大学赵世钰: [bilibili](https://space.bilibili.com/2044042934/channel/collectiondetail?sid=748665)<br> -->
 
 <section id="il"></section>
 
 ### Imitation Learning - 模仿学习
+
 * 模仿学习简洁教程 - 南京大学LAMDA: [PDF](https://www.lamda.nju.edu.cn/xut/Imitation_Learning.pdf)<br>
 * Supervised Policy Learning for Real Robots, RSS 2024 Workshop 教程：真实机器人的监督策略学习, [bilibili](https://www.bilibili.com/video/BV1Fx4y1s7if/?buvid=XY415384A771A6C681C9BEB3817566ED57724&is_story_h5=false&mid=ORgXkVzTHaOKTsml0RX5Gw%3D%3D&plat_id=240&share_from=ugc&share_medium=android&share_plat=android&share_source=WEIXIN&share_tag=s_i&spmid=dt.space-dt.0.0&timestamp=1721464513&unique_k=Cqj5d9J&up_id=2185804&vd_source=ab9cf5374617c2867aaea34af29b53c9)
+
+* 实践[RoboTwin]()
 
 <section id="llm_robot"></section>
 
@@ -131,17 +141,25 @@
 * BiomedGPT: [website](https://github.com/taokz/BiomedGPT)<br>
 * LLAVA-Med: [website](https://github.com/microsoft/LLaVA-Med?tab=readme-ov-file)<br>
 
-<section id="3dv"></section>
 
-## 3D Vision - 三维视觉
-三维视觉导论 - Andreas Geiger: [website](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/computer-vision/)<br>
-重点是完成课程里面的作业。<br>
-GAMES203 - 三维重建和理解: [bilibili](https://www.bilibili.com/video/BV1pw411d7aS/?share_source=copy_web&vd_source=0b7603f37af6d369a97df34525b149be)<br>
+<section id="cv"></section>
+
+## Computer Vision - 计算机视觉
+
 计算机视觉课程: [website](https://cs231n.stanford.edu/schedule.html)<br>
 该课程对深度学习在计算机视觉的应用有较为全面的介绍。因为已经在具体实现某个论文的算法了，所以这个阶段可以不用做作业，只需要看课程视频和课程讲义即可，不然日常时间可能不够分配。<br>
-Advances in 3D pre-training and downstream tasks: a survey. [PDF](https://link.springer.com/content/pdf/10.1007/s44336-024-00007-4.pdf)<br>
 
-### 3DGS
+<section id="3dv"></section>
+
+### 3D Vision - 三维视觉
+* 三维视觉导论 - Andreas Geiger: [website](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/computer-vision/)<br>
+* 重点是完成课程里面的作业。<br>
+  * GAMES203 - 三维重建和理解: [bilibili](https://www.bilibili.com/video/BV1pw411d7aS/?share_source=copy_web&vd_source=0b7603f37af6d369a97df34525b149be)<br>
+  * Advances in 3D pre-training and downstream tasks: a survey. [PDF](https://link.springer.com/content/pdf/10.1007/s44336-024-00007-4.pdf)<br>
+
+
+
+#### 3DGS
 3D Gaussian Splatting原理速通: [bilibili](https://www.bilibili.com/video/BV11e411n79b/?spm_id_from=333.788&vd_source=ab9cf5374617c2867aaea34af29b53c9)
 
 <section id="control"></section>
