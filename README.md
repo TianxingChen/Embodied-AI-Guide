@@ -179,18 +179,18 @@
 * GAMES203 - 三维重建和理解: [bilibili](https://www.bilibili.com/video/BV1pw411d7aS/?share_source=copy_web&vd_source=0b7603f37af6d369a97df34525b149be)<br>
 
 第二阶段：细分方向，追求深度，上手一些项目<br>
-* 如果对传统图形学感兴趣，可以看下面两门（闫令琪老师开的课，讲得特别好）<br>
-* GAMES101 - 现代计算机图形学入门: [website](https://games-cn.org/intro-graphics/)<br>
-* GAMES202 - 高质量实时渲染: [website](https://sites.cs.ucsb.edu/~lingqi/teaching/games202.html)<br>
-* 如果对motion synthesis/computer animation感兴趣，可以看
-* GAMES105 - 计算机角色动画基础: [website](https://games-105.github.io/)<br>
-* 如何对三维重建感兴趣，可以看下面两门
-* Nerf原理代码讲解: [bilibili](https://www.bilibili.com/video/BV1CC411V7oq/?spm_id_from=333.337.search-card.all.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
-* 3DGS原理代码讲解: [bilibili](https://www.bilibili.com/video/BV1zi421v7Dr?spm_id_from=333.788.recommend_more_video.-1&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
-* 三维预训练最新综述
-* Advances in 3D pre-training and downstream tasks: a survey. [PDF](https://link.springer.com/content/pdf/10.1007/s44336-024-00007-4.pdf)<br>
-* 3DGS在具身上的综述
-* 3D Gaussian Splatting in Robotics: A Survey. [PDF](https://arxiv.org/pdf/2410.12262v2)<br>
+* 如果对传统图形学感兴趣，可以看下面两门（闫令琪老师开的课，讲得特别好）:<br>
+  * GAMES101 - 现代计算机图形学入门: [website](https://games-cn.org/intro-graphics/)<br>
+  * GAMES202 - 高质量实时渲染: [website](https://sites.cs.ucsb.edu/~lingqi/teaching/games202.html)<br>
+* 如果对motion synthesis/computer animation感兴趣，可以看:
+  * GAMES105 - 计算机角色动画基础: [website](https://games-105.github.io/)<br>
+* 如何对三维重建感兴趣，可以看下面两门:
+  * Nerf原理代码讲解: [bilibili](https://www.bilibili.com/video/BV1CC411V7oq/?spm_id_from=333.337.search-card.all.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
+  * 3DGS原理代码讲解: [bilibili](https://www.bilibili.com/video/BV1zi421v7Dr?spm_id_from=333.788.recommend_more_video.-1&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
+* 三维预训练最新综述:
+  * Advances in 3D pre-training and downstream tasks: a survey. [PDF](https://link.springer.com/content/pdf/10.1007/s44336-024-00007-4.pdf)<br>
+* 3DGS在具身上的综述:
+  * 3D Gaussian Splatting in Robotics: A Survey. [PDF](https://arxiv.org/pdf/2410.12262v2)<br>
 
 
 <section id="embodied-ai-4-x"></section>
