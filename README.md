@@ -29,7 +29,7 @@
         </li>
         <li><a href="#embodied-ai-4-x">3.6 Embodied AI for X - 具身智能+X</a>
           <ul>
-            <li>Embodied AI for Healthcare - 具身智能+医疗</li>
+            <li><a href="#medical">3.6.1 Embodied AI for Healthcare - 具身智能+医疗</a></li>
           </ul>
         </li>
       </ul>
@@ -151,7 +151,7 @@
 
 #### 3.3.2 Imitation Learning - 模仿学习
 
-* 模仿学习简洁教程 - 南京大学LAMDA: [PDF](https://www.lamda.nju.edu.cn/xut/Imitation_Learning.pdf)<br>
+* 《模仿学习简洁教程》 - 南京大学LAMDA: [PDF](https://www.lamda.nju.edu.cn/xut/Imitation_Learning.pdf)<br>
 * Supervised Policy Learning for Real Robots, RSS 2024 Workshop 教程：真实机器人的监督策略学习, [bilibili](https://www.bilibili.com/video/BV1Fx4y1s7if/?buvid=XY415384A771A6C681C9BEB3817566ED57724&is_story_h5=false&mid=ORgXkVzTHaOKTsml0RX5Gw%3D%3D&plat_id=240&share_from=ugc&share_medium=android&share_plat=android&share_source=WEIXIN&share_tag=s_i&spmid=dt.space-dt.0.0&timestamp=1721464513&unique_k=Cqj5d9J&up_id=2185804&vd_source=ab9cf5374617c2867aaea34af29b53c9)
 
 <!-- * 实践[RoboTwin]() -->
@@ -160,18 +160,8 @@
 
 ### 3.4 LLM for Robotics - 大模型在机器人学中的应用
 * Robotics+LLM系列通过大语言模型控制机器人 [2]: [zhihu](https://zhuanlan.zhihu.com/p/668053911)<br>
-* PDDL-wiki: [website](https://planning.wiki/)<br>
-* An Introduction to PDDL: [PDF](https://www.cs.toronto.edu/~sheila/2542/s14/A1/introtopddl2.pdf)<br>
 * Embodied Agent wiki: [website](https://en.wikipedia.org/wiki/Embodied_agent)<br>
 * Lilian Weng 个人博客 - AI Agent 系统综述 [5]: 中文: [website](https://mp.weixin.qq.com/s/Jb8HBbaKYXXxTSQOBsP5Wg) 英文: [website](https://lilianweng.github.io/posts/2023-06-23-agent/)<br>
-
-<section id="medical"></section>
-
-## MLLM for Medical - 多模态大语言模型在医学中的应用
-* SkinGPT-4 for dermatological diagnosis: [website](https://www.nature.com/articles/s41467-024-50043-3)<br>
-* PneumoLLM for pneumoconiosis diagnosis: [website](https://www.sciencedirect.com/science/article/abs/pii/S1361841524001737)<br>
-* BiomedGPT: [website](https://github.com/taokz/BiomedGPT)<br>
-* LLAVA-Med: [website](https://github.com/microsoft/LLaVA-Med?tab=readme-ov-file)<br>
 
 
 <section id="cv"></section>
@@ -206,7 +196,18 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 ### 3.6 Embodied AI for X - 具身智能+X
 
+<section id="medical"></section>
+
 #### 3.6.1 Embodied AI for Healthcare - 具身智能+医疗
+
+
+
+##### 3.6.1.1 MLLM for Medical - 多模态大语言模型在医学中的应用
+* SkinGPT-4 for dermatological diagnosis: [website](https://www.nature.com/articles/s41467-024-50043-3)<br>
+* PneumoLLM for pneumoconiosis diagnosis: [website](https://www.sciencedirect.com/science/article/abs/pii/S1361841524001737)<br>
+* BiomedGPT: [website](https://github.com/taokz/BiomedGPT)<br>
+* LLAVA-Med: [website](https://github.com/microsoft/LLaVA-Med?tab=readme-ov-file)<br>
+
 Coming Soon...
 
 <section id="hardware"></section>
