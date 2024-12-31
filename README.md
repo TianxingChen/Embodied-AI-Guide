@@ -156,11 +156,12 @@
 <section id="3dv"></section>
 
 ### 3D Vision - 三维视觉
-第一阶段：学习最基础的3DV知识，追求广度，了解一些基础的概念和算法
+第一阶段：学习最基础的3DV知识，追求广度，了解一些基础的概念和算法<br>
 * 三维视觉导论 - Andreas Geiger: [website](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/computer-vision/) （重点是完成课程里面的作业） <br>
 * GAMES203 - 三维重建和理解: [bilibili](https://www.bilibili.com/video/BV1pw411d7aS/?share_source=copy_web&vd_source=0b7603f37af6d369a97df34525b149be)<br>
-第二阶段：细分方向，追求深度，上手一些项目
-* 如果对传统图形学感兴趣，可以看下面两门（闫令琪老师开的课，讲得特别好）
+
+第二阶段：细分方向，追求深度，上手一些项目<br>
+* 如果对传统图形学感兴趣，可以看下面两门（闫令琪老师开的课，讲得特别好）<br>
 * GAMES101 - 现代计算机图形学入门: [website](https://games-cn.org/intro-graphics/)<br>
 * GAMES202 - 高质量实时渲染: [website](https://sites.cs.ucsb.edu/~lingqi/teaching/games202.html)<br>
 * 如果对motion synthesis/computer animation感兴趣，可以看
