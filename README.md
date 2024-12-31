@@ -11,6 +11,8 @@
     <li><a href="#start">Start Up - 从这里开始</a></li>
     <li><a href="#info">Useful Info - 有利于搭建认知的资料</a></li>
     <li><a href="#paper_list">Paper Lists - 论文列表</a></li>
+    <li><a href="#foundation-models">Foundation Models - 基础模型</a></li>
+    <li><a href="#common-tools">Common Tools - 常用工具</a></li>
     <li><a href="#robot-learning">Robot Learning - 机器人学习</a>
       <ul>
         <li><a href="#rl">Reinforcement Learning - 强化学习</a></li>
@@ -29,7 +31,7 @@
     </li>
     <li><a href="#communities">Communities - 社区</a></li>
     <li><a href="#companies">Companies - 公司</a></li>
-    <li><a href="#acknowledgement">🙏 Acknowledgement - 致谢</a></li>
+    <li><a href="#acknowledgement">Acknowledgement - 致谢</a></li>
   </ul>
 </nav>
 
@@ -37,9 +39,16 @@
 
 ## Start Up - 从这里开始
 
+> 具身智能是指一种基于物理身体进行感知和行动的智能系统，其通过智能体与环境的交互获取信息、理解问题、做出决策并实现行动，从而产生智能行为和适应性。
+
+### How - 如何食用这份指南
+
+我们希望的是帮助新人快速建立领域认知，所以设计理念是：**简要**介绍目前具身智能涉及到的主要技术，让大家知道不同的技术能够解决什么问题，未来想要深入发展的时候能够有头绪。
+
+### About us - 关于我们
 我们是一个由具身初学者组成的团队，希望能够通过我们自己的学习经验，为后来者提供一些帮助，加快具身智能的普及。欢迎更多朋友加入我们的项目，也很欢迎交友、学术合作，有任何问题，可以联系邮箱`chentianxing2002@gmail.com`。
 
-<p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (25' 港大PhD)</a>, <a href="https://yudezou.github.io/">邹誉德 (25' 上交-浦江实验室联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/27yw">叶雯 (25' 中科院自所PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫 (深大本科生)</a>, <a href="https://github.com/ShijiaPeng03">彭时佳 (深大本科生)</a>, <a href="https://gkw0010.github.io/">王冠锟 (港中文-华为联培PhD)</a>, <a href="https://ngchikit.github.io">吴志杰 (港中文PhD)</a>, <a href="https://github.com/ShijiaPeng03">朱宇飞 (25' 上科大Ms)</a>.</p>
+<p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (25' 港大PhD)</a>, <a href="https://yudezou.github.io/">邹誉德 (25' 上交-浦江实验室联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/27yw">叶雯 (25' 中科院自所PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫 (深大本科生)</a>, <a href="https://github.com/ShijiaPeng03">彭时佳 (深大本科生)</a>, <a href="https://gkw0010.github.io/">王冠锟 (港中文-华为联培PhD)</a>, <a href="https://ngchikit.github.io">吴志杰 (港中文PhD)</a>, <a href="https://github.com/csyufei">朱宇飞 (25' 上科大Ms)</a>.</p>
 <a href="https://github.com/TianxingChen/Embodied-AI-Guide/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=TianxingChen/Embodied-AI-Guide" />
 </a>
@@ -47,8 +56,6 @@
 <section id="info"></section>
 
 ## Useful Info - 有利于搭建认知的资料
-
-> 具身智能是指一种基于物理身体进行感知和行动的智能系统，其通过智能体与环境的交互获取信息、理解问题、做出决策并实现行动，从而产生智能行为和适应性。
 
 * 具身智能基础技术路线-YunlongDong [2]: [PDF](./files/具身智能基础技术路线-YunlongDong.pdf), [bilibili](https://www.bilibili.com/video/BV1d5ukedEsi/?buvid=XXCD799C01878A6CFDECF3FB4427E2F070877&from_spmid=default-value&is_story_h5=false&mid=iWFclAyh36UYMh2G6ZcsDw%3D%3D&p=1&plat_id=114&share_from=ugc&share_medium=android&share_plat=android&share_session_id=9c0dccf5-ec0b-4369-8b89-ff1d848467ee&share_source=WEIXIN&share_tag=s_i&spmid=united.player-video-detail.0.0&timestamp=1716466406&unique_k=Q0CaIUj&up_id=249218043)
 
@@ -60,16 +67,43 @@
 
 ## Paper Lists - 论文列表
 
-* Paper List For EmbodiedAI - Tianxing Chen: [repo](https://github.com/TianxingChen/Paper-List-For-EmbodiedAI)
 * Awesome Humanoid Robot Learning - Yanjie Ze: [repo](https://github.com/YanjieZe/awesome-humanoid-robot-learning)
-* Paper List - Yanjie Ze: [repo](https://github.com/YanjieZe/Paper-List)
 * Paper Reading List - DeepTimber Community: [repo](https://github.com/DeepTimber-Robot-Lab/Paper-Reading-List)
+* Paper List - Yanjie Ze: [repo](https://github.com/YanjieZe/Paper-List)
+* Paper List For EmbodiedAI - Tianxing Chen: [repo](https://github.com/TianxingChen/Paper-List-For-EmbodiedAI)
 * SOTA Paper Rating - Weiyang Jin: [website](https://waynejin0918.github.io/SOTA-paper-rating.io/)
 * Awesome-LLM-Robotics: A repo contains a curative list of papers using Large Language/Multi-Modal Models for Robotics/RL: [website](https://github.com/GT-RIPL/Awesome-LLM-Robotics)
+
+<section id="foundation-models"></section>
+
+## Foundation Models - 基础模型
+
+* DINO: [DINO Repo](https://github.com/facebookresearch/dino), [DINO-v2 Repo](https://github.com/facebookresearch/dinov2), 来自Meta的研究, 可以提供图像的高层视觉特征, 对corresponding之类的信息提取非常有帮助, 比如不同个体之间的鼻子都有类似的几何特征, 这个时候不同图像中关于不同鼻子的视觉特征值可能是近似的。
+
+* SAM: [website](https://segment-anything.com/), 来自Meta的研究, 可以基于提示点或者框, 对图像的物体进行分割。
+
+* SAM2: [website](https://ai.meta.com/sam2/), 来自Meta的研究, SAM的升级版, 可以在视频层面持续对物体进行分割追踪。
+
+* Grounding-DINO: [Repo](https://github.com/IDEA-Research/GroundingDINO), [在线尝试](https://deepdataspace.com/playground/grounding_dino), **这个DINO与上面Meta的DINO没有关系**, 是一个由IDEA研究院（做了很多不错开源项目的机构）开发集成的图像目标检测的框架，很多时候需要对目标物体进行检测的时候可以考虑使用。
+
+* Grounded-SAM: [Repo](https://github.com/IDEA-Research/Grounded-SAM-2), 比上面多了一个分割功能, 也就是支持检测后分割, 也有很多下游应用, 具体可以翻一下README。
+
+* FoundationPose: [Website](https://github.com/NVlabs/FoundationPose), 来自Nvidia的研究, 物体姿态追踪模型。
+
+<section id="common-tools"></section>
+
+## Common Tools - 常用工具
+
+> 这个部分是关于具身中常用技巧的分享
+
+* 点云降采样: [zhihu](https://zhuanlan.zhihu.com/p/558683732?utm_campaign=shareopn&utm_medium=social&utm_psn=1772067996070236160&utm_source=wechat_session), 包括随机降采样、均匀降采样、最远点降采样、法线空间降采样等，需要了解清楚每一种降采样的优劣，这个技巧的选择对于3D应用来说是至关重要的。
 
 <section id="robot-learning"></section>
 
 ## Robot Learning - 机器人学习
+
+机器人学习 Robot Learning 的发展: [zhihu](https://zhuanlan.zhihu.com/p/26988866)
+
 
 <section id="rl"></section>
 
@@ -195,7 +229,7 @@ Coming Soon...
 
 ## 🙏 Acknowledgement - 致谢
 本文转载/引用了一些博主的文章，我们对他们的知识分享表示感谢，引用列表如下：
-[1] 知乎 [穆尧](https://www.zhihu.com/people/mu-yao-12-34), [2] 知乎 [东林钟声](https://www.zhihu.com/people/dong-lin-zhong-sheng-76), Github [Yunlong Dong](https://github.com/yunlongdong), [3] 知乎 [强化学徒](https://www.zhihu.com/people/heda-he-28), [4] 知乎 [Biang哥](https://www.zhihu.com/people/qi-da-guang), [5] OpenAI [Lilian Weng](https://lilianweng.github.io/), [6] B站 [木木具身](https://space.bilibili.com/350563565), [7] Github [Zhuoheng Li](https://github.com/StarCycle/EmbodiedAI-Reading-List-For-Lists?tab=readme-ov-file)
+[1] 知乎 [穆尧](https://www.zhihu.com/people/mu-yao-12-34), [2] 知乎 [东林钟声](https://www.zhihu.com/people/dong-lin-zhong-sheng-76), Github [Yunlong Dong](https://github.com/yunlongdong), [3] 知乎 [强化学徒](https://www.zhihu.com/people/heda-he-28), [4] 知乎 [Biang哥](https://www.zhihu.com/people/qi-da-guang), [5] OpenAI [Lilian Weng](https://lilianweng.github.io/), [6] B站 [木木具身](https://space.bilibili.com/350563565), [7] Github [Zhuoheng Li](https://github.com/StarCycle/EmbodiedAI-Reading-List-For-Lists?tab=readme-ov-file), [8] 知乎 [Flood Sung](https://www.zhihu.com/people/flood-sung)
 
 ## 🏷️ License - 许可证
 This repository is released under the MIT license. See LICENSE for additional details.
