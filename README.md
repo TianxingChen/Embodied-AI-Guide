@@ -166,6 +166,7 @@
 * GAMES202 - 高质量实时渲染: [website](https://sites.cs.ucsb.edu/~lingqi/teaching/games202.html)<br>
 * 如果对motion synthesis/computer animation感兴趣，可以看
 * GAMES105 - 计算机角色动画基础: [website](https://games-105.github.io/)<br>
+* 如何对三维重建感兴趣，可以看下面两门
 * Nerf原理代码讲解: [bilibili](https://www.bilibili.com/video/BV1CC411V7oq/?spm_id_from=333.337.search-card.all.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
 * 3DGS原理代码讲解: [bilibili](https://www.bilibili.com/video/BV1zi421v7Dr?spm_id_from=333.788.recommend_more_video.-1&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
 
