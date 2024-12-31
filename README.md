@@ -152,11 +152,11 @@
 <section id="3dv"></section>
 
 ### 3D Vision - 三维视觉
-* 三维视觉导论 - Andreas Geiger: [website](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/computer-vision/)<br>
-* 重点是完成课程里面的作业。<br>
+* 三维视觉导论 - Andreas Geiger: [website](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/computer-vision/) （重点是完成课程里面的作业） <br>
 * GAMES203 - 三维重建和理解: [bilibili](https://www.bilibili.com/video/BV1pw411d7aS/?share_source=copy_web&vd_source=0b7603f37af6d369a97df34525b149be)<br>
+* 如何对传统图形学感兴趣，可以看下面两门（闫令琪老师开的课，讲得特别好）
 * GAMES101 - 现代计算机图形学入门: [website](https://games-cn.org/intro-graphics/)<br>
-* GAMES202 - 高质量实时渲染: [bilibili](https://www.bilibili.com/video/BV1YK4y1T7yY/?vd_source=930ef08bfb2ff0db87ec20bf72a99855)<br>
+* GAMES202 - 高质量实时渲染: [website](https://sites.cs.ucsb.edu/~lingqi/teaching/games202.html)<br>
 * Advances in 3D pre-training and downstream tasks: a survey. [PDF](https://link.springer.com/content/pdf/10.1007/s44336-024-00007-4.pdf)<br>
 
 
