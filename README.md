@@ -225,15 +225,16 @@ Coming Soon...
 > 关于控制部分的学习，最好从实践出发！
 
 * ROS基础:
-  * 具身智能ROS1基础: [website](http://www.autolabor.com.cn/book/ROSTutorials/)<br>
-  * 具身智能ROS2基础: [website](https://zhangzhiwei-zzw.github.io/ROS2%E5%AD%A6%E4%B9%A0/ROS2/)<br>
+  * 具身智能ROS1基础: [website](http://www.autolabor.com.cn/book/ROSTutorials/)
+  * 具身智能ROS2基础: [website](https://zhangzhiwei-zzw.github.io/ROS2%E5%AD%A6%E4%B9%A0/ROS2/)
+  
 * 基础控制理论:
   * PID控制：[CSDN](https://blog.csdn.net/name_longming/article/details/115093338)
-  * 彻底搞懂阻抗控制、导纳控制、力位混合控制: [CSDN](https://blog.csdn.net/a735148617/article/details/108564836)<br>
+  * 彻底搞懂阻抗控制、导纳控制、力位混合控制: [CSDN](https://blog.csdn.net/a735148617/article/details/108564836)
 
 * ROS多传感器时间戳同步：[website](https://blog.csdn.net/qq_43495930/article/details/125649446)
 
-* 动手实践LeRobot SO-100：[website](https://huggingface.co/lerobot)<br>
+* 动手实践LeRobot SO-100：[website](https://huggingface.co/lerobot)
 
 
 <section id="sensors"></section>
