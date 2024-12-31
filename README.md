@@ -168,8 +168,7 @@
 
 ### 3.5 Computer Vision - 计算机视觉
 
-计算机视觉课程: [website](https://cs231n.stanford.edu/schedule.html)<br>
-该课程对深度学习在计算机视觉的应用有较为全面的介绍。因为已经在具体实现某个论文的算法了，所以这个阶段可以不用做作业，只需要看课程视频和课程讲义即可。<br>
+CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/schedule.html), 该课程对深度学习在计算机视觉的应用有较为全面的介绍。因为已经在具体实现某个论文的算法了，所以这个阶段可以不用做作业，只需要看课程视频和课程讲义即可。<br>
 
 <section id="3dv"></section>
 
