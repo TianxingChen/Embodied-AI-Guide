@@ -3,14 +3,13 @@
 <p align="center"> </p>
 
 
-> Embodied AI（具身智能）入门的路径以及高质量信息的总结，期望是按照路线走完后，新手可以快速建立关于这个领域的认知，希望能帮助到各位入门具身智能的朋友，欢迎点Star、分享与提PR🌟~<br>【 <a href="https://github.com/tianxingchen/Embodied-AI-Guide">Embodied-AI-Guide</a>, Latest Update: Dec 29, 2024 】<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftianxingchen%2FEmbodied-AI-Guide&count_bg=%232B8DD9&title_bg=%237834C6&icon=github.svg&icon_color=%23E7E7E7&title=Page+Viewers&edge_flat=false"/> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/TianxingChen/Embodied-AI-Guide">
+> Embodied AI（具身智能）入门的路径以及高质量信息的总结，期望是按照路线走完后，新手可以快速建立关于这个领域的认知，希望能帮助到各位入门具身智能的朋友，欢迎点Star、分享与提PR🌟~<br>【 <a href="https://github.com/tianxingchen/Embodied-AI-Guide">Embodied-AI-Guide</a>, Latest Update: Dec 29, 2024 】<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftianxingchen%2FEmbodied-AI-Guide&count_bg=%232B8DD9&title_bg=%237834C6&icon=github.svg&icon_color=%23E7E7E7&title=Page+Viewers&edge_flat=false"/> <img alt="GitHub repo stars" src="https://img.shields.io/github/stars/TianxingChen/Embodied-AI-Guide">
 
 ## Contents - 目录
 <nav>
   <ul>
     <li><a href="#start">Start Up - 从这里开始</a></li>
     <li><a href="#info">Useful Info - 有利于搭建认知的资料</a></li>
-    <li><a href="#paper_list">Paper Lists - 论文列表</a></li>
     <li><a href="#foundation-models">Foundation Models - 基础模型</a></li>
     <li><a href="#common-tools">Common Tools - 常用工具</a></li>
     <li><a href="#robot-learning">Robot Learning - 机器人学习</a>
@@ -29,6 +28,7 @@
         <li>Embodied AI for Healthcare - 具身智能+医疗</li>
       </ul>
     </li>
+    <li><a href="#paper_list">Paper Lists - 论文列表</a></li>
     <li><a href="#communities">Communities - 社区</a></li>
     <li><a href="#companies">Companies - 公司</a></li>
     <li><a href="#acknowledgement">Acknowledgement - 致谢</a></li>
@@ -63,34 +63,25 @@
 
 * Robotics实验室总结 [4]: [zhihu_1](https://zhuanlan.zhihu.com/p/682671294?utm_psn=1782122763157188608), [zhihu_2](https://zhuanlan.zhihu.com/p/682692024?utm_psn=1782122945184796672)
 
-<section id="paper_list"></section>
-
-## Paper Lists - 论文列表
-
-* Awesome Humanoid Robot Learning - Yanjie Ze: [repo](https://github.com/YanjieZe/awesome-humanoid-robot-learning)
-* Paper Reading List - DeepTimber Community: [repo](https://github.com/DeepTimber-Robot-Lab/Paper-Reading-List)
-* Paper List - Yanjie Ze: [repo](https://github.com/YanjieZe/Paper-List)
-* Paper List For EmbodiedAI - Tianxing Chen: [repo](https://github.com/TianxingChen/Paper-List-For-EmbodiedAI)
-* SOTA Paper Rating - Weiyang Jin: [website](https://waynejin0918.github.io/SOTA-paper-rating.io/)
-* Awesome-LLM-Robotics: A repo contains a curative list of papers using Large Language/Multi-Modal Models for Robotics/RL: [website](https://github.com/GT-RIPL/Awesome-LLM-Robotics)
-
 <section id="foundation-models"></section>
 
 ## Foundation Models - 基础模型
 
 * CLIP: [website](https://github.com/openai/CLIP), 来自OpenAI的研究, 最基本的应用是可以计算图像与语言描述的相似度, 中间层的视觉特征对各种下游应用非常有帮助。
 
-* DINO: [DINO Repo](https://github.com/facebookresearch/dino), [DINO-v2 Repo](https://github.com/facebookresearch/dinov2), 来自Meta的研究, 可以提供图像的高层视觉特征, 对corresponding之类的信息提取非常有帮助, 比如不同个体之间的鼻子都有类似的几何特征, 这个时候不同图像中关于不同鼻子的视觉特征值可能是近似的。
+* DINO: [DINO repo](https://github.com/facebookresearch/dino), [DINO-v2 repo](https://github.com/facebookresearch/dinov2), 来自Meta的研究, 可以提供图像的高层视觉特征, 对corresponding之类的信息提取非常有帮助, 比如不同个体之间的鼻子都有类似的几何特征, 这个时候不同图像中关于不同鼻子的视觉特征值可能是近似的。
 
 * SAM: [website](https://segment-anything.com/), 来自Meta的研究, 可以基于提示点或者框, 对图像的物体进行分割。
 
 * SAM2: [website](https://ai.meta.com/sam2/), 来自Meta的研究, SAM的升级版, 可以在视频层面持续对物体进行分割追踪。
 
-* Grounding-DINO: [Repo](https://github.com/IDEA-Research/GroundingDINO), [在线尝试](https://deepdataspace.com/playground/grounding_dino), **这个DINO与上面Meta的DINO没有关系**, 是一个由IDEA研究院（做了很多不错开源项目的机构）开发集成的图像目标检测的框架，很多时候需要对目标物体进行检测的时候可以考虑使用。
+* Grounding-DINO: [repo](https://github.com/IDEA-Research/GroundingDINO), [在线尝试](https://deepdataspace.com/playground/grounding_dino), **这个DINO与上面Meta的DINO没有关系**, 是一个由IDEA研究院（做了很多不错开源项目的机构）开发集成的图像目标检测的框架，很多时候需要对目标物体进行检测的时候可以考虑使用。
 
-* Grounded-SAM: [Repo](https://github.com/IDEA-Research/Grounded-SAM-2), 比上面多了一个分割功能, 也就是支持检测后分割, 也有很多下游应用, 具体可以翻一下README。
+* Grounded-SAM: [repo](https://github.com/IDEA-Research/Grounded-SAM-2), 比Grounding-DINO多了一个分割功能, 也就是支持检测后分割, 也有很多下游应用, 具体可以翻一下README。
 
-* FoundationPose: [Website](https://github.com/NVlabs/FoundationPose), 来自Nvidia的研究, 物体姿态追踪模型。
+* FoundationPose: [website](https://github.com/NVlabs/FoundationPose), 来自Nvidia的研究, 物体姿态追踪模型。
+
+* Stable Diffusion: [repo](https://github.com/CompVis/stable-diffusion), [website](https://ommer-lab.com/research/latent-diffusion-models/), 22年的文生图模型, 现在虽然不是SOTA了, 但是依然可以作为不错的应用, 例如中间层特征支持下游应用、生成Goal Image (目标状态) 等等。
 
 <section id="common-tools"></section>
 
@@ -193,6 +184,16 @@ Advances in 3D pre-training and downstream tasks: a survey. [PDF](https://link.s
 ### Embodied AI for Healthcare - 具身智能+医疗
 Coming Soon...
 
+<section id="paper_list"></section>
+
+## Paper Lists - 论文列表
+
+* Awesome Humanoid Robot Learning - Yanjie Ze: [repo](https://github.com/YanjieZe/awesome-humanoid-robot-learning)
+* Paper Reading List - DeepTimber Community: [repo](https://github.com/DeepTimber-Robot-Lab/Paper-Reading-List)
+* Paper List - Yanjie Ze: [repo](https://github.com/YanjieZe/Paper-List)
+* Paper List For EmbodiedAI - Tianxing Chen: [repo](https://github.com/TianxingChen/Paper-List-For-EmbodiedAI)
+* SOTA Paper Rating - Weiyang Jin: [website](https://waynejin0918.github.io/SOTA-paper-rating.io/)
+* Awesome-LLM-Robotics: A repo contains a curative list of papers using Large Language/Multi-Modal Models for Robotics/RL: [website](https://github.com/GT-RIPL/Awesome-LLM-Robotics)
 
 <section id="communities"></section>
 
