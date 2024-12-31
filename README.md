@@ -163,13 +163,10 @@
 * GAMES202 - 高质量实时渲染: [website](https://sites.cs.ucsb.edu/~lingqi/teaching/games202.html)<br>
 * 如果对motion synthesis/computer animation感兴趣，可以看
 * GAMES105 - 计算机角色动画基础: [website](https://games-105.github.io/)<br>
+* Nerf原理代码讲解: [bilibili](https://www.bilibili.com/video/BV1CC411V7oq/?spm_id_from=333.337.search-card.all.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
+* 3DGS原理代码讲解: [bilibili](https://www.bilibili.com/video/BV1zi421v7Dr?spm_id_from=333.788.recommend_more_video.-1&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
 
 * Advances in 3D pre-training and downstream tasks: a survey. [PDF](https://link.springer.com/content/pdf/10.1007/s44336-024-00007-4.pdf)<br>
-
-
-
-#### 3DGS
-3D Gaussian Splatting原理速通: [bilibili](https://www.bilibili.com/video/BV11e411n79b/?spm_id_from=333.788&vd_source=ab9cf5374617c2867aaea34af29b53c9)
 
 <section id="control"></section>
 
