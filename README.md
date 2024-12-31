@@ -169,8 +169,10 @@
 * 如何对三维重建感兴趣，可以看下面两门
 * Nerf原理代码讲解: [bilibili](https://www.bilibili.com/video/BV1CC411V7oq/?spm_id_from=333.337.search-card.all.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
 * 3DGS原理代码讲解: [bilibili](https://www.bilibili.com/video/BV1zi421v7Dr?spm_id_from=333.788.recommend_more_video.-1&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
-
+* 三维预训练最新综述
 * Advances in 3D pre-training and downstream tasks: a survey. [PDF](https://link.springer.com/content/pdf/10.1007/s44336-024-00007-4.pdf)<br>
+* 3DGS在具身上的综述
+* 3D Gaussian Splatting in Robotics: A Survey. [PDF](https://arxiv.org/pdf/2410.12262v2)<br>
 
 <section id="control"></section>
 
