@@ -5,7 +5,7 @@
 
 > Embodied AI（具身智能）入门的路径以及高质量信息的总结，期望是按照路线走完后，新手可以快速建立关于这个领域的认知，希望能帮助到各位入门具身智能的朋友，欢迎点Star、分享与提PR🌟~<br>【 <a href="https://github.com/tianxingchen/Embodied-AI-Guide">Embodied-AI-Guide</a>, Latest Update: Dec 29, 2024 】<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftianxingchen%2FEmbodied-AI-Guide&count_bg=%232B8DD9&title_bg=%237834C6&icon=github.svg&icon_color=%23E7E7E7&title=Page+Viewers&edge_flat=false"/> <img alt="GitHub repo stars" src="https://img.shields.io/github/stars/TianxingChen/Embodied-AI-Guide">
 
-## Contents - 目录
+# Contents - 目录
 
 <nav>
   <ul>
@@ -55,15 +55,15 @@
 
 <section id="start"></section>
 
-## 1. Start Up - 从这里开始
+# 1. Start Up - 从这里开始
 
 > 具身智能是指一种基于物理身体进行感知和行动的智能系统，其通过智能体与环境的交互获取信息、理解问题、做出决策并实现行动，从而产生智能行为和适应性。
 
-### How - 如何食用这份指南
+## How - 如何食用这份指南
 
 我们希望的是帮助新人快速建立领域认知，所以设计理念是：**简要**介绍目前具身智能涉及到的主要技术，让大家知道不同的技术能够解决什么问题，未来想要深入发展的时候能够有头绪。
 
-### About us - 关于我们
+## About us - 关于我们
 我们是一个由具身初学者组成的团队，希望能够通过我们自己的学习经验，为后来者提供一些帮助，加快具身智能的普及。欢迎更多朋友加入我们的项目，也很欢迎交友、学术合作，有任何问题，可以联系邮箱`chentianxing2002@gmail.com`。
 
 <p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (25' 港大PhD)</a>, <a href="https://yudezou.github.io/">邹誉德 (25' 上交-浦江实验室联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/27yw">叶雯 (25' 中科院自所PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫 (深大本科生)</a>, <a href="https://github.com/ShijiaPeng03">彭时佳 (深大本科生)</a>, <a href="https://gkw0010.github.io/">王冠锟 (港中文-华为联培PhD)</a>, <a href="https://ngchikit.github.io">吴志杰 (港中文PhD)</a>, <a href="https://github.com/csyufei">朱宇飞 (25' 上科大Ms)</a>.</p>
@@ -73,7 +73,7 @@
 
 <section id="info"></section>
 
-## 2. Useful Info - 有利于搭建认知的资料
+# 2. Useful Info - 有利于搭建认知的资料
 
 * 具身智能基础技术路线-YunlongDong [2]: [PDF](./files/具身智能基础技术路线-YunlongDong.pdf), [bilibili](https://www.bilibili.com/video/BV1d5ukedEsi/?buvid=XXCD799C01878A6CFDECF3FB4427E2F070877&from_spmid=default-value&is_story_h5=false&mid=iWFclAyh36UYMh2G6ZcsDw%3D%3D&p=1&plat_id=114&share_from=ugc&share_medium=android&share_plat=android&share_session_id=9c0dccf5-ec0b-4369-8b89-ff1d848467ee&share_source=WEIXIN&share_tag=s_i&spmid=united.player-video-detail.0.0&timestamp=1716466406&unique_k=Q0CaIUj&up_id=249218043)
 
@@ -93,11 +93,11 @@
 
 <section id="algorithm"></section>
 
-## 3. Algorithm - 算法
+# 3. Algorithm - 算法
 
 <section id="common-tools"></section>
 
-### 3.1 Common Tools - 常用工具
+## 3.1 Common Tools - 常用工具
 
 > 这个部分是关于具身中常用技巧的分享
 
@@ -105,7 +105,7 @@
 
 <section id="foundation-models"></section>
 
-### 3.2 Foundation Models - 基础模型
+## 3.2 Foundation Models - 基础模型
 
 > 以下是部分具身智能中常用的基础模型, 计算机视觉中发展的非常好的工具可以直接赋能具身智能的下游应用。
 
@@ -133,13 +133,13 @@
 
 <section id="robot-learning"></section>
 
-### 3.3 Robot Learning - 机器人学习
+## 3.3 Robot Learning - 机器人学习
 
 机器人学习 Robot Learning 的发展: [zhihu](https://zhuanlan.zhihu.com/p/26988866)
 
 <section id="rl"></section>
 
-#### 3.3.1 Reinforcement Learning - 强化学习
+### 3.3.1 Reinforcement Learning - 强化学习
 * 推荐直接跟着李宏毅老师一套走: bilibili上课+刷蘑菇书巩固+gymnasium动手实践, 重点了解一下PPO。
   * 台湾大学李宏毅公开课: [bilibili](https://www.bilibili.com/video/BV1XP4y1d7Bk/?spm_id_from=333.337.search-card.all.click&vd_source=ab9cf5374617c2867aaea34af29b53c9)<br>
   * EasyRL - 蘑菇书: [website](https://datawhalechina.github.io/easy-rl/#/), 基本是配套李宏毅老师的课程<br>
@@ -149,7 +149,7 @@
 
 <section id="il"></section>
 
-#### 3.3.2 Imitation Learning - 模仿学习
+### 3.3.2 Imitation Learning - 模仿学习
 
 * 《模仿学习简洁教程》 - 南京大学LAMDA: [PDF](https://www.lamda.nju.edu.cn/xut/Imitation_Learning.pdf)<br>
 * Supervised Policy Learning for Real Robots, RSS 2024 Workshop 教程：真实机器人的监督策略学习, [bilibili](https://www.bilibili.com/video/BV1Fx4y1s7if/?buvid=XY415384A771A6C681C9BEB3817566ED57724&is_story_h5=false&mid=ORgXkVzTHaOKTsml0RX5Gw%3D%3D&plat_id=240&share_from=ugc&share_medium=android&share_plat=android&share_source=WEIXIN&share_tag=s_i&spmid=dt.space-dt.0.0&timestamp=1721464513&unique_k=Cqj5d9J&up_id=2185804&vd_source=ab9cf5374617c2867aaea34af29b53c9)
@@ -158,7 +158,7 @@
 
 <section id="llm_robot"></section>
 
-### 3.4 LLM for Robotics - 大模型在机器人学中的应用
+## 3.4 LLM for Robotics - 大模型在机器人学中的应用
 * Robotics+LLM系列通过大语言模型控制机器人 [2]: [zhihu](https://zhuanlan.zhihu.com/p/668053911)<br>
 * Embodied Agent wiki: [website](https://en.wikipedia.org/wiki/Embodied_agent)<br>
 * Lilian Weng 个人博客 - AI Agent 系统综述 [5]: 中文: [website](https://mp.weixin.qq.com/s/Jb8HBbaKYXXxTSQOBsP5Wg) 英文: [website](https://lilianweng.github.io/posts/2023-06-23-agent/)<br>
@@ -166,13 +166,13 @@
 
 <section id="cv"></section>
 
-### 3.5 Computer Vision - 计算机视觉
+## 3.5 Computer Vision - 计算机视觉
 
 CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/schedule.html), 该课程对深度学习在计算机视觉的应用有较为全面的介绍。因为已经在具体实现某个论文的算法了，所以这个阶段可以不用做作业，只需要看课程视频和课程讲义即可。<br>
 
 <section id="3dv"></section>
 
-#### 3.5.1 3D Vision - 三维视觉
+### 3.5.1 3D Vision - 三维视觉
 第一阶段：学习最基础的3DV知识，追求广度，了解一些基础的概念和算法<br>
 * 三维视觉导论 - Andreas Geiger: [website](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/computer-vision/) （重点是完成课程里面的作业） <br>
 * GAMES203 - 三维重建和理解: [bilibili](https://www.bilibili.com/video/BV1pw411d7aS/?share_source=copy_web&vd_source=0b7603f37af6d369a97df34525b149be)<br>
@@ -194,15 +194,15 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 <section id="embodied-ai-4-x"></section>
 
-### 3.6 Embodied AI for X - 具身智能+X
+## 3.6 Embodied AI for X - 具身智能+X
 
 <section id="medical"></section>
 
-#### 3.6.1 Embodied AI for Healthcare - 具身智能+医疗
+### 3.6.1 Embodied AI for Healthcare - 具身智能+医疗
 
 
 
-##### 3.6.1.1 MLLM for Medical - 多模态大语言模型在医学中的应用
+#### 3.6.1.1 MLLM for Medical - 多模态大语言模型在医学中的应用
 * SkinGPT-4 for dermatological diagnosis: [website](https://www.nature.com/articles/s41467-024-50043-3)<br>
 * PneumoLLM for pneumoconiosis diagnosis: [website](https://www.sciencedirect.com/science/article/abs/pii/S1361841524001737)<br>
 * BiomedGPT: [website](https://github.com/taokz/BiomedGPT)<br>
@@ -212,7 +212,7 @@ Coming Soon...
 
 <section id="hardware"></section>
 
-## 4. Hardware - 硬件
+# 4. Hardware - 硬件
 
 《机器人学简介》, 来自[2]做的高质量教材: [PDF](./files/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E7%AE%80%E4%BB%8B.pdf)
 
@@ -220,7 +220,7 @@ Coming Soon...
 
 <section id="control"></section>
 
-### 4.1 Control - 控制学
+## 4.1 Control - 控制学
 
 > 关于控制部分的学习，最好从实践出发！
 
@@ -239,12 +239,12 @@ Coming Soon...
 
 <section id="sensors"></section>
 
-### 4.2 Sensors - 传感器
+## 4.2 Sensors - 传感器
 Coming Soon ！
 
 <section id="companies"></section>
 
-### 4.3 Companies - 公司
+## 4.3 Companies - 公司
 
 | 公司 | 主营产品 | Others |
 |-------|------|------|
@@ -263,11 +263,11 @@ Coming Soon ！
 
 <section id="software"></section>
 
-## 5. Software - 软件
+# 5. Software - 软件
 
 <section id="benchmarks"></section>
 
-### 5.1 Benchmarks & Simulators - 基准 & 仿真器
+## 5.1 Benchmarks & Simulators - 基准 & 仿真器
 具身智能常用benchmark总结 [1]: [zhihu](https://zhuanlan.zhihu.com/p/695342864)<br>
 常见仿真器wiki: [wiki](https://simulately.wiki/)
 | 仿真器 | 基准 |
@@ -281,7 +281,7 @@ Coming Soon ！
 
 <section id="paper_list"></section>
 
-## 6. Paper Lists - 论文列表
+# 6. Paper Lists - 论文列表
 
 * Awesome Humanoid Robot Learning - Yanjie Ze: [repo](https://github.com/YanjieZe/awesome-humanoid-robot-learning)
 * Paper Reading List - DeepTimber Community: [repo](https://github.com/DeepTimber-Robot-Lab/Paper-Reading-List)
@@ -292,7 +292,7 @@ Coming Soon ！
 
 <section id="communities"></section>
 
-## 7. Communities - 社区
+# 7. Communities - 社区
 > 以下部分资料引用自[7]
 
 * DeepTimber Robotics Innovations Community, 深木科研交流社区: [website](https://gamma.app/public/DeepTimber-Robotics-Innovations-Community-A-Community-for-Multi-m-og0uv8mswl1a3q7?mode=doc)
@@ -307,10 +307,10 @@ Coming Soon ！
 
 <a name="acknowledgement"></a>
 
-## 8. Acknowledgement - 致谢
+# 8. Acknowledgement - 致谢
 本文转载/引用了一些博主的文章，我们对他们的知识分享表示感谢，引用列表如下：
 [1] 知乎 [穆尧](https://www.zhihu.com/people/mu-yao-12-34), [2] 知乎 [东林钟声](https://www.zhihu.com/people/dong-lin-zhong-sheng-76), Github [Yunlong Dong](https://github.com/yunlongdong), [3] 知乎 [强化学徒](https://www.zhihu.com/people/heda-he-28), [4] 知乎 [Biang哥](https://www.zhihu.com/people/qi-da-guang), [5] OpenAI [Lilian Weng](https://lilianweng.github.io/), [6] B站 [木木具身](https://space.bilibili.com/350563565), [7] Github [Zhuoheng Li](https://github.com/StarCycle/EmbodiedAI-Reading-List-For-Lists?tab=readme-ov-file), [8] 知乎 [Flood Sung](https://www.zhihu.com/people/flood-sung), [9] Github [Sida Peng](https://github.com/pengsida/learning_research)
 
-## 🏷️ License - 许可证
+# 🏷️ License - 许可证
 This repository is released under the MIT license. See LICENSE for additional details.
 
