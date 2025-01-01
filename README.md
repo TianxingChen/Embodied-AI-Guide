@@ -37,7 +37,7 @@
     <li><a href="#hardware">4. Hardware - 硬件</a>
       <ul>
         <li><a href="#control">4.1 Control - 控制学</a></li>  
-        <li><a href="#companies">4.2 Sensors - 传感器</a></li>
+        <li><a href="#sensors">4.2 Sensors - 传感器</a></li>
         <li><a href="#companies">4.3 Companies - 公司</a></li>
       </ul>
     </li>
