@@ -140,6 +140,8 @@
 
 * RDT-1B: [website](https://rdt-robotics.github.io/rdt-robotics/), 清华朱军老师团队的工作, 机器人双臂操作的基础模型, 具有强大的few-shot能力。
 
+* SigLIP: [huggingface](https://huggingface.co/docs/transformers/en/model_doc/siglip), 类似CLIP.
+
 <section id="robot-learning"></section>
 
 ## 3.3 Robot Learning - 机器人学习
