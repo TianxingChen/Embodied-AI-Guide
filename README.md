@@ -268,6 +268,13 @@ Coming Soon ！
 | [World Labs](https://www.worldlabs.ai/) | | 专注于空间智能，致力于打造大型世界模型（LWM），以感知、生成并与 3D 世界进行交互。 [相关介绍](https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HEH5X2ejkAoWy1ZXj8DlZO_Y2Q7PsYX-3ID-rfr5&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2Fi58_yTFtt904haKezJgr1Q) |
 | [星动纪元](https://www.robotera.com) | [Star1人形](https://www.robotera.com/goods/1.html)<br> [XHAND1灵巧手](https://www.robotera.com/goods/2.html) | 由清华叉院陈建宇教授创建 |
 | [加速进化](https://boosterobotics.com/zh/) | [Booster T1人形](https://boosterobotics.com/zh/store/)|  |
+| [青龙机器人](https://www.openloong.net/) |  |  |
+| [科技云深处](https://www.deeprobotics.cn/) |  [绝影X30四足机器人](https://www.deeprobotics.cn/robot/index/product3.html)<br> [Dr.01人形机器人](https://www.deeprobotics.cn/robot/index/humanoid.html) |  |
+| [松应科技)](http://www.orca3d.cn/) |  | 具身智能仿真平台供应商 |
+| [光轮智能](https://lightwheel.net/) |  | 具身智能数据平台 |
+| [智元机器人](https://www.zhiyuan-robot.com/about/167.html) | [A2人形机器人](https://www.zhiyuan-robot.com/products/A2)<br>[A2-D数据采集机器人（轮式人形）](https://www.zhiyuan-robot.com/products/A2_D) | 稚晖君（本名彭志辉）创建 |
+| [nvidia](https://www.nvidia.cn/industries/robotics/) |  | 具身智能基建公司 |
+| [求之科技](https://air.tsinghua.edu.cn/info/1147/2175.htm)  |  |  |
 
 
 <section id="software"></section>
