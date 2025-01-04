@@ -24,7 +24,8 @@
         <li><a href="#llm_robot">3.4 LLM for Robotics - 大模型在机器人学中的应用</a></li>
         <li><a href="#cv">3.5 Computer Vision - 计算机视觉</a>
           <ul>
-            <li><a href="#3dv">3.5.1 3D Vision - 三维视觉</a></li>
+            <li><a href="#2dv">3.5.1 2D Vision - 二维视觉</a></li>
+            <li><a href="#3dv">3.5.2 3D Vision - 三维视觉</a></li>
           </ul>
         </li>
         <li><a href="#embodied-ai-4-x">3.6 Embodied AI for X - 具身智能+X</a>
@@ -187,9 +188,15 @@
 
 CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/schedule.html), 该课程对深度学习在计算机视觉的应用有较为全面的介绍。因为已经在具体实现某个论文的算法了，所以这个阶段可以不用做作业，只需要看课程视频和课程讲义即可。<br>
 
+<section id="2dv"></section>
+
+### 3.5.1 2D Vision - 二维视觉
+
+* CNN (卷积神经网络): [link](https://easyai.tech/ai-definition/cnn/)
+
 <section id="3dv"></section>
 
-### 3.5.1 3D Vision - 三维视觉
+### 3.5.2 3D Vision - 三维视觉
 第一阶段：学习最基础的3DV知识，追求广度，了解一些基础的概念和算法<br>
 * 三维视觉导论 - Andreas Geiger: [website](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/computer-vision/) （重点是完成课程里面的作业） <br>
 * GAMES203 - 三维重建和理解: [bilibili](https://www.bilibili.com/video/BV1pw411d7aS/?share_source=copy_web&vd_source=0b7603f37af6d369a97df34525b149be)<br>
