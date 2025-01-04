@@ -295,7 +295,8 @@ Coming Soon ！
 | [智元机器人](https://www.zhiyuan-robot.com/about/167.html) | [A2人形机器人](https://www.zhiyuan-robot.com/products/A2)<br>[A2-D数据采集机器人（轮式人形）](https://www.zhiyuan-robot.com/products/A2_D) | 稚晖君 |
 | [nvidia](https://www.nvidia.cn/industries/robotics/) |  | 具身智能基建公司 |
 | [求之科技](https://air.tsinghua.edu.cn/info/1147/2175.htm)  |  |  |
-
+| [穹彻智能](https://www.noematrix.ai/) | | |
+| [优必选机器人](https://www.ubtrobot.com/cn/about/companyProfile) | | |
 
 <section id="software"></section>
 
