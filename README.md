@@ -47,8 +47,7 @@
       </ul>
     </li>
     <li><a href="#paper_list">6. Paper Lists - 论文列表</a></li>
-    <li><a href="#communities">7. Communities - 社区</a></li>
-    <li><a href="#acknowledgement">8. Acknowledgement - 致谢</a></li>
+    <li><a href="#acknowledgement">7. Acknowledgement - 致谢</a></li>
   </ul>
 </nav>
 
@@ -79,7 +78,7 @@
 
 * 社交媒体:
 
-  * 可以关注的公众号: **石麻日记 (超高质量!!!)**, 机器之心, 新智元, 量子位, 具身知识库, 具身智能之心, 自动驾驶之心, 3D视觉工坊, 将门创投, RLCN强化学习研究, CVHub
+  * 可以关注的公众号: **石麻日记 (超高质量!!!)**, 机器之心, 新智元, 量子位, Xbot具身知识库, 具身智能之心, 自动驾驶之心, 3D视觉工坊, 将门创投, RLCN强化学习研究, CVHub
 
   * AI领域值得关注的博主列表 [3]: [zhihu](https://zhuanlan.zhihu.com/p/682110383)
 
@@ -90,6 +89,14 @@
 * 斯坦福机器人学导论：[website](https://www.bilibili.com/video/BV17T421k78T/?spm_id_from=333.337.search-card.all.click)
 
 * 共建全网最全具身智能知识库 [6]: [website](https://yv6uc1awtjc.feishu.cn/wiki/WPTzw9ON0ivIVrkLjVocNZh8nLf)
+
+* 社区:
+  * DeepTimber Robotics Innovations Community, 深木科研交流社区: [website](https://gamma.app/public/DeepTimber-Robotics-Innovations-Community-A-Community-for-Multi-m-og0uv8mswl1a3q7?mode=doc)
+  * 宇树具身智能社群: [website](https://www.unifolm.com/#/)
+  * Simulately: Handy information and resources for physics simulators for robot learning research: [website](https://simulately.wiki/)
+  * DeepTimber-地瓜机器人社区: [website](https://cn.developer.d-robotics.cc/forumList?id=156&title=Deeptimber)
+  * HuggingFace LeRobot (Europe, check the Discord): [website](https://github.com/huggingface/lerobot)
+  * K-scale labs (US, check the Discord): [website](https://kscale.dev/)
 
 <section id="algorithm"></section>
 
@@ -290,24 +297,9 @@ Coming Soon ！
 * SOTA Paper Rating - Weiyang Jin: [website](https://waynejin0918.github.io/SOTA-paper-rating.io/)
 * Awesome-LLM-Robotics: A repo contains a curative list of papers using Large Language/Multi-Modal Models for Robotics/RL: [website](https://github.com/GT-RIPL/Awesome-LLM-Robotics)
 
-<section id="communities"></section>
-
-# 7. Communities - 社区
-> 以下部分资料引用自[7]
-
-* DeepTimber Robotics Innovations Community, 深木科研交流社区: [website](https://gamma.app/public/DeepTimber-Robotics-Innovations-Community-A-Community-for-Multi-m-og0uv8mswl1a3q7?mode=doc)
-* 宇树具身智能社群: [website](https://www.unifolm.com/#/)
-* Simulately: Handy information and resources for physics simulators for robot learning research: [website](https://simulately.wiki/)
-* DeepTimber-地瓜机器人社区: [website](https://cn.developer.d-robotics.cc/forumList?id=156&title=Deeptimber)
-* HuggingFace LeRobot (Europe, check the Discord): [website](https://github.com/huggingface/lerobot)
-* K-scale labs (US, check the Discord): [website](https://kscale.dev/)
-
-
 <section id="acknowledgement"></section>
 
-<a name="acknowledgement"></a>
-
-# 8. Acknowledgement - 致谢
+# 7. Acknowledgement - 致谢
 本文转载/引用了一些博主的文章，我们对他们的知识分享表示感谢，引用列表如下：
 [1] 知乎 [穆尧](https://www.zhihu.com/people/mu-yao-12-34), [2] 知乎 [东林钟声](https://www.zhihu.com/people/dong-lin-zhong-sheng-76), Github [Yunlong Dong](https://github.com/yunlongdong), [3] 知乎 [强化学徒](https://www.zhihu.com/people/heda-he-28), [4] 知乎 [Biang哥](https://www.zhihu.com/people/qi-da-guang), [5] OpenAI [Lilian Weng](https://lilianweng.github.io/), [6] B站 [木木具身](https://space.bilibili.com/350563565), [7] Github [Zhuoheng Li](https://github.com/StarCycle/EmbodiedAI-Reading-List-For-Lists?tab=readme-ov-file), [8] 知乎 [Flood Sung](https://www.zhihu.com/people/flood-sung), [9] Github [Sida Peng](https://github.com/pengsida/learning_research)
 
