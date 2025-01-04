@@ -36,9 +36,12 @@
     </li>
     <li><a href="#hardware">4. Hardware - 硬件</a>
       <ul>
-        <li><a href="#control">4.1 Control - 控制学</a></li>  
-        <li><a href="#sensors">4.2 Sensors - 传感器</a></li>
-        <li><a href="#companies">4.3 Companies - 公司</a></li>
+        <li><a href="#embedded">4.1 Embedded - 嵌入式</a></li>
+        <li><a href="#mechanical">4.2 Mechanical design - 机械设计</a></li>
+        <li><a href="#robosystem">4.3 机器人硬件系统设计</a></li>
+        <li><a href="#control">4.4 Control - 控制学</a></li>  
+        <li><a href="#sensors">4.5 Sensors - 传感器</a></li>
+        <li><a href="#companies">4.6 Companies - 公司</a></li>
       </ul>
     </li>
     <li><a href="#software">5. Software - 软件</a>
@@ -229,29 +232,36 @@ Coming Soon...
 # 4. Hardware - 硬件
 
 > 具身智能硬件方面涵盖多个技术栈，如嵌入式软硬件设计，机械设计，机器人硬件系统设计，这部分知识比较繁杂，适合想要专注此方向的人
+> 关于硬件部分的学习，最好从实践出发！
 
-* 嵌入式软硬件设计（此部分是机器人底层）
-  * 嵌入式学习路线:[CSDN](https://blog.csdn.net/wangshuaiwsws95/article/details/107830452)
-  * 51单片机：[BiliBili](https://www.bilibili.com/video/BV1Mb411e7re/)经典江科大自动协出品
-  * Stm32单片机：[BiliBili](https://www.bilibili.com/video/BV1th411z7sn/)经典江科大自动协出品
-  * Stm32电机驱动：[BiliBili](https://www.bilibili.com/video/BV1AZ4y1V7wt/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)野火
-  * 野火Stm32标准库：[BiliBili](https://www.bilibili.com/video/BV1yW411Y7Gw/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)野火
-  * 正点原子Stm32：[BiliBili](https://www.bilibili.com/video/BV1Lx411Z7Qa/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)正点原子
-  * 韦东山嵌入式Linux：[BiliBili](https://www.bilibili.com/video/BV1w4411B7a4/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)韦东山
-* 机械设计
-  * SoildWorks教学：[BiliBili](https://www.bilibili.com/video/BV1iw411Z7HZ/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)  
+<section id="embedded"></section>
 
-* 机器人系统设计
+## 4.1 Embedded - 嵌入式
+* 嵌入式学习路线:[CSDN](https://blog.csdn.net/wangshuaiwsws95/article/details/107830452)
+* 51单片机：[BiliBili](https://www.bilibili.com/video/BV1Mb411e7re/)经典江科大自动协出品
+* Stm32单片机：[BiliBili](https://www.bilibili.com/video/BV1th411z7sn/)经典江科大自动协出品
+* Stm32电机驱动：[BiliBili](https://www.bilibili.com/video/BV1AZ4y1V7wt/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)野火
+* 野火Stm32标准库：[BiliBili](https://www.bilibili.com/video/BV1yW411Y7Gw/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)野火
+* 正点原子Stm32：[BiliBili](https://www.bilibili.com/video/BV1Lx411Z7Qa/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)正点原子
+* 韦东山嵌入式Linux：[BiliBili](https://www.bilibili.com/video/BV1w4411B7a4/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)韦东山
 
-  * 《机器人学简介》, 来自[2]做的高质量教材: [PDF](./files/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E7%AE%80%E4%BB%8B.pdf)
+<section id="mechanical"></section>
 
-  * 《机器人系统教材》: [website](https://motion.cs.illinois.edu/RoboticSystems/)
+## 4.2 Mechanical design - 机械设计
+
+* SoildWorks教学：[BiliBili](https://www.bilibili.com/video/BV1iw411Z7HZ/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)
+  
+<section id="robosystem"></section>
+
+## 4.3 机器人系统设计
+
+* 《机器人学简介》, 来自[2]做的高质量教材: [PDF](./files/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E7%AE%80%E4%BB%8B.pdf)
+
+* 《机器人系统教材》: [website](https://motion.cs.illinois.edu/RoboticSystems/)
 
 <section id="control"></section>
 
-## 4.1 Control - 控制学
-
-> 关于控制部分的学习，最好从实践出发！
+## 4.4 Control - 控制学
 
 * ROS基础:
   * 具身智能ROS1基础: [website](http://www.autolabor.com.cn/book/ROSTutorials/)
@@ -268,12 +278,12 @@ Coming Soon...
 
 <section id="sensors"></section>
 
-## 4.2 Sensors - 传感器
+## 4.5 Sensors - 传感器
 Coming Soon ！
 
 <section id="companies"></section>
 
-## 4.3 Companies - 公司
+## 4.6 Companies - 公司
 
 | 公司 | 主营产品 | Others |
 |-------|------|------|
@@ -286,13 +296,13 @@ Coming Soon ！
 | [银河通用](https://www.galbot.com/about) |  | 已完成多轮融资 |
 | [星海图Galaxea](http://galaxea.tech/) | [A1机械臂](http://galaxea.tech/Introducing_Galaxea_Robot/product_info/A1/#discover-more) |  |
 | [World Labs](https://www.worldlabs.ai/) | | 专注于空间智能，致力于打造大型世界模型（LWM），以感知、生成并与 3D 世界进行交互。 [相关介绍](https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HEH5X2ejkAoWy1ZXj8DlZO_Y2Q7PsYX-3ID-rfr5&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2Fi58_yTFtt904haKezJgr1Q) |
-| [星动纪元](https://www.robotera.com) | [Star1人形](https://www.robotera.com/goods/1.html)<br> [XHAND1灵巧手](https://www.robotera.com/goods/2.html) | 清华叉院陈建宇教授 |
+| [星动纪元](https://www.robotera.com) | [Star1人形](https://www.robotera.com/goods/1.html)<br> [XHAND1灵巧手](https://www.robotera.com/goods/2.html) | |
 | [加速进化](https://boosterobotics.com/zh/) | [Booster T1人形](https://boosterobotics.com/zh/store/)|  |
 | [青龙机器人](https://www.openloong.net/) |  |  |
 | [科技云深处](https://www.deeprobotics.cn/) |  [绝影X30四足机器人](https://www.deeprobotics.cn/robot/index/product3.html)<br> [Dr.01人形机器人](https://www.deeprobotics.cn/robot/index/humanoid.html) |  |
 | [松应科技)](http://www.orca3d.cn/) |  | 具身智能仿真平台供应商 |
 | [光轮智能](https://lightwheel.net/) |  | 具身智能数据平台 |
-| [智元机器人](https://www.zhiyuan-robot.com/about/167.html) | [A2人形机器人](https://www.zhiyuan-robot.com/products/A2)<br>[A2-D数据采集机器人（轮式人形）](https://www.zhiyuan-robot.com/products/A2_D) | 稚晖君 |
+| [智元机器人](https://www.zhiyuan-robot.com/about/167.html) | [A2人形机器人](https://www.zhiyuan-robot.com/products/A2)<br>[A2-D数据采集机器人（轮式人形）](https://www.zhiyuan-robot.com/products/A2_D) |  |
 | [nvidia](https://www.nvidia.cn/industries/robotics/) |  | 具身智能基建公司 |
 | [求之科技](https://air.tsinghua.edu.cn/info/1147/2175.htm)  |  |  |
 | [穹彻智能](https://www.noematrix.ai/) | | |
