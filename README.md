@@ -232,6 +232,7 @@ Coming Soon...
 # 4. Hardware - 硬件
 
 > 具身智能硬件方面涵盖多个技术栈，如嵌入式软硬件设计，机械设计，机器人硬件系统设计，这部分知识比较繁杂，适合想要专注此方向的人
+
 > 关于硬件部分的学习，最好从实践出发！
 
 <section id="embedded"></section>
@@ -303,7 +304,7 @@ Coming Soon ！
 | [松应科技)](http://www.orca3d.cn/) |  | 具身智能仿真平台供应商 |
 | [光轮智能](https://lightwheel.net/) |  | 具身智能数据平台 |
 | [智元机器人](https://www.zhiyuan-robot.com/about/167.html) | [A2人形机器人](https://www.zhiyuan-robot.com/products/A2)<br>[A2-D数据采集机器人（轮式人形）](https://www.zhiyuan-robot.com/products/A2_D) |  |
-| [nvidia](https://www.nvidia.cn/industries/robotics/) |  | 具身智能基建公司 |
+| [Nvidia](https://www.nvidia.cn/industries/robotics/) |  | 具身智能基建公司 |
 | [求之科技](https://air.tsinghua.edu.cn/info/1147/2175.htm)  |  |  |
 | [穹彻智能](https://www.noematrix.ai/) | | |
 | [优必选机器人](https://www.ubtrobot.com/cn/about/companyProfile) | | |
