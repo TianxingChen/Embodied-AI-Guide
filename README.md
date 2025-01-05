@@ -69,7 +69,7 @@
 ## About us - 关于我们
 我们是一个由具身初学者组成的团队，希望能够通过我们自己的学习经验，为后来者提供一些帮助，加快具身智能的普及。欢迎更多朋友加入我们的项目，也很欢迎交友、学术合作，有任何问题，可以联系邮箱`chentianxing2002@gmail.com`。
 
-<p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (25' 港大PhD)</a>, <a href="https://yudezou.github.io/">邹誉德 (25' 上交-浦江实验室联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/27yw">叶雯 (25' 中科院自所PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫 (深大本科生)</a>, <a href="https://github.com/ShijiaPeng03">彭时佳 (深大本科生)</a>, <a href="https://gkw0010.github.io/">王冠锟 (港中文-华为联培PhD)</a>, <a href="https://ngchikit.github.io">吴志杰 (港中文PhD)</a>, <a href="https://github.com/csyufei">朱宇飞 (25' 上科大Ms)</a>.</p>
+<p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (25' 港大PhD)</a>, <a href="https://github.com/ShijiaPeng03">彭时佳 (深大本科生)</a>, <a href="https://yudezou.github.io/">邹誉德 (25' 上交-浦江实验室联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/27yw">叶雯 (25' 中科院自所PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫 (深大本科生)</a>, <a href="https://gkw0010.github.io/">王冠锟 (港中文-华为联培PhD)</a>, <a href="https://ngchikit.github.io">吴志杰 (港中文PhD)</a>, <a href="https://github.com/csyufei">朱宇飞 (25' 上科大Ms)</a>.</p>
 <a href="https://github.com/TianxingChen/Embodied-AI-Guide/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=TianxingChen/Embodied-AI-Guide" />
 </a>
