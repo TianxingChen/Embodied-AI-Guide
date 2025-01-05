@@ -255,6 +255,7 @@ Coming Soon...
 ## 4.2 Mechanical design - 机械设计
 
 * SoildWorks教学：[BiliBili](https://www.bilibili.com/video/BV1iw411Z7HZ/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)
+* URDF生成：[CSDN](https://blog.csdn.net/weixin_45168199/article/details/105755388)，指导如何通过SolidWorks装配体出发生成机器人URDF文件。
   
 <section id="robosystem"></section>
 
@@ -268,6 +269,7 @@ Coming Soon...
 
 ## 4.4 Control - 控制学
 
+
 * ROS基础:
   * 具身智能ROS1基础: [website](http://www.autolabor.com.cn/book/ROSTutorials/)
   * 具身智能ROS2基础: [website](https://zhangzhiwei-zzw.github.io/ROS2%E5%AD%A6%E4%B9%A0/ROS2/)
@@ -275,6 +277,27 @@ Coming Soon...
 * 基础控制理论:
   * PID控制：[CSDN](https://blog.csdn.net/name_longming/article/details/115093338)
   * 彻底搞懂阻抗控制、导纳控制、力位混合控制: [CSDN](https://blog.csdn.net/a735148617/article/details/108564836)
+
+  * 机械臂运动学
+  > 想要快速了解什么是IK FK的同学可以看这个7分钟的短片，可以对此建立一个粗略的认知：[BiliBili](https://www.bilibili.com/video/BV18E411v7F9/?spm_id_from=333.337.search-card.all.click&vd_source=b14220472557bfa1918f3d0faa38bdc1)<br>
+  > 较为简单的过一遍IK和FK的原理可以看这个：[CSDN](https://blog.csdn.net/Dwzsa/article/details/142386529?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ECtr-3-142386529-blog-109314877.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ECtr-3-142386529-blog-109314877.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=6) 
+    * IK (Inverse Kinematics) 逆运动学
+      * 较为详细的视频课
+        * [BiliBili IK(1)](https://www.bilibili.com/video/BV1PD4y1t7xP/?spm_id_from=333.337.search-card.all.click&vd_source=b14220472557bfa1918f3d0faa38bdc1)
+        * [BiliBili IK(2)](https://www.bilibili.com/video/BV1Tt4y1T79Z?spm_id_from=333.788.recommend_more_video.0&vd_source=b14220472557bfa1918f3d0faa38bdc1)
+      * 文字教学
+        * [Book](https://motion.cs.illinois.edu/RoboticSystems/InverseKinematics.html)，较为详细的IK理论
+      
+    * FK (Forward Kinematics) 正运动学
+      * 较为详细的视频课
+        * [BiliBili FK(1)](https://www.bilibili.com/video/BV1Ve4y127Uf?spm_id_from=333.788.recommend_more_video.0&vd_source=b14220472557bfa1918f3d0faa38bdc1)
+        * [BiliBili FK(2)](https://www.bilibili.com/video/BV1a14y157uL?spm_id_from=333.788.videopod.sections&vd_source=b14220472557bfa1918f3d0faa38bdc1)
+   
+    
+    * 常用的库 
+      * cuRobo：[cuRobo](https://curobo.org/)cuRobo是Nvidia的一个利用 CUDA 加速的机器人库，提供了一套高效的机器人算法，主要通过并行计算显著提升性能，包括但不限于IK，碰撞检测，路径规划等。
+      * IKFast：[IKFast](https://moveit.github.io/moveit_tutorials/doc/ikfast/ikfast_tutorial.html)，经典IK库。
+      * mplib：[mplib](https://github.com/haosulab/mplib)，Maniskill Benchmark以及Sapien仿真平台的IK库。
 
 * ROS多传感器时间戳同步：[website](https://blog.csdn.net/qq_43495930/article/details/125649446)
 
