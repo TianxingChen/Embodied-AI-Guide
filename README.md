@@ -114,10 +114,7 @@
 
 * 点云降采样: [zhihu](https://zhuanlan.zhihu.com/p/558683732?utm_campaign=shareopn&utm_medium=social&utm_psn=1772067996070236160&utm_source=wechat_session), 包括随机降采样、均匀降采样、最远点降采样、法线空间降采样等，需要了解清楚每一种降采样的优劣，这个技巧的选择对于3D应用来说是至关重要的。
 * 手眼标定：[github](https://github.com/fishros/handeye-calib)，手眼标定用于确定相机和机械臂之间以及相机与相机之间的相对位置，大部分Project的开始都需要做一次手眼标定，分为眼在手上和眼在手外。
-* URDF生成：[CSDN](https://blog.csdn.net/weixin_45168199/article/details/105755388)，指导如何通过SolidWorks装配体出发生成机器人URDF文件。
-* cuRobo：[cuRobo](https://curobo.org/)cuRobo是Nvidia的一个利用 CUDA 加速的机器人库，提供了一套高效的机器人算法，主要通过并行计算显著提升性能，包括但不限于IK，碰撞检测，路径规划等。
-* IKFast：[IKFast](https://moveit.github.io/moveit_tutorials/doc/ikfast/ikfast_tutorial.html)，经典IK库。
-* mplib：[mplib](https://github.com/haosulab/mplib)，Maniskill Benchmark以及Sapien仿真平台的IK库。
+
 
 <section id="foundation-models"></section>
 
