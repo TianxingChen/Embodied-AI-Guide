@@ -335,7 +335,7 @@ Coming Soon ！
 | [求之科技](https://air.tsinghua.edu.cn/info/1147/2175.htm)  |  |  |
 | [穹彻智能](https://www.noematrix.ai/) | | |
 | [优必选](https://www.ubtrobot.com/cn/about/companyProfile) | | |
-| [具身风暴机器人](https://www.robotstorm.tech) | |  |
+| [具身风暴](https://www.robotstorm.tech) | | 落地具身智能通用按摩机器人 |
 
 <section id="software"></section>
 
