@@ -226,7 +226,13 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
   * 3D生成相关论文-2024: [link](https://zhuanlan.zhihu.com/p/700895749)
 
 ### 3.5.3 4D Vision - 四维视觉
-
+* 视频理解
+  * 开山之作: [bilibili](https://www.bilibili.com/video/BV1mq4y1x7RU/?spm_id_from=333.1387.collection.video_card.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
+  * 论文串讲: [bilibili](https://www.bilibili.com/video/BV1fL4y157yA?spm_id_from=333.788.videopod.sections&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
+  * LLM时代的视频理解综述: [PDF](https://arxiv.org/pdf/2312.17432)
+* 4D 生成
+  * 视频生成博客(英文): [link](https://lilianweng.github.io/posts/2024-04-12-diffusion-video/)
+  * 4D 生成的论文列表: [website](https://github.com/cwchenwang/awesome-4d-generation)
 
 <section id="embodied-ai-4-x"></section>
 
