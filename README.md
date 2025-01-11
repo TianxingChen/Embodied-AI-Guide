@@ -198,7 +198,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * 生成式AI
   * 自回归综述: [PDF](https://arxiv.org/pdf/2411.05902)
   * 扩散模型综述: [PDF](https://arxiv.org/pdf/2209.00796)
-  * 对扩散模型的理论推导感兴趣的可以看苏剑林的博客-生成扩散模型漫谈: [link](https://kexue.fm/archives/9119)
+  * 如果对扩散模型的理论推导感兴趣，可以看苏剑林的博客-生成扩散模型漫谈: [link](https://kexue.fm/archives/9119)
 
 <section id="3dv"></section>
 
