@@ -188,8 +188,15 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 <section id="2dv"></section>
 
 ### 3.5.1 2D Vision - 二维视觉
-
-* CNN (卷积神经网络): [link](https://easyai.tech/ai-definition/cnn/)
+* 2D Vision 领域的经典代表作
+  * CNN (卷积神经网络): [link](https://easyai.tech/ai-definition/cnn/)
+  * ResNet (深度残差网络): [bilibili](https://www.bilibili.com/video/BV1P3411y7nn/?spm_id_from=333.1387.collection.video_card.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
+  * ViT (第一个将Transformer用在视觉领域): [bilibili](https://www.bilibili.com/video/BV15P4y137jb/?spm_id_from=333.1387.collection.video_card.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
+  * Swin Transformer (披着Transformer皮的CNN): [bilibili](https://www.bilibili.com/video/BV13L4y1475U/?spm_id_from=333.1387.collection.video_card.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
+* 深度神经网络在图像领域的应用，看看即可，现在继续刷点意义不大
+  * 识别分类
+  * 分割
+  * 检测
 
 <section id="3dv"></section>
 
@@ -204,14 +211,16 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
   * GAMES202 - 高质量实时渲染: [website](https://sites.cs.ucsb.edu/~lingqi/teaching/games202.html)<br>
 * 如果对motion synthesis/computer animation感兴趣，可以看:
   * GAMES105 - 计算机角色动画基础: [website](https://games-105.github.io/)<br>
-* 如何对三维重建感兴趣，可以看下面两门:
+* 如果对三维重建感兴趣，可以看下面两门:
   * Nerf原理代码讲解: [bilibili](https://www.bilibili.com/video/BV1CC411V7oq/?spm_id_from=333.337.search-card.all.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
   * 3DGS原理代码讲解: [bilibili](https://www.bilibili.com/video/BV1zi421v7Dr?spm_id_from=333.788.recommend_more_video.-1&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
 * 三维预训练最新综述:
   * Advances in 3D pre-training and downstream tasks: a survey: [PDF](https://link.springer.com/content/pdf/10.1007/s44336-024-00007-4.pdf)<br>
 * 3DGS在具身上的综述:
   * 3D Gaussian Splatting in Robotics: A Survey: [PDF](https://arxiv.org/pdf/2410.12262v2)<br>
-
+* 三维生成的一些经典论文:
+  * Diffusion Model for 2D/3D Generation 相关论文分类: [link](https://zhuanlan.zhihu.com/p/617510702)
+  * 3D生成相关论文-2024: [link](https://zhuanlan.zhihu.com/p/700895749)
 
 <section id="embodied-ai-4-x"></section>
 
