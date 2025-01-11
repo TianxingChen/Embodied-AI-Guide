@@ -26,7 +26,7 @@
           <ul>
             <li><a href="#2dv">3.5.1 2D Vision - 二维视觉</a></li>
             <li><a href="#3dv">3.5.2 3D Vision - 三维视觉</a></li>
-            <li><a href="#3dv">3.5.3 4D Vision - 四维视觉</a></li>
+            <li><a href="#4dv">3.5.3 4D Vision - 四维视觉</a></li>
           </ul>
         </li>
         <li><a href="#embodied-ai-4-x">3.6 Embodied AI for X - 具身智能+X</a>
