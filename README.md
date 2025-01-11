@@ -198,7 +198,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * 生成式AI
   * 自回归综述: [PDF](https://arxiv.org/pdf/2411.05902)
   * 扩散模型综述: [PDF](https://arxiv.org/pdf/2209.00796)
-  * 如果对扩散模型的理论推导感兴趣，可以看苏剑林的博客-生成扩散模型漫谈: [link](https://kexue.fm/archives/9119)
+  * 如果对扩散模型的理论推导感兴趣，可以看苏剑林老师的博客 - 生成扩散模型漫谈: [link](https://kexue.fm/archives/9119)
 
 <section id="3dv"></section>
 
@@ -223,6 +223,9 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * 三维生成的一些经典论文:
   * Diffusion Model for 2D/3D Generation 相关论文分类: [link](https://zhuanlan.zhihu.com/p/617510702)
   * 3D生成相关论文-2024: [link](https://zhuanlan.zhihu.com/p/700895749)
+
+### 3.5.3 4D Vision - 四维视觉
+
 
 <section id="embodied-ai-4-x"></section>
 
