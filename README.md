@@ -193,10 +193,12 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
   * ResNet (深度残差网络): [bilibili](https://www.bilibili.com/video/BV1P3411y7nn/?spm_id_from=333.1387.collection.video_card.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
   * ViT (第一个将Transformer用在视觉领域): [bilibili](https://www.bilibili.com/video/BV15P4y137jb/?spm_id_from=333.1387.collection.video_card.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
   * Swin Transformer (披着Transformer皮的CNN): [bilibili](https://www.bilibili.com/video/BV13L4y1475U/?spm_id_from=333.1387.collection.video_card.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
-* 深度神经网络在图像领域的应用，看看即可，现在继续刷点意义不大
-  * 识别分类
-  * 分割
-  * 检测
+  * 对比学习论文综述: [bilibili](https://www.bilibili.com/video/BV19S4y1M7hm/?spm_id_from=333.1387.collection.video_card.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
+* 以判别式AI为主的感知任务，比如识别、分类、分割、检测等等，看看即可，现在继续刷点意义不大
+* 生成式AI
+  * 自回归综述: [PDF](https://arxiv.org/pdf/2411.05902)
+  * 扩散模型综述: [PDF](https://arxiv.org/pdf/2209.00796)
+  * 对扩散模型的理论推导感兴趣的可以看苏剑林的博客-生成扩散模型漫谈: [link](https://kexue.fm/archives/9119)
 
 <section id="3dv"></section>
 
