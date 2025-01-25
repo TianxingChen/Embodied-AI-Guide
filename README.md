@@ -399,4 +399,6 @@ Coming Soon ！
 # 🏷️ License - 许可证
 This repository is released under the MIT license. See LICENSE for additional details.
 
-<iframe style="width:100%;height:auto;min-width:600px;min-height:400px;" src="https://star-history.com/embed?secret=Z2l0aHViX3BhdF8xMUFWQUZITEkwSUkxZEpWRGFnTmFmX2ZzMEV3SnNDUkpIaGZ4bjVDTTZjRkZycjAxTGI4bjJwanhGOGdnRGYyaHRZTjU0SkRKSXFpRkZ1eVZJ#TianxingChen/Embodied-AI-Guide&Date" frameBorder="0"></iframe>
+# ⭐️ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=TianxingChen/Embodied-AI-Guide&type=Date)](https://star-history.com/#TianxingChen/Embodied-AI-Guide&Date)
