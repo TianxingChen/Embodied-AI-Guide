@@ -254,8 +254,9 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * LLaVA-Med: [website](https://github.com/microsoft/LLaVA-Med?tab=readme-ov-file)<br>
 * RoboNurse-VLA: [website](https://robonurse-vla.github.io)<br>
 * PathChat (哈佛医学院Faisal Mahmood教授团队的病理大模型。临床上，病理被称为诊断的金标准): [website](https://www.nature.com/articles/s41586-024-07618-3)<br>
-Coming Soon...
 * DeepDR-LLM (糖尿病视网膜病变 (DR)的专科垂域多模态大模型): [website](https://www.nature.com/articles/s41591-024-03139-8)<br>
+* VisionFM (通用眼科人工智能的多模式多任务视觉基础模型): [website](https://ai.nejm.org/doi/full/10.1056/AIoa2300221)<br>
+Coming Soon...
 
 <section id="hardware"></section>
 
