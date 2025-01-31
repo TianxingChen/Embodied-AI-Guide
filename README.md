@@ -262,12 +262,20 @@ Coming Soon...
 
 #### 3.6.1.2 Medical Robotics - 医疗机器人
 * 医疗机器人的五级自动化（医疗机器人领域行业共识），杨广中教授于2017年在Science Robotics上的论著: [Medical robotics—Regulatory, ethical, and legal considerations for increasing levels of autonomy](https://www.science.org/doi/pdf/10.1126/scirobotics.aam8638)<br>
+* 医疗机器人的十年回顾(含医疗机器人的不同分类)，杨广中教授在Science Robotics上的综述文章：[A decade retrospective of medical robotics research from 2010 to 2020](https://www.science.org/doi/epdf/10.1126/scirobotics.abi8017)<br>
 * 医疗具身智能的分级: [A Survey of Embodied AI in Healthcare: Techniques, Applications, and Opportunities](https://arxiv.org/pdf/2501.07468?)<br>
-* 通过模仿学习在达芬奇机器人上学习外科手术操作任务 Surgical Robot Transformer (SRT): [website](https://surgical-robot-transformer.github.io/)<br>
-* Domain-specific Simulators - 手术机器人技能学习领域的模拟器
-  * SurRoL: RL-Centered and dVRK Compatible Platform for Surgical Robot Learning [website](https://med-air.github.io/SurRoL/)<br>
-  * Surgical Gym: A high-performance GPU-based platform for surgical robot learning (ICRA 2024, work in progress, based on NVIDIA Omniverse): [website](https://github.com/SamuelSchmidgall/SurgicalGym)<br>
-  * ORBIT-Surgical: An Open-Simulation Framework for Learning Surgical Augmented Dexterity  (ICRA 2024, based on NVIDIA Omniverse): [website](https://orbit-surgical.github.io/)<br>
+* Artificial intelligence meets medical robotics, 2023年发表在Science正刊上的论著: [website](https://www.science.org/doi/abs/10.1126/science.adj3312)<br>
+
+* 达芬奇手术机器人是最为常用的外科手术机器人，对于这类机器人自主技能操作的研究最为广泛
+  * 通过模仿学习在达芬奇机器人上学习外科手术操作任务 Surgical Robot Transformer (SRT): [website](https://surgical-robot-transformer.github.io/)<br>
+  * Domain-specific Simulators - 手术机器人技能学习领域的模拟器
+    * SurRoL: RL-Centered and dVRK Compatible Platform for Surgical Robot Learning [website](https://med-air.github.io/SurRoL/)<br>
+    * Surgical Gym: A high-performance GPU-based platform for surgical robot learning (ICRA 2024, work in progress, based on NVIDIA Omniverse): [website](https://github.com/SamuelSchmidgall/SurgicalGym)<br>
+    * ORBIT-Surgical: An Open-Simulation Framework for Learning Surgical Augmented Dexterity  (ICRA 2024, based on NVIDIA Omniverse): [website](https://orbit-surgical.github.io/)<br>
+
+* 连续体和软体手术机器人作为柔性医疗机器人的重要分支，凭借其独特的结构设计和材料特性，在微创介入诊疗领域展现出显著优势。它们能够灵活进入人体狭窄腔体，实现精准操作，同时最大限度地减小手术创口，降低患者术后恢复时间及感染风险，为现代微创手术提供了创新性的技术解决方案。
+  * 连续体机器人在医疗领域的应用 (Nabil Simaan; Howie Choset等): [Continuum Robots for Medical Interventions](https://ieeexplore.ieee.org/abstract/document/9707607)<br>
+  * 软体手术机器人在微创介入手术中的应用 (ka-wai Kwok; Kaspar Althoefer等)： [Soft Robot-Assisted Minimally Invasive Surgery and Interventions: Advances and Outlook](https://ieeexplore.ieee.org/abstract/document/9765966/authors#authors)<br>
 
 # 4. Hardware - 硬件
 
