@@ -379,7 +379,7 @@ Coming Soon ！
 | [加速进化](https://boosterobotics.com/zh/) | [Booster T1人形](https://boosterobotics.com/zh/store/)|  |
 | [青龙机器人](https://www.openloong.net/) |  |  |
 | [科技云深处](https://www.deeprobotics.cn/) |  [绝影X30四足机器人](https://www.deeprobotics.cn/robot/index/product3.html)<br> [Dr.01人形机器人](https://www.deeprobotics.cn/robot/index/humanoid.html) |  |
-| [松应科技)](http://www.orca3d.cn/) |  | 具身智能仿真平台供应商 |
+| [松应科技](http://www.orca3d.cn/) |  | 具身智能仿真平台供应商 |
 | [光轮智能](https://lightwheel.net/) |  | 具身智能数据平台 |
 | [智元机器人](https://www.zhiyuan-robot.com/about/167.html) | [A2人形机器人](https://www.zhiyuan-robot.com/products/A2)<br>[A2-D数据采集机器人（轮式人形）](https://www.zhiyuan-robot.com/products/A2_D) |  |
 | [Nvidia](https://www.nvidia.cn/industries/robotics/) |  | 具身智能基建公司 |
