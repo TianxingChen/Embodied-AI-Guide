@@ -289,7 +289,6 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 # 4. Hardware - 硬件
 
 > 具身智能硬件方面涵盖多个技术栈，如嵌入式软硬件设计，机械设计，机器人硬件系统设计，这部分知识比较繁杂，适合想要专注此方向的人
-
 > 关于硬件部分的学习，最好从实践出发！
 
 <section id="embedded"></section>
