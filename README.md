@@ -405,6 +405,7 @@ Coming Soon ！
 | [CoppeliaSim](https://www.coppeliarobotics.com/) | [RLBench](https://github.com/stepjam/RLBench)<br>[PerAct2](https://bimanual.github.io/)<br>[COLOSSEUM](https://robot-colosseum.github.io/) |
 | [PyBullet](https://pybullet.org/wordpress/) | [Calvin](https://github.com/mees/calvin?tab=readme-ov-file)<br>[Ravens](https://github.com/google-research/ravens)<br>[VimaBench](https://github.com/vimalabs/VimaBench) |
 | [Genesis](https://genesis-embodied-ai.github.io/) ||
+| [SOFA](https://github.com/sofa-framework/sofa/) ||
 
 <section id="paper_list"></section>
 
