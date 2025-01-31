@@ -255,6 +255,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * RoboNurse-VLA: [website](https://robonurse-vla.github.io)<br>
 * PathChat (哈佛医学院Faisal Mahmood教授团队的病理大模型。临床上，病理被称为诊断的金标准): [website](https://www.nature.com/articles/s41586-024-07618-3)<br>
 Coming Soon...
+* DeepDR-LLM (糖尿病视网膜病变 (DR)的专科垂域多模态大模型): [website](https://www.nature.com/articles/s41591-024-03139-8)<br>
 
 <section id="hardware"></section>
 
