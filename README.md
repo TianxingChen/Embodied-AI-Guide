@@ -296,12 +296,12 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 ## 4.1 Embedded - 嵌入式
 * 嵌入式学习路线:[CSDN](https://blog.csdn.net/wangshuaiwsws95/article/details/107830452)
-* 51单片机：[BiliBili](https://www.bilibili.com/video/BV1Mb411e7re/)经典江科大自动协出品
-* Stm32单片机：[BiliBili](https://www.bilibili.com/video/BV1th411z7sn/)经典江科大自动协出品
-* Stm32电机驱动：[BiliBili](https://www.bilibili.com/video/BV1AZ4y1V7wt/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)野火
-* 野火Stm32标准库：[BiliBili](https://www.bilibili.com/video/BV1yW411Y7Gw/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)野火
-* 正点原子Stm32：[BiliBili](https://www.bilibili.com/video/BV1Lx411Z7Qa/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)正点原子
-* 韦东山嵌入式Linux：[BiliBili](https://www.bilibili.com/video/BV1w4411B7a4/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)韦东山
+* 51单片机：[BiliBili](https://www.bilibili.com/video/BV1Mb411e7re/)经典江科大自动协出品。
+* Stm32单片机：[BiliBili](https://www.bilibili.com/video/BV1th411z7sn/)经典江科大自动协出品。
+* Stm32电机驱动：[BiliBili](https://www.bilibili.com/video/BV1AZ4y1V7wt/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)野火。
+* 野火Stm32标准库：[BiliBili](https://www.bilibili.com/video/BV1yW411Y7Gw/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)野火。
+* 正点原子Stm32：[BiliBili](https://www.bilibili.com/video/BV1Lx411Z7Qa/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)正点原子。
+* 韦东山嵌入式Linux：[BiliBili](https://www.bilibili.com/video/BV1w4411B7a4/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)韦东山。
 
 <section id="mechanical"></section>
 
