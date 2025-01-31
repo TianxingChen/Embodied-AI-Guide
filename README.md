@@ -253,17 +253,18 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * BiomedGPT: [website](https://github.com/taokz/BiomedGPT)<br>
 * LLaVA-Med: [website](https://github.com/microsoft/LLaVA-Med?tab=readme-ov-file)<br>
 * RoboNurse-VLA: [website](https://robonurse-vla.github.io)<br>
+* PathChat (哈佛医学院Faisal Mahmood教授团队的病理大模型。临床上，病理被称为诊断的金标准): [website](https://www.nature.com/articles/s41586-024-07618-3)<br>
 Coming Soon...
 
 <section id="hardware"></section>
 
 #### 3.6.1.2 Medical Robotics - 医疗机器人
 * 医疗机器人的五级自动化（医疗机器人领域行业共识），杨广中教授于2017年在Science Robotics上的论著: [Medical robotics—Regulatory, ethical, and legal considerations for increasing levels of autonomy](https://www.science.org/doi/pdf/10.1126/scirobotics.aam8638)<br>
-* 医疗具身智能的分级[A Survey of Embodied AI in Healthcare: Techniques, Applications, and Opportunities](https://arxiv.org/pdf/2501.07468?)<br>
+* 医疗具身智能的分级: [A Survey of Embodied AI in Healthcare: Techniques, Applications, and Opportunities](https://arxiv.org/pdf/2501.07468?)<br>
 * Domain-specific Simulators - 手术机器人技能学习领域的模拟器
   * SurRoL: RL Centered and dVRK Compatible Platform for Surgical Robot Learning [website](https://med-air.github.io/SurRoL/)<br>
-  * Surgical Gym: A high-performance GPU-based platform for surgical robot learning (ICRA 2024, work in progress, based on NVIDIA Omniverse) [website](https://github.com/SamuelSchmidgall/SurgicalGym)<br>
-  * ORBIT-Surgical: An Open-Simulation Framework for Learning Surgical Augmented Dexterity  (ICRA 2024, based on NVIDIA Omniverse) [website](https://orbit-surgical.github.io/)<br>
+  * Surgical Gym: A high-performance GPU-based platform for surgical robot learning (ICRA 2024, work in progress, based on NVIDIA Omniverse): [website](https://github.com/SamuelSchmidgall/SurgicalGym)<br>
+  * ORBIT-Surgical: An Open-Simulation Framework for Learning Surgical Augmented Dexterity  (ICRA 2024, based on NVIDIA Omniverse): [website](https://orbit-surgical.github.io/)<br>
 
 # 4. Hardware - 硬件
 
