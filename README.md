@@ -248,6 +248,8 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 > 具身智能的蓬勃发展也在驱动着医疗服务模式的深刻变革。具身智能+医疗作为一个跨学科且快速发展的研究领域，是涵盖了人工智能算法、机器人技术和生物医学的交叉学科研究方向。
 
 #### 3.6.1.1 MLLM for Medical - 多模态大语言模型在医学中的应用
+* 用于医学影像分析的通用人工智能综述: [website](https://arxiv.org/pdf/2306.05480)<br>
+* 医学影像的通用分割模型-MedSAM： [website](https://www.nature.com/articles/s41467-024-44824-z.pdf)<br>
 * SkinGPT-4 for dermatological diagnosis: [website](https://www.nature.com/articles/s41467-024-50043-3)<br>
 * PneumoLLM for pneumoconiosis diagnosis: [website](https://www.sciencedirect.com/science/article/abs/pii/S1361841524001737)<br>
 * BiomedGPT: [website](https://github.com/taokz/BiomedGPT)<br>
@@ -256,7 +258,8 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * PathChat (哈佛医学院Faisal Mahmood教授团队的病理大模型。临床上，病理被称为诊断的金标准): [website](https://www.nature.com/articles/s41586-024-07618-3)<br>
 * DeepDR-LLM (糖尿病视网膜病变 (DR)的专科垂域多模态大模型): [website](https://www.nature.com/articles/s41591-024-03139-8)<br>
 * VisionFM (通用眼科人工智能的多模式多任务视觉基础模型): [website](https://ai.nejm.org/doi/full/10.1056/AIoa2300221)<br>
-Coming Soon...
+* Medical-CXR-VQA 用于医学视觉问答任务的大规模胸部 X 光数据集: [website](https://github.com/Holipori/Medical-CXR-VQA)<br>
+
 
 <section id="hardware"></section>
 
@@ -278,6 +281,7 @@ Coming Soon...
   * 软体手术机器人在微创介入手术中的应用 (ka-wai Kwok; Kaspar Althoefer等)： [Soft Robot-Assisted Minimally Invasive Surgery and Interventions: Advances and Outlook](https://ieeexplore.ieee.org/abstract/document/9765966/authors#authors)<br>
 > 连续体和软体机器人因其超冗余自由度和高度非线性的结构特性，采用传统的控制与传感方法构建正逆运动学方程时面临显著的计算复杂性和建模局限性。传统方法难以精确描述其多自由度耦合运动及环境交互中的动态响应。为此，基于数据驱动的智能控制方法（如深度学习、强化学习及自适应控制算法）成为解决这一问题的前沿方向。这些方法能够通过大量数据训练，高效学习系统的非线性映射关系，显著提升运动控制的精度、自适应性和鲁棒性，为复杂医疗场景下的机器人操作提供了更为可靠的技术支撑。
   * IROS 2024大会Program Chair新加坡国立大学Cecilia Laschi教授的论著: [Learning-Based Control Strategies for Soft Robots: Theory, Achievements, and Future Challenges](https://ieeexplore.ieee.org/abstract/document/10136428)<br>
+  * 软体机器人中具身智能物理建模简明指南[A concise guide to modelling the physics of embodied intelligence in soft robotics](https://inria.hal.science/hal-03921606/document)<br>
   * 数据驱动方法在软机器人建模与控制中的应用: [Data-driven methods applied to soft robot modeling and control: A review](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10477253)<br>
 
 # 4. Hardware - 硬件
