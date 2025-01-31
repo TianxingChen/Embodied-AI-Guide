@@ -257,6 +257,9 @@ Coming Soon...
 
 <section id="hardware"></section>
 
+#### 3.6.1.2 Domain-specific Simulators - 手术机器人技能学习领域的模拟器
+* SurRoL: RL Centered and dVRK Compatible Platform for Surgical Robot Learning [website](https://med-air.github.io/SurRoL/)<br>
+
 # 4. Hardware - 硬件
 
 > 具身智能硬件方面涵盖多个技术栈，如嵌入式软硬件设计，机械设计，机器人硬件系统设计，这部分知识比较繁杂，适合想要专注此方向的人
