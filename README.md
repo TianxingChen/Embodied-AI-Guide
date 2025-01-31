@@ -284,7 +284,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 > 连续体和软体机器人因其超冗余自由度和高度非线性的结构特性，采用传统的控制与传感方法构建正逆运动学方程时面临显著的计算复杂性和建模局限性。传统方法难以精确描述其多自由度耦合运动及环境交互中的动态响应。为此，基于数据驱动的智能控制方法（如深度学习、强化学习及自适应控制算法）成为解决这一问题的前沿方向。这些方法能够通过大量数据训练，高效学习系统的非线性映射关系，显著提升运动控制的精度、自适应性和鲁棒性，为复杂医疗场景下的机器人操作提供了更为可靠的技术支撑。
   * IROS 2024大会Program Chair新加坡国立大学Cecilia Laschi教授的论著: [Learning-Based Control Strategies for Soft Robots: Theory, Achievements, and Future Challenges](https://ieeexplore.ieee.org/abstract/document/10136428)<br>
   * 软体机器人中具身智能物理建模简明指南（也是出自NUS Cecilia教授团队）: [A concise guide to modelling the physics of embodied intelligence in soft robotics](https://inria.hal.science/hal-03921606/document)<br>
-  * 数据驱动方法在软机器人建模与控制中的应用: [Data-driven methods applied to soft robot modeling and control: A review](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10477253)<br>
+  * 数据驱动方法在软体机器人建模与控制中的应用: [Data-driven methods applied to soft robot modeling and control: A review](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10477253)<br>
 
 # 4. Hardware - 硬件
 
@@ -345,7 +345,10 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
       * 较为详细的视频课
         * [BiliBili FK(1)](https://www.bilibili.com/video/BV1Ve4y127Uf?spm_id_from=333.788.recommend_more_video.0&vd_source=b14220472557bfa1918f3d0faa38bdc1)
         * [BiliBili FK(2)](https://www.bilibili.com/video/BV1a14y157uL?spm_id_from=333.788.videopod.sections&vd_source=b14220472557bfa1918f3d0faa38bdc1)
-   
+          
+   * 经典教材
+     * 《机构学与机器人学的几何基础与旋量代数》 戴建生院士 著
+     * 《现代机器人学：机构、规划与控制》凯文·M. 林奇, 朴钟宇著
     
     * 常用的库 
       * cuRobo：[cuRobo](https://curobo.org/)cuRobo是Nvidia的一个利用 CUDA 加速的机器人库，提供了一套高效的机器人算法，主要通过并行计算显著提升性能，包括但不限于IK，碰撞检测，路径规划等。
