@@ -259,6 +259,8 @@ Coming Soon...
 
 #### 3.6.1.2 Domain-specific Simulators - 手术机器人技能学习领域的模拟器
 * SurRoL: RL Centered and dVRK Compatible Platform for Surgical Robot Learning [website](https://med-air.github.io/SurRoL/)<br>
+* Surgical Gym: A high-performance GPU-based platform for surgical robot learning (ICRA 2024, work in progress) [website]([https://med-air.github.io/SurRoL/](https://github.com/SamuelSchmidgall/SurgicalGym))<br>
+* ORBIT-Surgical: An Open-Simulation Framework for Learning Surgical Augmented Dexterity  (ICRA 2024) [website](https://orbit-surgical.github.io/))<br>
 
 # 4. Hardware - 硬件
 
