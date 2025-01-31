@@ -278,6 +278,7 @@ Coming Soon...
   * 软体手术机器人在微创介入手术中的应用 (ka-wai Kwok; Kaspar Althoefer等)： [Soft Robot-Assisted Minimally Invasive Surgery and Interventions: Advances and Outlook](https://ieeexplore.ieee.org/abstract/document/9765966/authors#authors)<br>
 > 连续体和软体机器人因其超冗余自由度和高度非线性的结构特性，采用传统的控制与传感方法构建正逆运动学方程时面临显著的计算复杂性和建模局限性。传统方法难以精确描述其多自由度耦合运动及环境交互中的动态响应。为此，基于数据驱动的智能控制方法（如深度学习、强化学习及自适应控制算法）成为解决这一问题的前沿方向。这些方法能够通过大量数据训练，高效学习系统的非线性映射关系，显著提升运动控制的精度、自适应性和鲁棒性，为复杂医疗场景下的机器人操作提供了更为可靠的技术支撑。
   * IROS 2024大会Program Chair新加坡国立大学Cecilia Laschi教授的论著: [Learning-Based Control Strategies for Soft Robots: Theory, Achievements, and Future Challenges](https://ieeexplore.ieee.org/abstract/document/10136428)<br>
+  * 数据驱动方法在软机器人建模与控制中的应用: [Data-driven methods applied to soft robot modeling and control: A review](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10477253)<br>
 
 # 4. Hardware - 硬件
 
