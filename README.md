@@ -245,17 +245,46 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 ### 3.6.1 Embodied AI for Healthcare - 具身智能+医疗
 
-
+> 具身智能技术的迅猛发展正在引领医疗服务模式迈向革命性的新纪元。作为人工智能算法、先进机器人技术与生物医学深度融合的前沿交叉学科，具身智能+医疗这一研究领域不仅突破了传统医疗的边界，更开创了智能化医疗的新范式。其多学科协同创新的特质，正在重塑医疗服务的全流程，为精准医疗、远程诊疗和个性化健康管理带来前所未有的发展机遇，推动医疗行业向更智能、更人性化的方向转型升级。这一领域的突破性进展，标志着医疗科技正迈向一个全新的智能化时代。
 
 #### 3.6.1.1 MLLM for Medical - 多模态大语言模型在医学中的应用
+* 用于医学影像分析的通用人工智能综述: [website](https://arxiv.org/pdf/2306.05480)<br>
+* 医学影像的通用分割模型-MedSAM： [website](https://www.nature.com/articles/s41467-024-44824-z.pdf)<br>
+* 2024盘点：医学AI大模型，从通用视觉到医疗影像: [NEJM医学前沿](https://mp.weixin.qq.com/s?__biz=MzIxNTc4NzU0MQ==&mid=2247550230&idx=1&sn=6baa8dcba12f3f70f4c8205a0f23b6a0&chksm=966df4ca45c8cbcaa0a5d2e42fbb4de92e6881f92981071ce7fda3bd1e13e4715f92415a9258&scene=27)<br>
+* 医疗领域基础模型的发展机遇与挑战: [website](https://arxiv.org/pdf/2404.03264)<br>
 * SkinGPT-4 for dermatological diagnosis: [website](https://www.nature.com/articles/s41467-024-50043-3)<br>
 * PneumoLLM for pneumoconiosis diagnosis: [website](https://www.sciencedirect.com/science/article/abs/pii/S1361841524001737)<br>
 * BiomedGPT: [website](https://github.com/taokz/BiomedGPT)<br>
 * LLaVA-Med: [website](https://github.com/microsoft/LLaVA-Med?tab=readme-ov-file)<br>
 * RoboNurse-VLA: [website](https://robonurse-vla.github.io)<br>
-Coming Soon...
+* PathChat 哈佛医学院Faisal Mahmood教授团队的病理大模型。临床上，病理被称为诊断的金标准: [website](https://www.nature.com/articles/s41586-024-07618-3)<br>
+* DeepDR-LLM 糖尿病视网膜病变 (DR)的专科垂域多模态大模型: [website](https://www.nature.com/articles/s41591-024-03139-8)<br>
+* VisionFM 通用眼科人工智能的多模式多任务视觉基础模型: [website](https://ai.nejm.org/doi/full/10.1056/AIoa2300221)<br>
+* Medical-CXR-VQA 用于医学视觉问答任务的大规模胸部 X 光数据集: [website](https://github.com/Holipori/Medical-CXR-VQA)<br>
+
 
 <section id="hardware"></section>
+
+#### 3.6.1.2 Medical Robotics - 医疗机器人
+* 医疗机器人的五级自动化（医疗机器人领域行业共识），杨广中教授于2017年在Science Robotics上的论著: [Medical robotics—Regulatory, ethical, and legal considerations for increasing levels of autonomy](https://www.science.org/doi/pdf/10.1126/scirobotics.aam8638)<br>
+* 医疗机器人的十年回顾(含医疗机器人的不同分类)，杨广中教授在Science Robotics上的综述文章：[A decade retrospective of medical robotics research from 2010 to 2020](https://www.science.org/doi/epdf/10.1126/scirobotics.abi8017)<br>
+* 医疗具身智能的分级: [A Survey of Embodied AI in Healthcare: Techniques, Applications, and Opportunities](https://arxiv.org/pdf/2501.07468?)<br>
+* Artificial intelligence meets medical robotics, 2023年发表在Science正刊上的论著: [website](https://www.science.org/doi/abs/10.1126/science.adj3312)<br>
+
+* 达芬奇手术机器人是最为常用的外科手术机器人，对于这类机器人自主技能操作的研究最为广泛
+  * 通过模仿学习在达芬奇机器人上学习外科手术操作任务 Surgical Robot Transformer (SRT): [website](https://surgical-robot-transformer.github.io/)<br>
+  * Domain-specific Simulators - 手术机器人技能学习领域的模拟器
+    * SurRoL: RL-Centered and dVRK Compatible Platform for Surgical Robot Learning [website](https://med-air.github.io/SurRoL/)<br>
+    * Surgical Gym: A high-performance GPU-based platform for surgical robot learning (ICRA 2024, work in progress, based on NVIDIA Omniverse): [website](https://github.com/SamuelSchmidgall/SurgicalGym)<br>
+    * ORBIT-Surgical: An Open-Simulation Framework for Learning Surgical Augmented Dexterity  (ICRA 2024, based on NVIDIA Omniverse): [website](https://orbit-surgical.github.io/)<br>
+
+* 连续体和软体手术机器人作为柔性医疗机器人的重要分支，凭借其独特的结构设计和材料特性，在微创介入诊疗领域展现出显著优势。它们能够灵活进入人体狭窄腔体，实现精准操作，同时最大限度地减小手术创口，降低患者术后恢复时间及感染风险，为现代微创手术提供了创新性的技术解决方案。
+  * 连续体机器人在医疗领域的应用 (Nabil Simaan; Howie Choset等): [Continuum Robots for Medical Interventions](https://ieeexplore.ieee.org/abstract/document/9707607)<br>
+  * 软体手术机器人在微创介入手术中的应用 (ka-wai Kwok; Kaspar Althoefer等)： [Soft Robot-Assisted Minimally Invasive Surgery and Interventions: Advances and Outlook](https://ieeexplore.ieee.org/abstract/document/9765966/authors#authors)<br>
+> 连续体和软体机器人因其超冗余自由度和高度非线性的结构特性，采用传统的控制与传感方法构建正逆运动学方程时面临显著的计算复杂性和建模局限性。传统方法难以精确描述其多自由度耦合运动及环境交互中的动态响应。为此，基于数据驱动的智能控制方法（如深度学习、强化学习及自适应控制算法）成为解决这一问题的前沿方向。这些方法能够通过大量数据训练，高效学习系统的非线性映射关系，显著提升运动控制的精度、自适应性和鲁棒性，为复杂医疗场景下的机器人操作提供了更为可靠的技术支撑。
+  * IROS 2024大会Program Chair新加坡国立大学Cecilia Laschi教授的论著: [Learning-Based Control Strategies for Soft Robots: Theory, Achievements, and Future Challenges](https://ieeexplore.ieee.org/abstract/document/10136428)<br>
+  * 软体机器人中具身智能物理建模简明指南（也是出自NUS Cecilia教授团队）: [A concise guide to modelling the physics of embodied intelligence in soft robotics](https://inria.hal.science/hal-03921606/document)<br>
+  * 数据驱动方法在软体机器人建模与控制中的应用: [Data-driven methods applied to soft robot modeling and control: A review](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10477253)<br>
 
 # 4. Hardware - 硬件
 
@@ -301,6 +330,7 @@ Coming Soon...
 * 基础控制理论:
   * PID控制：[CSDN](https://blog.csdn.net/name_longming/article/details/115093338)
   * 彻底搞懂阻抗控制、导纳控制、力位混合控制: [CSDN](https://blog.csdn.net/a735148617/article/details/108564836)
+  * Modern Control Systems (14th edition), Robert. H. Bishop, Richard. C, Dorf. z: [Book](http://103.203.175.90:81/fdScript/RootOfEBooks/E%20Book%20collection%20-%202024/EEE/Modern_control_systems_Robert_H_Bishop_Richard_C_Dorf_z_lib_org.pdf#page=1.00&gsr=0)
 
   * 机械臂运动学
   > 想要快速了解什么是IK FK的同学可以看这个7分钟的短片，可以对此建立一个粗略的认知：[BiliBili](https://www.bilibili.com/video/BV18E411v7F9/?spm_id_from=333.337.search-card.all.click&vd_source=b14220472557bfa1918f3d0faa38bdc1)<br>
@@ -316,7 +346,11 @@ Coming Soon...
       * 较为详细的视频课
         * [BiliBili FK(1)](https://www.bilibili.com/video/BV1Ve4y127Uf?spm_id_from=333.788.recommend_more_video.0&vd_source=b14220472557bfa1918f3d0faa38bdc1)
         * [BiliBili FK(2)](https://www.bilibili.com/video/BV1a14y157uL?spm_id_from=333.788.videopod.sections&vd_source=b14220472557bfa1918f3d0faa38bdc1)
-   
+          
+   * 经典教材
+     * 《机构学与机器人学的几何基础与旋量代数》 戴建生院士 著
+     * 《现代机器人学：机构、规划与控制》凯文·M. 林奇, 朴钟宇 著
+     * 《机器人学的现代数学理论基础》丁希仑 著
     
     * 常用的库 
       * cuRobo：[cuRobo](https://curobo.org/)cuRobo是Nvidia的一个利用 CUDA 加速的机器人库，提供了一套高效的机器人算法，主要通过并行计算显著提升性能，包括但不限于IK，碰撞检测，路径规划等。
@@ -352,7 +386,7 @@ Coming Soon ！
 | [加速进化](https://boosterobotics.com/zh/) | [Booster T1人形](https://boosterobotics.com/zh/store/)|  |
 | [青龙机器人](https://www.openloong.net/) |  |  |
 | [科技云深处](https://www.deeprobotics.cn/) |  [绝影X30四足机器人](https://www.deeprobotics.cn/robot/index/product3.html)<br> [Dr.01人形机器人](https://www.deeprobotics.cn/robot/index/humanoid.html) |  |
-| [松应科技)](http://www.orca3d.cn/) |  | 具身智能仿真平台供应商 |
+| [松应科技](http://www.orca3d.cn/) |  | 具身智能仿真平台供应商 |
 | [光轮智能](https://lightwheel.net/) |  | 具身智能数据平台 |
 | [智元机器人](https://www.zhiyuan-robot.com/about/167.html) | [A2人形机器人](https://www.zhiyuan-robot.com/products/A2)<br>[A2-D数据采集机器人（轮式人形）](https://www.zhiyuan-robot.com/products/A2_D) |  |
 | [Nvidia](https://www.nvidia.cn/industries/robotics/) |  | 具身智能基建公司 |
@@ -378,6 +412,7 @@ Coming Soon ！
 | [CoppeliaSim](https://www.coppeliarobotics.com/) | [RLBench](https://github.com/stepjam/RLBench)<br>[PerAct2](https://bimanual.github.io/)<br>[COLOSSEUM](https://robot-colosseum.github.io/) |
 | [PyBullet](https://pybullet.org/wordpress/) | [Calvin](https://github.com/mees/calvin?tab=readme-ov-file)<br>[Ravens](https://github.com/google-research/ravens)<br>[VimaBench](https://github.com/vimalabs/VimaBench) |
 | [Genesis](https://genesis-embodied-ai.github.io/) ||
+| [SOFA](https://github.com/sofa-framework/sofa/) (常用于软体机器人的仿真)||
 
 <section id="paper_list"></section>
 
