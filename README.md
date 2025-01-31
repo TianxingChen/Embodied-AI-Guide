@@ -251,7 +251,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * 用于医学影像分析的通用人工智能综述: [website](https://arxiv.org/pdf/2306.05480)<br>
 * 医学影像的通用分割模型-MedSAM： [website](https://www.nature.com/articles/s41467-024-44824-z.pdf)<br>
 * 2024盘点：医学AI大模型，从通用视觉到医疗影像: [NEJM医学前沿](https://mp.weixin.qq.com/s?__biz=MzIxNTc4NzU0MQ==&mid=2247550230&idx=1&sn=6baa8dcba12f3f70f4c8205a0f23b6a0&chksm=966df4ca45c8cbcaa0a5d2e42fbb4de92e6881f92981071ce7fda3bd1e13e4715f92415a9258&scene=27)<br>
-* 医疗领域基础模型的发展机遇与挑战(HKUST陈浩综述): [website](https://arxiv.org/pdf/2404.03264)<br>
+* 医疗领域基础模型的发展机遇与挑战: [website](https://arxiv.org/pdf/2404.03264)<br>
 * SkinGPT-4 for dermatological diagnosis: [website](https://www.nature.com/articles/s41467-024-50043-3)<br>
 * PneumoLLM for pneumoconiosis diagnosis: [website](https://www.sciencedirect.com/science/article/abs/pii/S1361841524001737)<br>
 * BiomedGPT: [website](https://github.com/taokz/BiomedGPT)<br>
