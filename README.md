@@ -330,7 +330,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * 基础控制理论:
   * PID控制：[CSDN](https://blog.csdn.net/name_longming/article/details/115093338)
   * 彻底搞懂阻抗控制、导纳控制、力位混合控制: [CSDN](https://blog.csdn.net/a735148617/article/details/108564836)
-  * Modern Control Systems (14th edition), Robert. H. Bishop, Richard. C, Dorf. z: [website](http://103.203.175.90:81/fdScript/RootOfEBooks/E%20Book%20collection%20-%202024/EEE/Modern_control_systems_Robert_H_Bishop_Richard_C_Dorf_z_lib_org.pdf#page=1.00&gsr=0)
+  * Modern Control Systems (14th edition), Robert. H. Bishop, Richard. C, Dorf. z: [Book](http://103.203.175.90:81/fdScript/RootOfEBooks/E%20Book%20collection%20-%202024/EEE/Modern_control_systems_Robert_H_Bishop_Richard_C_Dorf_z_lib_org.pdf#page=1.00&gsr=0)
 
   * 机械臂运动学
   > 想要快速了解什么是IK FK的同学可以看这个7分钟的短片，可以对此建立一个粗略的认知：[BiliBili](https://www.bilibili.com/video/BV18E411v7F9/?spm_id_from=333.337.search-card.all.click&vd_source=b14220472557bfa1918f3d0faa38bdc1)<br>
