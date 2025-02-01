@@ -265,13 +265,14 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * Medical-CXR-VQA 用于医学视觉问答任务的大规模胸部 X 光数据集: [website](https://github.com/Holipori/Medical-CXR-VQA)<br>
 
 
-<section id="hardware"></section>
-
 #### 3.6.1.2 Medical Robotics - 医疗机器人
 * 医疗机器人的五级自动化（医疗机器人领域行业共识），杨广中教授于2017年在Science Robotics上的论著: [Medical robotics—Regulatory, ethical, and legal considerations for increasing levels of autonomy](https://www.science.org/doi/pdf/10.1126/scirobotics.aam8638)<br>
 * 医疗机器人的十年回顾(含医疗机器人的不同分类)，杨广中教授在Science Robotics上的综述文章：[A decade retrospective of medical robotics research from 2010 to 2020](https://www.science.org/doi/epdf/10.1126/scirobotics.abi8017)<br>
 * 医疗具身智能的分级: [A Survey of Embodied AI in Healthcare: Techniques, Applications, and Opportunities](https://arxiv.org/pdf/2501.07468?)<br>
 * Artificial intelligence meets medical robotics, 2023年发表在Science正刊上的论著: [website](https://www.science.org/doi/abs/10.1126/science.adj3312)<br>
+
+* 医疗机器人的机器视觉
+  * 3DGS在腔镜手术中的应用综述: [website](https://arxiv.org/pdf/2408.04426)<br>
 
 * 达芬奇手术机器人是最为常用的外科手术机器人，对于这类机器人自主技能操作的研究最为广泛
   * 通过模仿学习在达芬奇机器人上学习外科手术操作任务 Surgical Robot Transformer (SRT): [website](https://surgical-robot-transformer.github.io/)<br>
@@ -287,6 +288,8 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
   * IROS 2024大会Program Chair新加坡国立大学Cecilia Laschi教授的论著: [Learning-Based Control Strategies for Soft Robots: Theory, Achievements, and Future Challenges](https://ieeexplore.ieee.org/abstract/document/10136428)<br>
   * 软体机器人中具身智能物理建模简明指南（也是出自NUS Cecilia教授团队）: [A concise guide to modelling the physics of embodied intelligence in soft robotics](https://inria.hal.science/hal-03921606/document)<br>
   * 数据驱动方法在软体机器人建模与控制中的应用: [Data-driven methods applied to soft robot modeling and control: A review](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10477253)<br>
+
+<section id="hardware"></section>
 
 # 4. Hardware - 硬件
 
