@@ -195,7 +195,7 @@
 * 利用LLM的code能力实现具身智能是一个有趣的想法
   * 经典工作(1) Code as Policy: [Arxiv](https://arxiv.org/abs/2209.07753)<br>
   * 经典工作(2) Instruction2Act: [Arxiv](https://arxiv.org/abs/2305.11176)<br>
-*有一些工作将三维视觉感知同LLM结合起来，共同促进具身智能规划
+* 有一些工作将三维视觉感知同LLM结合起来，共同促进具身智能规划
   * VoxPoser [Arxiv](https://arxiv.org/abs/2307.05973)<br>
   * OmniManip [Arxiv](https://arxiv.org/abs/2501.03841)<br>
 <section id="cv"></section>
