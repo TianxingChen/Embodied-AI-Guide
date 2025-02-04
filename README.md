@@ -3,7 +3,7 @@
 <p align="center"> </p>
 
 
-> Embodied AI（具身智能）入门的路径以及高质量信息的总结, 期望是按照路线走完后, 新手可以快速建立关于这个领域的认知, 希望能帮助到各位入门具身智能的朋友, 欢迎点Star、分享与提PR🌟~<br>【 <a href="https://github.com/tianxingchen/Embodied-AI-Guide">Embodied-AI-Guide</a>, Latest Update: Dec 29, 2024 】<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftianxingchen%2FEmbodied-AI-Guide&count_bg=%232B8DD9&title_bg=%237834C6&icon=github.svg&icon_color=%23E7E7E7&title=Page+Viewers&edge_flat=false"/> <img alt="GitHub repo stars" src="https://img.shields.io/github/stars/TianxingChen/Embodied-AI-Guide">
+> Embodied AI（具身智能）入门的路径以及高质量信息的总结, 期望是按照路线走完后, 新手可以快速建立关于这个领域的认知, 希望能帮助到各位入门具身智能的朋友, 欢迎点Star、分享与提PR🌟~<br>【 <a href="https://github.com/tianxingchen/Embodied-AI-Guide">Embodied-AI-Guide</a>, Latest Update: Feb. 5, 2025 】<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftianxingchen%2FEmbodied-AI-Guide&count_bg=%232B8DD9&title_bg=%237834C6&icon=github.svg&icon_color=%23E7E7E7&title=Page+Viewers&edge_flat=false"/> <img alt="GitHub repo stars" src="https://img.shields.io/github/stars/TianxingChen/Embodied-AI-Guide">
 
 
 # Contents - 目录
@@ -22,7 +22,7 @@
             <li><a href="#il">3.3.2 Imitation Learning - 模仿学习</a></li>
           </ul>
         </li>
-        <li><a href="#llm_robot">3.4 LLM for Robotics - 大模型在机器人学中的应用</a></li>
+        <li><a href="#llm_robot">3.4 LLM for Robotics - 大语言模型在机器人学中的应用</a></li>
         <li><a href="#cv">3.5 Computer Vision - 计算机视觉</a>
           <ul>
             <li><a href="#2dv">3.5.1 2D Vision - 二维视觉</a></li>
@@ -34,6 +34,8 @@
         <li><a href="#embodied-ai-4-x">3.7 Embodied AI for X - 具身智能+X</a>
           <ul>
             <li><a href="#medical">3.7.1 Embodied AI for Healthcare - 具身智能+医疗</a></li>
+            <li><a href="#uav">3.7.2 UAV - 无人机</a></li>
+            <li><a href="#ad">3.7.2 Autonomous Driving - 自动驾驶</a></li>
           </ul>
         </li>
       </ul>
@@ -76,7 +78,7 @@
 ## About us - 关于我们
 我们是一个由具身初学者组成的团队, 希望能够通过我们自己的学习经验, 为后来者提供一些帮助, 加快具身智能的普及。欢迎更多朋友加入我们的项目, 也很欢迎交友、学术合作, 有任何问题, 可以联系邮箱`chentianxing2002@gmail.com`。
 
-<p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (25' 港大PhD)</a>, <a href="https://github.com/ShijiaPeng03">彭时佳 (深大本科生)</a>, <a href="https://metaphysicist0.github.io/">姚天亮 (25' 港中文PhD)</a>, <a href="https://yudezou.github.io/">邹誉德 (25' 上交-浦江实验室联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/csyufei">朱宇飞 (25' 上科大Ms)</a>, <a href="https://hao-starrr.github.io/">王文灏 (UPenn GRASP Lab Ms)</a>, <a href="">贾越如 (北大 Ms)</a>,<a href="https://gkw0010.github.io/">王冠锟 (港中文-华为联培PhD)</a>, <a href="https://ngchikit.github.io">吴志杰 (港中文PhD)</a>, <a href="https://github.com/27yw">叶雯 (25' 中科院自所PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫 (深大本科生)</a>, <a href="https://hbhalpha.github.io">侯博涵（山大本科生）</a>.</p> 
+<p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (25' 港大PhD)</a>, <a href="https://github.com/ShijiaPeng03">彭时佳 (深大本科生)</a>, <a href="https://metaphysicist0.github.io/">姚天亮 (25' 港中文PhD)</a>, <a href="https://yudezou.github.io/">邹誉德 (25' 上交-浦江实验室联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/csyufei">朱宇飞 (25' 上科大Ms)</a>, <a href="https://hao-starrr.github.io/">王文灏 (UPenn GRASP Lab Ms)</a>, <a href="">贾越如 (北大 Ms)</a>,<a href="https://gkw0010.github.io/">王冠锟 (港中文-华为联培PhD)</a>, <a href="https://ngchikit.github.io">吴志杰 (港中文PhD)</a>, <a href="https://github.com/27yw">叶雯 (25' 中科院自所PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫 (深大本科生)</a>, <a href="https://hbhalpha.github.io">侯博涵 (山大本科生)</a>.</p> 
 <a href="https://github.com/TianxingChen/Embodied-AI-Guide/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=TianxingChen/Embodied-AI-Guide" />
 </a>
@@ -180,7 +182,7 @@
 
 <section id="llm_robot"></section>
 
-## 3.4 LLM for Robotics - 大模型在机器人学中的应用
+## 3.4 LLM for Robotics - 大语言模型在机器人学中的应用
 为了促使机器人更好的规划, 现代具身智能工作常常利用大语言模型强大的信息处理能力与泛化能力进行规划。
 * Robotics+LLM系列通过大语言模型控制机器人 [2]: [zhihu](https://zhuanlan.zhihu.com/p/668053911)<br>
 * Embodied Agent wiki: [website](https://en.wikipedia.org/wiki/Embodied_agent)<br>
@@ -198,6 +200,7 @@
 * 有一些工作将三维视觉感知同LLM结合起来，共同促进具身智能规划
   * VoxPoser [Arxiv](https://arxiv.org/abs/2307.05973)<br>
   * OmniManip [Arxiv](https://arxiv.org/abs/2501.03841)<br>
+
 <section id="cv"></section>
 
 ## 3.5 Computer Vision - 计算机视觉
@@ -261,6 +264,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 > 多模态旨在统一来自不同模态信息的表征, 在具身智能中由于面对着机器识别的视觉信息与人类自然语言的引导信息等不同模态的信息，多模态技术愈发重要。
 * 最经典的工作CLIP: [知乎](https://zhuanlan.zhihu.com/p/493489688)<br>
 * 多模态大语言模型的经典工作 LLaVA: [website](https://llava-vl.github.io/)<br>
+
 <section id="embodied-ai-4-x"></section>
 
 ## 3.7 Embodied AI for X - 具身智能+X
@@ -286,7 +290,6 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * VisionFM 通用眼科人工智能的多模式多任务视觉基础模型: [website](https://ai.nejm.org/doi/full/10.1056/AIoa2300221)<br>
 * Medical-CXR-VQA 用于医学视觉问答任务的大规模胸部 X 光数据集: [website](https://github.com/Holipori/Medical-CXR-VQA)<br>
 
-
 #### 3.7.1.2 Medical Robotics - 医疗机器人
 * 医疗机器人的五级自动化（医疗机器人领域行业共识）, 杨广中教授于2017年在Science Robotics上的论著: [Medical robotics—Regulatory, ethical, and legal considerations for increasing levels of autonomy](https://www.science.org/doi/pdf/10.1126/scirobotics.aam8638)<br>
 * 医疗机器人的十年回顾(含医疗机器人的不同分类), 杨广中教授在Science Robotics上的综述文章：[A decade retrospective of medical robotics research from 2010 to 2020](https://www.science.org/doi/epdf/10.1126/scirobotics.abi8017)<br>
@@ -311,6 +314,16 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
   * IROS 2024大会Program Chair新加坡国立大学Cecilia Laschi教授的论著: [Learning-Based Control Strategies for Soft Robots: Theory, Achievements, and Future Challenges](https://ieeexplore.ieee.org/abstract/document/10136428)<br>
   * 软体机器人中具身智能物理建模简明指南（也是出自NUS Cecilia教授团队）: [A concise guide to modelling the physics of embodied intelligence in soft robotics](https://inria.hal.science/hal-03921606/document)<br>
   * 数据驱动方法在软体机器人建模与控制中的应用: [Data-driven methods applied to soft robot modeling and control: A review](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10477253)<br>
+
+<section id="uav"></section>
+
+### 3.7.2 UAV - 无人机
+Coming Soon !
+
+<section id="ad"></section>
+
+### 3.7.3 Autonomous Driving - 自动驾驶
+Coming Soon !
 
 <section id="hardware"></section>
 
@@ -348,7 +361,6 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 <section id="control"></section>
 
 ## 4.4 Control - 控制学
-
 
 * ROS基础:
   * 具身智能ROS1基础: [website](http://www.autolabor.com.cn/book/ROSTutorials/)
@@ -392,7 +404,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 <section id="sensors"></section>
 
 ## 4.5 Sensors - 传感器
-Coming Soon ！
+Coming Soon !
 
 <section id="companies"></section>
 
