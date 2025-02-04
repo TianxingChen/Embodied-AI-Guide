@@ -30,8 +30,7 @@
             <li><a href="#4dv">3.5.3 4D Vision - 四维视觉</a></li>
           </ul>
         </li>
-        <li>><a href="#mm">3.6 Multimodal Models - 多模态模型</a>
-        </li>  
+        <li><a href="#mm"> 3.6 Multimodal Models - 多模态模型</a></li>  
         <li><a href="#embodied-ai-4-x">3.7 Embodied AI for X - 具身智能+X</a>
           <ul>
             <li><a href="#medical">3.7.1 Embodied AI for Healthcare - 具身智能+医疗</a></li>
@@ -260,8 +259,8 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 ## 3.6 Multimodal Models - 多模态模型
 
 > 多模态旨在统一来自不同模态信息的表征, 在具身智能中由于面对着机器识别的视觉信息与人类自然语言的引导信息等不同模态的信息，多模态技术愈发重要。
-* 最经典的工作CLIP [知乎](https://zhuanlan.zhihu.com/p/493489688)<br>
-* 多模态大语言模型的经典工作 LLaVA[website](https://llava-vl.github.io/)<br>
+* 最经典的工作CLIP: [知乎](https://zhuanlan.zhihu.com/p/493489688)<br>
+* 多模态大语言模型的经典工作 LLaVA: [website](https://llava-vl.github.io/)<br>
 <section id="embodied-ai-4-x"></section>
 
 ## 3.7 Embodied AI for X - 具身智能+X
