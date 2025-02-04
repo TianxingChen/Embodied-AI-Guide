@@ -30,9 +30,10 @@
             <li><a href="#4dv">3.5.3 4D Vision - 四维视觉</a></li>
           </ul>
         </li>
-        <li><a href="#embodied-ai-4-x">3.6 Embodied AI for X - 具身智能+X</a>
+        <li><a href="#mm"> 3.6 Multimodal Models - 多模态模型</a></li>  
+        <li><a href="#embodied-ai-4-x">3.7 Embodied AI for X - 具身智能+X</a>
           <ul>
-            <li><a href="#medical">3.6.1 Embodied AI for Healthcare - 具身智能+医疗</a></li>
+            <li><a href="#medical">3.7.1 Embodied AI for Healthcare - 具身智能+医疗</a></li>
           </ul>
         </li>
       </ul>
@@ -75,7 +76,7 @@
 ## About us - 关于我们
 我们是一个由具身初学者组成的团队, 希望能够通过我们自己的学习经验, 为后来者提供一些帮助, 加快具身智能的普及。欢迎更多朋友加入我们的项目, 也很欢迎交友、学术合作, 有任何问题, 可以联系邮箱`chentianxing2002@gmail.com`。
 
-<p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (25' 港大PhD)</a>, <a href="https://github.com/ShijiaPeng03">彭时佳 (深大本科生)</a>, <a href="https://metaphysicist0.github.io/">姚天亮 (25' 港中文PhD)</a>, <a href="https://yudezou.github.io/">邹誉德 (25' 上交-浦江实验室联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/csyufei">朱宇飞 (25' 上科大Ms)</a>, <a href="https://hao-starrr.github.io/">王文灏 (UPenn GRASP Lab Ms)</a>, <a href="">贾越如 (北大 Ms)</a>,<a href="https://gkw0010.github.io/">王冠锟 (港中文-华为联培PhD)</a>, <a href="https://ngchikit.github.io">吴志杰 (港中文PhD)</a>, <a href="https://github.com/27yw">叶雯 (25' 中科院自所PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫 (深大本科生)</a>.</p>
+<p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (25' 港大PhD)</a>, <a href="https://github.com/ShijiaPeng03">彭时佳 (深大本科生)</a>, <a href="https://metaphysicist0.github.io/">姚天亮 (25' 港中文PhD)</a>, <a href="https://yudezou.github.io/">邹誉德 (25' 上交-浦江实验室联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/csyufei">朱宇飞 (25' 上科大Ms)</a>, <a href="https://hao-starrr.github.io/">王文灏 (UPenn GRASP Lab Ms)</a>, <a href="">贾越如 (北大 Ms)</a>,<a href="https://gkw0010.github.io/">王冠锟 (港中文-华为联培PhD)</a>, <a href="https://ngchikit.github.io">吴志杰 (港中文PhD)</a>, <a href="https://github.com/27yw">叶雯 (25' 中科院自所PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫 (深大本科生)</a>, <a href="https://hbhalpha.github.io">侯博涵（山大本科生）</a>.</p> 
 <a href="https://github.com/TianxingChen/Embodied-AI-Guide/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=TianxingChen/Embodied-AI-Guide" />
 </a>
@@ -180,11 +181,23 @@
 <section id="llm_robot"></section>
 
 ## 3.4 LLM for Robotics - 大模型在机器人学中的应用
+为了促使机器人更好的规划, 现代具身智能工作常常利用大语言模型强大的信息处理能力与泛化能力进行规划。
 * Robotics+LLM系列通过大语言模型控制机器人 [2]: [zhihu](https://zhuanlan.zhihu.com/p/668053911)<br>
 * Embodied Agent wiki: [website](https://en.wikipedia.org/wiki/Embodied_agent)<br>
 * Lilian Weng 个人博客 - AI Agent 系统综述 [5]: 中文: [website](https://mp.weixin.qq.com/s/Jb8HBbaKYXXxTSQOBsP5Wg) 英文: [website](https://lilianweng.github.io/posts/2023-06-23-agent/)<br>
-
-
+* 过去一系列工作常常仅使用LLM作为High-Level的策略生成器 用作High-Level 规划
+  * 经典工作(1) PaLM-E: [Arxiv](https://arxiv.org/abs/2303.03378)<br>
+  * 经典工作(2) DO AS I CAN, NOT AS I SAY: [Arxiv](https://arxiv.org/abs/2204.01691)<br>
+  * 经典工作(3) Look Before You Leap: [Arxiv](https://arxiv.org/abs/2311.17842)<br>
+  * 经典工作(4) EmbodiedGPT: [Arxiv](https://arxiv.org/abs/2305.15021)<br>
+* 同时也有一些工作将High-Level的策略规划与 Low-Level的动作生成进行统一
+  * 经典工作(1) RT-2: [Arxiv](https://arxiv.org/abs/2307.15818)<br>
+* 利用LLM的code能力实现具身智能是一个有趣的想法
+  * 经典工作(1) Code as Policy: [Arxiv](https://arxiv.org/abs/2209.07753)<br>
+  * 经典工作(2) Instruction2Act: [Arxiv](https://arxiv.org/abs/2305.11176)<br>
+* 有一些工作将三维视觉感知同LLM结合起来，共同促进具身智能规划
+  * VoxPoser [Arxiv](https://arxiv.org/abs/2307.05973)<br>
+  * OmniManip [Arxiv](https://arxiv.org/abs/2501.03841)<br>
 <section id="cv"></section>
 
 ## 3.5 Computer Vision - 计算机视觉
@@ -241,17 +254,24 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
   * 视频生成博客(英文): [link](https://lilianweng.github.io/posts/2024-04-12-diffusion-video/)
   * 4D 生成的论文列表: [website](https://github.com/cwchenwang/awesome-4d-generation)
 
+<section id="mm"></section>
+
+## 3.6 Multimodal Models - 多模态模型
+
+> 多模态旨在统一来自不同模态信息的表征, 在具身智能中由于面对着机器识别的视觉信息与人类自然语言的引导信息等不同模态的信息，多模态技术愈发重要。
+* 最经典的工作CLIP: [知乎](https://zhuanlan.zhihu.com/p/493489688)<br>
+* 多模态大语言模型的经典工作 LLaVA: [website](https://llava-vl.github.io/)<br>
 <section id="embodied-ai-4-x"></section>
 
-## 3.6 Embodied AI for X - 具身智能+X
+## 3.7 Embodied AI for X - 具身智能+X
 
 <section id="medical"></section>
 
-### 3.6.1 Embodied AI for Healthcare - 具身智能+医疗
+### 3.7.1 Embodied AI for Healthcare - 具身智能+医疗
 
 > 具身智能技术的迅猛发展正在引领医疗服务模式迈向革命性的新纪元。作为人工智能算法、先进机器人技术与生物医学深度融合的前沿交叉学科, 具身智能+医疗这一研究领域不仅突破了传统医疗的边界, 更开创了智能化医疗的新范式。其多学科协同创新的特质, 正在重塑医疗服务的全流程, 为精准医疗、远程诊疗和个性化健康管理带来前所未有的发展机遇, 推动医疗行业向更智能、更人性化的方向转型升级。这一领域的突破性进展, 标志着医疗科技正迈向一个全新的智能化时代。
 
-#### 3.6.1.1 MLLM for Medical - 多模态大语言模型在医学中的应用
+#### 3.7.1.1 MLLM for Medical - 多模态大语言模型在医学中的应用
 * 用于医学影像分析的通用人工智能综述: [website](https://arxiv.org/pdf/2306.05480)<br>
 * 医学影像的通用分割模型-MedSAM： [website](https://www.nature.com/articles/s41467-024-44824-z.pdf)<br>
 * 2024盘点：医学AI大模型, 从通用视觉到医疗影像: [NEJM医学前沿](https://mp.weixin.qq.com/s?__biz=MzIxNTc4NzU0MQ==&mid=2247550230&idx=1&sn=6baa8dcba12f3f70f4c8205a0f23b6a0&chksm=966df4ca45c8cbcaa0a5d2e42fbb4de92e6881f92981071ce7fda3bd1e13e4715f92415a9258&scene=27)<br>
@@ -267,7 +287,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * Medical-CXR-VQA 用于医学视觉问答任务的大规模胸部 X 光数据集: [website](https://github.com/Holipori/Medical-CXR-VQA)<br>
 
 
-#### 3.6.1.2 Medical Robotics - 医疗机器人
+#### 3.7.1.2 Medical Robotics - 医疗机器人
 * 医疗机器人的五级自动化（医疗机器人领域行业共识）, 杨广中教授于2017年在Science Robotics上的论著: [Medical robotics—Regulatory, ethical, and legal considerations for increasing levels of autonomy](https://www.science.org/doi/pdf/10.1126/scirobotics.aam8638)<br>
 * 医疗机器人的十年回顾(含医疗机器人的不同分类), 杨广中教授在Science Robotics上的综述文章：[A decade retrospective of medical robotics research from 2010 to 2020](https://www.science.org/doi/epdf/10.1126/scirobotics.abi8017)<br>
 * 医疗具身智能的分级: [A Survey of Embodied AI in Healthcare: Techniques, Applications, and Opportunities](https://arxiv.org/pdf/2501.07468?)<br>
