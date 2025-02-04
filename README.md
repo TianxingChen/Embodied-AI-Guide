@@ -43,7 +43,7 @@
     <li><a href="#hardware">4. Hardware - 硬件</a>
       <ul>
         <li><a href="#embedded">4.1 Embedded - 嵌入式</a></li>
-        <li><a href="#mechanical">4.2 Mechanical design - 机械设计</a></li>
+        <li><a href="#mechanical">4.2 Mechanical Design - 机械设计</a></li>
         <li><a href="#robosystem">4.3 Robot System Design - 机器人系统设计</a></li>
         <li><a href="#control">4.4 Control - 控制学</a></li>  
         <li><a href="#sensors">4.5 Sensors - 传感器</a></li>
@@ -345,7 +345,7 @@ Coming Soon !
 
 <section id="mechanical"></section>
 
-## 4.2 Mechanical design - 机械设计
+## 4.2 Mechanical Design - 机械设计
 
 * SoildWorks教学：[BiliBili](https://www.bilibili.com/video/BV1iw411Z7HZ/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)
 * URDF生成：[CSDN](https://blog.csdn.net/weixin_45168199/article/details/105755388), 指导如何通过SolidWorks装配体出发生成机器人URDF文件。
