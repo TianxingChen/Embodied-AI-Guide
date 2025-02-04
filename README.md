@@ -44,7 +44,7 @@
       <ul>
         <li><a href="#embedded">4.1 Embedded - 嵌入式</a></li>
         <li><a href="#mechanical">4.2 Mechanical design - 机械设计</a></li>
-        <li><a href="#robosystem">4.3 机器人硬件系统设计</a></li>
+        <li><a href="#robosystem">4.3 Robot System Design - 机器人系统设计</a></li>
         <li><a href="#control">4.4 Control - 控制学</a></li>  
         <li><a href="#sensors">4.5 Sensors - 传感器</a></li>
         <li><a href="#companies">4.6 Companies - 公司</a></li>
@@ -329,7 +329,7 @@ Coming Soon !
 
 # 4. Hardware - 硬件
 
-> 具身智能硬件方面涵盖多个技术栈, 如嵌入式软硬件设计, 机械设计, 机器人硬件系统设计, 这部分知识比较繁杂, 适合想要专注此方向的人
+> 具身智能硬件方面涵盖多个技术栈, 如嵌入式软硬件设计, 机械设计, 机器人系统设计, 这部分知识比较繁杂, 适合想要专注此方向的人
 > 关于硬件部分的学习, 最好从实践出发！
 
 <section id="embedded"></section>
@@ -352,7 +352,7 @@ Coming Soon !
   
 <section id="robosystem"></section>
 
-## 4.3 机器人系统设计
+## 4.3 Robot System Design - 机器人系统设计
 
 * 《机器人学简介》, 来自[2]做的高质量教材: [PDF](./files/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E7%AE%80%E4%BB%8B.pdf)
 
