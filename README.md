@@ -316,7 +316,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
   * 数据驱动方法在软体机器人建模与控制中的应用: [Data-driven methods applied to soft robot modeling and control: A review](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10477253)<br>
 
 * 微纳机器人技术是一类集成了微纳米制造、生物工程和智能控制等多学科前沿技术的微型机器人系统。凭借其微纳米级的独特尺寸、优异的生物相容性和精准的操控性能，这一前沿技术为现代医学诊疗范式带来了突破性创新。在精准诊断方面，微纳机器人能够深入人体微观环境，实现细胞乃至分子水平的实时监测；在靶向治疗领域，其可作为智能药物载体，实现病灶部位的精准定位与可控释放；在微创手术应用中，微纳机器人系统为复杂外科手术提供了前所未有的精确操作平台。这些创新性应用不仅显著提升了诊疗效率，更为攻克重大疾病提供了全新的技术途径，推动着现代医学向更精准、更微创、更智能的方向发展。
-  * 微纳机器人的机器学习(CUHK 张立教授团队论著): [Machine learning for micro- and nanorobots](https://www.nature.com/articles/s42256-024-00859-x)<br>
+  * 微纳机器人的机器学习(CUHK 张立教授团队在Nature Machine Intelligence上的论著): [Machine learning for micro- and nanorobots](https://www.nature.com/articles/s42256-024-00859-x)<br>
 
 <section id="uav"></section>
 
