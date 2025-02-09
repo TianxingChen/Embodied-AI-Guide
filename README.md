@@ -164,12 +164,28 @@
 <section id="rl"></section>
 
 ### 3.3.1 Reinforcement Learning - 强化学习
-* 推荐直接跟着李宏毅老师一套走: bilibili上课+刷蘑菇书巩固+gymnasium动手实践, 重点了解一下PPO。
-  * 台湾大学李宏毅公开课: [bilibili](https://www.bilibili.com/video/BV1XP4y1d7Bk/?spm_id_from=333.337.search-card.all.click&vd_source=ab9cf5374617c2867aaea34af29b53c9)<br>
-  * EasyRL - 蘑菇书: [website](https://datawhalechina.github.io/easy-rl/#/), 基本是配套李宏毅老师的课程<br>
+
+* 强化学习的数学原理 - 西湖大学赵世钰: [bilibili](https://space.bilibili.com/2044042934/channel/collectiondetail?sid=748665) [GitHub](https://github.com/MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning) 这门课程作为强化学习的入门课程非常合适，适合只对机器学习略有了解，但没有了解过强化学习的初学者，可以了解强化学习的数学原理，其教材编写也十分用心。
+
+#### Deep Reinforcement Learning - 深度强化学习
+
+下面列出三门比较受欢迎的深度强化学习相关的课程，这几门课互有overlap，时间长短和授课风格也各有不同，读者可以选择适合自己的课程进行学习。此外，深度强化学习的经典算法相关的文章也在必读清单：如[PPO](https://arxiv.org/abs/1707.06347), [SAC](https://proceedings.mlr.press/v80/haarnoja18b/haarnoja18b.pdf), [TRPO](https://arxiv.org/abs/1502.05477), [A3C](https://arxiv.org/abs/1602.01783)等。
+
+* The Foundations of Deep RL in 6 Lectures [YouTube](https://www.youtube.com/watch?v=2GwBez0D20A) 本门在线课程由在RL领域著名的Pieter Abbeel教授主讲，从MDP开始在六节课之内介绍了深度强化学习的主要知识。
+
+* UC Berkeley CS285 深度强化学习: [website](https://rail.eecs.berkeley.edu/deeprlcourse/) | [YouTube](https://www.youtube.com/playlist?list=PL_iWQOsE6TfVYGEGiAOMaOzzv41Jfm_Ps) 本课程的主讲老师是在RL领域著名的Berkeley的Sergey Levine教授，DRL领域许多著名的工作如SAC就出自他之手。Sergey在授课方面非常用心，本课程对DRL提供了非常详细的介绍。
+
+* 李宏毅老师也有一套关于强化学习的课程: bilibili上课+刷蘑菇书巩固+gymnasium动手实践, 重点了解一下PPO。
+
+  * 台湾大学李宏毅公开课: [bilibili](https://www.bilibili.com/video/BV1XP4y1d7Bk/?spm_id_from=333.337.search-card.all.click&vd_source=ab9cf5374617c2867aaea34af29b53c9)
+
+  * EasyRL - 蘑菇书: [website](https://datawhalechina.github.io/easy-rl/#/), 基本是配套李宏毅老师的课程
+
   * 实践[gymnasium](https://gymnasium.farama.org/), 可以尝试一下把玩一下登月着陆等经典强化学习场景, 思考+动手, 观察阶段agent的表现并分析, 有助于深入理解强化学习
-<!-- * UCB CS285 深度强化学习: [website](https://rail.eecs.berkeley.edu/deeprlcourse/) | [youtube](https://www.youtube.com/playlist?list=PL_iWQOsE6TfVYGEGiAOMaOzzv41Jfm_Ps)<br> -->
-<!-- * 强化学习的数学原理 - 西湖大学赵世钰: [bilibili](https://space.bilibili.com/2044042934/channel/collectiondetail?sid=748665)<br> -->
+
+然而，深度强化学习的Reward Tuning和参数调整非常依赖于经验，建议读者在对深度强化学习有相关经验之后，可以自己尝试训练一个policy并在机器人上部署，体会其中的Sim-to-Real Gap。常用的仿真平台有[MuJoCo PlayGround](https://playground.mujoco.org/), [Isaac Lab](https://isaac-sim.github.io/IsaacLab/main/index.html), [SAPIEN](https://sapien.ucsd.edu/), [Genesis](https://github.com/Genesis-Embodied-AI/Genesis)等。
+
+常用的Codebase有[legged-gym](https://github.com/leggedrobotics/legged_gym)（由ETH RSL开发，基于IsaacGym）等，也可以根据你想做的任务找到相近的codebase。
 
 <section id="il"></section>
 
