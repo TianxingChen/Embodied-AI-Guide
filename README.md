@@ -78,7 +78,7 @@
 ## About us - 关于我们
 我们是一个由具身初学者组成的团队, 希望能够通过我们自己的学习经验, 为后来者提供一些帮助, 加快具身智能的普及。欢迎更多朋友加入我们的项目, 也很欢迎交友、学术合作, 有任何问题, 可以联系邮箱`chentianxing2002@gmail.com`。
 
-<p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (25' 港大PhD)</a>, <a href="https://github.com/kxwangzju">王开炫 (25' 港大PhD)</a>, <a href="https://shijiapeng03.github.io/">彭时佳 (深大本科生)</a>, <a href="https://metaphysicist0.github.io/">姚天亮 (25' 港中文PhD)</a>, <a href="https://c7w.tech/">高焕昂 (清华PhD)</a>, <a href="https://yudezou.github.io/">邹誉德 (25' 上交AILab联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/csyufei">朱宇飞 (25' 上科大Ms)</a>, <a href="https://hao-starrr.github.io/">王文灏 (UPenn Ms)</a>, <a href="">贾越如 (北大 Ms)</a>,<a href="https://gkw0010.github.io/">王冠锟 (港中文PhD)</a>, <a href="https://ngchikit.github.io">吴志杰 (港中文PhD)</a>, <a href="https://github.com/27yw">叶雯 (25' 中科院PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫 (深大本科生)</a>, <a href="https://hbhalpha.github.io">侯博涵 (山大本科生)</a>.</p> 
+<p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (25' 港大PhD)</a>, <a href="https://github.com/kxwangzju">王开炫 (25' 港大PhD)</a>, <a href="https://shijiapeng03.github.io/">彭时佳 (深大本科生)</a>, <a href="https://metaphysicist0.github.io/">姚天亮 (25' 港中文PhD)</a>, <a href="https://c7w.tech/about/">高焕昂 (24' 清华PhD)</a>, <a href="https://yudezou.github.io/">邹誉德 (25' 上交AILab联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/csyufei">朱宇飞 (25' 上科大Ms)</a>, <a href="https://hao-starrr.github.io/">王文灏 (UPenn Ms)</a>, <a href="">贾越如 (北大 Ms)</a>,<a href="https://gkw0010.github.io/">王冠锟 (港中文PhD)</a>, <a href="https://ngchikit.github.io">吴志杰 (港中文PhD)</a>, <a href="https://github.com/27yw">叶雯 (25' 中科院PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫 (深大本科生)</a>, <a href="https://hbhalpha.github.io">侯博涵 (山大本科生)</a>.</p> 
 <a href="https://github.com/TianxingChen/Embodied-AI-Guide/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=TianxingChen/Embodied-AI-Guide" />
 </a>
@@ -342,7 +342,60 @@ Coming Soon !
 <section id="ad"></section>
 
 ### 3.7.3 Autonomous Driving - 自动驾驶
-Coming Soon !
+
+[自动驾驶之心](https://www.zdjszx.com/) // 也有个微信公众号
+
+自动驾驶被称为“最小的具身智能验证场景”，这是因为它在具身智能的框架中，具备完整的感知、决策和行动闭环，但任务目标明确、物理交互简单、场景复杂性相对较低。作为一个技术验证场景，自动驾驶既能体现具身智能的核心特性，又为更复杂的具身智能任务提供了技术积累和理论支持。
+
+* Model：自动驾驶仿真
+
+[生成式仿真为具身智能释放无限灵感](https://bydrug.pharmcube.com/news/detail/80b67b2227879864af934e5f81835776)
+
+自动驾驶仿真是自动驾驶技术开发中不可或缺的一部分。它通过提供安全、高效、可控的测试环境，不仅降低了研发成本和风险，还加速了技术的迭代和规模化部署。同时，仿真能够覆盖大量现实中难以复现的场景，为自动驾驶系统的安全性、可靠性和泛化能力提供了重要保障。
+
+1. 3D/4D 场景重建
+
+* 经典论文：NSG, MARS, StreetGaussians
+  * https://openaccess.thecvf.com/content/CVPR2021/html/Ost_Neural_Scene_Graphs_for_Dynamic_Scenes_CVPR_2021_paper.html
+  * https://arxiv.org/abs/2307.15058
+  * https://arxiv.org/abs/2401.01339
+
+2. 场景可控生成（世界模型）
+
+* 经典论文：MagicDrive -> MagicDriveDiT, SCP-Diff, UniScene
+  * https://arxiv.org/abs/2411.13807
+  * https://arxiv.org/abs/2403.09638
+  * https://arxiv.org/abs/2412.05435
+
+* Policy：自动驾驶策略
+
+1. 从模块化到端到端
+
+* 经典的模块化管线中，每个模型作为一个独立的组件，负责对应的特定任务（3D目标检测与跟踪 & BEV 建图 -> 目标运动预测 -> 轨迹规划），这种设计已逐渐被端到端模型所取代。
+
+[End-to-end Autonomous Driving: Challenges and Frontiers](https://arxiv.org/pdf/2306.16927)
+
+2. 快系统与慢系统并行
+
+[理想端到端-VLM双系统](https://www.sohu.com/a/801987742_258768)
+
+* 快系统经典论文：UniAD (CVPR 2023 Best Paper), VAD, SparseDrive, DiffusionDrive
+  * https://arxiv.org/abs/2212.10156
+  * https://arxiv.org/abs/2303.12077
+  * https://arxiv.org/abs/2405.19620
+  * https://arxiv.org/abs/2411.15139
+  * 快系统的 Scale up 特性探究：https://arxiv.org/pdf/2412.02689
+
+* 慢系统经典论文：DriveVLM, EMMA
+  * https://arxiv.org/abs/2402.12289
+  * https://arxiv.org/abs/2410.23262
+
+
+3. 未来发展方向
+
+[AIR ApolloFM技术全解读](https://air.tsinghua.edu.cn/info/1007/2258.htm)
+
+
 
 <section id="hardware"></section>
 
