@@ -347,7 +347,7 @@ Coming Soon !
 
 自动驾驶被称为“最小的具身智能验证场景”，这是因为它在具身智能的框架中，具备完整的感知、决策和行动闭环，但任务目标明确、物理交互简单、场景复杂性相对较低。作为一个技术验证场景，自动驾驶既能体现具身智能的核心特性，又为更复杂的具身智能任务提供了技术积累和理论支持。
 
-* Model：自动驾驶仿真
+#### Model：自动驾驶仿真
 
 [生成式仿真为具身智能释放无限灵感](https://bydrug.pharmcube.com/news/detail/80b67b2227879864af934e5f81835776)
 
@@ -367,7 +367,7 @@ Coming Soon !
   * https://arxiv.org/abs/2403.09638
   * https://arxiv.org/abs/2412.05435
 
-* Policy：自动驾驶策略
+#### Policy：自动驾驶策略
 
 1. 从模块化到端到端
 
@@ -391,7 +391,7 @@ Coming Soon !
   * https://arxiv.org/abs/2410.23262
 
 
-3. 未来发展方向
+#### 未来发展方向
 
 [AIR ApolloFM技术全解读](https://air.tsinghua.edu.cn/info/1007/2258.htm)
 
