@@ -23,19 +23,20 @@
           </ul>
         </li>
         <li><a href="#llm_robot">3.4 LLM for Robotics - 大语言模型在机器人学中的应用</a></li>
-        <li><a href="#cv">3.5 Computer Vision - 计算机视觉</a>
+        <li><a href="#vla">3.5 Vision-Language-Action Models - VLA模型</li>
+        <li><a href="#cv">3.6 Computer Vision - 计算机视觉</a>
           <ul>
-            <li><a href="#2dv">3.5.1 2D Vision - 二维视觉</a></li>
-            <li><a href="#3dv">3.5.2 3D Vision - 三维视觉</a></li>
-            <li><a href="#4dv">3.5.3 4D Vision - 四维视觉</a></li>
+            <li><a href="#2dv">3.6.1 2D Vision - 二维视觉</a></li>
+            <li><a href="#3dv">3.6.2 3D Vision - 三维视觉</a></li>
+            <li><a href="#4dv">3.6.3 4D Vision - 四维视觉</a></li>
           </ul>
         </li>
-        <li><a href="#mm"> 3.6 Multimodal Models - 多模态模型</a></li>  
-        <li><a href="#embodied-ai-4-x">3.7 Embodied AI for X - 具身智能+X</a>
+        <li><a href="#mm"> 3.7 Multimodal Models - 多模态模型</a></li>  
+        <li><a href="#embodied-ai-4-x">3.8 Embodied AI for X - 具身智能+X</a>
           <ul>
-            <li><a href="#medical">3.7.1 Embodied AI for Healthcare - 具身智能+医疗</a></li>
-            <li><a href="#uav">3.7.2 UAV - 无人机</a></li>
-            <li><a href="#ad">3.7.2 Autonomous Driving - 自动驾驶</a></li>
+            <li><a href="#medical">3.8.1 Embodied AI for Healthcare - 具身智能+医疗</a></li>
+            <li><a href="#uav">3.8.2 UAV - 无人机</a></li>
+            <li><a href="#ad">3.8.2 Autonomous Driving - 自动驾驶</a></li>
           </ul>
         </li>
       </ul>
@@ -220,15 +221,81 @@
   * VoxPoser [Arxiv](https://arxiv.org/abs/2307.05973)<br>
   * OmniManip [Arxiv](https://arxiv.org/abs/2501.03841)<br>
 
+<section id="vla"></section>
+
+## 3.5 Vision-Language-Action Models - VLA模型
+**Vision-Language-Action Models（VLA模型）** 是一种结合VLM（Vision-Language Model）与机器人控制的模型，旨在将预训练的VLM直接用于生成机器人动作（RT-2中定义）。和以往利用VLM做planning以及build from strach的方法不同，VLA无需重新设计新的架构，将动作转化为token，微调VLM。
+
+**VLA的特点**：端到端，使用LLM/VLM backbone，加载预训练模型, etc. 
+
+目前的VLA可以从以下几个方面进行区分：模型结构&大小（如action head的设计, tokenize的方法如FAST），预训练与微调策略和数据集，输入和输出（2D vs. 3D | TraceVLA输入visual trace），不同的应用场景等。
+
+**参考资料：**
+
+* Blog:  [具身智能Vision-Language-Action的思考](https://zhuanlan.zhihu.com/p/9880769870), [zhihu](https://www.zhihu.com/question/655570660/answer/87040917575)
+
+* Survey: [A Survey on Vision-Language-Action Models for Embodied AI](https://arxiv.org/abs/2405.14093) , 2024.11.28
+
+**经典工作**：
+
+* **Autoregressive Models**
+
+  - **RT系列（Robotic Transformers）**:
+    - **RT-1** ([paper](https://arxiv.org/abs/2409.12514))
+    - **RT-2** ([page](https://robotics-transformer2.github.io/) | [paper](https://arxiv.org/abs/2307.15818), Google Deepmind, 2023.7)：55B
+    - **RT-Trajectory** ([paper](https://arxiv.org/pdf/2311.01977), Google Deepmind, UCSD, 斯坦福 2023.11)
+    - **AUTORT** ([paper](https://arxiv.org/abs/2401.12963), Google Deepmind, 2024.1)
+
+  - **RoboFlamingo** ([paper](https://arxiv.org/abs/2311.01378) | [code](https://github.com/roboflamingo), 字节、清华, 2024.2)
+
+  - **OpenVLA** ([paper](https://arxiv.org/pdf/2406.09246) | [code](https://github.com/openvla), OpenAI, 2024.6): 7B
+
+  - **TinyVLA** ([paper](https://arxiv.org/abs/2409.12514), 上海大学, 2024.11)
+  - **TraceVLA** ([paper](https://arxiv.org/pdf/2412.10345) | [code](), 微软，2024.12)
+
+* **Diffusion Models for Action Head:**
+
+  - **Octo** ([paper](https://arxiv.org/pdf/2405.12213) | [code](https://octo-models.github.io/), 斯坦福，伯克利, 2024.5): Octo-base (93M)
+
+  - **π0** ([paper](https://arxiv.org/pdf/2410.24164) | [code](https://github.com/Physical-Intelligence/openpi), 斯坦福, physical intelligence, ) : 3.3B; flow-based diffusion VLA; PaliGemma (3B VLM);
+
+  - **CogACT** ([paper](https://arxiv.org/pdf/2411.19650) | [code](https://github.com/microsoft/CogACT.git), 清华，MSRA, 2024.11): 7B
+
+  - **Diffusion-VLA** ([paper](https://arxiv.org/abs/2412.03293) | [code](https://arxiv.org/pdf/2410.07864), 华东师范，上海大学，美的, 2024.12)
+
+* **3D Vision:**
+  - **3D-VLA** ([paper](https://arxiv.org/pdf/2403.09631) | [code](https://github.com/UMass-Foundation-Model/3D-VLA/tree/main), UMass, 2024.3): 3D-based LLM
+  - **SpatialVLA** ([paper](https://arxiv.org/pdf/2501.15830) | [code](https://github.com/SpatialVLA/SpatialVLA) , 上海AI Lab, 2025.1): Adaptive Action Grid
+
+* **VLA-related:**
+
+  - **FAST (π0)** ([paper](https://arxiv.org/pdf/2410.24164), [code](https://github.com/Physical-Intelligence/openpi.git), 斯坦福，伯克利, physical intelligence, 2025.1):  autoregressive VLA
+
+  - **RLDG** ([paper](https://generalist-distillation.github.io/static/high_performance_generalist.pdf) | [code](https://arxiv.org/abs/2410.01971), 伯克利, 2024.12 ): 强化学习（RL）生成高质量的训练数据进行微调
+
+  - **BYO-VLA** ([paper](https://arxiv.org/abs/2410.01971) | [code](https://github.com/irom-princeton/byovla), 普渡大学, 2024.10): 运行时图像干预，有效降低VLA模型对任务无关视觉干扰的敏感度
+
+* **Different Locomotion:**
+
+  - **RDT-1B (双臂)** ([paper](https://arxiv.org/pdf/2410.07864) | [code](https://github.com/thu-ml/RoboticsDiffusionTransformer), 清华): 双臂控制的扩散模型
+
+  - **QUAR-VLA (四足机器人)** ([paper](https://arxiv.org/pdf/2312.14457), 西湖大学，浙江大学, 2025.2.4)
+
+  - **CoVLA (自动驾驶)** ([paper](https://arxiv.org/abs/2408.10845) | [page](https://turingmotors.github.io/covla-ad/), Turing, 2024.12)
+
+  - **Mobility-VLA (导航)** ([paper](https://arxiv.org/pdf/2407.07775), Google Deepmind, 2024.7)
+
+  - **NaVILA (腿式机器人导航)** ([paper](https://arxiv.org/pdf/2412.04453) | [code](https://navila-bot.github.io/), USCD, 2024.12)
+
 <section id="cv"></section>
 
-## 3.5 Computer Vision - 计算机视觉
+## 3.6 Computer Vision - 计算机视觉
 
 CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/schedule.html), 该课程对深度学习在计算机视觉的应用有较为全面的介绍。因为已经在具体实现某个论文的算法了, 所以这个阶段可以不用做作业, 只需要看课程视频和课程讲义即可。<br>
 
 <section id="2dv"></section>
 
-### 3.5.1 2D Vision - 二维视觉
+### 3.6.1 2D Vision - 二维视觉
 * 2D Vision 领域的经典代表作
   * CNN (卷积神经网络): [link](https://easyai.tech/ai-definition/cnn/)
   * ResNet (深度残差网络): [bilibili](https://www.bilibili.com/video/BV1P3411y7nn/?spm_id_from=333.1387.collection.video_card.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
@@ -243,7 +310,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 <section id="3dv"></section>
 
-### 3.5.2 3D Vision - 三维视觉
+### 3.6.2 3D Vision - 三维视觉
 第一阶段：学习最基础的3DV知识, 追求广度, 了解一些基础的概念和算法<br>
 * 三维视觉导论 - Andreas Geiger: [website](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/computer-vision/) （重点是完成课程里面的作业） <br>
 * GAMES203 - 三维重建和理解: [bilibili](https://www.bilibili.com/video/BV1pw411d7aS/?share_source=copy_web&vd_source=0b7603f37af6d369a97df34525b149be)<br>
@@ -267,7 +334,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 <section id="4dv"></section>
 
-### 3.5.3 4D Vision - 四维视觉
+### 3.6.3 4D Vision - 四维视觉
 * 视频理解
   * 开山之作: [bilibili](https://www.bilibili.com/video/BV1mq4y1x7RU/?spm_id_from=333.1387.collection.video_card.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
   * 论文串讲: [bilibili](https://www.bilibili.com/video/BV1fL4y157yA?spm_id_from=333.788.videopod.sections&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
@@ -278,7 +345,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 <section id="mm"></section>
 
-## 3.6 Multimodal Models - 多模态模型
+## 3.7 Multimodal Models - 多模态模型
 
 > 多模态旨在统一来自不同模态信息的表征, 在具身智能中由于面对着机器识别的视觉信息与人类自然语言的引导信息等不同模态的信息，多模态技术愈发重要。
 * 最经典的工作CLIP: [知乎](https://zhuanlan.zhihu.com/p/493489688)<br>
@@ -286,15 +353,15 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 <section id="embodied-ai-4-x"></section>
 
-## 3.7 Embodied AI for X - 具身智能+X
+## 3.8 Embodied AI for X - 具身智能+X
 
 <section id="medical"></section>
 
-### 3.7.1 Embodied AI for Healthcare - 具身智能+医疗
+### 3.8.1 Embodied AI for Healthcare - 具身智能+医疗
 
 > 具身智能技术的迅猛发展正在引领医疗服务模式迈向革命性的新纪元。作为人工智能算法、先进机器人技术与生物医学深度融合的前沿交叉学科, 具身智能+医疗这一研究领域不仅突破了传统医疗的边界, 更开创了智能化医疗的新范式。其多学科协同创新的特质, 正在重塑医疗服务的全流程, 为精准医疗、远程诊疗和个性化健康管理带来前所未有的发展机遇, 推动医疗行业向更智能、更人性化的方向转型升级。这一领域的突破性进展, 标志着医疗科技正迈向一个全新的智能化时代。
 
-#### 3.7.1.1 MLLM for Medical - 多模态大语言模型在医学中的应用
+#### 3.8.1.1 MLLM for Medical - 多模态大语言模型在医学中的应用
 * 用于医学影像分析的通用人工智能综述: [website](https://arxiv.org/pdf/2306.05480)<br>
 * 医学影像的通用分割模型-MedSAM： [website](https://www.nature.com/articles/s41467-024-44824-z.pdf)<br>
 * 2024盘点：医学AI大模型, 从通用视觉到医疗影像: [NEJM医学前沿](https://mp.weixin.qq.com/s?__biz=MzIxNTc4NzU0MQ==&mid=2247550230&idx=1&sn=6baa8dcba12f3f70f4c8205a0f23b6a0&chksm=966df4ca45c8cbcaa0a5d2e42fbb4de92e6881f92981071ce7fda3bd1e13e4715f92415a9258&scene=27)<br>
@@ -309,7 +376,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * VisionFM 通用眼科人工智能的多模式多任务视觉基础模型: [website](https://ai.nejm.org/doi/full/10.1056/AIoa2300221)<br>
 * Medical-CXR-VQA 用于医学视觉问答任务的大规模胸部 X 光数据集: [website](https://github.com/Holipori/Medical-CXR-VQA)<br>
 
-#### 3.7.1.2 Medical Robotics - 医疗机器人
+#### 3.8.1.2 Medical Robotics - 医疗机器人
 * 医疗机器人的五级自动化（医疗机器人领域行业共识）, 杨广中教授于2017年在Science Robotics上的论著: [Medical robotics—Regulatory, ethical, and legal considerations for increasing levels of autonomy](https://www.science.org/doi/pdf/10.1126/scirobotics.aam8638)<br>
 * 医疗机器人的十年回顾(含医疗机器人的不同分类), 杨广中教授在Science Robotics上的综述文章：[A decade retrospective of medical robotics research from 2010 to 2020](https://www.science.org/doi/epdf/10.1126/scirobotics.abi8017)<br>
 * 医疗具身智能的分级: [A Survey of Embodied AI in Healthcare: Techniques, Applications, and Opportunities](https://arxiv.org/pdf/2501.07468?)<br>
@@ -339,12 +406,12 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 <section id="uav"></section>
 
-### 3.7.2 UAV - 无人机
+### 3.8.2 UAV - 无人机
 Coming Soon !
 
 <section id="ad"></section>
 
-### 3.7.3 Autonomous Driving - 自动驾驶
+### 3.8.3 Autonomous Driving - 自动驾驶
 
 [自动驾驶之心](https://www.zdjszx.com/) // 也有个微信公众号
 
