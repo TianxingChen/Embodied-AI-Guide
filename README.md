@@ -31,12 +31,13 @@
             <li><a href="#4dv">3.6.3 4D Vision - 四维视觉</a></li>
           </ul>
         </li>
-        <li><a href="#mm"> 3.7 Multimodal Models - 多模态模型</a></li>  
-        <li><a href="#embodied-ai-4-x">3.8 Embodied AI for X - 具身智能+X</a>
+        <li><a href="#cg"> 3.7 Computer Graphics - 计算机图形学</a></li>  
+        <li><a href="#mm"> 3.8 Multimodal Models - 多模态模型</a></li>  
+        <li><a href="#embodied-ai-4-x">3.9 Embodied AI for X - 具身智能+X</a>
           <ul>
-            <li><a href="#medical">3.8.1 Embodied AI for Healthcare - 具身智能+医疗</a></li>
-            <li><a href="#uav">3.8.2 UAV - 无人机</a></li>
-            <li><a href="#ad">3.8.2 Autonomous Driving - 自动驾驶</a></li>
+            <li><a href="#medical">3.9.1 Embodied AI for Healthcare - 具身智能+医疗</a></li>
+            <li><a href="#uav">3.9.2 UAV - 无人机</a></li>
+            <li><a href="#ad">3.9.2 Autonomous Driving - 自动驾驶</a></li>
           </ul>
         </li>
       </ul>
@@ -311,23 +312,9 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 <section id="3dv"></section>
 
 ### 3.6.2 3D Vision - 三维视觉
-第一阶段：学习最基础的3DV知识, 追求广度, 了解一些基础的概念和算法<br>
+
 * 三维视觉导论 - Andreas Geiger: [website](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/computer-vision/) （重点是完成课程里面的作业） <br>
 * GAMES203 - 三维重建和理解: [bilibili](https://www.bilibili.com/video/BV1pw411d7aS/?share_source=copy_web&vd_source=0b7603f37af6d369a97df34525b149be)<br>
-
-第二阶段：细分方向, 追求深度, 上手一些项目<br>
-* 如果对传统图形学感兴趣, 可以看下面两门（闫令琪老师开的课, 讲得特别好）:<br>
-  * GAMES101 - 现代计算机图形学入门: [website](https://games-cn.org/intro-graphics/)<br>
-  * GAMES202 - 高质量实时渲染: [website](https://sites.cs.ucsb.edu/~lingqi/teaching/games202.html)<br>
-* 如果对motion synthesis/computer animation感兴趣, 可以看:
-  * GAMES105 - 计算机角色动画基础: [website](https://games-105.github.io/)<br>
-* 如果对三维重建感兴趣, 可以看下面两门:
-  * Nerf原理代码讲解: [bilibili](https://www.bilibili.com/video/BV1CC411V7oq/?spm_id_from=333.337.search-card.all.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
-  * 3DGS原理代码讲解: [bilibili](https://www.bilibili.com/video/BV1zi421v7Dr?spm_id_from=333.788.recommend_more_video.-1&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
-* 三维预训练最新综述:
-  * Advances in 3D pre-training and downstream tasks: a survey: [PDF](https://link.springer.com/content/pdf/10.1007/s44336-024-00007-4.pdf)<br>
-* 3DGS在具身上的综述:
-  * 3D Gaussian Splatting in Robotics: A Survey: [PDF](https://arxiv.org/pdf/2410.12262v2)<br>
 * 三维生成的一些经典论文:
   * Diffusion Model for 2D/3D Generation 相关论文分类: [link](https://zhuanlan.zhihu.com/p/617510702)
   * 3D生成相关论文-2024: [link](https://zhuanlan.zhihu.com/p/700895749)
@@ -343,9 +330,28 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
   * 视频生成博客(英文): [link](https://lilianweng.github.io/posts/2024-04-12-diffusion-video/)
   * 4D 生成的论文列表: [website](https://github.com/cwchenwang/awesome-4d-generation)
 
+<section id="cg"></section>
+
+## 3.7 Computer Graphics - 计算机图形学
+
+如果说计算机视觉是考虑图像之间的变化以及从图像到三维模型（三维重建和生成），那么计算机图形学主要研究的就是三维模型之间的变化以及从三维模型到图像的渲染过程。具身智能在开发和测试的时候离不开仿真器，而仿真也属于图形学的研究范畴。快速、高质量的渲染，并行化、准确的仿真一直是机器人仿真器追求的目标，而这一切通过计算机图形学来实现。
+
+* 如果对传统图形学感兴趣, 可以看下面两门（闫令琪老师开的课, 讲得特别好）:<br>
+  * **GAMES101 - 现代计算机图形学入门**: [website](https://games-cn.org/intro-graphics/)<br>
+  * GAMES202 - 高质量实时渲染: [website](https://sites.cs.ucsb.edu/~lingqi/teaching/games202.html)<br>
+* 如果对motion synthesis/computer animation感兴趣, 可以看:
+  * GAMES105 - 计算机角色动画基础: [website](https://games-105.github.io/)<br>
+* 如果对三维重建感兴趣, 可以看下面两门:
+  * Nerf原理代码讲解: [bilibili](https://www.bilibili.com/video/BV1CC411V7oq/?spm_id_from=333.337.search-card.all.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
+  * 3DGS原理代码讲解: [bilibili](https://www.bilibili.com/video/BV1zi421v7Dr?spm_id_from=333.788.recommend_more_video.-1&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
+* 三维预训练最新综述:
+  * Advances in 3D pre-training and downstream tasks: a survey: [PDF](https://link.springer.com/content/pdf/10.1007/s44336-024-00007-4.pdf)<br>
+* 3DGS在具身上的综述:
+  * 3D Gaussian Splatting in Robotics: A Survey: [PDF](https://arxiv.org/pdf/2410.12262v2)<br>
+
 <section id="mm"></section>
 
-## 3.7 Multimodal Models - 多模态模型
+## 3.8 Multimodal Models - 多模态模型
 
 > 多模态旨在统一来自不同模态信息的表征, 在具身智能中由于面对着机器识别的视觉信息与人类自然语言的引导信息等不同模态的信息，多模态技术愈发重要。
 * 最经典的工作CLIP: [知乎](https://zhuanlan.zhihu.com/p/493489688)<br>
@@ -353,15 +359,15 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 <section id="embodied-ai-4-x"></section>
 
-## 3.8 Embodied AI for X - 具身智能+X
+## 3.9 Embodied AI for X - 具身智能+X
 
 <section id="medical"></section>
 
-### 3.8.1 Embodied AI for Healthcare - 具身智能+医疗
+### 3.9.1 Embodied AI for Healthcare - 具身智能+医疗
 
 > 具身智能技术的迅猛发展正在引领医疗服务模式迈向革命性的新纪元。作为人工智能算法、先进机器人技术与生物医学深度融合的前沿交叉学科, 具身智能+医疗这一研究领域不仅突破了传统医疗的边界, 更开创了智能化医疗的新范式。其多学科协同创新的特质, 正在重塑医疗服务的全流程, 为精准医疗、远程诊疗和个性化健康管理带来前所未有的发展机遇, 推动医疗行业向更智能、更人性化的方向转型升级。这一领域的突破性进展, 标志着医疗科技正迈向一个全新的智能化时代。
 
-#### 3.8.1.1 MLLM for Medical - 多模态大语言模型在医学中的应用
+#### 3.9.1.1 MLLM for Medical - 多模态大语言模型在医学中的应用
 * 用于医学影像分析的通用人工智能综述: [website](https://arxiv.org/pdf/2306.05480)<br>
 * 医学影像的通用分割模型-MedSAM： [website](https://www.nature.com/articles/s41467-024-44824-z.pdf)<br>
 * 2024盘点：医学AI大模型, 从通用视觉到医疗影像: [NEJM医学前沿](https://mp.weixin.qq.com/s?__biz=MzIxNTc4NzU0MQ==&mid=2247550230&idx=1&sn=6baa8dcba12f3f70f4c8205a0f23b6a0&chksm=966df4ca45c8cbcaa0a5d2e42fbb4de92e6881f92981071ce7fda3bd1e13e4715f92415a9258&scene=27)<br>
@@ -376,7 +382,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * VisionFM 通用眼科人工智能的多模式多任务视觉基础模型: [website](https://ai.nejm.org/doi/full/10.1056/AIoa2300221)<br>
 * Medical-CXR-VQA 用于医学视觉问答任务的大规模胸部 X 光数据集: [website](https://github.com/Holipori/Medical-CXR-VQA)<br>
 
-#### 3.8.1.2 Medical Robotics - 医疗机器人
+#### 3.9.1.2 Medical Robotics - 医疗机器人
 * 医疗机器人的五级自动化（医疗机器人领域行业共识）, 杨广中教授于2017年在Science Robotics上的论著: [Medical robotics—Regulatory, ethical, and legal considerations for increasing levels of autonomy](https://www.science.org/doi/pdf/10.1126/scirobotics.aam8638)<br>
 * 医疗机器人的十年回顾(含医疗机器人的不同分类), 杨广中教授在Science Robotics上的综述文章：[A decade retrospective of medical robotics research from 2010 to 2020](https://www.science.org/doi/epdf/10.1126/scirobotics.abi8017)<br>
 * 医疗具身智能的分级: [A Survey of Embodied AI in Healthcare: Techniques, Applications, and Opportunities](https://arxiv.org/pdf/2501.07468?)<br>
@@ -406,12 +412,12 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 <section id="uav"></section>
 
-### 3.8.2 UAV - 无人机
+### 3.9.2 UAV - 无人机
 Coming Soon !
 
 <section id="ad"></section>
 
-### 3.8.3 Autonomous Driving - 自动驾驶
+### 3.9.3 Autonomous Driving - 自动驾驶
 
 [自动驾驶之心](https://www.zdjszx.com/) // 也有个微信公众号
 
