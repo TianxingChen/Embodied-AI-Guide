@@ -10,7 +10,7 @@
 
 <nav>
   <ul>
-    <li><a href="#start">1. Start Up - 从这里开始</a></li>
+    <li><a href="#start">1. Start From Here - 从这里开始</a></li>
     <li><a href="#info">2. Useful Info - 有利于搭建认知的资料</a></li>
     <li><a href="#algorithm">3. Algorithm - 算法</a>
       <ul>
@@ -35,9 +35,9 @@
         <li><a href="#mm"> 3.8 Multimodal Models - 多模态模型</a></li>  
         <li><a href="#embodied-ai-4-x">3.9 Embodied AI for X - 具身智能+X</a>
           <ul>
-            <li><a href="#medical">3.9.1 Embodied AI for Healthcare - 具身智能+医疗</a></li>
+            <li><a href="#medical">3.9.1 EAI for Healthcare - 具身医疗</a></li>
             <li><a href="#uav">3.9.2 UAV - 无人机</a></li>
-            <li><a href="#ad">3.9.2 Autonomous Driving - 自动驾驶</a></li>
+            <li><a href="#ad">3.9.3 Autonomous Driving - 自动驾驶</a></li>
           </ul>
         </li>
       </ul>
@@ -69,18 +69,18 @@
 
 <section id="start"></section>
 
-# 1. Start Up - 从这里开始
+# 1. Start From Here - 从这里开始
 
 > 具身智能是指一种基于物理身体进行感知和行动的智能系统, 其通过智能体与环境的交互获取信息、理解问题、做出决策并实现行动, 从而产生智能行为和适应性。
 
-## How - 如何食用这份指南
+## How - 如何学习这份指南
 
 我们希望的是帮助新人快速建立领域认知, 所以设计理念是：**简要**介绍目前具身智能涉及到的主要技术, 让大家知道不同的技术能够解决什么问题, 未来想要深入发展的时候能够有头绪。
 
 ## About us - 关于我们
 我们是一个由具身初学者组成的团队, 希望能够通过我们自己的学习经验, 为后来者提供一些帮助, 加快具身智能的普及。欢迎更多朋友加入我们的项目, 也很欢迎交友、学术合作, 有任何问题, 可以联系邮箱`chentianxing2002@gmail.com`。
 
-<p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (25' 港大PhD)</a>, <a href="https://github.com/kxwangzju">王开炫 (25' 港大PhD)</a>, <a href="https://jiayueru.github.io/">贾越如 (北大 Ms)</a >, <a href="https://metaphysicist0.github.io/">姚天亮 (25' 港中文PhD)</a>, <a href="https://c7w.tech/about/">高焕昂 (清华PhD)</a>, <a href="https://shijiapeng03.github.io/">彭时佳 (深大本科生)</a>, <a href="https://yudezou.github.io/">邹誉德 (25' 上交AILab联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/csyufei">朱宇飞 (25' 上科大Ms)</a>, <a href="https://hao-starrr.github.io/">王文灏 (UPenn Ms)</a>, <a href="https://gkw0010.github.io/">李卓恒(港大PhD)</a>, <a href="https://github.com/StarCycle">王冠锟 (港中文PhD)</a>, <a href="https://ngchikit.github.io">吴志杰 (港中文PhD)</a>, <a href="https://github.com/27yw">叶雯 (25' 中科院PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫 (深大本科生)</a>, <a href="https://hbhalpha.github.io">侯博涵 (山大本科生)</a>.</p> 
+<p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (25' 港大 PhD)</a>, <a href="https://github.com/kxwangzju">王开炫 (25' 港大 PhD)</a>, <a href="https://jiayueru.github.io/">贾越如 (北大 Ms)</a >, <a href="https://metaphysicist0.github.io/">姚天亮 (25' 港中文 PhD)</a>, <a href="https://c7w.tech/about/">高焕昂 (TH UPhD)</a>, <a href="https://shijiapeng03.github.io/">彭时佳 (深大本科生)</a>, <a href="https://yudezou.github.io/">邹誉德 (25' 上交AILab联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/csyufei">朱宇飞 (25' 上科大Ms)</a>, <a href="https://hao-starrr.github.io/">王文灏 (UPenn Ms)</a>, <a href="https://gkw0010.github.io/">李卓恒 (港大PhD)</a>, <a href="https://github.com/Henry-lsy">梁升一 (港科广PhD)</a>, , <a href="https://scholar.google.com/citations?user=azPXbWcAAAAJ&hl=en">林俊晓 (浙大本科生)</a>, <a href="https://github.com/StarCycle">王冠锟 (港中文PhD)</a>, <a href="https://ngchikit.github.io">吴志杰 (港中文PhD)</a>, <a href="https://github.com/27yw">叶雯 (25' 中科院PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫 (深大本科生)</a>, <a href="https://hbhalpha.github.io">侯博涵 (山大本科生)</a>.</p> 
 <a href="https://github.com/TianxingChen/Embodied-AI-Guide/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=TianxingChen/Embodied-AI-Guide" />
 </a>
@@ -363,7 +363,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 <section id="medical"></section>
 
-### 3.9.1 Embodied AI for Healthcare - 具身智能+医疗
+### 3.9.1 EAI for Healthcare - 具身医疗
 
 > 具身智能技术的迅猛发展正在引领医疗服务模式迈向革命性的新纪元。作为人工智能算法、先进机器人技术与生物医学深度融合的前沿交叉学科, 具身智能+医疗这一研究领域不仅突破了传统医疗的边界, 更开创了智能化医疗的新范式。其多学科协同创新的特质, 正在重塑医疗服务的全流程, 为精准医疗、远程诊疗和个性化健康管理带来前所未有的发展机遇, 推动医疗行业向更智能、更人性化的方向转型升级。这一领域的突破性进展, 标志着医疗科技正迈向一个全新的智能化时代。
 
@@ -413,7 +413,111 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 <section id="uav"></section>
 
 ### 3.9.2 UAV - 无人机
-Coming Soon !
+无人机的发展来源于：
+1. 从外部传感设备保护发展至机载传感与计算；
+2. 从遥控/预先编程发展至自主。
+
+不同于legged locomotion和manipulation，在无人机领域，data-driven的方法与model-based/modular的方法在不同任务中的优势不同，仍处于分庭抗礼的阶段。这主要是因为无人机的模型与驱动模式较为简单（如四旋翼的驱动机构只有四个电机），且传统的无人机（即不具有操作设备）不会与环境产生交互，因此基于模型、优化和分层的方法，通过良好的状态机/规则设计和高效的局部优化技术，仍能够被赋予很强的性能。然而，无人机的难点在于其状态估计（通常需要）、感知和底层驱动充满噪声，这是因为小型化无人机的负载能力十分有限以及其成本被尽可能压低，因此在一些任务中data-driven/端到端的方法展现出了远超于传统方法的性能。因此，以下对无人机data-driven资料介绍的同时会穿插其与传统方法的对比，以便大家了解整个领域发展的动机。
+
+总体而言，无人机的研究分为三个部分：
+1. 技能实现/学习，例如避障、竞速、大机动飞行/特技等；
+2. 任务实现/学习，例如探索、重建、跟踪等；
+3. 飞行机器人本体设计。
+
+无人机工作的开源代码并不多且良莠不齐，大部分需要通过论文学习。
+
+### 3.9.2.1 技能实现/学习
+- **支持RL的仿真器**
+  
+  无人机的仿真器普遍并不强大，并且几乎没有开源的RL sim2real项目。基于开源代码需要较大的内容改动才能实现理想的sim2real performance。
+  - **AirSim** （ https://microsoft.github.io/AirSim/ ）：基于UE4引擎，具有较为逼真动力学transition模拟。缺点是UE4底层功能较难修改并且运行速度较慢。
+  - **Flightmare** （ https://github.com/uzh-rpg/flightmare ）：基于Unity渲染，CPU并行动力学。
+  - **AerialGym** （ https://github.com/ntnu-arl/aerial_gym_simulator ）：基于IsaacSim，GPU并行动力学。
+
+- **经典技能代表性工作**
+
+  我们主要介绍一些data-driven方法在经典任务上的应用。值得一提的是，以下的工作中，出现了一些摆脱了对SLAM系统和里程计依赖的方法（而无人机最初的兴起正是依靠SLAM/里程计系统的日益成熟），将成为无人机技能学习中有趣的进展方向。
+  - **未知场景障碍物躲避**
+    - Learning Monocular Reactive UAV Control in Cluttered Natural Environments. ICRA 2013, CMU. 受自动驾驶发展启发，第一个使用监督学习将图像映射为离散上游控制指令的系统。
+    - CAD2RL: Real Single-Image Flight without a Single Real Image. RSS 2017，UCB. 第一个使用sim2real RL，对单目RGB图像进行大量domain randomization，在长廊中输出速度指令的系统。
+    - DroNet: Learning to Fly by Driving. RAL 2018, UZH. 利用自动假设数据集让飞机输出速度指令，代码开源（ https://github.com/uzh-rpg/rpg_public_dronet ）。
+    - Learning High-Speed Flight in the Wild. SciRob 2021, UZH. 使用dagger利用传统轨迹规划进行监督学习。文章claim网络推理的低延迟可以使未知环境中飞行速度更快。代码开源（ https://github.com/uzh-rpg/agile_autonomy ）。
+    - Back to Newton's Laws: Learning Vision-based Agile Flight via Differentiable Physics, Arxiv 2024, SJTU. 用differentiable physics提供的一阶梯度做策略优化，不需要显式的位置和速度估计。文章用低分辨率深度图，训练避障比RL更高效，实现高速飞行。
+    - Flying on Point Clouds using Reinforcement Learning. Arxiv 2025, ZJU. 使用机载雷达和sim2real RL实现自主避障。
+    - 值得一提的是，作为无人机最常用的任务，避障现在最常用的还是传统方法的系统如开源的ego-planner（ https://github.com/ZJU-FAST-Lab/ego-planner ），由于这样的方案已经足以胜任大部分场景（而不像四足的MPC），因此在实际应用中比较少使用data-driven的方案。
+
+  - **无人机竞速**
+    - Champion-level drone racing using deep reinforcement learning. Nature 23, UZH. 用强化学习战胜人类冠军飞手, 近几年无人机领域影响力最高的文章，是UZH RPG实验室多年来深厚工程积累的结果，其中的RL方案较为简单直接。
+    - Reaching the Limit in Autonomous Racing: Optimal Control versus Reinforcement Learning. SciRob 23, UZH. 强化学习与最优控制方法竞速飞行对比。
+    - Demonstrating Agile Flight from Pixels without State Estimation. RSS 2024, UZH. 使用视觉，不需要显式状态估计的现实世界竞速demo。
+    - UZH的Perception and Robotics Group (RPG) 使用最优控制和RL的方法在竞速上有诸多尝试，使得无人机在固定轨道上达到最快飞行速度。
+
+  - **大机动/特技飞行**
+    - Deep Drone Acrobatics. RSS 2020, UZH. 使用模仿学习，从视觉特征点中学习MPC的轨迹跟踪，实现姿态剧烈变化的特技飞行。
+    - Whole-Body Control Through Narrow Gaps From Pixels to Action. ICRA 2025, ZJU. 使用强化学习实现视觉端到端窄缝穿越，不需要显式的位置和速度估计，超越传统方法性能。
+
+- **经典任务实现代表性工作**
+  - **追捕**
+    - HOLA-Drone: Hypergraphic Open-ended Learning for Zero-Shot Multi-Drone Cooperative Pursuit. Arxiv 2024, University of Manchester.
+    - Multi-UAV Pursuit-Evasion with Online Planning in Unknown Environments by Deep Reinforcement Learning. Arxiv 2024, THU.
+  - **探索**
+    - Deep Reinforcement Learning-based Large-scale Robot Exploration, Arxiv2024, National University of Singapore (NUS). 利用注意力机制学习不同空间尺度的依赖关系，对未知区域进行隐式预测，优化已知空间探索策略，提高探索效率。
+    - ARiADNE: A Reinforcement learning approach using Attention-based Deep Networks for Exploration, Arxiv2023, National University of Singapore (NUS). 学习已知不同区域在多个空间尺度上的相互依赖关系，并隐式预测探索这些区域可能获得的潜在收益。这使得代理能够安排行动顺序，以平衡在已知区域对地图进行开发/细化与探索新区域之间的自然权衡。
+    - DARE: Diffusion Policy for Autonomous Robot Exploration. Arxiv2024, National University of Singapore (NUS). DARE方法利用self-attention学习地图空间信息，并通过diffusion生成通往未知区域的轨迹，以提高自主机器人的探索效率。
+
+### 3.9.2.2 无人机硬件平台搭建
+手搓一个遥控器操控的穿越机不是一个很难的事情，网上有很多爱好者分享教程。但想搭建一个具有自主导航功能的无人机并非易事，是一个系统工程，这里推荐浙大FAST-lab开源的教程：
+
+- [从0制作自主空中机器人](https://www.bilibili.com/video/BV1WZ4y167me/?spm_id_from=333.1387.homepage.video_card.click&vd_source=875782ad8340a833a05fa20f1ae0baa5)
+
+### 3.9.2.3 新构型无人机设计
+除了常规用于航拍，环境探索的四旋翼无人机，想让无人机具备更多能力，应用于更广泛的具身智能场景，除了算法上的创新外，也需要在硬件层面对无人机的构型进行创新设计。
+
+- **空中机械臂（Aerial Manipulator）** 
+
+    空中机械臂，也叫空中操作无人机，兼具无人机的快速空间移动能力和机械臂的精确操纵能力，是具身智能的一种理想载体。西湖大学赵世钰老师组在知乎上有一系列文章介绍：
+
+    - [空中作业机器人，下一代无人机技术？](https://zhuanlan.zhihu.com/p/442331197)
+    - [空中作业机器人—没那么简单！](https://zhuanlan.zhihu.com/p/487203757)
+    - [空中操作机器人：如何设计机械臂？](https://zhuanlan.zhihu.com/p/509669272)
+    - [空中作业机器人都有哪些应用？](https://zhuanlan.zhihu.com/p/517471760)
+
+    * 代表性工作
+        * [Past, Present, and Future of Aerial Robotic Manipulators](https://ieeexplore.ieee.org/document/9462539). TRO 2022. 空中机械臂领域目前最全的综述文章，入门了解必备。
+        * [Millimeter-Level Pick and Peg-in-Hole Task Achieved by Aerial Manipulator](https://ieeexplore.ieee.org/abstract/document/10339889). TRO 2023, BHU. 使用四旋翼加串联机械臂实现毫米精度peg-in-pole任务。
+        * [NDOB-Based Control of a UAV with Delta-Arm Considering Manipulator Dynamics](https://arxiv.org/abs/2501.06122) [[Video](https://www.bilibili.com/video/BV16Zt5eBEPW/?spm_id_from=333.1387.homepage.video_card.click&vd_source=875782ad8340a833a05fa20f1ae0baa5)]. ICRA 2025, SYU. 使用四旋翼加并联机械臂实现毫米精度抓取。
+        * [A Compact Aerial Manipulator: Design and Control for Dexterous Operations](https://link.springer.com/article/10.1007/s10846-024-02090-7) [[Video](https://www.bilibili.com/video/BV1CC4y1Z7xS/?spm_id_from=333.1387.homepage.video_card.click)]. JIRS 2024, BHU. 用空中机械臂做一些有趣的应用，比如抓鸡蛋、开门等等。
+
+- **全驱动无人机（Fully-Actuated UAV）**
+
+    常见的四旋翼无人机具有欠驱动特性，即位置与姿态耦合。而具有位置姿态解耦控制的全驱动无人机，理论上更适合作为空中操作的飞行平台。
+
+    * 代表性工作
+        * [Fully Actuated Multirotor UAVs: A Literature Review](https://ieeexplore.ieee.org/document/8978486/?arnumber=8978486). RAM 2020. 全驱动无人机领域目前最全的综述文章，入门了解必备。
+        * [Design, modeling and control of an omni-directional aerial vehicle](https://ieeexplore.ieee.org/document/7487497). ICRA 2016, ETH. 第一个实现全向飞行的固定倾角全驱动无人机。
+        * [The Voliro omniorientational hexacopter: An agile and maneuverable tiltable-rotor aerial vehicle](https://ieeexplore.ieee.org/document/8485627). RAM 2018, ETH. 第一个实现全向飞行的可变倾角全驱动无人机 
+        * FLOAT Drone: A Fully-actuated Coaxial Aerial Robot for Close-Proximity Operations. Arxiv 2025, ZJU. 适合近端作业的小尺寸全驱动无人机。
+
+- **可变形无人机（Deformable UAV）**
+
+    除了通过往飞行平台上安装机械臂，让无人机本体可以变形，也是使其实现更多功能的一种方法。
+
+    * 代表性工作
+        * [Design, Modeling, and Control of an Aerial Robot DRAGON: A Dual-Rotor-Embedded Multilink Robot With the Ability of Multi-Degree-of-Freedom Aerial Transformation](https://ieeexplore.ieee.org/document/8258850). RAL 2018，东京大学. Best paper award on UAV in ICRA 2018，多关节可变形无人机。
+        * [The Foldable Drone: A Morphing Quadrotor That Can Squeeze and Fly](https://ieeexplore.ieee.org/document/8567932?arnumber=8567932). RAL 2019, Uzh. 四旋翼每个机臂上安装一个舵机，实现机体变形飞行。
+        * [Ring-Rotor: A Novel Retractable Ring-Shaped Quadrotor With Aerial Grasping and Transportation Capability](https://ieeexplore.ieee.org/document/10044964) [[Video](https://www.bilibili.com/video/BV1gY4y1K723/?spm_id_from=333.1387.upload.video_card.click)]. RAL 2023, ZJU. 一种可变形的环形四旋翼，可用于抓取、运输等任务。
+        * [Design and Control of a Passively Morphing Quadcopter](https://ieeexplore.ieee.org/document/8794373) [[Video](https://www.youtube.com/watch?v=MSvoQT__c9U)]. ICRA 2019, UCB. 一种被动变形的四旋翼无人机。
+
+- **多模态无人机（Multi-Modal UAV）**
+
+    无人机与地面机器人相比，其优势在于三维空间运动能力，劣势则是续航差。因此一些研究关注多模态无人机的构型设计、运动控制以及自主导航。多模态无人机具备空中、地面、水下等多域运动能力。这不仅能解决无人机的续航问题，也能让无人机具有更多应用潜力。
+
+    * 代表性工作
+        * [A bipedal walking robot that can fly, slackline, and skateboard](https://www.science.org/doi/10.1126/scirobotics.abf8136). SR 2021, Caltech. 多模态空地足式机器人。
+        * [Multi-Modal Mobility Morphobot (M4) with appendage repurposing for locomotion plasticity enhancement](https://www.nature.com/articles/s41467-023-39018-y). NC 2023, Northeastern University. 具有很多种运动模式的多模态无人机。
+        * [Skater: A Novel Bi-Modal Bi-Copter Robot for Adaptive Locomotion in Air and Diverse Terrain](https://ieeexplore.ieee.org/document/10538378) [[Video](https://www.bilibili.com/video/BV1y2421M7HM/?spm_id_from=333.1387.upload.video_card.click&vd_source=875782ad8340a833a05fa20f1ae0baa5)]. RAL 2024, ZJU. 适应多样地形的多模态空地双旋翼无人机。
+        * [Autonomous and Adaptive Navigation for Terrestrial-Aerial Bimodal Vehicles](https://ieeexplore.ieee.org/document/9691888). RAL 2022, ZJU. 实现空地多模态无人机的自主导航。
+
 
 <section id="ad"></section>
 
@@ -636,7 +740,7 @@ Coming Soon !
 <section id="license"></section>
 
 # 🏷️ License - 许可证
-This repository is released under the MIT license. See LICENSE for additional details.
+This repository is released under the MIT license. See [LICENSE](./LICENSE) for additional details.
 
 <section id="cite"></section>
 
