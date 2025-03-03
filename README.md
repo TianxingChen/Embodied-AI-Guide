@@ -691,7 +691,7 @@ Coming Soon !
 
 # 5. Software - 软件
 
-<section id="benchmarks"></section>
+<section id="simulators"></section>
 
 ## 5.1 Simulators 仿真器
 常见仿真器wiki: [wiki](https://simulately.wiki/)
@@ -708,6 +708,8 @@ Coming Soon !
 **教程**：
 - **Isaac 101：** [Blog](https://axi404.top/tags/isaac%20101) by Axi404.
 
+<section id="benchmarks"></section>
+
 ## 5.2 Banchmarks 基准集
 具身智能常用benchmark总结 [1]: [zhihu](https://zhuanlan.zhihu.com/p/695342864)<br>
 * **CALVIN**, [github](https://github.com/mees/calvin), [website](http://calvin.cs.uni-freiburg.de/)2022年, 第一个公开的结合了自然语言控制、高维多模态输入、7自由度的机械臂控制以及长视野的机器人操纵benchmark。支持不同的语言指令, 不同的摄像头输入, 不同的控制方式, 主要用来评估具身智能模型的多模态输入的能力和长程规划能力。
@@ -716,6 +718,8 @@ Coming Soon !
 * **RoboGen**, [repo](https://github.com/Genesis-Embodied-AI/RoboGen), [website](https://robogen-ai.github.io/): 不是生成policy, 而是生成任务、场景和带标记的数据, 能直接用来监督学习。
 * **LIBERO**, [repo](https://github.com/Lifelong-Robot-Learning/LIBERO), [website](https://libero-project.github.io/intro.html): 用一个程序化生成管道来生成任务, 这个管道理论上可以生成无限数量的操作任务, 还提供了：三种视觉运动策略网络架构（RNN、Transformer和ViLT） 和 三种终身学习算法, 以及顺序微调和多任务学习的基准。
 * **RoboTwin**, [repo](https://github.com/TianxingChen/RoboTwin): 使用程序生成双臂机器人无限操作任务数据, 并提供了所有任务的评测基准。
+
+<section id="datasets"></section>
 
 ## 5.3 Datasets 数据集
 * **Open X-Embodiment: Robotic Learning Datasets and RT-X Models**, [website](https://robotics-transformer-x.github.io/):  22种不同机器人平台的超过100万条真实机器人轨迹数据，覆盖了527种不同的技能和160,266项任务，主要集中在抓取和放置。
