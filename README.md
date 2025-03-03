@@ -705,6 +705,9 @@ Coming Soon !
 | [Genesis](https://genesis-embodied-ai.github.io/) ||
 | [SOFA](https://github.com/sofa-framework/sofa/)| 常用于软体机器人的仿真 |
 
+**教程**：
+- **Isaac 101：** [Blog](https://axi404.top/tags/isaac%20101) by Axi404.
+
 ## 5.2 Banchmarks 基准集
 具身智能常用benchmark总结 [1]: [zhihu](https://zhuanlan.zhihu.com/p/695342864)<br>
 * **CALVIN**, [github](https://github.com/mees/calvin), [website](http://calvin.cs.uni-freiburg.de/)2022年, 第一个公开的结合了自然语言控制、高维多模态输入、7自由度的机械臂控制以及长视野的机器人操纵benchmark。支持不同的语言指令, 不同的摄像头输入, 不同的控制方式, 主要用来评估具身智能模型的多模态输入的能力和长程规划能力。
