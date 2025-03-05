@@ -322,7 +322,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
   * Diffusion Model for 2D/3D Generation 相关论文分类: [link](https://zhuanlan.zhihu.com/p/617510702)
   * 3D生成相关论文-2024: [link](https://zhuanlan.zhihu.com/p/700895749)
 
-<section id="vp"></section>
+<section id="4dv"></section>
 
 ### 3.6.3 4D Vision - 四维视觉
 * 视频理解
@@ -333,7 +333,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
   * 视频生成博客(英文): [link](https://lilianweng.github.io/posts/2024-04-12-diffusion-video/)
   * 4D 生成的论文列表: [website](https://github.com/cwchenwang/awesome-4d-generation)
 
-<section id="5dv"></section>
+<section id="vp"></section>
 
 ### 3.6.4 Visual Prompting - 视觉提示
 
