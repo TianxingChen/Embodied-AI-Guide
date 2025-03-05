@@ -29,6 +29,7 @@
             <li><a href="#2dv">3.6.1 2D Vision - 二维视觉</a></li>
             <li><a href="#3dv">3.6.2 3D Vision - 三维视觉</a></li>
             <li><a href="#4dv">3.6.3 4D Vision - 四维视觉</a></li>
+            <li><a href="#vp">3.6.4 Visual Prompting - 视觉提示</a></li>
           </ul>
         </li>
         <li><a href="#cg"> 3.7 Computer Graphics - 计算机图形学</a></li>  
@@ -65,6 +66,7 @@
     <li><a href="#star-history">⭐️ Star History - Star历史</a></li>
   </ul>
 </nav>
+
 
 
 <section id="start"></section>
@@ -331,6 +333,16 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
   * 视频生成博客(英文): [link](https://lilianweng.github.io/posts/2024-04-12-diffusion-video/)
   * 4D 生成的论文列表: [website](https://github.com/cwchenwang/awesome-4d-generation)
 
+<section id="vp"></section>
+
+### 3.6.4 Visual Prompting - 视觉提示
+
+视觉提示是一种利用视觉输入引导大模型完成特定任务的方法，常用于具身智能领域。它通过提供示例图像、标注或视觉线索，让模型理解任务要求，而无需额外训练。例如，在机器人导航、操控等场景中，视觉提示可帮助模型适应新环境，提高泛化能力。相比传统方法，视觉提示具备更强的灵活性和可扩展性，使具身智能系统能够通过视觉信息快速适应复杂任务。
+
+- 视觉提示综述：[paper](https://arxiv.org/abs/2409.15310)
+- **PIVOT**, [page](https://pivot-prompt.github.io): 通过将任务转化为迭代式视觉问答，实现在无需特定任务数据微调的情况下，zero-shot控制机器人系统和进行空间推理。
+- **Set-of-Mark Visual Prompting for GPT-4V**: [page](https://som-gpt4v.github.io)
+
 <section id="cg"></section>
 
 ## 3.7 Computer Graphics - 计算机图形学
@@ -566,10 +578,10 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
   * https://arxiv.org/abs/2405.19620
   * https://arxiv.org/abs/2411.15139
   * 快系统的 Scale up 特性探究：https://arxiv.org/pdf/2412.02689
-
 * 慢系统经典论文：DriveVLM, EMMA
   * https://arxiv.org/abs/2402.12289
   * https://arxiv.org/abs/2410.23262
+  	- **[Open-EMMA](https://github.com/taco-group/OpenEMMA)** 是EMMA的一个开源实现，提供了一个用于自动驾驶车辆运动规划的端到端框架。
 
 
 #### 未来发展方向
@@ -633,12 +645,12 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
         * [BiliBili IK(2)](https://www.bilibili.com/video/BV1Tt4y1T79Z?spm_id_from=333.788.recommend_more_video.0&vd_source=b14220472557bfa1918f3d0faa38bdc1)
       * 文字教学
         * [Book](https://motion.cs.illinois.edu/RoboticSystems/InverseKinematics.html), 较为详细的IK理论
-      
+  
     * FK (Forward Kinematics) 正运动学
       * 较为详细的视频课
         * [BiliBili FK(1)](https://www.bilibili.com/video/BV1Ve4y127Uf?spm_id_from=333.788.recommend_more_video.0&vd_source=b14220472557bfa1918f3d0faa38bdc1)
         * [BiliBili FK(2)](https://www.bilibili.com/video/BV1a14y157uL?spm_id_from=333.788.videopod.sections&vd_source=b14220472557bfa1918f3d0faa38bdc1)
-          
+      
    * 经典教材
      * 《机构学与机器人学的几何基础与旋量代数》 戴建生院士 著
      * 《现代机器人学：机构、规划与控制》凯文·M. 林奇, 朴钟宇 著
@@ -725,6 +737,7 @@ Coming Soon !
 * **Open X-Embodiment: Robotic Learning Datasets and RT-X Models**, [website](https://robotics-transformer-x.github.io/):  22种不同机器人平台的超过100万条真实机器人轨迹数据，覆盖了527种不同的技能和160,266项任务，主要集中在抓取和放置。
 * **AgiBot World Datasets (智元机器人)**, [website](https://agibot-world.com/): 八十余种日常生活中的多样化技能，超过100万条轨迹数据，采集自**同构型机器人**, 多级质量把控和全程人工在环的策略，从采集员的专业培训，到采集过程中的严格管理，再到数据的筛选、审核和标注，每一个环节都经过了精心设计和严格把控。
 * **RoboMIND**, [website](https://www.robomind.net/): 55,000条真实世界的演示轨迹，涵盖了279个不同任务和61个独特物体类别，来自四种不同协作臂，任务被分为基础技能、精准操作、场景理解、柜体操作和协作任务五大类。
+* **All Robots in One,** [website](https://imaei.github.io/project_pages/ario/): ARIO 数据集，包含了 **2D、3D、文本、触觉、声音 5 种模态的感知数据**，涵盖**操作**和**导航**两大类任务，既有**仿真数据**，也有**真实场景数据**，并且包含多种机器人硬件，有很高的丰富度。在数据规模达到三百万的同时，还保证了数据的统一格式，是目前具身智能领域同时达到高质量、多样化和大规模的开源数据集。
 
 
 
