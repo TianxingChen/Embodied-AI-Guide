@@ -684,7 +684,6 @@ Coming Soon !
 * **优点**：提供高分辨率触觉信息、非侵入式感知、不影响物体表面特性，并且可与视觉系统集成，提高多模态感知能力。  
 * **缺点**：计算量大，依赖视觉处理和机器学习；易受环境光影响；光学设计复杂，封装和耐用性受限。
 
-
  **参考文献综述**：写的非常详细，分别是算法和结构设计
 - 算法：*[When Vision Meets Touch: A Contemporary Review for Visuotactile Sensors From the Signal Processing Perspective
 ](https://ieeexplore.ieee.org/document/10563188)*
