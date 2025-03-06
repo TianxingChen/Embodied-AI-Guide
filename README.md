@@ -50,7 +50,8 @@
         <li><a href="#robosystem">4.3 Robot System Design - 机器人系统设计</a></li>
         <li><a href="#control">4.4 Control - 控制学</a></li>  
         <li><a href="#sensors">4.5 Sensors - 传感器</a></li>
-        <li><a href="#companies">4.6 Companies - 公司</a></li>
+        <li><a href="#tactile">4.6 Tactile Sensing - 触觉感知</a></li>
+        <li><a href="#companies">4.7 Companies - 公司</a></li>
       </ul>
     </li>
     <li><a href="#software">5. Software - 软件</a>
@@ -671,9 +672,73 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 ## 4.5 Sensors - 传感器
 Coming Soon !
 
+<section id="tactile"></section>
+
+## 4.6 Tactile Sensing - 触觉感知
+
+### 1. 视触觉传感器（Vision-Based Tactile Sensors）
+
+
+视触觉传感器通过摄像头捕捉触觉信息，将触摸表面变形映射为视觉数据，以估计接触力、形变等信息。其设计涉及 **传感器形状**（影响接触范围与适应性）、**标记点设置**（追踪表面形变，提高分辨率）、**材料选择**（如硅胶或弹性体，提高灵敏度）以及 **光照与摄像系统**（增强视觉信号质量）。
+
+* **优点**：提供高分辨率触觉信息、非侵入式感知、不影响物体表面特性，并且可与视觉系统集成，提高多模态感知能力。  
+* **缺点**：计算量大，依赖视觉处理和机器学习；易受环境光影响；光学设计复杂，封装和耐用性受限。
+
+
+ **参考文献综述**：写的非常详细，分别是算法和结构设计
+- 算法：*[When Vision Meets Touch: A Contemporary Review for Visuotactile Sensors From the Signal Processing Perspective
+](https://ieeexplore.ieee.org/document/10563188)*
+- 结构：*[On the Design and Development of Vision-Based Tactile Sensors](https://link.springer.com/article/10.1007/s10846-021-01431-0)*
+
+### 2. 电子皮肤（Electronic Skin）
+
+触觉感知的路径主要就是这两类。电子皮肤模拟人类皮肤的触觉能力，通常采用柔性电子材料（如压力传感薄膜、纳米传感器网络等）来感知外界压力、温度和形变，使机器人具备更接近生物的触觉感知能力。
+
+* **优点**：电子皮肤可 **大面积覆盖** 机器人表面，实现全身触觉感知；具有 **高灵敏度**，能够检测微小的力变化，实现精准反馈；同时 **可伸缩性** 使其适应复杂表面，提高耐久性。
+* **缺点**：电子皮肤的 **制造复杂**，材料和工艺要求高，成本较高；**数据处理挑战**，大规模触觉数据需要高效的计算与存储方案；此外，**稳定性问题** 可能导致长期使用后灵敏度下降，影响可靠性。
+
+
+ **参考文献综述**：*[Toward an AI Era: Advances in Electronic Skins](https://pubs.acs.org/doi/10.1021/acs.chemrev.4c00049)*
+
+### 3. 触觉感知的应用和算法（视触觉）
+
+* 3.1 姿态估计（Pose Estimation）
+  * 估计in hand物体姿态
+    * *[3D Shape Perception from Monocular Vision, Touch, and Shape Priors](https://arxiv.org/abs/1808.03247)*
+  * in scene
+    * *[Fast Model-Based Contact Patch and Pose Estimation for Highly Deformable Dense-Geometry Tactile Sensors](https://ieeexplore.ieee.org/document/8936859)*
+
+* 3.2 物体分类（Classification）
+  * 区分不同液体、材料或透明物体。
+    * *[Understanding Dynamic Tactile Sensing for Liquid Property Estimation](https://arxiv.org/abs/2205.08771)*
+    * *[Multimode Fusion Perception for Transparent Glass Recognition](https://www.semanticscholar.org/paper/Multimode-fusion-perception-for-transparent-glass-Zhang-Shan/90109f2eabba717d152a599fc8d8d5a3677c85e5)*
+
+* 3.3 触觉操控（Manipulation）
+  * 物体装配
+    * *[Active Extrinsic Contact Sensing: Application to General Peg-in-Hole Insertion](https://ieeexplore.ieee.org/abstract/document/9812017)*
+    * *[Building a Library of Tactile Skills Based on Fingervision](https://ieeexplore.ieee.org/abstract/document/9035000)*
+  * 线缆整理
+    * *[Cable Manipulation with a Tactile-Reactive Gripper](https://arxiv.org/abs/1910.02860)*
+  * 精细手部操作
+    * *[Manipulation by Feel: Touch-Based Control with Deep Predictive Models](https://arxiv.org/abs/1903.04128)*
+    * *[NeuralFeels with Neural Fields: Visuotactile Perception for In-Hand Manipulation](https://www.science.org/doi/10.1126/scirobotics.adl0628)*
+
+* 3.4 触觉大模型（Large Tactile Models）
+  * 以统一多模态触觉表示，提高通用性。
+    * *[Binding Touch to Everything: Learning Unified Multimodal Tactile Representations](https://openaccess.thecvf.com/content/CVPR2024/papers/Yang_Binding_Touch_to_Everything_Learning_Unified_Multimodal_Tactile_Representations_CVPR_2024_paper.pdf)*
+
+### 4. 传感器购买
+
+市面上有一些成熟的视触觉传感器可供选择 🔗 **[GelSight 官网](https://gelsight.com/)**
+
+
+
+
+
+
 <section id="companies"></section>
 
-## 4.6 Companies - 公司
+## 4.7 Companies - 公司
 
 | 公司 | 主营产品 | Others |
 |-------|------|------|
