@@ -317,7 +317,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 ### 3.6.2 3D Vision - 三维视觉
 
-* 三维视觉导论 - Andreas Geiger: [website](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/computer-vision/) （重点是完成课程里面的作业） <br>
+* 三维视觉导论 - Andreas Geiger: [website](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/computer-vision/) （重点关注课程作业） <br>
 * GAMES203 - 三维重建和理解: [bilibili](https://www.bilibili.com/video/BV1pw411d7aS/?share_source=copy_web&vd_source=0b7603f37af6d369a97df34525b149be)<br>
 * 三维生成的一些经典论文:
   * Diffusion Model for 2D/3D Generation 相关论文分类: [link](https://zhuanlan.zhihu.com/p/617510702)
@@ -370,7 +370,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 > 多模态旨在统一来自不同模态信息的表征, 在具身智能中由于面对着机器识别的视觉信息与人类自然语言的引导信息等不同模态的信息，多模态技术愈发重要。
 * 最经典的工作CLIP: [知乎](https://zhuanlan.zhihu.com/p/493489688)<br>
 * 多模态大语言模型的经典工作 LLaVA: [website](https://llava-vl.github.io/)<br>
-
+* 多模态生成模型综述: [pdf](https://arxiv.org/pdf/2503.04641)<br>
 <section id="embodied-ai-4-x"></section>
 
 ## 3.9 Embodied AI for X - 具身智能+X
