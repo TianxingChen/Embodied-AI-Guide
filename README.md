@@ -457,7 +457,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
     - DroNet: Learning to Fly by Driving. RAL 2018, UZH. 利用自动假设数据集让飞机输出速度指令，代码开源（ https://github.com/uzh-rpg/rpg_public_dronet ）。
     - Learning High-Speed Flight in the Wild. SciRob 2021, UZH. 使用dagger利用传统轨迹规划进行监督学习。文章claim网络推理的低延迟可以使未知环境中飞行速度更快。代码开源（ https://github.com/uzh-rpg/agile_autonomy ）。
     - Back to Newton's Laws: Learning Vision-based Agile Flight via Differentiable Physics, Arxiv 2024, SJTU. 用differentiable physics提供的一阶梯度做策略优化，不需要显式的位置和速度估计。文章用低分辨率深度图，训练避障比RL更高效，实现高速飞行。
-    - Flying on Point Clouds using Reinforcement Learning. Arxiv 2025, ZJU. 使用机载雷达和sim2real RL实现自主避障。
+    - [Flying on Point Clouds using Reinforcement Learning](https://arxiv.org/abs/2503.00496) [[Video](https://www.bilibili.com/video/BV1xeRpYnEYT/)].Arxiv 2025, ZJU. 使用机载雷达和sim2real RL实现自主避障。
     - 值得一提的是，作为无人机最常用的任务，避障现在最常用的还是传统方法的系统如开源的ego-planner（ https://github.com/ZJU-FAST-Lab/ego-planner ），由于这样的方案已经足以胜任大部分场景（而不像四足的MPC），因此在实际应用中比较少使用data-driven的方案。
 
   - **无人机竞速**
@@ -468,7 +468,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
   - **大机动/特技飞行**
     - Deep Drone Acrobatics. RSS 2020, UZH. 使用模仿学习，从视觉特征点中学习MPC的轨迹跟踪，实现姿态剧烈变化的特技飞行。
-    - Whole-Body Control Through Narrow Gaps From Pixels to Action. ICRA 2025, ZJU. 使用强化学习实现视觉端到端窄缝穿越，不需要显式的位置和速度估计，超越传统方法性能。
+    - [Whole-Body Control Through Narrow Gaps From Pixels to Action](https://arxiv.org/abs/2409.00895). ICRA 2025, ZJU. 使用强化学习实现视觉端到端窄缝穿越，不需要显式的位置和速度估计，超越传统方法性能。
 
 - **经典任务实现代表性工作**
   - **追捕**
@@ -510,7 +510,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
         * [Fully Actuated Multirotor UAVs: A Literature Review](https://ieeexplore.ieee.org/document/8978486/?arnumber=8978486). RAM 2020. 全驱动无人机领域目前最全的综述文章，入门了解必备。
         * [Design, modeling and control of an omni-directional aerial vehicle](https://ieeexplore.ieee.org/document/7487497). ICRA 2016, ETH. 第一个实现全向飞行的固定倾角全驱动无人机。
         * [The Voliro omniorientational hexacopter: An agile and maneuverable tiltable-rotor aerial vehicle](https://ieeexplore.ieee.org/document/8485627). RAM 2018, ETH. 第一个实现全向飞行的可变倾角全驱动无人机 
-        * FLOAT Drone: A Fully-actuated Coaxial Aerial Robot for Close-Proximity Operations. Arxiv 2025, ZJU. 适合近端作业的小尺寸全驱动无人机。
+        * [FLOAT Drone: A Fully-actuated Coaxial Aerial Robot for Close-Proximity Operations](https://arxiv.org/abs/2503.00785) [[Website](https://zju-jxlin.github.io/float-drone.github.io/)]. Arxiv 2025, ZJU. 适合近端作业的小尺寸全驱动无人机。
 
 - **可变形无人机（Deformable UAV）**
 
