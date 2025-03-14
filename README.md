@@ -18,8 +18,9 @@
         <li><a href="#foundation-models">3.2 Foundation Models - 基础模型</a></li>
         <li><a href="#robot-learning">3.3 Robot Learning - 机器人学习</a>
           <ul>
-            <li><a href="#rl">3.3.1 Reinforcement Learning - 强化学习</a></li>
-            <li><a href="#il">3.3.2 Imitation Learning - 模仿学习</a></li>
+            <li><a href="#mpc">3.3.1 Model Predictive Control - 模型预测控制</a></li>
+            <li><a href="#rl">3.3.2 Reinforcement Learning - 强化学习</a></li>
+            <li><a href="#il">3.3.3 Imitation Learning - 模仿学习</a></li>
           </ul>
         </li>
         <li><a href="#llm_robot">3.4 LLM for Robotics - 大语言模型在机器人学中的应用</a></li>
@@ -43,26 +44,44 @@
         </li>
       </ul>
     </li>
-    <li><a href="#hardware">4. Hardware - 硬件</a>
+    <li><a href="#control">4 Control and Robotics - 控制论与机器人学基础</a>
       <ul>
-        <li><a href="#embedded">4.1 Embedded - 嵌入式</a></li>
-        <li><a href="#mechanical">4.2 Mechanical Design - 机械设计</a></li>
-        <li><a href="#robosystem">4.3 Robot System Design - 机器人系统设计</a></li>
-        <li><a href="#control">4.4 Control - 控制学</a></li>  
-        <li><a href="#sensors">4.5 Sensors - 传感器</a></li>
-        <li><a href="#tactile">4.6 Tactile Sensing - 触觉感知</a></li>
-        <li><a href="#companies">4.7 Companies - 公司</a></li>
+        <li><a href="#41-控制理论基础">4.1 控制理论基础</li>
+        <ul>
+          <li><a href="#411-经典控制原理">4.1.1 经典控制原理</li>
+          <li><a href="#412-现代控制理论线性系统控制">4.1.2 现代控制理论（线性控制系统）</li>
+          <li><a href="#413-先进控制技术">4.1.3 先进控制技术</li>
+        </ul>
+        <li><a href="#42-机器人学导论">4.2 机器人学导论</li>
+        <ul>
+          <li><a href="#421-推荐材料">4.2.1 推荐资料</li>
+          <li><a href="#422-机器人运动学-kinematics-与动力学-dynamics">4.2.2 机器人运动学与动力学</li>
+          <li><a href="#423-机器人导航-navigation">4.2.3 机器人导航 (Navigation)</li>
+          <li><a href="#424-机器人局部运动-locomotion">4.2.4 机器人局部运动 (Locomotion)</li>
+          <li><a href="#425-机器人操作-manipulation">4.2.5 机器人操作 (Manipulation)</li>
+          <li><a href="#426-杂项-misc">4.2.6 杂项</li>
+        </ul>
+      </ul>
+    </li> 
+    <li><a href="#hardware">5. Hardware - 硬件</a>
+      <ul>
+        <li><a href="#embedded">5.1 Embedded - 嵌入式</a></li>
+        <li><a href="#mechanical">5.2 Mechanical Design - 机械设计</a></li>
+        <li><a href="#robosystem">5.3 Robot System Design - 机器人系统设计</a></li>
+        <li><a href="#sensors">5.4 Sensors - 传感器</a></li>
+        <li><a href="#tactile">5.5 Tactile Sensing - 触觉感知</a></li>
+        <li><a href="#companies">5.6 Companies - 公司</a></li>
       </ul>
     </li>
-    <li><a href="#software">5. Software - 软件</a>
+    <li><a href="#software">6. Software - 软件</a>
       <ul>
-        <li><a href="#simulators">5.1 Simulators - 仿真器</a></li>
-        <li><a href="#benchmarks">5.2 Benchmarks  - 基准集</a></li>
-        <li><a href="#datasets">5.3 Datasets  - 数据集</a></li>
+        <li><a href="#simulators">6.1 Simulators - 仿真器</a></li>
+        <li><a href="#benchmarks">6.2 Benchmarks  - 基准集</a></li>
+        <li><a href="#datasets">6.3 Datasets  - 数据集</a></li>
       </ul>
     </li>
-    <li><a href="#paper_list">6. Paper Lists - 论文列表</a></li>
-    <li><a href="#acknowledgement">7. Acknowledgement - 致谢</a></li>
+    <li><a href="#paper_list">7. Paper Lists - 论文列表</a></li>
+    <li><a href="#acknowledgement">8. Acknowledgement - 致谢</a></li>
     <li><a href="#license">🏷️ License - 许可证</a></li>
     <li><a href="#star-history">⭐️ Star History - Star历史</a></li>
   </ul>
@@ -135,7 +154,7 @@
 
 <section id="foundation-models"></section>
 
-## 3.2 Foundation Models - 基础模型
+## 3.2 Vision Foundation Models - 视觉基础模型
 
 > 以下是部分具身智能中常用的基础模型, 计算机视觉中发展的非常好的工具可以直接赋能具身智能的下游应用。
 
@@ -169,9 +188,11 @@
 
 机器人学习 Robot Learning 的发展: [zhihu](https://zhuanlan.zhihu.com/p/26988866)
 
+### 3.3.1 Model Predictive Control (MPC) - 模型预测控制
+
 <section id="rl"></section>
 
-### 3.3.1 Reinforcement Learning - 强化学习
+### 3.3.2 Reinforcement Learning - 强化学习
 
 * 强化学习的数学原理 - 西湖大学赵世钰: [bilibili](https://space.bilibili.com/2044042934/channel/collectiondetail?sid=748665) [GitHub](https://github.com/MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning) 这门课程作为强化学习的入门课程非常合适，适合只对机器学习略有了解，但没有了解过强化学习的初学者，可以了解强化学习的数学原理，其教材编写也十分用心。
 
@@ -197,7 +218,7 @@
 
 <section id="il"></section>
 
-### 3.3.2 Imitation Learning - 模仿学习
+### 3.3.3 Imitation Learning - 模仿学习
 
 * 《模仿学习简洁教程》 - 南京大学LAMDA: [PDF](https://www.lamda.nju.edu.cn/xut/Imitation_Learning.pdf)<br>
 * Supervised Policy Learning for Real Robots, RSS 2024 Workshop 教程：真实机器人的监督策略学习, [bilibili](https://www.bilibili.com/video/BV1Fx4y1s7if/?buvid=XY415384A771A6C681C9BEB3817566ED57724&is_story_h5=false&mid=ORgXkVzTHaOKTsml0RX5Gw%3D%3D&plat_id=240&share_from=ugc&share_medium=android&share_plat=android&share_source=WEIXIN&share_tag=s_i&spmid=dt.space-dt.0.0&timestamp=1721464513&unique_k=Cqj5d9J&up_id=2185804&vd_source=ab9cf5374617c2867aaea34af29b53c9)
@@ -589,18 +610,103 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 [AIR ApolloFM技术全解读](https://air.tsinghua.edu.cn/info/1007/2258.htm)
 
+<section id="control"></section>
+
+## 4. Control and Robotics - 控制论与机器人学基础
+
+## 4.1. 控制理论基础
+
+### 4.1.1 经典控制原理
+* 理解系统、反馈
+* 时域与频域分析
+* 传递函数
+* 理解前馈控制、反馈控制
+* **PID控制**：[CSDN](https://blog.csdn.net/name_longming/article/details/115093338)
+
+### 4.1.2 现代控制理论（线性系统控制）
+* Modern Control Systems (14th edition), Robert. H. Bishop, Richard. C, Dorf. z: [Book](http://103.203.175.90:81/fdScript/RootOfEBooks/E%20Book%20collection%20-%202024/EEE/Modern_control_systems_Robert_H_Bishop_Richard_C_Dorf_z_lib_org.pdf#page=1.00&gsr=0)
+* 状态方程
+* 状态反馈与最优控制
+* **LQR控制**
+
+### 4.1.3 先进控制技术
+* 鲁棒控制
+* 彻底搞懂阻抗控制、导纳控制、力位混合控制: [CSDN](https://blog.csdn.net/a735148617/article/details/108564836)
+* **模型预测控制 MPC**
+* 智能控制 (包含基于深度学习的控制)
+
+## 4.2. 机器人学导论
+
+### 4.2.1 推荐材料
+* 现代机器人学（非常推荐！）[video](https://www.youtube.com/watch?v=29LhXWjn7Pc&list=PLggLP4f-rq02vX0OQQ5vrCxbJrzamYDfx&index=11)
+* 经典教材
+  * 《机构学与机器人学的几何基础与旋量代数》 戴建生院士 著
+  * 《现代机器人学：机构、规划与控制》凯文·M. 林奇, 朴钟宇 著
+  * 《机器人学的现代数学理论基础》丁希仑 著
+
+### 4.2.2 机器人运动学 (Kinematics) 与动力学 (Dynamics)
+1. 机器人运动学
+> 想要快速了解什么是IK FK的同学可以看这个7分钟的短片, 可以对此建立一个粗略的认知：[BiliBili](https://www.bilibili.com/video/BV18E411v7F9/?spm_id_from=333.337.search-card.all.click&vd_source=b14220472557bfa1918f3d0faa38bdc1)<br>
+> 较为简单的过一遍IK和FK的原理可以看这个：[CSDN](https://blog.csdn.net/Dwzsa/article/details/142386529?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ECtr-3-142386529-blog-109314877.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ECtr-3-142386529-blog-109314877.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=6) 
+
+* IK (Inverse Kinematics) 逆运动学
+  * 较为详细的视频课
+    * [BiliBili IK(1)](https://www.bilibili.com/video/BV1PD4y1t7xP/?spm_id_from=333.337.search-card.all.click&vd_source=b14220472557bfa1918f3d0faa38bdc1)
+    * [BiliBili IK(2)](https://www.bilibili.com/video/BV1Tt4y1T79Z?spm_id_from=333.788.recommend_more_video.0&vd_source=b14220472557bfa1918f3d0faa38bdc1)
+  * 文字教学
+    * [Book](https://motion.cs.illinois.edu/RoboticSystems/InverseKinematics.html), 较为详细的IK理论
+
+* FK (Forward Kinematics) 正运动学
+  * 较为详细的视频课
+    * [BiliBili FK(1)](https://www.bilibili.com/video/BV1Ve4y127Uf?spm_id_from=333.788.recommend_more_video.0&vd_source=b14220472557bfa1918f3d0faa38bdc1)
+    * [BiliBili FK(2)](https://www.bilibili.com/video/BV1a14y157uL?spm_id_from=333.788.videopod.sections&vd_source=b14220472557bfa1918f3d0faa38bdc1)
+
+2. 机器人动力学（**重要！！！**）
+* 理解斜对称矩阵
+* 理解Twist和Exponential of a twist
+* 旋量代数
+  
+### 4.2.3 机器人导航 Navigation
+* 轮式机器人及其建模
+* 理解ICP
+* 扩展卡尔曼滤波
+* SLAM
+
+### 4.2.4 机器人局部运动 Locomotion
+* 仿生角度看步行、跑步与跳跃的建模
+* 足式机器人及其建模
+
+### 4.2.5 机器人操作 Manipulation
+* 机械臂与灵巧手的建模
+  * 理解joint的建模
+* 坐标系的正运动学转换
+  
+
+### 4.2.6 杂项 Misc
+* ROS基础:
+  * 具身智能ROS1基础: [website](http://www.autolabor.com.cn/book/ROSTutorials/)
+  * 具身智能ROS2基础: [website](https://zhangzhiwei-zzw.github.io/ROS2%E5%AD%A6%E4%B9%A0/ROS2/)  
+    
+* 常用的库 
+  * cuRobo：[cuRobo](https://curobo.org/), cuRobo是Nvidia的一个利用 CUDA 加速的机器人库, 提供了一套高效的机器人算法, 主要通过并行计算显著提升性能, 包括但不限于IK, 碰撞检测, 路径规划等。
+  * IKFast：[IKFast](https://moveit.github.io/moveit_tutorials/doc/ikfast/ikfast_tutorial.html), 经典IK库。
+  * mplib：[mplib](https://github.com/haosulab/mplib), Maniskill Benchmark以及Sapien仿真平台的IK库。
+
+* ROS多传感器时间戳同步：[website](https://blog.csdn.net/qq_43495930/article/details/125649446)
+
+* 动手实践LeRobot SO-100：[website](https://huggingface.co/lerobot)
 
 
 <section id="hardware"></section>
 
-# 4. Hardware - 硬件
+# 5. Hardware - 硬件
 
 > 具身智能硬件方面涵盖多个技术栈, 如嵌入式软硬件设计, 机械设计, 机器人系统设计, 这部分知识比较繁杂, 适合想要专注此方向的人
 > 关于硬件部分的学习, 最好从实践出发！
 
 <section id="embedded"></section>
 
-## 4.1 Embedded - 嵌入式
+## 5.1 Embedded - 嵌入式
 * 嵌入式学习路线: [CSDN](https://blog.csdn.net/wangshuaiwsws95/article/details/107830452)
 * 51单片机：[BiliBili](https://www.bilibili.com/video/BV1Mb411e7re/), 经典江科大自动协出品
 * Stm32单片机：[BiliBili](https://www.bilibili.com/video/BV1th411z7sn/), 经典江科大自动协出品
@@ -611,70 +717,28 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 <section id="mechanical"></section>
 
-## 4.2 Mechanical Design - 机械设计
+## 5.2 Mechanical Design - 机械设计
 
 * SoildWorks教学：[BiliBili](https://www.bilibili.com/video/BV1iw411Z7HZ/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)
 * URDF生成：[CSDN](https://blog.csdn.net/weixin_45168199/article/details/105755388), 指导如何通过SolidWorks装配体出发生成机器人URDF文件。
   
 <section id="robosystem"></section>
 
-## 4.3 Robot System Design - 机器人系统设计
+## 5.3 Robot System Design - 机器人系统设计
 
 * 《机器人学简介》, 来自[2]做的高质量教材: [PDF](./files/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E7%AE%80%E4%BB%8B.pdf)
 
 * 《机器人系统教材》: [website](https://motion.cs.illinois.edu/RoboticSystems/)
 
-<section id="control"></section>
-
-## 4.4 Control - 控制学
-
-* ROS基础:
-  * 具身智能ROS1基础: [website](http://www.autolabor.com.cn/book/ROSTutorials/)
-  * 具身智能ROS2基础: [website](https://zhangzhiwei-zzw.github.io/ROS2%E5%AD%A6%E4%B9%A0/ROS2/)
-  
-* 基础控制理论:
-  * PID控制：[CSDN](https://blog.csdn.net/name_longming/article/details/115093338)
-  * 彻底搞懂阻抗控制、导纳控制、力位混合控制: [CSDN](https://blog.csdn.net/a735148617/article/details/108564836)
-  * Modern Control Systems (14th edition), Robert. H. Bishop, Richard. C, Dorf. z: [Book](http://103.203.175.90:81/fdScript/RootOfEBooks/E%20Book%20collection%20-%202024/EEE/Modern_control_systems_Robert_H_Bishop_Richard_C_Dorf_z_lib_org.pdf#page=1.00&gsr=0)
-
-  * 机械臂运动学
-  > 想要快速了解什么是IK FK的同学可以看这个7分钟的短片, 可以对此建立一个粗略的认知：[BiliBili](https://www.bilibili.com/video/BV18E411v7F9/?spm_id_from=333.337.search-card.all.click&vd_source=b14220472557bfa1918f3d0faa38bdc1)<br>
-  > 较为简单的过一遍IK和FK的原理可以看这个：[CSDN](https://blog.csdn.net/Dwzsa/article/details/142386529?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ECtr-3-142386529-blog-109314877.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ECtr-3-142386529-blog-109314877.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=6) 
-    * IK (Inverse Kinematics) 逆运动学
-      * 较为详细的视频课
-        * [BiliBili IK(1)](https://www.bilibili.com/video/BV1PD4y1t7xP/?spm_id_from=333.337.search-card.all.click&vd_source=b14220472557bfa1918f3d0faa38bdc1)
-        * [BiliBili IK(2)](https://www.bilibili.com/video/BV1Tt4y1T79Z?spm_id_from=333.788.recommend_more_video.0&vd_source=b14220472557bfa1918f3d0faa38bdc1)
-      * 文字教学
-        * [Book](https://motion.cs.illinois.edu/RoboticSystems/InverseKinematics.html), 较为详细的IK理论
-  
-    * FK (Forward Kinematics) 正运动学
-      * 较为详细的视频课
-        * [BiliBili FK(1)](https://www.bilibili.com/video/BV1Ve4y127Uf?spm_id_from=333.788.recommend_more_video.0&vd_source=b14220472557bfa1918f3d0faa38bdc1)
-        * [BiliBili FK(2)](https://www.bilibili.com/video/BV1a14y157uL?spm_id_from=333.788.videopod.sections&vd_source=b14220472557bfa1918f3d0faa38bdc1)
-      
-   * 经典教材
-     * 《机构学与机器人学的几何基础与旋量代数》 戴建生院士 著
-     * 《现代机器人学：机构、规划与控制》凯文·M. 林奇, 朴钟宇 著
-     * 《机器人学的现代数学理论基础》丁希仑 著
-    
-    * 常用的库 
-      * cuRobo：[cuRobo](https://curobo.org/), cuRobo是Nvidia的一个利用 CUDA 加速的机器人库, 提供了一套高效的机器人算法, 主要通过并行计算显著提升性能, 包括但不限于IK, 碰撞检测, 路径规划等。
-      * IKFast：[IKFast](https://moveit.github.io/moveit_tutorials/doc/ikfast/ikfast_tutorial.html), 经典IK库。
-      * mplib：[mplib](https://github.com/haosulab/mplib), Maniskill Benchmark以及Sapien仿真平台的IK库。
-
-* ROS多传感器时间戳同步：[website](https://blog.csdn.net/qq_43495930/article/details/125649446)
-
-* 动手实践LeRobot SO-100：[website](https://huggingface.co/lerobot)
-
 
 <section id="sensors"></section>
 
-## 4.5 Sensors - 传感器
+## 5.4 Sensors - 传感器
 Coming Soon !
 
 <section id="tactile"></section>
 
-## 4.6 Tactile Sensing - 触觉感知
+## 5.5 Tactile Sensing - 触觉感知
 
 ### 1. 视触觉传感器（Vision-Based Tactile Sensors）
 
@@ -730,14 +794,9 @@ Coming Soon !
 
 市面上有一些成熟的视触觉传感器可供选择 🔗 **[GelSight 官网](https://gelsight.com/)**
 
-
-
-
-
-
 <section id="companies"></section>
 
-## 4.7 Companies - 公司
+## 5.6 Companies - 公司
 
 | 公司 | 主营产品 | Others |
 |-------|------|------|
@@ -765,11 +824,11 @@ Coming Soon !
 
 <section id="software"></section>
 
-# 5. Software - 软件
+# 6. Software - 软件
 
 <section id="simulators"></section>
 
-## 5.1 Simulators 仿真器
+## 6.1 Simulators 仿真器
 常见仿真器wiki: [wiki](https://simulately.wiki/)
 | 仿真器 | 对应基准集 |
 |-------|------|
@@ -786,7 +845,7 @@ Coming Soon !
 
 <section id="benchmarks"></section>
 
-## 5.2 Banchmarks 基准集
+## 6.2 Banchmarks 基准集
 具身智能常用benchmark总结 [1]: [zhihu](https://zhuanlan.zhihu.com/p/695342864)<br>
 * **CALVIN**, [github](https://github.com/mees/calvin), [website](http://calvin.cs.uni-freiburg.de/)2022年, 第一个公开的结合了自然语言控制、高维多模态输入、7自由度的机械臂控制以及长视野的机器人操纵benchmark。支持不同的语言指令, 不同的摄像头输入, 不同的控制方式, 主要用来评估具身智能模型的多模态输入的能力和长程规划能力。
 * **Meta-World**, [webpage](https://meta-world.github.io/): 评估机器人在多任务和元强化学习场景下的表现。50个机器人操作任务（如抓取、推动物体、开门等）, 组织成不同的基准测试集（如ML1、ML10、ML45、MT10、MT50等）, 每个集合都有明确的训练任务和测试任务。周边和文档比较全面, 基于mojoco, 有完整的API和工具, python import即可运行。
@@ -797,7 +856,7 @@ Coming Soon !
 
 <section id="datasets"></section>
 
-## 5.3 Datasets 数据集
+## 6.3 Datasets 数据集
 * **Open X-Embodiment: Robotic Learning Datasets and RT-X Models**, [website](https://robotics-transformer-x.github.io/):  22种不同机器人平台的超过100万条真实机器人轨迹数据，覆盖了527种不同的技能和160,266项任务，主要集中在抓取和放置。
 * **AgiBot World Datasets (智元机器人)**, [website](https://agibot-world.com/): 八十余种日常生活中的多样化技能，超过100万条轨迹数据，采集自**同构型机器人**, 多级质量把控和全程人工在环的策略，从采集员的专业培训，到采集过程中的严格管理，再到数据的筛选、审核和标注，每一个环节都经过了精心设计和严格把控。
 * **RoboMIND**, [website](https://x-humanoid-robomind.github.io/): 包含了在479种不同任务中涉及96类独特物体的10.7万条真实世界演示轨迹，来自四种不同协作臂，任务被分为基础技能、精准操作、场景理解、柜体操作和协作任务五大类。
@@ -807,7 +866,7 @@ Coming Soon !
 
 <section id="paper_list"></section>
 
-# 6. Paper Lists - 论文列表
+# 7. Paper Lists - 论文列表
 
 * Awesome Humanoid Robot Learning - Yanjie Ze: [repo](https://github.com/YanjieZe/awesome-humanoid-robot-learning)
 * Paper Reading List - DeepTimber Community: [repo](https://github.com/DeepTimber-Robot-Lab/Paper-Reading-List)
@@ -818,7 +877,7 @@ Coming Soon !
 
 <section id="acknowledgement"></section>
 
-# 7. Acknowledgement - 致谢
+# 8. Acknowledgement - 致谢
 本文转载/引用了一些博主的文章, 我们对他们的知识分享表示感谢, 引用列表如下：
 [1] 知乎 [穆尧](https://www.zhihu.com/people/mu-yao-12-34), [2] 知乎 [东林钟声](https://www.zhihu.com/people/dong-lin-zhong-sheng-76), Github [Yunlong Dong](https://github.com/yunlongdong), [3] 知乎 [强化学徒](https://www.zhihu.com/people/heda-he-28), [4] 知乎 [Biang哥](https://www.zhihu.com/people/qi-da-guang), [5] OpenAI [Lilian Weng](https://lilianweng.github.io/), [6] B站 [木木具身](https://space.bilibili.com/350563565), [7] Github [Zhuoheng Li](https://github.com/StarCycle/EmbodiedAI-Reading-List-For-Lists?tab=readme-ov-file), [8] 知乎 [Flood Sung](https://www.zhihu.com/people/flood-sung), [9] Github [Sida Peng](https://github.com/pengsida/learning_research)
 
