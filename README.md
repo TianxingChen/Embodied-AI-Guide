@@ -296,7 +296,7 @@
 
   - **RLDG** ([paper](https://generalist-distillation.github.io/static/high_performance_generalist.pdf) | [code](https://arxiv.org/abs/2410.01971), 伯克利, 2024.12 ): 强化学习(RL)生成高质量的训练数据进行微调
 
-  - **BYO-VLA** ([paper](https://arxiv.org/abs/2410.01971) | [code](https://github.com/irom-princeton/byovla), 普渡大学, 2024.10): 运行时图像干预，有效降低VLA模型对任务无关视觉干扰的敏感度
+  - **BYO-VLA** ([paper](https://arxiv.org/abs/2410.01971) | [code](https://github.com/irom-princeton/byovla), 普林斯顿大学, 2024.10): 运行时图像干预，有效降低VLA模型对任务无关视觉干扰的敏感度
 
 * **Different Locomotion:**
 
