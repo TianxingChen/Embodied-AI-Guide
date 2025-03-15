@@ -56,10 +56,11 @@
         <ul>
           <li><a href="#421-推荐材料">4.2.1 推荐资料</li>
           <li><a href="#422-机器人运动学-kinematics-与动力学-dynamics">4.2.2 机器人运动学与动力学</li>
-          <li><a href="#423-机器人导航-navigation">4.2.3 机器人导航 (Navigation)</li>
-          <li><a href="#424-机器人局部运动-locomotion">4.2.4 机器人局部运动 (Locomotion)</li>
-          <li><a href="#425-机器人操作-manipulation">4.2.5 机器人操作 (Manipulation)</li>
-          <li><a href="#426-杂项-misc">4.2.6 杂项</li>
+          <li><a href="#423-里程计和同步定位与建图-Odometry&SLAM">4.2.3 里程计和同步定位与建图 (Odometry&SLAM)</li>
+          <li><a href="#424-机器人导航-navigation">4.2.4 机器人导航 (Navigation)</li>
+          <li><a href="#425-机器人局部运动-locomotion">4.2.5 机器人局部运动 (Locomotion)</li>
+          <li><a href="#426-机器人操作-manipulation">4.2.6 机器人操作 (Manipulation)</li>
+          <li><a href="#427-杂项-misc">4.2.7 杂项</li>
         </ul>
       </ul>
     </li> 
@@ -665,24 +666,44 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * 理解斜对称矩阵
 * 理解Twist和Exponential of a twist
 * 旋量代数
-  
-### 4.2.3 机器人导航 Navigation
+
+### 4.2.3 里程计和同步定位与建图 (Odometry&SLAM)
+里程计(Odometry)用于为机器人实时提供定位，里程计常常基于扩展卡尔曼滤波(EKF)实现，融合来自IMU、相机、激光雷达、码盘、毫米波雷达、光流传感器等等各种常用于机器人位姿感知的传感器之中的多种观测，以较高的频率实现对机器人位姿的估计。
+
+里程计中最常见的是视觉惯性里程计(VIO)和激光惯性里程计(LIO)，其中比较经典的工作包括VINS系列[VINS-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono)[VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion)，[LOAM](https://www.ri.cmu.edu/pub_files/2014/7/Ji_LidarMapping_RSS2014_v8.pdf)，[FAST-LIO](https://github.com/hku-mars/FAST_LIO)等等。此外还有融合了IMU、相机和激光传感器的里程计[FAST-LIVO](https://github.com/hku-mars/FAST-LIVO2)系列等。
+
+SLAM(Simultaneous Locolization And Mapping)在定位的同时完成地图的构建，使得回环(Loop Closure)检测成为可能，回环检测的存在使得当机器人重新访问到某个位置时可以修正一部分的累计误差，提高在长时间作业时的定位精度。SLAM的实现主要有filter-based和optimization-based两种，实现中一般又分前端和后端，基于不同传感器的SLAM又各有其特点，在这里提供一些学习资源：
+
+* [SLAM Handboook](https://github.com/SLAM-Handbook-contributors/slam-handbook-public-release)
+* [Past, Present, and Future of Simultaneous Localization And Mapping: Towards the Robust-Perception Age](https://arxiv.org/abs/1606.05830): SLAM领域的经典综述
+* 高翔老师的《视觉SLAM十四讲》
+* 高翔老师的《激光SLAM十四讲》
+
+此外，SLAM也有端到端的实现[DROID-SLAM](https://arxiv.org/abs/2108.10869)。
+
+SLAM的经典工作有[ORB-SLAM](https://github.com/UZ-SLAMLab/ORB_SLAM3)系列等。
+
+### 4.2.4 机器人导航 Navigation
+
 * 轮式机器人及其建模
 * 理解ICP
 * 扩展卡尔曼滤波
-* SLAM
 
-### 4.2.4 机器人局部运动 Locomotion
+
+### 4.2.5 机器人局部运动 Locomotion
+
 * 仿生角度看步行、跑步与跳跃的建模
 * 足式机器人及其建模
 
-### 4.2.5 机器人操作 Manipulation
+### 4.2.6 机器人操作 Manipulation
+
 * 机械臂与灵巧手的建模
   * 理解joint的建模
 * 坐标系的正运动学转换
   
 
-### 4.2.6 杂项 Misc
+### 4.2.7 杂项 Misc
+
 * ROS基础:
   * 具身智能ROS1基础: [website](http://www.autolabor.com.cn/book/ROSTutorials/)
   * 具身智能ROS2基础: [website](https://zhangzhiwei-zzw.github.io/ROS2%E5%AD%A6%E4%B9%A0/ROS2/)  
