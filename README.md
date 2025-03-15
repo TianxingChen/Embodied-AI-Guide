@@ -3,7 +3,7 @@
 <p align="center"> </p>
 
 
-> Embodied AI（具身智能）入门的路径以及高质量信息的总结, 期望是按照路线走完后, 新手可以快速建立关于这个领域的认知, 希望能帮助到各位入门具身智能的朋友, 欢迎点Star、分享与提PR🌟~<br>【 <a href="https://github.com/tianxingchen/Embodied-AI-Guide">Embodied-AI-Guide</a>, Latest Update: Feb. 5, 2025 】<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftianxingchen%2FEmbodied-AI-Guide&count_bg=%232B8DD9&title_bg=%237834C6&icon=github.svg&icon_color=%23E7E7E7&title=Page+Viewers&edge_flat=false"/> <img alt="GitHub repo stars" src="https://img.shields.io/github/stars/TianxingChen/Embodied-AI-Guide">
+> Embodied AI(具身智能)入门的路径以及高质量信息的总结, 期望是按照路线走完后, 新手可以快速建立关于这个领域的认知, 希望能帮助到各位入门具身智能的朋友, 欢迎点Star、分享与提PR🌟~<br>【 <a href="https://github.com/tianxingchen/Embodied-AI-Guide">Embodied-AI-Guide</a>, Latest Update: Feb. 5, 2025 】<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftianxingchen%2FEmbodied-AI-Guide&count_bg=%232B8DD9&title_bg=%237834C6&icon=github.svg&icon_color=%23E7E7E7&title=Page+Viewers&edge_flat=false"/> <img alt="GitHub repo stars" src="https://img.shields.io/github/stars/TianxingChen/Embodied-AI-Guide">
 
 
 # Contents - 目录
@@ -49,14 +49,14 @@
         <li><a href="#41-控制理论基础">4.1 控制理论基础</li>
         <ul>
           <li><a href="#411-经典控制原理">4.1.1 经典控制原理</li>
-          <li><a href="#412-现代控制理论线性系统控制">4.1.2 现代控制理论（线性系统控制）</li>
+          <li><a href="#412-现代控制理论线性系统控制">4.1.2 现代控制理论(线性系统控制)</li>
           <li><a href="#413-先进控制技术">4.1.3 先进控制技术</li>
         </ul>
         <li><a href="#42-机器人学导论">4.2 机器人学导论</li>
         <ul>
           <li><a href="#421-推荐材料">4.2.1 推荐资料</li>
           <li><a href="#422-机器人运动学-kinematics-与动力学-dynamics">4.2.2 机器人运动学与动力学</li>
-          <li><a href="#423-里程计和同步定位与建图-Odometry&SLAM">4.2.3 里程计和同步定位与建图 (Odometry&SLAM)</li>
+          <li><a href="#423-里程计和同步定位与建图-odometryslam">4.2.3 里程计和同步定位与建图 (Odometry&SLAM)</li>
           <li><a href="#424-机器人导航-navigation">4.2.4 机器人导航 (Navigation)</li>
           <li><a href="#425-机器人局部运动-locomotion">4.2.5 机器人局部运动 (Locomotion)</li>
           <li><a href="#426-机器人操作-manipulation">4.2.6 机器人操作 (Manipulation)</li>
@@ -77,8 +77,8 @@
     <li><a href="#software">6. Software - 软件</a>
       <ul>
         <li><a href="#simulators">6.1 Simulators - 仿真器</a></li>
-        <li><a href="#benchmarks">6.2 Benchmarks  - 基准集</a></li>
-        <li><a href="#datasets">6.3 Datasets  - 数据集</a></li>
+        <li><a href="#benchmarks">6.2 Benchmarks - 基准集</a></li>
+        <li><a href="#datasets">6.3 Datasets - 数据集</a></li>
       </ul>
     </li>
     <li><a href="#paper_list">7. Paper Lists - 论文列表</a></li>
@@ -167,7 +167,7 @@
 
 * SAM2: [website](https://ai.meta.com/sam2/), 来自Meta的研究, SAM的升级版, 可以在视频层面持续对物体进行分割追踪。
 
-* Grounding-DINO: [repo](https://github.com/IDEA-Research/GroundingDINO), [在线尝试](https://deepdataspace.com/playground/grounding_dino), **这个DINO与上面Meta的DINO没有关系**, 是一个由IDEA研究院（做了很多不错开源项目的机构）开发集成的图像目标检测的框架, 很多时候需要对目标物体进行检测的时候可以考虑使用。
+* Grounding-DINO: [repo](https://github.com/IDEA-Research/GroundingDINO), [在线尝试](https://deepdataspace.com/playground/grounding_dino), **这个DINO与上面Meta的DINO没有关系**, 是一个由IDEA研究院(做了很多不错开源项目的机构)开发集成的图像目标检测的框架, 很多时候需要对目标物体进行检测的时候可以考虑使用。
 
 * Grounded-SAM: [repo](https://github.com/IDEA-Research/Grounded-SAM-2), 比Grounding-DINO多了一个分割功能, 也就是支持检测后分割, 也有很多下游应用, 具体可以翻一下README。
 
@@ -215,7 +215,7 @@
 
 然而，深度强化学习的Reward Tuning和参数调整非常依赖于经验，建议读者在对深度强化学习有相关经验之后，可以自己尝试训练一个policy并在机器人上部署，体会其中的Sim-to-Real Gap。常用的仿真平台有[MuJoCo PlayGround](https://playground.mujoco.org/), [Isaac Lab](https://isaac-sim.github.io/IsaacLab/main/index.html), [SAPIEN](https://sapien.ucsd.edu/), [Genesis](https://github.com/Genesis-Embodied-AI/Genesis)等。
 
-常用的Codebase有[legged-gym](https://github.com/leggedrobotics/legged_gym)（由ETH RSL开发，基于IsaacGym）等，也可以根据你想做的任务找到相近的codebase。
+常用的Codebase有[legged-gym](https://github.com/leggedrobotics/legged_gym)(由ETH RSL开发，基于IsaacGym)等，也可以根据你想做的任务找到相近的codebase。
 
 <section id="il"></section>
 
@@ -251,23 +251,23 @@
 <section id="vla"></section>
 
 ## 3.5 Vision-Language-Action Models - VLA模型
-**Vision-Language-Action Models（VLA模型）** 是一种结合VLM（Vision-Language Model）与机器人控制的模型，旨在将预训练的VLM直接用于生成机器人动作（RT-2中定义）。和以往利用VLM做planning以及build from strach的方法不同，VLA无需重新设计新的架构，将动作转化为token，微调VLM。
+**Vision-Language-Action Models(VLA模型)** 是一种结合VLM(Vision-Language Model)与机器人控制的模型，旨在将预训练的VLM直接用于生成机器人动作(RT-2中定义)。和以往利用VLM做planning以及build from strach的方法不同，VLA无需重新设计新的架构，将动作转化为token，微调VLM。
 
 **VLA的特点**：端到端，使用LLM/VLM backbone，加载预训练模型, etc. 
 
-目前的VLA可以从以下几个方面进行区分：模型结构&大小（如action head的设计, tokenize的方法如FAST），预训练与微调策略和数据集，输入和输出（2D vs. 3D | TraceVLA输入visual trace），不同的应用场景等。
+目前的VLA可以从以下几个方面进行区分：模型结构&大小(如action head的设计, tokenize的方法如FAST)，预训练与微调策略和数据集，输入和输出(2D vs. 3D | TraceVLA输入visual trace)，不同的应用场景等。
 
 **参考资料：**
 
 * Blog:  [具身智能Vision-Language-Action的思考](https://zhuanlan.zhihu.com/p/9880769870), [zhihu](https://www.zhihu.com/question/655570660/answer/87040917575)
 
-* Survey: [A Survey on Vision-Language-Action Models for Embodied AI](https://arxiv.org/abs/2405.14093) , 2024.11.28
+* Survey: [A Survey on Vision-Language-Action Models for Embodied AI](https://arxiv.org/abs/2405.14093), 2024.11.28
 
 **经典工作**：
 
 * **Autoregressive Models**
 
-  - **RT系列（Robotic Transformers）**:
+  - **RT系列(Robotic Transformers)**:
     - **RT-1** ([paper](https://arxiv.org/abs/2409.12514))
     - **RT-2** ([page](https://robotics-transformer2.github.io/) | [paper](https://arxiv.org/abs/2307.15818), Google Deepmind, 2023.7)：55B
     - **RT-Trajectory** ([paper](https://arxiv.org/pdf/2311.01977), Google Deepmind, UCSD, 斯坦福 2023.11)
@@ -298,7 +298,7 @@
 
   - **FAST (π0)** ([paper](https://arxiv.org/pdf/2410.24164), [code](https://github.com/Physical-Intelligence/openpi.git), 斯坦福，伯克利, physical intelligence, 2025.1):  autoregressive VLA
 
-  - **RLDG** ([paper](https://generalist-distillation.github.io/static/high_performance_generalist.pdf) | [code](https://arxiv.org/abs/2410.01971), 伯克利, 2024.12 ): 强化学习（RL）生成高质量的训练数据进行微调
+  - **RLDG** ([paper](https://generalist-distillation.github.io/static/high_performance_generalist.pdf) | [code](https://arxiv.org/abs/2410.01971), 伯克利, 2024.12 ): 强化学习(RL)生成高质量的训练数据进行微调
 
   - **BYO-VLA** ([paper](https://arxiv.org/abs/2410.01971) | [code](https://github.com/irom-princeton/byovla), 普渡大学, 2024.10): 运行时图像干预，有效降低VLA模型对任务无关视觉干扰的敏感度
 
@@ -339,7 +339,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 ### 3.6.2 3D Vision - 三维视觉
 
-* 三维视觉导论 - Andreas Geiger: [website](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/computer-vision/) （重点关注课程作业） <br>
+* 三维视觉导论 - Andreas Geiger: [website](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/computer-vision/) (重点关注课程作业) <br>
 * GAMES203 - 三维重建和理解: [bilibili](https://www.bilibili.com/video/BV1pw411d7aS/?share_source=copy_web&vd_source=0b7603f37af6d369a97df34525b149be)<br>
 * 三维生成的一些经典论文:
   * Diffusion Model for 2D/3D Generation 相关论文分类: [link](https://zhuanlan.zhihu.com/p/617510702)
@@ -370,9 +370,9 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 ## 3.7 Computer Graphics - 计算机图形学
 
-如果说计算机视觉是考虑图像之间的变化以及从图像到三维模型（三维重建和生成），那么计算机图形学主要研究的就是三维模型之间的变化以及从三维模型到图像的渲染过程。具身智能在开发和测试的时候离不开仿真器，而仿真也属于图形学的研究范畴。快速、高质量的渲染，并行化、准确的仿真一直是机器人仿真器追求的目标，而这一切通过计算机图形学来实现。
+如果说计算机视觉是考虑图像之间的变化以及从图像到三维模型(三维重建和生成)，那么计算机图形学主要研究的就是三维模型之间的变化以及从三维模型到图像的渲染过程。具身智能在开发和测试的时候离不开仿真器，而仿真也属于图形学的研究范畴。快速、高质量的渲染，并行化、准确的仿真一直是机器人仿真器追求的目标，而这一切通过计算机图形学来实现。
 
-* 如果对传统图形学感兴趣, 可以看下面两门（闫令琪老师开的课, 讲得特别好）:<br>
+* 如果对传统图形学感兴趣, 可以看下面两门(闫令琪老师开的课, 讲得特别好):<br>
   * **GAMES101 - 现代计算机图形学入门**: [website](https://games-cn.org/intro-graphics/)<br>
   * GAMES202 - 高质量实时渲染: [website](https://sites.cs.ucsb.edu/~lingqi/teaching/games202.html)<br>
 * 如果对motion synthesis/computer animation感兴趣, 可以看:
@@ -419,7 +419,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * Medical-CXR-VQA 用于医学视觉问答任务的大规模胸部 X 光数据集: [website](https://github.com/Holipori/Medical-CXR-VQA)<br>
 
 #### 3.9.1.2 Medical Robotics - 医疗机器人
-* 医疗机器人的五级自动化（医疗机器人领域行业共识）, 杨广中教授于2017年在Science Robotics上的论著: [Medical robotics—Regulatory, ethical, and legal considerations for increasing levels of autonomy](https://www.science.org/doi/pdf/10.1126/scirobotics.aam8638)<br>
+* 医疗机器人的五级自动化(医疗机器人领域行业共识), 杨广中教授于2017年在Science Robotics上的论著: [Medical robotics—Regulatory, ethical, and legal considerations for increasing levels of autonomy](https://www.science.org/doi/pdf/10.1126/scirobotics.aam8638)<br>
 * 医疗机器人的十年回顾(含医疗机器人的不同分类), 杨广中教授在Science Robotics上的综述文章：[A decade retrospective of medical robotics research from 2010 to 2020](https://www.science.org/doi/epdf/10.1126/scirobotics.abi8017)<br>
 * 医疗具身智能的分级: [A Survey of Embodied AI in Healthcare: Techniques, Applications, and Opportunities](https://arxiv.org/pdf/2501.07468?)<br>
 * Artificial intelligence meets medical robotics, 2023年发表在Science正刊上的论著: [website](https://www.science.org/doi/abs/10.1126/science.adj3312)<br>
@@ -437,10 +437,10 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * 连续体和软体手术机器人作为柔性医疗机器人的重要分支, 凭借其独特的结构设计和材料特性, 在微创介入诊疗领域展现出显著优势。它们能够灵活进入人体狭窄腔体, 实现精准操作, 同时最大限度地减小手术创口, 降低患者术后恢复时间及感染风险, 为现代微创手术提供了创新性的技术解决方案。
   * 连续体机器人在医疗领域的应用 (Nabil Simaan; Howie Choset等): [Continuum Robots for Medical Interventions](https://ieeexplore.ieee.org/abstract/document/9707607)<br>
   * 软体手术机器人在微创介入手术中的应用 (Ka-wai Kwok; Kaspar Althoefer等)： [Soft Robot-Assisted Minimally Invasive Surgery and Interventions: Advances and Outlook](https://ieeexplore.ieee.org/abstract/document/9765966/authors#authors)<br>
-* 连续体和软体机器人因其超冗余自由度和高度非线性的结构特性, 采用传统的控制与传感方法构建正逆运动学方程时面临显著的计算复杂性和建模局限性。传统方法难以精确描述其多自由度耦合运动及环境交互中的动态响应。为此, 基于数据驱动的智能控制方法（如深度学习、强化学习及自适应控制算法）成为解决这一问题的前沿方向。这些方法能够通过大量数据训练, 高效学习系统的非线性映射关系, 显著提升运动控制的精度、自适应性和鲁棒性, 为复杂医疗场景下的机器人操作提供了更为可靠的技术支撑。
+* 连续体和软体机器人因其超冗余自由度和高度非线性的结构特性, 采用传统的控制与传感方法构建正逆运动学方程时面临显著的计算复杂性和建模局限性。传统方法难以精确描述其多自由度耦合运动及环境交互中的动态响应。为此, 基于数据驱动的智能控制方法(如深度学习、强化学习及自适应控制算法)成为解决这一问题的前沿方向。这些方法能够通过大量数据训练, 高效学习系统的非线性映射关系, 显著提升运动控制的精度、自适应性和鲁棒性, 为复杂医疗场景下的机器人操作提供了更为可靠的技术支撑。
     * 什么是软体机器人？软体机器人的具身智能定义: [知乎, by Ke WU from MBUZAI](https://www.zhihu.com/question/61637360/answer/92834447300?utm_psn=1870238291607040000)<br>
     * IROS 2024大会Program Chair新加坡国立大学Cecilia Laschi教授的论著: [Learning-Based Control Strategies for Soft Robots: Theory, Achievements, and Future Challenges](https://ieeexplore.ieee.org/abstract/document/10136428)<br>
-    * 软体机器人中具身智能物理建模简明指南（也是出自NUS Cecilia教授团队）: [A concise guide to modelling the physics of embodied intelligence in soft robotics](https://inria.hal.science/hal-03921606/document)<br>
+    * 软体机器人中具身智能物理建模简明指南(也是出自NUS Cecilia教授团队): [A concise guide to modelling the physics of embodied intelligence in soft robotics](https://inria.hal.science/hal-03921606/document)<br>
     * 数据驱动方法在软体机器人建模与控制中的应用: [Data-driven methods applied to soft robot modeling and control: A review](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10477253)<br>
 
 * 微纳机器人技术是一类集成了微纳米制造、生物工程和智能控制等多学科前沿技术的微型机器人系统。凭借其微纳米级的独特尺寸、优异的生物相容性和精准的操控性能，这一前沿技术为现代医学诊疗范式带来了突破性创新。在精准诊断方面，微纳机器人能够深入人体微观环境，实现细胞乃至分子水平的实时监测；在靶向治疗领域，其可作为智能药物载体，实现病灶部位的精准定位与可控释放；在微创手术应用中，微纳机器人系统为复杂外科手术提供了前所未有的精确操作平台。这些创新性应用不仅显著提升了诊疗效率，更为攻克重大疾病提供了全新的技术途径，推动着现代医学向更精准、更微创、更智能的方向发展。
@@ -453,7 +453,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 1. 从外部传感设备保护发展至机载传感与计算；
 2. 从遥控/预先编程发展至自主。
 
-不同于legged locomotion和manipulation，在无人机领域，data-driven的方法与model-based/modular的方法在不同任务中的优势不同，仍处于分庭抗礼的阶段。这主要是因为无人机的模型与驱动模式较为简单（如四旋翼的驱动机构只有四个电机），且传统的无人机（即不具有操作设备）不会与环境产生交互，因此基于模型、优化和分层的方法，通过良好的状态机/规则设计和高效的局部优化技术，仍能够被赋予很强的性能。然而，无人机的难点在于其状态估计（通常需要）、感知和底层驱动充满噪声，这是因为小型化无人机的负载能力十分有限以及其成本被尽可能压低，因此在一些任务中data-driven/端到端的方法展现出了远超于传统方法的性能。因此，以下对无人机data-driven资料介绍的同时会穿插其与传统方法的对比，以便大家了解整个领域发展的动机。
+不同于legged locomotion和manipulation，在无人机领域，data-driven的方法与model-based/modular的方法在不同任务中的优势不同，仍处于分庭抗礼的阶段。这主要是因为无人机的模型与驱动模式较为简单(如四旋翼的驱动机构只有四个电机)，且传统的无人机(即不具有操作设备)不会与环境产生交互，因此基于模型、优化和分层的方法，通过良好的状态机/规则设计和高效的局部优化技术，仍能够被赋予很强的性能。然而，无人机的难点在于其状态估计(通常需要)、感知和底层驱动充满噪声，这是因为小型化无人机的负载能力十分有限以及其成本被尽可能压低，因此在一些任务中data-driven/端到端的方法展现出了远超于传统方法的性能。因此，以下对无人机data-driven资料介绍的同时会穿插其与传统方法的对比，以便大家了解整个领域发展的动机。
 
 总体而言，无人机的研究分为三个部分：
 1. 技能实现/学习，例如避障、竞速、大机动飞行/特技等；
@@ -466,21 +466,21 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 - **支持RL的仿真器**
   
   无人机的仿真器普遍并不强大，并且几乎没有开源的RL sim2real项目。基于开源代码需要较大的内容改动才能实现理想的sim2real performance。
-  - **AirSim** （ https://microsoft.github.io/AirSim/ ）：基于UE4引擎，具有较为逼真动力学transition模拟。缺点是UE4底层功能较难修改并且运行速度较慢。
-  - **Flightmare** （ https://github.com/uzh-rpg/flightmare ）：基于Unity渲染，CPU并行动力学。
-  - **AerialGym** （ https://github.com/ntnu-arl/aerial_gym_simulator ）：基于IsaacSim，GPU并行动力学。
+  - **AirSim** (https://microsoft.github.io/AirSim/)：基于UE4引擎，具有较为逼真动力学transition模拟。缺点是UE4底层功能较难修改并且运行速度较慢。
+  - **Flightmare** (https://github.com/uzh-rpg/flightmare)：基于Unity渲染，CPU并行动力学。
+  - **AerialGym** (https://github.com/ntnu-arl/aerial_gym_simulator)：基于IsaacSim，GPU并行动力学。
 
 - **经典技能代表性工作**
 
-  我们主要介绍一些data-driven方法在经典任务上的应用。值得一提的是，以下的工作中，出现了一些摆脱了对SLAM系统和里程计依赖的方法（而无人机最初的兴起正是依靠SLAM/里程计系统的日益成熟），将成为无人机技能学习中有趣的进展方向。
+  我们主要介绍一些data-driven方法在经典任务上的应用。值得一提的是，以下的工作中，出现了一些摆脱了对SLAM系统和里程计依赖的方法(而无人机最初的兴起正是依靠SLAM/里程计系统的日益成熟)，将成为无人机技能学习中有趣的进展方向。
   - **未知场景障碍物躲避**
     - Learning Monocular Reactive UAV Control in Cluttered Natural Environments. ICRA 2013, CMU. 受自动驾驶发展启发，第一个使用监督学习将图像映射为离散上游控制指令的系统。
     - CAD2RL: Real Single-Image Flight without a Single Real Image. RSS 2017，UCB. 第一个使用sim2real RL，对单目RGB图像进行大量domain randomization，在长廊中输出速度指令的系统。
-    - DroNet: Learning to Fly by Driving. RAL 2018, UZH. 利用自动假设数据集让飞机输出速度指令，代码开源（ https://github.com/uzh-rpg/rpg_public_dronet ）。
-    - Learning High-Speed Flight in the Wild. SciRob 2021, UZH. 使用dagger利用传统轨迹规划进行监督学习。文章claim网络推理的低延迟可以使未知环境中飞行速度更快。代码开源（ https://github.com/uzh-rpg/agile_autonomy ）。
+    - DroNet: Learning to Fly by Driving. RAL 2018, UZH. 利用自动假设数据集让飞机输出速度指令，代码开源( https://github.com/uzh-rpg/rpg_public_dronet )。
+    - Learning High-Speed Flight in the Wild. SciRob 2021, UZH. 使用dagger利用传统轨迹规划进行监督学习。文章claim网络推理的低延迟可以使未知环境中飞行速度更快。代码开源( https://github.com/uzh-rpg/agile_autonomy )。
     - Back to Newton's Laws: Learning Vision-based Agile Flight via Differentiable Physics, Arxiv 2024, SJTU. 用differentiable physics提供的一阶梯度做策略优化，不需要显式的位置和速度估计。文章用低分辨率深度图，训练避障比RL更高效，实现高速飞行。
     - [Flying on Point Clouds using Reinforcement Learning](https://arxiv.org/abs/2503.00496) [[Video](https://www.bilibili.com/video/BV1xeRpYnEYT/)].Arxiv 2025, ZJU. 使用机载雷达和sim2real RL实现自主避障。
-    - 值得一提的是，作为无人机最常用的任务，避障现在最常用的还是传统方法的系统如开源的ego-planner（ https://github.com/ZJU-FAST-Lab/ego-planner ），由于这样的方案已经足以胜任大部分场景（而不像四足的MPC），因此在实际应用中比较少使用data-driven的方案。
+    - 值得一提的是，作为无人机最常用的任务，避障现在最常用的还是传统方法的系统如开源的ego-planner( https://github.com/ZJU-FAST-Lab/ego-planner )，由于这样的方案已经足以胜任大部分场景(而不像四足的MPC)，因此在实际应用中比较少使用data-driven的方案。
 
   - **无人机竞速**
     - Champion-level drone racing using deep reinforcement learning. Nature 23, UZH. 用强化学习战胜人类冠军飞手, 近几年无人机领域影响力最高的文章，是UZH RPG实验室多年来深厚工程积累的结果，其中的RL方案较为简单直接。
@@ -509,7 +509,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 ### 3.9.2.3 新构型无人机设计
 除了常规用于航拍，环境探索的四旋翼无人机，想让无人机具备更多能力，应用于更广泛的具身智能场景，除了算法上的创新外，也需要在硬件层面对无人机的构型进行创新设计。
 
-- **空中机械臂（Aerial Manipulator）** 
+- **空中机械臂(Aerial Manipulator)** 
 
     空中机械臂，也叫空中操作无人机，兼具无人机的快速空间移动能力和机械臂的精确操纵能力，是具身智能的一种理想载体。西湖大学赵世钰老师组在知乎上有一系列文章介绍：
 
@@ -524,7 +524,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
         * [NDOB-Based Control of a UAV with Delta-Arm Considering Manipulator Dynamics](https://arxiv.org/abs/2501.06122) [[Video](https://www.bilibili.com/video/BV16Zt5eBEPW/?spm_id_from=333.1387.homepage.video_card.click&vd_source=875782ad8340a833a05fa20f1ae0baa5)]. ICRA 2025, SYU. 使用四旋翼加并联机械臂实现毫米精度抓取。
         * [A Compact Aerial Manipulator: Design and Control for Dexterous Operations](https://link.springer.com/article/10.1007/s10846-024-02090-7) [[Video](https://www.bilibili.com/video/BV1CC4y1Z7xS/?spm_id_from=333.1387.homepage.video_card.click)]. JIRS 2024, BHU. 用空中机械臂做一些有趣的应用，比如抓鸡蛋、开门等等。
 
-- **全驱动无人机（Fully-Actuated UAV）**
+- **全驱动无人机(Fully-Actuated UAV)**
 
     常见的四旋翼无人机具有欠驱动特性，即位置与姿态耦合。而具有位置姿态解耦控制的全驱动无人机，理论上更适合作为空中操作的飞行平台。
 
@@ -534,7 +534,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
         * [The Voliro omniorientational hexacopter: An agile and maneuverable tiltable-rotor aerial vehicle](https://ieeexplore.ieee.org/document/8485627). RAM 2018, ETH. 第一个实现全向飞行的可变倾角全驱动无人机 
         * [FLOAT Drone: A Fully-actuated Coaxial Aerial Robot for Close-Proximity Operations](https://arxiv.org/abs/2503.00785) [[Website](https://zju-jxlin.github.io/float-drone.github.io/)]. Arxiv 2025, ZJU. 适合近端作业的小尺寸全驱动无人机。
 
-- **可变形无人机（Deformable UAV）**
+- **可变形无人机(Deformable UAV)**
 
     除了通过往飞行平台上安装机械臂，让无人机本体可以变形，也是使其实现更多功能的一种方法。
 
@@ -544,7 +544,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
         * [Ring-Rotor: A Novel Retractable Ring-Shaped Quadrotor With Aerial Grasping and Transportation Capability](https://ieeexplore.ieee.org/document/10044964) [[Video](https://www.bilibili.com/video/BV1gY4y1K723/?spm_id_from=333.1387.upload.video_card.click)]. RAL 2023, ZJU. 一种可变形的环形四旋翼，可用于抓取、运输等任务。
         * [Design and Control of a Passively Morphing Quadcopter](https://ieeexplore.ieee.org/document/8794373) [[Video](https://www.youtube.com/watch?v=MSvoQT__c9U)]. ICRA 2019, UCB. 一种被动变形的四旋翼无人机。
 
-- **多模态无人机（Multi-Modal UAV）**
+- **多模态无人机(Multi-Modal UAV)**
 
     无人机与地面机器人相比，其优势在于三维空间运动能力，劣势则是续航差。因此一些研究关注多模态无人机的构型设计、运动控制以及自主导航。多模态无人机具备空中、地面、水下等多域运动能力。这不仅能解决无人机的续航问题，也能让无人机具有更多应用潜力。
 
@@ -559,7 +559,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 ### 3.9.3 Autonomous Driving - 自动驾驶
 
-[自动驾驶之心](https://www.zdjszx.com/) （也有个微信公众号）
+[自动驾驶之心](https://www.zdjszx.com/) (也有个微信公众号)
 
 自动驾驶被称为“最小的具身智能验证场景”，这是因为它在具身智能的框架中，具备完整的感知、决策和行动闭环，但任务目标明确、物理交互简单、场景复杂性相对较低。作为一个技术验证场景，自动驾驶既能体现具身智能的核心特性，又为更复杂的具身智能任务提供了技术积累和理论支持。
 
@@ -576,7 +576,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
   * https://arxiv.org/abs/2307.15058
   * https://arxiv.org/abs/2401.01339
 
-2. 场景可控生成（世界模型）
+2. 场景可控生成(世界模型)
 
 * 经典论文：MagicDrive -> MagicDriveDiT, SCP-Diff, UniScene
   * https://arxiv.org/abs/2411.13807
@@ -587,7 +587,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 1. 从模块化到端到端
 
-* 经典的模块化管线中，每个模型作为一个独立的组件，负责对应的特定任务（3D目标检测与跟踪 & BEV 建图 -> 目标运动预测 -> 轨迹规划），这种设计已逐渐被端到端模型所取代。
+* 经典的模块化管线中，每个模型作为一个独立的组件，负责对应的特定任务(3D目标检测与跟踪 & BEV 建图 -> 目标运动预测 -> 轨迹规划)，这种设计已逐渐被端到端模型所取代。
 
 [End-to-end Autonomous Driving: Challenges and Frontiers](https://arxiv.org/pdf/2306.16927)
 
@@ -624,7 +624,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * 理解前馈控制、反馈控制
 * **PID控制**：[CSDN](https://blog.csdn.net/name_longming/article/details/115093338)
 
-### 4.1.2 现代控制理论（线性系统控制）
+### 4.1.2 现代控制理论(线性系统控制)
 * Modern Control Systems (14th edition), Robert. H. Bishop, Richard. C, Dorf. z: [Book](http://103.203.175.90:81/fdScript/RootOfEBooks/E%20Book%20collection%20-%202024/EEE/Modern_control_systems_Robert_H_Bishop_Richard_C_Dorf_z_lib_org.pdf#page=1.00&gsr=0)
 * 状态方程
 * 状态反馈与最优控制
@@ -639,7 +639,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 ## 4.2. 机器人学导论
 
 ### 4.2.1 推荐材料
-* 现代机器人学（非常推荐！）[video](https://www.youtube.com/watch?v=29LhXWjn7Pc&list=PLggLP4f-rq02vX0OQQ5vrCxbJrzamYDfx&index=11)
+* 现代机器人学(非常推荐！)[video](https://www.youtube.com/watch?v=29LhXWjn7Pc&list=PLggLP4f-rq02vX0OQQ5vrCxbJrzamYDfx&index=11)
 * 经典教材
   * 《机构学与机器人学的几何基础与旋量代数》 戴建生院士 著
   * 《现代机器人学：机构、规划与控制》凯文·M. 林奇, 朴钟宇 著
@@ -662,7 +662,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
     * [BiliBili FK(1)](https://www.bilibili.com/video/BV1Ve4y127Uf?spm_id_from=333.788.recommend_more_video.0&vd_source=b14220472557bfa1918f3d0faa38bdc1)
     * [BiliBili FK(2)](https://www.bilibili.com/video/BV1a14y157uL?spm_id_from=333.788.videopod.sections&vd_source=b14220472557bfa1918f3d0faa38bdc1)
 
-2. 机器人动力学（**重要！！！**）
+2. 机器人动力学(**重要！！！**)
 * 理解斜对称矩阵
 * 理解Twist和Exponential of a twist
 * 旋量代数
@@ -761,10 +761,10 @@ Coming Soon !
 
 ## 5.5 Tactile Sensing - 触觉感知
 
-### 1. 视触觉传感器（Vision-Based Tactile Sensors）
+### 1. 视触觉传感器(Vision-Based Tactile Sensors)
 
 
-视触觉传感器通过摄像头捕捉触觉信息，将触摸表面变形映射为视觉数据，以估计接触力、形变等信息。其设计涉及 **传感器形状**（影响接触范围与适应性）、**标记点设置**（追踪表面形变，提高分辨率）、**材料选择**（如硅胶或弹性体，提高灵敏度）以及 **光照与摄像系统**（增强视觉信号质量）。
+视触觉传感器通过摄像头捕捉触觉信息，将触摸表面变形映射为视觉数据，以估计接触力、形变等信息。其设计涉及 **传感器形状**(影响接触范围与适应性)、**标记点设置**(追踪表面形变，提高分辨率)、**材料选择**(如硅胶或弹性体，提高灵敏度)以及 **光照与摄像系统**(增强视觉信号质量)。
 
 * **优点**：提供高分辨率触觉信息、非侵入式感知、不影响物体表面特性，并且可与视觉系统集成，提高多模态感知能力。  
 * **缺点**：计算量大，依赖视觉处理和机器学习；易受环境光影响；光学设计复杂，封装和耐用性受限。
@@ -774,9 +774,9 @@ Coming Soon !
 ](https://ieeexplore.ieee.org/document/10563188)*
 - 结构：*[On the Design and Development of Vision-Based Tactile Sensors](https://link.springer.com/article/10.1007/s10846-021-01431-0)*
 
-### 2. 电子皮肤（Electronic Skin）
+### 2. 电子皮肤(Electronic Skin)
 
-触觉感知的路径主要就是这两类。电子皮肤模拟人类皮肤的触觉能力，通常采用柔性电子材料（如压力传感薄膜、纳米传感器网络等）来感知外界压力、温度和形变，使机器人具备更接近生物的触觉感知能力。
+触觉感知的路径主要就是这两类。电子皮肤模拟人类皮肤的触觉能力，通常采用柔性电子材料(如压力传感薄膜、纳米传感器网络等)来感知外界压力、温度和形变，使机器人具备更接近生物的触觉感知能力。
 
 * **优点**：电子皮肤可 **大面积覆盖** 机器人表面，实现全身触觉感知；具有 **高灵敏度**，能够检测微小的力变化，实现精准反馈；同时 **可伸缩性** 使其适应复杂表面，提高耐久性。
 * **缺点**：电子皮肤的 **制造复杂**，材料和工艺要求高，成本较高；**数据处理挑战**，大规模触觉数据需要高效的计算与存储方案；此外，**稳定性问题** 可能导致长期使用后灵敏度下降，影响可靠性。
@@ -784,20 +784,20 @@ Coming Soon !
 
  **参考文献综述**：*[Toward an AI Era: Advances in Electronic Skins](https://pubs.acs.org/doi/10.1021/acs.chemrev.4c00049)*
 
-### 3. 触觉感知的应用和算法（视触觉）
+### 3. 触觉感知的应用和算法(视触觉)
 
-* 3.1 姿态估计（Pose Estimation）
+* 3.1 姿态估计(Pose Estimation)
   * 估计in hand物体姿态
     * *[3D Shape Perception from Monocular Vision, Touch, and Shape Priors](https://arxiv.org/abs/1808.03247)*
   * in scene
     * *[Fast Model-Based Contact Patch and Pose Estimation for Highly Deformable Dense-Geometry Tactile Sensors](https://ieeexplore.ieee.org/document/8936859)*
 
-* 3.2 物体分类（Classification）
+* 3.2 物体分类(Classification)
   * 区分不同液体、材料或透明物体。
     * *[Understanding Dynamic Tactile Sensing for Liquid Property Estimation](https://arxiv.org/abs/2205.08771)*
     * *[Multimode Fusion Perception for Transparent Glass Recognition](https://www.semanticscholar.org/paper/Multimode-fusion-perception-for-transparent-glass-Zhang-Shan/90109f2eabba717d152a599fc8d8d5a3677c85e5)*
 
-* 3.3 触觉操控（Manipulation）
+* 3.3 触觉操控(Manipulation)
   * 物体装配
     * *[Active Extrinsic Contact Sensing: Application to General Peg-in-Hole Insertion](https://ieeexplore.ieee.org/abstract/document/9812017)*
     * *[Building a Library of Tactile Skills Based on Fingervision](https://ieeexplore.ieee.org/abstract/document/9035000)*
@@ -807,7 +807,7 @@ Coming Soon !
     * *[Manipulation by Feel: Touch-Based Control with Deep Predictive Models](https://arxiv.org/abs/1903.04128)*
     * *[NeuralFeels with Neural Fields: Visuotactile Perception for In-Hand Manipulation](https://www.science.org/doi/10.1126/scirobotics.adl0628)*
 
-* 3.4 触觉大模型（Large Tactile Models）
+* 3.4 触觉大模型(Large Tactile Models)
   * 以统一多模态触觉表示，提高通用性。
     * *[Binding Touch to Everything: Learning Unified Multimodal Tactile Representations](https://openaccess.thecvf.com/content/CVPR2024/papers/Yang_Binding_Touch_to_Everything_Learning_Unified_Multimodal_Tactile_Representations_CVPR_2024_paper.pdf)*
 
@@ -829,14 +829,14 @@ Coming Soon !
 | [灵巧智能DexRobot](https://www.dex-robot.com/)| [Dexhand 021灵巧手](https://www.dex-robot.com/productionDexhand) | 19自由度量产灵巧手 |
 | [银河通用](https://www.galbot.com/about) |  | 已完成多轮融资 |
 | [星海图Galaxea](http://galaxea.tech/) | [A1机械臂](http://galaxea.tech/Introducing_Galaxea_Robot/product_info/A1/#discover-more) |  |
-| [World Labs](https://www.worldlabs.ai/) | | 专注于空间智能, 致力于打造大型世界模型（LWM）, 以感知、生成并与 3D 世界进行交互。 [相关介绍](https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HEH5X2ejkAoWy1ZXj8DlZO_Y2Q7PsYX-3ID-rfr5&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2Fi58_yTFtt904haKezJgr1Q) |
+| [World Labs](https://www.worldlabs.ai/) | | 专注于空间智能, 致力于打造大型世界模型(LWM), 以感知、生成并与 3D 世界进行交互。 [相关介绍](https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HEH5X2ejkAoWy1ZXj8DlZO_Y2Q7PsYX-3ID-rfr5&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2Fi58_yTFtt904haKezJgr1Q) |
 | [星动纪元](https://www.robotera.com) | [Star1人形](https://www.robotera.com/goods/1.html)<br> [XHAND1灵巧手](https://www.robotera.com/goods/2.html) | |
 | [加速进化](https://boosterobotics.com/zh/) | [Booster T1人形](https://boosterobotics.com/zh/store/)|  |
 | [青龙机器人](https://www.openloong.net/) |  |  |
 | [科技云深处](https://www.deeprobotics.cn/) |  [绝影X30四足机器人](https://www.deeprobotics.cn/robot/index/product3.html)<br> [Dr.01人形机器人](https://www.deeprobotics.cn/robot/index/humanoid.html) |  |
 | [松应科技](http://www.orca3d.cn/) |  | 具身智能仿真平台供应商 |
 | [光轮智能](https://lightwheel.net/) |  | 具身智能数据平台 |
-| [智元机器人](https://www.zhiyuan-robot.com/about/167.html) | [A2人形机器人](https://www.zhiyuan-robot.com/products/A2)<br>[A2-D数据采集机器人（轮式人形）](https://www.zhiyuan-robot.com/products/A2_D) |  |
+| [智元机器人](https://www.zhiyuan-robot.com/about/167.html) | [A2人形机器人](https://www.zhiyuan-robot.com/products/A2)<br>[A2-D数据采集机器人(轮式人形)](https://www.zhiyuan-robot.com/products/A2_D) |  |
 | [Nvidia](https://www.nvidia.cn/industries/robotics/) |  | 具身智能基建公司 |
 | [求之科技](https://air.tsinghua.edu.cn/info/1147/2175.htm)  |  |  |
 | [穹彻智能](https://www.noematrix.ai/) | | |
@@ -869,10 +869,10 @@ Coming Soon !
 ## 6.2 Banchmarks 基准集
 具身智能常用benchmark总结 [1]: [zhihu](https://zhuanlan.zhihu.com/p/695342864)<br>
 * **CALVIN**, [github](https://github.com/mees/calvin), [website](http://calvin.cs.uni-freiburg.de/)2022年, 第一个公开的结合了自然语言控制、高维多模态输入、7自由度的机械臂控制以及长视野的机器人操纵benchmark。支持不同的语言指令, 不同的摄像头输入, 不同的控制方式, 主要用来评估具身智能模型的多模态输入的能力和长程规划能力。
-* **Meta-World**, [webpage](https://meta-world.github.io/): 评估机器人在多任务和元强化学习场景下的表现。50个机器人操作任务（如抓取、推动物体、开门等）, 组织成不同的基准测试集（如ML1、ML10、ML45、MT10、MT50等）, 每个集合都有明确的训练任务和测试任务。周边和文档比较全面, 基于mojoco, 有完整的API和工具, python import即可运行。
-* **Embodied Agent Interface: Benchmarking LLMs for Embodied Decision Making**, [website](https://embodied-agent-interface.github.io/): 主要评估大型语言模型（LLMs）在具身决策中的表现, 重点在于决策过程, 包括目标解释、子目标分解、动作序列化和状态转换建模, 不涉及到具体的执行。
+* **Meta-World**, [webpage](https://meta-world.github.io/): 评估机器人在多任务和元强化学习场景下的表现。50个机器人操作任务(如抓取、推动物体、开门等), 组织成不同的基准测试集(如ML1、ML10、ML45、MT10、MT50等), 每个集合都有明确的训练任务和测试任务。周边和文档比较全面, 基于mojoco, 有完整的API和工具, python import即可运行。
+* **Embodied Agent Interface: Benchmarking LLMs for Embodied Decision Making**, [website](https://embodied-agent-interface.github.io/): 主要评估大型语言模型(LLMs)在具身决策中的表现, 重点在于决策过程, 包括目标解释、子目标分解、动作序列化和状态转换建模, 不涉及到具体的执行。
 * **RoboGen**, [repo](https://github.com/Genesis-Embodied-AI/RoboGen), [website](https://robogen-ai.github.io/): 不是生成policy, 而是生成任务、场景和带标记的数据, 能直接用来监督学习。
-* **LIBERO**, [repo](https://github.com/Lifelong-Robot-Learning/LIBERO), [website](https://libero-project.github.io/intro.html): 用一个程序化生成管道来生成任务, 这个管道理论上可以生成无限数量的操作任务, 还提供了：三种视觉运动策略网络架构（RNN、Transformer和ViLT） 和 三种终身学习算法, 以及顺序微调和多任务学习的基准。
+* **LIBERO**, [repo](https://github.com/Lifelong-Robot-Learning/LIBERO), [website](https://libero-project.github.io/intro.html): 用一个程序化生成管道来生成任务, 这个管道理论上可以生成无限数量的操作任务, 还提供了：三种视觉运动策略网络架构(RNN、Transformer和ViLT) 和 三种终身学习算法, 以及顺序微调和多任务学习的基准。
 * **RoboTwin**, [repo](https://github.com/TianxingChen/RoboTwin): 使用程序生成双臂机器人无限操作任务数据, 并提供了所有任务的评测基准。
 
 <section id="datasets"></section>
