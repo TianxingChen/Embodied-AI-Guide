@@ -910,10 +910,10 @@ If you find this repository helpful, please consider citing:
 
 ```
 @misc{chen2024embodiedai,
-author = {Embodied-AI-Guide-Contributors, Tianxing Chen, Kaixin Wang, Yueru Jia, Tianliang Yao, Huanang Gao, Ning Gao, Changqing Guo, Shijiapeng, Yude Zou, Sixiang Chen, Yufei Zhu, Yifei Han, Wenhao Wang, Zhuoheng Li, Shenyi Liang, Junxiao Lin, Guankun Wang, Zhijie Wu, Wen Ye, Zanxin Chen, Bohan Hou, Hengle Jiang, Mengkang Hu, Zhixuan Liang, Yao Mu},
-title = {Embodied-AI-Guide},
-year = {2024},
-howpublished = {\url{https://github.com/tianxingchen/Embodied-AI-Guide}},
+      author = {Embodied-AI-Guide-Contributors, Tianxing Chen, Kaixin Wang, Yueru Jia, Tianliang Yao, Huanang Gao, Ning Gao, Changqing Guo, Shijiapeng, Yude Zou, Sixiang Chen, Yufei Zhu, Yifei Han, Wenhao Wang, Zhuoheng Li, Shenyi Liang, Junxiao Lin, Guankun Wang, Zhijie Wu, Wen Ye, Zanxin Chen, Bohan Hou, Hengle Jiang, Mengkang Hu, Zhixuan Liang, Yao Mu},
+      title = {Embodied-AI-Guide},
+      year = {2024},
+      howpublished = {\url{https://github.com/tianxingchen/Embodied-AI-Guide}},
 }
 ```
 
