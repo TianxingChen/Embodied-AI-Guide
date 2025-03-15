@@ -58,10 +58,7 @@
           <li><a href="#421-推荐材料">4.2.1 推荐资料</li>
           <li><a href="#422-机器人运动学-kinematics-与动力学-dynamics">4.2.2 机器人运动学与动力学</li>
           <li><a href="#423-里程计和同步定位与建图-odometryslam">4.2.3 里程计和同步定位与建图 (Odometry&SLAM)</li>
-          <li><a href="#424-机器人导航-navigation">4.2.4 机器人导航 (Navigation)</li>
-          <li><a href="#425-机器人局部运动-locomotion">4.2.5 机器人局部运动 (Locomotion)</li>
-          <li><a href="#426-机器人操作-manipulation">4.2.6 机器人操作 (Manipulation)</li>
-          <li><a href="#427-杂项-misc">4.2.7 杂项</li>
+          <li><a href="#424-杂项-misc">4.2.4 杂项</li>
         </ul>
       </ul>
     </li> 
@@ -713,9 +710,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
     * [BiliBili FK(2)](https://www.bilibili.com/video/BV1a14y157uL?spm_id_from=333.788.videopod.sections&vd_source=b14220472557bfa1918f3d0faa38bdc1)
 
 2. 机器人动力学(**重要！！！**)
-* 理解斜对称矩阵
-* 理解Twist和Exponential of a twist
-* 旋量代数
+* 理解斜对称矩阵, Twist和Exponential of a twist, 旋量代数
 
 ### 4.2.3 里程计和同步定位与建图 (Odometry&SLAM)
 里程计(Odometry)用于为机器人实时提供定位，里程计常常基于扩展卡尔曼滤波(EKF)实现，融合来自IMU、相机、激光雷达、码盘、毫米波雷达、光流传感器等等各种常用于机器人位姿感知的传感器之中的多种观测，以较高的频率实现对机器人位姿的估计。
@@ -732,39 +727,17 @@ SLAM(Simultaneous Locolization And Mapping)在定位的同时完成地图的构�
 此外，SLAM也有端到端的实现[DROID-SLAM](https://arxiv.org/abs/2108.10869)。
 
 SLAM的经典工作有[ORB-SLAM](https://github.com/UZ-SLAMLab/ORB_SLAM3)系列等。
-
-### 4.2.4 机器人导航 Navigation
-
-* 轮式机器人及其建模
-* 理解ICP
-* 扩展卡尔曼滤波
-
-
-### 4.2.5 机器人局部运动 Locomotion
-
-* 仿生角度看步行、跑步与跳跃的建模
-* 足式机器人及其建模
-
-### 4.2.6 机器人操作 Manipulation
-
-* 机械臂与灵巧手的建模
-  * 理解joint的建模
-* 坐标系的正运动学转换
   
-
-### 4.2.7 杂项 Misc
+### 4.2.4 杂项 Misc
 
 * ROS基础:
   * 具身智能ROS1基础: [website](http://www.autolabor.com.cn/book/ROSTutorials/)
   * 具身智能ROS2基础: [website](https://zhangzhiwei-zzw.github.io/ROS2%E5%AD%A6%E4%B9%A0/ROS2/)  
-    
 * 常用的库 
   * cuRobo：[cuRobo](https://curobo.org/), cuRobo是Nvidia的一个利用 CUDA 加速的机器人库, 提供了一套高效的机器人算法, 主要通过并行计算显著提升性能, 包括但不限于IK, 碰撞检测, 路径规划等。
   * IKFast：[IKFast](https://moveit.github.io/moveit_tutorials/doc/ikfast/ikfast_tutorial.html), 经典IK库。
   * mplib：[mplib](https://github.com/haosulab/mplib), Maniskill Benchmark以及Sapien仿真平台的IK库。
-
 * ROS多传感器时间戳同步：[website](https://blog.csdn.net/qq_43495930/article/details/125649446)
-
 * 动手实践LeRobot SO-100：[website](https://huggingface.co/lerobot)
 
 
