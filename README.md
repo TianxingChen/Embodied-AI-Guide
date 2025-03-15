@@ -83,6 +83,7 @@
     </li>
     <li><a href="#paper_list">7. Paper Lists - 论文列表</a></li>
     <li><a href="#acknowledgement">8. Acknowledgement - 致谢</a></li>
+    <li><a href="#cite">👍 Citation - 引用</a></li>
     <li><a href="#license">🏷️ License - 许可证</a></li>
     <li><a href="#star-history">⭐️ Star History - Star历史</a></li>
   </ul>
@@ -904,6 +905,7 @@ Coming Soon !
 
 <section id="cite"></section>
 
+# 👍 Citation - 引用
 If you find this repository helpful, please consider citing:
 
 ```
