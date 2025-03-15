@@ -102,7 +102,7 @@
 ## About us - 关于我们
 我们是一个由具身初学者组成的团队, 希望能够通过我们自己的学习经验, 为后来者提供一些帮助, 加快具身智能的普及。欢迎更多朋友加入我们的项目, 也很欢迎交友、学术合作, 有任何问题, 可以联系邮箱`chentianxing2002@gmail.com`。
 
-<p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (深大BS)</a>, <a href="https://github.com/kxwangzju">王开炫 (25' 港大PhD)</a>, <a href="https://jiayueru.github.io/">贾越如 (北大Ms)</a >, <a href="https://metaphysicist0.github.io/">姚天亮 (25' 港中文PhD)</a>, <a href="https://c7w.tech/about/">高焕昂 (清华PhD)</a>, <a href="https://axi404.top/">高宁 (西交BS)</a>, <a href="https://github.com/guo-cq">郭常青 (清华Ms)</a>, <a href="https://shijiapeng03.github.io/">彭时佳 (深大BS)</a>, <a href="https://yudezou.github.io/">邹誉德 (25' 上交AILab联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/csyufei">朱宇飞 (25' 上科大Ms)</a>, <a href="https://github.com/LambdaGuard">韩翊飞 (清华Ms)</a>, <a href="https://hao-starrr.github.io/">王文灏 (宾大Ms)</a>, <a href="https://github.com/StarCycle">李卓恒 (港大PhD)</a>, <a href="https://github.com/Henry-lsy">梁升一 (港科广PhD)</a>, <a href="https://scholar.google.com/citations?user=azPXbWcAAAAJ&hl=en">林俊晓 (浙大Ms)</a>, <a href="https://gkw0010.github.io/">王冠锟 (港中文PhD)</a>, <a href="https://ngchikit.github.io">吴志杰 (港中文PhD)</a>, <a href="https://github.com/27yw">叶雯 (25' 中科院PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫 (深大BS)</a>, <a href="https://hbhalpha.github.io">侯博涵 (山大BS)</a>, <a href="https://github.com/Scodive">江恒乐 (25‘ 南科大PhD)</a>, <a href="https://aaron617.github.io/">胡梦康 (港大PhD)</a>, <a href="https://liang-zx.github.io/">梁志烜 (港大PhD)</a>, <a href="https://yaomarkmu.github.io/">穆尧 (上交AP)</a>.</p> 
+<p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (深大BS)</a>, <a href="https://github.com/kxwangzju">王开炫 (25' 港大PhD)</a>, <a href="https://jiayueru.github.io/">贾越如 (北大Ms)</a >, <a href="https://metaphysicist0.github.io/">姚天亮 (25' 港中文PhD)</a>, <a href="https://c7w.tech/about/">高焕昂 (清华PhD)</a>, <a href="https://axi404.top/">高宁 (西交BS)</a>, <a href="https://github.com/guo-cq">郭常青 (清华Ms)</a>, <a href="https://shijiapeng03.github.io/">彭时佳 (深大BS)</a>, <a href="https://yudezou.github.io/">邹誉德 (25' 上交AILab联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/csyufei">朱宇飞 (25' 上科大Ms)</a>, <a href="https://github.com/LambdaGuard">韩翊飞 (清华Ms)</a>, <a href="https://hao-starrr.github.io/">王文灏 (宾大Ms)</a>, <a href="https://github.com/StarCycle">李卓恒 (港大PhD)</a>, <a href="https://github.com/GihhArwtw">邱一航 (港大PhD)</a>, <a href="https://github.com/Henry-lsy">梁升一 (港科广PhD)</a>, <a href="https://scholar.google.com/citations?user=azPXbWcAAAAJ&hl=en">林俊晓 (浙大Ms)</a>, <a href="https://gkw0010.github.io/">王冠锟 (港中文PhD)</a>, <a href="https://ngchikit.github.io">吴志杰 (港中文PhD)</a>, <a href="https://github.com/27yw">叶雯 (25' 中科院PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫 (深大BS)</a>, <a href="https://hbhalpha.github.io">侯博涵 (山大BS)</a>, <a href="https://github.com/Scodive">江恒乐 (25‘ 南科大PhD)</a>, <a href="https://aaron617.github.io/">胡梦康 (港大PhD)</a>, <a href="https://liang-zx.github.io/">梁志烜 (港大PhD)</a>, <a href="https://yaomarkmu.github.io/">穆尧 (上交AP)</a>.</p> 
 
 <a href="https://github.com/TianxingChen/Embodied-AI-Guide/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=TianxingChen/Embodied-AI-Guide" />
@@ -618,17 +618,23 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 1. 3D/4D 场景重建
 
-* 经典论文：NSG, MARS, StreetGaussians
-  * https://openaccess.thecvf.com/content/CVPR2021/html/Ost_Neural_Scene_Graphs_for_Dynamic_Scenes_CVPR_2021_paper.html
-  * https://arxiv.org/abs/2307.15058
-  * https://arxiv.org/abs/2401.01339
+* 经典工作：NSG, MARS, StreetGaussians, OmniRe
+  * **NSG**: CVPR 2021, [github](https://github.com/princeton-computational-imaging/neural-scene-graphs), [arxiv](https://arxiv.org/abs/2011.10379), [paper](https://openaccess.thecvf.com/content/CVPR2021/html/Ost_Neural_Scene_Graphs_for_Dynamic_Scenes_CVPR_2021_paper.html)
+  * **MARS**: [github](https://open-air-sun.github.io/mars/), [arxiv](https://arxiv.org/abs/2307.15058)
+  * **StreetGaussians**: [github](https://github.com/zju3dv/street_gaussians), [arxiv](https://arxiv.org/abs/2401.01339)
+  * **OmniRe**: ICLR 2025 Spotlight, [demo page](https://ziyc.github.io/omnire), [github](https://github.com/ziyc/drivestudio), [arxiv](https://arxiv.org/abs/2408.16760)
 
 2. 场景可控生成(世界模型)
 
-* 经典论文：MagicDrive -> MagicDriveDiT, SCP-Diff, UniScene
-  * https://arxiv.org/abs/2411.13807
-  * https://arxiv.org/abs/2403.09638
-  * https://arxiv.org/abs/2412.05435
+* 经典工作：GAIA-1, GenAD（OpenDV数据集）, Vista, SCP-Diff, MagicDrive -> MagicDriveDiT, UniScene, VaVAM
+  * **GAIA-1**: [demo page](https://wayve.ai/thinking/introducing-gaia1/), [arxiv](https://arxiv.org/abs/2309.17080)
+  * **GenAD**: CVPR 2024 Highlight, OpenDV数据集, [github](https://github.com/OpenDriveLab/DriveAGI?tab=readme-ov-file#opendv), [arxiv](https://arxiv.org/abs/2403.09630)
+  * **Vista**: NeurIPS 2025, [demo page](https://opendrivelab.com/Vista), [github](https://github.com/OpenDriveLab/Vista), [arxiv](https://arxiv.org/abs/2405.17398)
+  * **SCP-Diff**: [demo page](https://air-discover.github.io/SCP-Diff/), [github](https://github.com/AIR-DISCOVER/SCP-Diff-Toolkit), [arxiv](https://arxiv.org/abs/2403.09638)
+  * **MagicDrive** -> MagicDriveDiT: [demo page](https://gaoruiyuan.com/magicdrive-v2/), [arxiv](https://arxiv.org/abs/2411.13807)
+  * **UniScene**: CVPR 2025, [demo page](https://arlo0o.github.io/uniscene/),  [arxiv](https://arxiv.org/abs/2412.05435)
+  * **VaVAM**: [github](https://github.com/valeoai/VideoActionModel)
+
 
 #### Policy：自动驾驶策略
 
@@ -643,14 +649,14 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 [理想端到端-VLM双系统](https://www.sohu.com/a/801987742_258768)
 
 * 快系统经典论文：UniAD (CVPR 2023 Best Paper), VAD, SparseDrive, DiffusionDrive
-  * https://arxiv.org/abs/2212.10156
-  * https://arxiv.org/abs/2303.12077
-  * https://arxiv.org/abs/2405.19620
-  * https://arxiv.org/abs/2411.15139
+  * **UniAD**: CVPR 2023 Best Paper, [github](https://github.com/OpenDriveLab/UniAD), [arxiv](https://arxiv.org/abs/2212.10156)
+  * **VAD**: ICCV 2023, [github](https://github.com/hustvl/VAD), [arxiv](https://arxiv.org/abs/2303.12077)
+  * **SparseDrive**: [github](https://github.com/swc-17/SparseDrive), [arxiv](https://arxiv.org/abs/2405.19620)
+  * **DiffusionDrive**: CVPR 2025, [github](https://github.com/hustvl/DiffusionDrive), [arxiv](https://arxiv.org/abs/2411.15139)
   * 快系统的 Scale up 特性探究：https://arxiv.org/pdf/2412.02689
 * 慢系统经典论文：DriveVLM, EMMA
-  * https://arxiv.org/abs/2402.12289
-  * https://arxiv.org/abs/2410.23262
+  * **DriveVLM**: CoRL 2024, [arxiv](https://arxiv.org/abs/2402.12289)
+  * **EMMA**: [arxiv](https://arxiv.org/abs/2410.23262)
   	- **[Open-EMMA](https://github.com/taco-group/OpenEMMA)** 是EMMA的一个开源实现，提供了一个用于自动驾驶车辆运动规划的端到端框架。
 
 
