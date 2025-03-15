@@ -618,17 +618,23 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 1. 3D/4D 场景重建
 
-* 经典论文：NSG, MARS, StreetGaussians
-  * https://openaccess.thecvf.com/content/CVPR2021/html/Ost_Neural_Scene_Graphs_for_Dynamic_Scenes_CVPR_2021_paper.html
-  * https://arxiv.org/abs/2307.15058
-  * https://arxiv.org/abs/2401.01339
+* 经典工作：NSG, MARS, StreetGaussians, OmniRe
+  * NSG: CVPR 2021, [github](https://github.com/princeton-computational-imaging/neural-scene-graphs), [arxiv](https://arxiv.org/abs/2011.10379), [paper](https://openaccess.thecvf.com/content/CVPR2021/html/Ost_Neural_Scene_Graphs_for_Dynamic_Scenes_CVPR_2021_paper.html)
+  * MARS: [github](https://open-air-sun.github.io/mars/), [arxiv](https://arxiv.org/abs/2307.15058)
+  * StreetGaussians: [github](https://github.com/zju3dv/street_gaussians), [arxiv](https://arxiv.org/abs/2401.01339)
+  * OmniRe: ICLR 2025 Spotlight, [demo page](https://ziyc.github.io/omnire), [github](https://github.com/ziyc/drivestudio), [arxiv](https://arxiv.org/abs/2408.16760)
 
 2. 场景可控生成(世界模型)
 
-* 经典论文：MagicDrive -> MagicDriveDiT, SCP-Diff, UniScene
-  * https://arxiv.org/abs/2411.13807
-  * https://arxiv.org/abs/2403.09638
-  * https://arxiv.org/abs/2412.05435
+* 经典工作：GAIA-1, GenAD（OpenDV数据集）, Vista, SCP-Diff, MagicDrive -> MagicDriveDiT, UniScene, VaVAM
+  * GAIA-1: [demo page](https://wayve.ai/thinking/introducing-gaia1/), [arxiv](https://arxiv.org/abs/2309.17080)
+  * GenAD: CVPR 2024 Highlight, OpenDV数据集, [github](https://github.com/OpenDriveLab/DriveAGI?tab=readme-ov-file#opendv), [arxiv](https://arxiv.org/abs/2403.09630)
+  * Vista: NeurIPS 2025, [demo page](https://opendrivelab.com/Vista), [github](https://github.com/OpenDriveLab/Vista), [arxiv](https://arxiv.org/abs/2405.17398)
+  * SCP-Diff: [demo page](https://air-discover.github.io/SCP-Diff/), [github](https://github.com/AIR-DISCOVER/SCP-Diff-Toolkit), [arxiv](https://arxiv.org/abs/2403.09638)
+  * MagicDrive -> MagicDriveDiT: [demo page](https://gaoruiyuan.com/magicdrive-v2/), [arxiv](https://arxiv.org/abs/2411.13807)
+  * UniScene: CVPR 2025, [demo page](https://arlo0o.github.io/uniscene/),  [arxiv](https://arxiv.org/abs/2412.05435)
+  * VaVAM: [github](https://github.com/valeoai/VideoActionModel)
+
 
 #### Policy：自动驾驶策略
 
@@ -643,14 +649,14 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 [理想端到端-VLM双系统](https://www.sohu.com/a/801987742_258768)
 
 * 快系统经典论文：UniAD (CVPR 2023 Best Paper), VAD, SparseDrive, DiffusionDrive
-  * https://arxiv.org/abs/2212.10156
-  * https://arxiv.org/abs/2303.12077
-  * https://arxiv.org/abs/2405.19620
-  * https://arxiv.org/abs/2411.15139
+  * UniAD: CVPR 2023 Best Paper, [github](https://github.com/OpenDriveLab/UniAD), [arxiv](https://arxiv.org/abs/2212.10156)
+  * VAD: ICCV 2023, [github](https://github.com/hustvl/VAD), [arxiv](https://arxiv.org/abs/2303.12077)
+  * SparseDrive: [github](https://github.com/swc-17/SparseDrive), [arxiv](https://arxiv.org/abs/2405.19620)
+  * DiffusionDrive: CVPR 2025, [github](https://github.com/hustvl/DiffusionDrive), [arxiv](https://arxiv.org/abs/2411.15139)
   * 快系统的 Scale up 特性探究：https://arxiv.org/pdf/2412.02689
 * 慢系统经典论文：DriveVLM, EMMA
-  * https://arxiv.org/abs/2402.12289
-  * https://arxiv.org/abs/2410.23262
+  * DriveVLM: CoRL 2024, [arxiv](https://arxiv.org/abs/2402.12289)
+  * EMMA: [arxiv](https://arxiv.org/abs/2410.23262)
   	- **[Open-EMMA](https://github.com/taco-group/OpenEMMA)** 是EMMA的一个开源实现，提供了一个用于自动驾驶车辆运动规划的端到端框架。
 
 
