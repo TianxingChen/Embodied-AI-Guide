@@ -902,12 +902,24 @@ Coming Soon !
 本文转载/引用了一些博主的文章, 我们对他们的知识分享表示感谢, 引用列表如下：
 [1] 知乎 [穆尧](https://www.zhihu.com/people/mu-yao-12-34), [2] 知乎 [东林钟声](https://www.zhihu.com/people/dong-lin-zhong-sheng-76), Github [Yunlong Dong](https://github.com/yunlongdong), [3] 知乎 [强化学徒](https://www.zhihu.com/people/heda-he-28), [4] 知乎 [Biang哥](https://www.zhihu.com/people/qi-da-guang), [5] OpenAI [Lilian Weng](https://lilianweng.github.io/), [6] B站 [木木具身](https://space.bilibili.com/350563565), [7] Github [Zhuoheng Li](https://github.com/StarCycle/EmbodiedAI-Reading-List-For-Lists?tab=readme-ov-file), [8] 知乎 [Flood Sung](https://www.zhihu.com/people/flood-sung), [9] Github [Sida Peng](https://github.com/pengsida/learning_research)
 
+<section id="cite"></section>
+
+If you find this repository helpful, please consider citing:
+
+```
+@misc{chen2024embodiedai,
+author = {Embodied-AI-Guide-Contributors, Tianxing Chen, Kaixin Wang, Yueru Jia, Tianliang Yao, Huanang Gao, Ning Gao, Changqing Guo, Shijiapeng, Yude Zou, Sixiang Chen, Yufei Zhu, Yifei Han, Wenhao Wang, Zhuoheng Li, Shenyi Liang, Junxiao Lin, Guankun Wang, Zhijie Wu, Wen Ye, Zanxin Chen, Bohan Hou, Hengle Jiang, Mengkang Hu, Zhixuan Liang, Yao Mu},
+title = {Embodied-AI-Guide},
+year = {2024},
+howpublished = {\url{https://github.com/tianxingchen/Embodied-AI-Guide}},
+}
+```
+
 <section id="license"></section>
 
 # 🏷️ License - 许可证
 This repository is released under the MIT license. See [LICENSE](./LICENSE) for additional details.
 
-<section id="cite"></section>
 
 <section id="star-history"></section>
 
