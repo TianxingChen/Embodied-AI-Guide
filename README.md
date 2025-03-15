@@ -33,13 +33,14 @@
             <li><a href="#vp">3.6.4 Visual Prompting - 视觉提示</a></li>
           </ul>
         </li>
-        <li><a href="#cg"> 3.7 Computer Graphics - 计算机图形学</a></li>  
-        <li><a href="#mm"> 3.8 Multimodal Models - 多模态模型</a></li>  
-        <li><a href="#embodied-ai-4-x">3.9 Embodied AI for X - 具身智能+X</a>
+        <li><a href="#cg">3.7 Computer Graphics - 计算机图形学</a></li>  
+        <li><a href="#mm">3.8 Multimodal Models - 多模态模型</a></li>  
+        <li><a href="#navigation">3.9 Robot Navigation - 机器人巡航</a></li>  
+        <li><a href="#embodied-ai-4-x">3.10 Embodied AI for X - 具身智能+X</a>
           <ul>
-            <li><a href="#medical">3.9.1 EAI for Healthcare - 具身医疗</a></li>
-            <li><a href="#uav">3.9.2 UAV - 无人机</a></li>
-            <li><a href="#ad">3.9.3 Autonomous Driving - 自动驾驶</a></li>
+            <li><a href="#medical">3.10.1 EAI for Healthcare - 具身医疗</a></li>
+            <li><a href="#uav">3.10.2 UAV - 无人机</a></li>
+            <li><a href="#ad">3.10.3 Autonomous Driving - 自动驾驶</a></li>
           </ul>
         </li>
       </ul>
@@ -225,9 +226,6 @@
 * 《模仿学习简洁教程》 - 南京大学LAMDA: [PDF](https://www.lamda.nju.edu.cn/xut/Imitation_Learning.pdf)<br>
 * Supervised Policy Learning for Real Robots, RSS 2024 Workshop 教程：真实机器人的监督策略学习, [bilibili](https://www.bilibili.com/video/BV1Fx4y1s7if/?buvid=XY415384A771A6C681C9BEB3817566ED57724&is_story_h5=false&mid=ORgXkVzTHaOKTsml0RX5Gw%3D%3D&plat_id=240&share_from=ugc&share_medium=android&share_plat=android&share_source=WEIXIN&share_tag=s_i&spmid=dt.space-dt.0.0&timestamp=1721464513&unique_k=Cqj5d9J&up_id=2185804&vd_source=ab9cf5374617c2867aaea34af29b53c9)
 
-
-<!-- * 实践[RoboTwin]() -->
-
 <section id="llm_robot"></section>
 
 ## 3.4 LLM for Robotics - 大语言模型在机器人学中的应用
@@ -394,17 +392,68 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * 最经典的工作CLIP: [知乎](https://zhuanlan.zhihu.com/p/493489688)<br>
 * 多模态大语言模型的经典工作 LLaVA: [website](https://llava-vl.github.io/)<br>
 * 多模态生成模型综述: [pdf](https://arxiv.org/pdf/2503.04641)<br>
+
+<section id="navigation"></section>
+
+## 3.9 Robot Navigation - 机器人巡航
+**机器人巡航（Robot Navigation）**是一类要求智能体在**未知**场景中，通过获取并处理环境信息，实现达成某种目标的路径规划。机器人巡航是具身任务中的一个重要能力，是完成复杂任务不可缺少的基础技术。机器人巡航任务中，智能体一般接受传感器提供的RGB、深度、GPS等信息和相关目标指令，输出是一系列的动作指令。
+
+按照任务类型分类，机器人巡航可以分为以下几个部分：
+
+- **物体目标巡航（Object-Goal Navigation）**：最常见和最广泛的巡航任务。智能体接受的指令是对一个特定物体的描述，目标是找寻到这个物体。
+- **图像目标巡航（Image-Goal Navigation）**：智能体接受的指令是一个图像，目标是找寻到这个图像所描述的场景。
+- **视觉-语言巡航（Vision-Language Navigation，VLN）**：智能体接受的指令是一个自然语言指令描述，目标是跟随该指令行进。
+
+按照模型架构分类，机器人巡航可以分为以下几个类别：
+
+- **端到端模型（End-to-End Model）**：模型直接将传感器输入通过强化学习或模仿学习映射到动作指令。模型会先将传感器信息编码为视觉表征，结合历史动作作为输入，最后通过与环境交互获得reward实现动作决策的学习。端到端模型主要针对两方面进行优化：一是提升视觉表征能力，二是解决稀疏奖励等动作决策方面的问题。端到端模型的优势在于直截了当，但是面临着严重的过拟合和低泛化性问题，使得其在现实生活中的应用收到了挑战。
+
+    - 经典工作：
+
+        - [Learning Object Relation Graph and Tentative Policy for Visual Navigation](https://arxiv.org/abs/2007.11018)
+        - [VTNet: Visual Transformer Network for Object Goal Navigation](https://openreview.net/forum?id=DILxQP08O3B)
+
+- **模块化模型（Modular Model）**：将传感器信息输入不同的模块，模块之间通过接口交互，输出动作指令。模块包括建图模块（Mapping，构建语义和占有地图），长期决策模块（Global Policy，决定长期的导航目标），短期决策模块（Local Policy，决定实现长期目标的具体操作）等。建图模块是模型的核心，包含有网格地图、包含预测的网格地图、图表示地图等多种形式。模块化模型的优势在于模块之间的解耦，大大加强了模型的可解释性。同时，独立的建图模块也使得模型更容易泛化到未知环境。但是模块化模型的建图模块仍然充斥着手动设计的规则，这一定程度上也限制了模型的通用性。
+    
+    - 经典工作：
+        
+        - [Object Goal Navigation using Goal-Oriented Semantic Exploration](https://arxiv.org/abs/2007.00643) ： SemExp，最早提出语义地图的概念，学习区域和物体之间关联的语义先验，使智能体能够更好地判断目标物体可能在的方向。
+        - [PONI: Potential Functions for ObjectGoal Navigation with Interaction-free Learning](https://openaccess.thecvf.com/content/CVPR2022/papers/Ramakrishnan_PONI_Potential_Functions_for_ObjectGoal_Navigation_With_Interaction-Free_Learning_CVPR_2022_paper.pdf)：PONI，提出了基于potential functions的语义地图预测，即基于已有的语义地图学习“补全”的完整地图，想象物体最可能在整个房间的哪个位置，使智能体能够迁移在其他样本中观察到的知识。
+        - [3D-Aware Object Goal Navigation via Simultaneous Exploration and Identification](https://arxiv.org/abs/2212.00338)：把3D信息编码进巡航的经典工作，通过更精细的点云分割信息，避免了2D语义图在z轴上的信息损失，实现了更精确的语义地图构建。
+
+- **零样本模型（Zero-shot Model）**：模型不接触训练数据，直接在测试阶段完成任务。零样本模型往往利用具有知识先验的大规模预训练模型（CLIP, LLM等）实现。零样本模型的提出旨在解决基于学习的方法面临的过拟合和低泛化性问题，同时也更适合迁移到现实场景。但是零样本模型的缺陷在于推理速度较慢，且性能受限，需要进一步微调以实现更好的性能。
+
+    - 经典工作：
+
+        - [CoWs on Pasture: Baselines and Benchmarks for Language-Driven Zero-Shot Object Navigation](https://arxiv.org/abs/2203.10421)：开放语义物体巡航的提出工作。思路很简单：用CLIP寻找目标物体，找到了就走过去。在不常见物体、复杂描述上取得了很好的效果，同时也有着对不同属性的同类别物体的区分能力。
+        - [L3MVN: Leveraging Large Language Models for Visual Target Navigation](https://arxiv.org/abs/2304.05501)：利用LLM决定“我要向哪个边界前进”。利用LLM的人类知识先验，判断物体可能在的房间，以及与其他物体之间的相关关系，实现更快速更有效的巡航。
+        - [ESC: Exploration with Soft Commonsense Constraints for Zero-shot Object Navigation](https://arxiv.org/abs/2301.13166)：显式提出了区域对于巡航的影响，在语义地图上标注出区域占有的位置，作为输入的一部分输入给LLM。结合了语义地图连续性和LLM知识丰富的优势。
+        - [SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation](https://arxiv.org/abs/2410.08189)：在线构建多层场景图(Scene Graph)并输入给LLM，利用CoT实现LLM对于物体位置的推理。
+
+常用数据集：
+
+- [MatterPort3D(MP3D)](https://niessner.github.io/Matterport/)：真实场景采集，场景复杂庞大，数据量大，难度高。
+- [Habitat-Matterport3D(HM3D)](https://aihabitat.org/datasets/hm3d/)：同上
+- [RoboTHOR](https://ai2thor.allenai.org/robothor/)：仿真环境，场景小简单。
+
+
+其他参考：
+
+- [物体目标巡航综述](https://orca.cardiff.ac.uk/id/eprint/167432/1/ObjectGoalNavigationSurveyTASE.pdf)
+- [awesome vision-language navigation](https://github.com/eric-ai-lab/awesome-vision-language-navigation)
+- [Habitat Navigation Challenge](https://github.com/facebookresearch/habitat-challenge)(Habitat框架中整合了非常多常见的agent skill，例如语义地图构建，FBE和一些heuristic方法，非常适合模块化方法的开发)
+
 <section id="embodied-ai-4-x"></section>
 
-## 3.9 Embodied AI for X - 具身智能+X
+## 3.10 Embodied AI for X - 具身智能+X
 
 <section id="medical"></section>
 
-### 3.9.1 EAI for Healthcare - 具身医疗
+### 3.10.1 EAI for Healthcare - 具身医疗
 
 > 具身智能技术的迅猛发展正在引领医疗服务模式迈向革命性的新纪元。作为人工智能算法、先进机器人技术与生物医学深度融合的前沿交叉学科, 具身智能+医疗这一研究领域不仅突破了传统医疗的边界, 更开创了智能化医疗的新范式。其多学科协同创新的特质, 正在重塑医疗服务的全流程, 为精准医疗、远程诊疗和个性化健康管理带来前所未有的发展机遇, 推动医疗行业向更智能、更人性化的方向转型升级。这一领域的突破性进展, 标志着医疗科技正迈向一个全新的智能化时代。
 
-#### 3.9.1.1 MLLM for Medical - 多模态大语言模型在医学中的应用
+#### 3.10.1.1 MLLM for Medical - 多模态大语言模型在医学中的应用
 * 用于医学影像分析的通用人工智能综述: [website](https://arxiv.org/pdf/2306.05480)<br>
 * 医学影像的通用分割模型-MedSAM： [website](https://www.nature.com/articles/s41467-024-44824-z.pdf)<br>
 * 2024盘点：医学AI大模型, 从通用视觉到医疗影像: [NEJM医学前沿](https://mp.weixin.qq.com/s?__biz=MzIxNTc4NzU0MQ==&mid=2247550230&idx=1&sn=6baa8dcba12f3f70f4c8205a0f23b6a0&chksm=966df4ca45c8cbcaa0a5d2e42fbb4de92e6881f92981071ce7fda3bd1e13e4715f92415a9258&scene=27)<br>
@@ -419,7 +468,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * VisionFM 通用眼科人工智能的多模式多任务视觉基础模型: [website](https://ai.nejm.org/doi/full/10.1056/AIoa2300221)<br>
 * Medical-CXR-VQA 用于医学视觉问答任务的大规模胸部 X 光数据集: [website](https://github.com/Holipori/Medical-CXR-VQA)<br>
 
-#### 3.9.1.2 Medical Robotics - 医疗机器人
+#### 3.10.1.2 Medical Robotics - 医疗机器人
 * 医疗机器人的五级自动化(医疗机器人领域行业共识), 杨广中教授于2017年在Science Robotics上的论著: [Medical robotics—Regulatory, ethical, and legal considerations for increasing levels of autonomy](https://www.science.org/doi/pdf/10.1126/scirobotics.aam8638)<br>
 * 医疗机器人的十年回顾(含医疗机器人的不同分类), 杨广中教授在Science Robotics上的综述文章：[A decade retrospective of medical robotics research from 2010 to 2020](https://www.science.org/doi/epdf/10.1126/scirobotics.abi8017)<br>
 * 医疗具身智能的分级: [A Survey of Embodied AI in Healthcare: Techniques, Applications, and Opportunities](https://arxiv.org/pdf/2501.07468?)<br>
@@ -449,7 +498,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 <section id="uav"></section>
 
-### 3.9.2 UAV - 无人机
+### 3.10.2 UAV - 无人机
 无人机的发展来源于：
 1. 从外部传感设备保护发展至机载传感与计算；
 2. 从遥控/预先编程发展至自主。
@@ -463,7 +512,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 无人机工作的开源代码并不多且良莠不齐，大部分需要通过论文学习。
 
-### 3.9.2.1 技能实现/学习
+### 3.10.2.1 技能实现/学习
 - **支持RL的仿真器**
   
   无人机的仿真器普遍并不强大，并且几乎没有开源的RL sim2real项目。基于开源代码需要较大的内容改动才能实现理想的sim2real performance。
@@ -502,12 +551,12 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
     - ARiADNE: A Reinforcement learning approach using Attention-based Deep Networks for Exploration, Arxiv2023, National University of Singapore (NUS). 学习已知不同区域在多个空间尺度上的相互依赖关系，并隐式预测探索这些区域可能获得的潜在收益。这使得代理能够安排行动顺序，以平衡在已知区域对地图进行开发/细化与探索新区域之间的自然权衡。
     - DARE: Diffusion Policy for Autonomous Robot Exploration. Arxiv2024, National University of Singapore (NUS). DARE方法利用self-attention学习地图空间信息，并通过diffusion生成通往未知区域的轨迹，以提高自主机器人的探索效率。
 
-### 3.9.2.2 无人机硬件平台搭建
+### 3.10.2.2 无人机硬件平台搭建
 手搓一个遥控器操控的穿越机不是一个很难的事情，网上有很多爱好者分享教程。但想搭建一个具有自主导航功能的无人机并非易事，是一个系统工程，这里推荐浙大FAST-lab开源的教程：
 
 - [从0制作自主空中机器人](https://www.bilibili.com/video/BV1WZ4y167me/?spm_id_from=333.1387.homepage.video_card.click&vd_source=875782ad8340a833a05fa20f1ae0baa5)
 
-### 3.9.2.3 新构型无人机设计
+### 3.10.2.3 新构型无人机设计
 除了常规用于航拍，环境探索的四旋翼无人机，想让无人机具备更多能力，应用于更广泛的具身智能场景，除了算法上的创新外，也需要在硬件层面对无人机的构型进行创新设计。
 
 - **空中机械臂(Aerial Manipulator)** 
@@ -558,7 +607,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 <section id="ad"></section>
 
-### 3.9.3 Autonomous Driving - 自动驾驶
+### 3.10.3 Autonomous Driving - 自动驾驶
 
 [自动驾驶之心](https://www.zdjszx.com/) (也有个微信公众号)
 
@@ -749,7 +798,6 @@ SLAM的经典工作有[ORB-SLAM](https://github.com/UZ-SLAMLab/ORB_SLAM3)系列�
 ## 5.3 Robot System Design - 机器人系统设计
 
 * 《机器人学简介》, 来自[2]做的高质量教材: [PDF](./files/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E7%AE%80%E4%BB%8B.pdf)
-
 * 《机器人系统教材》: [website](https://motion.cs.illinois.edu/RoboticSystems/)
 
 
