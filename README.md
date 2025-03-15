@@ -909,10 +909,10 @@ Coming Soon !
 If you find this repository helpful, please consider citing:
 
 ```
-@misc{embodiedaiguide2024,
+@misc{embodiedaiguide2025,
       author = {Embodied-AI-Guide-Contributors, VITA-Robotics-Community, Tianxing Chen, Kaixin Wang, Yueru Jia, Tianliang Yao, Huanang Gao, Ning Gao, Changqing Guo, Shijiapeng, Yude Zou, Sixiang Chen, Yufei Zhu, Yifei Han, Wenhao Wang, Zhuoheng Li, Shenyi Liang, Junxiao Lin, Guankun Wang, Zhijie Wu, Wen Ye, Zanxin Chen, Bohan Hou, Hengle Jiang, Mengkang Hu, Zhixuan Liang, Yao Mu},
       title = {Embodied-AI-Guide},
-      year = {2024},
+      year = {2025},
       howpublished = {\url{https://github.com/tianxingchen/Embodied-AI-Guide}},
 }
 ```
