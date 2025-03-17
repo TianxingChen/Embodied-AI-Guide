@@ -411,9 +411,9 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
         - [VTNet: Visual Transformer Network for Object Goal Navigation](https://openreview.net/forum?id=DILxQP08O3B)
 
 - **模块化模型（Modular Model）**：将传感器信息输入不同的模块，模块之间通过接口交互，输出动作指令。模块包括建图模块（Mapping，构建语义和占有地图），长期决策模块（Global Policy，决定长期的导航目标），短期决策模块（Local Policy，决定实现长期目标的具体操作）等。建图模块是模型的核心，包含有网格地图、包含预测的网格地图、图表示地图等多种形式。模块化模型的优势在于模块之间的解耦，大大加强了模型的可解释性。同时，独立的建图模块也使得模型更容易泛化到未知环境。但是模块化模型的建图模块仍然充斥着手动设计的规则，这一定程度上也限制了模型的通用性。
-    
+  
     - 经典工作：
-        
+      
         - [Object Goal Navigation using Goal-Oriented Semantic Exploration](https://arxiv.org/abs/2007.00643) ： SemExp，最早提出语义地图的概念，学习区域和物体之间关联的语义先验，使智能体能够更好地判断目标物体可能在的方向。
         - [PONI: Potential Functions for ObjectGoal Navigation with Interaction-free Learning](https://openaccess.thecvf.com/content/CVPR2022/papers/Ramakrishnan_PONI_Potential_Functions_for_ObjectGoal_Navigation_With_Interaction-Free_Learning_CVPR_2022_paper.pdf)：PONI，提出了基于potential functions的语义地图预测，即基于已有的语义地图学习“补全”的完整地图，想象物体最可能在整个房间的哪个位置，使智能体能够迁移在其他样本中观察到的知识。
         - [3D-Aware Object Goal Navigation via Simultaneous Exploration and Identification](https://arxiv.org/abs/2212.00338)：把3D信息编码进巡航的经典工作，通过更精细的点云分割信息，避免了2D语义图在z轴上的信息损失，实现了更精确的语义地图构建。
@@ -733,7 +733,7 @@ SLAM(Simultaneous Locolization And Mapping)在定位的同时完成地图的构�
 此外，SLAM也有端到端的实现[DROID-SLAM](https://arxiv.org/abs/2108.10869)。
 
 SLAM的经典工作有[ORB-SLAM](https://github.com/UZ-SLAMLab/ORB_SLAM3)系列等。
-  
+
 ### 4.2.4 杂项 Misc
 
 * ROS基础:
@@ -783,7 +783,9 @@ SLAM的经典工作有[ORB-SLAM](https://github.com/UZ-SLAMLab/ORB_SLAM3)系列�
 <section id="sensors"></section>
 
 ## 5.4 Sensors - 传感器
-Coming Soon !
+### 5.4.1深度相机
+
+RealSense，[RealSence Ros 开发套件](https://github.com/IntelRealSense/realsense-ros/tree/ros1-legacy)
 
 <section id="tactile"></section>
 
@@ -850,7 +852,7 @@ Coming Soon !
 | 公司 | 主营产品 | Others |
 |-------|------|------|
 | [松灵AgileX](https://www.agilex.ai/) | [pipper机械臂](https://www.agilex.ai/chassis/16)<br>移动底盘 | 面向教育科研
-| [宇树Unitree](https://www.unitree.com/cn) | [Go2机器狗](https://www.unitree.com/cn/go2)<br>[通用人形H1](https://www.unitree.com/cn/h1)<br>[通用人形G1](https://www.unitree.com/cn/g1)<br> | 许多产出使用宇树的机器人作为硬件基础
+| [宇树Unitree](https://www.unitree.com/cn) | [四足机器人开发指南](https://www.yuque.com/ironfatty/nly1un/luo9gb)<br>[Go2机器狗](https://www.unitree.com/cn/go2)<br>[AlienGo机器狗](https://www.yuque.com/ironfatty/nly1un/dqcz3u)<br>[通用人形H1](https://www.unitree.com/cn/h1)<br>[通用人形G1](https://www.unitree.com/cn/g1)<br> | 许多产出使用宇树的机器人作为硬件基础
 | [方舟无限ARX](https://www.arx-x.com/?product/) | [X5机械臂](https://www.arx-x.com/?product/21.html)<br>[X7双臂平台](https://www.arx-x.com/?product/23.html)<br>[R5机械臂](https://www.arx-x.com/?product/22.html)  | 适合复现很多经典的工作, eg. [aloha](https://mobile-aloha.github.io/cn.html)<br>[RoboTwin松灵底盘+方舟臂](https://github.com/TianxingChen/RoboTwi)
 | [波士顿动力](https://bostondynamics.com/)  | [spot机器狗](https://bostondynamics.com/products/spot/)<br>[Atlas通用人形](https://bostondynamics.com/atlas/)  | 具身智能本体制造商, 从液压驱动转向电机驱动 |
 | [灵心巧手](https://www.linkerbot.cn/index) |  |  |
@@ -881,6 +883,7 @@ Coming Soon !
 常见仿真器wiki: [wiki](https://simulately.wiki/)
 | 仿真器 | 对应基准集 |
 |-------|------|
+| [IsaacGym](https://developer.nvidia.com/isaac-gym) | [legged gym](https://github.com/leggedrobotics/legged_gym)<br>[parkour(包括蒸馏以及真机部署)](https://github.com/ZiwenZhuang/parkour)<br>[extreme-parkour](https://github.com/chengxuxin/extreme-parkour) |
 | [IsaacSim](https://developer.nvidia.com/isaac/sim) | [BEHAVIOR-1K(可跨平台)](https://behavior.stanford.edu/behavior-1k)+[omniGibson(工具链)](https://behavior.stanford.edu/omnigibson/)<br>[ARNOID](https://arnold-benchmark.github.io/) |
 | [MuJoCo](https://mujoco.org/) | [robosuite](https://robosuite.ai/docs/overview.html)+[robomimic(工具链)](https://robomimic.github.io/)<br>[LIBERO](https://libero-project.github.io/main.html)<br>[MetaWorld](https://meta-world.github.io/)<br>[Gymnasium-Robotics(Fetch; Shadow Dexterous Hand; Maze; Adroit Hand; Franka Kitchen; MaMuJoCo)](https://robotics.farama.org/)<br>[RoboCasa](Docs.qq.com/sheet/DYmppSU55cFNpaVJo?tab=BB08J2)<br>[RoboHive](https://github.com/vikashplus/robohive) |
 | [Sapien](https://sapien.ucsd.edu/) | [ManiSkill](https://maniskill.readthedocs.io/en/latest/index.html)<br>[RoboTwin](https://github.com/TianxingChen/RoboTwin) |
