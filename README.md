@@ -237,12 +237,19 @@
   * 经典工作(4) EmbodiedGPT: [Arxiv](https://arxiv.org/abs/2305.15021)<br>
 * 同时也有一些工作将High-Level的策略规划与 Low-Level的动作生成进行统一
   * 经典工作(1) RT-2: [Arxiv](https://arxiv.org/abs/2307.15818)<br>
+* 另一个代表性方向的工作将LLM与传统基于算法的Planner结合来做任务与移动规划
+  * 经典工作(1) LLM+P: [Arxiv](https://arxiv.org/abs/2304.11477)<br>
+  * 经典工作(2) AutoTAMP: [Arxiv](https://arxiv.org/abs/2306.06531)<br>
+  * 经典工作(3) Text2Motion: [Arxiv](https://arxiv.org/abs/2303.12153)<br>
 * 利用LLM的code能力实现具身智能是一个有趣的想法
   * 经典工作(1) Code as Policy: [Arxiv](https://arxiv.org/abs/2209.07753)<br>
   * 经典工作(2) Instruction2Act: [Arxiv](https://arxiv.org/abs/2305.11176)<br>
 * 有一些工作将三维视觉感知同LLM结合起来，共同促进具身智能规划
   * VoxPoser [Arxiv](https://arxiv.org/abs/2307.05973)<br>
   * OmniManip [Arxiv](https://arxiv.org/abs/2501.03841)<br>
+* 还有一些工作试图把基于LLM的机器人规划扩展到多机器人协同合作的场景
+  * 经典工作(1) RoCo: [Arxiv](https://arxiv.org/abs/2307.04738)<br>
+  * 经典工作(2) Scalable-Multi-Robot: [Arxiv](https://arxiv.org/abs/2309.15943)<br>
 
 <section id="vla"></section>
 
