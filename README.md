@@ -6,6 +6,14 @@
 > Embodied AI(具身智能)入门的路径以及高质量信息的总结, 期望是按照路线走完后, 新手可以快速建立关于这个领域的认知, 希望能帮助到各位入门具身智能的朋友, 欢迎点Star、分享与提PR🌟~<br>【 <a href="https://github.com/tianxingchen/Embodied-AI-Guide">Embodied-AI-Guide</a>, Latest Update: Mar. 15, 2025 】<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftianxingchen%2FEmbodied-AI-Guide&count_bg=%232B8DD9&title_bg=%237834C6&icon=github.svg&icon_color=%23E7E7E7&title=Page+Viewers&edge_flat=false"/> <img alt="GitHub repo stars" src="https://img.shields.io/github/stars/TianxingChen/Embodied-AI-Guide">
 
 
+# VITA具身智能社区 (筹备中)
+<div style="display: flex;">
+  <img src="./files/images/vita.png" style="width: 40%; height: auto;" />
+  <div style="width: 60%; padding: 0 10px;">
+    <p style="margin: 0;">Embodied-AI-Guide项目很快将会以网页版wiki的形式上传到VITA具身智能社区网站，敬请期待。如果对VITA具身社区感兴趣，欢迎邮件联系<a href="mailto:Vita.Committee2025@gmail.com">Vita.Committee2025@gmail.com</a>或联创微信<code>TianxingChen_2002</code>（请备注机构+姓名与来意）。</p>
+  </div>
+</div>
+
 # Contents - 目录
 
 <nav>
