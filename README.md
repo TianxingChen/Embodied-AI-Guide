@@ -7,12 +7,18 @@
 
 
 # VITA具身智能社区 (筹备中)
-<div style="display: flex;">
-  <img src="./files/images/vita.png" style="width: 40%; height: auto;" />
-  <div style="width: 60%; padding: 0 10px;">
-    <p style="margin: 0;">Embodied-AI-Guide项目很快将会以网页版wiki的形式上传到VITA具身智能社区网站，敬请期待。如果对VITA具身社区感兴趣，欢迎邮件联系<a href="mailto:Vita.Committee2025@gmail.com">Vita.Committee2025@gmail.com</a>或联创微信<code>TianxingChen_2002</code>（请备注机构+姓名与来意）。</p>
-  </div>
-</div>
+
+
+<table>
+  <tr>
+    <td>
+      <img src="./files/images/vita.png" alt="Task Descriptions">
+    </td>
+    <td>
+      Embodied-AI-Guide项目很快将会以网页版wiki的形式上传到VITA具身智能社区网站，敬请期待。如果对VITA具身社区感兴趣，欢迎邮件联系<a href="mailto:Vita.Committee2025@gmail.com">Vita.Committee2025@gmail.com</a>或联创微信<code>TianxingChen_2002</code>（请备注机构+姓名与来意）
+    </td>
+  </tr>
+</table>
 
 # Contents - 目录
 
