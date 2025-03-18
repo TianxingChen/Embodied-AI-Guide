@@ -134,7 +134,7 @@
   * DeepTimber Robotics Innovations Community, 深木科研交流社区: [website](https://gamma.app/public/DeepTimber-Robotics-Innovations-Community-A-Community-for-Multi-m-og0uv8mswl1a3q7?mode=doc)
   * 宇树具身智能社群: [website](https://www.unifolm.com/#/)
   * Simulately: Handy information and resources for physics simulators for robot learning research: [website](https://simulately.wiki/)
-  * DeepTimber-地瓜机器人社区: [website](https://cn.developer.d-robotics.cc/forumList?id=156&title=Deeptimber)
+  * DeepTimber-地瓜机器人社区: [website](https://developer.d-robotics.cc/forumList?id=156&title=Deeptimber)
   * HuggingFace LeRobot (Europe, check the Discord): [website](https://github.com/huggingface/lerobot)
   * K-scale labs (US, check the Discord): [website](https://kscale.dev/)
 
