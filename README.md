@@ -449,6 +449,8 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 ### 3.10.1 EAI for Healthcare - 具身医疗
 
 > 具身智能技术的迅猛发展正在引领医疗服务模式迈向革命性的新纪元。作为人工智能算法、先进机器人技术与生物医学深度融合的前沿交叉学科, 具身智能+医疗这一研究领域不仅突破了传统医疗的边界, 更开创了智能化医疗的新范式。其多学科协同创新的特质, 正在重塑医疗服务的全流程, 为精准医疗、远程诊疗和个性化健康管理带来前所未有的发展机遇, 推动医疗行业向更智能、更人性化的方向转型升级。这一领域的突破性进展, 标志着医疗科技正迈向一个全新的智能化时代。
+> 
+* 医疗具身智能综述: [A Survey of Embodied AI in Healthcare: Techniques, Applications, and Opportunities](https://arxiv.org/abs/2501.07468)<br>
 
 #### 3.10.1.1 MLLM for Medical - 多模态大语言模型在医学中的应用
 * 用于医学影像分析的通用人工智能综述: [website](https://arxiv.org/pdf/2306.05480)<br>
@@ -475,6 +477,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
   * 3DGS在腔镜手术中的应用综述: [website](https://arxiv.org/pdf/2408.04426)<br>
 
 * 达芬奇手术机器人是最为常用的外科手术机器人, 对于这类机器人自主技能操作的研究最为广泛
+  * 达芬奇手术机器人研究套件dVRK介绍: [website](https://ieeexplore.ieee.org/abstract/document/9531355)<br>
   * 通过模仿学习在达芬奇机器人上学习外科手术操作任务 Surgical Robot Transformer (SRT): [website](https://surgical-robot-transformer.github.io/)<br>
   * Domain-specific Simulators - 手术机器人技能学习领域的模拟器
     * SurRoL: RL-Centered and dVRK Compatible Platform for Surgical Robot Learning [website](https://med-air.github.io/SurRoL/)<br>
