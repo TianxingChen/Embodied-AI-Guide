@@ -743,20 +743,20 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * 理解斜对称矩阵, Twist和Exponential of a twist, 旋量代数
 
 ### 4.2.3 里程计和同步定位与建图 (Odometry&SLAM)
-里程计(Odometry)用于为机器人实时提供定位，里程计常常基于扩展卡尔曼滤波(EKF)实现，融合来自IMU、相机、激光雷达、码盘、毫米波雷达、光流传感器等等各种常用于机器人位姿感知的传感器之中的多种观测，以较高的频率实现对机器人位姿的估计。
+里程计(Odometry)用于为机器人实时提供定位，里程计常常基于扩展卡尔曼滤波(EKF)实现，融合来自惯性测量单元(IMU)、相机、激光雷达、码盘、毫米波雷达、超宽带(UWB)、光流传感器等等各种常用于机器人位姿感知的传感器之中的多种观测，以较高的频率实现对机器人位姿的估计。
 
-里程计中最常见的是视觉惯性里程计(VIO)和激光惯性里程计(LIO)，其中比较经典的工作包括VINS系列[VINS-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono)[VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion)，[LOAM](https://www.ri.cmu.edu/pub_files/2014/7/Ji_LidarMapping_RSS2014_v8.pdf)，[FAST-LIO](https://github.com/hku-mars/FAST_LIO)等等。此外还有融合了IMU、相机和激光传感器的里程计[FAST-LIVO](https://github.com/hku-mars/FAST-LIVO2)系列等。
+里程计中最常见的是视觉惯性里程计(VIO)和激光惯性里程计(LIO)，以及最近新兴的一些用4D毫米波雷达作为主要传感器的方法，其中比较经典的工作包括VINS系列[VINS-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono)，[ORB-SLAM](https://github.com/UZ-SLAMLab/ORB_SLAM3)，[VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion)，[LOAM](https://www.ri.cmu.edu/pub_files/2014/7/Ji_LidarMapping_RSS2014_v8.pdf)，[FAST-LIO](https://github.com/hku-mars/FAST_LIO)等等。此外还有融合了IMU、相机和激光传感器的里程计[FAST-LIVO](https://github.com/hku-mars/FAST-LIVO2)系列等。
 
-SLAM(Simultaneous Locolization And Mapping)在定位的同时完成地图的构建，使得回环(Loop Closure)检测成为可能，回环检测的存在使得当机器人重新访问到某个位置时可以修正一部分的累计误差，提高在长时间作业时的定位精度。SLAM的实现主要有filter-based和optimization-based两种，实现中一般又分前端和后端，基于不同传感器的SLAM又各有其特点，在这里提供一些学习资源：
+SLAM(Simultaneous Locolization And Mapping)在定位的同时完成地图的构建，使得回环(Loop Closure)检测成为可能，回环检测的存在使得当机器人重新访问到某个位置时可以修正一部分的累计误差，提高在长时间作业时的定位精度。SLAM的实现主要有filter-based和optimization-based两种，实现中一般又分前端和后端，基于不同传感器的SLAM又各有其特点，在这里提供一些学习资源，主要是书籍：
 
 * [SLAM Handboook](https://github.com/SLAM-Handbook-contributors/slam-handbook-public-release)
 * [Past, Present, and Future of Simultaneous Localization And Mapping: Towards the Robust-Perception Age](https://arxiv.org/abs/1606.05830): SLAM领域的经典综述
-* 高翔老师的《视觉SLAM十四讲》
-* 高翔老师的《激光SLAM十四讲》
+* 高翔老师的[《视觉SLAM十四讲》](https://github.com/gaoxiang12/slambook2)
+* 高翔老师的[《自动驾驶与机器人的SLAM技术》](https://github.com/gaoxiang12/slam_in_autonomous_driving)
 
 此外，SLAM也有端到端的实现[DROID-SLAM](https://arxiv.org/abs/2108.10869)。
 
-SLAM的经典工作有[ORB-SLAM](https://github.com/UZ-SLAMLab/ORB_SLAM3)系列等。
+其他关于slam的思考可以参考[awesome-and-novel-works-in-slam](https://github.com/runjtu/awesome-and-novel-works-in-slam)
 
 ### 4.2.4 杂项 Misc
 
