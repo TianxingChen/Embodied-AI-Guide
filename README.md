@@ -208,15 +208,15 @@
 
 模型预测控制（MPC）是一种先进的控制策略，利用系统的显式动态模型预测有限时间范围内的未来行为。每个控制周期，MPC 通过求解优化问题来确定控制输入，以优化指定的性能指标，同时满足输入和输出的约束条件。优化序列中的第一个控制输入应用于系统，在下一个时间步中，结合新的系统状态测量或估计，重复该过程。
 
-    * 相关视频：
+* 相关视频：
 
-        - Model Predictive Control 模型预测控制,从公式到代码 - 华工机器人实验室: [bilibili](https://www.bilibili.com/video/BV1U54y1J7wh/?spm_id_from=333.999.0.0&vd_source=180b6da13847c26de9d19ac71e61c7fe); 仿真工程源码:[Gitee](https://gitee.com/clangwu/mpc_control.git) 这门课程适合作为从PID到MPC的入门课程，适合只了解PID控制原理，但不太清楚MPC原理的入门者；从公式原理推导，到CoppeliaSim仿真教程以及MatLab代码编写，深入浅出。
+    - Model Predictive Control 模型预测控制,从公式到代码 - 华工机器人实验室: [bilibili](https://www.bilibili.com/video/BV1U54y1J7wh/?spm_id_from=333.999.0.0&vd_source=180b6da13847c26de9d19ac71e61c7fe); 仿真工程源码:[Gitee](https://gitee.com/clangwu/mpc_control.git) 这门课程适合作为从PID到MPC的入门课程，适合只了解PID控制原理，但不太清楚MPC原理的入门者；从公式原理推导，到CoppeliaSim仿真教程以及MatLab代码编写，深入浅出。
     
-    * 相关工作：
+* 相关工作：
       
-        - [Predictive End-Effector Control of Manipulators on Moving Platforms Under Disturbance](https://ieeexplore.ieee.org/document/9425004) ： 使用时间序列分析预测基座运动并相应地转换期望轨迹，使得机械臂可以达到主动在扰动下的基座运动。是使用二次规划（QP）公式化模型预测控制（MPC）问题的经典之作。
-        - [Learning-Based Model Predictive Control for Safe Exploration](https://ieeexplore.ieee.org/abstract/document/8619572) ： 将机器学习与 MPC 相结合，代表了将数据驱动的模型和学习纳入控制的现代趋势。
-        - [Confidence-Aware Object Capture for a Manipulator Subject to Floating-Base Disturbances](https://ieeexplore.ieee.org/document/10684104) ： 利用小波神经网络进行实时运动预测，并且引入置信度评价，实现短周期内最优轨迹规划，使得机械臂在扰动平面上抓取无人机（UAV）表现优异，具备良好的鲁棒性。
+    - [Predictive End-Effector Control of Manipulators on Moving Platforms Under Disturbance](https://ieeexplore.ieee.org/document/9425004) ： 使用时间序列分析预测基座运动并相应地转换期望轨迹，使得机械臂可以达到主动在扰动下的基座运动。是使用二次规划（QP）公式化模型预测控制（MPC）问题的经典之作。
+    - [Learning-Based Model Predictive Control for Safe Exploration](https://ieeexplore.ieee.org/abstract/document/8619572) ： 将机器学习与 MPC 相结合，代表了将数据驱动的模型和学习纳入控制的现代趋势。
+    - [Confidence-Aware Object Capture for a Manipulator Subject to Floating-Base Disturbances](https://ieeexplore.ieee.org/document/10684104) ： 利用小波神经网络进行实时运动预测，并且引入置信度评价，实现短周期内最优轨迹规划，使得机械臂在扰动平面上抓取无人机（UAV）表现优异，具备良好的鲁棒性。
 
 <section id="rl"></section>
 
@@ -714,7 +714,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * 时域与频域分析
 * 传递函数
 * 理解前馈控制、反馈控制
-* **PID控制**：[CSDN](https://blog.csdn.net/name_longming/article/details/115093338)
+* **PID控制**：[CSDN](https://blog.csdn.net/name_longming/article/details/115093338) [Bili]
 
 ### 4.1.2 现代控制理论(线性系统控制)
 * Modern Control Systems (14th edition), Robert. H. Bishop, Richard. C, Dorf. z: [Book](http://103.203.175.90:81/fdScript/RootOfEBooks/E%20Book%20collection%20-%202024/EEE/Modern_control_systems_Robert_H_Bishop_Richard_C_Dorf_z_lib_org.pdf#page=1.00&gsr=0)
