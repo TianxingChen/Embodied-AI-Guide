@@ -706,7 +706,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 <section id="control"></section>
 
 ## 4. Control and Robotics - 控制论与机器人学基础
-
+高级机器人技术 by Pieter Abbeel [video](https://www.bilibili.com/video/BV1h7411A7B9/?spm_id_from=333.788.videopod.episodes&vd_source=180b6da13847c26de9d19ac71e61c7fe)
 ## 4.1. 控制理论基础
 
 ### 4.1.1 经典控制原理
@@ -714,13 +714,13 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * 时域与频域分析
 * 传递函数
 * 理解前馈控制、反馈控制
-* **PID控制**：[CSDN](https://blog.csdn.net/name_longming/article/details/115093338) [Bili]
+* **PID控制**：[CSDN](https://blog.csdn.net/name_longming/article/details/115093338) [BiliBili](https://www.bilibili.com/video/BV1B54y1V7hp?spm_id_from=333.788.videopod.episodes&vd_source=8676f67627c33488b525afb187777fa7)
 
 ### 4.1.2 现代控制理论(线性系统控制)
 * Modern Control Systems (14th edition), Robert. H. Bishop, Richard. C, Dorf. z: [Book](http://103.203.175.90:81/fdScript/RootOfEBooks/E%20Book%20collection%20-%202024/EEE/Modern_control_systems_Robert_H_Bishop_Richard_C_Dorf_z_lib_org.pdf#page=1.00&gsr=0)
 * 状态方程
 * 状态反馈与最优控制
-* **LQR控制**
+* **LQR控制** [BiliBili](https://www.bilibili.com/video/BV1Ng4y1V7JQ/?spm_id_from=333.1387.homepage.video_card.click&vd_source=180b6da13847c26de9d19ac71e61c7fe)
 
 ### 4.1.3 先进控制技术
 * 鲁棒控制
