@@ -214,20 +214,20 @@
     
 * 经典工作：
   
-    * 理论基础：
+    **理论基础**：
     - [Model predictive control: Theory and practice—A survey](https://www.sciencedirect.com/science/article/abs/pii/0005109889900022) ： 这篇全面的综述论文讨论了 MPC 的理论基础及其实践应用，为未来的研究奠定了基础。
 
-    * 非线性 MPC：
+    **非线性 MPC**：
     - [An Introduction to Nonlinear Model Predictive Control](https://pure.tue.nl/ws/files/3079152/555518.pdf#page=120) ： 提供了对非线性 MPC 的简明介绍，扩展了 MPC 在具有显著非线性系统中的应用。
 
-    * 显式 MPC：
+    **显式 MPC**：
     - [The explicit linear quadratic regulator for constrained systems](https://www.sciencedirect.com/science/article/abs/pii/S0005109801001741) ： 讨论了显式 MPC 解的公式化，对于需要快速实时控制的系统至关重要。
 
-    * 鲁棒 MPC：
+    **鲁棒 MPC**：
     - [Predictive End-Effector Control of Manipulators on Moving Platforms Under Disturbance](https://ieeexplore.ieee.org/document/9425004) ： 使用时间序列分析预测基座运动并相应地转换期望轨迹，使得机械臂可以达到主动在扰动下的基座运动。是使用二次规划（QP）公式化模型预测控制（MPC）问题的经典之作。
     - [Min-max feedback model predictive control for constrained linear systems](https://ieeexplore.ieee.org/abstract/document/704989) ： 解决了 MPC 中的鲁棒性，提出了处理模型不确定性并确保在扰动下性能的方法。
 
-    * 基于学习的MPC：
+    **基于学习的MPC**：
     - [Learning-Based Model Predictive Control for Safe Exploration](https://ieeexplore.ieee.org/abstract/document/8619572) ： 将机器学习与 MPC 相结合，代表了将数据驱动的模型和学习纳入控制的现代趋势。
     - [Confidence-Aware Object Capture for a Manipulator Subject to Floating-Base Disturbances](https://ieeexplore.ieee.org/document/10684104) ： 利用小波神经网络进行实时运动预测，并且引入置信度评价，实现短周期内最优轨迹规划，使得机械臂在扰动平面上抓取无人机（UAV）表现优异，具备良好的鲁棒性。
 
