@@ -312,7 +312,7 @@
 * **Autoregressive Models**
 
   - **RT系列(Robotic Transformers)**:
-    - **RT-1** ([paper](https://arxiv.org/abs/2409.12514))
+    - **RT-1** ([paper](https://arxiv.org/abs/2212.06817))
     - **RT-2** ([page](https://robotics-transformer2.github.io/) | [paper](https://arxiv.org/abs/2307.15818), Google Deepmind, 2023.7)：55B
     - **RT-Trajectory** ([paper](https://arxiv.org/pdf/2311.01977), Google Deepmind, UCSD, 斯坦福 2023.11)
     - **AUTORT** ([paper](https://arxiv.org/abs/2401.12963), Google Deepmind, 2024.1)
