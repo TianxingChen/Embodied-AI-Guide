@@ -210,7 +210,7 @@
 
 * 入门推荐视频：
 
-    - Model Predictive Control 模型预测控制,从公式到代码 - 华工机器人实验室: [bilibili](https://www.bilibili.com/video/BV1U54y1J7wh/?spm_id_from=333.999.0.0&vd_source=180b6da13847c26de9d19ac71e61c7fe); 仿真工程源码:[Gitee](https://gitee.com/clangwu/mpc_control.git) 这门课程适合作为从PID到MPC的入门课程，适合只了解PID控制原理，但不太清楚MPC原理的入门者；从公式原理推导，到CoppeliaSim仿真教程以及MatLab代码编写，深入浅出。
+    - Model Predictive Control 模型预测控制,从公式到代码 - 华工机器人实验室: [bilibili](https://www.bilibili.com/video/BV1U54y1J7wh/?spm_id_from=333.999.0.0&vd_source=180b6da13847c26de9d19ac71e61c7fe); 仿真工程源码:[Gitee](https://gitee.com/clangwu/mpc_control.git) 这门课程适合作为从PID到MPC的入门课程，适合只了解PID控制原理，但不太清楚MPC原理的入门者；从公式原理推导，到CoppeliaSim（V-ERP）仿真教程以及MatLab代码编写，深入浅出。
     
 * 经典工作：
   
@@ -719,7 +719,9 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 <section id="control"></section>
 
 ## 4. Control and Robotics - 控制论与机器人学基础
-高级机器人技术 by Pieter Abbeel [video](https://www.bilibili.com/video/BV1h7411A7B9/?spm_id_from=333.788.videopod.episodes&vd_source=180b6da13847c26de9d19ac71e61c7fe)
+**经典课程**
+  - [video](https://www.bilibili.com/video/BV1GJ411k7fE?spm_id_from=333.788.videopod.episodes&vd_source=180b6da13847c26de9d19ac71e61c7fe) 美国西北大学 现代机器人 Modern Robotics： 这门课侧重于基础的机器人理论，涉及的概念有笛卡尔坐标系，关节坐标系，齐次旋转矩阵，正运动学（FK）， 逆运动学（IK）等等，适合零基础入门。
+  - [video](https://www.bilibili.com/video/BV1h7411A7B9/?spm_id_from=333.788.videopod.episodes&vd_source=180b6da13847c26de9d19ac71e61c7fe) 加州伯克利 高级机器人技术 by Pieter Abbeel： 这门课是机器人的进阶课程，适合在学习完‘现代机器人 Modern Robotics’或者有相应基础后进一步学习。涉及的部分有马尔科夫决策过程，LQR控制，在约束条件下的最优化，基于最优化的控制，运动规划，卡尔曼滤波，模仿学习，强化学习，Sim2Real等等。课程中还涉及了很多实操演示，有助于进一步了解理论在真实世界中的应用。
 ## 4.1. 控制理论基础
 
 ### 4.1.1 经典控制原理
