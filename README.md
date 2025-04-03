@@ -115,7 +115,7 @@
 ## About us - 关于我们
 我们是一个由具身初学者组成的团队, 希望能够通过我们自己的学习经验, 为后来者提供一些帮助, 加快具身智能的普及。欢迎更多朋友加入我们的项目, 也很欢迎交友、学术合作, 有任何问题, 可以联系邮箱`chentianxing2002@gmail.com`。
 
-<p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (深大BS)</a>, <a href="https://github.com/kxwangzju">王开炫 (25' 港大PhD)</a>, <a href="https://jiayueru.github.io/">贾越如 (北大Ms)</a >, <a href="https://metaphysicist0.github.io/">姚天亮 (25' 港中文PhD)</a>, <a href="https://c7w.tech/about/">高焕昂 (清华PhD)</a>, <a href="https://axi404.top/">高宁 (西交BS)</a>, <a href="https://github.com/guo-cq">郭常青 (清华Ms)</a>, <a href="https://shijiapeng03.github.io/">彭时佳 (深大BS)</a>, <a href="https://yudezou.github.io/">邹誉德 (25' 上交AILab联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/csyufei">朱宇飞 (25' 上科大Ms)</a>, <a href="https://github.com/LambdaGuard">韩翊飞 (清华Ms)</a>, <a href="https://hao-starrr.github.io/">王文灏 (宾大Ms)</a>, <a href="https://github.com/StarCycle">李卓恒 (港大PhD)</a>, <a href="https://github.com/GihhArwtw">邱一航 (港大PhD)</a>, <a href="https://github.com/Henry-lsy">梁升一 (港科广PhD)</a>, <a href="https://scholar.google.com/citations?user=azPXbWcAAAAJ&hl=en">林俊晓 (浙大Ms)</a>, <a href="https://gkw0010.github.io/">王冠锟 (港中文PhD)</a>, <a href="https://ngchikit.github.io">吴志杰 (港中文PhD)</a>, <a href="https://github.com/27yw">叶雯 (25' 中科院PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫 (深大BS)</a>, <a href="https://hbhalpha.github.io">侯博涵 (山大BS)</a>, <a href="https://github.com/Scodive">江恒乐 (25‘ 南科大PhD)</a>, <a href="https://yongchao98.github.io/YongchaoChen/">陈勇超 (MIT+哈佛PhD)</a>, <a href="https://aaron617.github.io/">胡梦康 (港大PhD)</a>, <a href="https://liang-zx.github.io/">梁志烜 (港大PhD)</a>, <a href="https://yaomarkmu.github.io/">穆尧 (上交AP)</a>.</p> 
+<p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (深大BS)</a>, <a href="https://github.com/kxwangzju">王开炫 (25' 港大PhD)</a>, <a href="https://jiayueru.github.io/">贾越如 (北大Ms)</a >, <a href="https://metaphysicist0.github.io/">姚天亮 (25' 港中文PhD)</a>, <a href="https://c7w.tech/about/">高焕昂 (清华PhD)</a>, <a href="https://axi404.top/">高宁 (西交BS)</a>, <a href="https://github.com/guo-cq">郭常青 (清华Ms)</a>, <a href="https://shijiapeng03.github.io/">彭时佳 (深大BS)</a>, <a href="https://yudezou.github.io/">邹誉德 (25' 上交AILab联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/csyufei">朱宇飞 (25' 上科大Ms)</a>, <a href="https://github.com/LambdaGuard">韩翊飞 (清华Ms)</a>, <a href="https://hao-starrr.github.io/">王文灏 (宾大Ms)</a>, <a href="https://github.com/StarCycle">李卓恒 (港大PhD)</a>, <a href="https://github.com/GihhArwtw">邱一航 (港大PhD)</a>, <a href="https://github.com/Henry-lsy">梁升一 (港科广PhD)</a>, <a href="https://scholar.google.com/citations?user=azPXbWcAAAAJ&hl=en">林俊晓 (浙大Ms)</a>, <a href="https://gkw0010.github.io/">王冠锟 (港中文PhD)</a>, <a href="https://ngchikit.github.io">吴志杰 (港中文PhD)</a>, <a href="https://github.com/27yw">叶雯 (25' 中科院PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫 (深大BS)</a>, <a href="https://hbhalpha.github.io">侯博涵 (山大BS)</a>, <a href="https://github.com/Scodive">江恒乐 (25‘ 南科大PhD)</a>, <a href="https://yongchao98.github.io/YongchaoChen/">陈勇超 (MIT+哈佛PhD)</a>, <a href="https://aaron617.github.io/">胡梦康 (港大PhD)</a>, <a href="https://liang-zx.github.io/">梁志烜 (港大PhD)</a>, <a href="https://https://yimouwu.github.io/">吴贻谋 (港中文MPhil)</a>, <a href="https://yaomarkmu.github.io/">穆尧 (上交AP)</a>.</p> 
 
 <a href="https://github.com/TianxingChen/Embodied-AI-Guide/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=TianxingChen/Embodied-AI-Guide" />
@@ -205,6 +205,31 @@
 机器人学习 Robot Learning 的发展: [zhihu](https://zhuanlan.zhihu.com/p/26988866)
 
 ### 3.3.1 Model Predictive Control (MPC) - 模型预测控制
+
+模型预测控制（MPC）是一种先进的控制策略，利用系统的显式动态模型预测有限时间范围内的未来行为。每个控制周期，MPC 通过求解优化问题来确定控制输入，以优化指定的性能指标，同时满足输入和输出的约束条件。优化序列中的第一个控制输入应用于系统，在下一个时间步中，结合新的系统状态测量或估计，重复该过程。
+
+* 入门推荐视频：
+
+    - Model Predictive Control 模型预测控制,从公式到代码 - 华工机器人实验室: [bilibili](https://www.bilibili.com/video/BV1U54y1J7wh/?spm_id_from=333.999.0.0&vd_source=180b6da13847c26de9d19ac71e61c7fe); 仿真工程源码:[Gitee](https://gitee.com/clangwu/mpc_control.git) 这门课程适合作为从PID到MPC的入门课程，适合只了解PID控制原理，但不太清楚MPC原理的入门者；从公式原理推导，到CoppeliaSim仿真教程以及MatLab代码编写，深入浅出。
+    
+* 经典工作：
+  
+    **理论基础**：
+    - [Model predictive control: Theory and practice—A survey](https://www.sciencedirect.com/science/article/abs/pii/0005109889900022) ： 这篇全面的综述论文讨论了 MPC 的理论基础及其实践应用，为未来的研究奠定了基础。
+
+    **非线性 MPC**：
+    - [An Introduction to Nonlinear Model Predictive Control](https://pure.tue.nl/ws/files/3079152/555518.pdf#page=120) ： 提供了对非线性 MPC 的简明介绍，扩展了 MPC 在具有显著非线性系统中的应用。
+
+    **显式 MPC**：
+    - [The explicit linear quadratic regulator for constrained systems](https://www.sciencedirect.com/science/article/abs/pii/S0005109801001741) ： 讨论了显式 MPC 解的公式化，对于需要快速实时控制的系统至关重要。
+
+    **鲁棒 MPC**：
+    - [Predictive End-Effector Control of Manipulators on Moving Platforms Under Disturbance](https://ieeexplore.ieee.org/document/9425004) ： 使用时间序列分析预测基座运动并相应地转换期望轨迹，使得机械臂可以达到主动在扰动下的基座运动。是使用二次规划（QP）公式化模型预测控制（MPC）问题的经典之作。
+    - [Min-max feedback model predictive control for constrained linear systems](https://ieeexplore.ieee.org/abstract/document/704989) ： 解决了 MPC 中的鲁棒性，提出了处理模型不确定性并确保在扰动下性能的方法。
+
+    **基于学习的MPC**：
+    - [Learning-Based Model Predictive Control for Safe Exploration](https://ieeexplore.ieee.org/abstract/document/8619572) ： 将机器学习与 MPC 相结合，代表了将数据驱动的模型和学习纳入控制的现代趋势。
+    - [Confidence-Aware Object Capture for a Manipulator Subject to Floating-Base Disturbances](https://ieeexplore.ieee.org/document/10684104) ： 利用小波神经网络进行实时运动预测，并且引入置信度评价，实现短周期内最优轨迹规划，使得机械臂在扰动平面上抓取无人机（UAV）表现优异，具备良好的鲁棒性。
 
 <section id="rl"></section>
 
@@ -694,7 +719,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 <section id="control"></section>
 
 ## 4. Control and Robotics - 控制论与机器人学基础
-
+高级机器人技术 by Pieter Abbeel [video](https://www.bilibili.com/video/BV1h7411A7B9/?spm_id_from=333.788.videopod.episodes&vd_source=180b6da13847c26de9d19ac71e61c7fe)
 ## 4.1. 控制理论基础
 
 ### 4.1.1 经典控制原理
@@ -702,13 +727,13 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * 时域与频域分析
 * 传递函数
 * 理解前馈控制、反馈控制
-* **PID控制**：[CSDN](https://blog.csdn.net/name_longming/article/details/115093338)
+* **PID控制**：[CSDN](https://blog.csdn.net/name_longming/article/details/115093338) [BiliBili](https://www.bilibili.com/video/BV1B54y1V7hp?spm_id_from=333.788.videopod.episodes&vd_source=8676f67627c33488b525afb187777fa7)
 
 ### 4.1.2 现代控制理论(线性系统控制)
 * Modern Control Systems (14th edition), Robert. H. Bishop, Richard. C, Dorf. z: [Book](http://103.203.175.90:81/fdScript/RootOfEBooks/E%20Book%20collection%20-%202024/EEE/Modern_control_systems_Robert_H_Bishop_Richard_C_Dorf_z_lib_org.pdf#page=1.00&gsr=0)
 * 状态方程
 * 状态反馈与最优控制
-* **LQR控制**
+* **LQR控制** [BiliBili](https://www.bilibili.com/video/BV1Ng4y1V7JQ/?spm_id_from=333.1387.homepage.video_card.click&vd_source=180b6da13847c26de9d19ac71e61c7fe)
 
 ### 4.1.3 先进控制技术
 * 鲁棒控制
