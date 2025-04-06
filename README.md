@@ -45,6 +45,7 @@
             <li><a href="#3dv">3.6.2 3D Vision - 三维视觉</a></li>
             <li><a href="#4dv">3.6.3 4D Vision - 四维视觉</a></li>
             <li><a href="#vp">3.6.4 Visual Prompting - 视觉提示</a></li>
+            <li><a href="#ag">3.6.5 Affordance Grounding - 可供性锚定</a></li>
           </ul>
         </li>
         <li><a href="#cg">3.7 Computer Graphics - 计算机图形学</a></li>  
@@ -410,6 +411,23 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 - 视觉提示综述：[paper](https://arxiv.org/abs/2409.15310)
 - **PIVOT**, [page](https://pivot-prompt.github.io): 通过将任务转化为迭代式视觉问答，实现在无需特定任务数据微调的情况下，zero-shot控制机器人系统和进行空间推理。
 - **Set-of-Mark Visual Prompting for GPT-4V**: [page](https://som-gpt4v.github.io)
+
+<section id="ag"></section>
+
+### 3.6.5 Affordance Grounding - 可供性锚定
+
+可供性锚定任务的目标是从图像中定位物体上能够与之交互的区域，充当了感知与行动之间的桥梁，是具身智能重要的一环。它不仅需要模型对物体及其局部结构的检测与识别，还需要模型理解物体与人或机器人之间的潜在互动关系。例如，在机器人抓取场景中，可供性锚定帮助模型寻找物体上最佳的抓取位置，从而确定最佳抓取角度。该方向通过整合计算机视觉，多模态大模型技术，能够在弱监督或零样本条件下实现对物体交互可能性的精确定位，提升机器人抓取、操作以及人机交互等任务的性能。
+
+* **2D**
+  - 跨视角学习可供性：**Cross-View-AG**, [paper](https://arxiv.org/pdf/2203.09905): 第三视角图像提供他者如何与物体交互的信息，帮助模型学习如何与第一视角图像中的物体交互。
+  - 单视角学习可供性：**AffordanceLLM**, [paper](https://arxiv.org/pdf/2401.06341)：通过利用预训练的大规模视觉语言模型中的丰富知识，显著提升了物体可供性锚定在未见对象和动作上的泛化能力。
+  - 数据集：**AGD20K**, [page](https://github.com/lhc1224/Cross-View-AG)
+
+* **3D**
+  - 基于点云的可供性锚定：**OpenAD**, [paper](https://arxiv.org/pdf/2203.09905)
+  - 室内环境任务中的可供性锚定：**SceneFun3D**, [paper](https://arxiv.org/pdf/2401.06341)
+  - 点云数据集：**3D AffordanceNet**, [page](https://github.com/lhc1224/Cross-View-AG)，专注于物体层面的可供性锚定。
+  - 实物数据集：**SceneFun3D**, [page](https://scenefun3d.github.io/)，强调在真实室内环境的应用。
 
 <section id="cg"></section>
 
