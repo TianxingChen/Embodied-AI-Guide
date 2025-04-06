@@ -117,7 +117,7 @@
 ## About us - 关于我们
 我们是一个由具身初学者组成的团队, 希望能够通过我们自己的学习经验, 为后来者提供一些帮助, 加快具身智能的普及。欢迎更多朋友加入我们的项目, 也很欢迎交友、学术合作, 有任何问题, 可以联系邮箱`chentianxing2002@gmail.com`。
 
-<p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (深大BS)</a>, <a href="https://github.com/kxwangzju">王开炫 (25' 港大PhD)</a>, <a href="https://jiayueru.github.io/">贾越如 (北大Ms)</a >, <a href="https://metaphysicist0.github.io/">姚天亮 (25' 港中文PhD)</a>, <a href="https://c7w.tech/about/">高焕昂 (清华PhD)</a>, <a href="https://axi404.top/">高宁 (西交BS)</a>, <a href="https://github.com/guo-cq">郭常青 (清华Ms)</a>, <a href="https://shijiapeng03.github.io/">彭时佳 (深大BS)</a>, <a href="https://yudezou.github.io/">邹誉德 (25' 上交AILab联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/csyufei">朱宇飞 (25' 上科大Ms)</a>, <a href="https://github.com/LambdaGuard">韩翊飞 (清华Ms)</a>, <a href="https://hao-starrr.github.io/">王文灏 (宾大Ms)</a>, <a href="https://github.com/StarCycle">李卓恒 (港大PhD)</a>, <a href="https://github.com/GihhArwtw">邱一航 (港大PhD)</a>, <a href="https://github.com/Henry-lsy">梁升一 (港科广PhD)</a>, <a href="https://scholar.google.com/citations?user=azPXbWcAAAAJ&hl=en">林俊晓 (浙大Ms)</a>, <a href="https://gkw0010.github.io/">王冠锟 (港中文PhD)</a>, <a href="https://ngchikit.github.io">吴志杰 (港中文PhD)</a>, <a href="https://github.com/27yw">叶雯 (25' 中科院PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫 (深大BS)</a>, <a href="https://hbhalpha.github.io">侯博涵 (山大BS)</a>, <a href="https://github.com/Scodive">江恒乐 (25‘ 南科大PhD)</a>, <a href="https://yongchao98.github.io/YongchaoChen/">陈勇超 (MIT+哈佛PhD)</a>, <a href="https://aaron617.github.io/">胡梦康 (港大PhD)</a>, <a href="https://liang-zx.github.io/">梁志烜 (港大PhD)</a>, <a href="https://https://yimouwu.github.io/">吴贻谋 (港中文MPhil)</a>, <a href="https://yaomarkmu.github.io/">穆尧 (上交AP)</a>.</p> 
+<p><b>🦉Contributors</b>: <a href="https://tianxingchen.github.io">陈天行 (深大BS)</a>, <a href="https://github.com/kxwangzju">王开炫 (25' 港大PhD)</a>, <a href="https://jiayueru.github.io/">贾越如 (北大Ms)</a >, <a href="https://metaphysicist0.github.io/">姚天亮 (25' 港中文PhD)</a>, <a href="https://c7w.tech/about/">高焕昂 (清华PhD)</a>, <a href="https://axi404.top/">高宁 (西交BS)</a>, <a href="https://github.com/guo-cq">郭常青 (清华Ms)</a>, <a href="https://shijiapeng03.github.io/">彭时佳 (深大BS)</a>, <a href="https://yudezou.github.io/">邹誉德 (25' 上交AILab联培PhD)</a>, <a href="">陈思翔 (25' 北大PhD)</a>, <a href="https://github.com/csyufei">朱宇飞 (25' 上科大Ms)</a>, <a href="https://github.com/LambdaGuard">韩翊飞 (清华Ms)</a>, <a href="https://hao-starrr.github.io/">王文灏 (宾大Ms)</a>, <a href="https://github.com/StarCycle">李卓恒 (港大PhD)</a>, <a href="https://github.com/GihhArwtw">邱一航 (港大PhD)</a>, <a href="https://github.com/Henry-lsy">梁升一 (港科广PhD)</a>, <a href="https://scholar.google.com/citations?user=azPXbWcAAAAJ&hl=en">林俊晓 (浙大Ms)</a>, <a href="https://gkw0010.github.io/">王冠锟 (港中文PhD)</a>, <a href="https://ngchikit.github.io">吴志杰 (港中文PhD)</a>, <a href="https://github.com/27yw">叶雯 (25' 中科院PhD)</a>, <a href="https://github.com/zanxinchen">陈攒鑫 (深大BS)</a>, <a href="https://hbhalpha.github.io">侯博涵 (山大BS)</a>, <a href="https://github.com/Scodive">江恒乐 (25‘ 南科大PhD)</a>, <a href="https://yongchao98.github.io/YongchaoChen/">陈勇超 (MIT+哈佛PhD)</a>, <a href="https://aaron617.github.io/">胡梦康 (港大PhD)</a>, <a href="https://liang-zx.github.io/">梁志烜 (港大PhD)</a>, <a href="https://yimouwu.github.io/">吴贻谋 (港中文MPhil)</a>, <a href="https://yaomarkmu.github.io/">穆尧 (上交AP)</a>.</p> 
 
 <a href="https://github.com/TianxingChen/Embodied-AI-Guide/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=TianxingChen/Embodied-AI-Guide" />
@@ -212,7 +212,7 @@
 
 * 入门推荐视频：
 
-    - Model Predictive Control 模型预测控制,从公式到代码 - 华工机器人实验室: [bilibili](https://www.bilibili.com/video/BV1U54y1J7wh/?spm_id_from=333.999.0.0&vd_source=180b6da13847c26de9d19ac71e61c7fe); 仿真工程源码:[Gitee](https://gitee.com/clangwu/mpc_control.git) 这门课程适合作为从PID到MPC的入门课程，适合只了解PID控制原理，但不太清楚MPC原理的入门者；从公式原理推导，到CoppeliaSim仿真教程以及MatLab代码编写，深入浅出。
+    - Model Predictive Control 模型预测控制,从公式到代码 - 华工机器人实验室: [bilibili](https://www.bilibili.com/video/BV1U54y1J7wh/?spm_id_from=333.999.0.0&vd_source=180b6da13847c26de9d19ac71e61c7fe); 仿真工程源码:[Gitee](https://gitee.com/clangwu/mpc_control.git) 这门课程适合作为从PID到MPC的入门课程，适合只了解PID控制原理，但不太清楚MPC原理的入门者；从公式原理推导，到CoppeliaSim（V-ERP）仿真教程以及MatLab代码编写，深入浅出。
     
 * 经典工作：
   
@@ -738,7 +738,9 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 <section id="control"></section>
 
 ## 4. Control and Robotics - 控制论与机器人学基础
-高级机器人技术 by Pieter Abbeel [video](https://www.bilibili.com/video/BV1h7411A7B9/?spm_id_from=333.788.videopod.episodes&vd_source=180b6da13847c26de9d19ac71e61c7fe)
+**经典课程**
+  - [video](https://www.bilibili.com/video/BV1GJ411k7fE?spm_id_from=333.788.videopod.episodes&vd_source=180b6da13847c26de9d19ac71e61c7fe) 美国西北大学 现代机器人 Modern Robotics： 这门课侧重于基础的机器人理论，涉及的概念有**笛卡尔坐标系**，**关节坐标系**，**自由度**，**齐次旋转矩阵**，**正运动学（FK）**， **逆运动学（IK）**等等，适合零基础入门。
+  - [video](https://www.bilibili.com/video/BV1h7411A7B9/?spm_id_from=333.788.videopod.episodes&vd_source=180b6da13847c26de9d19ac71e61c7fe) 加州伯克利 高级机器人技术 by Pieter Abbeel： 这门课是机器人的进阶课程，适合在学习完‘现代机器人 Modern Robotics’或者有相应基础后进一步学习。涉及的部分有**马尔科夫决策过程**，**LQR控制**，**在约束条件下的最优化问题**，**基于最优化的控制**，**运动规划**，**卡尔曼滤波**，**模仿学习**，**强化学习**，**Sim2Real**等等。课程中还涉及了很多实操演示，有助于进一步了解理论在真实世界中的应用。
 ## 4.1. 控制理论基础
 
 ### 4.1.1 经典控制原理
