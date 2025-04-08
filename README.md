@@ -986,7 +986,9 @@ RealSense，[RealSence Ros 开发套件](https://github.com/IntelRealSense/reals
 * **AgiBot World Datasets (智元机器人)**, [website](https://agibot-world.com/): 八十余种日常生活中的多样化技能，超过100万条轨迹数据，采集自**同构型机器人**, 多级质量把控和全程人工在环的策略，从采集员的专业培训，到采集过程中的严格管理，再到数据的筛选、审核和标注，每一个环节都经过了精心设计和严格把控。
 * **RoboMIND**, [website](https://x-humanoid-robomind.github.io/): 包含了在479种不同任务中涉及96类独特物体的10.7万条真实世界演示轨迹，来自四种不同协作臂，任务被分为基础技能、精准操作、场景理解、柜体操作和协作任务五大类。
 * **All Robots in One,** [website](https://imaei.github.io/project_pages/ario/): ARIO 数据集，包含了 **2D、3D、文本、触觉、声音 5 种模态的感知数据**，涵盖**操作**和**导航**两大类任务，既有**仿真数据**，也有**真实场景数据**，并且包含多种机器人硬件，有很高的丰富度。在数据规模达到三百万的同时，还保证了数据的统一格式，是目前具身智能领域同时达到高质量、多样化和大规模的开源数据集。
-
+* **MimicGen** [26 Oct 2023, CoRL 2023],[repo](https://github.com/NVlabs/mimicgen),[website](https://mimicgen.github.io/)：基于Robosuite与MuJoCo开发的高效数据生成框架，主要聚焦于单臂机器人桌面操作任务，支持多种主流机器人型号。MimicGen提出了一种自动化的数据扩增方法，能够从少量真实人类演示中自动生成大量模拟数据，例如仅使用200段真人演示即可生成超过5万条仿真演示数据，涵盖18类常见机器人任务。
+* **RoboCasa** [4 Jun 2024],[repo](https://github.com/robocasa/robocasa), [website](https://robocasa.ai/):基于RoboSuite与MimicGen在MuJoCo中构建的高仿真厨房任务仿真平台。RoboCasa提供了120个多样化厨房环境，包含超过2500个3D物体模型。平台支持单臂、双臂、人形机器人以及移动底座搭载机械臂的机器人系统。此外，RoboCasa内置了25种基础原子任务和75种组合任务，能够真实模拟机器人在复杂厨房场景中的多样化操作行为。
+* **DexMimicGen** [6 Mar 2025, ICRA 2025],[repo](https://github.com/NVlabs/dexmimicgen/), [website](https://dexmimicgen.github.io/):以RoboSuite和MimicGen为基础，在MuJoCo平台上构建的高保真双臂桌面操作任务仿真环境。DexMimicGen涵盖9类典型双臂任务，提出了增强版real2sim2real数据自动生成技术，只需60段真实人类演示便可生成2.1万条高质量仿真数据。相比原版MimicGen，该框架显著提升了数据生成效率和真实感，使机器人双臂协作任务的仿真训练更具实用性。
 
 
 <section id="paper_list"></section>
