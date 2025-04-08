@@ -186,6 +186,8 @@
 
 * Grounding-DINO: [repo](https://github.com/IDEA-Research/GroundingDINO), [在线尝试](https://deepdataspace.com/playground/grounding_dino), **这个DINO与上面Meta的DINO没有关系**, 是一个由IDEA研究院(做了很多不错开源项目的机构)开发集成的图像目标检测的框架, 很多时候需要对目标物体进行检测的时候可以考虑使用。
 
+* OmDet-Turbo: [repo](https://github.com/om-ai-lab/OmDet), 一个由OmAI Lab开源的研究, 提供OVD（开放词表目标检测）能力, 优点在于推理速度非常快（100+FPS）, 适合需要高FPS的自定义目标物体检测场景。
+
 * Grounded-SAM: [repo](https://github.com/IDEA-Research/Grounded-SAM-2), 比Grounding-DINO多了一个分割功能, 也就是支持检测后分割, 也有很多下游应用, 具体可以翻一下README。
 
 * FoundationPose: [website](https://github.com/NVlabs/FoundationPose), 来自Nvidia的研究, 物体姿态追踪模型。
@@ -456,6 +458,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * 最经典的工作CLIP: [知乎](https://zhuanlan.zhihu.com/p/493489688)<br>
 * 多模态大语言模型的经典工作 LLaVA: [website](https://llava-vl.github.io/)<br>
 * 多模态生成模型综述: [pdf](https://arxiv.org/pdf/2503.04641)<br>
+* 多模态大语言模型强化学习项目：VLM-R1: [repo](https://github.com/om-ai-lab/VLM-R1) 来自OmAI Lab的多模态大语言模型DeepSeek R1-style强化学习开源项目，使用GRPO强化学习算法对多模态大语言模型进行优化，效果优于常规sft，是训练具身智能模型的一种新方向。<br>
 
 <section id="navigation"></section>
 
