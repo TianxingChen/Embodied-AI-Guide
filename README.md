@@ -323,7 +323,7 @@
 
   - **RoboFlamingo** ([paper](https://arxiv.org/abs/2311.01378) | [code](https://github.com/roboflamingo), 字节、清华, 2024.2)
 
-  - **OpenVLA** ([paper](https://arxiv.org/pdf/2406.09246) | [code](https://github.com/openvla), OpenAI, 2024.6): 7B
+  - **OpenVLA** ([paper](https://arxiv.org/pdf/2406.09246) | [code](https://github.com/openvla), Stanford, 2024.6): 7B
 
   - **TinyVLA** ([paper](https://arxiv.org/abs/2409.12514), 上海大学, 2024.11)
   - **TraceVLA** ([paper](https://arxiv.org/pdf/2412.10345) | [code](), 微软，2024.12)
