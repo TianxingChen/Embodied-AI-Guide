@@ -542,6 +542,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * 医疗机器人的十年回顾(含医疗机器人的不同分类), 杨广中教授在Science Robotics上的综述文章：[A decade retrospective of medical robotics research from 2010 to 2020](https://www.science.org/doi/epdf/10.1126/scirobotics.abi8017)<br>
 * 医疗具身智能的分级: [A Survey of Embodied AI in Healthcare: Techniques, Applications, and Opportunities](https://arxiv.org/pdf/2501.07468?)<br>
 * Artificial intelligence meets medical robotics, 2023年发表在Science正刊上的论著: [website](https://www.science.org/doi/abs/10.1126/science.adj3312)<br>
+* 机器人手术：从理论到实践的突破 (Nature Reviews Bioengineering): [Robotic surgery](https://www.nature.com/articles/s44222-025-00294-6)
 
 * 医疗机器人的机器视觉
   * 3DGS在腔镜手术中的应用综述: [website](https://arxiv.org/pdf/2408.04426)<br>
