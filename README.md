@@ -6,7 +6,11 @@
 > Embodied AI(具身智能)入门的路径以及高质量信息的总结, 期望是按照路线走完后, 新手可以快速建立关于这个领域的认知, 希望能帮助到各位入门具身智能的朋友, 欢迎点Star、分享与提PR🌟~<br>【 <a href="https://github.com/tianxingchen/Embodied-AI-Guide">Embodied-AI-Guide</a>, Latest Update: Mar. 15, 2025 】<img alt="GitHub repo stars" src="https://img.shields.io/github/stars/TianxingChen/Embodied-AI-Guide">
 
 
-# Lumina具身智能社区 (筹备中)
+# Lumina具身智能社区: [点击访问](lumina-embodied.ai)
+
+> Embodied-AI-Guide项目很快将会以网页版wiki的形式上传到Lumina具身智能社区网站，敬请期待。如果你对合作构建Lumina具身社区感兴趣（目前更倾向于机构、社区间合作），欢迎邮件联系<a href="mailto:lumina.embodiedai@gmail.com">lumina.embodiedai@gmail.com</a>或联创微信<code>TianxingChen_2002</code>（请备注机构+姓名与来意）
+
+扫描右下图进入`Embodied-AI-Guide@Lumina社区`交流群:
 
 <table>
   <tr>
@@ -14,7 +18,7 @@
       <img src="./files/images/logo.png" alt="Task Descriptions">
     </td>
     <td>
-      Embodied-AI-Guide项目很快将会以网页版wiki的形式上传到Lumina具身智能社区网站，敬请期待。如果你对合作构建Lumina具身社区感兴趣（目前更倾向于机构、社区间合作），欢迎邮件联系<a href="mailto:lumina.embodiedai@gmail.com">lumina.embodiedai@gmail.com</a>或联创微信<code>TianxingChen_2002</code>（请备注机构+姓名与来意）
+      <img src="./files/QR-Code.jpg" alt="Task Descriptions">
     </td>
   </tr>
 </table>
