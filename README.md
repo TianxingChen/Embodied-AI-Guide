@@ -315,7 +315,7 @@
 
 * Survey: [A Survey on Vision-Language-Action Models for Embodied AI](https://arxiv.org/abs/2405.14093), 2024.11.28
 
-**经典工作**：
+### **3.5.1 经典工作**：
 
 * **Autoregressive Models**
 
@@ -365,6 +365,36 @@
   - **Mobility-VLA (导航)** ([paper](https://arxiv.org/pdf/2407.07775), Google Deepmind, 2024.7)
 
   - **NaVILA (腿式机器人导航)** ([paper](https://arxiv.org/pdf/2412.04453) | [code](https://navila-bot.github.io/), USCD, 2024.12)
+
+### **3.5.2 双系统分层VLA**：（2025.5更新） ⭐
+
+目前VLA的一大范式是采用分层双系统架构，模拟人类的快速反应（System 1）和深度思考（System 2）机制。System 2 利用视觉语言模型（VLM）进行环境理解和任务规划，接收视觉、语言等多模态输入，并通过语言或潜在向量（Latent Vector）将信息传递给 System 1。System 1 则将这些规划转化为精确的机器人动作。
+目前，采用双系统架构的主要区别在于：
+- *单模型 vs 双模型架构*：例如，Hi-Robot 采用了 VLM + VLA 的双模型架构，而 pi-0.5 则采用了单模型架构。
+- *快慢系统的通信方式*：快慢系统在何时分层，通信可以通过低级指令（low-level command）或潜在向量（latent vector）进行。
+- *仿真训练数据的使用*：如 GROOT N-1 使用了模拟器数据和合成数据，而 pi 系列则完全依赖于真实机器人数据。
+- 在*模型表现*方面，可以关注以下几个方面：模型大小、动作输出频率以及任务的难度（如人形、长程任务、柔性物体处理、跨本体性能等）。
+
+**产业级VLA**：
+
+- Figure: Helix (link: Figure, 2025.2.20): 机器人全身上半身控制
+- 智元：GO-1 (link: 智元官网, 2025.3.10)：ViLLA: VLM+MoE, vision-language-latent-action model
+- Physical Intelligence : code https://github.com/Physical-Intelligence/openpi
+  - pi-0.5 (paper | blog: CSDN, 2025.4.22): 高级任务分解后由单一模型执行低级任务
+  - Hi Robot (paper | blog: CSDN, 2025.2.26): 使用VLM进行高级推理，VLA执行低级任务
+- Nvidia: GROOT-N1 (code: Nvidia Isaac-GR00T | paper | blog, 2025.3.27): 机器人全身控制, 2B, NVIDIA-Eagle架构和SmolLM-1.7B
+- 灵初智能：Psi-R1 (blog, 2025.4.27): 分层端到端VLA+强化学习算法模型, 验证test-time scaling
+- Google DeepMind: Gemini Robotics (paper, 2025.3.25): Gemini 2.0构建的Gemini Robotics-ER（具身推理模型）和Gemini Robotics主模型, 50 Hz
+
+**最新VLA工作**：
+- SafeVLA (paper | code, 北大, 2025.3.5): 解决传统VLA模型在抓取和导航任务中的不安全行为
+- HybridVLA (paper | code, 北大, 2025.3.17): 用统一模型集成扩散和自回归动作预测，2.7B 和 7B模型
+- DexVLA (paper | code, 美的, 东南大学, 2025.2.9): Diffusion expert 1B，采用多个action head
+- DexGraspVLA (paper | code, 北大, 2025.2.28): 灵巧手抓取VLA
+- UP-VLA (paper, 清华, 2025.2.3): 加入goal-image预测任务帮助动作生成
+- CoT-VLA (paper ,  Nvidia, Stanford, CVPR2025): 将CoT融入VLA中，通过自回归地预测未来的图像帧作为视觉目标，7B
+- UniAct (paper | code, CVPR2025, 清华): 基于通用动作空间的具身基础模型
+
 
 <section id="cv"></section>
 
