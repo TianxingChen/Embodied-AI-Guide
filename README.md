@@ -377,23 +377,23 @@
 
 **产业级VLA**：
 
-- Figure: Helix (link: Figure, 2025.2.20): 机器人全身上半身控制
-- 智元：GO-1 (link: 智元官网, 2025.3.10)：ViLLA: VLM+MoE, vision-language-latent-action model
-- Physical Intelligence : code https://github.com/Physical-Intelligence/openpi
-  - pi-0.5 (paper | blog: CSDN, 2025.4.22): 高级任务分解后由单一模型执行低级任务
-  - Hi Robot (paper | blog: CSDN, 2025.2.26): 使用VLM进行高级推理，VLA执行低级任务
-- Nvidia: GROOT-N1 (code: Nvidia Isaac-GR00T | paper | blog, 2025.3.27): 机器人全身控制, 2B, NVIDIA-Eagle架构和SmolLM-1.7B
-- 灵初智能：Psi-R1 (blog, 2025.4.27): 分层端到端VLA+强化学习算法模型, 验证test-time scaling
-- Google DeepMind: Gemini Robotics (paper, 2025.3.25): Gemini 2.0构建的Gemini Robotics-ER（具身推理模型）和Gemini Robotics主模型, 50 Hz
+- **Figure: Helix** (link: [Figure](https://www.figure.ai/news/helix), 2025.2.20): 机器人全身上半身控制
+- **智元：GO-1** (link: [智元官网](https://www.zhiyuan-robot.com/article/189/detail/56.html), 2025.3.10)：ViLLA: VLM+MoE, vision-language-latent-action model
+- **Physical Intelligence** : code https://github.com/Physical-Intelligence/openpi
+  - **pi-0.5** ([paper](https://arxiv.org/abs/2504.16054) | blog: CSDN, 2025.4.22): 高级任务分解后由单一模型执行低级任务
+  - **Hi Robot** ([paper](https://arxiv.org/abs/2502.19417) | blog: CSDN, 2025.2.26): 使用VLM进行高级推理，VLA执行低级任务
+- **Nvidia: GROOT-N1** (code: [Nvidia Isaac-GR00T](https://github.com/NVIDIA/Isaac-GR00T) | [paper](https://arxiv.org/abs/2503.14734) | blog, 2025.3.27): 机器人全身控制, 2B, NVIDIA-Eagle架构和SmolLM-1.7B
+- **灵初智能：Psi-R1** ([blog](https://www.jiqizhixin.com/articles/2025-03-03-9), 2025.4.27): 分层端到端VLA+强化学习算法模型, 验证test-time scaling
+- **Google DeepMind: Gemini Robotics** ([paper](https://arxiv.org/pdf/2503.20020), 2025.3.25): Gemini 2.0构建的Gemini Robotics-ER（具身推理模型）和Gemini Robotics主模型, 50 Hz
 
 **最新VLA工作**：
-- SafeVLA (paper | code, 北大, 2025.3.5): 解决传统VLA模型在抓取和导航任务中的不安全行为
-- HybridVLA (paper | code, 北大, 2025.3.17): 用统一模型集成扩散和自回归动作预测，2.7B 和 7B模型
-- DexVLA (paper | code, 美的, 东南大学, 2025.2.9): Diffusion expert 1B，采用多个action head
-- DexGraspVLA (paper | code, 北大, 2025.2.28): 灵巧手抓取VLA
-- UP-VLA (paper, 清华, 2025.2.3): 加入goal-image预测任务帮助动作生成
-- CoT-VLA (paper ,  Nvidia, Stanford, CVPR2025): 将CoT融入VLA中，通过自回归地预测未来的图像帧作为视觉目标，7B
-- UniAct (paper | code, CVPR2025, 清华): 基于通用动作空间的具身基础模型
+- **SafeVLA** ([paper](https://arxiv.org/abs/2503.03480) | [code](https://github.com/PKU-Alignment/SafeVLA), 北大, 2025.3.5): 解决传统VLA模型在抓取和导航任务中的不安全行为
+- **HybridVLA** ([paper](https://arxiv.org/pdf/2503.10631) | [code](https://github.com/PKU-HMI-Lab/Hybrid-VLA), 北大, 2025.3.17): 用统一模型集成扩散和自回归动作预测，2.7B 和 7B模型
+- **DexVLA** ([paper](https://arxiv.org/pdf/2502.05855) | [code](https://github.com/juruobenruo/DexVLA), 美的, 东南大学, 2025.2.9): Diffusion expert 1B，采用多个action head
+- **DexGraspVLA** ([paper](https://arxiv.org/abs/2502.20900) | [code](https://github.com/Psi-Robot/DexGraspVLA), 北大, 2025.2.28): 灵巧手抓取VLA
+- **UP-VLA** ([paper](https://arxiv.org/pdf/2501.18867), 清华, 2025.2.3): 加入goal-image预测任务帮助动作生成
+- **CoT-VLA** ([paper](https://arxiv.org/pdf/2503.22020) ,  Nvidia, Stanford, CVPR2025): 将CoT融入VLA中，通过自回归地预测未来的图像帧作为视觉目标，7B
+- **UniAct** ([paper](https://arxiv.org/abs/2501.10105) | [code](https://github.com/2toinf/UniAct), CVPR2025, 清华): 基于通用动作空间的具身基础模型
 
 
 <section id="cv"></section>
