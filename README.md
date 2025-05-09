@@ -18,7 +18,7 @@
       <img src="./files/images/logo.png" alt="Task Descriptions">
     </td>
     <td>
-      <img src="./files/QR-Code.jpg" alt="Task Descriptions">
+      <img src="./files/QR-Code.png" alt="Task Descriptions">
     </td>
   </tr>
 </table>
