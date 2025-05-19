@@ -1050,6 +1050,9 @@ RealSense，[RealSence Ros 开发套件](https://github.com/IntelRealSense/reals
 * **MimicGen** [26 Oct 2023, CoRL 2023],[repo](https://github.com/NVlabs/mimicgen),[website](https://mimicgen.github.io/)：基于Robosuite与MuJoCo开发的高效数据生成框架，主要聚焦于单臂机器人桌面操作任务，支持多种主流机器人型号。MimicGen提出了一种自动化的数据扩增方法，能够从少量真实人类演示中自动生成大量模拟数据，例如仅使用200段真人演示即可生成超过5万条仿真演示数据，涵盖18类常见机器人任务。
 * **RoboCasa** [4 Jun 2024],[repo](https://github.com/robocasa/robocasa), [website](https://robocasa.ai/):基于RoboSuite与MimicGen在MuJoCo中构建的高仿真厨房任务仿真平台。RoboCasa提供了120个多样化厨房环境，包含超过2500个3D物体模型。平台支持单臂、双臂、人形机器人以及移动底座搭载机械臂的机器人系统。此外，RoboCasa内置了25种基础原子任务和75种组合任务，能够真实模拟机器人在复杂厨房场景中的多样化操作行为。
 * **DexMimicGen** [6 Mar 2025, ICRA 2025],[repo](https://github.com/NVlabs/dexmimicgen/), [website](https://dexmimicgen.github.io/):以RoboSuite和MimicGen为基础，在MuJoCo平台上构建的高保真双臂桌面操作任务仿真环境。DexMimicGen涵盖9类典型双臂任务，提出了增强版real2sim2real数据自动生成技术，只需60段真实人类演示便可生成2.1万条高质量仿真数据。相比原版MimicGen，该框架显著提升了数据生成效率和真实感，使机器人双臂协作任务的仿真训练更具实用性。
+* **FUSE Dataset** [ICRA 2025] [website](https://fuse-model.github.io/) 包含26,866条远程操控轨迹，涵盖桌面抓取、购物袋内抓取和按钮按压三类任务。机器人通过Meta Oculus Quest 2 VR头显操作，任务结合语言指令和复杂视觉遮挡，支持多传感器与语言融合的机器人策略研究。
+* **BiPlay Dataset** [website](https://dit-policy.github.io/):为了解决现有双臂数据集任务单一、环境固定的问题，BiPlay数据集采用随机物体和背景，采集多样化双臂操作轨迹。数据由多段3.5分钟的机器人操作视频拆分成7023个带语言任务描述的剪辑，总计10小时数据，支持双臂操作泛化研究。
+* **DROID (Distributed Robot Interaction Dataset)**[website](https://droid-dataset.github.io/)：包含76,000条示范轨迹，约350小时交互数据，覆盖564个场景和86个任务。数据由50名采集员在北美、亚洲和欧洲12个月内收集，场景和任务多样性显著提升。基于DROID训练的策略表现更优、鲁棒性和泛化能力更强。数据集、训练代码及硬件搭建指南均已开源。
 
 
 <section id="paper_list"></section>
