@@ -36,9 +36,11 @@
         <li><a href="#foundation-models">3.2 Foundation Models - 基础模型</a></li>
         <li><a href="#robot-learning">3.3 Robot Learning - 机器人学习</a>
           <ul>
-            <li><a href="#mpc">3.3.1 Model Predictive Control - 模型预测控制</a></li>
-            <li><a href="#rl">3.3.2 Reinforcement Learning - 强化学习</a></li>
-            <li><a href="#il">3.3.3 Imitation Learning - 模仿学习</a></li>
+            <li><a href="#robot_autonomy">3.3.1 ETH & TTIC & UdeM Robot Autonomy - 自主机器人</a></li>
+            <li><a href="#mpc">3.3.2 Model Predictive Control - 模型预测控制</a></li>
+            <li><a href="#rl">3.3.3 Reinforcement Learning - 强化学习</a></li>
+            <li><a href="#il">3.3.4 Imitation Learning - 仿人学习</a></li>
+            <li><a href="#mila_robot_learning">3.3.5 MILA & UdeM Robot Learning - 机器人学习课程</a></li>
           </ul>
         </li>
         <li><a href="#llm_robot">3.4 LLM for Robotics - 大语言模型在机器人学中的应用</a></li>
@@ -212,7 +214,17 @@
 
 机器人学习 Robot Learning 的发展: [zhihu](https://zhuanlan.zhihu.com/p/26988866)
 
-### 3.3.1 Model Predictive Control (MPC) - 模型预测控制
+<section id="robot_autonomy"></section>
+
+### 3.3.1 ETH & TTIC & UdeM Robot Autonomy - 自主机器人
+
+[课程视频](https://www.edx.org/learn/technology/eth-zurich-self-driving-cars-with-duckietown) ｜ [课程网站](https://duckietown.com/self-driving-cars-with-duckietown-mooc/)
+
+该课程由ETH苏黎世、TTIC与蒙特利尔大学联合开设，围绕Duckietown平台系统讲解自主机器人的构建过程，涵盖感知、控制、建模、强化学习等模块。强调完整的感知-决策-控制闭环系统设计，并通过项目实践推动学生掌握从0构建并部署一个具备自主导航能力的机器人智能体。适合希望初步了解机器人系统和Robot Learning的人。
+
+<section id="mpc"></section>
+
+### 3.3.2 Model Predictive Control (MPC) - 模型预测控制
 
 模型预测控制（MPC）是一种先进的控制策略，利用系统的显式动态模型预测有限时间范围内的未来行为。每个控制周期，MPC 通过求解优化问题来确定控制输入，以优化指定的性能指标，同时满足输入和输出的约束条件。优化序列中的第一个控制输入应用于系统，在下一个时间步中，结合新的系统状态测量或估计，重复该过程。
 
@@ -241,7 +253,7 @@
 
 <section id="rl"></section>
 
-### 3.3.2 Reinforcement Learning - 强化学习
+### 3.3.3 Reinforcement Learning - 强化学习
 
 * 强化学习的数学原理 - 西湖大学赵世钰: [bilibili](https://space.bilibili.com/2044042934/channel/collectiondetail?sid=748665) [GitHub](https://github.com/MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning) 这门课程作为强化学习的入门课程非常合适，适合只对机器学习略有了解，但没有了解过强化学习的初学者，可以了解强化学习的数学原理，其教材编写也十分用心。
 
@@ -267,10 +279,19 @@
 
 <section id="il"></section>
 
-### 3.3.3 Imitation Learning - 模仿学习
+### 3.3.4 Imitation Learning - 模仿学习
 
 * 《模仿学习简洁教程》 - 南京大学LAMDA: [PDF](https://www.lamda.nju.edu.cn/xut/Imitation_Learning.pdf)<br>
 * Supervised Policy Learning for Real Robots, RSS 2024 Workshop 教程：真实机器人的监督策略学习, [bilibili](https://www.bilibili.com/video/BV1Fx4y1s7if/?buvid=XY415384A771A6C681C9BEB3817566ED57724&is_story_h5=false&mid=ORgXkVzTHaOKTsml0RX5Gw%3D%3D&plat_id=240&share_from=ugc&share_medium=android&share_plat=android&share_source=WEIXIN&share_tag=s_i&spmid=dt.space-dt.0.0&timestamp=1721464513&unique_k=Cqj5d9J&up_id=2185804&vd_source=ab9cf5374617c2867aaea34af29b53c9)
+
+<section id="mila_robot_learning"></section>
+
+### 3.3.5 MILA & UdeM Robot Learning - 机器人学习课程
+
+[课程视频](https://www.youtube.com/playlist?list=PLMe2pHxzxHp-UJ1jd-uuGSGK7P7Phtm-f) ｜ [课程网站](https://fracturedplane.notion.site/Robot-Learning-IFT6163-Scaling-Learning-for-Real-World-Agents-Apprentissage-robotique-Apprentiss-14a2148572768017864af202952c4b7e)
+
+由MILA和蒙特利尔大学开设的课程，聚焦于将深度强化学习等方法扩展到现实世界中的机器人智能体，重点探讨了现有学习技术的局限，并研究如何构建更强健、泛化能力更强的智能体系统。适合希望了解机器学习，强化学习算法在机器人领域的前沿应用的同学。
+
 
 <section id="llm_robot"></section>
 
