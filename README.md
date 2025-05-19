@@ -18,7 +18,7 @@
       <img src="./files/images/logo.png" alt="Task Descriptions">
     </td>
     <td>
-      <img src="./files/QR-Code.jpg" alt="Task Descriptions">
+      <img src="./files/QR-Code.png" alt="Task Descriptions">
     </td>
   </tr>
 </table>
@@ -36,9 +36,11 @@
         <li><a href="#foundation-models">3.2 Foundation Models - 基础模型</a></li>
         <li><a href="#robot-learning">3.3 Robot Learning - 机器人学习</a>
           <ul>
-            <li><a href="#mpc">3.3.1 Model Predictive Control - 模型预测控制</a></li>
-            <li><a href="#rl">3.3.2 Reinforcement Learning - 强化学习</a></li>
-            <li><a href="#il">3.3.3 Imitation Learning - 模仿学习</a></li>
+            <li><a href="#robot_autonomy">3.3.1 ETH & TTIC & UdeM Robot Autonomy - 自主机器人</a></li>
+            <li><a href="#mpc">3.3.2 Model Predictive Control - 模型预测控制</a></li>
+            <li><a href="#rl">3.3.3 Reinforcement Learning - 强化学习</a></li>
+            <li><a href="#il">3.3.4 Imitation Learning - 仿人学习</a></li>
+            <li><a href="#mila_robot_learning">3.3.5 MILA & UdeM Robot Learning - 机器人学习课程</a></li>
           </ul>
         </li>
         <li><a href="#llm_robot">3.4 LLM for Robotics - 大语言模型在机器人学中的应用</a></li>
@@ -212,7 +214,17 @@
 
 机器人学习 Robot Learning 的发展: [zhihu](https://zhuanlan.zhihu.com/p/26988866)
 
-### 3.3.1 Model Predictive Control (MPC) - 模型预测控制
+<section id="robot_autonomy"></section>
+
+### 3.3.1 ETH & TTIC & UdeM Robot Autonomy - 自主机器人
+
+[课程视频](https://www.edx.org/learn/technology/eth-zurich-self-driving-cars-with-duckietown) ｜ [课程网站](https://duckietown.com/self-driving-cars-with-duckietown-mooc/)
+
+该课程由ETH苏黎世、TTIC与蒙特利尔大学联合开设，围绕Duckietown平台系统讲解自主机器人的构建过程，涵盖感知、控制、建模、强化学习等模块。强调完整的感知-决策-控制闭环系统设计，并通过项目实践推动学生掌握从0构建并部署一个具备自主导航能力的机器人智能体。适合希望初步了解机器人系统和Robot Learning的人。
+
+<section id="mpc"></section>
+
+### 3.3.2 Model Predictive Control (MPC) - 模型预测控制
 
 模型预测控制（MPC）是一种先进的控制策略，利用系统的显式动态模型预测有限时间范围内的未来行为。每个控制周期，MPC 通过求解优化问题来确定控制输入，以优化指定的性能指标，同时满足输入和输出的约束条件。优化序列中的第一个控制输入应用于系统，在下一个时间步中，结合新的系统状态测量或估计，重复该过程。
 
@@ -241,7 +253,7 @@
 
 <section id="rl"></section>
 
-### 3.3.2 Reinforcement Learning - 强化学习
+### 3.3.3 Reinforcement Learning - 强化学习
 
 * 强化学习的数学原理 - 西湖大学赵世钰: [bilibili](https://space.bilibili.com/2044042934/channel/collectiondetail?sid=748665) [GitHub](https://github.com/MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning) 这门课程作为强化学习的入门课程非常合适，适合只对机器学习略有了解，但没有了解过强化学习的初学者，可以了解强化学习的数学原理，其教材编写也十分用心。
 
@@ -267,10 +279,19 @@
 
 <section id="il"></section>
 
-### 3.3.3 Imitation Learning - 模仿学习
+### 3.3.4 Imitation Learning - 模仿学习
 
 * 《模仿学习简洁教程》 - 南京大学LAMDA: [PDF](https://www.lamda.nju.edu.cn/xut/Imitation_Learning.pdf)<br>
 * Supervised Policy Learning for Real Robots, RSS 2024 Workshop 教程：真实机器人的监督策略学习, [bilibili](https://www.bilibili.com/video/BV1Fx4y1s7if/?buvid=XY415384A771A6C681C9BEB3817566ED57724&is_story_h5=false&mid=ORgXkVzTHaOKTsml0RX5Gw%3D%3D&plat_id=240&share_from=ugc&share_medium=android&share_plat=android&share_source=WEIXIN&share_tag=s_i&spmid=dt.space-dt.0.0&timestamp=1721464513&unique_k=Cqj5d9J&up_id=2185804&vd_source=ab9cf5374617c2867aaea34af29b53c9)
+
+<section id="mila_robot_learning"></section>
+
+### 3.3.5 MILA & UdeM Robot Learning - 机器人学习课程
+
+[课程视频](https://www.youtube.com/playlist?list=PLMe2pHxzxHp-UJ1jd-uuGSGK7P7Phtm-f) ｜ [课程网站](https://fracturedplane.notion.site/Robot-Learning-IFT6163-Scaling-Learning-for-Real-World-Agents-Apprentissage-robotique-Apprentiss-14a2148572768017864af202952c4b7e)
+
+由MILA和蒙特利尔大学开设的课程，聚焦于将深度强化学习等方法扩展到现实世界中的机器人智能体，重点探讨了现有学习技术的局限，并研究如何构建更强健、泛化能力更强的智能体系统。适合希望了解机器学习，强化学习算法在机器人领域的前沿应用的同学。
+
 
 <section id="llm_robot"></section>
 
@@ -377,23 +398,23 @@
 
 **产业级VLA**：
 
-- Figure: Helix (link: Figure, 2025.2.20): 机器人全身上半身控制
-- 智元：GO-1 (link: 智元官网, 2025.3.10)：ViLLA: VLM+MoE, vision-language-latent-action model
-- Physical Intelligence : code https://github.com/Physical-Intelligence/openpi
-  - pi-0.5 (paper | blog: CSDN, 2025.4.22): 高级任务分解后由单一模型执行低级任务
-  - Hi Robot (paper | blog: CSDN, 2025.2.26): 使用VLM进行高级推理，VLA执行低级任务
-- Nvidia: GROOT-N1 (code: Nvidia Isaac-GR00T | paper | blog, 2025.3.27): 机器人全身控制, 2B, NVIDIA-Eagle架构和SmolLM-1.7B
-- 灵初智能：Psi-R1 (blog, 2025.4.27): 分层端到端VLA+强化学习算法模型, 验证test-time scaling
-- Google DeepMind: Gemini Robotics (paper, 2025.3.25): Gemini 2.0构建的Gemini Robotics-ER（具身推理模型）和Gemini Robotics主模型, 50 Hz
+- **Figure: Helix** (link: [Figure](https://www.figure.ai/news/helix), 2025.2.20): 机器人全身上半身控制
+- **智元：GO-1** (link: [智元官网](https://www.zhiyuan-robot.com/article/189/detail/56.html), 2025.3.10)：ViLLA: VLM+MoE, vision-language-latent-action model
+- **Physical Intelligence** : code https://github.com/Physical-Intelligence/openpi
+  - **pi-0.5** ([paper](https://arxiv.org/abs/2504.16054) | blog: CSDN, 2025.4.22): 高级任务分解后由单一模型执行低级任务
+  - **Hi Robot** ([paper](https://arxiv.org/abs/2502.19417) | blog: CSDN, 2025.2.26): 使用VLM进行高级推理，VLA执行低级任务
+- **Nvidia: GROOT-N1** (code: [Nvidia Isaac-GR00T](https://github.com/NVIDIA/Isaac-GR00T) | [paper](https://arxiv.org/abs/2503.14734) | blog, 2025.3.27): 机器人全身控制, 2B, NVIDIA-Eagle架构和SmolLM-1.7B
+- **灵初智能：Psi-R1** ([blog](https://www.jiqizhixin.com/articles/2025-03-03-9), 2025.4.27): 分层端到端VLA+强化学习算法模型, 验证test-time scaling
+- **Google DeepMind: Gemini Robotics** ([paper](https://arxiv.org/pdf/2503.20020), 2025.3.25): Gemini 2.0构建的Gemini Robotics-ER（具身推理模型）和Gemini Robotics主模型, 50 Hz
 
 **最新VLA工作**：
-- SafeVLA (paper | code, 北大, 2025.3.5): 解决传统VLA模型在抓取和导航任务中的不安全行为
-- HybridVLA (paper | code, 北大, 2025.3.17): 用统一模型集成扩散和自回归动作预测，2.7B 和 7B模型
-- DexVLA (paper | code, 美的, 东南大学, 2025.2.9): Diffusion expert 1B，采用多个action head
-- DexGraspVLA (paper | code, 北大, 2025.2.28): 灵巧手抓取VLA
-- UP-VLA (paper, 清华, 2025.2.3): 加入goal-image预测任务帮助动作生成
-- CoT-VLA (paper ,  Nvidia, Stanford, CVPR2025): 将CoT融入VLA中，通过自回归地预测未来的图像帧作为视觉目标，7B
-- UniAct (paper | code, CVPR2025, 清华): 基于通用动作空间的具身基础模型
+- **SafeVLA** ([paper](https://arxiv.org/abs/2503.03480) | [code](https://github.com/PKU-Alignment/SafeVLA), 北大, 2025.3.5): 解决传统VLA模型在抓取和导航任务中的不安全行为
+- **HybridVLA** ([paper](https://arxiv.org/pdf/2503.10631) | [code](https://github.com/PKU-HMI-Lab/Hybrid-VLA), 北大, 2025.3.17): 用统一模型集成扩散和自回归动作预测，2.7B 和 7B模型
+- **DexVLA** ([paper](https://arxiv.org/pdf/2502.05855) | [code](https://github.com/juruobenruo/DexVLA), 美的, 东南大学, 2025.2.9): Diffusion expert 1B，采用多个action head
+- **DexGraspVLA** ([paper](https://arxiv.org/abs/2502.20900) | [code](https://github.com/Psi-Robot/DexGraspVLA), 北大, 2025.2.28): 灵巧手抓取VLA
+- **UP-VLA** ([paper](https://arxiv.org/pdf/2501.18867), 清华, 2025.2.3): 加入goal-image预测任务帮助动作生成
+- **CoT-VLA** ([paper](https://arxiv.org/pdf/2503.22020) ,  Nvidia, Stanford, CVPR2025): 将CoT融入VLA中，通过自回归地预测未来的图像帧作为视觉目标，7B
+- **UniAct** ([paper](https://arxiv.org/abs/2501.10105) | [code](https://github.com/2toinf/UniAct), CVPR2025, 清华): 基于通用动作空间的具身基础模型
 
 
 <section id="cv"></section>
