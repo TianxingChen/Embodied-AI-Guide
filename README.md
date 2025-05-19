@@ -1070,6 +1070,8 @@ RealSense，[RealSence Ros 开发套件](https://github.com/IntelRealSense/reals
 * SOTA Paper Rating - Weiyang Jin: [website](https://waynejin0918.github.io/SOTA-paper-rating.io/)
 * Awesome-LLM-Robotics: A repo contains a curative list of papers using Large Language/Multi-Modal Models for Robotics/RL: [website](https://github.com/GT-RIPL/Awesome-LLM-Robotics)
 * Awesome-Video-Robotic-Papers - Yaoyao(Freax) Qian: [repo](https://github.com/H-Freax/Awesome-Video-Robotic-Papers)
+* Awesome Embodied Robotics and Agent - Haonan Zhang: [repo](https://github.com/zchoi/Awesome-Embodied-Robotics-and-Agent)
+* awesome-embodied-vla/va/vln - Qiang (Jony) ZHANG: [repo](https://github.com/jonyzhang2023/awesome-embodied-vla-va-vln)
 <section id="acknowledgement"></section>
 
 # 8. Acknowledgement - 致谢
