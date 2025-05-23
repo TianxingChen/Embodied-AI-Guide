@@ -1008,6 +1008,7 @@ RealSense，[RealSence Ros 开发套件](https://github.com/IntelRealSense/reals
 | [具身风暴](https://www.robotstorm.tech) | | 落地具身智能通用按摩机器人 |
 | [众擎机器人](https://engineai.com.cn/) |[SE 01](https://engineai.com.cn/product_one)<br>[PM 01](https://engineai.com.cn/product_fore)| |
 | [魔法原子](https://www.magiclab.top/) |[MagicBot](https://www.magiclab.top/human)<br>[MagicDog](https://www.magiclab.top/dog)| |
+| [帕西尼](https://www.paxini.com/) |[PX-6AX GEN2 触觉传感器](https://www.paxini.com/ax/gen2)<br>[DexH13 GEN2 灵巧手](https://www.paxini.com/dex/gen2)<br>[TORA-ONE 人形机器人](https://www.paxini.com/robot) | |
 <section id="software"></section>
 
 # 6. Software - 软件
