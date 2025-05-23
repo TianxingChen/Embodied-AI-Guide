@@ -415,6 +415,7 @@
 - **UP-VLA** ([paper](https://arxiv.org/pdf/2501.18867), 清华, 2025.2.3): 加入goal-image预测任务帮助动作生成
 - **CoT-VLA** ([paper](https://arxiv.org/pdf/2503.22020) ,  Nvidia, Stanford, CVPR2025): 将CoT融入VLA中，通过自回归地预测未来的图像帧作为视觉目标，7B
 - **UniAct** ([paper](https://arxiv.org/abs/2501.10105) | [code](https://github.com/2toinf/UniAct), CVPR2025, 清华): 基于通用动作空间的具身基础模型
+- **UniVLA** ([paper](https://arxiv.org/pdf/2505.06111) | [code](https://github.com/OpenDriveLab/UniVLA), 港大, 上海人工智能实验室, 智元, 2025.5.9): 利用潜在动作模型从多样化数据中提取任务核心表征，提升泛化能力，降低计算和数据需求
 
 
 <section id="cv"></section>
