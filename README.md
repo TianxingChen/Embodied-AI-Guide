@@ -10,7 +10,7 @@
 
 > Embodied-AI-Guide项目很快将会以网页版wiki的形式上传到Lumina具身智能社区网站，敬请期待。如果你对合作构建Lumina具身社区感兴趣（目前更倾向于机构、社区间合作），欢迎邮件联系<a href="mailto:lumina.embodiedai@gmail.com">lumina.embodiedai@gmail.com</a>或联创微信<code>TianxingChen_2002</code>（请备注机构+姓名与来意）
 
-**扫描右下图进入`Embodied-AI-Guide@Lumina社区`交流群**:
+**扫描右下图关注`Lumina具身智能`社区公众号**:
 
 <table>
   <tr>
