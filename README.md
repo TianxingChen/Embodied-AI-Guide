@@ -482,6 +482,8 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 * **3D**
   - 基于点云的可供性锚定：**OpenAD**, [paper](https://arxiv.org/pdf/2203.09905)
+  - 铰接物体的可供性锚定：**Where2Act**, [paper](https://arxiv.org/abs/2101.02692); **VAT-Mart**, [paper](https://openreview.net/pdf?id=iEx3PiooLy)
+  - 柔性物体的可供性锚定：**DeformableAffordance**, [paper](https://arxiv.org/pdf/2303.11057); **UniGarmentManip**, [paper](https://arxiv.org/abs/2405.06903)
   - 室内环境任务中的可供性锚定：**SceneFun3D**, [paper](https://arxiv.org/pdf/2401.06341)
   - 点云数据集：**3D AffordanceNet**, [page](https://github.com/lhc1224/Cross-View-AG)，专注于物体层面的可供性锚定。
   - 实物数据集：**SceneFun3D**, [page](https://scenefun3d.github.io/)，强调在真实室内环境的应用。
