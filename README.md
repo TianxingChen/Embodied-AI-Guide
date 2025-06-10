@@ -1065,6 +1065,7 @@ RealSense，[RealSence Ros 开发套件](https://github.com/IntelRealSense/reals
 * Awesome-Video-Robotic-Papers - Yaoyao(Freax) Qian: [repo](https://github.com/H-Freax/Awesome-Video-Robotic-Papers)
 * Awesome Embodied Robotics and Agent - Haonan Zhang: [repo](https://github.com/zchoi/Awesome-Embodied-Robotics-and-Agent)
 * awesome-embodied-vla/va/vln - Qiang (Jony) ZHANG: [repo](https://github.com/jonyzhang2023/awesome-embodied-vla-va-vln)
+* Awesome-Affordance-Learning - Hanqing Wang: [repo](https://github.com/hq-King/Awesome-Affordance-Learning)
 <section id="acknowledgement"></section>
 
 # 8. Acknowledgement - 致谢
