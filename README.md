@@ -406,6 +406,7 @@
 - **UP-VLA** ([paper](https://arxiv.org/pdf/2501.18867), 清华, 2025.2.3): 加入goal-image预测任务帮助动作生成
 - **CoT-VLA** ([paper](https://arxiv.org/pdf/2503.22020) ,  Nvidia, Stanford, CVPR2025): 将CoT融入VLA中，通过自回归地预测未来的图像帧作为视觉目标，7B
 - **UniAct** ([paper](https://arxiv.org/abs/2501.10105) | [code](https://github.com/2toinf/UniAct), CVPR2025, 清华): 基于通用动作空间的具身基础模型
+- **UniVLA** ([paper](https://arxiv.org/pdf/2505.06111) | [code](https://github.com/OpenDriveLab/UniVLA), 港大, 上海人工智能实验室, 智元, 2025.5.9): 利用潜在动作模型从多样化数据中提取任务核心表征，提升泛化能力，降低计算和数据需求
 
 
 <section id="cv"></section>
@@ -1000,6 +1001,7 @@ RealSense，[RealSence Ros 开发套件](https://github.com/IntelRealSense/reals
 | [具身风暴](https://www.robotstorm.tech) | | 落地具身智能通用按摩机器人 |
 | [众擎机器人](https://engineai.com.cn/) |[SE 01](https://engineai.com.cn/product_one)<br>[PM 01](https://engineai.com.cn/product_fore)| |
 | [魔法原子](https://www.magiclab.top/) |[MagicBot](https://www.magiclab.top/human)<br>[MagicDog](https://www.magiclab.top/dog)| |
+| [帕西尼](https://www.paxini.com/) |[PX-6AX GEN2 触觉传感器](https://www.paxini.com/ax/gen2)<br>[DexH13 GEN2 灵巧手](https://www.paxini.com/dex/gen2)<br>[TORA-ONE 人形机器人](https://www.paxini.com/robot) | |
 <section id="software"></section>
 
 # 6. Software - 软件
