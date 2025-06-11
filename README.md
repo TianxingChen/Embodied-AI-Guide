@@ -145,7 +145,7 @@
 * 具身智能华人高引榜: [Repo](https://github.com/Will-Gao/Embodied_Intelligence)
   
 * 社区:
-  * Lumina具身智能社区 (筹备中)
+  * Lumina具身智能社区: [website](https://lumina-embodied.ai)
   * DeepTimber Robotics Innovations Community, 深木科研交流社区: [website](https://gamma.app/public/DeepTimber-Robotics-Innovations-Community-A-Community-for-Multi-m-og0uv8mswl1a3q7?mode=doc)
   * 宇树具身智能社群: [website](https://www.unifolm.com/#/)
   * Simulately: Handy information and resources for physics simulators for robot learning research: [website](https://simulately.wiki/)
