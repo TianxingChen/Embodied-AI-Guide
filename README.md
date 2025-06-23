@@ -912,7 +912,7 @@ SLAM(Simultaneous Locolization And Mapping)在定位的同时完成地图的构�
 ## 5.4 Sensors - 传感器
 ### 5.4.1深度相机
 
-RealSense，[RealSence Ros 开发套件](https://github.com/IntelRealSense/realsense-ros/tree/ros1-legacy)
+RealSense，[RealSense Ros 开发套件](https://github.com/IntelRealSense/realsense-ros/tree/ros1-legacy)
 
 <section id="tactile"></section>
 
