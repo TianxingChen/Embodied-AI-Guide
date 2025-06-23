@@ -511,16 +511,16 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 <section id="navigation"></section>
 
-## 3.9 Robot Navigation - 机器人巡航
-**机器人巡航（Robot Navigation）**是一类要求智能体在**未知**场景中，通过获取并处理环境信息，实现达成某种目标的路径规划。机器人巡航是具身任务中的一个重要能力，是完成复杂任务不可缺少的基础技术。机器人巡航任务中，智能体一般接受传感器提供的RGB、深度、GPS等信息和相关目标指令，输出是一系列的动作指令。
+## 3.9 Robot Navigation - 机器人导航
+**机器人导航（Robot Navigation）**是一类要求智能体在**已知或未知**场景中，通过获取并处理环境信息，实现达成某种目标的路径规划。机器人导航是具身任务中的一个重要能力，是完成复杂任务不可缺少的基础技术。机器人导航任务中，智能体一般接受传感器提供的RGB、深度、GPS等信息和相关目标指令，输出是一系列的动作指令。
 
-按照任务类型分类，机器人巡航可以分为以下几个部分：
+按照任务类型分类，机器人导航可以分为以下几个部分：
 
-- **物体目标巡航（Object-Goal Navigation）**：最常见和最广泛的巡航任务。智能体接受的指令是对一个特定物体的描述，目标是找寻到这个物体。
-- **图像目标巡航（Image-Goal Navigation）**：智能体接受的指令是一个图像，目标是找寻到这个图像所描述的场景。
-- **视觉-语言巡航（Vision-Language Navigation，VLN）**：智能体接受的指令是一个自然语言指令描述，目标是跟随该指令行进。
+- **物体目标导航（Object-Goal Navigation）**：最常见和最广泛的导航任务。智能体接受的指令是对一个特定物体的描述，目标是找寻到这个物体。
+- **图像目标导航（Image-Goal Navigation）**：智能体接受的指令是一个图像，目标是找寻到这个图像所描述的场景。
+- **视觉-语言导航（Vision-Language Navigation，VLN）**：智能体接受的指令是一个自然语言指令描述，目标是跟随该指令行进。
 
-按照模型架构分类，机器人巡航可以分为以下几个类别：
+按照模型架构分类，机器人导航可以分为以下几个类别：
 
 - **端到端模型（End-to-End Model）**：模型直接将传感器输入通过强化学习或模仿学习映射到动作指令。模型会先将传感器信息编码为视觉表征，结合历史动作作为输入，最后通过与环境交互获得reward实现动作决策的学习。端到端模型主要针对两方面进行优化：一是提升视觉表征能力，二是解决稀疏奖励等动作决策方面的问题。端到端模型的优势在于直截了当，但是面临着严重的过拟合和低泛化性问题，使得其在现实生活中的应用收到了挑战。
 
@@ -535,15 +535,15 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
       
         - [Object Goal Navigation using Goal-Oriented Semantic Exploration](https://arxiv.org/abs/2007.00643) ： SemExp，最早提出语义地图的概念，学习区域和物体之间关联的语义先验，使智能体能够更好地判断目标物体可能在的方向。
         - [PONI: Potential Functions for ObjectGoal Navigation with Interaction-free Learning](https://openaccess.thecvf.com/content/CVPR2022/papers/Ramakrishnan_PONI_Potential_Functions_for_ObjectGoal_Navigation_With_Interaction-Free_Learning_CVPR_2022_paper.pdf)：PONI，提出了基于potential functions的语义地图预测，即基于已有的语义地图学习“补全”的完整地图，想象物体最可能在整个房间的哪个位置，使智能体能够迁移在其他样本中观察到的知识。
-        - [3D-Aware Object Goal Navigation via Simultaneous Exploration and Identification](https://arxiv.org/abs/2212.00338)：把3D信息编码进巡航的经典工作，通过更精细的点云分割信息，避免了2D语义图在z轴上的信息损失，实现了更精确的语义地图构建。
+        - [3D-Aware Object Goal Navigation via Simultaneous Exploration and Identification](https://arxiv.org/abs/2212.00338)：把3D信息编码进导航的经典工作，通过更精细的点云分割信息，避免了2D语义图在z轴上的信息损失，实现了更精确的语义地图构建。
 
 - **零样本模型（Zero-shot Model）**：模型不接触训练数据，直接在测试阶段完成任务。零样本模型往往利用具有知识先验的大规模预训练模型（CLIP, LLM等）实现。零样本模型的提出旨在解决基于学习的方法面临的过拟合和低泛化性问题，同时也更适合迁移到现实场景。但是零样本模型的缺陷在于推理速度较慢，且性能受限，需要进一步微调以实现更好的性能。
 
     - 经典工作：
 
-        - [CoWs on Pasture: Baselines and Benchmarks for Language-Driven Zero-Shot Object Navigation](https://arxiv.org/abs/2203.10421)：开放语义物体巡航的提出工作。思路很简单：用CLIP寻找目标物体，找到了就走过去。在不常见物体、复杂描述上取得了很好的效果，同时也有着对不同属性的同类别物体的区分能力。
-        - [L3MVN: Leveraging Large Language Models for Visual Target Navigation](https://arxiv.org/abs/2304.05501)：利用LLM决定“我要向哪个边界前进”。利用LLM的人类知识先验，判断物体可能在的房间，以及与其他物体之间的相关关系，实现更快速更有效的巡航。
-        - [ESC: Exploration with Soft Commonsense Constraints for Zero-shot Object Navigation](https://arxiv.org/abs/2301.13166)：显式提出了区域对于巡航的影响，在语义地图上标注出区域占有的位置，作为输入的一部分输入给LLM。结合了语义地图连续性和LLM知识丰富的优势。
+        - [CoWs on Pasture: Baselines and Benchmarks for Language-Driven Zero-Shot Object Navigation](https://arxiv.org/abs/2203.10421)：开放语义物体导航的提出工作。思路很简单：用CLIP寻找目标物体，找到了就走过去。在不常见物体、复杂描述上取得了很好的效果，同时也有着对不同属性的同类别物体的区分能力。
+        - [L3MVN: Leveraging Large Language Models for Visual Target Navigation](https://arxiv.org/abs/2304.05501)：利用LLM决定“我要向哪个边界前进”。利用LLM的人类知识先验，判断物体可能在的房间，以及与其他物体之间的相关关系，实现更快速更有效的导航。
+        - [ESC: Exploration with Soft Commonsense Constraints for Zero-shot Object Navigation](https://arxiv.org/abs/2301.13166)：显式提出了区域对于导航的影响，在语义地图上标注出区域占有的位置，作为输入的一部分输入给LLM。结合了语义地图连续性和LLM知识丰富的优势。
         - [SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation](https://arxiv.org/abs/2410.08189)：在线构建多层场景图(Scene Graph)并输入给LLM，利用CoT实现LLM对于物体位置的推理。
 
 常用数据集：
@@ -555,7 +555,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 其他参考：
 
-- [物体目标巡航综述](https://orca.cardiff.ac.uk/id/eprint/167432/1/ObjectGoalNavigationSurveyTASE.pdf)
+- [物体目标导航综述](https://orca.cardiff.ac.uk/id/eprint/167432/1/ObjectGoalNavigationSurveyTASE.pdf)
 - [awesome vision-language navigation](https://github.com/eric-ai-lab/awesome-vision-language-navigation)
 - [Habitat Navigation Challenge](https://github.com/facebookresearch/habitat-challenge)(Habitat框架中整合了非常多常见的agent skill，例如语义地图构建，FBE和一些heuristic方法，非常适合模块化方法的开发)
 
