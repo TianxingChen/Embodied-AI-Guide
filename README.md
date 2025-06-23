@@ -669,9 +669,9 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
     - HOLA-Drone: Hypergraphic Open-ended Learning for Zero-Shot Multi-Drone Cooperative Pursuit. Arxiv 2024, University of Manchester.
     - Multi-UAV Pursuit-Evasion with Online Planning in Unknown Environments by Deep Reinforcement Learning. Arxiv 2024, THU.
   - **探索**
-    - Deep Reinforcement Learning-based Large-scale Robot Exploration, Arxiv2024, National University of Singapore (NUS). 利用注意力机制学习不同空间尺度的依赖关系，对未知区域进行隐式预测，优化已知空间探索策略，提高探索效率。
-    - ARiADNE: A Reinforcement learning approach using Attention-based Deep Networks for Exploration, Arxiv2023, National University of Singapore (NUS). 学习已知不同区域在多个空间尺度上的相互依赖关系，并隐式预测探索这些区域可能获得的潜在收益。这使得代理能够安排行动顺序，以平衡在已知区域对地图进行开发/细化与探索新区域之间的自然权衡。
-    - DARE: Diffusion Policy for Autonomous Robot Exploration. Arxiv2024, National University of Singapore (NUS). DARE方法利用self-attention学习地图空间信息，并通过diffusion生成通往未知区域的轨迹，以提高自主机器人的探索效率。
+    - Deep Reinforcement Learning-based Large-scale Robot Exploration, RAL 2024, National University of Singapore (NUS). 利用注意力机制学习不同空间尺度的依赖关系，对未知区域进行隐式预测，优化已知空间探索策略，提高探索效率。
+    - ARiADNE: A Reinforcement learning approach using Attention-based Deep Networks for Exploration, ICRA 2023, National University of Singapore (NUS). 学习已知不同区域在多个空间尺度上的相互依赖关系，并隐式预测探索这些区域可能获得的潜在收益。这使得代理能够安排行动顺序，以平衡在已知区域对地图进行开发/细化与探索新区域之间的自然权衡。
+    - DARE: Diffusion Policy for Autonomous Robot Exploration. ICRA 2025, National University of Singapore (NUS). DARE方法利用self-attention学习地图空间信息，并通过diffusion生成通往未知区域的轨迹，以提高自主机器人的探索效率。
 
 ### 3.10.2.2 无人机硬件平台搭建
 手搓一个遥控器操控的穿越机不是一个很难的事情，网上有很多爱好者分享教程。但想搭建一个具有自主导航功能的无人机并非易事，是一个系统工程，这里推荐浙大FAST-lab开源的教程：
