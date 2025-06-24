@@ -896,7 +896,7 @@ SLAM(Simultaneous Locolization And Mapping)在定位的同时完成地图的构�
 
 ## 5.2 Mechanical Design - 机械设计
 
-* SoildWorks教学：[BiliBili](https://www.bilibili.com/video/BV1iw411Z7HZ/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)
+* SolidWorks教学：[BiliBili](https://www.bilibili.com/video/BV1iw411Z7HZ/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)
 * URDF生成：[CSDN](https://blog.csdn.net/weixin_45168199/article/details/105755388), 指导如何通过SolidWorks装配体出发生成机器人URDF文件。
   
 <section id="robosystem"></section>
@@ -912,7 +912,7 @@ SLAM(Simultaneous Locolization And Mapping)在定位的同时完成地图的构�
 ## 5.4 Sensors - 传感器
 ### 5.4.1深度相机
 
-RealSense，[RealSence Ros 开发套件](https://github.com/IntelRealSense/realsense-ros/tree/ros1-legacy)
+RealSense，[RealSense Ros 开发套件](https://github.com/IntelRealSense/realsense-ros/tree/ros1-legacy)
 
 <section id="tactile"></section>
 
