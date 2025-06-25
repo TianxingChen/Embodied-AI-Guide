@@ -32,6 +32,10 @@
             <li><a href="#rl">3.3.3 Reinforcement Learning - 强化学习</a></li>
             <li><a href="#il">3.3.4 Imitation Learning - 仿人学习</a></li>
             <li><a href="#mila_robot_learning">3.3.5 MILA & UdeM Robot Learning - 机器人学习课程</a></li>
+            <li><a href="#cmu_robot_learning">3.3.6 CMU 16-831 Introduction to Robot Learning - 机器人学习导论</a></li>
+            <li><a href="#usc_robot_learning">3.3.7 USC CSCI 699: Robot Learning - 机器人学习</a></li>
+            <li><a href="#mit_robot_manipulation">3.3.8 MIT 6.4210/6.4212: Robotic Manipulation - 机器人操作</a></li>
+            <li><a href="#underactuated_robotics">3.3.9 MIT 6.8210: Underactuated Robotics - 欠驱动机器人</a></li>
           </ul>
         </li>
         <li><a href="#llm_robot">3.4 LLM for Robotics - 大语言模型在机器人学中的应用</a></li>
@@ -283,6 +287,37 @@
 
 由MILA和蒙特利尔大学开设的课程，聚焦于将深度强化学习等方法扩展到现实世界中的机器人智能体，重点探讨了现有学习技术的局限，并研究如何构建更强健、泛化能力更强的智能体系统。适合希望了解机器学习，强化学习算法在机器人领域的前沿应用的同学。
 
+<section id="cmu_robot_learning"></section>
+
+### 3.3.6 CMU 16-831 Introduction to Robot Learning - 机器人学习导论
+
+[课件](https://16-831-s24.github.io/lectures/) ｜ [作业](https://github.com/kavin-cmu/16831-S24-HW)
+
+由CMU Robotics Institute开设的课程，虽然没有视频，但是课件内容简明扼要，对整个Robot Learning有比较全面的覆盖，而且内容insights很强，十分推荐学习。
+
+<section id="usc_robot_learning"></section>
+
+### 3.3.7 USC CSCI 699: Robot Learning - 机器人学习
+
+[课程主页](https://liralab.usc.edu/csci699/)
+
+由南加州开设的课程，RL相关内容很丰富，注重概念之间的联系，有很多intuition。
+
+<section id="mit_robot_manipulation"></section>
+
+### 3.3.8 MIT 6.4210/6.4212: Robotic Manipulation - 机器人操作
+
+[课程主页](https://manipulation.csail.mit.edu/Fall2024/index.html) | [电子书](https://manipulation.mit.edu/)
+
+由MIT CSAI开设的课程，内容丰富且硬核，对机器人操作有比较全面的介绍，包含感知、规划、动力学和控制。建议前置课程有：数学、编程、机器学习、机器人导论。
+
+<section id="underactuated_robotics"></section>
+
+### 3.3.9 MIT 6.8210: Underactuated Robotics - 欠驱动机器人
+
+[课程主页](https://underactuated.csail.mit.edu/Spring2024/index.html) | [课程视频](https://www.youtube.com/watch?v=v04rn86Dehg&t=4319s)
+
+由MIT CSAI开设的课程，介绍非线性动力学和欠驱动机械系统的控制。有Youtube视频，且录制质量很高。
 
 <section id="llm_robot"></section>
 
