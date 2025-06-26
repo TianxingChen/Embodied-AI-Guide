@@ -630,6 +630,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 * 医疗机器人的机器视觉
   * 3DGS在腔镜手术中的应用综述: [website](https://arxiv.org/pdf/2408.04426)<br>
+  * 香港中文大学任洪亮教授团队在Nature Reviews Electrical Engineering上关于大型视觉模型 (LVM)在手术机器人上的综述 [website](https://www.nature.com/articles/s44287-025-00166-6)
 
 * 达芬奇手术机器人是最为常用的外科手术机器人, 对于这类机器人自主技能操作的研究最为广泛
   * 达芬奇手术机器人研究套件dVRK介绍: [website](https://ieeexplore.ieee.org/abstract/document/9531355)<br>
