@@ -1119,8 +1119,9 @@ If you find this repository helpful, please consider citing:
 @misc{embodiedaiguide2025,
       title = {Embodied-AI-Guide},
       author = {Embodied-AI-Guide-Contributors, Lumina-Embodied-AI-Community},
+      month = {January},
       year = {2025},
-      howpublished = {\url{https://github.com/tianxingchen/Embodied-AI-Guide}},
+      url = {https://github.com/tianxingchen/Embodied-AI-Guide},
 }
 ```
 
