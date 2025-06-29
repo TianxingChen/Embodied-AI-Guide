@@ -128,7 +128,7 @@
 
 # 2. Useful Info - 有利于搭建认知的资料
 
-* 具身智能基础技术路线-YunlongDong [2]: [PDF](./files/具身智能基础技术路线-YunlongDong.pdf), [bilibili](https://www.bilibili.com/video/BV1d5ukedEsi/?buvid=XXCD799C01878A6CFDECF3FB4427E2F070877&from_spmid=default-value&is_story_h5=false&mid=iWFclAyh36UYMh2G6ZcsDw%3D%3D&p=1&plat_id=114&share_from=ugc&share_medium=android&share_plat=android&share_session_id=9c0dccf5-ec0b-4369-8b89-ff1d848467ee&share_source=WEIXIN&share_tag=s_i&spmid=united.player-video-detail.0.0&timestamp=1716466406&unique_k=Q0CaIUj&up_id=249218043)
+* 具身智能基础技术路线-YunlongDong [2]: [PDF](./files/具身智能基础技术路线-YunlongDong.pdf), [bilibili](https://www.bilibili.com/video/BV1d5ukedEsi)
 
 * 社交媒体:
 
@@ -140,7 +140,7 @@
 
 * 具身智能会投稿的较高质量会议与期刊：Science Robotics, TRO, IJRR, JFR, RSS, IROS, ICRA, ICCV, ECCV, ICML, CVPR, NeurIPS, ICLR, AAAI, ACL等。
 
-* 斯坦福机器人学导论：[website](https://www.bilibili.com/video/BV17T421k78T/?spm_id_from=333.337.search-card.all.click)
+* 斯坦福机器人学导论：[website](https://www.bilibili.com/video/BV17T421k78T)
 
 * 共建全网最全具身智能知识库 [6]: [website](https://yv6uc1awtjc.feishu.cn/wiki/WPTzw9ON0ivIVrkLjVocNZh8nLf)
 
@@ -225,7 +225,7 @@
 
 * 入门推荐视频：
 
-    - Model Predictive Control 模型预测控制,从公式到代码 - 华工机器人实验室: [bilibili](https://www.bilibili.com/video/BV1U54y1J7wh/?spm_id_from=333.999.0.0&vd_source=180b6da13847c26de9d19ac71e61c7fe); 仿真工程源码:[Gitee](https://gitee.com/clangwu/mpc_control.git) 这门课程适合作为从PID到MPC的入门课程，适合只了解PID控制原理，但不太清楚MPC原理的入门者；从公式原理推导，到CoppeliaSim（V-ERP）仿真教程以及MatLab代码编写，深入浅出。
+    - Model Predictive Control 模型预测控制,从公式到代码 - 华工机器人实验室: [bilibili](https://www.bilibili.com/video/BV1U54y1J7wh); 仿真工程源码:[Gitee](https://gitee.com/clangwu/mpc_control.git) 这门课程适合作为从PID到MPC的入门课程，适合只了解PID控制原理，但不太清楚MPC原理的入门者；从公式原理推导，到CoppeliaSim（V-ERP）仿真教程以及MatLab代码编写，深入浅出。
     
 * 经典工作：
   
@@ -262,7 +262,7 @@
 
 * 李宏毅老师也有一套关于强化学习的课程: bilibili上课+刷蘑菇书巩固+gymnasium动手实践, 重点了解一下PPO。
 
-  * 台湾大学李宏毅公开课: [bilibili](https://www.bilibili.com/video/BV1XP4y1d7Bk/?spm_id_from=333.337.search-card.all.click&vd_source=ab9cf5374617c2867aaea34af29b53c9)
+  * 台湾大学李宏毅公开课: [bilibili](https://www.bilibili.com/video/BV1XP4y1d7Bk)
 
   * EasyRL - 蘑菇书: [website](https://datawhalechina.github.io/easy-rl/#/), 基本是配套李宏毅老师的课程
 
@@ -277,7 +277,7 @@
 ### 3.3.4 Imitation Learning - 模仿学习
 
 * 《模仿学习简洁教程》 - 南京大学LAMDA: [PDF](https://www.lamda.nju.edu.cn/xut/Imitation_Learning.pdf)<br>
-* Supervised Policy Learning for Real Robots, RSS 2024 Workshop 教程：真实机器人的监督策略学习, [bilibili](https://www.bilibili.com/video/BV1Fx4y1s7if/?buvid=XY415384A771A6C681C9BEB3817566ED57724&is_story_h5=false&mid=ORgXkVzTHaOKTsml0RX5Gw%3D%3D&plat_id=240&share_from=ugc&share_medium=android&share_plat=android&share_source=WEIXIN&share_tag=s_i&spmid=dt.space-dt.0.0&timestamp=1721464513&unique_k=Cqj5d9J&up_id=2185804&vd_source=ab9cf5374617c2867aaea34af29b53c9)
+* Supervised Policy Learning for Real Robots, RSS 2024 Workshop 教程：真实机器人的监督策略学习, [bilibili](https://www.bilibili.com/video/BV1Fx4y1s7if)
 
 <section id="mila_robot_learning"></section>
 
@@ -455,10 +455,10 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 ### 3.6.1 2D Vision - 二维视觉
 * 2D Vision 领域的经典代表作
   * CNN (卷积神经网络): [link](https://easyai.tech/ai-definition/cnn/)
-  * ResNet (深度残差网络): [bilibili](https://www.bilibili.com/video/BV1P3411y7nn/?spm_id_from=333.1387.collection.video_card.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
-  * ViT (第一个将Transformer用在视觉领域): [bilibili](https://www.bilibili.com/video/BV15P4y137jb/?spm_id_from=333.1387.collection.video_card.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
-  * Swin Transformer (披着Transformer皮的CNN): [bilibili](https://www.bilibili.com/video/BV13L4y1475U/?spm_id_from=333.1387.collection.video_card.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
-  * 对比学习论文综述: [bilibili](https://www.bilibili.com/video/BV19S4y1M7hm/?spm_id_from=333.1387.collection.video_card.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
+  * ResNet (深度残差网络): [bilibili](https://www.bilibili.com/video/BV1P3411y7nn)
+  * ViT (第一个将Transformer用在视觉领域): [bilibili](https://www.bilibili.com/video/BV15P4y137jb)
+  * Swin Transformer (披着Transformer皮的CNN): [bilibili](https://www.bilibili.com/video/BV13L4y1475U)
+  * 对比学习论文综述: [bilibili](https://www.bilibili.com/video/BV19S4y1M7hm)
 * 以判别式模型为主的感知任务, 比如识别、分类、分割、检测等等, 看看即可, 现在继续刷点意义不大
 * 生成式模型
   * 自回归综述: [PDF](https://arxiv.org/pdf/2411.05902)
@@ -470,7 +470,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 ### 3.6.2 3D Vision - 三维视觉
 
 * 三维视觉导论 - Andreas Geiger: [website](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/computer-vision/) (重点关注课程作业) <br>
-* GAMES203 - 三维重建和理解: [bilibili](https://www.bilibili.com/video/BV1pw411d7aS/?share_source=copy_web&vd_source=0b7603f37af6d369a97df34525b149be)<br>
+* GAMES203 - 三维重建和理解: [bilibili](https://www.bilibili.com/video/BV1pw411d7aS)<br>
 * 三维生成的一些经典论文:
   * Diffusion Model for 2D/3D Generation 相关论文分类: [link](https://zhuanlan.zhihu.com/p/617510702)
   * 3D生成相关论文-2024: [link](https://zhuanlan.zhihu.com/p/700895749)
@@ -479,8 +479,8 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 ### 3.6.3 4D Vision - 四维视觉
 * 视频理解
-  * 开山之作: [bilibili](https://www.bilibili.com/video/BV1mq4y1x7RU/?spm_id_from=333.1387.collection.video_card.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
-  * 论文串讲: [bilibili](https://www.bilibili.com/video/BV1fL4y157yA?spm_id_from=333.788.videopod.sections&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
+  * 开山之作: [bilibili](https://www.bilibili.com/video/BV1mq4y1x7RU)
+  * 论文串讲: [bilibili](https://www.bilibili.com/video/BV1fL4y157yA)
   * LLM时代的视频理解综述: [PDF](https://arxiv.org/pdf/2312.17432)
 * 4D 生成
   * 视频生成博客(英文): [link](https://lilianweng.github.io/posts/2024-04-12-diffusion-video/)
@@ -527,8 +527,8 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * 如果对motion synthesis/computer animation感兴趣, 可以看:
   * GAMES105 - 计算机角色动画基础: [website](https://games-105.github.io/)<br>
 * 如果对三维重建感兴趣, 可以看下面两门:
-  * Nerf原理代码讲解: [bilibili](https://www.bilibili.com/video/BV1CC411V7oq/?spm_id_from=333.337.search-card.all.click&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
-  * 3DGS原理代码讲解: [bilibili](https://www.bilibili.com/video/BV1zi421v7Dr?spm_id_from=333.788.recommend_more_video.-1&vd_source=930ef08bfb2ff0db87ec20bf72a99855)
+  * Nerf原理代码讲解: [bilibili](https://www.bilibili.com/video/BV1CC411V7oq)
+  * 3DGS原理代码讲解: [bilibili](https://www.bilibili.com/video/BV1zi421v7Dr)
 * 三维预训练最新综述:
   * Advances in 3D pre-training and downstream tasks: a survey: [PDF](https://link.springer.com/content/pdf/10.1007/s44336-024-00007-4.pdf)<br>
 * 3DGS在具身上的综述:
@@ -687,7 +687,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
     - DroNet: Learning to Fly by Driving. RAL 2018, UZH. 利用自动假设数据集让飞机输出速度指令，代码开源( https://github.com/uzh-rpg/rpg_public_dronet )。
     - Learning High-Speed Flight in the Wild. SciRob 2021, UZH. 使用dagger利用传统轨迹规划进行监督学习。文章claim网络推理的低延迟可以使未知环境中飞行速度更快。代码开源( https://github.com/uzh-rpg/agile_autonomy )。
     - Back to Newton's Laws: Learning Vision-based Agile Flight via Differentiable Physics, Arxiv 2024, SJTU. 用differentiable physics提供的一阶梯度做策略优化，不需要显式的位置和速度估计。文章用低分辨率深度图，训练避障比RL更高效，实现高速飞行。
-    - [Flying on Point Clouds using Reinforcement Learning](https://arxiv.org/abs/2503.00496) [[Video](https://www.bilibili.com/video/BV1xeRpYnEYT/)].Arxiv 2025, ZJU. 使用机载雷达和sim2real RL实现自主避障。
+    - [Flying on Point Clouds using Reinforcement Learning](https://arxiv.org/abs/2503.00496) [[Video](https://www.bilibili.com/video/BV1xeRpYnEYT)].Arxiv 2025, ZJU. 使用机载雷达和sim2real RL实现自主避障。
     - 值得一提的是，作为无人机最常用的任务，避障现在最常用的还是传统方法的系统如开源的ego-planner( https://github.com/ZJU-FAST-Lab/ego-planner )，由于这样的方案已经足以胜任大部分场景(而不像四足的MPC)，因此在实际应用中比较少使用data-driven的方案。
 
   - **无人机竞速**
@@ -712,7 +712,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 ### 3.10.2.2 无人机硬件平台搭建
 手搓一个遥控器操控的穿越机不是一个很难的事情，网上有很多爱好者分享教程。但想搭建一个具有自主导航功能的无人机并非易事，是一个系统工程，这里推荐浙大FAST-lab开源的教程：
 
-- [从0制作自主空中机器人](https://www.bilibili.com/video/BV1WZ4y167me/?spm_id_from=333.1387.homepage.video_card.click&vd_source=875782ad8340a833a05fa20f1ae0baa5)
+- [从0制作自主空中机器人](https://www.bilibili.com/video/BV1WZ4y167me)
 
 ### 3.10.2.3 新构型无人机设计
 除了常规用于航拍，环境探索的四旋翼无人机，想让无人机具备更多能力，应用于更广泛的具身智能场景，除了算法上的创新外，也需要在硬件层面对无人机的构型进行创新设计。
@@ -729,8 +729,8 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
     * 代表性工作
         * [Past, Present, and Future of Aerial Robotic Manipulators](https://ieeexplore.ieee.org/document/9462539). TRO 2022. 空中机械臂领域目前最全的综述文章，入门了解必备。
         * [Millimeter-Level Pick and Peg-in-Hole Task Achieved by Aerial Manipulator](https://ieeexplore.ieee.org/abstract/document/10339889). TRO 2023, BHU. 使用四旋翼加串联机械臂实现毫米精度peg-in-pole任务。
-        * [NDOB-Based Control of a UAV with Delta-Arm Considering Manipulator Dynamics](https://arxiv.org/abs/2501.06122) [[Video](https://www.bilibili.com/video/BV16Zt5eBEPW/?spm_id_from=333.1387.homepage.video_card.click&vd_source=875782ad8340a833a05fa20f1ae0baa5)]. ICRA 2025, SYU. 使用四旋翼加并联机械臂实现毫米精度抓取。
-        * [A Compact Aerial Manipulator: Design and Control for Dexterous Operations](https://link.springer.com/article/10.1007/s10846-024-02090-7) [[Video](https://www.bilibili.com/video/BV1CC4y1Z7xS/?spm_id_from=333.1387.homepage.video_card.click)]. JIRS 2024, BHU. 用空中机械臂做一些有趣的应用，比如抓鸡蛋、开门等等。
+        * [NDOB-Based Control of a UAV with Delta-Arm Considering Manipulator Dynamics](https://arxiv.org/abs/2501.06122) [[Video](https://www.bilibili.com/video/BV16Zt5eBEPW)]. ICRA 2025, SYU. 使用四旋翼加并联机械臂实现毫米精度抓取。
+        * [A Compact Aerial Manipulator: Design and Control for Dexterous Operations](https://link.springer.com/article/10.1007/s10846-024-02090-7) [[Video](https://www.bilibili.com/video/BV1CC4y1Z7xS)]. JIRS 2024, BHU. 用空中机械臂做一些有趣的应用，比如抓鸡蛋、开门等等。
 
 - **全驱动无人机(Fully-Actuated UAV)**
 
@@ -749,7 +749,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
     * 代表性工作
         * [Design, Modeling, and Control of an Aerial Robot DRAGON: A Dual-Rotor-Embedded Multilink Robot With the Ability of Multi-Degree-of-Freedom Aerial Transformation](https://ieeexplore.ieee.org/document/8258850). RAL 2018，东京大学. Best paper award on UAV in ICRA 2018，多关节可变形无人机。
         * [The Foldable Drone: A Morphing Quadrotor That Can Squeeze and Fly](https://ieeexplore.ieee.org/document/8567932?arnumber=8567932). RAL 2019, Uzh. 四旋翼每个机臂上安装一个舵机，实现机体变形飞行。
-        * [Ring-Rotor: A Novel Retractable Ring-Shaped Quadrotor With Aerial Grasping and Transportation Capability](https://ieeexplore.ieee.org/document/10044964) [[Video](https://www.bilibili.com/video/BV1gY4y1K723/?spm_id_from=333.1387.upload.video_card.click)]. RAL 2023, ZJU. 一种可变形的环形四旋翼，可用于抓取、运输等任务。
+        * [Ring-Rotor: A Novel Retractable Ring-Shaped Quadrotor With Aerial Grasping and Transportation Capability](https://ieeexplore.ieee.org/document/10044964) [[Video](https://www.bilibili.com/video/BV1gY4y1K723)]. RAL 2023, ZJU. 一种可变形的环形四旋翼，可用于抓取、运输等任务。
         * [Design and Control of a Passively Morphing Quadcopter](https://ieeexplore.ieee.org/document/8794373) [[Video](https://www.youtube.com/watch?v=MSvoQT__c9U)]. ICRA 2019, UCB. 一种被动变形的四旋翼无人机。
 
 - **多模态无人机(Multi-Modal UAV)**
@@ -759,7 +759,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
     * 代表性工作
         * [A bipedal walking robot that can fly, slackline, and skateboard](https://www.science.org/doi/10.1126/scirobotics.abf8136). SR 2021, Caltech. 多模态空地足式机器人。
         * [Multi-Modal Mobility Morphobot (M4) with appendage repurposing for locomotion plasticity enhancement](https://www.nature.com/articles/s41467-023-39018-y). NC 2023, Northeastern University. 具有很多种运动模式的多模态无人机。
-        * [Skater: A Novel Bi-Modal Bi-Copter Robot for Adaptive Locomotion in Air and Diverse Terrain](https://ieeexplore.ieee.org/document/10538378) [[Video](https://www.bilibili.com/video/BV1y2421M7HM/?spm_id_from=333.1387.upload.video_card.click&vd_source=875782ad8340a833a05fa20f1ae0baa5)]. RAL 2024, ZJU. 适应多样地形的多模态空地双旋翼无人机。
+        * [Skater: A Novel Bi-Modal Bi-Copter Robot for Adaptive Locomotion in Air and Diverse Terrain](https://ieeexplore.ieee.org/document/10538378) [[Video](https://www.bilibili.com/video/BV1y2421M7HM)]. RAL 2024, ZJU. 适应多样地形的多模态空地双旋翼无人机。
         * [Autonomous and Adaptive Navigation for Terrestrial-Aerial Bimodal Vehicles](https://ieeexplore.ieee.org/document/9691888). RAL 2022, ZJU. 实现空地多模态无人机的自主导航。
 
 
@@ -829,8 +829,8 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 ## 4. Control and Robotics - 控制论与机器人学基础
 **经典课程**
-  - [video](https://www.bilibili.com/video/BV1GJ411k7fE?spm_id_from=333.788.videopod.episodes&vd_source=180b6da13847c26de9d19ac71e61c7fe) 美国西北大学 现代机器人 Modern Robotics： 这门课侧重于基础的机器人理论，涉及的概念有**笛卡尔坐标系**，**关节坐标系**，**自由度**，**齐次旋转矩阵**，**正运动学（FK）**， **逆运动学（IK）**等等，适合零基础入门。
-  - [video](https://www.bilibili.com/video/BV1h7411A7B9/?spm_id_from=333.788.videopod.episodes&vd_source=180b6da13847c26de9d19ac71e61c7fe) 加州伯克利 高级机器人技术 by Pieter Abbeel： 这门课是机器人的进阶课程，适合在学习完‘现代机器人 Modern Robotics’或者有相应基础后进一步学习。涉及的部分有**马尔科夫决策过程**，**LQR控制**，**在约束条件下的最优化问题**，**基于最优化的控制**，**运动规划**，**卡尔曼滤波**，**模仿学习**，**强化学习**，**Sim2Real**等等。课程中还涉及了很多实操演示，有助于进一步了解理论在真实世界中的应用。
+  - [video](https://www.bilibili.com/video/BV1GJ411k7fE) 美国西北大学 现代机器人 Modern Robotics： 这门课侧重于基础的机器人理论，涉及的概念有**笛卡尔坐标系**，**关节坐标系**，**自由度**，**齐次旋转矩阵**，**正运动学（FK）**， **逆运动学（IK）**等等，适合零基础入门。
+  - [video](https://www.bilibili.com/video/BV1h7411A7B9) 加州伯克利 高级机器人技术 by Pieter Abbeel： 这门课是机器人的进阶课程，适合在学习完‘现代机器人 Modern Robotics’或者有相应基础后进一步学习。涉及的部分有**马尔科夫决策过程**，**LQR控制**，**在约束条件下的最优化问题**，**基于最优化的控制**，**运动规划**，**卡尔曼滤波**，**模仿学习**，**强化学习**，**Sim2Real**等等。课程中还涉及了很多实操演示，有助于进一步了解理论在真实世界中的应用。
 ## 4.1. 控制理论基础
 
 ### 4.1.1 经典控制原理
@@ -838,13 +838,13 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * 时域与频域分析
 * 传递函数
 * 理解前馈控制、反馈控制
-* **PID控制**：[CSDN](https://blog.csdn.net/name_longming/article/details/115093338) [BiliBili](https://www.bilibili.com/video/BV1B54y1V7hp?spm_id_from=333.788.videopod.episodes&vd_source=8676f67627c33488b525afb187777fa7)
+* **PID控制**：[CSDN](https://blog.csdn.net/name_longming/article/details/115093338) [BiliBili](https://www.bilibili.com/video/BV1B54y1V7hp)
 
 ### 4.1.2 现代控制理论(线性系统控制)
 * Modern Control Systems (14th edition), Robert. H. Bishop, Richard. C, Dorf. z: [Book](http://103.203.175.90:81/fdScript/RootOfEBooks/E%20Book%20collection%20-%202024/EEE/Modern_control_systems_Robert_H_Bishop_Richard_C_Dorf_z_lib_org.pdf#page=1.00&gsr=0)
 * 状态方程
 * 状态反馈与最优控制
-* **LQR控制** [BiliBili](https://www.bilibili.com/video/BV1Ng4y1V7JQ/?spm_id_from=333.1387.homepage.video_card.click&vd_source=180b6da13847c26de9d19ac71e61c7fe)
+* **LQR控制** [BiliBili](https://www.bilibili.com/video/BV1Ng4y1V7JQ)
 
 ### 4.1.3 先进控制技术
 * 鲁棒控制
@@ -863,20 +863,20 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 
 ### 4.2.2 机器人运动学 (Kinematics) 与动力学 (Dynamics)
 1. 机器人运动学
-> 想要快速了解什么是IK FK的同学可以看这个7分钟的短片, 可以对此建立一个粗略的认知：[BiliBili](https://www.bilibili.com/video/BV18E411v7F9/?spm_id_from=333.337.search-card.all.click&vd_source=b14220472557bfa1918f3d0faa38bdc1)<br>
+> 想要快速了解什么是IK FK的同学可以看这个7分钟的短片, 可以对此建立一个粗略的认知：[BiliBili](https://www.bilibili.com/video/BV18E411v7F9)<br>
 > 较为简单的过一遍IK和FK的原理可以看这个：[CSDN](https://blog.csdn.net/Dwzsa/article/details/142386529?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ECtr-3-142386529-blog-109314877.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ECtr-3-142386529-blog-109314877.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=6) 
 
 * IK (Inverse Kinematics) 逆运动学
   * 较为详细的视频课
-    * [BiliBili IK(1)](https://www.bilibili.com/video/BV1PD4y1t7xP/?spm_id_from=333.337.search-card.all.click&vd_source=b14220472557bfa1918f3d0faa38bdc1)
-    * [BiliBili IK(2)](https://www.bilibili.com/video/BV1Tt4y1T79Z?spm_id_from=333.788.recommend_more_video.0&vd_source=b14220472557bfa1918f3d0faa38bdc1)
+    * [BiliBili IK(1)](https://www.bilibili.com/video/BV1PD4y1t7xP)
+    * [BiliBili IK(2)](https://www.bilibili.com/video/BV1Tt4y1T79Z)
   * 文字教学
     * [Book](https://motion.cs.illinois.edu/RoboticSystems/InverseKinematics.html), 较为详细的IK理论
 
 * FK (Forward Kinematics) 正运动学
   * 较为详细的视频课
-    * [BiliBili FK(1)](https://www.bilibili.com/video/BV1Ve4y127Uf?spm_id_from=333.788.recommend_more_video.0&vd_source=b14220472557bfa1918f3d0faa38bdc1)
-    * [BiliBili FK(2)](https://www.bilibili.com/video/BV1a14y157uL?spm_id_from=333.788.videopod.sections&vd_source=b14220472557bfa1918f3d0faa38bdc1)
+    * [BiliBili FK(1)](https://www.bilibili.com/video/BV1Ve4y127Uf)
+    * [BiliBili FK(2)](https://www.bilibili.com/video/BV1a14y157uL)
 
 2. 机器人动力学(**重要！！！**)
 * 理解斜对称矩阵, Twist和Exponential of a twist, 旋量代数
@@ -921,18 +921,18 @@ SLAM(Simultaneous Locolization And Mapping)在定位的同时完成地图的构�
 
 ## 5.1 Embedded - 嵌入式
 * 嵌入式学习路线: [CSDN](https://blog.csdn.net/wangshuaiwsws95/article/details/107830452)
-* 51单片机：[BiliBili](https://www.bilibili.com/video/BV1Mb411e7re/), 经典江科大自动协出品
-* Stm32单片机：[BiliBili](https://www.bilibili.com/video/BV1th411z7sn/), 经典江科大自动协出品
-* Stm32电机驱动：[BiliBili](https://www.bilibili.com/video/BV1AZ4y1V7wt/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e), 野火
-* 野火Stm32标准库：[BiliBili](https://www.bilibili.com/video/BV1yW411Y7Gw/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e), 野火
-* 正点原子Stm32：[BiliBili](https://www.bilibili.com/video/BV1Lx411Z7Qa/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e), 正点原子
-* 韦东山嵌入式Linux：[BiliBili](https://www.bilibili.com/video/BV1w4411B7a4/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e), 韦东山
+* 51单片机：[BiliBili](https://www.bilibili.com/video/BV1Mb411e7re), 经典江科大自动协出品
+* Stm32单片机：[BiliBili](https://www.bilibili.com/video/BV1th411z7sn), 经典江科大自动协出品
+* Stm32电机驱动：[BiliBili](https://www.bilibili.com/video/BV1AZ4y1V7wt), 野火
+* 野火Stm32标准库：[BiliBili](https://www.bilibili.com/video/BV1yW411Y7Gw), 野火
+* 正点原子Stm32：[BiliBili](https://www.bilibili.com/video/BV1Lx411Z7Qa), 正点原子
+* 韦东山嵌入式Linux：[BiliBili](https://www.bilibili.com/video/BV1w4411B7a4), 韦东山
 
 <section id="mechanical"></section>
 
 ## 5.2 Mechanical Design - 机械设计
 
-* SolidWorks教学：[BiliBili](https://www.bilibili.com/video/BV1iw411Z7HZ/?spm_id_from=333.337.search-card.all.click&vd_source=a83ed9f5a5c724720d224bdca866789e)
+* SolidWorks教学：[BiliBili](https://www.bilibili.com/video/BV1iw411Z7HZ)
 * URDF生成：[CSDN](https://blog.csdn.net/weixin_45168199/article/details/105755388), 指导如何通过SolidWorks装配体出发生成机器人URDF文件。
   
 <section id="robosystem"></section>
