@@ -1104,6 +1104,7 @@ RealSense，[RealSense Ros 开发套件](https://github.com/IntelRealSense/reals
 * Awesome Embodied Robotics and Agent - Haonan Zhang: [repo](https://github.com/zchoi/Awesome-Embodied-Robotics-and-Agent)
 * awesome-embodied-vla/va/vln - Qiang (Jony) ZHANG: [repo](https://github.com/jonyzhang2023/awesome-embodied-vla-va-vln)
 * Awesome-Affordance-Learning - Hanqing Wang: [repo](https://github.com/hq-King/Awesome-Affordance-Learning)
+* Embodied-AI-Paper-TopConf - Wenxuan Song, Jiayi Chen, Xiaoquan Sun: [repo](https://github.com/Songwxuan/Embodied-AI-Paper-TopConf)
 <section id="acknowledgement"></section>
 
 # 8. Acknowledgement - 致谢
