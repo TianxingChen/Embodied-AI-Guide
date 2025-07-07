@@ -431,7 +431,7 @@
   - **Hi Robot** ([paper](https://arxiv.org/abs/2502.19417) | blog: CSDN, 2025.2.26): 使用VLM进行高级推理，VLA执行低级任务
 - **Nvidia: GROOT-N1** (code: [Nvidia Isaac-GR00T](https://github.com/NVIDIA/Isaac-GR00T) | [paper](https://arxiv.org/abs/2503.14734) | blog, 2025.3.27): 机器人全身控制, 2B, NVIDIA-Eagle架构和SmolLM-1.7B
 - **灵初智能：Psi-R1** ([blog](https://www.jiqizhixin.com/articles/2025-03-03-9), 2025.4.27): 分层端到端VLA+强化学习算法模型, 验证test-time scaling
-- **Google DeepMind: Gemini Robotics** ([paper](https://arxiv.org/pdf/2503.20020), 2025.3.25): Gemini 2.0构建的Gemini Robotics-ER（具身推理模型）和Gemini Robotics主模型, 50 Hz
+- **Google DeepMind: Gemini Robotics** ([paper](https://arxiv.org/pdf/2503.20020), 2025.3.25): Gemini 2.0构建的Gemini Robotics-ER（具身推理模型）和Gemini Robotics主模型, 50 Hz; **Gemini Robotics on device** ([report](https://deepmind.google/discover/blog/gemini-robotics-on-device-brings-ai-to-local-robotic-devices/), 2025.6.24) 将模型轻松部署在设备端
 
 
 ### **3.5.3 最新VLA工作**：
