@@ -432,8 +432,16 @@
 - **Nvidia: GROOT-N1** (code: [Nvidia Isaac-GR00T](https://github.com/NVIDIA/Isaac-GR00T) | [paper](https://arxiv.org/abs/2503.14734) | blog, 2025.3.27): 机器人全身控制, 2B, NVIDIA-Eagle架构和SmolLM-1.7B
 - **灵初智能：Psi-R1** ([blog](https://www.jiqizhixin.com/articles/2025-03-03-9), 2025.4.27): 分层端到端VLA+强化学习算法模型, 验证test-time scaling
 - **Google DeepMind: Gemini Robotics** ([paper](https://arxiv.org/pdf/2503.20020), 2025.3.25): Gemini 2.0构建的Gemini Robotics-ER（具身推理模型）和Gemini Robotics主模型, 50 Hz
+- 
 
-**最新VLA工作**：
+### **3.5.3 最新VLA工作**：
+
+- **BridgeVLA** ([paper](https://arxiv.org/abs/2506.07961) | [code](https://github.com/BridgeVLA/BridgeVLA), CASIA, 字节Seed, UCAS, FiveAges, 南大, 2025.6.7): 将3D信息在2D空间中对齐
+- **TrackVLA** ([paper](https://arxiv.org/pdf/2505.23189) | [code](https://github.com/wsakobe/TrackVLA), 北大, Galbot, 北航, 北师大, BAAI, 2025.5.29): 实现实时目标检测与导航
+- **OneTwoVLA** ([paper](https://arxiv.org/pdf/2505.11917) | [code](https://github.com/Fanqi-Lin/OneTwoVLA), 清华, 上海期智, 上海AI Lab, 复旦, Spirit AI, 2025.5.17): 同时实现推理与动作执行
+- **MoManipVLA** ([paper](https://arxiv.org/pdf/2503.13446) | [project](https://gary3410.github.io/momanipVLA/), 北邮，NTU, 清华, CVPR25, 2025.3.17): 解决移动操作任务的VLA
+- **TLA** ([paper](https://arxiv.org/pdf/2503.08548) | [project](https://sites.google.com/view/tactile-language-action/), 三星，自动化所, BAAI, 2025.3.11): 额外引入触觉模态实现更精准的抓取
+- **PointVLA** ([paper](https://arxiv.org/pdf/2503.07511) | [project](https://pointvla.github.io/), 美的, 上海大学, 华东师大, 2025.3.10): 利用点云对2D VLA进行微调以学习更好的空间适应性
 - **SafeVLA** ([paper](https://arxiv.org/abs/2503.03480) | [code](https://github.com/PKU-Alignment/SafeVLA), 北大, 2025.3.5): 解决传统VLA模型在抓取和导航任务中的不安全行为
 - **HybridVLA** ([paper](https://arxiv.org/pdf/2503.10631) | [code](https://github.com/PKU-HMI-Lab/Hybrid-VLA), 北大, 2025.3.17): 用统一模型集成扩散和自回归动作预测，2.7B 和 7B模型
 - **DexVLA** ([paper](https://arxiv.org/pdf/2502.05855) | [code](https://github.com/juruobenruo/DexVLA), 美的, 东南大学, 2025.2.9): Diffusion expert 1B，采用多个action head
