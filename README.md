@@ -1066,6 +1066,7 @@ RealSense，[RealSense Ros 开发套件](https://github.com/IntelRealSense/reals
 | [PyBullet](https://pybullet.org/wordpress/) | [Calvin](https://github.com/mees/calvin?tab=readme-ov-file)<br>[Ravens](https://github.com/google-research/ravens)<br>[VimaBench](https://github.com/vimalabs/VimaBench) |
 | [Genesis](https://genesis-embodied-ai.github.io/) ||
 | [SOFA](https://github.com/sofa-framework/sofa/)| 常用于软体机器人的仿真 |
+| [GenieSim](https://github.com/AgibotTech/genie_sim)| [A simulation and benchmark framework from AgiBot.](http://agibot-world.com/sim-evaluation/docs) |
 
 **教程**：
 - **Isaac 101：** [Blog](https://axi404.top/tags/isaac%20101) by Axi404.
