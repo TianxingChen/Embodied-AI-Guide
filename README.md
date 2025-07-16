@@ -142,6 +142,8 @@
 
 * 斯坦福机器人学导论：[website](https://www.bilibili.com/video/BV17T421k78T)
 
+* Cyber Nachos, [website](https://cybernachos.github.io/)
+
 * 共建全网最全具身智能知识库 [6]: [website](https://yv6uc1awtjc.feishu.cn/wiki/WPTzw9ON0ivIVrkLjVocNZh8nLf)
 
 * Awesome-Embodied-AI-Job (具身智能招贤榜): [Repo](https://github.com/StarCycle/Awesome-Embodied-AI-Job/tree/main)
