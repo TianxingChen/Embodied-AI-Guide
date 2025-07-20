@@ -362,7 +362,9 @@
 
 * Blog:  [具身智能Vision-Language-Action的思考](https://zhuanlan.zhihu.com/p/9880769870), [zhihu](https://www.zhihu.com/question/655570660/answer/87040917575)
 
-* Survey: [A Survey on Vision-Language-Action Models for Embodied AI](https://arxiv.org/abs/2405.14093), 2024.11.28
+* Survey:
+  - A Survey on Vision-Language-Action Models: An Action Tokenization Perspective ([paper](https://arxiv.org/abs/2507.01925) | [repo](https://github.com/Psi-Robot/Awesome-VLA-Papers), 2025.07.02)
+  - A Survey on Vision-Language-Action Models for Embodied AI ([paper](https://arxiv.org/abs/2405.14093), 2024.11.28)
 
 ### **3.5.1 经典工作**：
 
