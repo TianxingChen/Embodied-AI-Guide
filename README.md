@@ -1,3 +1,4 @@
+![](./files/Embodied-AI-Guide-logo.png)
 <h1 align="center">具身智能技术指南 Embodied-AI-Guide</h1>
 
 <p align="center"> </p>
