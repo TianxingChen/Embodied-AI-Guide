@@ -860,6 +860,7 @@ CS231n (斯坦福计算机视觉课程): [website](https://cs231n.stanford.edu/s
 * 状态方程
 * 状态反馈与最优控制
 * **LQR控制** [BiliBili](https://www.bilibili.com/video/BV1Ng4y1V7JQ)
+* **CMU 16-745 Optimal Control** 涵盖从数值优化到最优化理论, [Website](https://optimalcontrol.ri.cmu.edu/), [Youtube](https://www.youtube.com/playlist?list=PLZnJoM76RM6IAJfMXd1PgGNXn3dxhkVgI), [Bilibili](https://space.bilibili.com/504273533/lists/6271656?type=season)
 
 ### 4.1.3 先进控制技术
 * 鲁棒控制
