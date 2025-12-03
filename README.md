@@ -159,6 +159,7 @@
   * DeepTimber-地瓜机器人社区: [website](https://developer.d-robotics.cc/forumList?id=156&title=Deeptimber)
   * HuggingFace LeRobot (Europe, check the Discord): [website](https://github.com/huggingface/lerobot)
   * K-scale labs (US, check the Discord): [website](https://kscale.dev/)
+  * OpenLoong开源社区: [website](https://www.openloong.org.cn/cn)
 
 <section id="algorithm"></section>
 
@@ -1044,7 +1045,7 @@ RealSense，[RealSense Ros 开发套件](https://github.com/IntelRealSense/reals
 | [World Labs](https://www.worldlabs.ai/) | | 专注于空间智能, 致力于打造大型世界模型(LWM), 以感知、生成并与 3D 世界进行交互。 [相关介绍](https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HEH5X2ejkAoWy1ZXj8DlZO_Y2Q7PsYX-3ID-rfr5&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2Fi58_yTFtt904haKezJgr1Q) |
 | [星动纪元](https://www.robotera.com) | [Star1人形](https://www.robotera.com/goods/1.html)<br> [XHAND1灵巧手](https://www.robotera.com/goods/2.html) | |
 | [加速进化](https://boosterobotics.com/zh/) | [Booster T1人形](https://boosterobotics.com/zh/store/)|  |
-| [青龙机器人](https://www.openloong.net/) |  |  |
+| [人形机器人（上海）有限公司](https://www.openloong.net/) | [青龙机器人](https://www.openloong.org.cn/cn) | 全尺寸通用人形机器人，提供开源硬件设计图纸、软件框架代码、算法包和全链仿真工具。 |
 | [云深处科技](https://www.deeprobotics.cn/) |  [绝影X30四足机器人](https://www.deeprobotics.cn/robot/index/product3.html)<br> [Dr.01人形机器人](https://www.deeprobotics.cn/robot/index/humanoid.html) |  |
 | [松应科技](http://www.orca3d.cn/) |  | 具身智能仿真平台供应商 |
 | [光轮智能](https://lightwheel.net/) |  | 具身智能数据平台 |
@@ -1108,7 +1109,7 @@ RealSense，[RealSense Ros 开发套件](https://github.com/IntelRealSense/reals
 * **BridgeData V2**[website](https://rail-berkeley.github.io/bridgedata/)：包含60,096条轨迹数据，涵盖24个环境和13类技能，支持基于目标图像或自然语言指令的多任务开放词汇学习。数据主要采集自7个玩具厨房环境及多样桌面、洗衣机等场景，轨迹包括50,365条远程操控示范和9,731条脚本策略执行。每条轨迹均标注对应自然语言任务描述，促进跨环境和跨机构的技能泛化研究。
 * **Ego4DSounds** [website](https://ego4dsounds.github.io/)：作为Ego4D大规模第一人称视角数据集的多模态子集，包含超过120万条视频剪辑，覆盖3000多个不同日常场景和行为，如烹饪、清洁、购物和社交等。数据强调动作与环境声音的高度对应，配备带时间戳的动作叙述，支持具身智能中动作感知、多模态融合及声音生成等任务的研究。
 * **RH20T**[website](https://rh20t.github.io/)：人机交互数据集，包含丰富的人脸和语音信息，使用时需注意隐私保护，仅限模型训练。数据原始规模约40TB，提供尺寸缩减版（约5TB RGB，10TB RGB-D）。包含7组RGB视频及对应深度数据，附带相机标定和机器人关节角度信息。数据通过Google Drive和百度云公开下载。
-
+* **白虎数据集** [website](https://www.openloong.org.cn/cn/dataset): 大规模**异构机器人**数据集，首批开源数据聚焦四款主流机器人本体（青龙机器人、智元A2D、傅利叶GR2、乐聚夸父）与两类典型末端执行器，覆盖工业制造、家居家政、餐饮服务、商超药店和通用抓取放置五大场景，任务类型超过30类，共开放10万余条高质量任务数据，面向具身智能算法训练、模型验证和跨平台评估提供坚实基础。
 
 
 <section id="paper_list"></section>
