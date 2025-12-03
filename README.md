@@ -917,7 +917,10 @@ SLAM(Simultaneous Locolization And Mapping)在定位的同时完成地图的构�
 
 * ROS基础:
   * 具身智能ROS1基础: [website](http://www.autolabor.com.cn/book/ROSTutorials/)
-  * 具身智能ROS2基础: [website](https://zhangzhiwei-zzw.github.io/ROS2%E5%AD%A6%E4%B9%A0/ROS2/)  
+  * 具身智能ROS2基础: [website](https://zhangzhiwei-zzw.github.io/ROS2%E5%AD%A6%E4%B9%A0/ROS2/)
+  * ROS2 Humble 3 小时入门教程: [ROS2 Humble Crash Course from Open Robotics Discourse](https://discourse.openrobotics.org/t/ros2-humble-3h-tutorial-for-beginners/28500/)
+  * Open Robotics 官网: [Open Robotics](https://openrobotics.org/) 是 ROS、Gazebo 和 Open-RMF 等开源机器人软件平台背后的组织，官网提供 ROS / Gazebo / Open-RMF 的官方入口、文档与社区动态，适合作为 ROS 生态的总入口。
+
 * 常用的库 
   * cuRobo：[cuRobo](https://curobo.org/), cuRobo是Nvidia的一个利用 CUDA 加速的机器人库, 提供了一套高效的机器人算法, 主要通过并行计算显著提升性能, 包括但不限于IK, 碰撞检测, 路径规划等。
   * IKFast：[IKFast](https://moveit.github.io/moveit_tutorials/doc/ikfast/ikfast_tutorial.html), 经典IK库。
@@ -1073,6 +1076,7 @@ RealSense，[RealSense Ros 开发套件](https://github.com/IntelRealSense/reals
 | [Genesis](https://genesis-embodied-ai.github.io/) ||
 | [SOFA](https://github.com/sofa-framework/sofa/)| 常用于软体机器人的仿真 |
 | [GenieSim](https://github.com/AgibotTech/genie_sim)| [A simulation and benchmark framework from AgiBot.](http://agibot-world.com/sim-evaluation/docs) |
+| [Gazebo](https://gazebosim.org) | 通用机器人仿真平台，由 [Open Robotics](https://openrobotics.org/) 维护，和 ROS / ROS 2 深度集成，适合移动机器人、仓储物流等场景的仿真 |
 
 **教程**：
 - **Isaac 101：** [Blog](https://axi404.top/tags/isaac%20101) by Axi404.
