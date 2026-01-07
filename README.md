@@ -172,7 +172,7 @@
 > 这个部分是关于具身中常用技巧的分享
 
 * 点云降采样: [zhihu](https://zhuanlan.zhihu.com/p/558683732?utm_campaign=shareopn&utm_medium=social&utm_psn=1772067996070236160&utm_source=wechat_session), 包括随机降采样、均匀降采样、最远点降采样、法线空间降采样等, 需要了解清楚每一种降采样的优劣, 这个技巧的选择对于3D应用来说是至关重要的。
-* 手眼标定：[github](https://github.com/fishros/handeye-calib), 手眼标定用于确定相机和机械臂之间以及相机与相机之间的相对位置, 大部分Project的开始都需要做一次手眼标定, 分为眼在手上和眼在手外。
+* 手眼标定：[github](https://github.com/ootts/EasyHeC) or [github](https://github.com/fishros/handeye-calib), 手眼标定用于确定相机和机械臂之间以及相机与相机之间的相对位置, 大部分Project的开始都需要做一次手眼标定, 分为眼在手上和眼在手外。
 
 
 <section id="foundation-models"></section>
