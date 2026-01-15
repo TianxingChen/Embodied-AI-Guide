@@ -15,7 +15,7 @@
 ### 🧑‍💻 Related Open-source Projects｜相关开源项目
 
 ⭐️ Lumina Robotics Talent Call (具身智能招贤榜): [Repo](https://github.com/StarCycle/Awesome-Embodied-AI-Job/tree/main)<br>
-⭐️ DataWhale Easy-Embodied: [Repo](https://github.com/datawhalechina/every-embodied)
+⭐️ Datawhale Easy-Embodied: [Repo](https://github.com/datawhalechina/every-embodied)
 
 ## 🦉 Lumina具身智能社区: [点击访问](https://lumina-embodied.ai)
 
@@ -103,7 +103,7 @@ bash collect_data.sh ${task_name} ${task_config} ${gpu_id}
 
 **社区 / 社交媒体（长期跟进价值高）**  
 - 公众号：**石麻日记（强烈推荐）**、Lumina具身智能、机器之心、新智元、量子位、具身智能研究室、具身纪元、Human Five、Xbot具身知识库、具身智能之心、自动驾驶之心、3D视觉工坊、将门创投、RLCN强化学习研究、CVHub  
-- 博主（小红书）：穆尧_YaoMarkMu、许华哲Harry、周博宇、高飞、李弘扬、朱政、丁琰、YY硕、Mango-Man、RHOSLab #PI-李永露、正合时宜、心言任永亮、York Yang-Dyna Robotics、哲伦班长
+- 博主（小红书）：WhynotTV、穆尧_YaoMarkMu、许华哲Harry、周博宇、高飞、李弘扬、朱政、丁琰、YY硕、Mango-Man、RHOSLab #PI-李永露、正合时宜、心言任永亮、York Yang-Dyna Robotics、哲伦班长
 
 **实验室与学术生态参考**  
 - Robotics 实验室总结：[zhihu link1](https://zhuanlan.zhihu.com/p/682671294?utm_psn=1782122763157188608) ｜ [zhihu link2](https://zhuanlan.zhihu.com/p/682692024?utm_psn=1782122945184796672)  
@@ -130,6 +130,9 @@ Science Robotics, TRO, IJRR, JFR, RSS, RAL, IROS, ICRA, ICCV, ECCV, ICML, CVPR, 
 **年度趋势总结**  
 - State of Robot Learning (Dec 2025)：[website](https://vedder.io/misc/state_of_robot_learning_dec_2025.html)
 
+- 许华哲 - 具身智能：2025回望，[website](https://zhuanlan.zhihu.com/p/1983661736180589668)
+
+- 林天威 - 具身VLA的2025：从 Demo 到通用的距离，[website](https://zhuanlan.zhihu.com/p/1989799567177307432)
 
 ## 🍎 (4) Algorithm - 算法篇
 
