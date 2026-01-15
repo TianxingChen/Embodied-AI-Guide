@@ -114,7 +114,7 @@ bash collect_data.sh ${task_name} ${task_config} ${gpu_id}
 Science Robotics, TRO, IJRR, JFR, RSS, RAL, IROS, ICRA, ICCV, ECCV, ICML, CVPR, NeurIPS, CoRL, ICLR, AAAI, ACL
 
 **长期跟进研究进展与选题调研**
-
+ 
 - Awesome Humanoid Robot Learning（Yanjie Ze）：[repo](https://github.com/YanjieZe/awesome-humanoid-robot-learning)  
 - Paper Reading List（DeepTimber Community）：[repo](https://github.com/DeepTimber-Robot-Lab/Paper-Reading-List)  
 - Paper List（Yanjie Ze）：[repo](https://github.com/YanjieZe/Paper-List)  
@@ -126,6 +126,7 @@ Science Robotics, TRO, IJRR, JFR, RSS, RAL, IROS, ICRA, ICCV, ECCV, ICML, CVPR, 
 - awesome-embodied-vla / va / vln：[repo](https://github.com/jonyzhang2023/awesome-embodied-vla-va-vln)  
 - Awesome Affordance Learning：[repo](https://github.com/hq-King/Awesome-Affordance-Learning)  
 - Embodied AI Paper TopConf：[repo](https://github.com/Songwxuan/Embodied-AI-Paper-TopConf)  
+- Awesome **RL-VLA** for Robotic Manipulation (Haoyuan Deng)：[repo](https://github.com/Denghaoyuan123/Awesome-RL-VLA) 
 
 **年度趋势总结**  
 - State of Robot Learning (Dec 2025)：[website](https://vedder.io/misc/state_of_robot_learning_dec_2025.html)
