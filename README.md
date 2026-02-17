@@ -127,6 +127,7 @@ Science Robotics, TRO, IJRR, JFR, RSS, RAL, IROS, ICRA, ICCV, ECCV, ICML, CVPR, 
 - Awesome Affordance Learning：[repo](https://github.com/hq-King/Awesome-Affordance-Learning)  
 - Embodied AI Paper TopConf：[repo](https://github.com/Songwxuan/Embodied-AI-Paper-TopConf)  
 - Awesome **RL-VLA** for Robotic Manipulation (Haoyuan Deng)：[repo](https://github.com/Denghaoyuan123/Awesome-RL-VLA) 
+- Awesome **Efficient-VLA** for Robotic Manipulation (Weifan Guan)：[repo](https://github.com/guanweifan/awesome-efficient-vla) 
 
 **年度趋势总结**  
 - State of Robot Learning (Dec 2025)：[website](https://vedder.io/misc/state_of_robot_learning_dec_2025.html)
