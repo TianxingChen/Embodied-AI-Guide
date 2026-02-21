@@ -2,7 +2,7 @@
 
 <h1 align="center">具身智能技术指南 Embodied-AI-Guide</h1>
 
-> 📚 国内最热门的具身智能技术指南，一个偏「百科全书」定位的具身智能中文知识库与资料索引。欢迎 **Star / 分享 / 提 PR**，欢迎邮件联系 <a href="mailto:lumina.embodiedai@gmail.com">lumina.embodiedai@gmail.com</a> 或 [项目创始人](https://tianxingchen.github.io/) 微信 <code>TianxingChen_2002</code>（请备注机构+姓名与来意）。  
+> 📚 国内最热门的具身智能技术指南，一个偏「百科全书」定位的具身智能中文知识库与资料索引。欢迎 **Star / 分享 / 提 PR**，欢迎邮件联系 <a href="mailto:lumina.embodiedai@gmail.com">lumina.embodiedai@gmail.com</a> 或 [项目发起人](https://tianxingchen.github.io/) 微信 <code>TianxingChen_2002</code>（请备注机构+姓名与来意）。  
 
 ### 📢 News｜项目进展
 
