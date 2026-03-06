@@ -189,18 +189,18 @@ Science Robotics, TRO, IJRR, JFR, RSS, RAL, IROS, ICRA, ICCV, ECCV, ICML, CVPR, 
 
 具身智能硬件涵盖多个技术栈：嵌入式软硬件、机械设计、机器人系统集成与传感器等。它们知识面很杂，但共同目标只有一个：把“算法”变成真实世界里稳定可复现的系统。关于硬件学习，最有效的方式几乎永远是 **从实践出发**：先做出一个能跑起来的最小系统，再逐步扩展复杂度与可靠性。
 
-- [(1) Embedded —— 嵌入式](#embedded)
-- [(2) Mechanical Design —— 机械设计](#mechanical)
-- [(3) Robot System Design —— 机器人系统设计](#robosystem)
-- [(4) Sensors —— 传感器](#sensors)
-  - [(4.1) 深度相机（Depth Camera）](#sensors)
-- [(5) Tactile Sensing —— 触觉感知](#tactile)
-  - [(5.1) 视触觉传感器](#tactile)
-  - [(5.2) 电子皮肤](#tactile)
-  - [(5.3) 触觉应用与算法](#tactile)
-  - [(5.4) 传感器购买](#tactile)
-- [(6) Data Collection —— 数据采集硬件](#data_collection)
-- [(7) Companies —— 公司与硬件生态](#companies)
+- [(1) Embedded —— 嵌入式](./topics/hardware.md#embedded)
+- [(2) Mechanical Design —— 机械设计](./topics/hardware.md#mechanical)
+- [(3) Robot System Design —— 机器人系统设计](./topics/hardware.md#robosystem)
+- [(4) Sensors —— 传感器](./topics/hardware.md#sensors)
+  - [(4.1) 深度相机（Depth Camera）](./topics/hardware.md#sensors)
+- [(5) Tactile Sensing —— 触觉感知](./topics/hardware.md#tactile)
+  - [(5.1) 视触觉传感器](./topics/hardware.md#tactile)
+  - [(5.2) 电子皮肤](./topics/hardware.md#tactile)
+  - [(5.3) 触觉应用与算法](./topics/hardware.md#tactile)
+  - [(5.4) 传感器购买](./topics/hardware.md#tactile)
+- [(6) Data Collection —— 数据采集硬件](./topics/hardware.md#data_collection)
+- [(7) Companies —— 公司与硬件生态](./topics/hardware.md#companies)
 
 
 <section id="acknowledgement"></section>
