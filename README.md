@@ -211,7 +211,7 @@ If you find this repository helpful, please consider citing:
 ```
 @misc{embodiedaiguide2025,
   title = {Embodied-AI-Guide},
-  author = {Embodied-AI-Guide-Contributors, Lumina-Embodied-AI-Community},
+  author = {Embodied-AI-Guide-Contributors, Lumina-Embodied-AI-Community, Tianxing Chen},
   month = {January},
   year = {2025},
   url = {https://github.com/tianxingchen/Embodied-AI-Guide},
