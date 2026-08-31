@@ -107,7 +107,7 @@ Vision Foundation Models 的核心价值不在于“替代控制”，而在于*
 |---|---|---|---|
 | MuJoCo Playground | [link](https://playground.mujoco.org/) | legged-gym | [link](https://github.com/leggedrobotics/legged_gym) |
 | Isaac Lab | [link](https://isaac-sim.github.io/IsaacLab/main/index.html) |  |  |
-| SAPIEN | [link](https://sapien.ucsd.edu/) |  |  |
+| SAPIEN | [link](https://sapien-sim.github.io/docs/) |  |  |
 | Genesis | [link](https://github.com/Genesis-Embodied-AI/Genesis) |  |  |
 
 **小结**：  
