@@ -88,7 +88,7 @@ Vision Foundation Models 的核心价值不在于“替代控制”，而在于*
 | MPC 入门 | 华工机器人实验室：MPC 从公式到代码 | bilibili：[link](https://www.bilibili.com/video/BV1U54y1J7wh) / 代码：[link](https://gitee.com/clangwu/mpc_control.git) | 从 PID 过渡到 MPC，含仿真与代码 |
 | RL 入门 | 强化学习的数学原理（西湖大学） | bilibili：[link](https://space.bilibili.com/2044042934/channel/collectiondetail?sid=748665) / 书+代码：[link](https://github.com/MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning) | 数学推导体系化，适合打地基 |
 | DRL 速览 | Abbeel 6 Lectures | [link](https://www.youtube.com/watch?v=2GwBez0D20A) | 六讲概览 DRL，快速建立框架 |
-| DRL 系统课 | Berkeley CS285 | 网站：[link](https://rail.eecs.berkeley.edu/deeprlcourse/) / YouTube：[link](https://www.youtube.com/playlist?list=PL_iWQOsE6TfVYGEGiAOMaOzzv41Jfm_Ps) | Levine 主讲，内容详尽 |
+| DRL 系统课 | Berkeley CS 185/285（原 CS285） | 网站：[link](https://rail.eecs.berkeley.edu/deeprlcourse/) / YouTube：[link](https://www.youtube.com/playlist?list=PL_iWQOsE6TfVYGEGiAOMaOzzv41Jfm_Ps) | Levine 主讲，内容详尽 |
 | DRL 中文课 | 李宏毅强化学习 | [link](https://www.bilibili.com/video/BV1XP4y1d7Bk) | 搭配实践（Gymnasium 等）较友好 |
 | 模仿学习 | LAMDA：IL 简洁教程 | [link](https://www.lamda.nju.edu.cn/xut/Imitation_Learning.pdf) | 结构清晰，入门友好 |
 | 真实机器人 IL | RSS 2024 Workshop 教程 | [link](https://www.bilibili.com/video/BV1Fx4y1s7if) | 从真实机器人监督学习的角度讲落地问题 |
@@ -199,7 +199,7 @@ VLA（Vision-Language-Action）可以理解为“把视觉-语言模型的能力
 
 </details>
 
-### (5.2) 分层双系统 VLA（2025.05 更新）⭐
+### (5.2) 分层双系统 VLA ⭐
 
 近一年一个非常强的范式是“分层双系统”：  
 **System 2**（慢系统）负责理解与规划（通常是 VLM/LLM），输出语言/符号/latent 的中间表示；  
@@ -226,8 +226,9 @@ VLA（Vision-Language-Action）可以理解为“把视觉-语言模型的能力
 | Psi-R1（灵初智能） | [link](https://www.jiqizhixin.com/articles/2025-03-03-9) | 2025.04.27 | 分层端到端 VLA + RL，test-time scaling |
 | Gemini Robotics | [link](https://arxiv.org/pdf/2503.20020) | 2025.03.25 | 50 Hz |
 | Gemini Robotics on-device | [link](https://deepmind.google/discover/blog/gemini-robotics-on-device-brings-ai-to-local-robotic-devices/) | 2025.06.24 | 设备端部署导向 |
+| Gemini Robotics（系列入口） | [link](https://deepmind.google/models/gemini-robotics/) | 滚动更新 | 后续版本转向全身智能（Whole-Body Intelligence） |
 
-### (5.3) 最新 VLA 工作（滚动更新）
+### (5.3) 2025 年代表工作
 
 <details>
 <summary><b>展开：2025 年以来的代表工作</b></summary>
@@ -253,8 +254,27 @@ VLA（Vision-Language-Action）可以理解为“把视觉-语言模型的能力
 
 </details>
 
+### (5.4) 2026 年的图景：VLA 只是其中一类
+
+前面几节的工作几乎都叫「某某 VLA」。但到 2026 年，动作模型的形态已经不止这一种，读论文时会频繁碰到几个新缩写。按**动作是怎么生成的**来分，大致是这几类：
+
+| 家族 | 动作从哪来 | 直观理解 | 代表工作 |
+|---|---|---|---|
+| **VLA**（Vision-Language-Action） | 视觉 + 语言直接映射到动作 | 看一眼、听指令、直接动 | π0 / π0.5、GR00T N1 系列、RDT-1B、OpenVLA |
+| **VA**（Vision-Action） | 只吃视觉，不接受语言条件 | 任务固定时更轻、更快 | ACT、Diffusion Policy 及其变体 |
+| **WAM**（World-Action Model） | 先用世界模型预测「接下来会看到什么」，再从预测中解出动作 | 先在脑子里想一遍再动手 | 入门可先读上一节的 WorldVLA；此后出现了 FastWAM、X-WAM 等专做此事的一类 |
+| **记忆增强**（Memory-Augmented） | 在策略内部显式维护跨时刻的记忆 | 解决「我刚才把盖子放哪了」 | 这类任务的评测可看 RMBench 基准 |
+
+还有一组和本体相关的缩写：**WBC**（Whole-Body Control，全身控制）与 **WBI**（Whole-Body Intelligence，全身智能），指把控制目标从「机械臂末端」扩展到躯干、腿、头等整个身体，是人形机器人方向的主线之一，详见[控制篇](./control.md)。
+
+**这几个家族并不互斥。** 实际论文里经常是叠加的——一个模型可以既是 VLA、又带世界模型预测、还加了记忆模块。所以看到新工作时，比记住它叫什么更有用的是问三个问题：**动作表示是什么**（连续回归 / 离散 token / 扩散）、**条件里有没有语言**、**有没有显式预测未来**。这三条基本就能定位它在上面这张表里的位置，也是复现时最先要搞清楚的三件事。
+
+> 🌱 **新手建议**：不要一上来就横向啃十几个 foundation model。更快的路径是先拿 ACT 或 Diffusion Policy 这类结构简单的基线，把「采数据 → 训练 → 在仿真里评测」这条链路完整跑通一遍（可以直接用主页第 2 章的实战教程），先建立起对数据格式、动作维度、评测指标的手感，再回头读 π0、GR00T 这类大模型的论文，会清楚很多。
+
+**去哪找可运行的实现？** 这些模型的开源实现比较分散，两个地方能省不少事：[LeRobot](https://github.com/huggingface/lerobot) 提供了统一的数据集格式和多个策略的训练代码，它的数据格式目前基本是通用底座；[XPolicyLab](https://github.com/XPolicyLab/XPolicyLab) 把数十个策略收敛到了同一套部署接口，适合需要在同一批任务上横向对比多个模型的场景。
+
 **小结**：  
-VLA 的研究正在从“把动作 token 化”走向“更可控、更可部署、更长程”的系统形态：分层架构、world model、3D 表征与安全对齐都在加速融合。做项目时建议优先关注动作表示与数据配方，它们往往比换 backbone 更影响最终表现。
+VLA 的研究正在从「把动作 token 化」走向「更可控、更可部署、更长程」的系统形态：分层架构、world model、3D 表征与安全对齐都在加速融合。一个值得注意的趋势是，随着公开基准和统一评测流程变多，靠换 backbone 刷点的空间在收窄，**数据配方与动作表示**反而成了更关键的变量。做项目时建议优先关注这两件事，它们往往比换一个更大的 backbone 更影响最终表现。
 
 <section id="cv"></section>
 
@@ -272,14 +292,14 @@ VLA 的研究正在从“把动作 token 化”走向“更可控、更可部署
 
 | 层级 | 关注点（具身视角） | 代表资源 | 链接 |
 |---|---|---|---|
-| 2D Vision | 稳定表征与泛化：backbone、对比学习、生成式表征 | CNN 概念 / ResNet / ViT / Swin | CNN：[link](https://easyai.tech/ai-definition/cnn/；ResNet：https://www.bilibili.com/video/BV1P3411y7nn；ViT：https://www.bilibili.com/video/BV15P4y137jb；Swin：https://www.bilibili.com/video/BV13L4y1475U) |
+| 2D Vision | 稳定表征与泛化：backbone、对比学习、生成式表征 | CNN 概念 / ResNet / ViT / Swin | CNN：[link](https://easyai.tech/ai-definition/cnn/)｜ResNet：[link](https://www.bilibili.com/video/BV1P3411y7nn)｜ViT：[link](https://www.bilibili.com/video/BV15P4y137jb)｜Swin：[link](https://www.bilibili.com/video/BV13L4y1475U) |
 | 2D Vision | 表征学习方法论：对比学习与大规模预训练 | 对比学习综述 | [link](https://www.bilibili.com/video/BV19S4y1M7hm) |
-| 2D/4D Gen | 生成式模型（用于表征、合成数据、目标图像等） | 自回归综述 / 扩散综述 / 扩散推导 | 自回归：[link](https://arxiv.org/pdf/2411.05902；扩散：https://arxiv.org/pdf/2209.00796；推导：https://kexue.fm/archives/9119) |
+| 2D/4D Gen | 生成式模型（用于表征、合成数据、目标图像等） | 自回归综述 / 扩散综述 / 扩散推导 | 自回归：[link](https://arxiv.org/pdf/2411.05902)｜扩散：[link](https://arxiv.org/pdf/2209.00796)｜推导：[link](https://kexue.fm/archives/9119) |
 | 3D Vision | 多视几何与三维理解（对重建/位姿/点云感知很关键） | Andreas Geiger 3D Vision | [link](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/computer-vision/) |
 | 3D Vision | 三维重建与理解（偏工程与应用） | GAMES203 | [link](https://www.bilibili.com/video/BV1pw411d7aS) |
-| 3D/Gen | 2D/3D 生成方向梳理 | 论文分类 / 2024 论文整理 | 分类：[link](https://zhuanlan.zhihu.com/p/617510702；2024：https://zhuanlan.zhihu.com/p/700895749) |
-| 4D Vision | 视频理解：时序建模与跨帧一致性（具身中非常常见） | 开山之作 / 串讲 / 综述 | 开山：[link](https://www.bilibili.com/video/BV1mq4y1x7RU；串讲：https://www.bilibili.com/video/BV1fL4y157yA；综述：https://arxiv.org/pdf/2312.17432) |
-| 4D Gen | 视频/4D 生成（用于合成与世界建模相关） | Lilian Weng 视频扩散博客 / 4D generation list | 博客：[link](https://lilianweng.github.io/posts/2024-04-12-diffusion-video/；list：https://github.com/cwchenwang/awesome-4d-generation) |
+| 3D/Gen | 2D/3D 生成方向梳理 | 论文分类 / 2024 论文整理 | 分类：[link](https://zhuanlan.zhihu.com/p/617510702)｜2024：[link](https://zhuanlan.zhihu.com/p/700895749) |
+| 4D Vision | 视频理解：时序建模与跨帧一致性（具身中非常常见） | 开山之作 / 串讲 / 综述 | 开山：[link](https://www.bilibili.com/video/BV1mq4y1x7RU)｜串讲：[link](https://www.bilibili.com/video/BV1fL4y157yA)｜综述：[link](https://arxiv.org/pdf/2312.17432) |
+| 4D Gen | 视频/4D 生成（用于合成与世界建模相关） | Lilian Weng 视频扩散博客 / 4D generation list | 博客：[link](https://lilianweng.github.io/posts/2024-04-12-diffusion-video/)｜list：[link](https://github.com/cwchenwang/awesome-4d-generation) |
 
 ### (6.2) Visual Prompting & Affordance Grounding
 
