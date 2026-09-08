@@ -1,42 +1,38 @@
-![Embodied-AI-Guide](./files/Embodied-AI-Guide-logo.png)
+![](./files/Embodied-AI-Guide-logo.png)
 
-# 具身智能技术指南 Embodied-AI-Guide
+<h1 align="center">具身智能技术指南 Embodied-AI-Guide</h1>
 
-**国内最热门的具身智能技术指南**  
-一份偏「百科全书」定位的具身智能中文知识库与资料索引
+<p align="center">
+  <b>国内最热门的具身智能技术指南</b><br>
+  一份偏「百科全书」定位的具身智能中文知识库与资料索引
+</p>
 
-[从这里开始](#start) · [动手学习](#robotwin) · [认知资料](#info) · [算法篇](#algorithm) · [基础设施篇](#infrastructure) · [控制篇](#control) · [硬件篇](#hardware)
+<p align="center">
+  <a href="#start">从这里开始</a> ·
+  <a href="#robotwin">动手学习</a> ·
+  <a href="#info">认知资料</a> ·
+  <a href="#algorithm">算法篇</a> ·
+  <a href="#infrastructure">基础设施篇</a> ·
+  <a href="#control">控制篇</a> ·
+  <a href="#hardware">硬件篇</a>
+</p>
 
-![GitHub repo stars](https://img.shields.io/github/stars/TianxingChen/Embodied-AI-Guide?style=flat-square)  ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FTianxingChen%2FEmbodied-AI-Guide&label=Total%20Visitors&labelColor=%232ccce4&countColor=%23d9e3f0)  ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)  ![License](https://img.shields.io/badge/License-Non--Commercial-blue?style=flat-square)
+<p align="center"><img src="https://img.shields.io/github/stars/TianxingChen/Embodied-AI-Guide?style=flat-square" alt="GitHub repo stars" height="20"/>  <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FTianxingChen%2FEmbodied-AI-Guide&label=Total%20Visitors&labelColor=%232ccce4&countColor=%23d9e3f0" alt="Visitors" height="20"/>  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square" alt="PRs Welcome" height="20"/>  <img src="https://img.shields.io/badge/License-Non--Commercial-blue?style=flat-square" alt="License" height="20"/></p>
 
 > 📚 本项目希望帮助新人**快速建立领域认知**：以一个实践项目带大家动手入门具身智能，同时以百科全书的形式梳理当前具身智能涉及的主要技术，让大家清楚不同技术能解决什么问题，未来想深入时有头绪。
 >
 > 欢迎 **Star / 分享 / 提 PR**。合作与交流可邮件联系 [lumina.embodiedai@gmail.com](mailto:lumina.embodiedai@gmail.com)，或添加[项目发起人](https://tianxingchen.github.io/)微信 `TianxingChen_2002`（请备注：机构 + 姓名 + 来意）。
 
+### 📢 News｜项目进展
 
+📷 *2026-01-15: Embodied-AI-Guide 完成内容重组*<br>
+⭐️ *2025-12-18: GitHub Stars 突破 10,000*<br>
+❤️ *2025-03-15: Embodied-AI-Guide 正式开源*
 
-## 📢 News｜项目进展
+### 🧑‍💻 Related Projects｜相关开源项目
 
-
-| 时间         | 进展                          |
-| ---------- | --------------------------- |
-| 2026-01-15 | 📷 Embodied-AI-Guide 完成内容重组 |
-| 2025-12-18 | ⭐️ GitHub Stars 突破 10,000   |
-| 2025-03-15 | ❤️ Embodied-AI-Guide 正式开源   |
-
-
-
-
-## 🧑‍💻 Related Projects｜相关开源项目
-
-
-| 项目                      | 简介       | 入口                                                       |
-| ----------------------- | -------- | -------------------------------------------------------- |
-| Lumina Call             | 具身智能招聘   | [Website](https://lumina-embodied.ai/lumina-call)        |
-| Datawhale Easy-Embodied | 具身智能入门教程 | [Repo](https://github.com/datawhalechina/every-embodied) |
-
-
-
+⭐️ Lumina Call（具身智能招聘）：[Website](https://lumina-embodied.ai/lumina-call)<br>
+⭐️ Datawhale Easy-Embodied（具身智能入门教程）：[Repo](https://github.com/datawhalechina/every-embodied)
 
 ## 🦉 Lumina 具身智能社区
 
@@ -44,29 +40,11 @@
 
 ![Lumina 具身智能社区](./files/images/Lumina.png)
 
-## 📖 目录
-
-
-| 章节                                           | 内容概览                                         |
-| -------------------------------------------- | -------------------------------------------- |
-| [🐣 (1) Start From Here](#start)             | 领域定义、学习路线、术语速查与团队介绍                          |
-| [⚒️ (2) 动手学习具身智能操作](#robotwin)               | 基于 RoboTwin 2.0 走通一次操作策略的完整生命周期 |
-| [📄 (3) Useful Info](#info)                  | 方法论、社区生态、论文列表与年度趋势                           |
-| [🍎 (4) Algorithm](#algorithm)               | 工程工具、视觉表征、机器人学习、VLA、导航与具身 + X                |
-| [🏋️‍♂️ (5) Infrastructure](#infrastructure) | 仿真器、基准集与数据集                                  |
-| [🎮 (6) Control](#control)                   | 控制理论、机器人学、SLAM 与工程生态                         |
-| [🦾 (7) Hardware](#hardware)                 | 嵌入式、机械设计、传感器与数据采集硬件                          |
-
-
-
-
 <a id="start"></a>
 
 ## 🐣 (1) Start From Here - 从这里开始
 
 > 具身智能是指一种基于物理实体进行感知和行动的智能系统，其通过智能体与环境的交互获取信息、理解问题、做出决策并实现行动，从而产生智能行为和适应性。
-
-
 
 ### (1.1) How - 如何使用这份指南
 
@@ -81,7 +59,6 @@
 
 不同背景的读者不必从同一处入手，可参考下表选择起点：
 
-
 | 你的背景                | 建议起点                    | 推荐路径                                               |
 | ------------------- | ----------------------- | -------------------------------------------------- |
 | 完全新手 / 在校本科生        | [第 2 章](#robotwin) 动手教程 | (2) 跑通流程 → (3) 建立认知 → (4) 算法篇 → 按兴趣深入              |
@@ -90,13 +67,12 @@
 | 偏硬件 / 嵌入式           | [第 7 章](#hardware) 硬件篇  | (7) 硬件篇 → (6) 控制篇 → (2) 动手教程                       |
 | 想快速了解行业与选题          | [第 3 章](#info) 认知资料     | (3.1) 方法论 → (3.5) 论文列表 → (3.6) 年度趋势                |
 
-
-
-
 ### (1.3) 术语速查表
 
-阅读论文与本指南时高频出现的概念，先建立字面认知即可，细节留给对应章节：
+阅读论文与本指南时高频出现的概念，先建立字面认知即可，细节留给对应章节。
 
+<details>
+<summary><b>展开术语速查表（20 条）</b></summary>
 
 | 术语                              | 一句话解释                               |
 | ------------------------------- | ----------------------------------- |
@@ -121,8 +97,7 @@
 | **WBC（全身控制）**                   | 把控制目标从机械臂末端扩展到躯干、腿、头等整个身体，人形机器人方向常用  |
 | **SLAM**                        | 同时定位与建图，让机器人知道「自己在哪、周围长什么样」         |
 
-
-
+</details>
 
 ### (1.4) About Us - 关于我们
 
@@ -137,8 +112,6 @@
 > **目标**：以 **RoboTwin 2.0** 为例，完整走通一次操作策略的「生命周期」——读论文建立认知、装环境、拿数据、训练 ACT、跑评测。这条链路本身是通用的，换成别的平台也是同样几步。
 >
 > **前置条件**：一块显存不低于 16GB 的显卡（ACT 训练约需 12GB）。官方建议数据采集与策略评测**避开 A / H / V 系列显卡**，详见 [Common Issue](https://robotwin-platform.github.io/doc/common-issue/)。
-
-
 
 ### (2.1) 为什么选择这个教程
 
@@ -156,27 +129,10 @@
 
 ### (2.2) 学习流程
 
-
-| 资源                   | 链接                                                                                                                                                                                   |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| RoboTwin 2.0         | [代码](https://github.com/RoboTwin-Platform/RoboTwin)｜[主页](https://robotwin-platform.github.io/)｜[文档](https://robotwin-platform.github.io/doc/)｜[论文](https://arxiv.org/abs/2506.18088) |
-| XPolicyLab（策略侧代码）    | [代码](https://github.com/XPolicyLab/XPolicyLab)｜[文档](https://robotwin-platform.github.io/doc/usage/xpolicylab.html)                                                                   |
-| 50 个双臂任务说明           | [Tasks Doc](https://robotwin-platform.github.io/doc/tasks/)                                                                                                                          |
-| 官方榜单                 | [Leaderboard](https://robotwin-platform.github.io/leaderboard)                                                                                                                       |
-| 跑完之后可以看看             | [RoboDojo](https://robodojo-benchmark.com/)（仿真 + 真机统一评测）｜[RMBench](https://rmbench.github.io/)（记忆依赖操作）                                                                               |
-
-
-
-| 阶段      | 内容                     | 预计耗时    |
-| ------- | ---------------------- | ------- |
-| (2.2.1) | 了解 RoboTwin 2.0 做了什么   | 约 1 天   |
-| (2.2.2) | 安装平台（含 XPolicyLab 子模块） | 约 0.5 天 |
-| (2.2.3) | 准备数据（下载预采集 / 自行采集）     | 约 0.5 天 |
-| (2.2.4) | 训练 ACT 策略              | 约 1 天   |
-| (2.2.5) | 评测策略并对照榜单              | 约 1 天   |
-
-
-
+**RoboTwin 2.0**：[代码](https://github.com/RoboTwin-Platform/RoboTwin)｜[主页](https://robotwin-platform.github.io/)｜[文档](https://robotwin-platform.github.io/doc/)｜[论文](https://arxiv.org/abs/2506.18088)<br>
+**XPolicyLab（策略侧代码）**：[代码](https://github.com/XPolicyLab/XPolicyLab)｜[文档](https://robotwin-platform.github.io/doc/usage/xpolicylab.html)<br>
+**任务与榜单**：[50 个双臂任务说明](https://robotwin-platform.github.io/doc/tasks/)｜[Leaderboard](https://robotwin-platform.github.io/leaderboard)<br>
+**跑完之后可以看看**：[RoboDojo](https://robodojo-benchmark.com/)（仿真 + 真机统一评测）｜[RMBench](https://rmbench.github.io/)（记忆依赖操作）
 
 #### (2.2.1) 了解 RoboTwin 2.0 做了什么（约 1 天）
 
@@ -194,8 +150,6 @@ cd RoboTwin
 # 若此前已克隆过，补拉子模块即可
 git submodule update --init --recursive XPolicyLab
 ```
-
-
 
 #### (2.2.3) 准备数据（约 0.5 天）
 
@@ -223,8 +177,6 @@ bash collect_data.sh beat_block_hammer demo_randomized 0
 自采数据落在 `data/<task_config>/<task_name>/<embodiment>/data/`，已经是 XPolicyLab 轨迹格式，不需要额外转换。想理解 `demo_clean` 与 `demo_randomized` 的差别，可读[域随机化文档](https://robotwin-platform.github.io/doc/usage/domain-randomization.html)。
 
 > ⚠️ 读取 HDF5 里的图像时**只能**用 `XPolicyLab.utils.process_data.decode_image_bit`。自己写 `cv2.imdecode` 或 PIL 解码会因为历史数据版本的布局差异而静默颠倒 RGB 通道，这是最容易踩、也最难排查的坑。
-
-
 
 #### (2.2.4) 训练 ACT 策略（约 1 天）
 
@@ -272,8 +224,6 @@ bash scripts/eval_policy.sh multitask \
 - 斯坦福机器人学导论：[website](https://www.bilibili.com/video/BV17T421k78T)
 - Cyber Nachos（偏系统与工程思维）：[website](https://cybernachos.github.io/)
 
-
-
 ### (3.2) 社区与自媒体（长期跟进价值高）
 
 **中文（微信公众号）**  
@@ -282,23 +232,19 @@ bash scripts/eval_policy.sh multitask \
 **中文（小红书博主）**  
 WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、周博宇、高飞、李弘扬、朱政、丁琰、YY 硕、Mango-Man、RHOSLab #PI-李永露、正合时宜、心言任永亮、York Yang-Dyna Robotics、哲伦班长
 
-**中英文站点与社区**（这部分有公开链接，适合直接订阅）
+**社区与 wiki**
 
-| 名称 | 链接 | 类型与看点 |
-|---|---|---|
-| Simulately | [website](https://simulately.wiki/) | 社区维护的仿真器 wiki，选仿真器时的第一站 |
-| 巨神研习社 | [website](http://www.jushenyanxishe.com/) | 中文具身智能技术社区 |
-| Import AI（Jack Clark） | [newsletter](https://jack-clark.net/) | 每周一封，偏政策与产业视角，判断力强 |
-| The Batch（DeepLearning.AI） | [newsletter](https://www.deeplearning.ai/the-batch/) | 吴恩达团队的周报，综述性强、门槛低 |
-| Ahead of AI（Sebastian Raschka） | [newsletter](https://magazine.sebastianraschka.com/) | 模型训练与实现细节讲得最清楚的一档 |
-| Humanoid Daily | [website](https://johnkoetsier.com/humanoid-daily/) | 人形机器人行业日更，追产业动态用 |
-| Machine Dawn | [website](https://machinedawn.ai/) | 具身智能与机器人产业观察 |
-| IEEE Spectrum Robotics | [website](https://spectrum.ieee.org/topic/robotics/) | IEEE 官方，硬件与工程报道质量高 |
-| The Robot Report | [website](https://www.therobotreport.com/) | 偏商业化与供应链，了解落地情况 |
-| TWIML AI Podcast | [podcast](https://twimlai.com/podcast/twimlai/) | 长访谈，常有具身方向的一线研究者 |
-| The Robot Brains Podcast | [podcast](https://www.therobotbrains.ai/) | Pieter Abbeel 主持，访谈机器人学习领域研究者 |
+- Simulately（社区维护的仿真器 wiki，选仿真器时的第一站）：[website](https://simulately.wiki/)
+- 巨神研习社：[website](http://www.jushenyanxishe.com/)
 
+**英文 newsletter / 媒体 / 播客**
 
+- Import AI（Jack Clark，偏政策与产业视角）：[newsletter](https://jack-clark.net/)
+- The Batch（DeepLearning.AI，综述性强、门槛低）：[newsletter](https://www.deeplearning.ai/the-batch/)
+- Ahead of AI（Sebastian Raschka，训练与实现细节）：[newsletter](https://magazine.sebastianraschka.com/)
+- Humanoid Daily（人形机器人行业日更）：[website](https://johnkoetsier.com/humanoid-daily/)｜Machine Dawn：[website](https://machinedawn.ai/)
+- IEEE Spectrum Robotics：[website](https://spectrum.ieee.org/topic/robotics/)｜The Robot Report（偏商业化与供应链）：[website](https://www.therobotreport.com/)
+- TWIML AI Podcast：[podcast](https://twimlai.com/podcast/twimlai/)｜The Robot Brains（Pieter Abbeel 主持）：[podcast](https://www.therobotbrains.ai/)
 
 ### (3.3) 实验室与学术生态
 
@@ -306,20 +252,10 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 - 具身智能华人高引榜：[repo](https://github.com/Will-Gao/Embodied_Intelligence)
 - Lumina 具身智能社区：[website](https://lumina-embodied.ai)
 
-
-
 ### (3.4) 高质量会议与期刊（论文检索时重点关注）
 
-
-| 领域        | 会议 / 期刊                                                      |
-| --------- | ------------------------------------------------------------ |
-| 机器人       | Science Robotics, TRO, IJRR, JFR, RSS, RAL, IROS, ICRA, CoRL |
-| 计算机视觉     | CVPR, ICCV, ECCV                                             |
-| 机器学习      | NeurIPS, ICML, ICLR                                          |
-| 人工智能与自然语言 | AAAI, ACL                                                    |
-
-
-
+**机器人**：Science Robotics, TRO, IJRR, JFR, RSS, RAL, IROS, ICRA, CoRL<br>
+**计算机视觉**：CVPR, ICCV, ECCV｜**机器学习**：NeurIPS, ICML, ICLR｜**AI 与 NLP**：AAAI, ACL
 
 ### (3.5) 论文列表（长期跟进研究进展与选题调研）
 
@@ -337,15 +273,11 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 - Awesome **Efficient-VLA** for Robotic Manipulation（Weifan Guan）：[repo](https://github.com/guanweifan/awesome-efficient-vla)
 - Awesome Embodied Data：[project](https://jasper-aaa.github.io/embodied-data-pyramid/)｜[repo](https://github.com/worldbench/awesome-embodied-data-pyramid)｜[arXiv](https://arxiv.org/abs/2607.24744v1)
 
-
-
 ### (3.6) 年度趋势总结
 
 - State of Robot Learning（Dec 2025）：[website](https://vedder.io/misc/state_of_robot_learning_dec_2025.html)
 - 许华哲 - 具身智能：2025 回望：[website](https://zhuanlan.zhihu.com/p/1983661736180589668)
 - 林天威 - 具身 VLA 的 2025：从 Demo 到通用的距离：[website](https://zhuanlan.zhihu.com/p/1989799567177307432)
-
-
 
 <a id="algorithm"></a>
 
@@ -375,8 +307,6 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
   - [(10.2) UAV —— 无人机](./topics/algorithm.md#uav)
   - [(10.3) Autonomous Driving —— 自动驾驶](./topics/algorithm.md#ad)
 
-
-
 <a id="infrastructure"></a>
 
 ## 🏋️‍♂️ (5) Infrastructure - 软件基础设施篇
@@ -389,8 +319,6 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 - [(2) Benchmarks —— 基准集](./topics/infrastructure.md#benchmarks)
 - [(3) Datasets —— 数据集](./topics/infrastructure.md#datasets)
 - [(4) 工具链 —— 数据格式与策略部署](./topics/infrastructure.md#policy-serving)
-
-
 
 <a id="control"></a>
 
@@ -412,8 +340,6 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
   - [(3.3) 里程计与 SLAM](./topics/control.md#slam)
   - [(3.4) 工程生态与工具](./topics/control.md#engineering-stack)
 
-
-
 <a id="hardware"></a>
 
 ## 🦾 (7) Hardware - 硬件篇
@@ -434,8 +360,6 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
   - [(5.4) 传感器购买](./topics/hardware.md#tactile)
 - [(6) Data Collection —— 数据采集硬件](./topics/hardware.md#data_collection)
 - [(7) Companies —— 公司与硬件生态](./topics/hardware.md#companies)
-
-
 
 ## 🤝 Contributing - 参与贡献
 
@@ -460,8 +384,6 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
   url = {https://github.com/tianxingchen/Embodied-AI-Guide},
 }
 ```
-
-
 
 ## 🏷️ License - 许可协议
 
