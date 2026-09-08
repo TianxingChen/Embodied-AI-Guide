@@ -277,6 +277,8 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 
 ### (3.6) 年度趋势总结
 
+- 1,228 篇 VLA 论文里的数据问题（2026.06，实证分析：VLA 论文量同比增长 5 倍）：[website](https://labelstud.io/blog/vla-robot-data-problem/)
+- VLA 数据集 / 基准 / 数据引擎综述（2026.04）：[arXiv](https://arxiv.org/abs/2604.23001)｜[repo](https://github.com/ziyaow1010/vla-datasets-benchmarks)
 - State of Robot Learning（Dec 2025）：[website](https://vedder.io/misc/state_of_robot_learning_dec_2025.html)
 - 许华哲 - 具身智能：2025 回望：[website](https://zhuanlan.zhihu.com/p/1983661736180589668)
 - 林天威 - 具身 VLA 的 2025：从 Demo 到通用的距离：[website](https://zhuanlan.zhihu.com/p/1989799567177307432)
@@ -297,7 +299,8 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
   - [(5.0) 参考与综述](./topics/algorithm.md#vla)
   - [(5.1) 经典工作](./topics/algorithm.md#vla)
   - [(5.2) 分层双系统 VLA](./topics/algorithm.md#vla)
-  - [(5.3) 最新 VLA 工作](./topics/algorithm.md#vla)
+  - [(5.3) 2025 年代表工作](./topics/algorithm.md#vla)
+  - [(5.4) 2026 进展](./topics/algorithm.md#vla)
 - [(6) Computer Vision —— 计算机视觉](./topics/algorithm.md#cv)
   - [(6.1) 2D / 3D / 4D Vision](./topics/algorithm.md#cv)
   - [(6.2) Visual Prompting & Affordance](./topics/algorithm.md#cv)

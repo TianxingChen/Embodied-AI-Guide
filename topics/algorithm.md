@@ -162,6 +162,7 @@ VLA（Vision-Language-Action）可以理解为“把视觉-语言模型的能力
 |---|---|---|---|
 | Blog | 具身智能 Vision-Language-Action 的思考 | [link](https://zhuanlan.zhihu.com/p/9880769870) |  |
 | Blog | 具身智能 VLA 的思考（问答） | [link](https://www.zhihu.com/question/655570660/answer/87040917575) |  |
+| Survey | 数据视角：数据集、基准与数据引擎 ⭐ | [link](https://arxiv.org/abs/2604.23001) / [repo](https://github.com/ziyaow1010/vla-datasets-benchmarks) | 2026.04；持续更新，论证「数据基础设施才是瓶颈」 |
 | Survey | Action Tokenization 视角 VLA Survey | [link](https://arxiv.org/abs/2507.01925) / [link](https://github.com/Psi-Robot/Awesome-VLA-Papers) | 2025.07.02 |
 | Survey | VLA for Embodied AI Survey | [link](https://arxiv.org/abs/2405.14093) | 2024.11.28 |
 
@@ -254,7 +255,7 @@ VLA（Vision-Language-Action）可以理解为“把视觉-语言模型的能力
 
 </details>
 
-### (5.4) 2026 年的图景：VLA 只是其中一类
+### (5.4) 2026 进展 ⭐
 
 前面几节的工作几乎都叫「某某 VLA」。但到 2026 年，动作模型的形态已经不止这一种，读论文时会频繁碰到几个新缩写。按**动作是怎么生成的**来分，大致是这几类：
 
@@ -269,12 +270,44 @@ VLA（Vision-Language-Action）可以理解为“把视觉-语言模型的能力
 
 **这几个家族并不互斥。** 实际论文里经常是叠加的——一个模型可以既是 VLA、又带世界模型预测、还加了记忆模块。所以看到新工作时，比记住它叫什么更有用的是问三个问题：**动作表示是什么**（连续回归 / 离散 token / 扩散）、**条件里有没有语言**、**有没有显式预测未来**。这三条基本就能定位它在上面这张表里的位置，也是复现时最先要搞清楚的三件事。
 
+#### 四个正在发生的变化
+
+**(1) 从「只学演示」到「从经验里学」。** 纯模仿演示数据很容易停在「成功一半」的水平，再往上堆演示的边际收益迅速衰减。π\*0.6 提出的 [RECAP](https://arxiv.org/abs/2511.14759) 把演示、自主 rollout 与人工介入纠正混在一起做 RL（用 advantage 条件化绕开 flow matching 模型拿不到 action log-prob 的问题），在叠衣服、组装纸箱、做咖啡这类长任务上把吞吐翻倍、失败率减半。**RL 后训练正在从加分项变成必选项**，国内工作里 Hy-VLA 的 [FlowPRO](https://wuyeyexvnainai.github.io/flowpro/) 偏好优化、LingBot-VLA 的 RL 后训练都是同一思路。
+
+**(2) 记忆从可选模块变成架构的一部分。** 长任务里「刚才把盖子放哪了」是硬需求。π0.6-MEM 与 [π0.7](https://arxiv.org/abs/2604.15483) 把记忆系统直接做进主干（对历史帧做时空压缩后输出固定数量 token），Hy-VLA 也带了多帧历史的紧凑记忆编码器。评测侧有 [RMBench](https://rmbench.github.io/) 专测记忆依赖任务。
+
+**(3) 世界模型进入推理链路。** 不再是「另做一个世界模型」，而是把未来预测嵌进策略内部：[InternVLA-A1.5](https://arxiv.org/abs/2607.04988) 用可学习的 foresight token 去查询未来动态、训练时由一个冻结的视频生成模型监督，推理时把视频分支丢掉以控制延迟；NVIDIA 的 GR00T N2 则直接建在 DreamZero 这套 World-Action Model 框架上。
+
+**(4) 从桌面延伸到全身。** [Gemini Robotics 2](https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/)（2026.07）是个明确的分水岭：此前几代基本是「上半身 / 桌面」模型，这一代开始控制完整人形——从脚到指尖，配套还拆成了三个模型（VLA 负责运动控制、ER 2 负责具身推理与多机协同、On-Device 2 负责本地部署）。
+
+> 顺着这四条看，会发现**竞争焦点已经从「架构」转向「数据配方 + 评测」**。2026 年那篇[数据视角的 VLA 综述](https://arxiv.org/abs/2604.23001)把这点讲得很直接：未来的进展更多取决于数据引擎与评测协议的协同设计，而不是模型架构，因此应当把数据基础设施当作一等研究问题。
+
+#### 2026 代表工作
+
+| 工作 | 链接 | 机构 | 时间 | 一句话看点 |
+|---|---|---|---|---|
+| VLAct | [paper](https://arxiv.org/abs/2608.27550) / [repo](https://github.com/starVLA/VLAct) / [主页](https://starvla.github.io/VLAct/) | 港中文 / 思谋等 | 2026.08 | 表征驱动的继续预训练；只用开源数据做出可复用动作主干 |
+| Gemini Robotics 2 | [blog](https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/) | Google DeepMind | 2026.07 | 全身智能；VLA / ER / On-Device 三模型分工 |
+| InternVLA-A1.5 | [paper](https://arxiv.org/abs/2607.04988) / [repo](https://github.com/InternRobotics/InternVLA-A-series) | 上海 AI Lab | 2026.07 | foresight token 查询未来动态，由视频生成模型监督 |
+| Hy-Embodied-0.5-VLA | [paper](https://arxiv.org/abs/2606.14409) / [repo](https://github.com/Tencent-Hunyuan/Hy-Embodied-0.5-VLA) | 腾讯混元 | 2026.06 | 万小时级 UMI 数据 + 记忆编码器 + RL 后训练的完整栈 |
+| π0.7 | [paper](https://arxiv.org/abs/2604.15483) | Physical Intelligence | 2026.04 | 可操控的通用基座；记忆 + 多模态上下文条件 |
+| Xiaomi-Robotics-0 | [paper](https://arxiv.org/abs/2602.12684) / [repo](https://github.com/XiaomiRobotics/Xiaomi-Robotics-0) | 小米 | 2026.02 | 4.7B，面向实时执行；权重与后训练代码开源 |
+| LingBot-VLA | [paper](https://arxiv.org/abs/2601.18692) / [repo](https://github.com/Robbyant/lingbot-vla) | 蚂蚁灵波 | 2026.01 | 两万小时多构型真机预训练；配套开源 GM-100 基准 |
+| UnifoLM-VLA-0 | [repo](https://github.com/unitreerobotics/unifolm-vla) | 宇树科技 | 2026.01 | 面向人形操作；强化空间语义的继续预训练 |
+| InternVLA-A1 | [paper](https://arxiv.org/abs/2601.02456) / [repo](https://github.com/InternRobotics/InternVLA-A-series) | 上海 AI Lab | 2026.01 | 把未来视觉状态与动作作为联合训练目标 |
+| π\*0.6（RECAP） | [paper](https://arxiv.org/abs/2511.14759) / [blog](https://www.pi.website/blog/pistar06) | Physical Intelligence | 2025.11 | 演示 + 自主经验 + 人工纠正混合 RL，吞吐翻倍 |
+| GR00T N1.7 / N2 | [repo](https://github.com/NVIDIA/Isaac-GR00T) | NVIDIA | 2026 | N1.7 已商用早期接入；N2 转向 World-Action Model 架构 |
+
+#### 评测正在变严
+
+一个容易忽略但很实际的变化：**老基准开始饱和、且有记忆效应**，光看 LIBERO 的数字已经不足以说明问题。因此出现了两类补充手段——一是更抗「刷分」的仿真基准（LIBERO-Plus、VLA-Arena、[RoboDojo](https://robodojo-benchmark.com/leaderboard)），二是真机分布式评测：[RoboArena](https://robo-arena.github.io/)（[论文](https://arxiv.org/abs/2506.18123)）不再统一任务，而是让分布在多所机构的评测者自选场景、对策略做双盲两两对比，再聚合成排名。自己做实验时，**至少报一个仿真基准 + 一个真机或第三方榜单**会比只报单一数字可信得多。
+
 > 🌱 **新手建议**：不要一上来就横向啃十几个 foundation model。更快的路径是先拿 ACT 或 Diffusion Policy 这类结构简单的基线，把「采数据 → 训练 → 在仿真里评测」这条链路完整跑通一遍（可以直接用主页第 2 章的实战教程），先建立起对数据格式、动作维度、评测指标的手感，再回头读 π0、GR00T 这类大模型的论文，会清楚很多。
 
 **去哪找可运行的实现？** 这些模型的开源实现比较分散，两个地方能省不少事：[LeRobot](https://github.com/huggingface/lerobot) 提供了统一的数据集格式和多个策略的训练代码，它的数据格式目前基本是通用底座；[XPolicyLab](https://github.com/XPolicyLab/XPolicyLab) 把数十个策略收敛到了同一套部署接口，适合需要在同一批任务上横向对比多个模型的场景。
 
 **小结**：  
-VLA 的研究正在从「把动作 token 化」走向「更可控、更可部署、更长程」的系统形态：分层架构、world model、3D 表征与安全对齐都在加速融合。一个值得注意的趋势是，随着公开基准和统一评测流程变多，靠换 backbone 刷点的空间在收窄，**数据配方与动作表示**反而成了更关键的变量。做项目时建议优先关注这两件事，它们往往比换一个更大的 backbone 更影响最终表现。
+VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进」。如果只记一句话：**2026 年拉开差距的不是 backbone，而是数据配方、RL 后训练与评测的可信度**。落到做项目上，优先级大致是——先用 ACT / DP 跑通全链路，再挑一个开源基座（π 系列、GR00T、InternVLA-A 系列都有可用权重）做微调，然后把力气花在数据质量和一个诚实的评测协议上，而不是换更大的模型。
 
 <section id="cv"></section>
 
