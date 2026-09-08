@@ -3,8 +3,8 @@
 > 这一章关注的不是“具体某个模型”，而是**支撑具身智能研究与系统落地的软件基础设施（Infrastructure）**。  
 > 仿真器决定你能构建怎样的世界，基准集决定你如何比较方法优劣，数据集决定模型最终学到什么样的行为分布。它们共同构成了具身智能中**最容易被忽视、但最影响上限与复现性的部分**。
 
-软件部分可以理解为三层：  
-**Simulators（仿真环境）** 决定你能“跑什么物理世界”；**Benchmarks（评测基准）** 决定你用什么任务衡量方法优劣；**Datasets（数据集）** 决定你能训练出怎样的策略分布。建议优先跑通“一个仿真器 + 一个基准 + 一个数据集”的最小闭环，再逐步扩展到多平台与多模态。
+软件部分可以理解为三层，外加一层工具链：  
+**Simulators（仿真环境）** 决定你能“跑什么物理世界”；**Benchmarks（评测基准）** 决定你用什么任务衡量方法优劣；**Datasets（数据集）** 决定你能训练出怎样的策略分布；最后的**工具链**则关系到你把策略接到环境上要付多少工程成本。建议优先跑通“一个仿真器 + 一个基准 + 一个数据集”的最小闭环，再逐步扩展到多平台与多模态。
 
 <section id="simulators"></section>
 
@@ -15,10 +15,10 @@
 | 仿真器 | 典型生态 / 对应基准与工具链 |
 |---|---|
 | IsaacGym | legged-gym：[link](https://github.com/leggedrobotics/legged_gym)<br>parkour（含蒸馏与真机部署）：[link](https://github.com/ZiwenZhuang/parkour)<br>extreme-parkour：[link](https://github.com/chengxuxin/extreme-parkour) |
-| IsaacSim | BEHAVIOR-1K：[link](https://behavior.stanford.edu/behavior-1k) + OmniGibson（工具链）：[link](https://behavior.stanford.edu/omnigibson/)<br>ARNOLD：[link](https://arnold-benchmark.github.io/)<br>GarmentLab：[link](https://garmentlab.github.io/) / DexGarmentLab：[link](https://wayrise.github.io/DexGarmentLab/) |
+| IsaacSim | BEHAVIOR-1K：[link](https://behavior.stanford.edu/) + OmniGibson（工具链）：[link](https://github.com/StanfordVL/OmniGibson)<br>ARNOLD：[link](https://arnold-benchmark.github.io/)<br>GarmentLab：[link](https://garmentlab.github.io/) / DexGarmentLab：[link](https://wayrise.github.io/DexGarmentLab/) |
 | MuJoCo | robosuite：[link](https://robosuite.ai/docs/overview.html) + robomimic（工具链）：[link](https://robomimic.github.io/)<br>LIBERO：[link](https://libero-project.github.io/main.html)<br>MetaWorld：[link](https://meta-world.github.io/)<br>Gymnasium-Robotics：[link](https://robotics.farama.org/)<br>RoboCasa：[link](https://github.com/robocasa/robocasa?tab=readme-ov-file)<br>RoboHive：[link](https://github.com/vikashplus/robohive) |
 | OmniSim | 平台：[link](https://github.com/omnilink-tech/omnisim)<br>Apache-2.0 机器人仿真器，提供 URDF 导入、HTTP/MCP Agent 控制、Newton CPU/GPU 物理、合成数据与可复现实验基准；Windows 提供 beta 安装包，Linux 为源码构建，macOS 物理尚未验证 |
-| SAPIEN | ManiSkill：[link](https://maniskill.readthedocs.io/en/latest/index.html)<br>RoboTwin：[link](https://github.com/TianxingChen/RoboTwin) |
+| SAPIEN | ManiSkill：[link](https://maniskill.readthedocs.io/en/latest/index.html)<br>RoboTwin 2.0：[link](https://github.com/RoboTwin-Platform/RoboTwin) / 文档：[link](https://robotwin-platform.github.io/doc/) |
 | CoppeliaSim | RLBench：[link](https://github.com/stepjam/RLBench)<br>PerAct2：[link](https://bimanual.github.io/)<br>COLOSSEUM：[link](https://robot-colosseum.github.io/) |
 | PyBullet | CALVIN：[link](https://github.com/mees/calvin?tab=readme-ov-file)<br>Ravens：[link](https://github.com/google-research/ravens)<br>VimaBench：[link](https://github.com/vimalabs/VimaBench) |
 | Genesis | 入口：[link](https://genesis-embodied-ai.github.io/) |
@@ -38,7 +38,9 @@
 
 | 基准 | 链接 | 一句话定位 |
 |---|---|---|
-| RoboTwin 2.0 | [link](https://github.com/robotwin-Platform/RoboTwin) | 程序化生成双臂任务数据与 50 个双臂评测任务（偏“双臂+规模化生成”） |
+| RoboTwin 2.0 | [link](https://github.com/RoboTwin-Platform/RoboTwin)<br>[link](https://robotwin-platform.github.io/doc/) | 程序化生成双臂任务数据与 50 个双臂评测任务（偏“双臂+规模化生成”） |
+| RoboDojo | [link](https://robodojo-benchmark.com/) | 同时提供仿真与真机任务，评测维度覆盖泛化、精度、长程与记忆（偏“统一评测”） |
+| RMBench | [link](https://rmbench.github.io/) | 专门考察记忆能力的操作基准，任务按记忆复杂度分级（偏“记忆依赖任务”） |
 | SimplerENV | [link](https://github.com/simpler-env/SimplerEnv) | 轻量化、可快速对比策略在操作任务上的表现 |
 | LIBERO | [link](https://github.com/Lifelong-Robot-Learning/LIBERO)<br>[link](https://libero-project.github.io/intro.html) | 程序化生成管道 + 视觉运动策略架构与终身学习设置（偏“终身/顺序学习”） |
 | CALVIN | [link](https://github.com/mees/calvin)<br>[link](http://calvin.cs.uni-freiburg.de/) | 语言条件 + 多模态输入 + 长视野操纵（偏“长程任务与规划”） |
@@ -70,4 +72,20 @@
 | BridgeData V2 | [link](https://rail-berkeley.github.io/bridgedata/) | 6 万轨迹；多环境多技能；目标图像/语言指令；包含远程操控与脚本执行 |
 | Ego4D Sounds | [link](https://ego4dsounds.github.io/) | 第一人称视频 + 环境声音；强调动作与声音对齐（声音模态很有价值） |
 | RH20T | [link](https://rh20t.github.io/) | 人机交互数据；含人脸与语音等敏感信息；体量大且提供缩减版（注意隐私与合规） |
-| 白虎数据集 | [link](https://www.openloong.org.cn/cn/dataset) | 异构机器人；多场景多任务；面向跨平台评估与训练（本体覆盖面广） |
+| 白虎数据集 | [link](https://www.openloong.org.cn/cn/) | 异构机器人；多场景多任务；面向跨平台评估与训练（本体覆盖面广） |
+| RoboTwin 2.0 Dataset | [link](https://robotwin-platform.github.io/doc/usage/collect-data.html) | 10 万条以上仿真轨迹；50 个双臂任务；clean / randomized 两档域随机化；可按任务单独下载 |
+
+---
+
+<section id="policy-serving"></section>
+
+## (4) 工具链 - 数据格式与策略部署
+
+前三节解决的是「在哪跑、比什么、用什么数据训」，还剩一件很占时间但不太被写进论文的事：**把一个策略真正接到环境上跑起来**。麻烦主要来自不统一——每个模型的依赖库、观测格式、动作空间都不一样，换一个仿真器常常要重写一遍胶水代码。下面两个项目分别从「统一数据格式」和「统一部署接口」两个角度减少这部分工作量。
+
+| 项目 | 链接 | 一句话定位 |
+|---|---|---|
+| LeRobot | [repo](https://github.com/huggingface/lerobot) | Hugging Face 的机器人学习栈，提供统一的数据集格式和多个策略的训练代码；它的数据格式目前基本是通用底座 |
+| XPolicyLab | [repo](https://github.com/XPolicyLab/XPolicyLab) | 把多个策略收敛到同一套部署接口，策略与环境可以各用自己的依赖环境、跨机器通信；适合在同一批任务上横向对比多个模型 |
+
+> 🌱 新手不必一开始就纠结这一层。只跑一个策略时，直接用该策略仓库自带的脚本最省事；等你需要**在同一套任务上比较多个模型**，或者撞上「策略要一个 torch 版本、仿真器要另一个」这类依赖冲突时，再回来看它们的价值会明显得多。

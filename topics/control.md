@@ -2,12 +2,16 @@
 
 > 这一章并不是为了让你“立刻跑一个模型”，而是为具身智能系统提供**稳定性、可解释性与工程底座**。控制论保证系统在高频下不崩溃，机器人学提供几何与动力学约束，SLAM 与状态估计让机器人“知道自己在哪里”，ROS 与工程库则把理论变成可复现的系统。
 
+<section id="control-robotics"></section>
+
 ## (1) Control and Robotics —— 控制论与机器人学基础
 
 这一章覆盖的是具身智能中**最底层、也最容易被跳过的能力层**。  
 控制与机器人学本身并不会直接提高 benchmark 分数，但它们决定了系统是否**稳定、可解释、可调试、可部署**。如果说算法篇解决的是“我想让机器人做什么”，那么这一章回答的是：机器人**凭什么**能连续、安全、可控地做到。
 
 ---
+
+<section id="control-courses"></section>
 
 ### (1.1) 经典课程
 
@@ -23,10 +27,14 @@
 
 ---
 
+<section id="control-foundations"></section>
+
 ## (2) 控制理论基础（Control Foundations）
 
 控制论的目标不是“聪明”，而是**稳定、可预测与可调试**。  
 在具身系统中，学习策略通常建立在控制系统之上：控制负责高频稳定，学习负责复杂决策。
+
+<section id="classical-control"></section>
 
 ### (2.1) 经典控制（Classical Control）
 
@@ -37,6 +45,8 @@
 在真实机器人调试中，PID 往往是你**第一个、也是最常用的工具**。
 
 ---
+
+<section id="modern-control"></section>
 
 ### (2.2) 现代控制（线性系统与最优控制）
 
@@ -50,6 +60,8 @@ Website：[link](https://optimalcontrol.ri.cmu.edu/)，YouTube：[link](https://
 
 ---
 
+<section id="advanced-control"></section>
+
 ### (2.3) 先进控制（Advanced Control）
 
 在操作与交互任务中，以下方法尤为关键：鲁棒控制（应对模型不准）、阻抗/导纳/力位混合控制（[link](https://blog.csdn.net/a735148617/article/details/108564836)）、模型预测控制（MPC）以及基于学习的控制方法。
@@ -58,9 +70,13 @@ Website：[link](https://optimalcontrol.ri.cmu.edu/)，YouTube：[link](https://
 
 ---
 
+<section id="robotics-foundations"></section>
+
 ## (3) 机器人学导论（Robotics Foundations）
 
 机器人学解决的是“**几何 + 物理 + 结构**”问题，是控制与感知能够落地的前提。
+
+<section id="robotics-books"></section>
 
 ### (3.1) 推荐教材与材料
 
@@ -69,6 +85,8 @@ Website：[link](https://optimalcontrol.ri.cmu.edu/)，YouTube：[link](https://
 以及《现代机器人学：机构、规划与控制》（Kevin Lynch）、《机构学与机器人学的几何基础与旋量代数》（戴建生）、《机器人学的现代数学理论基础》（丁希仑）。
 
 ---
+
+<section id="kinematics-dynamics"></section>
 
 ### (3.2) 运动学与动力学（Kinematics & Dynamics）
 
@@ -86,6 +104,8 @@ IK 理论参考：[link](https://motion.cs.illinois.edu/RoboticSystems/InverseKi
 
 ---
 
+<section id="slam"></section>
+
 ### (3.3) 里程计与 SLAM（State Estimation）
 
 状态估计决定了机器人是否“知道自己在哪里”。  
@@ -98,6 +118,8 @@ SLAM 进一步将定位与建图结合，推荐参考：
 SLAM Handbook：[link](https://github.com/SLAM-Handbook-contributors/slam-handbook-public-release)，经典综述：[link](https://arxiv.org/abs/1606.05830)，《视觉 SLAM 十四讲》：[link](https://github.com/gaoxiang12/slambook2)，以及端到端方法 DROID-SLAM：[link](https://arxiv.org/abs/2108.10869)。
 
 ---
+
+<section id="engineering-stack"></section>
 
 ### (3.4) 工程生态与工具（Engineering Stack）
 
