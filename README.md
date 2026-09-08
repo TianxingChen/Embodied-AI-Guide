@@ -230,7 +230,9 @@ bash scripts/eval_policy.sh multitask \
 石麻日记、Lumina 具身智能、机器之心、新智元、量子位、具身智能研究室、具身纪元、Human Five、Xbot 具身知识库、具身智能之心、自动驾驶之心、3D 视觉工坊、将门创投、RLCN 强化学习研究、CVHub
 
 **中文（小红书博主）**  
-WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、周博宇、高飞、李弘扬、朱政、丁琰、YY 硕、Mango-Man、RHOSLab #PI-李永露、正合时宜、心言任永亮、York Yang-Dyna Robotics、哲伦班长
+WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、周博宇、高飞、李弘扬、朱政、丁琰、YY 硕、Mango-Man、RHOSLab #PI-李永露、正合时宜、心言任永亮、York Yang-Dyna Robotics、哲伦班长、吴翼、丁文超、陈思衡、韩晓光、梁俊卫
+
+> 小红书上曾有一场 AI 学者 Ask Me Anything 活动，多位具身与机器人方向的老师在其中答疑，[精华实录](https://www.pingwest.com/a/308126)可作为寻找值得关注账号的线索。
 
 **社区与 wiki**
 
