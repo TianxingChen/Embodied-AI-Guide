@@ -45,7 +45,7 @@
 
 | 资源 | 链接 | 说明 |
 |---|---|---|
-| 《机器人学简介》（教材 PDF） | [link](./files/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E7%AE%80%E4%BB%8B.pdf) | 质量高，适合系统性阅读 |
+| 《机器人学简介》（教材 PDF） | [link](../files/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E7%AE%80%E4%BB%8B.pdf) | 质量高，适合系统性阅读 |
 | Robotic Systems（Illinois） | [link](https://motion.cs.illinois.edu/RoboticSystems/) | 偏“系统化机器人学”的组织方式 |
 
 ---
@@ -134,7 +134,7 @@
 
 | 公司 | 主营产品 | Others |
 |---|---|---|
-| [松灵 AgileX](https://www.agilex.ai/) | [PIPER 六轴机械臂](https://global.agilex.ai/products/piper)<br>[PIKA 数采方案](https://global.agilex.ai/products/pika)<br>[Cobot Magic 双臂遥操作平台](https://global.agilex.ai/products/cobot-magic)<br>[移动底盘系列](https://global.agilex.ai/collections/all) | 面向教育科研；[开源仓库](https://github.com/agilexrobotics) |
+| [松灵 AgileX](https://www.agilex.ai/) | [PIPER 六轴机械臂](https://global.agilex.ai/products/piper)<br>[PIKA 数采方案](https://global.agilex.ai/products/pika)<br>[Cobot Magic 双臂遥操作平台](https://global.agilex.ai/products/cobot-magic)<br>[全部产品（含移动底盘）](https://global.agilex.ai/collections/all) | 面向教育科研；[开源仓库](https://github.com/agilexrobotics) |
 | [宇树 Unitree](https://www.unitree.com/cn) | [四足机器人开发指南](https://www.yuque.com/ironfatty/nly1un/luo9gb)<br>[Go2 机器狗](https://www.unitree.com/cn/go2)<br>[AlienGo 机器狗](https://www.yuque.com/ironfatty/nly1un/dqcz3u)<br>[通用人形 H1](https://www.unitree.com/cn/h1)<br>[通用人形 G1](https://www.unitree.com/cn/g1) | 许多产出使用宇树的机器人作为硬件基础 |
 | [方舟无限 ARX](https://www.arx-x.com/?product/) | [X5 机械臂](https://www.arx-x.com/?product/21.html)<br>[X7 双臂平台](https://www.arx-x.com/?product/23.html)<br>[R5 机械臂](https://www.arx-x.com/?product/22.html) | 适合复现很多经典工作，例如 [aloha](https://mobile-aloha.github.io/cn.html)<br>[RoboTwin 松灵底盘 + 方舟臂](https://github.com/RoboTwin-Platform/RoboTwin) |
 | [波士顿动力 Boston Dynamics](https://bostondynamics.com/) | [Spot 机器狗](https://bostondynamics.com/products/spot/)<br>[Atlas 通用人形](https://bostondynamics.com/atlas/) | 具身智能本体制造商，从液压驱动转向电机驱动 |

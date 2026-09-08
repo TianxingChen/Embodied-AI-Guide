@@ -202,7 +202,7 @@ VLA（Vision-Language-Action）可以理解为“把视觉-语言模型的能力
 
 ### (5.2) 分层双系统 VLA ⭐
 
-近一年一个非常强的范式是“分层双系统”：  
+2025 年起最有影响力的范式之一是“分层双系统”：  
 **System 2**（慢系统）负责理解与规划（通常是 VLM/LLM），输出语言/符号/latent 的中间表示；  
 **System 1**（快系统）负责高频、稳定的低层控制（VLA / policy），将中间表示转成连续动作。  
 它的直观优势是：在长任务与复杂场景中，把“推理/规划”与“高频控制”解耦，既提升可解释性，也更易做工程约束与安全策略。
@@ -232,7 +232,7 @@ VLA（Vision-Language-Action）可以理解为“把视觉-语言模型的能力
 ### (5.3) 2025 年代表工作
 
 <details>
-<summary><b>展开：2025 年以来的代表工作</b></summary>
+<summary><b>展开：2025 年代表工作列表</b></summary>
 
 | 工作 | 链接 | 机构 | 时间 | 备注 |
 |---|---|---|---|---|
@@ -264,7 +264,7 @@ VLA（Vision-Language-Action）可以理解为“把视觉-语言模型的能力
 | **VLA**（Vision-Language-Action） | 视觉 + 语言直接映射到动作 | 看一眼、听指令、直接动 | π0 / π0.5、GR00T N1 系列、RDT-1B、OpenVLA |
 | **VA**（Vision-Action） | 只吃视觉，不接受语言条件 | 任务固定时更轻、更快 | ACT、Diffusion Policy 及其变体 |
 | **WAM**（World-Action Model） | 先用世界模型预测「接下来会看到什么」，再从预测中解出动作 | 先在脑子里想一遍再动手 | 入门可先读上一节的 WorldVLA；此后出现了 FastWAM、X-WAM 等专做此事的一类 |
-| **记忆增强**（Memory-Augmented） | 在策略内部显式维护跨时刻的记忆 | 解决「我刚才把盖子放哪了」 | 这类任务的评测可看 RMBench 基准 |
+| **记忆增强**（Memory-Augmented） | 在策略内部显式维护跨时刻的记忆 | 解决「我刚才把盖子放哪了」 | π0.6-MEM / π0.7（见下文）；评测用 RMBench |
 
 还有一个和本体相关的常见缩写 **WBC**（Whole-Body Control，全身控制）：把控制目标从「机械臂末端」扩展到躯干、腿、头等整个身体，是人形机器人方向的主线之一，详见[控制篇](./control.md)。2026 年起也常见「全身智能」（Whole-Body Intelligence）这个说法，主要来自 Gemini Robotics 2 的表述，指的是让同一个策略同时管规划与全身运动，目前更多是产品叙事而非公认术语。
 
@@ -272,9 +272,9 @@ VLA（Vision-Language-Action）可以理解为“把视觉-语言模型的能力
 
 #### 四个正在发生的变化
 
-**(1) 从「只学演示」到「从经验里学」。** 纯模仿演示数据很容易停在「成功一半」的水平，再往上堆演示的边际收益迅速衰减。π\*0.6 提出的 [RECAP](https://arxiv.org/abs/2511.14759) 把演示、自主 rollout 与人工介入纠正混在一起做 RL（用 advantage 条件化绕开 flow matching 模型拿不到 action log-prob 的问题），在叠衣服、组装纸箱、做咖啡这类长任务上把吞吐翻倍、失败率减半。**RL 后训练正在从加分项变成必选项**，国内工作里 Hy-VLA 的 [FlowPRO](https://wuyeyexvnainai.github.io/flowpro/) 偏好优化、LingBot-VLA 的 RL 后训练都是同一思路。
+**(1) 从「只学演示」到「从经验里学」。** 纯模仿演示数据很容易停在「成功一半」的水平，再往上堆演示的边际收益迅速衰减。π\*0.6 提出的 [RECAP](https://arxiv.org/abs/2511.14759) 把演示、自主 rollout 与人工介入纠正混在一起做 RL（用 advantage 条件化绕开 flow matching 模型拿不到 action log-prob 的问题），在叠衣服、组装纸箱、做咖啡这类长任务上把吞吐翻倍、失败率减半。**RL 后训练正在从加分项变成必选项**，国内工作里 Hy-Embodied-0.5-VLA 的 [FlowPRO](https://wuyeyexvnainai.github.io/flowpro/) 偏好优化、LingBot-VLA 的 RL 后训练都是同一思路。
 
-**(2) 记忆从可选模块变成架构的一部分。** 长任务里「刚才把盖子放哪了」是硬需求。π0.6-MEM 与 [π0.7](https://arxiv.org/abs/2604.15483) 把记忆系统直接做进主干（对历史帧做时空压缩后输出固定数量 token），Hy-VLA 也带了多帧历史的紧凑记忆编码器。评测侧有 [RMBench](https://rmbench.github.io/) 专测记忆依赖任务。
+**(2) 记忆从可选模块变成架构的一部分。** 长任务里「刚才把盖子放哪了」是硬需求。π0.6-MEM 与 [π0.7](https://arxiv.org/abs/2604.15483) 把记忆系统直接做进主干（对历史帧做时空压缩后输出固定数量 token），Hy-Embodied-0.5-VLA 也带了多帧历史的紧凑记忆编码器。评测侧有 [RMBench](https://rmbench.github.io/) 专测记忆依赖任务。
 
 **(3) 世界模型进入推理链路。** 不再是「另做一个世界模型」，而是把未来预测嵌进策略内部：[InternVLA-A1.5](https://arxiv.org/abs/2607.04988) 用可学习的 foresight token 去查询未来动态、训练时由一个冻结的视频生成模型监督，推理时把视频分支丢掉以控制延迟；NVIDIA 的 GR00T N2 则直接建在 DreamZero 这套 World-Action Model 框架上。
 
@@ -282,7 +282,7 @@ VLA（Vision-Language-Action）可以理解为“把视觉-语言模型的能力
 
 > 顺着这四条看，会发现**竞争焦点已经从「架构」转向「数据配方 + 评测」**。2026 年那篇[数据视角的 VLA 综述](https://arxiv.org/abs/2604.23001)把这点讲得很直接：未来的进展更多取决于数据引擎与评测协议的协同设计，而不是模型架构，因此应当把数据基础设施当作一等研究问题。
 
-#### 2026 代表工作
+#### 代表工作（2025 末 — 2026）
 
 | 工作 | 链接 | 机构 | 时间 | 一句话看点 |
 |---|---|---|---|---|
