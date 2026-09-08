@@ -227,7 +227,7 @@ VLA（Vision-Language-Action）可以理解为“把视觉-语言模型的能力
 | Psi-R1（灵初智能） | [link](https://www.jiqizhixin.com/articles/2025-03-03-9) | 2025.04.27 | 分层端到端 VLA + RL，test-time scaling |
 | Gemini Robotics | [link](https://arxiv.org/pdf/2503.20020) | 2025.03.25 | 50 Hz |
 | Gemini Robotics on-device | [link](https://deepmind.google/discover/blog/gemini-robotics-on-device-brings-ai-to-local-robotic-devices/) | 2025.06.24 | 设备端部署导向 |
-| Gemini Robotics（系列入口） | [link](https://deepmind.google/models/gemini-robotics/) | 滚动更新 | 后续版本转向全身智能（Whole-Body Intelligence） |
+| Gemini Robotics（系列入口） | [link](https://deepmind.google/models/gemini-robotics/) | 滚动更新 | 最新一代见 (5.4) 的 Gemini Robotics 2 |
 
 ### (5.3) 2025 年代表工作
 
@@ -266,7 +266,7 @@ VLA（Vision-Language-Action）可以理解为“把视觉-语言模型的能力
 | **WAM**（World-Action Model） | 先用世界模型预测「接下来会看到什么」，再从预测中解出动作 | 先在脑子里想一遍再动手 | 入门可先读上一节的 WorldVLA；此后出现了 FastWAM、X-WAM 等专做此事的一类 |
 | **记忆增强**（Memory-Augmented） | 在策略内部显式维护跨时刻的记忆 | 解决「我刚才把盖子放哪了」 | 这类任务的评测可看 RMBench 基准 |
 
-还有一组和本体相关的缩写：**WBC**（Whole-Body Control，全身控制）与 **WBI**（Whole-Body Intelligence，全身智能），指把控制目标从「机械臂末端」扩展到躯干、腿、头等整个身体，是人形机器人方向的主线之一，详见[控制篇](./control.md)。
+还有一个和本体相关的常见缩写 **WBC**（Whole-Body Control，全身控制）：把控制目标从「机械臂末端」扩展到躯干、腿、头等整个身体，是人形机器人方向的主线之一，详见[控制篇](./control.md)。2026 年起也常见「全身智能」（Whole-Body Intelligence）这个说法，主要来自 Gemini Robotics 2 的表述，指的是让同一个策略同时管规划与全身运动，目前更多是产品叙事而非公认术语。
 
 **这几个家族并不互斥。** 实际论文里经常是叠加的——一个模型可以既是 VLA、又带世界模型预测、还加了记忆模块。所以看到新工作时，比记住它叫什么更有用的是问三个问题：**动作表示是什么**（连续回归 / 离散 token / 扩散）、**条件里有没有语言**、**有没有显式预测未来**。这三条基本就能定位它在上面这张表里的位置，也是复现时最先要搞清楚的三件事。
 
@@ -286,7 +286,7 @@ VLA（Vision-Language-Action）可以理解为“把视觉-语言模型的能力
 
 | 工作 | 链接 | 机构 | 时间 | 一句话看点 |
 |---|---|---|---|---|
-| VLAct | [paper](https://arxiv.org/abs/2608.27550) / [repo](https://github.com/starVLA/VLAct) / [主页](https://starvla.github.io/VLAct/) | 港中文 / 思谋等 | 2026.08 | 表征驱动的继续预训练；只用开源数据做出可复用动作主干 |
+| VLAct | [paper](https://arxiv.org/abs/2608.27550) / [repo](https://github.com/starVLA/VLAct) / [主页](https://starvla.github.io/VLAct/) | 港中文 / 港科大 / 思谋 | 2026.08 | 表征驱动的继续预训练；只用开源数据 + 16 卡做出可复用动作主干 |
 | Gemini Robotics 2 | [blog](https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/) | Google DeepMind | 2026.07 | 全身智能；VLA / ER / On-Device 三模型分工 |
 | InternVLA-A1.5 | [paper](https://arxiv.org/abs/2607.04988) / [repo](https://github.com/InternRobotics/InternVLA-A-series) | 上海 AI Lab | 2026.07 | foresight token 查询未来动态，由视频生成模型监督 |
 | Hy-Embodied-0.5-VLA | [paper](https://arxiv.org/abs/2606.14409) / [repo](https://github.com/Tencent-Hunyuan/Hy-Embodied-0.5-VLA) | 腾讯混元 | 2026.06 | 万小时级 UMI 数据 + 记忆编码器 + RL 后训练的完整栈 |
@@ -300,7 +300,7 @@ VLA（Vision-Language-Action）可以理解为“把视觉-语言模型的能力
 
 #### 评测正在变严
 
-一个容易忽略但很实际的变化：**老基准开始饱和、且有记忆效应**，光看 LIBERO 的数字已经不足以说明问题。因此出现了两类补充手段——一是更抗「刷分」的仿真基准（LIBERO-Plus、VLA-Arena、[RoboDojo](https://robodojo-benchmark.com/leaderboard)），二是真机分布式评测：[RoboArena](https://robo-arena.github.io/)（[论文](https://arxiv.org/abs/2506.18123)）不再统一任务，而是让分布在多所机构的评测者自选场景、对策略做双盲两两对比，再聚合成排名。自己做实验时，**至少报一个仿真基准 + 一个真机或第三方榜单**会比只报单一数字可信得多。
+一个容易忽略但很实际的变化：**老基准开始饱和、且有记忆效应**，光看 LIBERO 的数字已经不足以说明问题。因此出现了两类补充手段——一是更抗「刷分」的仿真基准（[LIBERO-Plus](https://arxiv.org/abs/2510.13626) 用七类扰动把 LIBERO 扩成一万多个任务并分五档难度、[VLA-Arena](https://arxiv.org/abs/2512.22539) 补上动态场景与安全约束、[RoboDojo](https://robodojo-benchmark.com/leaderboard)），二是真机分布式评测：[RoboArena](https://robo-arena.github.io/)（[论文](https://arxiv.org/abs/2506.18123)）不再统一任务，而是让分布在多所机构的评测者自选场景、对策略做双盲两两对比，再聚合成排名。自己做实验时，**至少报一个仿真基准 + 一个真机或第三方榜单**会比只报单一数字可信得多。
 
 > 🌱 **新手建议**：不要一上来就横向啃十几个 foundation model。更快的路径是先拿 ACT 或 Diffusion Policy 这类结构简单的基线，把「采数据 → 训练 → 在仿真里评测」这条链路完整跑通一遍（可以直接用主页第 2 章的实战教程），先建立起对数据格式、动作维度、评测指标的手感，再回头读 π0、GR00T 这类大模型的论文，会清楚很多。
 
