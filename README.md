@@ -14,7 +14,7 @@
 
 ### 🧑‍💻 Related Open-source Projects｜相关开源项目
 
-⭐️ Lumina Call (具身智能照片): [Website](https://lumina-embodied.ai/lumina-call)<br>
+⭐️ Lumina Call (具身智能招聘): [Website](https://lumina-embodied.ai/lumina-call)<br>
 ⭐️ Datawhale Easy-Embodied: [Repo](https://github.com/datawhalechina/every-embodied)
 
 ## 🦉 Lumina具身智能社区: [点击访问](https://lumina-embodied.ai)
