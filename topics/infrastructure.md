@@ -45,6 +45,7 @@
 | Meta-World | [link](https://meta-world.github.io/) | 50 操作任务，经典多任务/元强化学习基准（偏“多任务泛化”） |
 | Embodied Agent Interface | [link](https://embodied-agent-interface.github.io/) | 评测 LLM 在具身决策链路（理解/分解/序列化），不强调低层执行 |
 | RoboGen | [link](https://github.com/Genesis-Embodied-AI/RoboGen)<br>[link](https://robogen-ai.github.io/) | 生成任务/场景/带标注数据（偏“生成数据而非直接生成 policy”） |
+| RescueBench | [link](https://github.com/UnrealZoo/RescueBench)<br>[link](https://arxiv.org/abs/2606.01848) | 基于 Unreal Engine / UnrealZoo 的四阶段搜救基准，含五级难度与统一评测（偏“多模态探索、救援交互与空间记忆”） |
 
 ---
 
