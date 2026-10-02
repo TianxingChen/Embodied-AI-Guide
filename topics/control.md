@@ -68,7 +68,7 @@
 |---|---|---|
 | LQR 直观讲解 | [bilibili](https://www.bilibili.com/video/BV1Ng4y1V7JQ) | 想先建立直觉、不想啃公式时 |
 | CMU 16-745 Optimal Control ⭐ | [主页](https://optimalcontrol.ri.cmu.edu/)｜[YouTube](https://www.youtube.com/playlist?list=PLZnJoM76RM6IAJfMXd1PgGNXn3dxhkVgI)｜[bilibili](https://space.bilibili.com/504273533/lists/6271656?type=season) | 想系统学最优控制与轨迹优化，作业含 Julia 代码，强烈推荐 |
-| Modern Control Systems（Dorf & Bishop） | [PDF](http://103.203.175.90:81/fdScript/RootOfEBooks/E%20Book%20collection%20-%202024/EEE/Modern_control_systems_Robert_H_Bishop_Richard_C_Dorf_z_lib_org.pdf) | 当工具书查概念 |
+| Modern Control Systems（Dorf & Bishop） | 经典教材，按书名检索正版即可 | 当工具书查概念 |
 
 ---
 

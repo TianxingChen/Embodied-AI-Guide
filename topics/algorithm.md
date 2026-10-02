@@ -147,7 +147,7 @@
 
 | 方向 | 推荐平台 | 链接 |
 |---|---|---|
-| 操作（Manipulation） | SAPIEN / RoboTwin、MuJoCo + robosuite | [SAPIEN](https://sapien.ucsd.edu/)｜[RoboTwin](https://github.com/RoboTwin-Platform/RoboTwin) |
+| 操作（Manipulation） | SAPIEN / RoboTwin、MuJoCo + robosuite | [SAPIEN](https://github.com/haosulab/SAPIEN)｜[RoboTwin](https://github.com/RoboTwin-Platform/RoboTwin) |
 | 运动控制（Locomotion） | Isaac Lab、MuJoCo Playground、mjlab | [Isaac Lab](https://github.com/isaac-sim/IsaacLab)｜[Playground](https://playground.mujoco.org/)｜[mjlab](https://github.com/mujocolab/mjlab) |
 | 四足经典实现 | legged-gym（基于已停更的 IsaacGym，适合读代码学思路） | [repo](https://github.com/leggedrobotics/legged_gym) |
 | 跨平台新选项 | Genesis | [repo](https://github.com/Genesis-Embodied-AI/genesis-world) |

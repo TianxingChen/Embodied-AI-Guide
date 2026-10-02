@@ -36,7 +36,7 @@
 
 ## 🦉 Lumina 具身智能社区
 
-社区主页：[lumina-embodied.ai](https://lumina-embodied.ai)｜扫描下方二维码即可加入社区交流群：
+社区主页：[lumina-embodied.ai](https://lumina-embodied.ai)。扫描下方二维码加入交流群；如果二维码失效或无法入群，请邮件联系 [lumina.embodiedai@gmail.com](mailto:lumina.embodiedai@gmail.com)，或添加项目发起人微信 `TianxingChen_2002`（请备注：机构 + 姓名 + 来意）。
 
 ![Lumina 具身智能社区](./files/images/Lumina.png)
 
@@ -148,7 +148,7 @@ A：相比语言模型，具身智能远没有收敛——**数据、评测、�
 - **策略怎么设计**：网络架构的选择直接影响模型表现、收敛效果与推理速度；
 - **怎么评测性能**：没有科学的评测，就无法判断模型好坏，也难以推动技术进步。
 
-面对以上问题，[RoboTwin 2.0](https://robotwin-platform.github.io/)（ICML 2026）提供了一个很好的学习平台。它基于易配置的 [SAPIEN](https://sapien.ucsd.edu/) 仿真平台开发，提供 50 个双臂任务的自动化数据合成与统一评测系统，并已开源 **10 万条以上预采集轨迹**——这意味着新手可以跳过最耗时的数据采集环节，直接从训练开始。
+面对以上问题，[RoboTwin 2.0](https://robotwin-platform.github.io/)（ICML 2026）提供了一个很好的学习平台。它基于易配置的 [SAPIEN](https://github.com/haosulab/SAPIEN) 仿真平台开发，提供 50 个双臂任务的自动化数据合成与统一评测系统，并已开源 **10 万条以上预采集轨迹**——这意味着新手可以跳过最耗时的数据采集环节，直接从训练开始。
 
 需要注意的是，策略侧的代码现在放在 [XPolicyLab](https://github.com/XPolicyLab/XPolicyLab) 这个子模块里，训练和评测脚本都从那里调用，所以下面的步骤会用到它。它把不同策略的训练与评测收敛到了同一套接口，对学习者的实际好处是：走完一遍 ACT 之后，想换成 π0、RDT-1B 这类 VLA 试试，主要改的是策略名和配置文件，不用从头再理解一套工程。
 

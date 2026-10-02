@@ -75,6 +75,7 @@
 | Meta-World | [link](https://meta-world.github.io/) | 50 个操作任务，经典多任务/元强化学习基准（偏「多任务泛化」） |
 | Embodied Agent Interface | [link](https://embodied-agent-interface.github.io/) | 评测 LLM 在具身决策链路（理解/分解/序列化）上的能力，不涉及低层执行 |
 | RoboGen | [link](https://github.com/Genesis-Embodied-AI/RoboGen)<br>[link](https://robogen-ai.github.io/) | 生成任务/场景/带标注数据（偏「生成数据而非直接生成 policy」） |
+| RescueBench | [repo](https://github.com/UnrealZoo/RescueBench)｜[paper](https://arxiv.org/abs/2606.01848) | 基于 Unreal Engine / UnrealZoo 的四阶段搜救基准，含五级难度与统一评测（偏「多模态探索、救援交互与空间记忆」） |
 
 > 🌱 **怎么报结果才可信**：2026 年的共识是**至少报一个仿真基准 + 一个真机或第三方榜单**。只报单一仿真数字越来越难被接受，因为老基准已经出现明显的饱和与过拟合。相关讨论见[算法篇的「评测正在变严」](./algorithm.md#vla)。
 
