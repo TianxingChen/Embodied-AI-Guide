@@ -25,14 +25,14 @@
 
 ### 📢 News｜项目进展
 
-📷 *2026-01-15: Embodied-AI-Guide 完成内容重组*<br>
+📝 *2026-01-15: Embodied-AI-Guide 完成内容重组*<br>
 ⭐️ *2025-12-18: GitHub Stars 突破 10,000*<br>
 ❤️ *2025-03-15: Embodied-AI-Guide 正式开源*
 
 ### 🧑‍💻 Related Projects｜相关开源项目
 
-⭐️ Lumina Call（具身智能招聘）：[Website](https://lumina-embodied.ai/lumina-call)<br>
-⭐️ Datawhale Easy-Embodied（具身智能入门教程）：[Repo](https://github.com/datawhalechina/every-embodied)
+⭐️ Lumina Call（具身智能招聘）：[website](https://lumina-embodied.ai/lumina-call)<br>
+⭐️ Datawhale every-embodied（具身智能入门教程）：[repo](https://github.com/datawhalechina/every-embodied)
 
 ## 🦉 Lumina 具身智能社区
 
@@ -42,11 +42,13 @@
 
 <a id="start"></a>
 
-## 🐣 (1) Start From Here - 从这里开始
+## 🐣 (1) Start From Here —— 从这里开始
 
 > 具身智能是指一种基于物理实体进行感知和行动的智能系统，其通过智能体与环境的交互获取信息、理解问题、做出决策并实现行动，从而产生智能行为和适应性。
 
-### (1.1) How - 如何使用这份指南
+说得更直白一些：大模型已经能很好地处理**文字和图像**，因为互联网上有海量现成数据；但要让机器人真的伸手把桌上的杯子拿起来，模型必须输出**连续的、有物理后果的动作**，而这类数据没法从网上爬——**每一条都要有人用真机采，采错了还会把东西打碎**。这个「数据从哪来、动作怎么表示、做得好不好怎么衡量」的三连问，构成了具身智能当前最核心的矛盾，也是本指南反复出现的主线。
+
+### (1.1) How —— 如何使用这份指南
 
 本项目的设计理念是「一条主线 + 一张全景图」：
 
@@ -99,7 +101,32 @@
 
 </details>
 
-### (1.4) About Us - 关于我们
+### (1.4) 新人常见问题
+
+<details>
+<summary><b>展开：入门前最常被问到的 6 个问题</b></summary>
+
+**Q：需要什么前置基础？**  
+A：会用 Python、了解深度学习基本概念（会训练一个分类网络即可）、能在 Linux 上装环境。**机器人学与控制论不是前置条件**，可以在遇到问题时按需补，参考[控制篇开头的「要学到什么程度」](./topics/control.md#control-robotics)。
+
+**Q：没有真机器人，还能做具身智能吗？**  
+A：能，而且大多数人都是这么开始的。仿真器 + 公开数据集足以支撑从入门到发论文的完整链路，本指南[第 2 章](#robotwin)就是纯仿真的。真机的价值在于暴露仿真掩盖掉的问题（标定误差、延迟、接触不确定性），但它应该是第二步而不是第一步。如果确实想碰真机，[LeRobot](https://github.com/huggingface/lerobot) 生态的 SO-101 主从臂是目前最低成本的入口。
+
+**Q：需要什么显卡？**  
+A：训练 ACT、Diffusion Policy 这类轻量策略，16GB 显存够用（本指南第 2 章的教程约需 12GB）。微调 π0、GR00T 这类 VLA 基座通常需要 40GB 以上，或使用 LoRA 等参数高效方法。**仅做推理部署时要求低得多**，部分模型可在消费级显卡上运行。
+
+**Q：该先做操作（Manipulation）还是运动（Locomotion）？**  
+A：看你更接近哪边。有 CV / 深度学习背景的人在操作方向上手更快，因为它本质是「带动作输出的监督学习」；有控制、自动化背景的人往往在运动控制方向更有优势，因为它高度依赖仿真中的强化学习与 Sim2Real。两者的技术栈差异比想象中大，**建议先选一个做深**。
+
+**Q：具身智能和传统机器人学是什么关系？**  
+A：不是替代关系。传统机器人学提供几何、动力学与控制的底座，保证系统稳定可控；具身智能在其上用学习的方法解决「感知复杂世界、泛化到没见过的任务」这类传统方法难以手工设计的部分。真实系统几乎都是二者的混合。
+
+**Q：现在入场是不是太晚了？**  
+A：相比语言模型，具身智能远没有收敛——**数据、评测、本体三个层面都还没有公认答案**。2026 年公认的瓶颈已经从模型架构转向数据配方与评测协议（见[算法篇 (5.4)](./topics/algorithm.md#vla)），这意味着不依赖超大算力的研究空间依然很多。
+
+</details>
+
+### (1.5) About Us —— 关于我们
 
 我们是一个由具身智能初学者组成的团队，希望以自己的学习经验为后来者提供帮助，加快具身智能的普及。欢迎更多朋友加入项目，也欢迎交友与学术合作。有任何问题可联系邮箱 [chentianxing2002@gmail.com](mailto:chentianxing2002@gmail.com)。
 
@@ -136,7 +163,7 @@
 
 #### (2.2.1) 了解 RoboTwin 2.0 做了什么（约 1 天）
 
-阅读 [RoboTwin 2.0 论文](https://arxiv.org/pdf/2506.18088)，了解仿真数据合成的方案，深入理解合成一条机器人数据需要哪些信息、机器人可以完成什么任务，并了解 [Aloha](https://www.bilibili.com/video/BV1vU421d7BJ/) 硬件。
+阅读 [RoboTwin 2.0 论文](https://arxiv.org/pdf/2506.18088)，了解仿真数据合成的方案，深入理解合成一条机器人数据需要哪些信息、机器人可以完成什么任务，并了解 [ALOHA](https://www.bilibili.com/video/BV1vU421d7BJ/) 硬件。
 
 #### (2.2.2) 安装平台（约 0.5 天）
 
@@ -214,14 +241,14 @@ bash scripts/eval_policy.sh multitask \
 
 <a id="info"></a>
 
-## 📄 (3) Useful Info - 有利于搭建认知的资料
+## 📄 (3) Useful Info —— 有利于搭建认知的资料
 
 这一章用于**快速建立对具身智能领域的整体认知**，适合在系统学习算法、工程或硬件之前，用来了解技术版图、社区生态与研究脉络。
 
 ### (3.1) 方向性与方法论资料
 
-- 具身智能基础技术路线（Yunlong Dong）：[PDF](./files/具身智能基础技术路线-YunlongDong.pdf)｜[bilibili](https://www.bilibili.com/video/BV1d5ukedEsi)
-- 斯坦福机器人学导论：[website](https://www.bilibili.com/video/BV17T421k78T)
+- 具身智能基础技术路线（Yunlong Dong）：[bilibili](https://www.bilibili.com/video/BV1d5ukedEsi)
+- 斯坦福机器人学导论：[bilibili](https://www.bilibili.com/video/BV17T421k78T)
 - Cyber Nachos（偏系统与工程思维）：[website](https://cybernachos.github.io/)
 
 ### (3.2) 社区与自媒体（长期跟进价值高）
@@ -285,7 +312,7 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 
 <a id="algorithm"></a>
 
-## 🍎 (4) Algorithm - 算法篇
+## 🍎 (4) Algorithm —— 算法篇
 
 > 完整内容：[topics/algorithm.md](./topics/algorithm.md)
 
@@ -298,9 +325,9 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 - [(5) VLA —— Vision-Language-Action Models](./topics/algorithm.md#vla)
   - [(5.0) 参考与综述](./topics/algorithm.md#vla)
   - [(5.1) 经典工作](./topics/algorithm.md#vla)
-  - [(5.2) 分层双系统 VLA](./topics/algorithm.md#vla)
+  - [(5.2) 分层双系统 VLA](./topics/algorithm.md#vla) ⭐
   - [(5.3) 2025 年代表工作](./topics/algorithm.md#vla)
-  - [(5.4) 2026 进展](./topics/algorithm.md#vla)
+  - [(5.4) 2026 进展](./topics/algorithm.md#vla) ⭐
 - [(6) Computer Vision —— 计算机视觉](./topics/algorithm.md#cv)
   - [(6.1) 2D / 3D / 4D Vision](./topics/algorithm.md#cv)
   - [(6.2) Visual Prompting & Affordance](./topics/algorithm.md#cv)
@@ -314,7 +341,7 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 
 <a id="infrastructure"></a>
 
-## 🏋️‍♂️ (5) Infrastructure - 软件基础设施篇
+## 🏋️‍♂️ (5) Infrastructure —— 软件基础设施篇
 
 > 完整内容：[topics/infrastructure.md](./topics/infrastructure.md)
 
@@ -327,13 +354,14 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 
 <a id="control"></a>
 
-## 🎮 (6) Control - 控制篇
+## 🎮 (6) Control —— 控制篇
 
 > 完整内容：[topics/control.md](./topics/control.md)
 
 这一章并不是为了让你「立刻跑一个模型」，而是为具身智能系统提供**稳定性、可解释性与工程底座**。控制论保证系统在高频下不崩溃，机器人学提供几何与动力学约束，SLAM 与状态估计让机器人「知道自己在哪里」，ROS 与工程库则把理论变成可复现的系统。
 
 - [(1) Control and Robotics —— 控制论与机器人学基础](./topics/control.md#control-robotics)
+  - [(1.0) 先说清楚：要学到什么程度](./topics/control.md#control-robotics)
   - [(1.1) 经典课程](./topics/control.md#control-courses)
 - [(2) Control Foundations —— 控制理论基础](./topics/control.md#control-foundations)
   - [(2.1) 经典控制（Classical Control）](./topics/control.md#classical-control)
@@ -344,10 +372,15 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
   - [(3.2) 运动学与动力学](./topics/control.md#kinematics-dynamics)
   - [(3.3) 里程计与 SLAM](./topics/control.md#slam)
   - [(3.4) 工程生态与工具](./topics/control.md#engineering-stack)
+- [(4) Whole-Body Control —— 全身控制与人形运动](./topics/control.md#wbc) ⭐
+  - [(4.1) 模型式与学习式两条路线](./topics/control.md#wbc)
+  - [(4.2) 入门路径](./topics/control.md#wbc)
+  - [(4.3) 训练框架与工具](./topics/control.md#wbc)
+  - [(4.4) 动作重定向与遥操作](./topics/control.md#wbc)
 
 <a id="hardware"></a>
 
-## 🦾 (7) Hardware - 硬件篇
+## 🦾 (7) Hardware —— 硬件篇
 
 > 完整内容：[topics/hardware.md](./topics/hardware.md)
 
@@ -358,6 +391,7 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 - [(3) Robot System Design —— 机器人系统设计](./topics/hardware.md#robosystem)
 - [(4) Sensors —— 传感器](./topics/hardware.md#sensors)
   - [(4.1) 深度相机（Depth Camera）](./topics/hardware.md#sensors)
+  - [(4.2) 力觉与本体感知](./topics/hardware.md#sensors)
 - [(5) Tactile Sensing —— 触觉感知](./topics/hardware.md#tactile)
   - [(5.1) 视触觉传感器](./topics/hardware.md#tactile)
   - [(5.2) 电子皮肤](./topics/hardware.md#tactile)
@@ -366,7 +400,7 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 - [(6) Data Collection —— 数据采集硬件](./topics/hardware.md#data_collection)
 - [(7) Companies —— 公司与硬件生态](./topics/hardware.md#companies)
 
-## 🤝 Contributing - 参与贡献
+## 🤝 Contributing —— 参与贡献
 
 本项目由社区共同维护，欢迎任何形式的参与：
 
@@ -376,7 +410,7 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 
 提交 PR 前请确认：条目放在了语义最贴近的章节、链接可正常访问、格式与相邻条目保持一致。
 
-## 👍 Citation - 引用
+## 👍 Citation —— 引用
 
 如果这个仓库对你有帮助，欢迎引用：
 
@@ -386,11 +420,11 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
   author = {Embodied-AI-Guide-Contributors, Lumina-Embodied-AI-Community, Tianxing Chen},
   month = {January},
   year = {2025},
-  url = {https://github.com/tianxingchen/Embodied-AI-Guide},
+  url = {https://github.com/TianxingChen/Embodied-AI-Guide},
 }
 ```
 
-## 🏷️ License - 许可协议
+## 🏷️ License —— 许可协议
 
 本项目采用 **非商业使用（Non-Commercial Use）** 协议：
 
@@ -399,11 +433,11 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 
 详情请查看仓库中的 [LICENSE](./LICENSE) 文件。如需商业授权（例如在公司产品或商业项目中使用），请联系项目负责人：[chentianxing2002@gmail.com](mailto:chentianxing2002@gmail.com)。
 
-## ⭐️ Star History - Star 历史
+## ⭐️ Star History —— Star 历史
 
 ![Star History Chart](https://star-history.dera.page/svg?repos=TianxingChen/Embodied-AI-Guide&type=Date)
 
-## 🤝 Sponsors - 支持机构
+## 🤝 Sponsors —— 支持机构
 
 感谢 **无界智航**、**超维动力**、**香港大学 MMLab**、**地瓜机器人**、**松灵机器人** 对本项目的支持。
 

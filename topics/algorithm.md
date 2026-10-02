@@ -1,39 +1,41 @@
 <h1 align="center">Embodied-AI-Guide<br>算法篇</h1>
 
 
-> 这一篇把具身智能中最常用的“算法能力栈”从下往上串了起来：底层是工程工具与几何/标定/控制这类决定系统能否稳定运行的基础；中层是视觉与多模态表征（2D/3D/4D、prompting、affordance），它们把复杂世界压缩成可泛化、可对齐、可被策略利用的中间表示；上层则是学习与决策（RL/IL、VLA、LLM+Planner、快慢系统），把感知与任务目标转成可执行动作，并逐步走向更长程、更通用、更可部署的系统形态。
+> 这一篇把具身智能中最常用的「算法能力栈」从下往上串了起来：**底层**是工程工具与几何、标定、控制这类决定系统能否稳定运行的基础；**中层**是视觉与多模态表征（2D/3D/4D、prompting、affordance），负责把复杂世界压缩成可泛化、可对齐、可被策略利用的中间表示；**上层**则是学习与决策（RL/IL、VLA、LLM + Planner、快慢系统），把感知与任务目标转成可执行动作，并逐步走向更长程、更通用、更可部署的系统形态。
+>
+> 🌱 **怎么读这一章**：它是**索引而非教材**，不必从头读到尾。如果你是新人，建议先看 (3) Robot Learning 建立学习路线、再看 (5) VLA 了解当前主流，其余章节等你真正需要时再回来检索。
 
 <section id="common-tools"></section>
 
 ## (1) Common Tools —— 具身智能中的常用工程工具
 
-这一部分聚焦于**具身智能项目中高频出现、工程上“绕不开”的工具与技巧**。  
-它们往往不是算法论文的核心贡献，但却决定了一个系统能否真正跑起来、跑稳定、跑到可复现。
+这一部分聚焦于**具身智能项目中高频出现、工程上「绕不开」的工具与技巧**。它们往往不是算法论文的核心贡献，但却决定了一个系统能否真正跑起来、跑稳定、跑到可复现。
 
-在大多数真实或仿真 Project 中，你会反复遇到：**点云如何处理、相机和机械臂如何对齐、目标位姿如何转成可执行动作**。这些问题一旦处理不当，会在后续学习或评估阶段持续放大误差。
+在大多数真实或仿真项目中，你会反复遇到三个问题：**点云如何处理、相机和机械臂如何对齐、目标位姿如何转成可执行动作**。这些问题一旦处理不当，误差会在后续学习与评测阶段被持续放大——而且极难排查，因为模型不会报错，只会「表现得差一点」。
 
 | 类别 | 工具/主题 | 链接 | 简要说明 |
 |---|---|---|---|
 | 点云处理 | 点云降采样 | [link](https://zhuanlan.zhihu.com/p/558683732) | 随机 / 均匀 / FPS / 法线空间等方法，直接影响 3D 感知质量 |
-| 标定 | 手眼标定 | [link](https://github.com/fishros/handeye-calib) | 确定相机–机械臂 / 相机–相机相对位姿 |
-| 控制 / 规划 | IK / 逆动力学 | [link](https://curobo.org) | 从目标位姿求解关节状态，工程中非常常见 |
+| 标定 | 手眼标定 | [handeye-calib](https://github.com/fishros/handeye-calib)｜[EasyHeC](https://ootts.github.io/easyhec/) | 确定相机–机械臂 / 相机–相机相对位姿 |
+| 控制 / 规划 | IK / 运动规划 | [cuRobo](https://curobo.org) | 从目标位姿求解关节状态，工程中非常常见 |
 
-在真实系统中，**手眼标定几乎是所有项目的起点**。  
-无论是眼在手上（Eye-in-Hand）还是眼在手外（Eye-to-Hand），你都需要在“相机坐标系看到的世界”和“机械臂执行的坐标系”之间建立可靠映射。  
-常见工具包括 EasyHeC、fishros 的 handeye-calib，它们在工程上足够成熟，适合直接使用。
+**手眼标定几乎是所有真机项目的起点。** 它要回答的问题很朴素：相机看到「杯子在我右前方 30 厘米」，机械臂怎么知道该把手伸到哪？你需要在**相机坐标系**和**机械臂基座坐标系**之间求出一个固定的变换矩阵。按相机装在哪里分两种情况：
+
+- **Eye-in-Hand（眼在手上）**：相机装在机械臂末端，跟着手一起动，视角灵活但每帧都要用当前关节角换算；
+- **Eye-to-Hand（眼在手外）**：相机固定在外部三脚架或支架上，标定一次即可，是大多数数据采集平台的做法。
+
+> ⚠️ **标定误差是新人最容易忽略的系统性问题**：标定差 5 毫米，策略在仿真里完美、到真机上就总差一点抓不准，而你会误以为是模型不行。**换过相机位置、拆装过机械臂、甚至只是撞了一下支架，都要重新标定。**
 
 围绕这些基础问题，社区已经沉淀了一套相对稳定的组件生态：
 
-| 点云 / 几何 | 机器人中间件 / 规划 | 视觉标记 | 配准 |
-|---|---|---|---|
-| Open3D | ROS 2 | AprilTag | TEASER++ |
-| PCL | MoveIt 2 | ArUco（OpenCV） | ICP（Open3D / PCL） |
+| 用途 | 常用选择 |
+|---|---|
+| 点云 / 几何处理 | [Open3D](https://www.open3d.org/)（Python 友好，首选）、[PCL](https://pointclouds.org/)（C++，功能最全） |
+| 机器人中间件 / 规划 | [ROS 2](https://docs.ros.org/en/humble/index.html)、[MoveIt 2](https://moveit.picknik.ai/main/index.html)、[mplib](https://github.com/haosulab/mplib)（轻量、不依赖 ROS） |
+| 视觉标记（提供已知参考位姿） | [AprilTag](https://april.eecs.umich.edu/software/apriltag)、ArUco（[OpenCV 内置](https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html)） |
+| 点云配准 | ICP（Open3D / PCL 均内置）、[TEASER++](https://github.com/MIT-SPARK/TEASER-plusplus)（对外点鲁棒） |
 
-这些工具本身**不直接“智能”**，但它们构成了具身智能系统的“骨架层”。  
-如果这一层不稳定，再强的模型也很难在真实环境中工作。
-
-**小结**：  
-Common Tools 并不是为了“提升指标”，而是为了**降低系统不确定性**。在具身智能中，工程可靠性本身就是一种隐含的性能。
+**小结**：Common Tools 并不是为了「提升指标」，而是为了**降低系统不确定性**。在具身智能中，工程可靠性本身就是一种隐含的性能——一个标定准确、时间同步、数据格式干净的平庸模型，常常打得过一个跑在脏数据上的先进模型。
 
 ---
 
@@ -41,13 +43,14 @@ Common Tools 并不是为了“提升指标”，而是为了**降低系统不�
 
 ## (2) Vision Foundation Models —— 视觉基础模型在具身智能中的角色
 
-近年来，大规模视觉基础模型已经成为**具身智能系统的重要感知支柱**。  
-它们并不直接输出动作，但通过提供**高质量、具有语义一致性的视觉表征**，显著降低了下游任务（检测、分割、跟踪、位姿估计、操作规划）的难度。
+近年来，大规模视觉基础模型已经成为**具身智能系统的重要感知支柱**。它们并不直接输出动作，但通过提供**高质量、具有语义一致性的视觉表征**，显著降低了下游任务（检测、分割、跟踪、位姿估计、操作规划）的难度。
+
+对新人来说，这一节最实用的读法是把它当**工具箱目录**：先看清楚每个模型「输入什么、输出什么」，等你在项目里遇到对应需求时再回来取用。它们在具身系统中通常以两种方式出现——**要么作为策略的视觉编码器**（冻结权重，提特征喂给动作头），**要么作为独立的感知模块**（先分割出目标、再把掩码或位姿传给下游规划）。
 
 | 能力 | 模型 / 工具 | 链接 | 简要说明 |
 |---|---|---|---|
 | 图文对齐 | CLIP | [link](https://github.com/openai/CLIP) | 图像–文本共享语义空间 |
-| 表征学习 | DINO (v1/v2/v3) | [link](https://github.com/facebookresearch/dino) | 高层视觉特征，对 correspondence 很有帮助 |
+| 表征学习 | DINO (v1/v2/v3) | [v1](https://github.com/facebookresearch/dino)｜[v3](https://github.com/facebookresearch/dinov3) | 高层视觉特征，对 correspondence 很有帮助；v3 是目前默认的稠密特征主干 |
 | 分割 | SAM / SAM2 | [link](https://segment-anything.com) | 点 / 框提示分割，SAM2 支持视频 |
 | 分割追踪 | SAM3 | [link](https://ai.meta.com/sam3) | 图像与视频级持续分割 |
 | 3D 重建 | SAM3D | [link](https://ai.meta.com/sam3d) | 资产 / 场景 / 人体重建 |
@@ -55,63 +58,103 @@ Common Tools 并不是为了“提升指标”，而是为了**降低系统不�
 | 检测 + 分割 | Grounded-SAM | [link](https://github.com/IDEA-Research/Grounded-SAM-2) | 检测后分割，工程友好 |
 | 位姿追踪 | FoundationPose | [link](https://github.com/NVlabs/FoundationPose) | 物体 6D 位姿估计 |
 | 深度估计 | Depth Anything v1/v2 | [link](https://github.com/LiheYoung/Depth-Anything) | 单目深度预测 |
+| 深度 + 位姿 | Depth Anything 3 | [paper](https://arxiv.org/abs/2511.10647)｜[repo](https://github.com/ByteDance-Seed/depth-anything-3) | 单个模型同时出深度、相机位姿与 3D 高斯，输入可以是任意张数的图 |
+| 前馈三维重建 | VGGT 系列 | [VGGT-Ω](https://arxiv.org/abs/2605.15195)｜[主页](http://vggt-omega.github.io/) | 一次前向推理直接出几何，替代传统 SfM/COLMAP 流程 |
 | 点云表征 | Point Transformer v3 | [link](https://github.com/Pointcept/PointTransformerV3) | 点云特征学习 |
 | 生成 | Stable Diffusion | [link](https://github.com/CompVis/stable-diffusion) | 生成目标图像或中间表征 |
 | 机器人 FM | RDT-1B | [link](https://rdt-robotics.github.io/rdt-robotics) | 双臂操作基础模型 |
 | 图文对齐 | SigLIP | [link](https://huggingface.co/docs/transformers/en/model_doc/siglip) | CLIP 类模型 |
 
-以 DINO 系列为例，它们并不是为“具身智能”设计的，但其学到的高层视觉表征在**跨实例 correspondence、关键点对齐、对象一致性**等问题上表现出很强的泛化性。这种“隐式几何一致性”对操作任务尤其重要。
+以 DINO 系列为例，它们并不是为「具身智能」设计的，但其学到的高层视觉表征在**跨实例对应（correspondence）、关键点对齐、对象一致性**等问题上泛化性很强——换句话说，它能认出「这个杯子的把手」和「另一个不同形状杯子的把手」是同一类部件。这种**隐式的几何与语义一致性**，正是操作任务最需要的。
 
 在开放世界设置下，**开放词表检测与多任务模型**进一步减少了人工标注和任务定制成本：
 
-| 开放词表 / 多任务 | 分割 | 深度 |
-|---|---|---|
-| OWL-ViT | Mask2Former | MiDaS |
-| DETIC | SEEM |  |
+| 方向 | 常见选择 |
+|---|---|
+| 开放词表检测 | [OWL-ViT](https://huggingface.co/docs/transformers/model_doc/owlvit)、[Detic](https://github.com/facebookresearch/Detic) |
+| 通用 / 交互式分割 | [Mask2Former](https://github.com/facebookresearch/Mask2Former)、[SEEM](https://github.com/UX-Decoder/Segment-Everything-Everywhere-All-At-Once) |
+| 单目深度 | [MiDaS](https://github.com/isl-org/MiDaS)、Depth Anything（见上表） |
 
-这些模型使系统不再局限于“训练时见过的类别”，而是可以通过语言或提示进行动态感知，这一点在长期自主、家庭场景或多任务系统中尤为关键。
+它们让系统不再局限于「训练时见过的类别」，而是可以通过语言或提示动态指定目标——这一点在家庭场景、长期自主与多任务系统中尤为关键。
 
-**小结**：  
-Vision Foundation Models 的核心价值不在于“替代控制”，而在于**将复杂世界压缩成结构化、可泛化的感知表示**。  
-它们是当前具身智能从“任务特化系统”走向“通用系统”的关键一环。
+> 🌱 **选型时的三条经验**：
+> 1. **需要语义就用 CLIP / SigLIP，需要几何对应就用 DINO**。两者常常一起用。
+> 2. **分割模型是「有提示才工作」的**：SAM 系列需要你先给出点、框或文本，它本身不知道你要哪个物体，所以工程上常见 Grounding-DINO（文本找框）+ SAM（框转掩码）的组合。
+> 3. **单目深度是相对深度，不是米**。Depth Anything 这类模型输出的深度需要额外尺度对齐才能用于抓取，直接拿来算三维坐标必然出错——需要精确尺度时请用 RGB-D 相机。
+
+#### 2026 年的两个变化
+
+**(1) 几何重建从「流程」变成「一次前向推理」。** 过去要知道相机在哪、场景几何长什么样，得跑一整套 SfM / COLMAP 流水线，慢且容易失败。以 VGGT 为代表的前馈式重建模型把这件事压缩成一次网络推理，直接输出深度、相机位姿与点图；Depth Anything 3 进一步把「任意张数输入图 → 深度 + 位姿」统一进单个普通 Transformer。对具身而言，这意味着**空间几何正在变成一种可以随手调用的基础能力**，而不再是一个需要单独搭建的子系统——也因此开始被直接接进 VLA 当作空间主干。
+
+**(2) 分割模型开始「听得懂概念」。** SAM 系列早期只能一次分割一个被提示的物体，SAM 3 引入了以短语或示例图为条件的概念级分割，可以一次找出并跟踪画面中**所有**符合描述的实例。这恰好对上了机器人最常见的需求：「把桌上所有的杯子都收走」。
+
+> ⚠️ **一个需要泼冷水的事实**：2026 年多个空间推理基准（如 [OmniSpatial](https://proceedings.iclr.cc/paper_files/paper/2026/file/3c01dea20ce7c2f526beaf05708030e5-Paper-Conference.pdf)、[MV-RoboBench](https://arxiv.org/abs/2510.19400)）的共同结论是：**前沿多模态大模型在涉及深度、遮挡关系与视角变换的空间问题上仍然大幅落后于人类**，而且单视角基准上的好成绩并不能迁移到多视角。所以不要假设「接一个强 VLM 就解决了空间理解」——这仍是公认的开放问题，也是一个适合新人切入的研究方向。
+
+**小结**：Vision Foundation Models 的核心价值不在于「替代控制」，而在于**将复杂世界压缩成结构化、可泛化的感知表示**。它们是当前具身智能从「任务特化系统」走向「通用系统」的关键一环。
 
 
 <section id="robot-learning"></section>
 
 ## (3) Robot Learning —— 机器人学习（从控制到策略）
 
-机器人学习并不是单一方向，而是一条从**经典控制（PID / MPC）**到**学习型策略（RL / IL）**的连续谱。在具身系统中，很多“成功的方案”本质上是混合式：用控制与规划保证稳定性，用学习补足复杂感知与泛化能力。本节给出一组相对系统的入门资源，同时补充工程里最常用的策略基线与仿真/代码生态，方便你快速形成学习路线并落到可跑的实验。
+机器人学习并不是单一方向，而是一条从**经典控制（PID / MPC）**到**学习型策略（RL / IL）**的连续谱。在具身系统中，很多「成功的方案」本质上是混合式：用控制与规划保证稳定性，用学习补足复杂感知与泛化能力。
+
+新人最常问的第一个问题是「**我该学强化学习还是模仿学习**」。一个简化但实用的回答：
+
+| | 模仿学习（IL / BC） | 强化学习（RL） |
+|---|---|---|
+| 数据从哪来 | 人类演示（遥操作、动捕、视频） | 与环境交互试错，靠奖励函数打分 |
+| 主要成本 | 采集演示很贵，且质量参差 | 设计奖励函数很难，交互次数极大 |
+| 在哪里主导 | **操作（Manipulation）**：桌面抓取、装配、叠衣服 | **移动（Locomotion）**：四足行走、人形跑跳、无人机飞行 |
+| 为什么 | 操作任务奖励难写（「叠好了」怎么打分？），但人演示很自然 | 运动任务奖励好写（别摔倒、跟上速度指令），但没法让人去演示怎么迈腿 |
+
+> 🌱 **给新人的路线**：如果你的目标是操作，**先学模仿学习，从 ACT 或 Diffusion Policy 开始**，它本质上就是监督学习，一周内能跑通；等你发现模仿学习的天花板（演示里没有的情况一律不会），再补强化学习。如果你的目标是四足/人形运动控制，则相反，直接从 RL + 仿真并行采样入手。2025 年之后的主流做法是两者结合：**先用海量演示预训练，再用 RL 后训练把成功率从「能做」推到「能用」**，详见 (5.4)。
+
+本节给出一组相对系统的入门资源，同时补充工程里最常用的策略基线与仿真/代码生态，方便你快速形成学习路线并落到可跑的实验。
 
 | 模块 | 资源 | 链接 | 说明 |
 |---|---|---|---|
-| 自主机器人课程 | ETH & TTIC & UdeM Robot Autonomy | 视频：[link](https://www.edx.org/learn/technology/eth-zurich-self-driving-cars-with-duckietown) / 网站：[link](https://duckietown.com/self-driving-cars-with-duckietown-mooc/) | Duckietown 平台贯穿感知-决策-控制闭环 |
-| MPC 入门 | 华工机器人实验室：MPC 从公式到代码 | bilibili：[link](https://www.bilibili.com/video/BV1U54y1J7wh) / 代码：[link](https://gitee.com/clangwu/mpc_control.git) | 从 PID 过渡到 MPC，含仿真与代码 |
-| RL 入门 | 强化学习的数学原理（西湖大学） | bilibili：[link](https://space.bilibili.com/2044042934/channel/collectiondetail?sid=748665) / 书+代码：[link](https://github.com/MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning) | 数学推导体系化，适合打地基 |
+| 自主机器人课程 | ETH & TTIC & UdeM Robot Autonomy | [视频](https://www.edx.org/learn/technology/eth-zurich-self-driving-cars-with-duckietown)｜[网站](https://duckietown.com/self-driving-cars-with-duckietown-mooc/) | Duckietown 平台贯穿感知-决策-控制闭环 |
+| MPC 入门 | 华工机器人实验室：MPC 从公式到代码 | [bilibili](https://www.bilibili.com/video/BV1U54y1J7wh)｜[代码](https://gitee.com/clangwu/mpc_control.git) | 从 PID 过渡到 MPC，含仿真与代码 |
+| RL 入门 | 强化学习的数学原理（西湖大学） | [bilibili](https://space.bilibili.com/2044042934/channel/collectiondetail?sid=748665)｜[书 + 代码](https://github.com/MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning) | 数学推导体系化，适合打地基 |
 | DRL 速览 | Abbeel 6 Lectures | [link](https://www.youtube.com/watch?v=2GwBez0D20A) | 六讲概览 DRL，快速建立框架 |
-| DRL 系统课 | Berkeley CS 185/285（原 CS285） | 网站：[link](https://rail.eecs.berkeley.edu/deeprlcourse/) / YouTube：[link](https://www.youtube.com/playlist?list=PL_iWQOsE6TfVYGEGiAOMaOzzv41Jfm_Ps) | Levine 主讲，内容详尽 |
+| DRL 系统课 | Berkeley CS 185/285（原 CS285） | [网站](https://rail.eecs.berkeley.edu/deeprlcourse/)｜[YouTube](https://www.youtube.com/playlist?list=PL_iWQOsE6TfVYGEGiAOMaOzzv41Jfm_Ps) | Levine 主讲，内容详尽 |
 | DRL 中文课 | 李宏毅强化学习 | [link](https://www.bilibili.com/video/BV1XP4y1d7Bk) | 搭配实践（Gymnasium 等）较友好 |
 | 模仿学习 | LAMDA：IL 简洁教程 | [link](https://www.lamda.nju.edu.cn/xut/Imitation_Learning.pdf) | 结构清晰，入门友好 |
 | 真实机器人 IL | RSS 2024 Workshop 教程 | [link](https://www.bilibili.com/video/BV1Fx4y1s7if) | 从真实机器人监督学习的角度讲落地问题 |
 
-为了尽快“跑通一个具身学习 pipeline”，工程上经常直接从成熟基线开始改：
+为了尽快「跑通一个具身学习 pipeline」，工程上经常直接从成熟基线开始改：
 
-| 策略基线（最常用） | 链接 | 说明 |
+| 轻量基线（新人起点） | 链接 | 说明 |
 |---|---|---|
-| ACT（Transformer Policy） | [link](https://github.com/tonyzhaozh/act) / [link](https://tonyzhaozh.github.io/aloha/) | 经典模仿学习基线，适合做对照与复现 |
-| Diffusion Policy | [link](https://github.com/real-stanford/diffusion_policy) | 扩散式动作生成，实践中效果稳健 |
-| DP3（3D Diffusion Policy） | [link](https://github.com/YanjieZe/3D-Diffusion-Policy) | 引入 3D 表征，适配更复杂几何 |
+| ACT（Transformer Policy） | [repo](https://github.com/tonyzhaozh/act)｜[主页](https://tonyzhaozh.github.io/aloha/) | 经典模仿学习基线，结构最简单，**建议作为第一个复现对象** |
+| Diffusion Policy | [repo](https://github.com/real-stanford/diffusion_policy) | 扩散式动作生成，能表达多模态动作分布，实践中效果稳健 |
+| DP3（3D Diffusion Policy） | [repo](https://github.com/YanjieZe/3D-Diffusion-Policy) | 引入 3D 点云表征，适配更复杂几何 |
 
-仿真与代码生态决定了你能否低成本迭代：同一算法在不同平台的“可用性”差异非常大。
+到 2026 年，论文里的对照组已经不只是上面三个——**开源的通用基座权重多到可以直接当基线用**，微调一个现成基座往往比从零训练一个小模型效果更好：
 
-| 仿真 / 平台 | 链接 | 常用 Codebase | 链接 |
-|---|---|---|---|
-| MuJoCo Playground | [link](https://playground.mujoco.org/) | legged-gym | [link](https://github.com/leggedrobotics/legged_gym) |
-| Isaac Lab | [link](https://isaac-sim.github.io/IsaacLab/main/index.html) |  |  |
-| SAPIEN | [link](https://sapien.ucsd.edu/) |  |  |
-| Genesis | [link](https://github.com/Genesis-Embodied-AI/Genesis) |  |  |
+| 开源基座 | 链接 | 说明 |
+|---|---|---|
+| π0 / π0.5 / π0-FAST | [openpi](https://github.com/Physical-Intelligence/openpi) | flow matching VLA 的参考实现，Apache-2.0，生态最成熟 |
+| GR00T N1.7 | [repo](https://github.com/NVIDIA/Isaac-GR00T) | NVIDIA 跨本体 VLA，Apache-2.0，含人形全身控制支持 |
+| RDT2 | [paper](https://arxiv.org/abs/2602.03310)｜[repo](https://github.com/thu-ml/RDT2) | 清华；靠规模化 UMI 手持数据实现对**未见本体**的零样本部署 |
+| WALL-OSS | [paper](https://arxiv.org/abs/2605.30877)｜[repo](https://github.com/X-Square-Robot/wall-x) | Apache-2.0，视觉语言与动作双专家结构 |
+| X-VLA | [repo](https://github.com/2toinf/X-VLA) | 0.9B 的小模型，算力有限时的强基线 |
 
-**小结**：  
-Robot Learning 的核心不是“选 RL 还是 IL”，而是用**控制/规划保证稳定**，用**学习提升复杂感知下的泛化**。建议先用成熟基线跑通数据-训练-评估闭环，再逐步替换关键模块。
+**另一个活跃方向是用 RL 微调已经训好的策略。** 纯模仿学习的天花板就是演示数据本身，而 RL 后训练能让模型从自己的失败里改进。由于主流 VLA 用 flow matching 生成动作、拿不到动作的对数概率，标准 PPO 没法直接套用，于是出现了一批绕开这一限制的方法：有的去优化喂给流模型的**初始噪声**（DSRL），有的在冻结基座之外学一个**动作残差**、再由 critic 决定用不用（[EXPO-FT](https://arxiv.org/abs/2605.25477)、[SC-VLA](https://arxiv.org/abs/2602.21633)），也有用最优传输改写 Q 学习的（[OTQL](https://arxiv.org/abs/2607.06262)）。这条线最有代表性的成果见 [(5.4) 的 RECAP](#vla)。
+
+仿真与代码生态决定了你能否低成本迭代：同一算法在不同平台的「可用性」差异非常大。
+
+| 方向 | 推荐平台 | 链接 |
+|---|---|---|
+| 操作（Manipulation） | SAPIEN / RoboTwin、MuJoCo + robosuite | [SAPIEN](https://sapien.ucsd.edu/)｜[RoboTwin](https://github.com/RoboTwin-Platform/RoboTwin) |
+| 运动控制（Locomotion） | Isaac Lab、MuJoCo Playground、mjlab | [Isaac Lab](https://github.com/isaac-sim/IsaacLab)｜[Playground](https://playground.mujoco.org/)｜[mjlab](https://github.com/mujocolab/mjlab) |
+| 四足经典实现 | legged-gym（基于已停更的 IsaacGym，适合读代码学思路） | [repo](https://github.com/leggedrobotics/legged_gym) |
+| 跨平台新选项 | Genesis | [repo](https://github.com/Genesis-Embodied-AI/genesis-world) |
+
+选型的详细建议见[基础设施篇](./infrastructure.md#simulators)，人形与四足的专门路线见[控制篇 (4)](./control.md#wbc)。
+
+**小结**：Robot Learning 的核心不是「选 RL 还是 IL」，而是用**控制/规划保证稳定**，用**学习提升复杂感知下的泛化**。建议先用成熟基线跑通数据 → 训练 → 评测闭环，再逐步替换关键模块——**先让流程转起来，再谈换模型**。
 
 ---
 
@@ -119,26 +162,30 @@ Robot Learning 的核心不是“选 RL 还是 IL”，而是用**控制/规划�
 
 ## (4) LLM for Robotics —— 大语言模型在机器人中的应用
 
-LLM 在机器人领域的价值，更多体现在**高层语义理解与任务组织**：把自然语言指令转成结构化计划，或者与传统规划器、3D 感知模块协作形成“可执行”的中间表示。需要强调的是：在多数可落地系统中，LLM 并不直接输出低层控制量，而是充当**高层策略/规划器**或**工具调用与代码生成器**。
+LLM 在机器人领域的价值，更多体现在**高层语义理解与任务组织**：把自然语言指令转成结构化计划，或者与传统规划器、3D 感知模块协作形成「可执行」的中间表示。需要强调的是：在多数可落地系统中，**LLM 并不直接输出低层控制量**，而是充当高层策略/规划器，或工具调用与代码生成器。
+
+原因很实际：LLM 推理一次要几百毫秒到数秒，而机械臂的控制回路需要几十到上千赫兹。所以典型分工是——**LLM 负责「做什么、按什么顺序做」，VLA 或传统控制器负责「怎么做」**。
+
+> 🌱 **这一节和 (5) VLA 是什么关系？** 它们是同一个问题的两种解法：本节是**分层**（LLM 规划 + 底层执行，模块清晰、可解释、易加安全约束，但接口设计费劲且误差会在层间累积）；下一节的 VLA 是**端到端**（视觉语言直接映射到动作，泛化好、无需手工接口，但可解释性差、长任务容易跑偏）。2025 年之后两条路开始合流，产物就是 (5.2) 的「分层双系统 VLA」。**新人可以先看 (5)，本节作为背景理解。**
 
 | 方向 | 代表资源 / 工作 | 链接 | 说明 |
 |---|---|---|---|
-| 综述 / 入门 | Robotics+LLM 系列 | [link](https://zhuanlan.zhihu.com/p/668053911) | 系列文章，适合快速扫全景 |
+| 综述 / 入门 | Robotics + LLM 系列 | [link](https://zhuanlan.zhihu.com/p/668053911) | 系列文章，适合快速扫全景 |
 | 概念基础 | Embodied Agent | [link](https://en.wikipedia.org/wiki/Embodied_agent) | 具身智能体基本概念 |
-| Agent 综述 | Lilian Weng：AI Agent | 中文：[link](https://mp.weixin.qq.com/s/Jb8HBbaKYXXxTSQOBsP5Wg) / 英文：[link](https://lilianweng.github.io/posts/2023-06-23-agent/) | 讲清 Agent 系统常见范式 |
-| LLM 做高层规划 | PaLM-E / DIAC / LBYL / EmbodiedGPT | PaLM-E：[link](https://arxiv.org/abs/2303.03378) / DIAC：[link](https://arxiv.org/abs/2204.01691) / LBYL：[link](https://arxiv.org/abs/2311.17842) / EmbodiedGPT：[link](https://arxiv.org/abs/2305.15021) | 用 LLM 做策略/规划或决策 |
+| Agent 综述 | Lilian Weng：AI Agent | [中文](https://mp.weixin.qq.com/s/Jb8HBbaKYXXxTSQOBsP5Wg)｜[英文](https://lilianweng.github.io/posts/2023-06-23-agent/) | 讲清 Agent 系统常见范式 |
+| LLM 做高层规划 | PaLM-E / DIAC / LBYL / EmbodiedGPT | [PaLM-E](https://arxiv.org/abs/2303.03378)｜[DIAC](https://arxiv.org/abs/2204.01691)｜[LBYL](https://arxiv.org/abs/2311.17842)｜[EmbodiedGPT](https://arxiv.org/abs/2305.15021) | 用 LLM 做策略/规划或决策 |
 | 统一高低层 | RT-2 | [link](https://arxiv.org/abs/2307.15818) | 将语言-视觉与动作更紧密地统一 |
-| LLM + Planner | LLM+P / AutoTAMP / Text2Motion | LLM+P：[link](https://arxiv.org/abs/2304.11477) / AutoTAMP：[link](https://arxiv.org/abs/2306.06531) / Text2Motion：[link](https://arxiv.org/abs/2303.12153) | 结合传统规划器提高可执行性 |
-| Code 能力 | Code as Policy / Instruction2Act | CaP：[link](https://arxiv.org/abs/2209.07753) / I2A：[link](https://arxiv.org/abs/2305.11176) | 用代码中间层提升可控性 |
-| 3D 感知 + LLM | VoxPoser / OmniManip | VoxPoser：[link](https://arxiv.org/abs/2307.05973) / OmniManip：[link](https://arxiv.org/abs/2501.03841) | 3D 表征辅助规划与约束 |
-| 多机器人协同 | RoCo / Scalable-Multi-Robot | RoCo：[link](https://arxiv.org/abs/2307.04738) / Scalable：[link](https://arxiv.org/abs/2309.15943) | 多机器人协同规划 |
+| LLM + Planner | LLM+P / AutoTAMP / Text2Motion | [LLM+P](https://arxiv.org/abs/2304.11477)｜[AutoTAMP](https://arxiv.org/abs/2306.06531)｜[Text2Motion](https://arxiv.org/abs/2303.12153) | 结合传统规划器提高可执行性 |
+| Code 能力 | Code as Policy / Instruction2Act | [CaP](https://arxiv.org/abs/2209.07753)｜[I2A](https://arxiv.org/abs/2305.11176) | 用代码中间层提升可控性 |
+| 3D 感知 + LLM | VoxPoser / OmniManip | [VoxPoser](https://arxiv.org/abs/2307.05973)｜[OmniManip](https://arxiv.org/abs/2501.03841) | 3D 表征辅助规划与约束 |
+| 多机器人协同 | RoCo / Scalable-Multi-Robot | [RoCo](https://arxiv.org/abs/2307.04738)｜[Scalable](https://arxiv.org/abs/2309.15943) | 多机器人协同规划 |
 
-如果你更关心“离落地更近”的通用策略（而不是纯 LLM 规划），通常会与 VLA / 通用控制模型一起看：
+如果你更关心「离落地更近」的通用策略（而不是纯 LLM 规划），通常会与 VLA / 通用控制模型一起看：
 
 | 更贴近落地的通用策略 | 链接 | 说明 |
 |---|---|---|
-| OpenVLA | [link](https://openvla.github.io/) / [link](https://arxiv.org/abs/2406.09246) | 通用操控策略代表作之一 |
-| Octo | [link](https://octo-models.github.io/) / [link](https://github.com/octo-models/octo) | 强基线与工程化实现较完整 |
+| OpenVLA | [link](https://openvla.github.io/)｜[link](https://arxiv.org/abs/2406.09246) | 通用操控策略代表作之一 |
+| Octo | [link](https://octo-models.github.io/)｜[link](https://github.com/octo-models/octo) | 强基线与工程化实现较完整 |
 
 **小结**：  
 LLM 在机器人里最可靠的定位通常是**高层理解 + 规划 + 工具调用**，与传统规划/约束或 VLA 低层执行配合，系统更可控、更可复现。
@@ -149,7 +196,7 @@ LLM 在机器人里最可靠的定位通常是**高层理解 + 规划 + 工具�
 
 ## (5) Vision-Language-Action Models —— VLA 模型
 
-VLA（Vision-Language-Action）可以理解为“把视觉-语言模型的能力直接延伸到动作空间”。与“VLM 做 planning”不同，VLA 的目标是更端到端：输入视觉与语言，输出可执行动作（或动作序列）。实现上通常涉及一个关键步骤：**动作表示（Action Representation）**——把连续控制量或轨迹转成模型可学习的 token / latent，并设计动作头（autoregressive、diffusion、flow 等）完成生成。
+VLA（Vision-Language-Action）可以理解为「把视觉-语言模型的能力直接延伸到动作空间」。与「VLM 做 planning」不同，VLA 的目标是更端到端：输入视觉与语言，输出可执行动作（或动作序列）。实现上通常涉及一个关键步骤：**动作表示（Action Representation）**——把连续控制量或轨迹转成模型可学习的 token / latent，并设计动作头（autoregressive、diffusion、flow 等）完成生成。
 
 从实践角度看，VLA 的差异往往来自三件事：  
 （1）动作如何表示与量化（例如 tokenizer / FAST / latent action）  
@@ -162,8 +209,8 @@ VLA（Vision-Language-Action）可以理解为“把视觉-语言模型的能力
 |---|---|---|---|
 | Blog | 具身智能 Vision-Language-Action 的思考 | [link](https://zhuanlan.zhihu.com/p/9880769870) |  |
 | Blog | 具身智能 VLA 的思考（问答） | [link](https://www.zhihu.com/question/655570660/answer/87040917575) |  |
-| Survey | 数据视角：数据集、基准与数据引擎 ⭐ | [link](https://arxiv.org/abs/2604.23001) / [repo](https://github.com/ziyaow1010/vla-datasets-benchmarks) | 2026.04；持续更新，论证「数据基础设施才是瓶颈」 |
-| Survey | Action Tokenization 视角 VLA Survey | [link](https://arxiv.org/abs/2507.01925) / [link](https://github.com/Psi-Robot/Awesome-VLA-Papers) | 2025.07.02 |
+| Survey | 数据视角：数据集、基准与数据引擎 ⭐ | [link](https://arxiv.org/abs/2604.23001)｜[repo](https://github.com/ziyaow1010/vla-datasets-benchmarks) | 2026.04；持续更新，论证「数据基础设施才是瓶颈」 |
+| Survey | Action Tokenization 视角 VLA Survey | [link](https://arxiv.org/abs/2507.01925)｜[link](https://github.com/Psi-Robot/Awesome-VLA-Papers) | 2025.07.02 |
 | Survey | VLA for Embodied AI Survey | [link](https://arxiv.org/abs/2405.14093) | 2024.11.28 |
 
 ### (5.1) 经典工作
@@ -176,54 +223,54 @@ VLA（Vision-Language-Action）可以理解为“把视觉-语言模型的能力
 | 方向 | 工作 | 链接 | 机构 | 时间 | 备注 |
 |---|---|---|---|---|---|
 | Autoregressive | RT-1 | [link](https://arxiv.org/abs/2212.06817) |  |  | RT 系列起点 |
-| Autoregressive | RT-2 | [link](https://robotics-transformer2.github.io/) / [link](https://arxiv.org/abs/2307.15818) | Google DeepMind | 2023.07 | 55B |
+| Autoregressive | RT-2 | [link](https://robotics-transformer2.github.io/)｜[link](https://arxiv.org/abs/2307.15818) | Google DeepMind | 2023.07 | 55B |
 | Autoregressive | RT-Trajectory | [link](https://arxiv.org/pdf/2311.01977) | GDM / UCSD / Stanford | 2023.11 | 轨迹化输出 |
 | Autoregressive | AUTORT | [link](https://arxiv.org/abs/2401.12963) | Google DeepMind | 2024.01 |  |
-| Autoregressive | RoboFlamingo | [link](https://arxiv.org/abs/2311.01378) / [link](https://github.com/roboflamingo) | ByteDance / THU | 2024.02 |  |
-| Autoregressive | OpenVLA | [link](https://arxiv.org/pdf/2406.09246) / [link](https://github.com/openvla) | Stanford | 2024.06 | 7B |
+| Autoregressive | RoboFlamingo | [link](https://arxiv.org/abs/2311.01378)｜[link](https://github.com/roboflamingo) | ByteDance / THU | 2024.02 |  |
+| Autoregressive | OpenVLA | [link](https://arxiv.org/pdf/2406.09246)｜[link](https://github.com/openvla) | Stanford | 2024.06 | 7B |
 | Autoregressive | TinyVLA | [link](https://arxiv.org/abs/2409.12514) | 上海大学 | 2024.11 |  |
-| Autoregressive | TraceVLA | [link](https://arxiv.org/pdf/2412.10345) / [link](https://github.com/umd-huang-lab/tracevla) | Microsoft | 2024.12 | 输入 visual trace |
-| Diffusion / Flow | Octo | [link](https://arxiv.org/pdf/2405.12213) / [link](https://octo-models.github.io/) | Stanford / Berkeley | 2024.05 | Octo-base 93M |
-| Diffusion / Flow | π0 | [link](https://arxiv.org/pdf/2410.24164) / [link](https://github.com/Physical-Intelligence/openpi) | Stanford / PI |  | 3.3B；flow-based diffusion |
-| Diffusion / Flow | CogACT | [link](https://arxiv.org/pdf/2411.19650) / [link](https://github.com/microsoft/CogACT.git) | THU / MSRA | 2024.11 | 7B |
+| Autoregressive | TraceVLA | [link](https://arxiv.org/pdf/2412.10345)｜[link](https://github.com/umd-huang-lab/tracevla) | Microsoft | 2024.12 | 输入 visual trace |
+| Diffusion / Flow | Octo | [link](https://arxiv.org/pdf/2405.12213)｜[link](https://octo-models.github.io/) | Stanford / Berkeley | 2024.05 | Octo-base 93M |
+| Diffusion / Flow | π0 | [link](https://arxiv.org/pdf/2410.24164)｜[link](https://github.com/Physical-Intelligence/openpi) | Stanford / PI |  | 3.3B；flow-based diffusion |
+| Diffusion / Flow | CogACT | [link](https://arxiv.org/pdf/2411.19650)｜[link](https://github.com/microsoft/CogACT.git) | THU / MSRA | 2024.11 | 7B |
 | Diffusion / Flow | Diffusion-VLA | [link](https://arxiv.org/abs/2412.03293) | 华东师范等 | 2024.12 |  |
-| 3D Vision | 3D-VLA | [link](https://arxiv.org/pdf/2403.09631) / [link](https://github.com/UMass-Foundation-Model/3D-VLA/tree/main) | UMass | 2024.03 | 3D-based LLM |
-| 3D Vision | SpatialVLA | [link](https://arxiv.org/pdf/2501.15830) / [link](https://github.com/SpatialVLA/SpatialVLA) | 上海 AI Lab | 2025.01 | Adaptive Action Grid |
-| VLA-related | FAST（π0） | [link](https://arxiv.org/pdf/2410.24164) / [link](https://github.com/Physical-Intelligence/openpi.git) | Stanford / Berkeley / PI | 2025.01 | 动作 tokenizer |
+| 3D Vision | 3D-VLA | [link](https://arxiv.org/pdf/2403.09631)｜[link](https://github.com/UMass-Foundation-Model/3D-VLA/tree/main) | UMass | 2024.03 | 3D-based LLM |
+| 3D Vision | SpatialVLA | [link](https://arxiv.org/pdf/2501.15830)｜[link](https://github.com/SpatialVLA/SpatialVLA) | 上海 AI Lab | 2025.01 | Adaptive Action Grid |
+| VLA-related | FAST（π0） | [paper](https://arxiv.org/abs/2501.09747)｜[repo](https://github.com/Physical-Intelligence/openpi) | Stanford / Berkeley / PI | 2025.01 | 动作 tokenizer |
 | VLA-related | RLDG | [link](https://generalist-distillation.github.io/static/high_performance_generalist.pdf) | Berkeley | 2024.12 | 用 RL 生成高质数据再蒸馏 |
-| VLA-related | BYO-VLA | [link](https://arxiv.org/abs/2410.01971) / [link](https://github.com/irom-princeton/byovla) | Princeton | 2024.10 | 运行时图像干预 |
-| 场景扩展 | RDT-1B（双臂） | [link](https://arxiv.org/pdf/2410.07864) / [link](https://github.com/thu-ml/RoboticsDiffusionTransformer) | 清华 |  | 扩散式动作头 |
+| VLA-related | BYO-VLA | [link](https://arxiv.org/abs/2410.01971)｜[link](https://github.com/irom-princeton/byovla) | Princeton | 2024.10 | 运行时图像干预 |
+| 场景扩展 | RDT-1B（双臂） | [link](https://arxiv.org/pdf/2410.07864)｜[link](https://github.com/thu-ml/RoboticsDiffusionTransformer) | 清华 |  | 扩散式动作头 |
 | 场景扩展 | QUAR-VLA（四足） | [link](https://arxiv.org/pdf/2312.14457) | 西湖 / 浙大 | 2025.02.04 |  |
-| 场景扩展 | CoVLA（自动驾驶） | [link](https://arxiv.org/abs/2408.10845) / [link](https://turingmotors.github.io/covla-ad/) | Turing | 2024.12 |  |
+| 场景扩展 | CoVLA（自动驾驶） | [link](https://arxiv.org/abs/2408.10845)｜[link](https://turingmotors.github.io/covla-ad/) | Turing | 2024.12 |  |
 | 场景扩展 | Mobility-VLA（导航） | [link](https://arxiv.org/pdf/2407.07775) | Google DeepMind | 2024.07 |  |
-| 场景扩展 | NaVILA（腿式导航） | [link](https://arxiv.org/pdf/2412.04453) / [link](https://navila-bot.github.io/) | UCSD | 2024.12 |  |
+| 场景扩展 | NaVILA（腿式导航） | [link](https://arxiv.org/pdf/2412.04453)｜[link](https://navila-bot.github.io/) | UCSD | 2024.12 |  |
 
 </details>
 
 ### (5.2) 分层双系统 VLA ⭐
 
-2025 年起最有影响力的范式之一是“分层双系统”：  
+2025 年起最有影响力的范式之一是「分层双系统」：  
 **System 2**（慢系统）负责理解与规划（通常是 VLM/LLM），输出语言/符号/latent 的中间表示；  
 **System 1**（快系统）负责高频、稳定的低层控制（VLA / policy），将中间表示转成连续动作。  
-它的直观优势是：在长任务与复杂场景中，把“推理/规划”与“高频控制”解耦，既提升可解释性，也更易做工程约束与安全策略。
+它的直观优势是：在长任务与复杂场景中，把「推理/规划」与「高频控制」解耦，既提升可解释性，也更易做工程约束与安全策略。
 
 | 维度 | 常见差异点 | 例子 |
 |---|---|---|
-| 架构形态 | 单模型 vs 双模型 | Hi-Robot（VLM+VLA） vs π 系列（单模型范式） |
+| 架构形态 | 单模型 vs 双模型 | Hi-Robot（VLM + VLA） vs π 系列（单模型范式） |
 | 通信方式 | 指令 / 子目标 / latent vector | 中间表征粒度决定可控性与泛化 |
 | 数据来源 | 真实 / 仿真 / 合成 | 不同数据组成直接影响鲁棒性 |
 | 关注重点 | 频率、任务跨度、跨本体 | 人形/移动操作/长程任务等 |
 
-同时也出现了不少“产业级 VLA/系统”，强调端到端能力与部署：
+同时也出现了不少「产业级 VLA/系统」，强调端到端能力与部署：
 
 | 系统 / 产品 | 链接 | 时间 | 备注 |
 |---|---|---|---|
 | Figure：Helix | [link](https://www.figure.ai/news/helix) | 2025.02.20 | 上半身全身控制 |
-| 智元：GO-1 | [link](https://www.zhiyuan-robot.com/article/189/detail/56.html) | 2025.03.10 | ViLLA：VLM+MoE，vision-language-latent-action |
+| 智元：GO-1 | [link](https://www.zhiyuan-robot.com/article/189/detail/56.html) | 2025.03.10 | ViLLA：VLM + MoE，vision-language-latent-action |
 | Physical Intelligence（openpi） | [link](https://github.com/Physical-Intelligence/openpi) |  |  |
 | π0.5 | [link](https://arxiv.org/abs/2504.16054) | 2025.04.22 | 高级任务分解 + 单模型低层执行 |
 | Hi Robot | [link](https://arxiv.org/abs/2502.19417) | 2025.02.26 | VLM 推理 + VLA 执行 |
-| Nvidia：GROOT-N1 | [link](https://github.com/NVIDIA/Isaac-GR00T) / [link](https://arxiv.org/abs/2503.14734) | 2025.03.27 | 2B，全身控制，强调部署 |
+| NVIDIA：GR00T N1 | [repo](https://github.com/NVIDIA/Isaac-GR00T)｜[paper](https://arxiv.org/abs/2503.14734) | 2025.03.27 | 2B，全身控制，强调部署 |
 | Psi-R1（灵初智能） | [link](https://www.jiqizhixin.com/articles/2025-03-03-9) | 2025.04.27 | 分层端到端 VLA + RL，test-time scaling |
 | Gemini Robotics | [link](https://arxiv.org/pdf/2503.20020) | 2025.03.25 | 50 Hz |
 | Gemini Robotics on-device | [link](https://deepmind.google/discover/blog/gemini-robotics-on-device-brings-ai-to-local-robotic-devices/) | 2025.06.24 | 设备端部署导向 |
@@ -236,22 +283,22 @@ VLA（Vision-Language-Action）可以理解为“把视觉-语言模型的能力
 
 | 工作 | 链接 | 机构 | 时间 | 备注 |
 |---|---|---|---|---|
-| VQ-VLA | [link](https://arxiv.org/pdf/2507.01016) / [link](https://github.com/xiaoxiao0406/VQ-VLA) | 上海 AI Lab 等 | 2025.07.01 | VQ action tokenizer |
-| WorldVLA | [link](https://arxiv.org/pdf/2506.21539) / [link](https://github.com/alibaba-damo-academy/WorldVLA) | 阿里达摩院等 | 2025.06.21 | VLA + World Model 统一 |
-| BridgeVLA | [link](https://arxiv.org/abs/2506.07961) / [link](https://github.com/BridgeVLA/BridgeVLA) | CASIA / ByteDance Seed 等 | 2025.06.07 | 3D 对齐到 2D |
-| TrackVLA | [link](https://arxiv.org/pdf/2505.23189) / [link](https://github.com/wsakobe/TrackVLA) | 北大等 | 2025.05.29 | 实时检测与导航 |
-| OneTwoVLA | [link](https://arxiv.org/pdf/2505.11917) / [link](https://github.com/Fanqi-Lin/OneTwoVLA) | 清华等 | 2025.05.17 | 推理与执行协同 |
-| UniVLA | [link](https://arxiv.org/pdf/2505.06111) / [link](https://github.com/OpenDriveLab/UniVLA) | 港大等 | 2025.05.09 | 潜在动作表征 |
-| MoManipVLA | [link](https://arxiv.org/pdf/2503.13446) / [link](https://gary3410.github.io/momanipVLA/) | 北邮 / NTU 等 | 2025.03.17 | 移动操作 |
-| TLA | [link](https://arxiv.org/pdf/2503.08548) / [link](https://sites.google.com/view/tactile-language-action/) | 三星等 | 2025.03.11 | 引入触觉模态 |
-| PointVLA | [link](https://arxiv.org/pdf/2503.07511) / [link](https://pointvla.github.io/) | 美的等 | 2025.03.10 | 点云微调 2D VLA |
-| SafeVLA | [link](https://arxiv.org/abs/2503.03480) / [link](https://github.com/PKU-Alignment/SafeVLA) | 北大 | 2025.03.05 | 安全对齐 |
-| HybridVLA | [link](https://arxiv.org/pdf/2503.10631) / [link](https://github.com/PKU-HMI-Lab/Hybrid-VLA) | 北大 | 2025.03.17 | 扩散 + 自回归统一 |
-| DexVLA | [link](https://arxiv.org/pdf/2502.05855) / [link](https://github.com/juruobenruo/DexVLA) | 美的 / 东南 | 2025.02.09 | 多 action head |
-| DexGraspVLA | [link](https://arxiv.org/abs/2502.20900) / [link](https://github.com/Psi-Robot/DexGraspVLA) | 北大 | 2025.02.28 | 灵巧手抓取 |
+| VQ-VLA | [link](https://arxiv.org/pdf/2507.01016)｜[link](https://github.com/xiaoxiao0406/VQ-VLA) | 上海 AI Lab 等 | 2025.07.01 | VQ action tokenizer |
+| WorldVLA | [link](https://arxiv.org/pdf/2506.21539)｜[link](https://github.com/alibaba-damo-academy/WorldVLA) | 阿里达摩院等 | 2025.06.21 | VLA + World Model 统一 |
+| BridgeVLA | [link](https://arxiv.org/abs/2506.07961)｜[link](https://github.com/BridgeVLA/BridgeVLA) | CASIA / ByteDance Seed 等 | 2025.06.07 | 3D 对齐到 2D |
+| TrackVLA | [link](https://arxiv.org/pdf/2505.23189)｜[link](https://github.com/wsakobe/TrackVLA) | 北大等 | 2025.05.29 | 实时检测与导航 |
+| OneTwoVLA | [link](https://arxiv.org/pdf/2505.11917)｜[link](https://github.com/Fanqi-Lin/OneTwoVLA) | 清华等 | 2025.05.17 | 推理与执行协同 |
+| UniVLA | [link](https://arxiv.org/pdf/2505.06111)｜[link](https://github.com/OpenDriveLab/UniVLA) | 港大等 | 2025.05.09 | 潜在动作表征 |
+| MoManipVLA | [link](https://arxiv.org/pdf/2503.13446)｜[link](https://gary3410.github.io/momanipVLA/) | 北邮 / NTU 等 | 2025.03.17 | 移动操作 |
+| TLA | [link](https://arxiv.org/pdf/2503.08548)｜[link](https://sites.google.com/view/tactile-language-action/) | 三星等 | 2025.03.11 | 引入触觉模态 |
+| PointVLA | [link](https://arxiv.org/pdf/2503.07511)｜[link](https://pointvla.github.io/) | 美的等 | 2025.03.10 | 点云微调 2D VLA |
+| SafeVLA | [link](https://arxiv.org/abs/2503.03480)｜[link](https://github.com/PKU-Alignment/SafeVLA) | 北大 | 2025.03.05 | 安全对齐 |
+| HybridVLA | [link](https://arxiv.org/pdf/2503.10631)｜[link](https://github.com/PKU-HMI-Lab/Hybrid-VLA) | 北大 | 2025.03.17 | 扩散 + 自回归统一 |
+| DexVLA | [link](https://arxiv.org/pdf/2502.05855)｜[link](https://github.com/juruobenruo/DexVLA) | 美的 / 东南 | 2025.02.09 | 多 action head |
+| DexGraspVLA | [link](https://arxiv.org/abs/2502.20900)｜[link](https://github.com/Psi-Robot/DexGraspVLA) | 北大 | 2025.02.28 | 灵巧手抓取 |
 | UP-VLA | [link](https://arxiv.org/pdf/2501.18867) | 清华 | 2025.02.03 | 预测辅助 |
-| UniAct | [link](https://arxiv.org/abs/2501.10105) / [link](https://github.com/2toinf/UniAct) | 清华 |  | 通用动作空间 |
-| CoT-VLA | [link](https://arxiv.org/pdf/2503.22020) | Nvidia / Stanford |  | CoT 融入 VLA |
+| UniAct | [link](https://arxiv.org/abs/2501.10105)｜[link](https://github.com/2toinf/UniAct) | 清华 |  | 通用动作空间 |
+| CoT-VLA | [link](https://arxiv.org/pdf/2503.22020) | NVIDIA / Stanford |  | CoT 融入 VLA |
 
 </details>
 
@@ -266,7 +313,7 @@ VLA（Vision-Language-Action）可以理解为“把视觉-语言模型的能力
 | **WAM**（World-Action Model） | 先用世界模型预测「接下来会看到什么」，再从预测中解出动作 | 先在脑子里想一遍再动手 | 入门可先读上一节的 WorldVLA；此后出现了 FastWAM、X-WAM 等专做此事的一类 |
 | **记忆增强**（Memory-Augmented） | 在策略内部显式维护跨时刻的记忆 | 解决「我刚才把盖子放哪了」 | π0.6-MEM / π0.7（见下文）；评测用 RMBench |
 
-还有一个和本体相关的常见缩写 **WBC**（Whole-Body Control，全身控制）：把控制目标从「机械臂末端」扩展到躯干、腿、头等整个身体，是人形机器人方向的主线之一，详见[控制篇](./control.md)。2026 年起也常见「全身智能」（Whole-Body Intelligence）这个说法，主要来自 Gemini Robotics 2 的表述，指的是让同一个策略同时管规划与全身运动，目前更多是产品叙事而非公认术语。
+还有一个和本体相关的常见缩写 **WBC**（Whole-Body Control，全身控制）：把控制目标从「机械臂末端」扩展到躯干、腿、头等整个身体，是人形机器人方向的主线之一，详见[控制篇 (4) 全身控制](./control.md#wbc)。2026 年起也常见「全身智能」（Whole-Body Intelligence）这个说法，主要来自 Gemini Robotics 2 的表述，指的是让同一个策略同时管规划与全身运动，目前更多是产品叙事而非公认术语。
 
 **这几个家族并不互斥。** 实际论文里经常是叠加的——一个模型可以既是 VLA、又带世界模型预测、还加了记忆模块。所以看到新工作时，比记住它叫什么更有用的是问三个问题：**动作表示是什么**（连续回归 / 离散 token / 扩散）、**条件里有没有语言**、**有没有显式预测未来**。这三条基本就能定位它在上面这张表里的位置，也是复现时最先要搞清楚的三件事。
 
@@ -286,16 +333,16 @@ VLA（Vision-Language-Action）可以理解为“把视觉-语言模型的能力
 
 | 工作 | 链接 | 机构 | 时间 | 一句话看点 |
 |---|---|---|---|---|
-| VLAct | [paper](https://arxiv.org/abs/2608.27550) / [repo](https://github.com/starVLA/VLAct) / [主页](https://starvla.github.io/VLAct/) | 港中文 / 港科大 / 思谋 | 2026.08 | 表征驱动的继续预训练；只用开源数据 + 16 卡做出可复用动作主干 |
+| VLAct | [paper](https://arxiv.org/abs/2608.27550)｜[repo](https://github.com/starVLA/VLAct)｜[主页](https://starvla.github.io/VLAct/) | 港中文 / 港科大 / 思谋 | 2026.08 | 表征驱动的继续预训练；只用开源数据 + 16 卡做出可复用动作主干 |
 | Gemini Robotics 2 | [blog](https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/) | Google DeepMind | 2026.07 | 全身智能；VLA / ER / On-Device 三模型分工 |
-| InternVLA-A1.5 | [paper](https://arxiv.org/abs/2607.04988) / [repo](https://github.com/InternRobotics/InternVLA-A-series) | 上海 AI Lab | 2026.07 | foresight token 查询未来动态，由视频生成模型监督 |
-| Hy-Embodied-0.5-VLA | [paper](https://arxiv.org/abs/2606.14409) / [repo](https://github.com/Tencent-Hunyuan/Hy-Embodied-0.5-VLA) | 腾讯混元 | 2026.06 | 万小时级 UMI 数据 + 记忆编码器 + RL 后训练的完整栈 |
+| InternVLA-A1.5 | [paper](https://arxiv.org/abs/2607.04988)｜[repo](https://github.com/InternRobotics/InternVLA-A-series) | 上海 AI Lab | 2026.07 | foresight token 查询未来动态，由视频生成模型监督 |
+| Hy-Embodied-0.5-VLA | [paper](https://arxiv.org/abs/2606.14409)｜[repo](https://github.com/Tencent-Hunyuan/Hy-Embodied-0.5-VLA) | 腾讯混元 | 2026.06 | 万小时级 UMI 数据 + 记忆编码器 + RL 后训练的完整栈 |
 | π0.7 | [paper](https://arxiv.org/abs/2604.15483) | Physical Intelligence | 2026.04 | 可操控的通用基座；记忆 + 多模态上下文条件 |
-| Xiaomi-Robotics-0 | [paper](https://arxiv.org/abs/2602.12684) / [repo](https://github.com/XiaomiRobotics/Xiaomi-Robotics-0) | 小米 | 2026.02 | 4.7B，面向实时执行；权重与后训练代码开源 |
-| LingBot-VLA | [paper](https://arxiv.org/abs/2601.18692) / [repo](https://github.com/Robbyant/lingbot-vla) | 蚂蚁灵波 | 2026.01 | 两万小时多构型真机预训练；配套开源 GM-100 基准 |
+| Xiaomi-Robotics-0 | [paper](https://arxiv.org/abs/2602.12684)｜[repo](https://github.com/XiaomiRobotics/Xiaomi-Robotics-0) | 小米 | 2026.02 | 4.7B，面向实时执行；权重与后训练代码开源 |
+| LingBot-VLA | [paper](https://arxiv.org/abs/2601.18692)｜[repo](https://github.com/Robbyant/lingbot-vla) | 蚂蚁灵波 | 2026.01 | 两万小时多构型真机预训练；配套开源 GM-100 基准 |
 | UnifoLM-VLA-0 | [repo](https://github.com/unitreerobotics/unifolm-vla) | 宇树科技 | 2026.01 | 面向人形操作；强化空间语义的继续预训练 |
-| InternVLA-A1 | [paper](https://arxiv.org/abs/2601.02456) / [repo](https://github.com/InternRobotics/InternVLA-A-series) | 上海 AI Lab | 2026.01 | 把未来视觉状态与动作作为联合训练目标 |
-| π\*0.6（RECAP） | [paper](https://arxiv.org/abs/2511.14759) / [blog](https://www.pi.website/blog/pistar06) | Physical Intelligence | 2025.11 | 演示 + 自主经验 + 人工纠正混合 RL，吞吐翻倍 |
+| InternVLA-A1 | [paper](https://arxiv.org/abs/2601.02456)｜[repo](https://github.com/InternRobotics/InternVLA-A-series) | 上海 AI Lab | 2026.01 | 把未来视觉状态与动作作为联合训练目标 |
+| π\*0.6（RECAP） | [paper](https://arxiv.org/abs/2511.14759)｜[blog](https://www.pi.website/blog/pistar06) | Physical Intelligence | 2025.11 | 演示 + 自主经验 + 人工纠正混合 RL，吞吐翻倍 |
 | GR00T N1.7 / N2 | [repo](https://github.com/NVIDIA/Isaac-GR00T) | NVIDIA | 2026 | N1.7 已商用早期接入；N2 转向 World-Action Model 架构 |
 
 #### 评测正在变严
@@ -313,32 +360,32 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 
 ## (6) Computer Vision —— 计算机视觉
 
-具身智能几乎所有下游能力（抓取、操作、导航、交互）都建立在视觉之上。和纯 CV 不同，具身更关心的是：**在变化的光照、遮挡、视角、运动模糊与跨域条件下，视觉表征是否稳定**，以及它是否能与几何（深度/点云）和语言（指令/目标）对齐。本节将视觉按“2D → 3D → 4D（视频/时序）→ Prompting/可供性”串起来，便于你形成一条连续的学习路线。
+具身智能几乎所有下游能力（抓取、操作、导航、交互）都建立在视觉之上。和纯 CV 不同，具身更关心的是：**在变化的光照、遮挡、视角、运动模糊与跨域条件下，视觉表征是否稳定**，以及它是否能与几何（深度/点云）和语言（指令/目标）对齐。本节将视觉按「2D → 3D → 4D（视频/时序）→ Prompting/可供性」串起来，便于你形成一条连续的学习路线。
 
 | 课程/资源 | 链接 | 说明 |
 |---|---|---|
-| CS231n（Stanford） | [link](https://cs231n.stanford.edu/schedule.html) | 深度学习 CV 全景课，适合视频+讲义快速建立体系 |
+| CS231n（Stanford） | [link](https://cs231n.stanford.edu/schedule.html) | 深度学习 CV 全景课，适合视频 + 讲义快速建立体系 |
 
 ### (6.1) 2D / 3D / 4D Vision（从图像到时空）
 
-> 为了不把页面拉得太长，这里把 2D/3D/4D 的资源合并成一个“能力栈表”。你可以按需选择深入方向。
+> 为了不把页面拉得太长，这里把 2D/3D/4D 的资源合并成一个「能力栈表」。你可以按需选择深入方向。
 
 | 层级 | 关注点（具身视角） | 代表资源 | 链接 |
 |---|---|---|---|
-| 2D Vision | 稳定表征与泛化：backbone、对比学习、生成式表征 | CNN 概念 / ResNet / ViT / Swin | CNN：[link](https://easyai.tech/ai-definition/cnn/)｜ResNet：[link](https://www.bilibili.com/video/BV1P3411y7nn)｜ViT：[link](https://www.bilibili.com/video/BV15P4y137jb)｜Swin：[link](https://www.bilibili.com/video/BV13L4y1475U) |
+| 2D Vision | 稳定表征与泛化：backbone、对比学习、生成式表征 | CNN 概念 / ResNet / ViT / Swin | [CNN](https://easyai.tech/ai-definition/cnn/)｜[ResNet](https://www.bilibili.com/video/BV1P3411y7nn)｜[ViT](https://www.bilibili.com/video/BV15P4y137jb)｜[Swin](https://www.bilibili.com/video/BV13L4y1475U) |
 | 2D Vision | 表征学习方法论：对比学习与大规模预训练 | 对比学习综述 | [link](https://www.bilibili.com/video/BV19S4y1M7hm) |
-| 2D/4D Gen | 生成式模型（用于表征、合成数据、目标图像等） | 自回归综述 / 扩散综述 / 扩散推导 | 自回归：[link](https://arxiv.org/pdf/2411.05902)｜扩散：[link](https://arxiv.org/pdf/2209.00796)｜推导：[link](https://kexue.fm/archives/9119) |
+| 2D/4D Gen | 生成式模型（用于表征、合成数据、目标图像等） | 自回归综述 / 扩散综述 / 扩散推导 | [自回归](https://arxiv.org/pdf/2411.05902)｜[扩散](https://arxiv.org/pdf/2209.00796)｜[推导](https://kexue.fm/archives/9119) |
 | 3D Vision | 多视几何与三维理解（对重建/位姿/点云感知很关键） | Andreas Geiger 3D Vision | [link](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/computer-vision/) |
 | 3D Vision | 三维重建与理解（偏工程与应用） | GAMES203 | [link](https://www.bilibili.com/video/BV1pw411d7aS) |
-| 3D/Gen | 2D/3D 生成方向梳理 | 论文分类 / 2024 论文整理 | 分类：[link](https://zhuanlan.zhihu.com/p/617510702)｜2024：[link](https://zhuanlan.zhihu.com/p/700895749) |
-| 4D Vision | 视频理解：时序建模与跨帧一致性（具身中非常常见） | 开山之作 / 串讲 / 综述 | 开山：[link](https://www.bilibili.com/video/BV1mq4y1x7RU)｜串讲：[link](https://www.bilibili.com/video/BV1fL4y157yA)｜综述：[link](https://arxiv.org/pdf/2312.17432) |
-| 4D Gen | 视频/4D 生成（用于合成与世界建模相关） | Lilian Weng 视频扩散博客 / 4D generation list | 博客：[link](https://lilianweng.github.io/posts/2024-04-12-diffusion-video/)｜list：[link](https://github.com/cwchenwang/awesome-4d-generation) |
+| 3D/Gen | 2D/3D 生成方向梳理 | 论文分类 / 2024 论文整理 | [分类](https://zhuanlan.zhihu.com/p/617510702)｜[2024](https://zhuanlan.zhihu.com/p/700895749) |
+| 4D Vision | 视频理解：时序建模与跨帧一致性（具身中非常常见） | 开山之作 / 串讲 / 综述 | [开山](https://www.bilibili.com/video/BV1mq4y1x7RU)｜[串讲](https://www.bilibili.com/video/BV1fL4y157yA)｜[综述](https://arxiv.org/pdf/2312.17432) |
+| 4D Gen | 视频/4D 生成（用于合成与世界建模相关） | Lilian Weng 视频扩散博客 / 4D generation list | [博客](https://lilianweng.github.io/posts/2024-04-12-diffusion-video/)｜[list](https://github.com/cwchenwang/awesome-4d-generation) |
 
 ### (6.2) Visual Prompting & Affordance Grounding
 
-具身视觉的一个关键变化是：我们不只想识别物体，而是要回答“**哪里能抓、怎么推、哪能开合**”。  
+具身视觉的一个关键变化是：我们不只想识别物体，而是要回答「**哪里能抓、怎么推、哪能开合**」。  
 因此在工程系统里，视觉常常以两种形式进入控制：  
-（1）通过 prompt / 标注把视觉模型“定向”到当前任务；（2）通过 affordance 将视觉输出直接变成可执行的交互区域或动作参数。
+（1）通过 prompt / 标注把视觉模型「定向」到当前任务；（2）通过 affordance 将视觉输出直接变成可执行的交互区域或动作参数。
 
 | 方向 | 资源 | 链接 | 说明 |
 |---|---|---|---|
@@ -348,15 +395,15 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 
 | 维度 | 工作/数据集 | 链接 | 说明 |
 |---|---|---|---|
-| 2D Affordance | Cross-View-AG / AGD20K | [link](https://arxiv.org/pdf/2203.09905) / [link](https://github.com/lhc1224/Cross-View-AG) | 跨视角学习可供性 + 数据集 |
+| 2D Affordance | Cross-View-AG / AGD20K | [link](https://arxiv.org/pdf/2203.09905)｜[link](https://github.com/lhc1224/Cross-View-AG) | 跨视角学习可供性 + 数据集 |
 | 2D Affordance | AffordanceLLM | [link](https://arxiv.org/pdf/2401.06341) | 借助 VLM/LLM 知识提升泛化 |
 | 3D Affordance | Where2Act | [link](https://arxiv.org/abs/2101.02692) | 铰接物体可供性与交互点 |
 | 3D Affordance | VAT-Mart | [link](https://openreview.net/pdf?id=iEx3PiooLy) | 铰接交互数据 |
-| 3D Affordance | DeformableAffordance / UniGarmentManip | [link](https://arxiv.org/pdf/2303.11057) / [link](https://arxiv.org/abs/2405.06903) | 柔性物体与服装等场景 |
-| 3D Affordance | SceneFun3D / 3D AffordanceNet | [link](https://scenefun3d.github.io/) / [link](https://github.com/lhc1224/Cross-View-AG) | 室内环境+实物数据与点云可供性数据集 |
+| 3D Affordance | DeformableAffordance / UniGarmentManip | [link](https://arxiv.org/pdf/2303.11057)｜[link](https://arxiv.org/abs/2405.06903) | 柔性物体与服装等场景 |
+| 3D Affordance | SceneFun3D / 3D AffordanceNet | [SceneFun3D](https://scenefun3d.github.io/)｜[3D AffordanceNet](https://github.com/Gorilla-Lab-SCUT/AffordanceNet) | 室内环境 + 实物数据与点云可供性数据集 |
 
 **小结**：  
-对具身而言，CV 不只是分类/检测，而是提供可用于交互与决策的稳定表征：2D 打底，3D 提供几何约束，4D 提供跨时间一致性，而 Prompting/可供性把视觉输出变成“可执行”的中间表示。
+对具身而言，CV 不只是分类/检测，而是提供可用于交互与决策的稳定表征：2D 打底，3D 提供几何约束，4D 提供跨时间一致性，而 Prompting/可供性把视觉输出变成「可执行」的中间表示。
 
 ---
 
@@ -364,8 +411,9 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 
 ## (7) Computer Graphics —— 计算机图形学（仿真、重建与可微渲染的入口）
 
-图形学在具身中的价值通常体现在三类事情：  
-（1）仿真与渲染：让你低成本生成交互数据；（2）重建：把现实转成可学习的资产；（3）新型表示：如 NeRF / 3DGS 带来的可微与高效渲染，正在影响数据合成与世界建模。
+图形学在具身中的价值通常体现在三类事情：**(1) 仿真与渲染**——让你低成本生成交互数据；**(2) 重建**——把现实转成可学习的资产；**(3) 新型表示**——NeRF / 3DGS 带来的可微与高效渲染，正在影响数据合成与世界建模。
+
+这一节和 **Real2Sim** 密切相关：想让仿真里训出的策略在真机上也能用，最直接的办法是把真实场景和物体扫描重建进仿真器，而这正是图形学的工作。**如果你的研究方向是仿真数据合成或 Sim2Real，这一节值得认真看；否则可以先跳过。**
 
 | 方向 | 资源 | 链接 | 备注 |
 |---|---|---|---|
@@ -375,10 +423,10 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 | 三维重建 | NeRF 原理代码讲解 | [link](https://www.bilibili.com/video/BV1CC411V7oq) |  |
 | 三维重建 | 3DGS 原理代码讲解 | [link](https://www.bilibili.com/video/BV1zi421v7Dr) |  |
 | 3D 预训练综述 | 3D pre-training survey | [link](https://link.springer.com/content/pdf/10.1007/s44336-024-00007-4.pdf) |  |
-| 3DGS+机器人综述 | 3DGS in Robotics survey | [link](https://arxiv.org/pdf/2410.12262v2) |  |
+| 3DGS + 机器人综述 | 3DGS in Robotics survey | [link](https://arxiv.org/pdf/2410.12262v2) |  |
 
 **小结**：  
-图形学更像“具身的数据与世界接口”：它决定了你能否把场景/资产做成可复现、可扩展、可规模化的训练资源。
+图形学更像「具身的数据与世界接口」：它决定了你能否把场景/资产做成可复现、可扩展、可规模化的训练资源。
 
 ---
 
@@ -386,7 +434,9 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 
 ## (8) Multimodal Models —— 多模态模型（视觉×语言×时序的统一表征）
 
-具身系统中常见的输入是视觉（RGB/Depth/点云）与语言（目标与约束），并且往往伴随强烈的时序依赖。多模态模型的核心作用是：把这些信息压缩成一个统一表征空间，使得系统能够在“看懂 + 听懂 + 记住”的前提下做决策与控制。
+具身系统中常见的输入是视觉（RGB / 深度 / 点云）与语言（目标与约束），并且往往伴随强烈的时序依赖。多模态模型的核心作用是：把这些信息压缩成一个统一表征空间，使得系统能够在「看懂 + 听懂 + 记住」的前提下做决策与控制。
+
+对具身智能而言，多模态模型最直接的意义是：**几乎所有 VLA 都是在一个现成的 VLM 上接动作头改造而来的**（π0 基于 PaliGemma、OpenVLA 基于 Prismatic / Llama 2）。因此理解 VLM 怎么把图像变成 token、怎么与语言对齐，是读懂 VLA 架构图的前提。
 
 | 工作/项目 | 链接 | 说明 |
 |---|---|---|
@@ -396,7 +446,7 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 | VLM-R1 | [link](https://github.com/om-ai-lab/VLM-R1) | OmAI Lab：R1-style 多模态强化学习（GRPO），强调比常规 SFT 更强 |
 
 **小结**：  
-多模态并不是“把模态拼起来”，而是解决对齐与一致性：对齐让语言可控，一致性让跨时间的决策更稳定。
+多模态并不是「把模态拼起来」，而是解决对齐与一致性：对齐让语言可控，一致性让跨时间的决策更稳定。
 
 ---
 
@@ -404,17 +454,20 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 
 ## (9) Robot Navigation —— 机器人导航（任务、系统与生态）
 
-机器人导航的本质是：智能体在已知或未知环境中，根据传感器输入（RGB/Depth/GPS/IMU 等）与目标指令，输出一系列动作以到达目标。具身任务里，导航往往是更复杂操作的前置能力：先到达、再交互。
+机器人导航的本质是：智能体在已知或未知环境中，根据传感器输入（RGB / 深度 / GPS / IMU 等）与目标指令，输出一系列动作以到达目标。具身任务里，导航往往是更复杂操作的前置能力：**先到达，再交互**。
 
-为了避免“分类太碎导致阅读成本高”，这里把导航组织为三层：**任务形态 → 系统形态 → 代表工作与数据集生态**。
+这里需要先区分一个容易混淆的概念：**经典导航**（SLAM 建图 + 路径规划，见[控制篇](./control.md#slam)）解决的是「在已有地图里怎么走过去」，而本节讨论的**具身导航**解决的是「在没见过的房子里，怎么找到我从没标注过的东西」——难点不在路径规划，而在**语义理解与探索策略**。
+
+为了避免分类太碎，这里把导航组织为三层：**任务形态 → 系统形态 → 代表工作与数据集生态**。
 
 ### (9.1) 任务形态（你到底在导航到什么）
 
-| 任务类型 | 简述 |
-|---|---|
-| 物体目标导航（Object-Goal Nav） | 输入是目标物体描述，输出到达目标物体附近的动作序列 |
-| 图像目标导航（Image-Goal Nav） | 输入是一张目标图像，目标是到达与图像一致的场景位置 |
-| 视觉-语言导航（VLN） | 输入是自然语言指令（路线/描述/约束），目标是按语言完成路径 |
+| 任务类型 | 目标怎么给 | 核心难点 |
+|---|---|---|
+| 物体目标导航（Object-Goal Nav） | 一个物体类别，如「找到冰箱」 | 没见过的房间里，该往哪个方向探索 |
+| 图像目标导航（Image-Goal Nav） | 一张目标位置的照片 | 跨视角匹配：从不同角度认出同一个地方 |
+| 视觉-语言导航（VLN） | 一段自然语言路线指令 | 把指令与沿途观测逐步对齐，走错一步就全错 |
+| 需求驱动导航（Demand-Driven Nav） | 一个需求而非物体，如「我渴了」 | 需要常识推理：先想清楚该找什么，再去找 |
 
 ### (9.2) 系统形态（你如何把感知变成行动）
 
@@ -426,7 +479,7 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 
 ### (9.3) 代表工作（按系统形态组织）
 
-> 这里的工作可以作为“入门时的 anchor”，建议先读摘要+方法图建立直觉，再决定深入方向。
+> 这里的工作可以作为「入门时的 anchor」，建议先读摘要 + 方法图建立直觉，再决定深入方向。
 
 <details>
 <summary><b>展开：端到端（E2E）</b></summary>
@@ -455,7 +508,7 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 | 工作 | 链接 | 备注 |
 |---|---|---|
 | CoWs on Pasture: Baselines and Benchmarks for Language-Driven Zero-Shot Object Navigation | [link](https://arxiv.org/abs/2203.10421) | 用 CLIP 找目标，找到就走过去 |
-| L3MVN: Leveraging Large Language Models for Visual Target Navigation | [link](https://arxiv.org/abs/2304.05501) | LLM 决策“朝哪走” |
+| L3MVN: Leveraging Large Language Models for Visual Target Navigation | [link](https://arxiv.org/abs/2304.05501) | LLM 决策「朝哪走」 |
 | ESC: Exploration with Soft Commonsense Constraints for Zero-shot Object Navigation | [link](https://arxiv.org/abs/2301.13166) | 语义地图 + 常识约束 |
 | SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation | [link](https://arxiv.org/abs/2410.08189) | 在线构建场景图喂给 LLM |
 
@@ -469,44 +522,60 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 | Habitat-Matterport3D（HM3D） | [link](https://aihabitat.org/datasets/hm3d/) | Habitat 生态核心数据 |
 | RoboTHOR | [link](https://ai2thor.allenai.org/robothor/) | 场景较小，仿真更轻量 |
 | AI2-THOR | [link](https://ai2thor.allenai.org/) | 与 RoboTHOR 同系，交互生态强 |
-| Gibson / iGibson | （可补链接） | 室内仿真常用，含交互任务生态 |
-| VLN 常用：R2R / RxR / CVDN | （可补链接） | 偏语言导航方向的数据集 |
+| Gibson / iGibson | [Gibson](http://gibsonenv.stanford.edu/)｜[iGibson](https://svl.stanford.edu/igibson/) | 室内仿真常用，iGibson 加入了可交互物体；⚠️ 两者均已停止维护，新项目请用 [OmniGibson](https://github.com/StanfordVL/OmniGibson) |
+| R2R（Room-to-Room） | [link](https://bringmeaspoon.org/) | VLN 的起点数据集，逐句指令跟随 |
+| RxR（Room-across-Room） | [link](https://github.com/google-research-datasets/RxR) | R2R 的多语言加强版，指令更长、路径更密 |
+| CVDN | [link](https://cvdn.dev/) | 对话式导航：走不下去时可以向人提问 |
 
-> 注：如果你希望这里“完全自洽且可点击”，我也可以把 Gibson/iGibson 与 R2R/RxR/CVDN 的链接补齐并统一格式。
+> R2R、RxR、CVDN 都构建在 Matterport3D 之上，使用前需要单独签署 Matterport3D 的数据使用协议。
 
-### (9.5) 其他参考（进一步扩展）
+### (9.5) 2025 — 2026：导航也有基础模型了 ⭐
+
+上面三类系统形态，是在「一个模型做一个任务」的前提下划分的。2025 年之后，导航复制了操作方向走过的路：**从任务特化模型转向跨任务、跨本体的导航基础模型**——同一套权重同时处理物体目标导航、语言导航、目标跟踪甚至自动驾驶，也不再为每种本体单独训练。
+
+| 工作 | 链接 | 时间 | 一句话看点 |
+|---|---|---|---|
+| **NavFoM** | [paper](https://arxiv.org/abs/2509.12129)｜[主页](https://pku-epic.github.io/NavFoM-Web/) | 2025.09 | 导航基础模型的代表作：800 万条导航样本，跨四足 / 无人机 / 轮式 / 汽车四类本体与四类任务，无需针对任务微调 |
+| FutureNav | [paper](https://arxiv.org/abs/2606.30367) | 2026.06 | 把世界模型引入 VLN：动作预测与未来状态生成联合训练 |
+| ABot-N1 | [paper](https://arxiv.org/abs/2607.10383) | 2026.07 | 快慢系统式导航：慢系统做链式推理并输出像素级目标点，快系统负责高频路径点 |
+
+评测侧也在补短板：[NavVerse](https://arxiv.org/abs/2607.19695) 把评测从纯室内扩展到室内外连续切换的场景；[CapNav](https://makeabilitylab.github.io/CapNav/)（CVPR 2026）则提出了一个此前被忽略的问题——**导航规划必须考虑本体自身的物理能力**（扫地机上不了楼梯、四足可以），同一条路径对不同机器人并不等价。
+
+> ⚠️ **看到高成功率时请留意 Sim2Real**：2026 年一篇[结合真机部署的 VLN 综述](https://arxiv.org/abs/2607.09792)指出，尽管现有方法在仿真的未见环境中成功率普遍超过 85%，**迁移到真实机器人后差距非常明显，避障鲁棒性尤其薄弱**。导航方向的仿真与真机差距，目前比操作方向更容易被低估。
+
+### (9.6) 其他参考（进一步扩展）
 
 | 资源 | 链接 |
 |---|---|
 | Object-Goal Navigation 综述 | [link](https://orca.cardiff.ac.uk/id/eprint/167432/1/ObjectGoalNavigationSurveyTASE.pdf) |
+| VLN 综述 + 真机评测（2026） | [link](https://arxiv.org/abs/2607.09792) |
 | Awesome VLN | [link](https://github.com/eric-ai-lab/awesome-vision-language-navigation) |
 | Habitat Navigation Challenge | [link](https://github.com/facebookresearch/habitat-challenge) |
 
-**小结**：  
-导航方向最重要的分歧不在“用什么网络”，而在系统形态：端到端追求简洁但容易过拟合，模块化更可控但偏工程，零样本更易迁移但速度与上限受限。做项目时建议先选定评估平台与数据集生态，再决定模型路线，否则很容易在实现层面被卡住。
+**小结**：导航方向最重要的分歧不在「用什么网络」，而在系统形态——端到端追求简洁但容易过拟合，模块化更可控但偏工程，零样本更易迁移但速度与上限受限；而 2025 年之后的基础模型路线正在把三者的边界打散。做项目时建议**先选定评测平台与数据集生态，再决定模型路线**，否则很容易在实现层面被卡住。
 
 
 <section id="embodied-ai-4-x"></section>
 
-## (10) Embodied AI for X - 具身智能+X
+## (10) Embodied AI for X —— 具身智能 + X
 
 <section id="medical"></section>
 
-### (10.1) EAI for Healthcare - 具身医疗
+### (10.1) Healthcare —— 具身医疗
 
-> 具身智能技术的迅猛发展正在引领医疗服务模式迈向革命性的新纪元。作为人工智能算法、先进机器人技术与生物医学深度融合的前沿交叉学科, 具身智能+医疗这一研究领域不仅突破了传统医疗的边界, 更开创了智能化医疗的新范式。其多学科协同创新的特质, 正在重塑医疗服务的全流程, 为精准医疗、远程诊疗和个性化健康管理带来前所未有的发展机遇, 推动医疗行业向更智能、更人性化的方向转型升级。这一领域的突破性进展, 标志着医疗科技正迈向一个全新的智能化时代。
+> 具身智能技术的迅猛发展正在引领医疗服务模式迈向革命性的新纪元。作为人工智能算法、先进机器人技术与生物医学深度融合的前沿交叉学科，具身智能 + 医疗这一研究领域不仅突破了传统医疗的边界，更开创了智能化医疗的新范式。其多学科协同创新的特质，正在重塑医疗服务的全流程，为精准医疗、远程诊疗和个性化健康管理带来前所未有的发展机遇，推动医疗行业向更智能、更人性化的方向转型升级。这一领域的突破性进展，标志着医疗科技正迈向一个全新的智能化时代。
 
 | 综述 | 链接 |
 |---|---|
 | 医疗具身智能综述 | [link](https://arxiv.org/abs/2501.07468) |
 
-#### (10.1.1) MLLM for Medical - 多模态大语言模型在医学中的应用
+#### (10.1.1) MLLM for Medical —— 多模态大语言模型在医学中的应用
 
 | 资源 | 链接 |
 |---|---|
 | 用于医学影像分析的通用人工智能综述 | [link](https://arxiv.org/pdf/2306.05480) |
-| 医学影像的通用分割模型-MedSAM | [link](https://www.nature.com/articles/s41467-024-44824-z.pdf) |
-| 2024盘点：医学AI大模型, 从通用视觉到医疗影像 | [link](https://mp.weixin.qq.com/s?__biz=MzIxNTc4NzU0MQ==&mid=2247550230&idx=1&sn=6baa8dcba12f3f70f4c8205a0f23b6a0&chksm=966df4ca45c8cbcaa0a5d2e42fbb4de92e6881f92981071ce7fda3bd1e13e4715f92415a9258&scene=27) |
+| 医学影像通用分割模型 MedSAM | [link](https://www.nature.com/articles/s41467-024-44824-z.pdf) |
+| 2024 盘点：医学 AI 大模型，从通用视觉到医疗影像 | [link](https://mp.weixin.qq.com/s?__biz=MzIxNTc4NzU0MQ==&mid=2247550230&idx=1&sn=6baa8dcba12f3f70f4c8205a0f23b6a0&chksm=966df4ca45c8cbcaa0a5d2e42fbb4de92e6881f92981071ce7fda3bd1e13e4715f92415a9258&scene=27) |
 | 医疗领域基础模型的发展机遇与挑战 | [link](https://arxiv.org/pdf/2404.03264) |
 | SkinGPT-4 for dermatological diagnosis | [link](https://www.nature.com/articles/s41467-024-50043-3) |
 | PneumoLLM for pneumoconiosis diagnosis | [link](https://www.sciencedirect.com/science/article/abs/pii/S1361841524001737) |
@@ -518,7 +587,7 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 | VisionFM | [link](https://ai.nejm.org/doi/full/10.1056/AIoa2300221) |
 | Medical-CXR-VQA | [link](https://github.com/Holipori/Medical-CXR-VQA) |
 
-#### (10.1.2) Medical Robotics - 医疗机器人
+#### (10.1.2) Medical Robotics —— 医疗机器人
 
 | 主题 | 资源 | 链接 |
 |---|---|---|
@@ -532,14 +601,14 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 
 | 资源 | 链接 |
 |---|---|
-| 3DGS在腔镜手术中的应用综述 | [link](https://arxiv.org/pdf/2408.04426) |
-| LVM在手术机器人上的综述（CUHK任洪亮团队） | [link](https://www.nature.com/articles/s44287-025-00166-6) |
+| 3DGS 在腔镜手术中的应用综述 | [link](https://arxiv.org/pdf/2408.04426) |
+| LVM 在手术机器人上的综述（CUHK 任洪亮团队） | [link](https://www.nature.com/articles/s44287-025-00166-6) |
 
 **达芬奇相关**
 
 | 资源 | 链接 |
 |---|---|
-| dVRK介绍 | [link](https://ieeexplore.ieee.org/abstract/document/9531355) |
+| dVRK 介绍 | [link](https://ieeexplore.ieee.org/abstract/document/9531355) |
 | Surgical Robot Transformer (SRT) | [link](https://surgical-robot-transformer.github.io/) |
 
 **Domain-specific Simulators（手术机器人技能学习模拟器）**
@@ -575,7 +644,7 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 
 ### (10.2) UAV —— 无人机（技能、任务与本体）
 
-无人机研究大体可以用“三条主线”来理解：  
+无人机研究大体可以用「三条主线」来理解：  
 **技能（Skill）**：避障、竞速、敏捷飞行/特技等，强调高速闭环与安全约束；  
 **任务（Task）**：探索、重建、跟踪/追捕等，强调长时规划与不确定环境；  
 **本体（Platform）**：飞行器构型与载荷（例如空中机械臂、全驱动、多模态等），决定了可执行的动作空间与任务边界。  
@@ -583,15 +652,16 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 
 #### (10.2.1) 技能实现/学习（Skill Learning）
 
-无人机技能学习的瓶颈通常不是“有没有算法”，而是**闭环速度、仿真可用性、sim2real 稳定性**。因此这里先列出更贴近 RL/学习的仿真器与工程链路，再给代表工作做索引。
+无人机技能学习的瓶颈通常不是「有没有算法」，而是**闭环速度、仿真可用性、Sim2Real 稳定性**。因此这里先列出更贴近 RL/学习的仿真器与工程链路，再给代表工作做索引。
 
 | 类别 | 仿真/链路 | 链接 | 备注 |
 |---|---|---|---|
 | 学习仿真 | AirSim | [link](https://microsoft.github.io/AirSim/) | UE4；生态成熟但运行偏慢 |
 | 学习仿真 | Flightmare | [link](https://github.com/uzh-rpg/flightmare) | Unity 渲染；CPU 并行动力学 |
-| 学习仿真 | AerialGym | [link](https://github.com/ntnu-arl/aerial_gym_simulator) | IsaacSim；GPU 并行动力学 |
-| 轻量生态 | gym-pybullet-drones | （建议补链接） | 轻量、研究/教学常用 |
-| 工程链路 | PX4 SITL / ROS2 | （建议补链接） | 更贴近真实系统部署与接口 |
+| 学习仿真 | AerialGym | [link](https://github.com/ntnu-arl/aerial_gym_simulator) | Isaac Sim；GPU 并行动力学 |
+| 轻量生态 | gym-pybullet-drones | [link](https://github.com/learnsyslab/gym-pybullet-drones) | PyBullet；装起来最快，适合教学与算法验证。同实验室还有 [safe-control-gym](https://github.com/learnsyslab/safe-control-gym)（带约束与符号动力学）与 [crazyflow](https://github.com/learnsyslab/crazyflow)（JAX 可微、GPU 加速） |
+| 工程链路 | PX4 SITL / ROS 2 | [link](https://docs.px4.io/main/en/simulation/) | 跑真实飞控固件，最接近部署形态。快速迭代或 macOS 上建议用 SIH（物理跑在 PX4 内部，零外部依赖） |
+| 兼顾两者 | aerial-autonomy-stack | [link](https://github.com/JacopoPan/aerial-autonomy-stack) | PX4/ArduPilot + ROS 2 + 感知，同时提供 Gymnasium 接口与超实时仿真 |
 
 <details>
 <summary><b>展开：经典技能代表工作（按主题归类）</b></summary>
@@ -600,49 +670,58 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 
 | 工作 | 链接 | 备注 |
 |---|---|---|
-| Learning Monocular Reactive UAV Control in Cluttered Natural Environments (ICRA 2013, CMU) |  | 监督学习：图像 → 离散控制指令 |
-| CAD2RL: Real Single-Image Flight without a Single Real Image (RSS 2017, UCB) |  | sim2real RL + domain randomization |
-| DroNet: Learning to Fly by Driving (RAL 2018, UZH) | [link](https://github.com/uzh-rpg/rpg_public_dronet) | 输出速度指令 |
-| Learning High-Speed Flight in the Wild (SciRob 2021, UZH) | [link](https://github.com/uzh-rpg/agile_autonomy) | dagger + 传统轨迹规划监督 |
-| Back to Newton's Laws… Differentiable Physics (Arxiv 2024, SJTU) |  | 可微物理辅助策略优化 |
-| Flying on Point Clouds using RL (Arxiv 2025, ZJU) | [link](https://arxiv.org/abs/2503.00496) | 机载雷达 + sim2real RL |
+| Learning Monocular Reactive UAV Control in Cluttered Natural Environments (ICRA 2013, CMU) | [paper](https://arxiv.org/abs/1211.1690) | 监督学习：图像 → 离散控制指令 |
+| CAD2RL: Real Single-Image Flight without a Single Real Image (RSS 2017, UCB) | [paper](https://arxiv.org/abs/1611.04201) | Sim2Real RL + domain randomization |
+| DroNet: Learning to Fly by Driving (RAL 2018, UZH) | [repo](https://github.com/uzh-rpg/rpg_public_dronet) | 输出速度指令 |
+| Learning High-Speed Flight in the Wild (SciRob 2021, UZH) | [repo](https://github.com/uzh-rpg/agile_autonomy) | DAgger + 传统轨迹规划监督 |
+| Back to Newton's Laws: Learning Vision-based Agile Flight via Differentiable Physics (2024, SJTU) | [paper](https://arxiv.org/abs/2407.10648) | 可微物理辅助策略优化 |
+| Flying on Point Clouds using RL (2025, ZJU) | [paper](https://arxiv.org/abs/2503.00496) | 机载雷达 + Sim2Real RL |
 
 **无人机竞速（高速度、高精度、高风险约束）**
 
 | 工作 | 链接 | 备注 |
 |---|---|---|
-| Champion-level drone racing using deep RL (Nature 2023, UZH) |  | RL 战胜人类冠军 |
-| Optimal Control vs RL in Racing (SciRob 2023, UZH) |  | RL 与最优控制对比 |
-| Agile Flight from Pixels w/o State Estimation (RSS 2024, UZH) |  | 视觉端到端，不依赖显式状态估计 |
+| Champion-level drone racing using deep RL (Nature 2023, UZH) | [paper](https://www.nature.com/articles/s41586-023-06419-4) | RL 战胜人类冠军，领域里程碑 |
+| Reaching the Limit in Autonomous Racing: Optimal Control versus RL (SciRob 2023, UZH) | [paper](https://www.science.org/doi/10.1126/scirobotics.adg1462) | 系统对比 RL 与最优控制，值得精读 |
+| Demonstrating Agile Flight from Pixels without State Estimation (RSS 2024, UZH) | [paper](https://arxiv.org/abs/2406.12505) | 视觉端到端，不依赖显式状态估计 |
 
 **大机动 / 特技飞行（敏捷性与可控性）**
 
 | 工作 | 链接 | 备注 |
 |---|---|---|
-| Deep Drone Acrobatics (RSS 2020, UZH) |  | 模仿学习 + MPC 轨迹跟踪 |
-| Whole-Body Control Through Narrow Gaps (ICRA 2025, ZJU) | [link](https://arxiv.org/abs/2409.00895) | 端到端窄缝穿越 |
+| Deep Drone Acrobatics (RSS 2020, UZH) | [paper](https://arxiv.org/abs/2006.05768) | 模仿学习 + MPC 轨迹跟踪 |
+| Whole-Body Control Through Narrow Gaps (ICRA 2025, ZJU) | [paper](https://arxiv.org/abs/2409.00895) | 端到端窄缝穿越 |
 
 </details>
 
+近两年无人机方向的两个明显趋势，和操作方向高度同步：**世界模型进入控制回路**，以及 **VLA 范式迁移到飞行**。
+
+| 工作 | 链接 | 时间 | 一句话看点 |
+|---|---|---|---|
+| Dream to Fly | [paper](https://arxiv.org/abs/2501.14377) | 2025.01 | 基于 DreamerV3 的模型式 RL，从像素直接到控制指令；未做奖励塑形却自发学会「转头看路」 |
+| MAD（Mapping-Aware Dreamer） | [paper](https://arxiv.org/abs/2606.04534) | 2026.06 | 世界模型重建的不是图像而是占据与可见性栅格，强迫隐状态编码几何与历史 |
+| 安全屏蔽式 RL 高速穿越杂乱环境 | [paper](https://arxiv.org/abs/2602.08653) | 2026.02 | 用高阶控制障碍函数（CBF）把策略输出投影到可证明安全的集合里 |
+| AerialVLA | [paper](https://arxiv.org/abs/2603.14363)｜[repo](https://github.com/XuPeng23/AerialVLA) | 2026.03 | 端到端 UAV VLA：从原始视觉与模糊指令直接出连续控制，不依赖外部检测器 |
+
 **小结**：  
-技能学习的主矛盾通常是“闭环工程问题”：仿真速度、传感器噪声、延迟与 sim2real。选平台时建议先明确你需要的是 **快速迭代（轻量）** 还是 **高保真+可部署（PX4/ROS 链路）**。
+技能学习的主矛盾通常是「闭环工程问题」：仿真速度、传感器噪声、延迟与 Sim2Real。选平台时建议先明确你需要的是 **快速迭代（轻量）** 还是 **高保真 + 可部署（PX4/ROS 链路）**。
 
 ---
 
 #### (10.2.2) 任务实现/学习（Task Learning）
 
-任务层比技能层更强调：**长时规划、部分可观测、目标不确定与多机协作**。很多工作会把“任务规划”交给上层策略，把“飞行稳定”交给下层控制/技能模块。
+任务层比技能层更强调：**长时规划、部分可观测、目标不确定与多机协作**。很多工作会把「任务规划」交给上层策略，把「飞行稳定」交给下层控制/技能模块。
 
 <details>
 <summary><b>展开：经典任务代表工作（探索/追捕等）</b></summary>
 
 | 任务 | 工作 | 链接 |
 |---|---|---|
-| 追捕/协作 | HOLA-Drone: Hypergraphic Open-ended Learning for Zero-Shot Multi-Drone Cooperative Pursuit (Arxiv 2024, Manchester) |  |
-| 追捕/规划 | Multi-UAV Pursuit-Evasion with Online Planning… (Arxiv 2024, THU) |  |
-| 探索 | Deep RL-based Large-scale Robot Exploration (RAL 2024, NUS) |  |
-| 探索 | ARiADNE: … Exploration (ICRA 2023, NUS) |  |
-| 探索 | DARE: Diffusion Policy for Autonomous Robot Exploration (ICRA 2025, NUS) |  |
+| 追捕/协作 | HOLA-Drone: Hypergraphic Open-ended Learning for Zero-Shot Multi-Drone Cooperative Pursuit (2024, Manchester) | [paper](https://arxiv.org/abs/2409.08767) |
+| 追捕/规划 | Online Planning for Multi-UAV Pursuit-Evasion in Unknown Environments Using Deep RL (RAL 2025, THU) | [paper](https://arxiv.org/abs/2409.15866) |
+| 探索 | Deep RL-based Large-scale Robot Exploration (RAL 2024, NUS) | [paper](https://arxiv.org/abs/2403.10833) |
+| 探索 | ARiADNE: Attention-based Deep Networks for Exploration (ICRA 2023, NUS) | [paper](https://arxiv.org/abs/2301.11575) |
+| 探索 | DARE: Diffusion Policy for Autonomous Robot Exploration (ICRA 2025, NUS) | [paper](https://arxiv.org/abs/2410.16687) |
 
 </details>
 
@@ -658,7 +737,7 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 
 #### (10.2.4) 新构型无人机设计
 
-这一部分更偏“具身本体学”：通过构型改变动作空间，使无人机从“移动平台”变成“可交互平台”。
+这一部分更偏「具身本体学」：通过构型改变动作空间，使无人机从「移动平台」变成「可交互平台」。
 
 **空中机械臂（Aerial Manipulator）**
 
@@ -677,7 +756,7 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 | Fully Actuated Multirotor UAVs: A Literature Review (RAM 2020) | [link](https://ieeexplore.ieee.org/document/8978486/?arnumber=8978486) | 综述 |
 | Omni-directional aerial vehicle (ICRA 2016, ETH) | [link](https://ieeexplore.ieee.org/document/7487497) |  |
 | Voliro omniorientational hexacopter (RAM 2018, ETH) | [link](https://ieeexplore.ieee.org/document/8485627) |  |
-| FLOAT Drone (Arxiv 2025, ZJU) | [link](https://arxiv.org/abs/2503.00785) |  |
+| FLOAT Drone (arXiv 2025, ZJU) | [link](https://arxiv.org/abs/2503.00785) |  |
 
 **可变形无人机（Deformable UAV）**
 
@@ -698,7 +777,7 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 | Terrestrial-Aerial Bimodal Vehicles Navigation (RAL 2022, ZJU) | [link](https://ieeexplore.ieee.org/document/9691888) |
 
 **小结**：  
-如果你关注“具身交互”，新构型往往比换算法更有效：空中机械臂解决“能不能操作”，全驱动解决“姿态与力控自由度”，可变形解决“通过性与安全”，多模态解决“跨地形任务连续性”。
+如果你关注「具身交互」，新构型往往比换算法更有效：空中机械臂解决「能不能操作」，全驱动解决「姿态与力控自由度」，可变形解决「通过性与安全」，多模态解决「跨地形任务连续性」。
 
 ---
 
@@ -706,9 +785,9 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 
 ### (10.3) Autonomous Driving —— 自动驾驶
 
-自动驾驶和具身操作类似，本质是“在复杂开放世界中闭环决策”。但它的研究与工程路线经常可以归纳成两大块：  
+自动驾驶和具身操作类似，本质是「在复杂开放世界中闭环决策」。但它的研究与工程路线经常可以归纳成两大块：  
 **世界模型（World / Simulation）**：如何表示、重建并可控生成驾驶世界（用于仿真、数据增广、评测与训练）；  
-**策略系统（Policy）**：从模块化到端到端，并出现越来越多“快慢系统”范式（快系统高频安全控制，慢系统语义理解与规划）。
+**策略系统（Policy）**：从模块化到端到端，并出现越来越多「快慢系统」范式（快系统高频安全控制，慢系统语义理解与规划）。
 
 #### (10.3.1) World / Simulation：重建 + 可控生成
 
@@ -720,32 +799,34 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 
 | 工作 | 链接 | 备注 |
 |---|---|---|
-| NSG | [link](https://github.com/princeton-computational-imaging/neural-scene-graphs) / [link](https://arxiv.org/abs/2011.10379) | CVPR 2021 |
-| MARS | [link](https://open-air-sun.github.io/mars/) / [link](https://arxiv.org/abs/2307.15058) |  |
-| StreetGaussians | [link](https://github.com/zju3dv/street_gaussians) / [link](https://arxiv.org/abs/2401.01339) |  |
-| OmniRe | [link](https://ziyc.github.io/omnire) / [link](https://github.com/ziyc/drivestudio) / [link](https://arxiv.org/abs/2408.16760) | ICLR 2025 Spotlight |
+| NSG | [link](https://github.com/princeton-computational-imaging/neural-scene-graphs)｜[link](https://arxiv.org/abs/2011.10379) | CVPR 2021 |
+| MARS | [link](https://open-air-sun.github.io/mars/)｜[link](https://arxiv.org/abs/2307.15058) |  |
+| StreetGaussians | [link](https://github.com/zju3dv/street_gaussians)｜[link](https://arxiv.org/abs/2401.01339) |  |
+| OmniRe | [link](https://ziyc.github.io/omnire)｜[link](https://github.com/ziyc/drivestudio)｜[link](https://arxiv.org/abs/2408.16760) | ICLR 2025 Spotlight |
 
 **场景可控生成 / 世界模型**
 
 | 工作 | 链接 | 备注 |
 |---|---|---|
-| GAIA-1 | [link](https://wayve.ai/thinking/introducing-gaia1/) / [link](https://arxiv.org/abs/2309.17080) |  |
-| GenAD（OpenDV） | [link](https://github.com/OpenDriveLab/DriveAGI?tab=readme-ov-file#opendv) / [link](https://arxiv.org/abs/2403.09630) | CVPR 2024 Highlight |
-| Vista | [link](https://opendrivelab.com/Vista) / [link](https://github.com/OpenDriveLab/Vista) / [link](https://arxiv.org/abs/2405.17398) | NeurIPS 2025 |
-| SCP-Diff | [link](https://air-discover.github.io/SCP-Diff/) / [link](https://github.com/AIR-DISCOVER/SCP-Diff-Toolkit) / [link](https://arxiv.org/abs/2403.09638) |  |
-| MagicDrive → MagicDriveDiT | [link](https://gaoruiyuan.com/magicdrive-v2/) / [link](https://arxiv.org/abs/2411.13807) |  |
-| UniScene | [link](https://arlo0o.github.io/uniscene/) / [link](https://arxiv.org/abs/2412.05435) | CVPR 2025 |
+| GAIA-1 | [link](https://wayve.ai/thinking/introducing-gaia1/)｜[link](https://arxiv.org/abs/2309.17080) |  |
+| GenAD（OpenDV） | [link](https://github.com/OpenDriveLab/DriveAGI?tab=readme-ov-file#opendv)｜[link](https://arxiv.org/abs/2403.09630) | CVPR 2024 Highlight |
+| Vista | [link](https://opendrivelab.com/Vista)｜[link](https://github.com/OpenDriveLab/Vista)｜[link](https://arxiv.org/abs/2405.17398) | NeurIPS 2025 |
+| SCP-Diff | [link](https://air-discover.github.io/SCP-Diff/)｜[link](https://github.com/AIR-DISCOVER/SCP-Diff-Toolkit)｜[link](https://arxiv.org/abs/2403.09638) |  |
+| MagicDrive → MagicDriveDiT | [link](https://gaoruiyuan.com/magicdrive-v2/)｜[link](https://arxiv.org/abs/2411.13807) |  |
+| UniScene | [link](https://arlo0o.github.io/uniscene/)｜[link](https://arxiv.org/abs/2412.05435) | CVPR 2025 |
 | VaVAM | [link](https://github.com/valeoai/VideoActionModel) |  |
 
 **生态补充**
 
 | 仿真/数据生态 | 链接 | 说明 |
 |---|---|---|
-| CARLA | （建议补链接） | 自动驾驶仿真常用 |
-| nuScenes / Waymo Open / Argoverse 2 | （建议补链接） | 数据与评测生态（决定可复现实验） |
+| CARLA | [link](https://carla.org/) | 自动驾驶仿真的事实标准，闭环评测常用。⚠️ 注意 0.9.x（UE4）与 0.10.x（UE5）是两条独立分支，**版本号更低的 0.9.x 反而更成熟**，新人极易选错 |
+| nuScenes | [link](https://www.nuscenes.org/) | 多传感器真实数据集，端到端方法的主流评测场 |
+| Waymo Open Dataset | [link](https://waymo.com/open/) | 规模最大的真实数据集之一；除感知与运动预测外，还有专门的[端到端驾驶数据集](https://waymo.com/open/data/e2e/)（8 路相机 360° 覆盖 + 文本导航指令，聚焦长尾场景） |
+| Argoverse 2 | [link](https://www.argoverse.org/av2.html) | 偏运动预测与场景挖掘，含高精地图 |
 
 **小结**：  
-世界模型路线的关键不是“生成得像不像”，而是“能不能被策略有效利用”：可控性、可评测性、覆盖长尾场景，往往比视觉质量更关键。
+世界模型路线的关键不是「生成得像不像」，而是「能不能被策略有效利用」：可控性、可评测性、覆盖长尾场景，往往比视觉质量更关键。
 
 ---
 
@@ -754,19 +835,19 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 | 主题 | 资源 | 链接 |
 |---|---|---|
 | 模块化到端到端 | End-to-end Autonomous Driving: Challenges and Frontiers | [link](https://arxiv.org/pdf/2306.16927) |
-| 快慢系统并行（观点） | 理想端到端-VLM双系统 | [link](https://www.sohu.com/a/801987742_258768) |
+| 快慢系统并行（观点） | 理想端到端 VLM 双系统 | [link](https://www.sohu.com/a/801987742_258768) |
 
-为了便于“选路线”，这里把代表工作按快/慢系统拆开：  
+为了便于「选路线」，这里把代表工作按快/慢系统拆开：  
 快系统通常强调高频闭环（检测、占用、轨迹与控制），慢系统强调语义理解、解释与规划（往往更接近 VLM/LLM）。
 
 **快系统代表作**
 
 | 工作 | 链接 | 备注 |
 |---|---|---|
-| UniAD | [link](https://github.com/OpenDriveLab/UniAD) / [link](https://arxiv.org/abs/2212.10156) | CVPR 2023 Best Paper |
-| VAD | [link](https://github.com/hustvl/VAD) / [link](https://arxiv.org/abs/2303.12077) | ICCV 2023 |
-| SparseDrive | [link](https://github.com/swc-17/SparseDrive) / [link](https://arxiv.org/abs/2405.19620) |  |
-| DiffusionDrive | [link](https://github.com/hustvl/DiffusionDrive) / [link](https://arxiv.org/abs/2411.15139) | CVPR 2025 |
+| UniAD | [link](https://github.com/OpenDriveLab/UniAD)｜[link](https://arxiv.org/abs/2212.10156) | CVPR 2023 Best Paper |
+| VAD | [link](https://github.com/hustvl/VAD)｜[link](https://arxiv.org/abs/2303.12077) | ICCV 2023 |
+| SparseDrive | [link](https://github.com/swc-17/SparseDrive)｜[link](https://arxiv.org/abs/2405.19620) |  |
+| DiffusionDrive | [link](https://github.com/hustvl/DiffusionDrive)｜[link](https://arxiv.org/abs/2411.15139) | CVPR 2025 |
 | Scale-up 特性探究 | [link](https://arxiv.org/pdf/2412.02689) |  |
 
 **慢系统代表作**
@@ -776,9 +857,11 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 | DriveVLM | [link](https://arxiv.org/abs/2402.12289) | CoRL 2024 |
 | EMMA | [link](https://arxiv.org/abs/2410.23262) |  |
 | Open-EMMA | [link](https://github.com/taco-group/OpenEMMA) | 开源实现 |
+| AutoVLA | [paper](https://arxiv.org/abs/2506.13757)｜[主页](https://autovla.github.io/)｜[repo](https://github.com/ucla-mobility/AutoVLA) | UCLA，2025.06；把连续轨迹离散成可行动作 token，用一个自回归模型统一推理与执行，并用 RL 微调让模型在简单场景下自动跳过冗余推理 |
 
-**小结**：  
-自动驾驶策略的发展越来越像具身操作：快系统保证稳定与安全，慢系统提供语义理解与长时规划。做研究时建议先固定评测生态（数据/仿真/指标），再讨论模型形态，否则很难做可复现对比。
+值得注意的是，**自动驾驶和具身导航正在被同一批模型覆盖**：上一节的 NavFoM 就把自动驾驶当作它四类任务之一来训练与评测。这也印证了「快慢系统」这套范式在操作、导航与驾驶三个场景中的通用性。
+
+**小结**：自动驾驶策略的发展越来越像具身操作——快系统保证稳定与安全，慢系统提供语义理解与长时规划。做研究时建议**先固定评测生态（数据 / 仿真 / 指标），再讨论模型形态**，否则很难做可复现对比。
 
 ---
 
