@@ -8,6 +8,10 @@
 
 这一章覆盖的是具身智能中**最底层、也最容易被跳过的能力层**。控制与机器人学本身并不会直接提高 benchmark 分数，但它们决定了系统是否**稳定、可解释、可调试、可部署**。如果说算法篇解决的是「我想让机器人做什么」，那么这一章回答的是：机器人**凭什么**能连续、安全、可控地做到。
 
+<section id="control-scope"></section>
+
+<section id="control-scope"></section>
+
 ### (1.0) 先说清楚：要学到什么程度
 
 控制理论是一个能读一辈子的领域，新人最容易犯的错是**一头扎进去补三个月数学，却迟迟没碰过真机**。实际上，不同目标需要的深度差别很大：
@@ -183,6 +187,10 @@
 
 它的难点可以归结为一句话：**机器人只能通过脚与地面的接触来给自己施力，而这个接触是单向的（只能推不能拉）、有摩擦上限的、还随时可能断开。** 所以人形控制的本质是在一堆接触约束下做实时优化。
 
+<section id="wbc-routes"></section>
+
+<section id="wbc-routes"></section>
+
 ### (4.1) 模型式与学习式两条路线
 
 | 路线 | 做法 | 优势 | 代价 |
@@ -191,6 +199,10 @@
 | **学习式**（仿真中 RL） | 在 GPU 上并行几千个环境跑强化学习，再迁移到真机 | 能学出手工难以设计的动态行为（跑、跳、翻滚） | 奖励函数难调，且必须跨越 Sim2Real Gap |
 
 2025 年之后，**学习式路线在人形与四足上已经成为主流**，模型式方法更多作为安全层或对照基线保留。
+
+<section id="wbc-path"></section>
+
+<section id="wbc-path"></section>
 
 ### (4.2) 入门路径
 
@@ -204,6 +216,10 @@
 | 4 | **BeyondMimic** | [paper](https://arxiv.org/abs/2508.08241)｜[主页](https://beyondmimic.github.io/)｜[repo](https://github.com/HybridRobotics/whole_body_tracking) | 目前动作跟踪质量的标杆（后空翻、冲刺、侧手翻），并已成为多个公开 RL 仓库的默认方法 |
 | 5 | **HOVER** | [repo](https://github.com/NVlabs/HOVER) | NVIDIA 的通用神经全身控制器，理解「一个策略支持多种控制接口」的思路 |
 
+<section id="wbc-tools"></section>
+
+<section id="wbc-tools"></section>
+
 ### (4.3) 训练框架与工具
 
 | 工具 | 链接 | 定位 |
@@ -212,6 +228,10 @@
 | mjlab | [paper](https://arxiv.org/abs/2601.22074)｜[repo](https://github.com/mujocolab/mjlab)｜[文档](https://mujocolab.github.io/mjlab/) | 把 Isaac Lab 的接口搬到 MuJoCo Warp 上，去掉了 Isaac Sim 依赖，装起来轻得多 |
 | HumanoidVerse | [repo](https://github.com/LeCAR-Lab/HumanoidVerse) | 支持 Isaac Gym / Isaac Sim / MuJoCo 多后端，ASAP 的训练底座 |
 | MuJoCo Playground | [主页](https://playground.mujoco.org/) | 现成的运动控制环境集合，适合快速验证算法 |
+
+<section id="wbc-retargeting"></section>
+
+<section id="wbc-retargeting"></section>
 
 ### (4.4) 动作重定向与遥操作
 

@@ -65,6 +65,8 @@
 
 > 🌱 建议从「能直接用于闭环」的传感器开始（RGB / 深度 / IMU），把流程跑通后再逐步引入触觉这类高难度模态。触觉数据的采集、标定与泛化难度都远高于视觉，不适合作为第一个项目。
 
+<section id="depth-camera"></section>
+
 ### (4.1) 深度相机（Depth Camera）
 
 深度相机是具身操作里出镜率最高的传感器。按成像原理主要分三类，选型时的核心权衡是**精度、工作距离与对材质的适应性**：
@@ -83,6 +85,8 @@
 
 > ⚠️ **深度相机的三个常见坑**：**透明与高反光物体**（玻璃杯、不锈钢）几乎必然测不到深度，这是原理性限制而非标定问题；**最小工作距离**通常在 20~40 厘米，末端相机装太近会全是空洞；**RGB 与深度需要对齐**（align），否则你按彩色图像素取到的深度值对应的是别的位置。
 
+<section id="force-proprioception"></section>
+
 ### (4.2) 力觉与本体感知
 
 - **关节力矩感知**：现在不少协作臂与人形本体通过电流估计或串联弹性驱动（SEA）提供关节力矩反馈，这是实现阻抗控制与碰撞检测的前提，详见[控制篇](./control.md#advanced-control)。
@@ -97,6 +101,8 @@
 
 触觉是「接触世界」的关键模态，尤其在装配、柔性物体、精细抓取和遮挡严重的场景中，触觉往往比视觉更可靠。整体上触觉硬件路线常见两类：**视触觉（Vision-based tactile）** 与 **电子皮肤（E-skin）**。
 
+<section id="vision-tactile"></section>
+
 ### (5.1) 视触觉传感器（Vision-Based Tactile Sensors）
 
 视触觉通过摄像头观测弹性介质/标记点的形变，把「触觉」转化为视觉信号来估计接触力、形变与接触几何。它的关键设计点通常包括：传感器形状、标记点布局、材料（硅胶/弹性体）以及光照与成像系统。
@@ -108,6 +114,8 @@
 [算法综述](https://ieeexplore.ieee.org/document/10563188)  
 [结构综述](https://link.springer.com/article/10.1007/s10846-021-01431-0)
 
+<section id="electronic-skin"></section>
+
 ### (5.2) 电子皮肤（Electronic Skin）
 
 电子皮肤通常用柔性材料（压力薄膜、纳米传感网络等）实现大面积触觉，目标是让机器人拥有类似「全身触觉」的能力，用于安全、人机协作与全身接触交互。
@@ -116,6 +124,8 @@
 - 缺点：制造与成本较高、数据规模大带来处理挑战、长期稳定性与漂移问题
 
 [综述入口](https://pubs.acs.org/doi/10.1021/acs.chemrev.4c00049)
+
+<section id="tactile-applications"></section>
 
 ### (5.3) 触觉应用与算法（把触觉变成能力）
 
@@ -134,7 +144,6 @@
 | 触觉操控（visuotactile） | NeuralFeels with Neural Fields… | [link](https://www.science.org/doi/10.1126/scirobotics.adl0628) |
 | 触觉大模型/统一表征 | Binding Touch to Everything… (CVPR 2024) | [link](https://openaccess.thecvf.com/content/CVPR2024/papers/Yang_Binding_Touch_to_Everything_Learning_Unified_Multimodal_Tactile_Representations_CVPR_2024_paper.pdf) |
 
-
 **数据工具与标准化**：TLabel（[GitHub](https://github.com/liesliy/tlabel)）是一个开源的触觉数据标注与处理工具包（`pip install tlabel`），提供统一的触觉数据格式标准，支持 GelSight、PaXini、Daimon、UniVTAC 等 10+ 传感器适配器，已被 FTP-1 官方推荐。
 
 #### 触觉的「基础模型」时刻
@@ -151,6 +160,8 @@
 仿真侧也开始跟进：Genesis 已内置基于 FOTS 的视触觉传感器仿真，这是主流仿真器第一次把触觉当作一等功能提供。
 
 > 🌱 **给想入坑触觉的新人**：硬件仍以 GelSight Mini 与 DIGIT 为主流研究选择，两者都有成熟的开源生态。但请做好心理准备——触觉的**标定、老化与个体差异**都比视觉严重（同型号的两个传感器数据都可能对不上，弹性体用久了还会变形），这也是为什么统一表征会成为这个方向的核心议题。
+
+<section id="tactile-products"></section>
 
 ### (5.4) 传感器购买（从研究到落地）
 
@@ -177,6 +188,7 @@
 
 > 🌱 **新人怎么选**：如果只是想复现论文、验证算法，**优先用公开数据集**（见[基础设施篇](./infrastructure.md#datasets)），不要一上来就自建采集系统——搭一套能用的采集平台通常比训练一个策略更花时间。真要自己采，最低成本的起点是 [LeRobot](https://github.com/huggingface/lerobot) 生态的 SO-101 主从臂（整套千元级），先跑通「采 50 条 → 训练 → 评测」的闭环，再考虑扩展。
 
+---
 
 <section id="companies"></section>
 
