@@ -1,23 +1,17 @@
+<div align="center">
+
 ![](./files/Embodied-AI-Guide-logo.png)
 
-<h1 align="center">具身智能技术指南 Embodied-AI-Guide</h1>
+# 具身智能技术指南 Embodied-AI-Guide
 
-<p align="center">
-  <b>国内最热门的具身智能技术指南</b><br>
-  一份偏「百科全书」定位的具身智能中文知识库与资料索引
-</p>
+**国内最热门的具身智能技术指南**  
+一份偏「百科全书」定位的具身智能中文知识库与资料索引
 
-<p align="center">
-  <a href="#start">从这里开始</a> ·
-  <a href="#robotwin">动手学习</a> ·
-  <a href="#info">认知资料</a> ·
-  <a href="#algorithm">算法篇</a> ·
-  <a href="#infrastructure">基础设施篇</a> ·
-  <a href="#control">控制篇</a> ·
-  <a href="#hardware">硬件篇</a>
-</p>
+[从这里开始](#start) · [动手学习](#robotwin) · [认知资料](#info) · [算法篇](#algorithm) · [基础设施篇](#infrastructure) · [控制篇](#control) · [硬件篇](#hardware)
 
-<p align="center"><img src="https://img.shields.io/github/stars/TianxingChen/Embodied-AI-Guide?style=flat-square" alt="GitHub repo stars" height="20"/>  <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FTianxingChen%2FEmbodied-AI-Guide&label=Total%20Visitors&labelColor=%232ccce4&countColor=%23d9e3f0" alt="Visitors" height="20"/>  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square" alt="PRs Welcome" height="20"/>  <img src="https://img.shields.io/badge/License-Non--Commercial-blue?style=flat-square" alt="License" height="20"/></p>
+![GitHub repo stars](https://img.shields.io/github/stars/TianxingChen/Embodied-AI-Guide?style=flat-square)  ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FTianxingChen%2FEmbodied-AI-Guide&label=Total%20Visitors&labelColor=%232ccce4&countColor=%23d9e3f0)  ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)  ![License](https://img.shields.io/badge/License-Non--Commercial-blue?style=flat-square)
+
+</div>
 
 > 📚 本项目希望帮助新人**快速建立领域认知**：以一个实践项目带大家动手入门具身智能，同时以百科全书的形式梳理当前具身智能涉及的主要技术，让大家清楚不同技术能解决什么问题，未来想深入时有头绪。
 >
@@ -25,13 +19,16 @@
 
 ### 📢 News｜项目进展
 
-📝 *2026-01-15: Embodied-AI-Guide 完成内容重组*<br>
-⭐️ *2025-12-18: GitHub Stars 突破 10,000*<br>
+📝 *2026-01-15: Embodied-AI-Guide 完成内容重组*  
+
+⭐️ *2025-12-18: GitHub Stars 突破 10,000*  
+
 ❤️ *2025-03-15: Embodied-AI-Guide 正式开源*
 
 ### 🧑‍💻 Related Projects｜相关开源项目
 
-⭐️ Lumina Call（具身智能招聘）：[website](https://lumina-embodied.ai/lumina-call)<br>
+⭐️ Lumina Call（具身智能招聘）：[website](https://lumina-embodied.ai/lumina-call)  
+
 ⭐️ Datawhale every-embodied（具身智能入门教程）：[repo](https://github.com/datawhalechina/every-embodied)
 
 ## 🦉 Lumina 具身智能社区
@@ -39,6 +36,8 @@
 社区主页：[lumina-embodied.ai](https://lumina-embodied.ai)。扫描下方二维码加入交流群；如果二维码失效或无法入群，请邮件联系 [lumina.embodiedai@gmail.com](mailto:lumina.embodiedai@gmail.com)，或添加项目发起人微信 `TianxingChen_2002`（请备注：机构 + 姓名 + 来意）。
 
 ![Lumina 具身智能社区](./files/images/Lumina.png)
+
+
 
 <a id="start"></a>
 
@@ -61,6 +60,7 @@
 
 不同背景的读者不必从同一处入手，可参考下表选择起点：
 
+
 | 你的背景                | 建议起点                    | 推荐路径                                               |
 | ------------------- | ----------------------- | -------------------------------------------------- |
 | 完全新手 / 在校本科生        | [第 2 章](#robotwin) 动手教程 | (2) 跑通流程 → (3) 建立认知 → (4) 算法篇 → 按兴趣深入              |
@@ -69,6 +69,7 @@
 | 偏硬件 / 嵌入式           | [第 7 章](#hardware) 硬件篇  | (7) 硬件篇 → (6) 控制篇 → (2) 动手教程                       |
 | 想快速了解行业与选题          | [第 3 章](#info) 认知资料     | (3.1) 方法论 → (3.5) 论文列表 → (3.6) 年度趋势                |
 
+
 ### (1.3) 术语速查表
 
 阅读论文与本指南时高频出现的概念，先建立字面认知即可，细节留给对应章节。
@@ -76,30 +77,34 @@
 <details>
 <summary><b>展开术语速查表（20 条）</b></summary>
 
-| 术语                              | 一句话解释                               |
-| ------------------------------- | ----------------------------------- |
-| **Manipulation / Locomotion**   | 操作（用手臂改变环境）与移动（用腿或轮子移动本体），具身智能的两条主线 |
-| **Policy（策略）**                  | 从观测到动作的映射，也就是日常所说的「模型」              |
-| **IL / BC（模仿学习 / 行为克隆）**        | 从人类演示数据中以监督方式学习动作                   |
-| **RL（强化学习）**                    | 通过与环境交互并依据奖励信号来优化策略                 |
-| **VLA（Vision-Language-Action）** | 直接把图像与语言指令映射为机器人动作的端到端模型            |
-| **VA（Vision-Action）**           | 只用视觉、不接受语言指令的策略；任务固定时比 VLA 更轻更快      |
-| **World Model（世界模型）**          | 学习「当前状态 + 动作 → 下一步观测」的模型，可用来在脑内推演      |
-| **WAM（World-Action Model）**     | 先用世界模型预测接下来会看到什么，再从预测中解出动作的一类策略       |
-| **Teleoperation（遥操作）**          | 人通过手柄、动捕或主从设备操控机器人，是真机数据采集的主要手段     |
-| **Demonstration（演示 / 轨迹）**      | 一次完整的任务执行记录，通常包含观测、动作与时间戳           |
-| **Sim2Real Gap**                | 仿真与真实世界在物理、渲染、噪声上的差异，会导致策略迁移掉点      |
-| **Real2Sim**                    | 把真实场景与物体重建进仿真，用于缩小 Sim2Real Gap     |
-| **Affordance（可操作性）**            | 物体上「可以被怎样操作」的区域或方式，如把手可抓、按钮可按       |
-| **DoF（自由度）**                    | 机器人可独立运动的关节数量                       |
-| **End-effector（末端执行器）**         | 机械臂末端的执行部件，如夹爪、吸盘、灵巧手               |
-| **FK / IK（正 / 逆运动学）**           | 由关节角求末端位姿 / 由末端位姿反解关节角              |
-| **URDF**                        | 描述机器人连杆、关节与惯量的 XML 格式，是仿真与控制的通用输入   |
-| **MPC（模型预测控制）**                 | 在滚动时域内反复求解优化问题来生成控制量                |
-| **WBC（全身控制）**                   | 把控制目标从机械臂末端扩展到躯干、腿、头等整个身体，人形机器人方向常用  |
-| **SLAM**                        | 同时定位与建图，让机器人知道「自己在哪、周围长什么样」         |
+
+| 术语                                                                                                                                        | 一句话解释                               |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| **Manipulation / Locomotion**                                                                                                             | 操作（用手臂改变环境）与移动（用腿或轮子移动本体），具身智能的两条主线 |
+| **Policy（策略）**                                                                                                                            | 从观测到动作的映射，也就是日常所说的「模型」              |
+| **IL / BC（模仿学习 / 行为克隆）**                                                                                                                  | 从人类演示数据中以监督方式学习动作                   |
+| **RL（强化学习）**                                                                                                                              | 通过与环境交互并依据奖励信号来优化策略                 |
+| **VLA（Vision-Language-Action）**                                                                                                           | 直接把图像与语言指令映射为机器人动作的端到端模型            |
+| **VA（Vision-Action）**                                                                                                                     | 只用视觉、不接受语言指令的策略；任务固定时比 VLA 更轻更快     |
+| **World Model（世界模型）**                                                                                                                     | 学习「当前状态 + 动作 → 下一步观测」的模型，可用来在脑内推演   |
+| **WAM（World-Action Model）**                                                                                                               | 先用世界模型预测接下来会看到什么，再从预测中解出动作的一类策略     |
+| **Teleoperation（遥操作）**                                                                                                                    | 人通过手柄、动捕或主从设备操控机器人，是真机数据采集的主要手段     |
+| **Demonstration（演示 / 轨迹）**                                                                                                                | 一次完整的任务执行记录，通常包含观测、动作与时间戳           |
+| **Sim2Real Gap**                                                                                                                          | 仿真与真实世界在物理、渲染、噪声上的差异，会导致策略迁移掉点      |
+| **Real2Sim**                                                                                                                              | 把真实场景与物体重建进仿真，用于缩小 Sim2Real Gap     |
+| **Affordance（可操作性）**                                                                                                                      | 物体上「可以被怎样操作」的区域或方式，如把手可抓、按钮可按       |
+| **DoF（自由度）**                                                                                                                              | 机器人可独立运动的关节数量                       |
+| **End-effector（末端执行器）** | 机械臂末端的执行部件，如夹爪、吸盘、灵巧手               |
+| **FK / IK（正 / 逆运动学）**                                                                                                                     | 由关节角求末端位姿 / 由末端位姿反解关节角              |
+| **URDF**                                                                                                                                  | 描述机器人连杆、关节与惯量的 XML 格式，是仿真与控制的通用输入   |
+| **MPC（模型预测控制）**                                                                                                                           | 在滚动时域内反复求解优化问题来生成控制量                |
+| **WBC（全身控制）**                                                                                                                             | 把控制目标从机械臂末端扩展到躯干、腿、头等整个身体，人形机器人方向常用 |
+| **SLAM**                                                                                                                                  | 同时定位与建图，让机器人知道「自己在哪、周围长什么样」         |
 
 </details>
+
+
+
 
 ### (1.4) 新人常见问题
 
@@ -132,6 +137,8 @@ A：相比语言模型，具身智能远没有收敛——**数据、评测、�
 
 ![Contributors](https://contrib.rocks/image?repo=TianxingChen/Embodied-AI-Guide)
 
+
+
 <a id="robotwin"></a>
 
 ## ⚒️ (2) 动手学习具身智能操作
@@ -156,9 +163,12 @@ A：相比语言模型，具身智能远没有收敛——**数据、评测、�
 
 ### (2.2) 学习流程
 
-**RoboTwin 2.0**：[代码](https://github.com/RoboTwin-Platform/RoboTwin)｜[主页](https://robotwin-platform.github.io/)｜[文档](https://robotwin-platform.github.io/doc/)｜[论文](https://arxiv.org/abs/2506.18088)<br>
-**XPolicyLab（策略侧代码）**：[代码](https://github.com/XPolicyLab/XPolicyLab)｜[文档](https://robotwin-platform.github.io/doc/usage/xpolicylab.html)<br>
-**任务与榜单**：[50 个双臂任务说明](https://robotwin-platform.github.io/doc/tasks/)｜[Leaderboard](https://robotwin-platform.github.io/leaderboard)<br>
+**RoboTwin 2.0**：[代码](https://github.com/RoboTwin-Platform/RoboTwin)｜[主页](https://robotwin-platform.github.io/)｜[文档](https://robotwin-platform.github.io/doc/)｜[论文](https://arxiv.org/abs/2506.18088)  
+
+**XPolicyLab（策略侧代码）**：[代码](https://github.com/XPolicyLab/XPolicyLab)｜[文档](https://robotwin-platform.github.io/doc/usage/xpolicylab.html)  
+
+**任务与榜单**：[50 个双臂任务说明](https://robotwin-platform.github.io/doc/tasks/)｜[Leaderboard](https://robotwin-platform.github.io/leaderboard)  
+
 **跑完之后可以看看**：[RoboDojo](https://robodojo-benchmark.com/)（仿真 + 真机统一评测）｜[RMBench](https://rmbench.github.io/)（记忆依赖操作）
 
 #### (2.2.1) 了解 RoboTwin 2.0 做了什么（约 1 天）
@@ -239,6 +249,8 @@ bash scripts/eval_policy.sh multitask \
 
 至此你已经完整走过一遍操作策略的生命周期。**下一步最划算的动作是换个策略再跑一遍**：把 `--policy-name` 换成 `Pi_0`、`RDT_1B`、`GR00T_N17`、`X_VLA` 中的任意一个，其余流程完全一致，这样能直观感受不同架构在同一任务上的差异。完整策略清单见 [XPolicyLab 文档](https://robotwin-platform.github.io/doc/usage/xpolicylab.html)。
 
+
+
 <a id="info"></a>
 
 ## 📄 (3) Useful Info —— 有利于搭建认知的资料
@@ -283,7 +295,8 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 
 ### (3.4) 高质量会议与期刊（论文检索时重点关注）
 
-**机器人**：Science Robotics, TRO, IJRR, JFR, RSS, RAL, IROS, ICRA, CoRL<br>
+**机器人**：Science Robotics, TRO, IJRR, JFR, RSS, RAL, IROS, ICRA, CoRL  
+
 **计算机视觉**：CVPR, ICCV, ECCV｜**机器学习**：NeurIPS, ICML, ICLR｜**AI 与 NLP**：AAAI, ACL
 
 ### (3.5) 论文列表（长期跟进研究进展与选题调研）
@@ -309,6 +322,8 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 - State of Robot Learning（Dec 2025）：[website](https://vedder.io/misc/state_of_robot_learning_dec_2025.html)
 - 许华哲 - 具身智能：2025 回望：[website](https://zhuanlan.zhihu.com/p/1983661736180589668)
 - 林天威 - 具身 VLA 的 2025：从 Demo 到通用的距离：[website](https://zhuanlan.zhihu.com/p/1989799567177307432)
+
+
 
 <a id="algorithm"></a>
 
@@ -339,6 +354,8 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
   - [(10.2) UAV —— 无人机](./topics/algorithm.md#uav)
   - [(10.3) Autonomous Driving —— 自动驾驶](./topics/algorithm.md#ad)
 
+
+
 <a id="infrastructure"></a>
 
 ## 🏋️‍♂️ (5) Infrastructure —— 软件基础设施篇
@@ -351,6 +368,8 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 - [(2) Benchmarks —— 基准集](./topics/infrastructure.md#benchmarks)
 - [(3) Datasets —— 数据集](./topics/infrastructure.md#datasets)
 - [(4) 工具链 —— 数据格式与策略部署](./topics/infrastructure.md#policy-serving)
+
+
 
 <a id="control"></a>
 
@@ -377,6 +396,8 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
   - [(4.2) 入门路径](./topics/control.md#wbc)
   - [(4.3) 训练框架与工具](./topics/control.md#wbc)
   - [(4.4) 动作重定向与遥操作](./topics/control.md#wbc)
+
+
 
 <a id="hardware"></a>
 
