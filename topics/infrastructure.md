@@ -66,6 +66,7 @@
 | RoboTwin 2.0 | [link](https://github.com/RoboTwin-Platform/RoboTwin)<br>[link](https://robotwin-platform.github.io/doc/) | 程序化生成双臂任务数据与 50 个双臂评测任务（偏「双臂 + 规模化生成」） |
 | RoboDojo | [link](https://robodojo-benchmark.com/) | 同时提供仿真与真机任务，评测维度覆盖泛化、精度、长程与记忆（偏「统一评测」） |
 | RMBench | [link](https://rmbench.github.io/) | 专门考察记忆能力的操作基准，任务按记忆复杂度分级（偏「记忆依赖任务」） |
+| RoboQuest | [repo](https://github.com/declare-lab/RoboQuest)｜[paper](https://arxiv.org/abs/2610.10388) | 仿真厨房中的 10 个移动操作任务，任务所需信息被隐藏，需通过搜索、操作检查与交互测试主动获取；前沿多模态大模型经统一视觉运动接口直接控制机器人，并开源 5,000 条演示与 π0.5 微调基线（偏「主动探索与信息获取」） |
 | SimplerENV | [link](https://github.com/simpler-env/SimplerEnv) | 轻量化、可快速对比策略在操作任务上的表现 |
 | LIBERO | [link](https://github.com/Lifelong-Robot-Learning/LIBERO)<br>[link](https://libero-project.github.io/intro.html) | 程序化生成管道 + 终身学习设置（偏「终身/顺序学习」）；是 VLA 论文最常报的数字，但已接近饱和 |
 | LIBERO-Plus | [link](https://arxiv.org/abs/2510.13626) | 给 LIBERO 加七类扰动、扩成上万任务并分五档难度，用来检验成功率是不是「刷」出来的 |
