@@ -12,7 +12,7 @@
 | 路线/主题 | 资源 | 链接 | 说明 |
 |---|---|---|---|
 | 总览路线 | 嵌入式学习路线 | [link](https://blog.csdn.net/wangshuaiwsws95/article/details/107830452) | 用于建立学习路径与关键词地图 |
-| 入门 | 51 单片机 | [link](https://www.bilibili.com/video/BV1Mb411e7re) | 江科大自动协经典入门 |
+| 入门 | 51 单片机 | [link](https://www.bilibili.com/video/BV1Mb411e7re) | 江科大自化协经典入门 |
 | 主流工程 | STM32 单片机 | [link](https://www.bilibili.com/video/BV1th411z7sn) | 从外设到工程结构 |
 | 驱动关键 | STM32 电机驱动（野火） | [link](https://www.bilibili.com/video/BV1AZ4y1V7wt) | 控制闭环常见落点 |
 | 工程体系 | 野火 STM32 标准库 | [link](https://www.bilibili.com/video/BV1yW411Y7Gw) | 更贴近工程写法 |
@@ -154,7 +154,7 @@
 
 ### (5.4) 传感器购买（从研究到落地）
 
-市面上已有成熟视触觉传感器产品，例如 [GelSight](https://gelsight.com/)
+市面上已有成熟视触觉传感器产品，例如 [GelSight](https://gelsight.com/)。
 
 ---
 

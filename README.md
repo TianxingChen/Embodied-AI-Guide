@@ -449,7 +449,7 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 
 本项目采用 **非商业使用（Non-Commercial Use）** 协议：
 
-- **允许**：个人学习、学术研究与其他非盈利用途；
+- **允许**：个人学习、学术研究与其他非营利用途；
 - **禁止**：任何形式的商业使用，包括但不限于公司/企业内部使用、集成到收费产品或服务中，或用于任何营利目的。
 
 详情请查看仓库中的 [LICENSE](./LICENSE) 文件。如需商业授权（例如在公司产品或商业项目中使用），请联系项目负责人：[chentianxing2002@gmail.com](mailto:chentianxing2002@gmail.com)。
