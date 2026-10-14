@@ -265,7 +265,7 @@ VLA（Vision-Language-Action）可以理解为「把视觉-语言模型的能力
 
 | 系统 / 产品 | 链接 | 时间 | 备注 |
 |---|---|---|---|
-| Figure：Helix | [link](https://www.figure.ai/news/helix) | 2025.02.20 | 上半身全身控制 |
+| Figure：Helix | [link](https://www.figure.ai/news/helix) | 2025.02.20 | 完整上半身控制 |
 | 智元：GO-1 | [link](https://www.zhiyuan-robot.com/article/189/detail/56.html) | 2025.03.10 | ViLLA：VLM + MoE，vision-language-latent-action |
 | Physical Intelligence（openpi） | [link](https://github.com/Physical-Intelligence/openpi) |  |  |
 | π0.5 | [link](https://arxiv.org/abs/2504.16054) | 2025.04.22 | 高级任务分解 + 单模型低层执行 |
@@ -810,7 +810,7 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 |---|---|---|
 | GAIA-1 | [link](https://wayve.ai/thinking/introducing-gaia1/)｜[link](https://arxiv.org/abs/2309.17080) |  |
 | GenAD（OpenDV） | [link](https://github.com/OpenDriveLab/DriveAGI?tab=readme-ov-file#opendv)｜[link](https://arxiv.org/abs/2403.09630) | CVPR 2024 Highlight |
-| Vista | [link](https://opendrivelab.com/Vista)｜[link](https://github.com/OpenDriveLab/Vista)｜[link](https://arxiv.org/abs/2405.17398) | NeurIPS 2025 |
+| Vista | [link](https://opendrivelab.com/Vista)｜[link](https://github.com/OpenDriveLab/Vista)｜[link](https://arxiv.org/abs/2405.17398) | NeurIPS 2024 |
 | SCP-Diff | [link](https://air-discover.github.io/SCP-Diff/)｜[link](https://github.com/AIR-DISCOVER/SCP-Diff-Toolkit)｜[link](https://arxiv.org/abs/2403.09638) |  |
 | MagicDrive → MagicDriveDiT | [link](https://gaoruiyuan.com/magicdrive-v2/)｜[link](https://arxiv.org/abs/2411.13807) |  |
 | UniScene | [link](https://arlo0o.github.io/uniscene/)｜[link](https://arxiv.org/abs/2412.05435) | CVPR 2025 |

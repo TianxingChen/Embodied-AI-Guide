@@ -384,7 +384,7 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
   - [(1.1) 经典课程](./topics/control.md#control-courses)
 - [(2) Control Foundations —— 控制理论基础](./topics/control.md#control-foundations)
   - [(2.1) 经典控制（Classical Control）](./topics/control.md#classical-control)
-  - [(2.2) 现代控制（最优控制）](./topics/control.md#modern-control)
+  - [(2.2) 现代控制（线性系统与最优控制）](./topics/control.md#modern-control)
   - [(2.3) 先进控制（Advanced Control）](./topics/control.md#advanced-control)
 - [(3) Robotics Foundations —— 机器人学导论](./topics/control.md#robotics-foundations)
   - [(3.1) 推荐教材与材料](./topics/control.md#robotics-books)
