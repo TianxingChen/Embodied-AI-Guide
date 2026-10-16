@@ -184,7 +184,7 @@
 
 | 公司 | 主营产品 | 说明 |
 |---|---|---|
-| [松灵 AgileX](https://www.agilex.ai/) | [PIPER 六轴机械臂](https://global.agilex.ai/products/piper)<br>[PIKA 数采方案](https://global.agilex.ai/products/pika)<br>[Cobot Magic 双臂遥操作平台](https://global.agilex.ai/products/cobot-magic)<br>[全部产品（含移动底盘）](https://global.agilex.ai/collections/all) | 面向教育科研；[开源仓库](https://github.com/agilexrobotics) |
+| [松灵 AgileX](https://www.agilex.ai/) | [PIPER 六轴机械臂](https://global.agilex.ai/products/piper)<br>[PIKA 数采方案](https://global.agilex.ai/products/pika)<br>[Cobot Magic 双臂遥操作平台](https://global.agilex.ai/products/cobot-magic)<br>[全部产品（含移动底盘）](https://global.agilex.ai/) | 面向教育科研；[开源仓库](https://github.com/agilexrobotics) |
 | [宇树 Unitree](https://www.unitree.com/cn) | [四足机器人开发指南](https://www.yuque.com/ironfatty/nly1un/luo9gb)<br>[Go2 机器狗](https://www.unitree.com/cn/go2)<br>[AlienGo 机器狗](https://www.yuque.com/ironfatty/nly1un/dqcz3u)<br>[通用人形 H1](https://www.unitree.com/cn/h1)<br>[通用人形 G1](https://www.unitree.com/cn/g1) | 许多产出使用宇树的机器人作为硬件基础 |
 | [方舟无限 ARX](https://www.arx-x.com/?product/) | [X5 机械臂](https://www.arx-x.com/?product/21.html)<br>[X7 双臂平台](https://www.arx-x.com/?product/23.html)<br>[R5 机械臂](https://www.arx-x.com/?product/22.html) | 适合复现很多经典工作，例如 [Mobile ALOHA](https://mobile-aloha.github.io/cn.html)<br>[RoboTwin 松灵底盘 + 方舟臂](https://github.com/RoboTwin-Platform/RoboTwin) |
 | [波士顿动力 Boston Dynamics](https://bostondynamics.com/) | [Spot 机器狗](https://bostondynamics.com/products/spot/)<br>[Atlas 通用人形](https://bostondynamics.com/atlas/) | 具身智能本体制造商，从液压驱动转向电机驱动 |
