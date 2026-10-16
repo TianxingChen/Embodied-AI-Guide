@@ -262,6 +262,7 @@ bash scripts/eval_policy.sh multitask \
 - 具身智能基础技术路线（Yunlong Dong）：[bilibili](https://www.bilibili.com/video/BV1d5ukedEsi)
 - 斯坦福机器人学导论：[bilibili](https://www.bilibili.com/video/BV17T421k78T)
 - Cyber Nachos（偏系统与工程思维）：[website](https://cybernachos.github.io/)
+- 具身智能中文资源库（David Wei）：[website](https://weiwei0614.github.io/robot-learning-desk/) ｜ [repo](https://github.com/WEIWEI0614/robot-learning-desk)（中文笔记 + 18 个可离线打开的互动课件）
 
 ### (3.2) 社区与自媒体（长期跟进价值高）
 
