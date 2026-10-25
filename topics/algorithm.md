@@ -274,6 +274,7 @@ VLA（Vision-Language-Action）可以理解为「把视觉-语言模型的能力
 | Psi-R1（灵初智能） | [link](https://www.jiqizhixin.com/articles/2025-03-03-9) | 2025.04.27 | 分层端到端 VLA + RL，test-time scaling |
 | Gemini Robotics | [link](https://arxiv.org/pdf/2503.20020) | 2025.03.25 | 50 Hz |
 | Gemini Robotics on-device | [link](https://deepmind.google/discover/blog/gemini-robotics-on-device-brings-ai-to-local-robotic-devices/) | 2025.06.24 | 设备端部署导向 |
+| Gemini Robotics 1.5 / ER 1.5 | [paper](https://arxiv.org/abs/2510.03342) | Google DeepMind | 2025.09.25 | thinking 过程 + 跨本体 motion transfer + On-Device 端侧版 |
 | Gemini Robotics（系列入口） | [link](https://deepmind.google/models/gemini-robotics/) | 滚动更新 | 最新一代见 (5.4) 的 Gemini Robotics 2 |
 
 ### (5.3) 2025 年代表工作
@@ -283,9 +284,13 @@ VLA（Vision-Language-Action）可以理解为「把视觉-语言模型的能力
 
 | 工作 | 链接 | 机构 | 时间 | 备注 |
 |---|---|---|---|---|
+| Wall-OSS | [paper](https://arxiv.org/pdf/2509.11766) | 银河通用（Galbot） | 2025.09.15 | 开源双系统 VLA（论文《Igniting VLMs toward the Embodied Space》） |
+| MolmoAct | [paper](https://arxiv.org/pdf/2508.07917)｜[repo](https://github.com/allenai/molmoact) | AI2 | 2025.08.11 | Action Reasoning Model：感知-推理-动作三段式 |
+| GR-3 | [paper](https://arxiv.org/pdf/2507.15493) | ByteDance Seed | 2025.07.21 | web 图文 + 视频 + 多视角轨迹混合训练，少量微调数据即强泛化 |
 | VQ-VLA | [link](https://arxiv.org/pdf/2507.01016)｜[link](https://github.com/xiaoxiao0406/VQ-VLA) | 上海 AI Lab 等 | 2025.07.01 | VQ action tokenizer |
 | WorldVLA | [link](https://arxiv.org/pdf/2506.21539)｜[link](https://github.com/alibaba-damo-academy/WorldVLA) | 阿里达摩院等 | 2025.06.21 | VLA + World Model 统一 |
 | BridgeVLA | [link](https://arxiv.org/abs/2506.07961)｜[link](https://github.com/BridgeVLA/BridgeVLA) | CASIA / ByteDance Seed 等 | 2025.06.07 | 3D 对齐到 2D |
+| SmolVLA | [paper](https://arxiv.org/pdf/2506.01844)｜[repo](https://github.com/huggingface/lerobot) | Hugging Face | 2025.06.02 | 450M 消费级 GPU 可训、CPU 可跑；LeRobot 内置实现 |
 | TrackVLA | [link](https://arxiv.org/pdf/2505.23189)｜[link](https://github.com/wsakobe/TrackVLA) | 北大等 | 2025.05.29 | 实时检测与导航 |
 | OneTwoVLA | [link](https://arxiv.org/pdf/2505.11917)｜[link](https://github.com/Fanqi-Lin/OneTwoVLA) | 清华等 | 2025.05.17 | 推理与执行协同 |
 | UniVLA | [link](https://arxiv.org/pdf/2505.06111)｜[link](https://github.com/OpenDriveLab/UniVLA) | 港大等 | 2025.05.09 | 潜在动作表征 |
