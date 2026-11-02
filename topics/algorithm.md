@@ -504,7 +504,6 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 | SemExp | Object Goal Navigation using Goal-Oriented Semantic Exploration | [link](https://arxiv.org/abs/2007.00643) | 早期语义地图代表 |
 | PONI | Potential Functions for ObjectGoal Navigation with Interaction-free Learning | [link](https://openaccess.thecvf.com/content/CVPR2022/papers/Ramakrishnan_PONI_Potential_Functions_for_ObjectGoal_Navigation_With_Interaction-Free_Learning_CVPR_2022_paper.pdf) | potential function + 语义地图预测 |
 | 3D-aware | 3D-Aware Object Goal Navigation via Simultaneous Exploration and Identification | [link](https://arxiv.org/abs/2212.00338) | 引入 3D 缓解 2D 语义图信息损失 |
-| SuperNav | SuperNav: An Agentic Navigation System for Any Task in Any Scene | [paper](https://arxiv.org/abs/2610.12126)｜[repo](https://github.com/zju3dv/SuperNav) | 预训练多模态模型通过工具调用、任务进度跟踪与上下文管理完成多种导航任务，无需针对导航微调模型 |
 
 </details>
 
@@ -517,6 +516,15 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 | L3MVN: Leveraging Large Language Models for Visual Target Navigation | [link](https://arxiv.org/abs/2304.05501) | LLM 决策「朝哪走」 |
 | ESC: Exploration with Soft Commonsense Constraints for Zero-shot Object Navigation | [link](https://arxiv.org/abs/2301.13166) | 语义地图 + 常识约束 |
 | SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation | [link](https://arxiv.org/abs/2410.08189) | 在线构建场景图喂给 LLM |
+
+</details>
+
+<details>
+<summary><b>展开：智能体导航（Agentic Navigation）</b></summary>
+
+| 工作 | 链接 | 备注 |
+|---|---|---|
+| SuperNav: An Agentic Navigation System for Any Task in Any Scene | [paper](https://arxiv.org/abs/2610.12126)｜[repo](https://github.com/zju3dv/SuperNav) | 预训练多模态模型通过工具调用、任务进度跟踪与上下文管理完成多种导航任务，无需针对导航微调模型 |
 
 </details>
 
