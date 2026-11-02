@@ -519,12 +519,22 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 
 </details>
 
+<details>
+<summary><b>展开：智能体导航（Agentic Navigation）</b></summary>
+
+| 工作 | 链接 | 备注 |
+|---|---|---|
+| SuperNav: An Agentic Navigation System for Any Task in Any Scene | [paper](https://arxiv.org/abs/2610.12126)｜[repo](https://github.com/zju3dv/SuperNav) | 预训练多模态模型通过工具调用、任务进度跟踪与上下文管理完成多种导航任务，无需针对导航微调模型 |
+
+</details>
+
 ### (9.4) 数据集与仿真生态（决定你能跑什么实验）
 
 | 数据集/平台 | 链接 | 备注 |
 |---|---|---|
 | Matterport3D（MP3D） | [link](https://niessner.github.io/Matterport/) | 真实场景采集，规模大、难度高 |
 | Habitat-Matterport3D（HM3D） | [link](https://aihabitat.org/datasets/hm3d/) | Habitat 生态核心数据 |
+| Habitat-GS | [主页](https://zju3dv.github.io/habitat-gs/)｜[repo](https://github.com/zju3dv/habitat-gs) | 基于 Habitat-Sim 的导航仿真扩展，支持 3D Gaussian Splatting 场景渲染与动态 Gaussian Avatar |
 | RoboTHOR | [link](https://ai2thor.allenai.org/robothor/) | 场景较小，仿真更轻量 |
 | AI2-THOR | [link](https://ai2thor.allenai.org/) | 与 RoboTHOR 同系，交互生态强 |
 | Gibson / iGibson | [Gibson](http://gibsonenv.stanford.edu/)｜[iGibson](https://svl.stanford.edu/igibson/) | 室内仿真常用，iGibson 加入了可交互物体；⚠️ 两者均已停止维护，新项目请用 [OmniGibson](https://github.com/StanfordVL/OmniGibson) |
