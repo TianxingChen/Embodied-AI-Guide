@@ -179,6 +179,7 @@ LLM 在机器人领域的价值，更多体现在**高层语义理解与任务�
 | Code 能力 | Code as Policy / Instruction2Act | [CaP](https://arxiv.org/abs/2209.07753)｜[I2A](https://arxiv.org/abs/2305.11176) | 用代码中间层提升可控性 |
 | 3D 感知 + LLM | VoxPoser / OmniManip | [VoxPoser](https://arxiv.org/abs/2307.05973)｜[OmniManip](https://arxiv.org/abs/2501.03841) | 3D 表征辅助规划与约束 |
 | 多机器人协同 | RoCo / Scalable-Multi-Robot | [RoCo](https://arxiv.org/abs/2307.04738)｜[Scalable](https://arxiv.org/abs/2309.15943) | 多机器人协同规划 |
+| 失败监督与修复 | Spotter | [paper](https://arxiv.org/abs/2609.36808)｜[repo](https://github.com/zqc3117/Spotter)｜[主页](https://zqc3117.github.io/Spotter/) | VLA 主导执行，VLM 并行监督、确认出错才用运动原语修复；免训练（格里菲斯大学 / 清华大学，2026.09） |
 
 如果你更关心「离落地更近」的通用策略（而不是纯 LLM 规划），通常会与 VLA / 通用控制模型一起看：
 
