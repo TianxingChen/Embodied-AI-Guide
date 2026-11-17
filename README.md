@@ -445,5 +445,3 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 ## 🏢 Sponsors —— 支持机构
 
 感谢 **无界智航**、**超维动力**、**香港大学 MMLab**、**地瓜机器人**、**松灵机器人** 对本项目的支持。
-
-![Sponsors](./files/images/sponsor.png)
