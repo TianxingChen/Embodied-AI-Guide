@@ -1,15 +1,15 @@
 <div align="center">
 
-![](./files/Embodied-AI-Guide-logo.png)
+![Embodied-AI-Guide Logo](./files/Embodied-AI-Guide-logo.png)
 
 # 具身智能技术指南 Embodied-AI-Guide
 
-**国内最热门的具身智能技术指南**  
+**面向学习与实践的具身智能技术指南**  
 一份偏「百科全书」定位的具身智能中文知识库与资料索引
 
 [从这里开始](#start) · [动手学习](#robotwin) · [认知资料](#info) · [算法篇](#algorithm) · [基础设施篇](#infrastructure) · [控制篇](#control) · [硬件篇](#hardware)
 
-![GitHub repo stars](https://img.shields.io/github/stars/TianxingChen/Embodied-AI-Guide?style=flat-square)  ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FTianxingChen%2FEmbodied-AI-Guide&label=Total%20Visitors&labelColor=%232ccce4&countColor=%23d9e3f0)  ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)  ![License](https://img.shields.io/badge/License-Non--Commercial-blue?style=flat-square)
+![GitHub repo stars](https://img.shields.io/github/stars/TianxingChen/Embodied-AI-Guide?style=flat-square)  ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FTianxingChen%2FEmbodied-AI-Guide&label=Total%20Visitors&labelColor=%232ccce4&countColor=%23d9e3f0)  ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)  ![License](https://img.shields.io/badge/License-Non--Commercial-blue?style=flat-square)
 
 </div>
 
@@ -17,7 +17,7 @@
 >
 > 欢迎 **Star / 分享 / 提 PR**。合作与交流可邮件联系 [lumina.embodiedai@gmail.com](mailto:lumina.embodiedai@gmail.com)，或添加[项目发起人](https://tianxingchen.github.io/)微信 `TianxingChen_2002`（请备注：机构 + 姓名 + 来意）。
 
-### 📢 News｜项目进展
+## 📢 News｜项目进展
 
 📝 *2026-01-15: Embodied-AI-Guide 完成内容重组*  
 
@@ -25,7 +25,7 @@
 
 ❤️ *2025-03-15: Embodied-AI-Guide 正式开源*
 
-### 🧑‍💻 Related Projects｜相关开源项目
+## 🧑‍💻 Related Projects｜相关开源项目
 
 ⭐️ Lumina Call（具身智能招聘）：[website](https://lumina-embodied.ai/lumina-call)  
 
@@ -37,22 +37,20 @@
 
 ![Lumina 具身智能社区](./files/images/Lumina.png)
 
-
-
 <a id="start"></a>
 
 ## 🐣 (1) Start From Here —— 从这里开始
 
 > 具身智能是指一种基于物理实体进行感知和行动的智能系统，其通过智能体与环境的交互获取信息、理解问题、做出决策并实现行动，从而产生智能行为和适应性。
 
-说得更直白一些：大模型已经能很好地处理**文字和图像**，因为互联网上有海量现成数据；但要让机器人真的伸手把桌上的杯子拿起来，模型必须输出**连续的、有物理后果的动作**，而这类数据没法从网上爬——**每一条都要有人用真机采，采错了还会把东西打碎**。这个「数据从哪来、动作怎么表示、做得好不好怎么衡量」的三连问，构成了具身智能当前最核心的矛盾，也是本指南反复出现的主线。
+说得更直白一些：大模型已经能很好地处理**文字和图像**，因为互联网上有海量现成数据；但要让机器人伸手拿起桌上的杯子，系统还需要生成**能够执行、符合物理约束的动作**。可用于训练的数据来自遥操作、仿真、机器人自主交互和人类视频等渠道，各自面临成本、质量或迁移方面的挑战。因此，本指南围绕三个问题展开：**数据从哪来、动作怎么表示、效果怎么评测**。
 
 ### (1.1) How —— 如何使用这份指南
 
 本项目的设计理念是「一条主线 + 一张全景图」：
 
-- **一条主线**：用[第 2 章](#robotwin)的实践教程，让你在一周内亲手跑通一个操作策略的完整流程；
-- **一张全景图**：用[第 3 ~ 7 章](#info)以百科全书的形式覆盖算法、基础设施、控制与硬件，帮助你判断每项技术解决什么问题、值不值得深入。
+- **一条主线**：用[第 2 章](#robotwin)的实践教程，帮助你亲手跑通一个操作策略的完整流程；
+- **一张全景图**：用[第 3–7 章](#info)以百科全书的形式覆盖算法、基础设施、控制与硬件，帮助你判断每项技术解决什么问题、值不值得深入。
 
 建议的阅读顺序：**先动手跑通第 2 章，再按兴趣检索后续章节**，不必按顺序通读。
 
@@ -60,15 +58,13 @@
 
 不同背景的读者不必从同一处入手，可参考下表选择起点：
 
-
-| 你的背景                | 建议起点                    | 推荐路径                                               |
-| ------------------- | ----------------------- | -------------------------------------------------- |
-| 完全新手 / 在校本科生        | [第 2 章](#robotwin) 动手教程 | (2) 跑通流程 → (3) 建立认知 → (4) 算法篇 → 按兴趣深入              |
+| 你的背景 | 建议起点 | 推荐路径 |
+| --- | --- | --- |
+| 完全新手 / 在校本科生 | [第 2 章](#robotwin) 动手教程 | (2) 跑通流程 → (3) 建立认知 → (4) 算法篇 → 按兴趣深入 |
 | 有 CV / NLP / 深度学习基础 | [第 4 章](#algorithm) 算法篇 | (4) 重点看 Robot Learning 与 VLA → (5) 基础设施 → (2) 动手验证 |
-| 有自动化 / 机器人学背景       | [第 4 章](#algorithm) 算法篇 | (3) 了解版图 → (4) 补齐学习与决策 → (5) 熟悉仿真与数据生态             |
-| 偏硬件 / 嵌入式           | [第 7 章](#hardware) 硬件篇  | (7) 硬件篇 → (6) 控制篇 → (2) 动手教程                       |
-| 想快速了解行业与选题          | [第 3 章](#info) 认知资料     | (3.1) 方法论 → (3.5) 论文列表 → (3.6) 年度趋势                |
-
+| 有自动化 / 机器人学背景 | [第 4 章](#algorithm) 算法篇 | (3) 了解版图 → (4) 补齐学习与决策 → (5) 熟悉仿真与数据生态 |
+| 偏硬件 / 嵌入式 | [第 7 章](#hardware) 硬件篇 | (7) 硬件篇 → (6) 控制篇 → (2) 动手教程 |
+| 想快速了解行业与选题 | [第 3 章](#info) 认知资料 | (3.1) 方法论 → (3.5) 论文列表 → (3.6) 年度趋势 |
 
 ### (1.3) 术语速查表
 
@@ -77,34 +73,30 @@
 <details>
 <summary><b>展开术语速查表（20 条）</b></summary>
 
-
-| 术语                                                                                                                                        | 一句话解释                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| **Manipulation / Locomotion**                                                                                                             | 操作（用手臂改变环境）与移动（用腿或轮子移动本体），具身智能的两条主线 |
-| **Policy（策略）**                                                                                                                            | 从观测到动作的映射，也就是日常所说的「模型」              |
-| **IL / BC（模仿学习 / 行为克隆）**                                                                                                                  | 从人类演示数据中以监督方式学习动作                   |
-| **RL（强化学习）**                                                                                                                              | 通过与环境交互并依据奖励信号来优化策略                 |
-| **VLA（Vision-Language-Action）**                                                                                                           | 直接把图像与语言指令映射为机器人动作的端到端模型            |
-| **VA（Vision-Action）**                                                                                                                     | 只用视觉、不接受语言指令的策略；任务固定时比 VLA 更轻更快     |
-| **World Model（世界模型）**                                                                                                                     | 学习「当前状态 + 动作 → 下一步观测」的模型，可用来在脑内推演   |
-| **WAM（World-Action Model）**                                                                                                               | 先用世界模型预测接下来会看到什么，再从预测中解出动作的一类策略     |
-| **Teleoperation（遥操作）**                                                                                                                    | 人通过手柄、动捕或主从设备操控机器人，是真机数据采集的主要手段     |
-| **Demonstration（演示 / 轨迹）**                                                                                                                | 一次完整的任务执行记录，通常包含观测、动作与时间戳           |
-| **Sim2Real Gap**                                                                                                                          | 仿真与真实世界在物理、渲染、噪声上的差异，会导致策略迁移掉点      |
-| **Real2Sim**                                                                                                                              | 把真实场景与物体重建进仿真，用于缩小 Sim2Real Gap     |
-| **Affordance（可操作性）**                                                                                                                      | 物体上「可以被怎样操作」的区域或方式，如把手可抓、按钮可按       |
-| **DoF（自由度）**                                                                                                                              | 机器人可独立运动的关节数量                       |
-| **End-effector（末端执行器）** | 机械臂末端的执行部件，如夹爪、吸盘、灵巧手               |
-| **FK / IK（正 / 逆运动学）**                                                                                                                     | 由关节角求末端位姿 / 由末端位姿反解关节角              |
-| **URDF**                                                                                                                                  | 描述机器人连杆、关节与惯量的 XML 格式，是仿真与控制的通用输入   |
-| **MPC（模型预测控制）**                                                                                                                           | 在滚动时域内反复求解优化问题来生成控制量                |
-| **WBC（全身控制）**                                                                                                                             | 把控制目标从机械臂末端扩展到躯干、腿、头等整个身体，人形机器人方向常用 |
-| **SLAM**                                                                                                                                  | 同时定位与建图，让机器人知道「自己在哪、周围长什么样」         |
+| 术语 | 一句话解释 |
+| --- | --- |
+| **Manipulation / Locomotion** | 操作（用手臂改变环境）与移动（用腿或轮子移动本体），具身智能的两条主线 |
+| **Policy（策略）** | 根据观测或历史信息生成动作的规则或模型 |
+| **IL / BC（模仿学习 / 行为克隆）** | 模仿学习利用示范学习行为；行为克隆是其中以监督学习拟合动作的方法 |
+| **RL（强化学习）** | 通过与环境交互并依据奖励信号来优化策略 |
+| **VLA（Vision-Language-Action）** | 直接把图像与语言指令映射为机器人动作的端到端模型 |
+| **VA（Vision-Action）** | 以视觉为主要输入、生成动作的策略，可结合本体状态，通常不以语言为条件 |
+| **World Model（世界模型）** | 学习环境动态、预测未来状态或观测的模型，可用于规划和数据生成 |
+| **WAM（World-Action Model）** | 先用世界模型预测接下来会看到什么，再从预测中解出动作的一类策略 |
+| **Teleoperation（遥操作）** | 人通过手柄、动捕或主从设备操控机器人，是真机数据采集的主要手段 |
+| **Demonstration（演示 / 轨迹）** | 一次完整的任务执行记录，通常包含观测、动作与时间戳 |
+| **Sim2Real Gap** | 仿真与真实世界在物理、渲染、噪声上的差异，可能导致策略迁移后的性能下降 |
+| **Real2Sim** | 把真实场景与物体重建进仿真，用于缩小 Sim2Real Gap |
+| **Affordance（可操作性）** | 物体上「可以被怎样操作」的区域或方式，如把手可抓、按钮可按 |
+| **DoF（自由度）** | 描述系统构型所需的独立变量数，不一定等于关节数 |
+| **End-effector（末端执行器）** | 机械臂末端的执行部件，如夹爪、吸盘、灵巧手 |
+| **FK / IK（正 / 逆运动学）** | 由关节角求末端位姿 / 由末端位姿反解关节角 |
+| **URDF** | 描述机器人连杆、关节与惯量的 XML 格式，是仿真与控制的通用输入 |
+| **MPC（模型预测控制）** | 在滚动时域内反复求解优化问题来生成控制量 |
+| **WBC（全身控制）** | 把控制目标从机械臂末端扩展到躯干、腿、头等整个身体，人形机器人方向常用 |
+| **SLAM** | 同时定位与建图，让机器人知道「自己在哪、周围长什么样」 |
 
 </details>
-
-
-
 
 ### (1.4) 新人常见问题
 
@@ -115,10 +107,10 @@
 A：会用 Python、了解深度学习基本概念（会训练一个分类网络即可）、能在 Linux 上装环境。**机器人学与控制论不是前置条件**，可以在遇到问题时按需补，参考[控制篇开头的「要学到什么程度」](./topics/control.md#control-robotics)。
 
 **Q：没有真机器人，还能做具身智能吗？**  
-A：能，而且大多数人都是这么开始的。仿真器 + 公开数据集足以支撑从入门到发论文的完整链路，本指南[第 2 章](#robotwin)就是纯仿真的。真机的价值在于暴露仿真掩盖掉的问题（标定误差、延迟、接触不确定性），但它应该是第二步而不是第一步。如果确实想碰真机，[LeRobot](https://github.com/huggingface/lerobot) 生态的 SO-101 主从臂是目前最低成本的入口。
+A：能，而且大多数人都是这么开始的。仿真器 + 公开数据集足以支撑从入门到发论文的完整链路，本指南[第 2 章](#robotwin)采用仿真环境。真机实验有助于发现标定误差、延迟和接触不确定性等问题，可根据研究目标安排。如果希望开展真机实践，[LeRobot](https://github.com/huggingface/lerobot) 生态的 SO-101 主从臂是低成本入门选择之一。
 
 **Q：需要什么显卡？**  
-A：训练 ACT、Diffusion Policy 这类轻量策略，16GB 显存够用（本指南第 2 章的教程约需 12GB）。微调 π0、GR00T 这类 VLA 基座通常需要 40GB 以上，或使用 LoRA 等参数高效方法。**仅做推理部署时要求低得多**，部分模型可在消费级显卡上运行。
+A：训练 ACT、Diffusion Policy 这类轻量策略，16 GB 显存够用（本指南第 2 章的教程约需 12 GB）。微调 π0、GR00T 这类 VLA 基座通常需要 40 GB 以上，或使用 LoRA 等参数高效方法。**仅做推理部署时要求低得多**，部分模型可在消费级显卡上运行。
 
 **Q：该先做操作（Manipulation）还是运动（Locomotion）？**  
 A：看你更接近哪边。有 CV / 深度学习背景的人在操作方向上手更快，因为它本质是「带动作输出的监督学习」；有控制、自动化背景的人往往在运动控制方向更有优势，因为它高度依赖仿真中的强化学习与 Sim2Real。两者的技术栈差异比想象中大，**建议先选一个做深**。
@@ -127,7 +119,7 @@ A：看你更接近哪边。有 CV / 深度学习背景的人在操作方向上�
 A：不是替代关系。传统机器人学提供几何、动力学与控制的底座，保证系统稳定可控；具身智能在其上用学习的方法解决「感知复杂世界、泛化到没见过的任务」这类传统方法难以手工设计的部分。真实系统几乎都是二者的混合。
 
 **Q：现在入场是不是太晚了？**  
-A：相比语言模型，具身智能远没有收敛——**数据、评测、本体三个层面都还没有公认答案**。2026 年公认的瓶颈已经从模型架构转向数据配方与评测协议（见[算法篇 (5.4)](./topics/algorithm.md#vla)），这意味着不依赖超大算力的研究空间依然很多。
+A：相比语言模型，具身智能远没有收敛——**数据、评测、本体三个层面都还没有公认答案**。数据质量、训练配方与评测协议都是值得关注的研究问题（见[算法篇 (5.4)](./topics/algorithm.md#vla-2026)），这意味着不依赖超大算力的研究空间依然很多。
 
 </details>
 
@@ -137,15 +129,13 @@ A：相比语言模型，具身智能远没有收敛——**数据、评测、�
 
 ![Contributors](https://contrib.rocks/image?repo=TianxingChen/Embodied-AI-Guide)
 
-
-
 <a id="robotwin"></a>
 
 ## ⚒️ (2) 动手学习具身智能操作
 
 > **目标**：以 **RoboTwin 2.0** 为例，完整走通一次操作策略的「生命周期」——读论文建立认知、装环境、拿数据、训练 ACT、跑评测。这条链路本身是通用的，换成别的平台也是同样几步。
 >
-> **前置条件**：一块显存不低于 16GB 的显卡（ACT 训练约需 12GB）。官方建议数据采集与策略评测**避开 A / H / V 系列显卡**，详见 [Common Issue](https://robotwin-platform.github.io/doc/common-issue/)。
+> **前置条件**：一块显存不低于 16 GB 的显卡（ACT 训练约需 12 GB）。官方建议数据采集与策略评测**避开 A / H / V 系列显卡**，详见 [Common Issue](https://robotwin-platform.github.io/doc/common-issue/)。
 
 ### (2.1) 为什么选择这个教程
 
@@ -177,7 +167,7 @@ A：相比语言模型，具身智能远没有收敛——**数据、评测、�
 
 #### (2.2.2) 安装平台（约 0.5 天）
 
-按[安装文档](https://robotwin-platform.github.io/doc/usage/robotwin-install.html)配置环境，整个过程约 20 分钟。**注意 XPolicyLab 现在是 RoboTwin 的 Git 子模块**，克隆时必须递归拉取，否则后续训练与评测会缺文件：
+按[安装文档](https://robotwin-platform.github.io/doc/usage/robotwin-install.html)配置环境，耗时取决于网络、驱动和已有环境。**注意 XPolicyLab 现在是 RoboTwin 的 Git 子模块**，克隆时必须递归拉取，否则后续训练与评测会缺文件：
 
 ```bash
 # 全新克隆
@@ -199,15 +189,15 @@ bash scripts/download_xpolicylab_data.sh beat_block_hammer
 
 数据会落在 `data/demo_clean/<task_name>/aloha_agilex/data/`。
 
-只有当你需要自定义任务配置、域随机化或更换机器人本体时，才需要自己采集。采集脚本会先搜索能成功完成任务的随机种子，再回放种子录制轨迹：
+需要自定义任务配置、域随机化或更换机器人本体时，可以自行采集。采集脚本会先搜索能成功完成任务的随机种子，再回放种子录制轨迹：
 
 ```bash
 bash collect_data.sh ${task_name} ${task_config} ${gpu_id}
 
-# Clean Data Example
+# 基础配置示例
 bash collect_data.sh beat_block_hammer demo_clean 0
 
-# Randomized Data Example
+# 域随机化配置示例
 bash collect_data.sh beat_block_hammer demo_randomized 0
 ```
 
@@ -217,7 +207,7 @@ bash collect_data.sh beat_block_hammer demo_randomized 0
 
 #### (2.2.4) 训练 ACT 策略（约 1 天）
 
-ACT 是非常经典的操作策略算法，适合作为第一个复现对象，训练大约需要 12GB 显存。策略适配器位于 `XPolicyLab/policy/ACT/`，XPolicyLab 里所有策略都遵循同一套生命周期脚本：
+ACT 是非常经典的操作策略算法，适合作为第一个复现对象，本教程配置的训练显存参考值约为 12 GB，实际占用取决于批量大小与输入配置。策略适配器位于 `XPolicyLab/policy/ACT/`，XPolicyLab 里所有策略都遵循同一套生命周期脚本：
 
 ```bash
 cd XPolicyLab/policy/ACT
@@ -230,7 +220,9 @@ bash train.sh <bench_name> <ckpt_name> <env_cfg_type> <action_type> <seed> <gpu_
 
 #### (2.2.5) 评测策略并对照榜单（约 1 天）
 
-RoboTwin 的所有评测都统一走 `scripts/eval_policy.sh`。调度器会为每个任务各起一个策略服务端和一个仿真器，任务列表与 GPU 配置写在 `env_cfg/eval/all_tasks.yml`——只想评单个任务的话，把 `tasks` 裁成一条即可：
+本教程使用 `scripts/eval_policy.sh`。调度器会为每个任务各起一个策略服务端和一个仿真器，任务列表与 GPU 配置写在 `env_cfg/eval/all_tasks.yml`——只想评单个任务的话，把 `tasks` 裁成一条即可：
+
+以下命令在 **RoboTwin 仓库根目录**执行；若仍位于上一节的 `XPolicyLab/policy/ACT/`，先运行 `cd ../../..`。代码中的 `<checkpoint>` 等占位符需替换为实际值。
 
 ```bash
 bash scripts/eval_policy.sh multitask \
@@ -245,11 +237,9 @@ bash scripts/eval_policy.sh multitask \
 
 加 `--dry-run` 可以只校验调度计划而不真正启动，结果默认写到 `eval_result/multitask/`。如果本机显卡不够，还可以把策略服务端放在远程机器、仿真器留在本地，用 `--enable-remote` 搭配 `--policy-server-ip / --policy-server-port` 连接，详见 [XPolicyLab 文档](https://robotwin-platform.github.io/doc/usage/xpolicylab.html)。
 
-跑完后把自己的成功率与 [Leaderboard](https://robotwin-platform.github.io/leaderboard) 上 ACT 的官方成绩对照（`demo_clean` 下约 56%）。差距过大通常说明数据量、训练轮数或 `action_type` 没对齐。
+跑完后可参考 [Leaderboard](https://robotwin-platform.github.io/leaderboard) 的 ACT 成绩。**单任务成功率不能直接与多任务平均成绩比较**；比较前需对齐任务集合、数据量、评测配置、随机种子与动作表示。若结果差异较大，再检查训练轮数、权重加载和数据处理流程。
 
-至此你已经完整走过一遍操作策略的生命周期。**下一步最划算的动作是换个策略再跑一遍**：把 `--policy-name` 换成 `Pi_0`、`RDT_1B`、`GR00T_N17`、`X_VLA` 中的任意一个，其余流程完全一致，这样能直观感受不同架构在同一任务上的差异。完整策略清单见 [XPolicyLab 文档](https://robotwin-platform.github.io/doc/usage/xpolicylab.html)。
-
-
+至此你已经完整走过一遍操作策略的生命周期。**下一步可以在同一任务上比较其他策略**，例如 `Pi_0`、`RDT_1B`、`GR00T_N17` 或 `X_VLA`。统一接口可以复用整体流程，但仍需按各策略文档安装环境、准备权重，并对齐观测、动作空间和配置；不能只修改 `--policy-name`。完整策略清单见 [XPolicyLab 文档](https://robotwin-platform.github.io/doc/usage/xpolicylab.html)。
 
 <a id="info"></a>
 
@@ -263,22 +253,24 @@ bash scripts/eval_policy.sh multitask \
 - 斯坦福机器人学导论：[bilibili](https://www.bilibili.com/video/BV17T421k78T)
 - Cyber Nachos（偏系统与工程思维）：[website](https://cybernachos.github.io/)
 
-### (3.2) 社区与自媒体（长期跟进价值高）
+### (3.2) 社区与自媒体
 
-**中文（微信公众号）**  
+#### 中文（微信公众号）
+
 石麻日记、Lumina 具身智能、机器之心、新智元、量子位、具身智能研究室、具身纪元、Human Five、Xbot 具身知识库、具身智能之心、自动驾驶之心、3D 视觉工坊、将门创投、RLCN 强化学习研究、CVHub
 
-**中文（小红书博主）**  
+#### 中文（小红书博主）
+
 WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、周博宇、高飞、李弘扬、朱政、丁琰、YY 硕、Mango-Man、RHOSLab #PI-李永露、正合时宜、心言任永亮、York Yang-Dyna Robotics、哲伦班长、吴翼、丁文超、陈思衡、韩晓光、梁俊卫
 
 > 小红书上曾有一场 AI 学者 Ask Me Anything 活动，多位具身与机器人方向的老师在其中答疑，[精华实录](https://www.pingwest.com/a/308126)可作为寻找值得关注账号的线索。
 
-**社区与 wiki**
+#### 社区与 wiki
 
 - Simulately（社区维护的仿真器 wiki，选仿真器时的第一站）：[website](https://simulately.wiki/)
 - 巨神研习社：[website](http://www.jushenyanxishe.com/)
 
-**英文 newsletter / 媒体 / 播客**
+#### 英文 newsletter / 媒体 / 播客
 
 - Import AI（Jack Clark，偏政策与产业视角）：[newsletter](https://jack-clark.net/)
 - The Batch（DeepLearning.AI，综述性强、门槛低）：[newsletter](https://www.deeplearning.ai/the-batch/)
@@ -293,7 +285,7 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 - 具身智能华人高引榜：[repo](https://github.com/Will-Gao/Embodied_Intelligence)
 - Lumina 具身智能社区：[website](https://lumina-embodied.ai)
 
-### (3.4) 高质量会议与期刊（论文检索时重点关注）
+### (3.4) 相关会议与期刊
 
 **机器人**：Science Robotics, TRO, IJRR, JFR, RSS, RAL, IROS, ICRA, CoRL  
 
@@ -323,8 +315,6 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 - 许华哲 - 具身智能：2025 回望：[website](https://zhuanlan.zhihu.com/p/1983661736180589668)
 - 林天威 - 具身 VLA 的 2025：从 Demo 到通用的距离：[website](https://zhuanlan.zhihu.com/p/1989799567177307432)
 
-
-
 <a id="algorithm"></a>
 
 ## 🍎 (4) Algorithm —— 算法篇
@@ -338,14 +328,14 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 - [(3) Robot Learning —— 机器人学习](./topics/algorithm.md#robot-learning)
 - [(4) LLM for Robotics —— LLM + 机器人](./topics/algorithm.md#llm_robot)
 - [(5) VLA —— Vision-Language-Action Models](./topics/algorithm.md#vla)
-  - [(5.0) 参考与综述](./topics/algorithm.md#vla)
-  - [(5.1) 经典工作](./topics/algorithm.md#vla)
-  - [(5.2) 分层双系统 VLA](./topics/algorithm.md#vla) ⭐
-  - [(5.3) 2025 年代表工作](./topics/algorithm.md#vla)
-  - [(5.4) 2026 进展](./topics/algorithm.md#vla) ⭐
+  - [(5.0) 参考与综述](./topics/algorithm.md#vla-overview)
+  - [(5.1) 经典工作](./topics/algorithm.md#vla-classics)
+  - [(5.2) 分层双系统 VLA](./topics/algorithm.md#dual-system-vla) ⭐
+  - [(5.3) 2025 年代表工作](./topics/algorithm.md#vla-2025)
+  - [(5.4) 2026 进展](./topics/algorithm.md#vla-2026) ⭐
 - [(6) Computer Vision —— 计算机视觉](./topics/algorithm.md#cv)
-  - [(6.1) 2D / 3D / 4D Vision](./topics/algorithm.md#cv)
-  - [(6.2) Visual Prompting & Affordance](./topics/algorithm.md#cv)
+  - [(6.1) 2D / 3D / 4D Vision](./topics/algorithm.md#vision-2d-4d)
+  - [(6.2) Visual Prompting & Affordance](./topics/algorithm.md#affordance-grounding)
 - [(7) Computer Graphics —— 计算机图形学](./topics/algorithm.md#cg)
 - [(8) Multimodal Models —— 多模态模型](./topics/algorithm.md#mm)
 - [(9) Robot Navigation —— 机器人导航](./topics/algorithm.md#navigation)
@@ -353,8 +343,6 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
   - [(10.1) Healthcare —— 具身医疗](./topics/algorithm.md#medical)
   - [(10.2) UAV —— 无人机](./topics/algorithm.md#uav)
   - [(10.3) Autonomous Driving —— 自动驾驶](./topics/algorithm.md#ad)
-
-
 
 <a id="infrastructure"></a>
 
@@ -369,18 +357,16 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 - [(3) Datasets —— 数据集](./topics/infrastructure.md#datasets)
 - [(4) 工具链 —— 数据格式与策略部署](./topics/infrastructure.md#policy-serving)
 
-
-
 <a id="control"></a>
 
 ## 🎮 (6) Control —— 控制篇
 
 > 完整内容：[topics/control.md](./topics/control.md)
 
-这一章并不是为了让你「立刻跑一个模型」，而是为具身智能系统提供**稳定性、可解释性与工程底座**。控制论保证系统在高频下不崩溃，机器人学提供几何与动力学约束，SLAM 与状态估计让机器人「知道自己在哪里」，ROS 与工程库则把理论变成可复现的系统。
+这一章并不是为了让你「立刻跑一个模型」，而是为具身智能系统提供**稳定性、可解释性与工程底座**。控制理论支持反馈设计与稳定性分析，机器人学提供几何与动力学约束，SLAM 与状态估计让机器人「知道自己在哪里」，ROS 与工程库则把理论变成可复现的系统。
 
 - [(1) Control and Robotics —— 控制论与机器人学基础](./topics/control.md#control-robotics)
-  - [(1.0) 先说清楚：要学到什么程度](./topics/control.md#control-robotics)
+  - [(1.0) 先说清楚：要学到什么程度](./topics/control.md#control-scope)
   - [(1.1) 经典课程](./topics/control.md#control-courses)
 - [(2) Control Foundations —— 控制理论基础](./topics/control.md#control-foundations)
   - [(2.1) 经典控制（Classical Control）](./topics/control.md#classical-control)
@@ -392,12 +378,10 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
   - [(3.3) 里程计与 SLAM](./topics/control.md#slam)
   - [(3.4) 工程生态与工具](./topics/control.md#engineering-stack)
 - [(4) Whole-Body Control —— 全身控制与人形运动](./topics/control.md#wbc) ⭐
-  - [(4.1) 模型式与学习式两条路线](./topics/control.md#wbc)
-  - [(4.2) 入门路径](./topics/control.md#wbc)
-  - [(4.3) 训练框架与工具](./topics/control.md#wbc)
-  - [(4.4) 动作重定向与遥操作](./topics/control.md#wbc)
-
-
+  - [(4.1) 模型式与学习式两条路线](./topics/control.md#wbc-routes)
+  - [(4.2) 入门路径](./topics/control.md#wbc-path)
+  - [(4.3) 训练框架与工具](./topics/control.md#wbc-tools)
+  - [(4.4) 动作重定向与遥操作](./topics/control.md#wbc-retargeting)
 
 <a id="hardware"></a>
 
@@ -405,19 +389,19 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 
 > 完整内容：[topics/hardware.md](./topics/hardware.md)
 
-具身智能硬件涵盖多个技术栈：嵌入式软硬件、机械设计、机器人系统集成与传感器等。它们知识面很杂，但共同目标只有一个：把「算法」变成真实世界里稳定可复现的系统。关于硬件学习，最有效的方式几乎永远是 **从实践出发**——先做出一个能跑起来的最小系统，再逐步扩展复杂度与可靠性。
+具身智能硬件涵盖多个技术栈：嵌入式软硬件、机械设计、机器人系统集成与传感器等。它们知识面很杂，但共同目标只有一个：把「算法」变成真实世界里稳定可复现的系统。关于硬件学习，建议 **从实践出发**——先做出一个能跑起来的最小系统，再逐步扩展复杂度与可靠性。
 
 - [(1) Embedded —— 嵌入式](./topics/hardware.md#embedded)
 - [(2) Mechanical Design —— 机械设计](./topics/hardware.md#mechanical)
 - [(3) Robot System Design —— 机器人系统设计](./topics/hardware.md#robosystem)
 - [(4) Sensors —— 传感器](./topics/hardware.md#sensors)
-  - [(4.1) 深度相机（Depth Camera）](./topics/hardware.md#sensors)
-  - [(4.2) 力觉与本体感知](./topics/hardware.md#sensors)
+  - [(4.1) 深度相机（Depth Camera）](./topics/hardware.md#depth-camera)
+  - [(4.2) 力觉与本体感知](./topics/hardware.md#force-proprioception)
 - [(5) Tactile Sensing —— 触觉感知](./topics/hardware.md#tactile)
-  - [(5.1) 视触觉传感器](./topics/hardware.md#tactile)
-  - [(5.2) 电子皮肤](./topics/hardware.md#tactile)
-  - [(5.3) 触觉应用与算法](./topics/hardware.md#tactile)
-  - [(5.4) 传感器购买](./topics/hardware.md#tactile)
+  - [(5.1) 视触觉传感器](./topics/hardware.md#vision-tactile)
+  - [(5.2) 电子皮肤](./topics/hardware.md#electronic-skin)
+  - [(5.3) 触觉应用与算法](./topics/hardware.md#tactile-applications)
+  - [(5.4) 传感器购买](./topics/hardware.md#tactile-products)
 - [(6) Data Collection —— 数据采集硬件](./topics/hardware.md#data_collection)
 - [(7) Companies —— 公司与硬件生态](./topics/hardware.md#companies)
 
@@ -429,7 +413,7 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 - **修正内容**：发现失效链接、过时结论或表述错误，欢迎直接提 PR 或开 Issue；
 - **改进结构**：对章节组织与学习路线有想法，欢迎在 Issue 中讨论。
 
-提交 PR 前请确认：条目放在了语义最贴近的章节、链接可正常访问、格式与相邻条目保持一致。
+提交 PR 前请确认：条目放在语义最贴近的章节、链接可正常访问、格式与相邻条目保持一致。优先引用论文、官方仓库与官方文档；涉及性能、版本或时间的结论，请注明适用条件和来源。新增或调整章节时，同步检查首页目录与篇章内的跳转锚点。
 
 ## 👍 Citation —— 引用
 
@@ -458,7 +442,7 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 
 ![Star History Chart](https://star-history.dera.page/svg?repos=TianxingChen/Embodied-AI-Guide&type=Date)
 
-## 🤝 Sponsors —— 支持机构
+## 🏢 Sponsors —— 支持机构
 
 感谢 **无界智航**、**超维动力**、**香港大学 MMLab**、**地瓜机器人**、**松灵机器人** 对本项目的支持。
 
