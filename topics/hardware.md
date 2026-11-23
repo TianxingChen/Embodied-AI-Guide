@@ -83,7 +83,7 @@
 
 | 设备/生态 | 链接 | 说明 |
 | --- | --- | --- |
-| Intel RealSense | [SDK](https://github.com/IntelRealSense/librealsense)｜[ROS 2 驱动](https://github.com/IntelRealSense/realsense-ros) | 事实上的研究标准，绝大多数开源代码默认支持 |
+| Intel RealSense | [SDK](https://github.com/realsenseai/librealsense)｜[ROS 2 驱动](https://github.com/realsenseai/realsense-ros) | 事实上的研究标准，绝大多数开源代码默认支持 |
 | Orbbec 奥比中光 | [SDK](https://github.com/orbbec/OrbbecSDK)｜[ROS 2 驱动](https://github.com/orbbec/OrbbecSDK_ROS2) | 国内供货与售后更方便，型号覆盖三种原理 |
 | Luxonis OAK-D | [文档](https://docs.luxonis.com/) | 板载算力，可在相机端直接跑神经网络，省主机资源 |
 

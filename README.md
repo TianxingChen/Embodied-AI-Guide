@@ -296,7 +296,7 @@ WhynotTV、TianxingChen（陈天行）、穆尧_YaoMarkMu、许华哲 Harry、�
 - Awesome Humanoid Robot Learning（Yanjie Ze）：[repo](https://github.com/YanjieZe/awesome-humanoid-robot-learning)
 - Paper Reading List（DeepTimber Community）：[repo](https://github.com/DeepTimber-Robot-Lab/Paper-Reading-List)
 - Paper List（Yanjie Ze）：[repo](https://github.com/YanjieZe/Paper-List)
-- RoboScholar / Embodied AI Paper List（Tianxing Chen）：[repo](https://github.com/TianxingChen/Paper-List-For-EmbodiedAI)
+- RoboScholar / Embodied AI Paper List（Tianxing Chen）：[repo](https://github.com/TianxingChen/RoboScholar)
 - Awesome LLM Robotics：[repo](https://github.com/GT-RIPL/Awesome-LLM-Robotics)
 - Awesome Video Robotic Papers：[repo](https://github.com/H-Freax/Awesome-Video-Robotic-Papers)
 - Awesome Embodied Robotics and Agent：[repo](https://github.com/zchoi/Awesome-Embodied-Robotics-and-Agent)
