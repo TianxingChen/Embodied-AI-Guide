@@ -243,7 +243,7 @@ VLA（Vision-Language-Action）可以理解为「把视觉-语言模型的能力
 | Diffusion / Flow | π0 | [link](https://arxiv.org/pdf/2410.24164)｜[link](https://github.com/Physical-Intelligence/openpi) | Stanford / PI |  | 3.3B；flow-based diffusion |
 | Diffusion / Flow | CogACT | [link](https://arxiv.org/pdf/2411.19650)｜[link](https://github.com/microsoft/CogACT.git) | THU / MSRA | 2024.11 | 7B |
 | Diffusion / Flow | Diffusion-VLA | [link](https://arxiv.org/abs/2412.03293) | 华东师范等 | 2024.12 |  |
-| 3D Vision | 3D-VLA | [link](https://arxiv.org/pdf/2403.09631)｜[link](https://github.com/UMass-Foundation-Model/3D-VLA/tree/main) | UMass | 2024.03 | 3D-based LLM |
+| 3D Vision | 3D-VLA | [link](https://arxiv.org/pdf/2403.09631)｜[link](https://github.com/UMass-Embodied-AGI/3D-VLA/tree/main) | UMass | 2024.03 | 3D-based LLM |
 | 3D Vision | SpatialVLA | [link](https://arxiv.org/pdf/2501.15830)｜[link](https://github.com/SpatialVLA/SpatialVLA) | 上海 AI Lab | 2025.01 | Adaptive Action Grid |
 | VLA-related | FAST（π0） | [paper](https://arxiv.org/abs/2501.09747)｜[repo](https://github.com/Physical-Intelligence/openpi) | Stanford / Berkeley / PI | 2025.01 | 动作 tokenizer |
 | VLA-related | RLDG | [link](https://generalist-distillation.github.io/static/high_performance_generalist.pdf) | Berkeley | 2024.12 | 用 RL 生成高质数据再蒸馏 |
@@ -301,10 +301,10 @@ VLA（Vision-Language-Action）可以理解为「把视觉-语言模型的能力
 | MolmoAct | [paper](https://arxiv.org/pdf/2508.07917)｜[repo](https://github.com/allenai/molmoact) | AI2 | 2025.08.11 | Action Reasoning Model：感知-推理-动作三段式 |
 | GR-3 | [paper](https://arxiv.org/pdf/2507.15493) | ByteDance Seed | 2025.07.21 | web 图文 + 视频 + 多视角轨迹混合训练，少量微调数据即强泛化 |
 | VQ-VLA | [link](https://arxiv.org/pdf/2507.01016)｜[link](https://github.com/xiaoxiao0406/VQ-VLA) | 上海 AI Lab 等 | 2025.07.01 | VQ action tokenizer |
-| WorldVLA | [link](https://arxiv.org/pdf/2506.21539)｜[link](https://github.com/alibaba-damo-academy/WorldVLA) | 阿里达摩院等 | 2025.06.21 | VLA + World Model 统一 |
+| WorldVLA | [link](https://arxiv.org/pdf/2506.21539)｜[link](https://github.com/alibaba-damo-academy/RynnVLA-002) | 阿里达摩院等 | 2025.06.21 | VLA + World Model 统一 |
 | BridgeVLA | [link](https://arxiv.org/abs/2506.07961)｜[link](https://github.com/BridgeVLA/BridgeVLA) | CASIA / ByteDance Seed 等 | 2025.06.07 | 3D 对齐到 2D |
 | SmolVLA | [paper](https://arxiv.org/pdf/2506.01844)｜[repo](https://github.com/huggingface/lerobot) | Hugging Face | 2025.06.02 | 450M 消费级 GPU 可训、CPU 可跑；LeRobot 内置实现 |
-| TrackVLA | [link](https://arxiv.org/pdf/2505.23189)｜[link](https://github.com/wsakobe/TrackVLA) | 北大等 | 2025.05.29 | 实时检测与导航 |
+| TrackVLA | [link](https://arxiv.org/pdf/2505.23189)｜[link](https://github.com/ShaoanWang/TrackVLA) | 北大等 | 2025.05.29 | 实时检测与导航 |
 | OneTwoVLA | [link](https://arxiv.org/pdf/2505.11917)｜[link](https://github.com/Fanqi-Lin/OneTwoVLA) | 清华等 | 2025.05.17 | 推理与执行协同 |
 | UniVLA | [link](https://arxiv.org/pdf/2505.06111)｜[link](https://github.com/OpenDriveLab/UniVLA) | 港大等 | 2025.05.09 | 潜在动作表征 |
 | MoManipVLA | [link](https://arxiv.org/pdf/2503.13446)｜[link](https://gary3410.github.io/momanipVLA/) | 北邮 / NTU 等 | 2025.03.17 | 移动操作 |
@@ -550,7 +550,7 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 | Habitat-Matterport3D（HM3D） | [link](https://aihabitat.org/datasets/hm3d/) | Habitat 生态核心数据 |
 | RoboTHOR | [link](https://ai2thor.allenai.org/robothor/) | 场景较小，仿真更轻量 |
 | AI2-THOR | [link](https://ai2thor.allenai.org/) | 与 RoboTHOR 同系，交互生态强 |
-| Gibson / iGibson | [Gibson](http://gibsonenv.stanford.edu/)｜[iGibson](https://svl.stanford.edu/igibson/) | 室内仿真常用，iGibson 加入了可交互物体；⚠️ 两者均已停止维护，新项目请用 [OmniGibson](https://github.com/StanfordVL/OmniGibson) |
+| Gibson / iGibson | [Gibson](http://gibsonenv.stanford.edu/)｜[iGibson](https://svl.stanford.edu/igibson/) | 室内仿真常用，iGibson 加入了可交互物体；⚠️ 两者均已停止维护，新项目请用 [OmniGibson](https://github.com/StanfordVL/BEHAVIOR-1K) |
 | R2R（Room-to-Room） | [link](https://bringmeaspoon.org/) | VLN 的起点数据集，逐句指令跟随 |
 | RxR（Room-across-Room） | [link](https://github.com/google-research-datasets/RxR) | R2R 的多语言加强版，指令更长、路径更密 |
 | CVDN | [link](https://cvdn.dev/) | 对话式导航：走不下去时可以向人提问 |
@@ -577,7 +577,7 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 | --- | --- |
 | Object-Goal Navigation 综述 | [link](https://orca.cardiff.ac.uk/id/eprint/167432/1/ObjectGoalNavigationSurveyTASE.pdf) |
 | VLN 综述 + 真机评测（2026） | [link](https://arxiv.org/abs/2607.09792) |
-| Awesome VLN | [link](https://github.com/eric-ai-lab/awesome-vision-language-navigation) |
+| Awesome VLN | [link](https://github.com/UCSB-AI/awesome-vision-language-navigation) |
 | Habitat Navigation Challenge | [link](https://github.com/facebookresearch/habitat-challenge) |
 
 **小结**：导航方向最重要的分歧不在「用什么网络」，而在系统形态——端到端追求简洁但容易过拟合，模块化更可控但偏工程，零样本更易迁移但速度与上限受限；而 2025 年之后的基础模型路线正在把三者的边界打散。做项目时建议**先选定评测平台与数据集生态，再决定模型路线**，否则很容易在实现层面被卡住。
@@ -730,7 +730,7 @@ VLA 从「把动作 token 化」一路走到了「能从自己的失败里改进
 | Dream to Fly | [paper](https://arxiv.org/abs/2501.14377) | 2025.01 | 基于 DreamerV3 的模型式 RL，从像素直接到控制指令；未做奖励塑形却自发学会「转头看路」 |
 | MAD（Mapping-Aware Dreamer） | [paper](https://arxiv.org/abs/2606.04534) | 2026.06 | 世界模型重建的不是图像而是占据与可见性栅格，强迫隐状态编码几何与历史 |
 | 安全屏蔽式 RL 高速穿越杂乱环境 | [paper](https://arxiv.org/abs/2602.08653) | 2026.02 | 用高阶控制障碍函数（CBF）把策略输出投影到可证明安全的集合里 |
-| AerialVLA | [paper](https://arxiv.org/abs/2603.14363)｜[repo](https://github.com/XuPeng23/AerialVLA) | 2026.03 | 端到端 UAV VLA：从原始视觉与模糊指令直接出连续控制，不依赖外部检测器 |
+| AerialVLA | [paper](https://arxiv.org/abs/2603.14363)｜[repo](https://github.com/XuPeng23/AeroVLA) | 2026.03 | 端到端 UAV VLA：从原始视觉与模糊指令直接出连续控制，不依赖外部检测器 |
 
 **小结**：  
 技能学习的主矛盾通常是「闭环工程问题」：仿真速度、传感器噪声、延迟与 Sim2Real。选平台时建议先明确你需要的是 **快速迭代（轻量）** 还是 **高保真 + 可部署（PX4/ROS 链路）**。
